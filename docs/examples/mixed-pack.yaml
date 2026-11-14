@@ -1,0 +1,61 @@
+# The same format written as YAML. Useful when the questions are full of LaTeX:
+# inside a block scalar ( | ) backslashes need no escaping at all.
+format: practice-app/question-pack@1
+pack:
+  id: example-mixed
+  title: Mixed example (YAML)
+  subject: Physics
+  difficulty: Challenge
+questions:
+  - id: speed-1
+    number: 1
+    stem: |
+      A car travels $150\,\text{km}$ in $2.5$ hours. What is its average speed in km/h?
+    answer: { value: 60, unit: km/h, tolerance: 0.5 }
+    solution: |
+      $$v = \frac{d}{t} = \frac{150}{2.5} = 60\ \text{km/h}$$
+    topics: [Mechanics > Motion > Speed]
+    marks: 1
+
+  - id: units-2
+    number: 2
+    type: short_answer
+    stem: What is the SI unit of force?
+    answer: [newton, N]
+    topics: [Mechanics > Forces]
+    difficulty: Foundation
+
+  - id: select-3
+    number: 3
+    type: mcq_multi
+    stem: Which of these are **vector** quantities? Choose all that apply.
+    options:
+      - { label: A, text: Velocity }
+      - { label: B, text: Mass }
+      - { label: C, text: Force }
+      - { label: D, text: Temperature }
+    answer: [A, C]
+    topics: [Mechanics > Scalars and vectors]
+
+  - id: proj-4
+    number: 4
+    stem: |
+      A ball is thrown horizontally at $8\ \text{m s}^{-1}$ from a cliff $45\ \text{m}$ high.
+      Take $g = 10\ \text{m s}^{-2}$ and ignore air resistance.
+    parts:
+      - label: a
+        stem: How long does the ball take to reach the ground?
+        answer: { value: 3, unit: s }
+        marks: 2
+      - label: b
+        stem: How far from the foot of the cliff does it land?
+        answer: { value: 24, unit: m }
+        marks: 2
+    solution:
+      origin: ai          # the source had no working; the model wrote this, so it is stored as Unverified
+      steps:
+        - "Vertical: $45 = \\tfrac{1}{2} \\cdot 10 \\cdot t^2$, so $t^2 = 9$ and $t = 3\\ \\text{s}$."
+        - "Horizontal: $x = 8 \\times 3 = 24\\ \\text{m}$."
+    topics: [Mechanics > Projectiles]
+    difficulty: Achiever
+    fields: { Calculator: false }

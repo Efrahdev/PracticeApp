@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://practice-app.aarhaan22.workers.dev/schema/question-pack-1.json",
+  "title": "Practice App question pack (version 1)",
+  "description": "The one format the Practice App imports. Convert any source (HTML, PDF, Word, scans, notes) into this with an AI model, then upload it. Only `questions[].stem` (or `parts`) is truly required; everything else is optional, and unknown fields are kept, not rejected. Text fields are Markdown with LaTeX maths ($...$ inline, $$...$$ display).",
+  "type": "object",
+  "required": ["questions"],
+  "properties": {
+    "format": {
+      "description": "Identifies this format and version. Recommended.",
+      "const": "practice-app/question-pack@1"
+    },
+    "pack": { "$ref": "#/$defs/pack" },
+    "assets": {
+      "description": "Images (and other files) used by the questions. Refer to one from any text with ![description](asset:NAME).",
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/asset" }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/question" }
+    }
+  },
+  "additionalProperties": true,
+
+  "$defs": {
+    "pack": {
+      "description": "Facts about the source and defaults applied to every question (a question's own value wins).",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Short, stable id for this source, e.g. \"olympiad-fractions-2\". Use the same id every time you convert the same source: it is how changed questions are recognised as new versions." },
+        "title": { "type": "string" },
+        "source": { "type": "string", "description": "Where the questions came from (book, file name, website, exam paper)." },
+        "subject": { "type": "string", "description": "Default subject, e.g. \"Maths\"." },
+        "topics": { "$ref": "#/$defs/topics" },
+        "difficulty": { "type": ["string", "number"], "description": "Default difficulty label." },
+        "fields": { "$ref": "#/$defs/fields" },
+        "solutions_origin": { "enum": ["source", "ai"], "description": "\"source\" (default) if answers/solutions were in the source; \"ai\" if the model wrote them. AI ones are stored as Unverified." },
+        "css": { "type": "string", "description": "Optional CSS for questions written as raw HTML ({\"html\": ...})." }
+      },
+      "additionalProperties": true
+    },
+
+    "content": {
+      "description": "Markdown with LaTeX maths (a plain string), or raw HTML when Markdown cannot express it.",
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": { "html": { "type": "string" } },
+          "required": ["html"],
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "properties": { "markdown": { "type": "string" } },
+          "required": ["markdown"],
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "properties": { "text": { "type": "string" } },
+          "required": ["text"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "option": {
+      "oneOf": [
+        { "type": "string", "description": "Option text; labels A, B, C… are added in order. A leading \"A) \" or \"(A)\" is read as the label." },
+        {
+          "type": "object",
+          "properties": {
+            "label": { "type": "string", "description": "As printed, e.g. \"A\"." },
+            "text": { "$ref": "#/$defs/content" },
+            "correct": { "type": "boolean", "description": "Another way to mark the right answer." }
+          },
+          "required": ["text"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "answer": {
+      "description": "The final answer. Shape depends on the question type: \"C\" or [\"A\",\"C\"] for multiple choice; 12.5, \"5/8\", \"3.2 cm\" or {\"value\":12.5,\"tolerance\":0.1,\"unit\":\"cm\"} for numeric; a string (or list of accepted strings) for short answers; Markdown for open questions.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "array", "items": { "type": ["string", "number"] } },
+        {
+          "type": "object",
+          "properties": {
+            "value": { "type": ["number", "string"] },
+            "tolerance": { "type": "number", "minimum": 0 },
+            "unit": { "type": "string" },
+            "accepted": { "type": "array", "items": { "type": "string" } },
+            "options": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "solution": {
+      "description": "Worked solution. Either Markdown, or a structured object.",
+      "oneOf": [
+        { "$ref": "#/$defs/content" },
+        {
+          "type": "object",
+          "properties": {
+            "answer": { "$ref": "#/$defs/content", "description": "Final answer as it should be shown." },
+            "steps": { "type": "array", "items": { "$ref": "#/$defs/content" }, "description": "Working, one step per item." },
+            "explanation": { "$ref": "#/$defs/content", "description": "Explanation or full worked solution text." },
+            "origin": { "enum": ["source", "ai"] }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "topic": {
+      "oneOf": [
+        { "type": "string", "description": "A topic path using \" > \" between levels, e.g. \"Number > Fractions > Equivalent fractions\"." },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "weight": { "type": "number", "exclusiveMinimum": 0, "maximum": 1, "description": "How much of the question is about this topic (default 1)." }
+          },
+          "required": ["name"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "topics": { "type": "array", "items": { "$ref": "#/$defs/topic" } },
+
+    "fields": {
+      "description": "Any other facts as name → value (text, number, yes/no, or date \"YYYY-MM-DD\"), e.g. {\"Exam board\": \"AQA\", \"Year\": 2023}. Each becomes a filterable custom field.",
+      "type": "object",
+      "additionalProperties": { "type": ["string", "number", "boolean"] }
+    },
+
+    "part": {
+      "description": "One part of a multi-part question, e.g. (a), (b).",
+      "type": "object",
+      "properties": {
+        "label": { "type": "string", "description": "As printed, e.g. \"a\" or \"ii\"." },
+        "type": { "$ref": "#/$defs/type" },
+        "stem": { "$ref": "#/$defs/content" },
+        "options": { "type": "array", "items": { "$ref": "#/$defs/option" } },
+        "answer": { "$ref": "#/$defs/answer" },
+        "solution": { "$ref": "#/$defs/solution" },
+        "marks": { "type": "number", "minimum": 0 },
+        "hints": { "type": "array", "items": { "$ref": "#/$defs/content" } }
+      },
+      "additionalProperties": true
+    },
+
+    "type": {
+      "description": "Optional; worked out from the other fields when missing.",
+      "enum": ["mcq_single", "mcq_multi", "numeric", "short_answer", "open", "multi_part"]
+    },
+
+    "question": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique within the pack and stable across conversions, e.g. \"q12\". Same pack id + same question id + changed wording = a new version of the same question." },
+        "number": { "type": ["string", "number"], "description": "The question number as printed." },
+        "type": { "$ref": "#/$defs/type" },
+        "stem": { "$ref": "#/$defs/content", "description": "The question itself, word for word." },
+        "options": { "type": "array", "items": { "$ref": "#/$defs/option" } },
+        "answer": { "$ref": "#/$defs/answer" },
+        "solution": { "$ref": "#/$defs/solution" },
+        "hints": { "type": "array", "items": { "$ref": "#/$defs/content" } },
+        "parts": { "type": "array", "items": { "$ref": "#/$defs/part" } },
+        "subject": { "type": "string" },
+        "topics": { "$ref": "#/$defs/topics" },
+        "difficulty": { "type": ["string", "number"] },
+        "marks": { "type": "number", "minimum": 0 },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "fields": { "$ref": "#/$defs/fields" },
+        "source": {
+          "description": "Where this question came from, e.g. {\"document\": \"Paper 1\", \"page\": 4}.",
+          "type": ["string", "object"]
+        },
+        "notes": { "type": "string" }
+      },
+      "anyOf": [
+        { "required": ["stem"] },
+        { "required": ["parts"] }
+      ],
+      "additionalProperties": true
+    },
+
+    "asset": {
+      "oneOf": [
+        { "type": "string", "description": "A data: URI, inline <svg>…</svg>, or a file path inside the uploaded .zip." },
+        {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "description": "Media type, e.g. image/svg+xml, image/png." },
+            "data": { "type": "string", "description": "Text content (SVG) or a data: URI." },
+            "base64": { "type": "string", "description": "Binary content, base64-encoded." },
+            "file": { "type": "string", "description": "Path of the file inside the uploaded .zip." }
+          },
+          "additionalProperties": true
+        }
+      ]
+    }
+  }
+}
