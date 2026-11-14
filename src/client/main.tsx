@@ -57,7 +57,25 @@ const TABS = [
   { id: "settings", href: "#/settings", label: "Settings", icon: "⚙" },
 ];
 
+/** A tab opened before a deploy keeps old code; tell the user to reload. */
+function useNewVersion() {
+  const [stale, setStale] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      if (document.visibilityState !== "visible") return;
+      fetch("/api/health", { credentials: "same-origin", cache: "no-store" }).then((r) => r.json())
+        .then((h: any) => { if (h.build && h.build !== __BUILD__) setStale(true); }).catch(() => {});
+    };
+    check();
+    document.addEventListener("visibilitychange", check);
+    const t = setInterval(check, 5 * 60_000);
+    return () => { document.removeEventListener("visibilitychange", check); clearInterval(t); };
+  }, []);
+  return stale;
+}
+
 function App() {
+  const stale = useNewVersion();
   const h = useHash();
   const r = route(h);
   return (
@@ -73,6 +91,9 @@ function App() {
             ))}
           </nav>
         </header>
+      )}
+      {stale && (
+        <div class="update-banner" role="status">A new version of the app is available. <button class="btn small primary" onClick={() => location.reload()}>Reload now</button></div>
       )}
       <main class={r.bare ? "bare" : ""}>{r.el}</main>
       <Toaster />

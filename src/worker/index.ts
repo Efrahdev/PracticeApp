@@ -3,7 +3,8 @@ import { HttpError, json } from "./http";
 import * as api from "./api";
 import * as admin from "./admin";
 import * as imports from "./imports";
-import { bulkEdit } from "./bulk";
+import { bulkEdit, importRemove } from "./bulk";
+import { BUILD } from "./static.gen";
 import type { Env } from "./api";
 import { STATIC } from "./static.gen";
 
@@ -23,6 +24,7 @@ on("POST", "/api/imports/commit", (r, env) => imports.importCommit(r, env));
 on("GET", "/api/imports", (_r, env) => imports.importList(env));
 on("POST", "/api/imports/:id/archive", (r, env, p) => imports.importArchive(r, env, p[0]));
 on("PATCH", "/api/imports/:id", (r, env, p) => imports.importPatch(r, env, p[0]));
+on("DELETE", "/api/imports/:id", (_r, env, p) => importRemove(env, p[0]));
 on("POST", "/api/questions/:id/solution/verify", (_r, env, p) => api.verifyMetadata(env, p[0], "solution"));
 on("POST", "/api/questions/:id/answer-key/verify", (_r, env, p) => api.verifyMetadata(env, p[0], "answer-key"));
 on("GET", "/api/versions/:id/solution", (_r, env, p) => api.versionSolution(env, p[0]));
@@ -95,7 +97,7 @@ export default {
     if (url.pathname === "/api/health") {
       // No data, just whether the pieces are wired up.
       const v = await env.DB.prepare(`SELECT max(version) AS v FROM schema_migration`).first<{ v: number }>().catch(() => null);
-      return json({ ok: true, schemaVersion: v?.v ?? null, loginWall: env.PUBLIC_ACCESS !== "1" && !!(env.ACCESS_AUD && env.ACCESS_TEAM_DOMAIN) });
+      return json({ ok: true, build: BUILD, schemaVersion: v?.v ?? null, loginWall: env.PUBLIC_ACCESS !== "1" && !!(env.ACCESS_AUD && env.ACCESS_TEAM_DOMAIN) });
     }
 
     const auth = await checkAccess(req, env);

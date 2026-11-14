@@ -162,6 +162,11 @@ fieldset.bulk:disabled { opacity: .45; }
 .meta-edit { margin-top: .4rem; }
 .picked-bar { background: var(--accent-soft); border-radius: 8px; padding: .4rem .6rem; margin-bottom: .4rem; }
 .btn.danger { background: var(--bad); border-color: var(--bad); color: #fff; }
+.btn.danger-outline { color: var(--bad); border-color: var(--bad); background: transparent; }
+.danger-zone { border: 1px solid var(--bad-soft); border-radius: 10px; padding: .6rem .75rem; margin: .7rem 0; }
+.danger-zone.on { border-color: var(--bad); background: var(--bad-soft); color: var(--ink); }
+.topic-box { border: 1px dashed var(--line); border-radius: 8px; padding: .5rem; margin-top: .3rem; }
+.update-banner { background: var(--accent-soft); color: var(--accent); padding: .5rem 16px; display: flex; gap: .8rem; align-items: center; justify-content: center; flex-wrap: wrap; font-size: .9rem; }
 
 /* practice */
 .practice-head { display: flex; align-items: center; gap: .5rem; }

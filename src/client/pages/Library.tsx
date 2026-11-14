@@ -29,6 +29,7 @@ export function Library() {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [showBuilder, setShowBuilder] = useState(false);
   const [showBulk, setShowBulk] = useState(false);
+  const [bulkDelete, setBulkDelete] = useState(false);
   const [limit, setLimit] = useState(100);
   const [sort, setSort] = useState<"qno" | "added" | "last" | "attempts">("added");
 
@@ -137,7 +138,8 @@ export function Library() {
                 <option value="attempts">Most attempts</option>
               </select>
             </label>
-            {selected.size > 0 && <button class="btn" onClick={() => setShowBulk(true)}>Edit {selected.size} selected</button>}
+            {selected.size > 0 && <button class="btn" onClick={() => { setBulkDelete(false); setShowBulk(true); }}>Edit {selected.size} selected</button>}
+            {selected.size > 0 && <button class="btn danger-outline" onClick={() => { setBulkDelete(true); setShowBulk(true); }}>Delete {selected.size} selected</button>}
             <button class="btn primary" disabled={!results.length} onClick={() => setShowBuilder(true)}>Build paper</button>
           </div>
 
@@ -174,7 +176,9 @@ export function Library() {
       )}
 
       {showBuilder && <PaperBuilder candidates={results} def={def} savedFilterId={savedId} onClose={() => setShowBuilder(false)} />}
-      {showBulk && <BulkEdit boot={boot} ids={[...selected]} onClose={() => setShowBulk(false)} onDone={() => { setShowBulk(false); setSelected(new Set()); }} />}
+      {showBulk && <BulkEdit boot={boot} ids={[...selected]} startWithDelete={bulkDelete} removeEmptyImports={bulkDelete}
+        title={bulkDelete ? `Delete ${selected.size} question${selected.size === 1 ? "" : "s"}` : undefined}
+        onClose={() => setShowBulk(false)} onDone={() => { setShowBulk(false); setSelected(new Set()); }} />}
     </div>
   );
 }

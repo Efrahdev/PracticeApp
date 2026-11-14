@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import { api } from "../api";
 import { emptyFilter } from "../filter";
-import { refresh, setPendingFilter } from "../store";
+import { refresh, setPendingFilter, useData } from "../store";
+import { BulkEdit } from "./BulkEdit";
 import { ErrorBox, fmtDateTime, toast } from "../ui";
 
 interface Row {
@@ -21,6 +22,8 @@ export function editImportQuestions(ids: string[]) {
 }
 
 export function ImportHistory() {
+  const { boot, lib } = useData();
+  const [deleting, setDeleting] = useState<{ ids: string[]; title: string } | null>(null);
   const [rows, setRows] = useState<Row[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [q, setQ] = useState("");
@@ -50,6 +53,20 @@ export function ImportHistory() {
       toast("Saved");
     } catch (e) { toast((e as Error).message, "error"); }
   };
+  const questionsOf = (batchIds: string[]) => (lib ?? []).filter((q) => q.batches.some((b) => batchIds.includes(b))).map((q) => q.id);
+  const startDelete = (batchIds: string[], title: string) => {
+    const ids = questionsOf(batchIds);
+    if (!ids.length) return toast("These imports have no questions left.", "error");
+    setDeleting({ ids, title });
+  };
+  const removeEmpty = async (r: Row) => {
+    try {
+      await api("DELETE", `/api/imports/${r.id}`);
+      toast("Removed from the history");
+      await load();
+      await refresh();
+    } catch (e) { toast((e as Error).message, "error"); }
+  };
   const archive = async (r: Row, archived: boolean) => {
     if (archived && !confirm(`Archive every question first added by “${r.label || r.file_name}”? Nothing is deleted; you can bring them back here.`)) return;
     try {
@@ -72,6 +89,7 @@ export function ImportHistory() {
         <div class="row wrap picked-bar">
           <span class="small"><b>{picked.size}</b> imports chosen</span>
           <button class="btn primary small" onClick={() => editImportQuestions([...picked])}>Edit their questions together</button>
+          <button class="btn danger small" onClick={() => startDelete([...picked], `Delete the questions of ${picked.size} imports`)}>Delete their questions</button>
           <button class="btn ghost small" onClick={() => setPicked(new Set())}>Clear</button>
         </div>
       )}
@@ -100,6 +118,8 @@ export function ImportHistory() {
                   <button class="btn ghost small" onClick={() => { setEditing(editing === r.id ? null : r.id); setLabel(r.label ?? ""); setNote(r.note ?? ""); }}>{editing === r.id ? "Cancel" : "Name / note"}</button>
                   {r.active_count > 0 && <button class="btn ghost small" onClick={() => archive(r, true)}>Archive</button>}
                   {r.archived_count > 0 && <button class="btn ghost small" onClick={() => archive(r, false)}>Restore</button>}
+                  {r.question_count > 0 && <button class="btn danger-outline small" onClick={() => startDelete([r.id], `Delete import “${r.label || r.file_name}”`)}>Delete</button>}
+                  {r.question_count === 0 && <button class="btn ghost small" onClick={() => removeEmpty(r)}>Remove from history</button>}
                 </div>
               </div>
               {editing === r.id && (
@@ -112,6 +132,10 @@ export function ImportHistory() {
             </li>
           ))}
         </ul>
+      )}
+      {deleting && boot && (
+        <BulkEdit boot={boot} ids={deleting.ids} title={deleting.title} startWithDelete removeEmptyImports
+          onClose={() => setDeleting(null)} onDone={async () => { setDeleting(null); setPicked(new Set()); await load(); }} />
       )}
     </section>
   );

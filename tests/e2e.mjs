@@ -181,63 +181,100 @@ if ((await page.locator(".import-row").count()) !== 1) fail("search did not narr
 await page.getByLabel("Search imports").fill("");
 log("import history: newest first, named an import, search finds it");
 
-// 9. Edit questions of one import in bulk (R2–R4)
+// 9. Edit questions of one import in bulk: new subject, new + existing topics, marks, fields, notes
+const api = (path, opts) => page.evaluate(async ([p, o]) => (await fetch(p, o)).json(), [path, opts ?? {}]);
 await page.locator(".import-row", { hasText: "fractions-pack.json" }).getByRole("button", { name: "Edit questions" }).click();
 await page.getByRole("heading", { name: "Edit 5 questions" }).waitFor();
 const modal = page.locator(".modal");
-await modal.locator("label.field", { hasText: "Subject" }).locator("select").selectOption({ label: "Physics" });
-await modal.locator(".field", { hasText: "Topics" }).locator("select").first().selectOption("add");
-await modal.getByLabel("Topic to add to the list").selectOption({ label: "Physics: Mechanics › Forces" });
-await modal.getByRole("button", { name: "Add to list" }).click();
-await modal.getByLabel("Weight").fill("0.5");
+await modal.locator("label.field", { hasText: "Subject" }).locator("select").selectOption("__new");
+await modal.getByLabel("New subject name").fill("Mathematics");
+await modal.getByLabel("Topics: action").selectOption("add");
+await modal.getByLabel("Existing topic").selectOption({ label: "Physics: Mechanics › Forces" });
+await modal.getByRole("button", { name: "Add", exact: true }).click();
+await modal.getByLabel("Weight").first().fill("0.5");
+await modal.getByLabel("New topic path").fill("Number > Ratio > Sharing");
+await modal.getByRole("button", { name: "Add new topic" }).click();
+await modal.getByLabel("Marks: action").selectOption("set");
+await modal.getByLabel("Marks value").fill("3");
 await modal.getByLabel("Collection: action").selectOption("set");
 await modal.getByLabel("Collection: value").fill("Renamed collection");
-await modal.locator(".field", { hasText: "Notes" }).locator("select").selectOption("append");
-await modal.locator(".field", { hasText: "Notes" }).locator("textarea").fill("Checked in bulk");
+await modal.getByLabel("Tags: action").selectOption("clear");
+await modal.getByLabel("Notes: action").selectOption("append");
+await modal.getByLabel("Note text").fill("Checked in bulk");
 await modal.getByRole("button", { name: "Preview changes" }).click();
-for (const line of ["5 subject changes", "5 topic tags added", "5 “Collection” values change", "5 notes change"]) await modal.getByText(line).waitFor();
-log("bulk preview: 5 subject, 5 topics, 5 field values, 5 notes");
+for (const line of ["5 questions: subject changes", "10 topic tags added", "4 questions: marks change", "5 questions: “Collection” changes", "1 question: “Tags” changes", "5 questions: notes change", "New subject created: Mathematics", "New topics created: Number; Number › Ratio; Number › Ratio › Sharing"]) {
+  await modal.getByText(line, { exact: true }).waitFor();
+}
+log("bulk preview: new subject, 10 topic tags (existing + new path), marks, 2 fields, notes");
 await modal.getByRole("button", { name: "Apply changes" }).click();
 await page.getByText("Changes saved").waitFor();
-const libNow = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions);
-const boot = await page.evaluate(async () => (await (await fetch("/api/bootstrap")).json()));
-const physics = boot.subjects.find((x) => x.name === "Physics").id;
-if (libNow.filter((q) => q.subject_id === physics).length !== 9) fail("subject not applied to all 5");
-log("bulk changes saved in one step (all 9 questions now Physics)");
+let boot = await api("/api/bootstrap");
+let lib = (await api("/api/library")).questions;
+const maths = boot.subjects.find((x) => x.name === "Mathematics");
+const fr = lib.filter((q) => q.subject_id === maths?.id);
+if (fr.length !== 5 || !fr.every((q) => q.marks === 3 && JSON.parse(q.concepts).length >= 2)) fail("bulk edit not applied precisely");
+log("applied in one step: 5 questions → new subject Mathematics, marks 3, new topics created and tagged");
 
-// 10. Bulk delete: a throwaway import is removed for good
+// 9b. Clear all topics and all custom fields
+await page.goto(`${BASE}/#/import`);
+await page.locator(".import-row", { hasText: "fractions-pack.json" }).getByRole("button", { name: "Edit questions" }).click();
+await page.getByRole("heading", { name: "Edit 5 questions" }).waitFor();
+await modal.getByLabel("Topics: action").selectOption("clear");
+await modal.getByText("Clear all custom fields (including Tags)").click();
+await modal.getByRole("button", { name: "Preview changes" }).click();
+await modal.getByText(/topic tags removed$/).waitFor();
+await modal.getByText(/custom field values? cleared$/).waitFor();
+await modal.getByRole("button", { name: "Apply changes" }).click();
+await page.getByText("Changes saved").waitFor();
+lib = (await api("/api/library")).questions;
+const cleared = lib.filter((q) => q.subject_id === maths.id);
+if (!cleared.every((q) => JSON.parse(q.concepts).length === 0 && JSON.parse(q.fields) && Object.keys(JSON.parse(q.fields)).length === 0)) fail("topics/fields not cleared");
+log("cleared all topics and all custom fields on 5 questions");
+
+// 10. Delete button on an import row: questions deleted permanently, import removed from history
 await page.goto(`${BASE}/#/import`);
 await page.locator("textarea").fill(JSON.stringify({ pack: { id: "throwaway", title: "Throwaway" }, questions: [{ stem: "Useless question one?" }, { stem: "Useless question two?" }] }));
 await page.getByRole("button", { name: "Check" }).click();
 await page.getByRole("button", { name: "Save 2 questions" }).click();
 await page.getByText("Import finished").waitFor();
-await page.locator(".import-row", { hasText: "Throwaway" }).getByRole("button", { name: "Edit questions" }).click();
-await page.getByRole("heading", { name: "Edit 2 questions" }).waitFor();
-await modal.locator(".field", { hasText: "Status" }).locator("select").selectOption("delete");
-await modal.getByRole("button", { name: "Preview changes" }).click();
-await modal.getByText("2 deleted permanently").waitFor();
-if (!(await modal.getByRole("button", { name: "Delete now" }).isDisabled())) fail("delete allowed without typing DELETE");
+await page.locator(".import-row", { hasText: "Throwaway" }).getByRole("button", { name: "Delete" }).click();
+await page.getByRole("heading", { name: "Delete import “Throwaway”" }).waitFor();
+await modal.getByRole("button", { name: "Preview what will be deleted" }).click();
+await modal.getByText(/^2 questions deleted permanently/).waitFor();
+await modal.getByText("1 import removed from your import history").waitFor();
+if (!(await modal.getByRole("button", { name: "Delete permanently" }).isDisabled())) fail("delete allowed without typing DELETE");
 await modal.getByLabel("Type DELETE to confirm").fill("DELETE");
-await modal.getByRole("button", { name: "Delete now" }).click();
-await page.getByText("Deleted 2 question(s)").waitFor();
-const after = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.length);
-if (after !== 9) fail(`expected 9 questions after delete, got ${after}`);
-log("bulk delete: 2 useless questions deleted permanently (typed confirmation)");
+await modal.getByRole("button", { name: "Delete permanently" }).click();
+await page.getByText("Deleted 2 questions permanently").waitFor();
+await page.waitForTimeout(500);
+if (await page.locator(".import-row", { hasText: "Throwaway" }).count()) fail("deleted import still in history");
+if ((await api("/api/library")).questions.length !== 9) fail("expected 9 questions after deleting the throwaway import");
+log("import row Delete: 2 questions deleted for good, import gone from history");
 
-// 11. Questions with history are archived instead of deleted, then restored
-await page.goto(`${BASE}/#/import`);
-await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("button", { name: "Edit questions" }).click();
-await page.getByRole("heading", { name: "Edit 4 questions" }).waitFor();
-await modal.locator(".field", { hasText: "Status" }).locator("select").selectOption("delete");
-await modal.getByRole("button", { name: "Preview changes" }).click();
-await modal.getByText("0 deleted permanently").waitFor();
-await modal.getByText(/4 kept because they have attempts or are in papers — 4 of them will be archived instead/).waitFor();
-await modal.getByRole("button", { name: "Delete now" }).click();
-await page.getByText(/archived 4 that have history/).waitFor();
-await page.goto(`${BASE}/#/import`);
-await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("button", { name: "Restore" }).click();
-await page.getByText("Restored 4 question(s)").waitFor();
-log("delete of practised questions archives them instead (history kept); restored from import history");
+// 11. Delete questions you have practised (attempts + papers) — really deleted, papers renumbered
+const papersBefore = (await api("/api/papers")).papers;
+await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("button", { name: "Delete" }).click();
+await modal.getByRole("button", { name: "Preview what will be deleted" }).click();
+await modal.getByText(/^4 questions deleted permanently/).waitFor();
+await modal.getByText(/attempts? \(and their grades\) deleted/).waitFor();
+await modal.getByText(/removed from \d+ papers?; the remaining questions are renumbered/).waitFor();
+await modal.getByLabel("Type DELETE to confirm").fill("DELETE");
+await modal.getByRole("button", { name: "Delete permanently" }).click();
+await page.getByText("Deleted 4 questions permanently").waitFor();
+lib = (await api("/api/library")).questions;
+if (lib.length !== 5) fail(`expected 5 questions, got ${lib.length}`);
+for (const p of papersBefore) {
+  const d = await api(`/api/papers/${p.id}`);
+  const pos = d.items.map((i) => i.position);
+  if (pos.some((x, i) => x !== i + 1)) fail(`paper ${p.name} not renumbered: ${pos}`);
+  if (d.attempts.some((a) => a.paper_position !== null && !pos.includes(a.paper_position))) fail(`attempt points at a missing paper position in ${p.name}`);
+}
+log("practised questions deleted with their attempts; papers renumbered 1..n, attempts still line up");
+await page.goto(`${BASE}/#/`);
+await page.locator(".qrow.head input[type=checkbox]").check();
+await page.getByRole("button", { name: /^Delete \d+ selected$/ }).waitFor();
+await page.locator(".qrow.head input[type=checkbox]").uncheck();
+log("library shows Delete N selected next to Edit");
 
 // 12. Integrity + rebuild + backup
 await page.goto(`${BASE}/#/settings`);
