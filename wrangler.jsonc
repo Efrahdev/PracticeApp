@@ -17,8 +17,9 @@
     { "binding": "FILES", "bucket_name": "practice-app-files" }
   ],
   "vars": {
-    // Filled in after Cloudflare Access is switched on (see README). Until both are set,
-    // the deployed app refuses every request (fails closed).
+    // "1" = public: no login, anyone with the link can use the app.
+    // Set to "" and fill in the two Access values below to bring the login wall back.
+    "PUBLIC_ACCESS": "1",
     "ACCESS_TEAM_DOMAIN": "",
     "ACCESS_AUD": ""
   },

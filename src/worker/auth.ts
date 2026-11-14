@@ -6,6 +6,7 @@ export interface AuthEnv {
   ACCESS_TEAM_DOMAIN?: string; // e.g. "myteam.cloudflareaccess.com"
   ACCESS_AUD?: string; // Application Audience (AUD) tag
   DEV_ALLOW_NO_AUTH?: string; // "1" only in local .dev.vars
+  PUBLIC_ACCESS?: string; // "1" = no login wall: anyone with the link can use the app
 }
 
 type Jwk = JsonWebKey & { kid?: string };
@@ -42,6 +43,7 @@ export type AuthResult = { ok: true; email: string | null } | { ok: false; statu
 
 export async function checkAccess(req: Request, env: AuthEnv): Promise<AuthResult> {
   if (env.DEV_ALLOW_NO_AUTH === "1") return { ok: true, email: "local-dev" };
+  if (env.PUBLIC_ACCESS === "1") return { ok: true, email: null };
   const domain = (env.ACCESS_TEAM_DOMAIN ?? "").trim();
   const aud = (env.ACCESS_AUD ?? "").trim();
   if (!domain || !aud) {

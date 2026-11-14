@@ -2,7 +2,7 @@
 
 A private question-practice app built only from free Cloudflare services:
 one **Worker** (the API and the screens), **D1** (the database), **R2** (the files),
-and **Cloudflare Access** (the login wall). Design inputs are in [`Artefacts/`](Artefacts/).
+with an optional Cloudflare Access login wall (currently off — public link). Design inputs are in [`Artefacts/`](Artefacts/).
 
 Live address: **https://practice-app.aarhaan22.workers.dev**
 
@@ -20,17 +20,11 @@ Live address: **https://practice-app.aarhaan22.workers.dev**
 
 Not built yet (marked *Should/Could* in the requirements, or not in the schema): custom fields UI (FR-1.8), concept prerequisites (no table in schema v1), AI suggestions (FR-1.10), spreadsheet import of metadata, re-grading old attempts when a key is added (FR-4.8), reordering a paper before starting (FR-3.8).
 
-## Switch on the login wall (one time, in the Cloudflare dashboard)
+## Access: public link (no login)
 
-Until this is done the app shows **"Practice App is locked"** to everyone, including you. That is deliberate: the Worker refuses every request unless it carries a valid Access sign-in.
+The app is **public**: anyone who has the link can open it, add questions, grade, export and restore. There is no sign-in. Search engines are asked not to index it (`noindex`), but the link itself is the only protection, so don't post it publicly.
 
-1. Cloudflare dashboard → **Zero Trust**. If asked, pick a team name (e.g. `aarhaan`) and the **Free** plan.
-2. Dashboard → **Workers & Pages → practice-app → Settings → Domains & Routes**. On the `workers.dev` row choose **Enable Cloudflare Access**.
-3. Open **Manage Cloudflare Access** (or Zero Trust → Access → Applications → the new app):
-   * **Policies**: make sure the only rule is *Allow → Emails → your email address*.
-   * **Overview**: copy the **Application Audience (AUD) Tag**.
-4. Zero Trust → **Settings** shows your **team domain**, like `aarhaan.cloudflareaccess.com`.
-5. Put both values in `wrangler.jsonc` under `vars` (`ACCESS_TEAM_DOMAIN`, `ACCESS_AUD`) and deploy again. Neither value is secret.
+To add a login wall later: switch on Cloudflare Access for the `workers.dev` route in the dashboard, then in `wrangler.jsonc` set `PUBLIC_ACCESS` to `""` and fill in `ACCESS_TEAM_DOMAIN` and `ACCESS_AUD` (the Worker then checks every request's Access token and refuses anything else). Deploy again.
 
 ## Working on it (no installs on your PC)
 

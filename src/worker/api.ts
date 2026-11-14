@@ -12,6 +12,7 @@ export interface Env {
   ACCESS_TEAM_DOMAIN?: string;
   ACCESS_AUD?: string;
   DEV_ALLOW_NO_AUTH?: string;
+  PUBLIC_ACCESS?: string;
 }
 
 type Row = Record<string, unknown>;

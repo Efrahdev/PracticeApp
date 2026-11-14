@@ -53,6 +53,7 @@ const SECURITY_HEADERS: Record<string, string> = {
   "x-content-type-options": "nosniff",
   "referrer-policy": "no-referrer",
   "x-frame-options": "DENY",
+  "x-robots-tag": "noindex, nofollow",
 };
 
 function blockedPage(status: number, reason: string): Response {
@@ -72,7 +73,7 @@ export default {
     if (url.pathname === "/api/health") {
       // No data, just whether the pieces are wired up.
       const v = await env.DB.prepare(`SELECT max(version) AS v FROM schema_migration`).first<{ v: number }>().catch(() => null);
-      return json({ ok: true, schemaVersion: v?.v ?? null, loginWall: !!(env.ACCESS_AUD && env.ACCESS_TEAM_DOMAIN) });
+      return json({ ok: true, schemaVersion: v?.v ?? null, loginWall: env.PUBLIC_ACCESS !== "1" && !!(env.ACCESS_AUD && env.ACCESS_TEAM_DOMAIN) });
     }
 
     const auth = await checkAccess(req, env);
