@@ -13,7 +13,7 @@ async function load() {
   try {
     const [b, l] = await Promise.all([api<Boot>("GET", "/api/bootstrap"), api<{ questions: any[] }>("GET", "/api/library")]);
     boot = b;
-    lib = l.questions.map((q) => ({ ...q, concepts: q.concepts ? JSON.parse(q.concepts) : [], fields: q.fields ? JSON.parse(q.fields) : {} }));
+    lib = l.questions.map((q) => ({ ...q, concepts: q.concepts ? JSON.parse(q.concepts) : [], fields: q.fields ? JSON.parse(q.fields) : {}, batches: q.batches ? JSON.parse(q.batches) : [] }));
     error = null;
   } catch (e) {
     error = (e as Error).message;
@@ -43,7 +43,8 @@ export function useData() {
 export const getBoot = () => boot;
 export const getLib = () => lib;
 
-// Hand-off between screens (e.g. "build a paper on these concepts").
+// Hand-off between screens (e.g. "build a paper on these concepts", or
+// { def, selectAll: true, openBulk: true } from an import's "Edit questions").
 let pendingFilter: any = null;
 export const setPendingFilter = (f: any) => (pendingFilter = f);
 export const takePendingFilter = () => {

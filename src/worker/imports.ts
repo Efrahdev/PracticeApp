@@ -41,6 +41,7 @@ export interface CommitQuestion {
 
 interface CommitBody {
   source: { sha256: string; name: string };
+  label?: string | null;
   parser_version: string;
   update_existing: boolean;
   new_difficulties: { code: string; label: string }[];
@@ -399,9 +400,9 @@ export async function importCommit(req: Request, env: Env) {
   if (!sf) stmts.push(db.prepare(`INSERT INTO source_file (id, blob_sha256, file_name, created_at) VALUES (?,?,?,?)`).bind(sourceFileId, body.source.sha256, String(body.source.name || "pack.json").slice(0, 200), t));
   stmts.push(
     db.prepare(
-      `INSERT INTO import_batch (id, source_file_id, parser_version, found_count, new_count, new_version_count, duplicate_count, rejected_count, committed_at)
-       VALUES (?,?,?,?,?,?,?,?,?)`,
-    ).bind(batchId, sourceFileId, String(body.parser_version || "qpack@1").slice(0, 40), qs.length, nNew, nVer, nDup, nRej, t),
+      `INSERT INTO import_batch (id, source_file_id, parser_version, found_count, new_count, new_version_count, duplicate_count, rejected_count, committed_at, label)
+       VALUES (?,?,?,?,?,?,?,?,?,?)`,
+    ).bind(batchId, sourceFileId, String(body.parser_version || "qpack@1").slice(0, 40), qs.length, nNew, nVer, nDup, nRej, t, body.label?.trim() ? body.label.trim().slice(0, 120) : null),
   );
   bulk("question", ["id", "subject_id", "difficulty_code", "answer_format", "option_labels", "notes", "marks", "external_ref", "created_at"], qRows);
   if (qUpdates.length) {
@@ -445,8 +446,9 @@ export async function importCommit(req: Request, env: Env) {
 export async function importList(env: Env) {
   const rows = await all(
     env.DB,
-    `SELECT b.id, sf.file_name, b.parser_version, b.committed_at, b.found_count, b.new_count, b.new_version_count,
+    `SELECT b.id, sf.file_name, b.label, b.note, b.parser_version, b.committed_at, b.found_count, b.new_count, b.new_version_count,
             b.duplicate_count, b.rejected_count,
+            (SELECT count(DISTINCT v.question_id) FROM question_version v WHERE v.import_batch_id = b.id) AS question_count,
             (SELECT count(*) FROM question_version v JOIN question q ON q.id = v.question_id
               WHERE v.import_batch_id = b.id AND v.version_no = 1 AND q.archived_at IS NULL) AS active_count,
             (SELECT count(*) FROM question_version v JOIN question q ON q.id = v.question_id
@@ -455,6 +457,27 @@ export async function importList(env: Env) {
       ORDER BY b.committed_at DESC`,
   );
   return json({ imports: rows });
+}
+
+/** R1: give an import a name and a note. */
+export async function importPatch(req: Request, env: Env, batchId: string) {
+  const body = await readJson<{ label?: string | null; note?: string | null }>(req);
+  const cur = await env.DB.prepare(`SELECT label, note FROM import_batch WHERE id = ?`).bind(batchId).first<{ label: string | null; note: string | null }>();
+  if (!cur) throw new HttpError(404, "Import not found.");
+  const t = Date.now();
+  const stmts: D1PreparedStatement[] = [];
+  for (const col of ["label", "note"] as const) {
+    if (!(col in body)) continue;
+    const v = body[col]?.trim() ? body[col]!.trim().slice(0, col === "label" ? 120 : 2000) : null;
+    if (v === cur[col]) continue;
+    stmts.push(
+      env.DB.prepare(`UPDATE import_batch SET ${col} = ? WHERE id = ?`).bind(v, batchId),
+      env.DB.prepare(`INSERT INTO change_log (table_name, row_key, column_name, op, old_value, new_value, changed_at) VALUES ('import_batch', ?, ?, 'update', ?, ?, ?)`)
+        .bind(batchId, col, cur[col], v, t),
+    );
+  }
+  if (stmts.length) await env.DB.batch(stmts);
+  return json({ ok: true });
 }
 
 /** Archive (or bring back) every question that this import first added. Nothing is deleted (DR-7). */

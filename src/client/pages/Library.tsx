@@ -5,6 +5,7 @@ import { refresh, takePendingFilter, useData } from "../store";
 import type { Boot, LibQ } from "../types";
 import { conceptPath, ErrorBox, fmtDate, fmtSecs, familiarityNow, Modal, MultiSelect, names, pct, ResultBadge, toast } from "../ui";
 import { PaperBuilder } from "./PaperBuilder";
+import { BulkEdit } from "./BulkEdit";
 
 const SESSION_KEY = "library.filter";
 function loadFilter(): { def: FilterDef; savedId: string | null } {
@@ -17,8 +18,10 @@ function loadFilter(): { def: FilterDef; savedId: string | null } {
 
 export function Library() {
   const { boot, lib, error } = useData();
+  const [pending] = useState(() => takePendingFilter());
   const [state, setState] = useState(() => {
-    const p = takePendingFilter();
+    const p = pending;
+    if (p && p.def) return { def: p.def as FilterDef, savedId: null };
     return p ? { def: p as FilterDef, savedId: null } : loadFilter();
   });
   const { def, savedId } = state;
@@ -32,6 +35,8 @@ export function Library() {
   useEffect(() => {
     try { sessionStorage.setItem(SESSION_KEY, JSON.stringify(state)); } catch { /* ignore */ }
   }, [state]);
+  // Arriving from an import's "Edit questions": select everything it matched and open the form.
+  const [autoDone, setAutoDone] = useState(false);
 
   const results = useMemo(() => {
     if (!lib || !boot) return [];
@@ -48,6 +53,13 @@ export function Library() {
     (out as any).ms = performance.now() - t0;
     return out;
   }, [lib, boot, def, sort]);
+
+  useEffect(() => {
+    if (autoDone || !pending?.selectAll || !lib || !boot) return;
+    setAutoDone(true);
+    setSelected(new Set(results.map((q) => q.id)));
+    if (pending.openBulk && results.length) setShowBulk(true);
+  }, [lib, boot, results]);
 
   if (error) return <ErrorBox error={error} />;
   if (!boot || !lib) return <p class="muted">Loading library…</p>;
@@ -286,6 +298,13 @@ function CondEditor(props: { boot: Boot; lib: LibQ[]; cond: Cond; onChange: (c: 
       );
     case "text":
       return <input type="search" placeholder="words, Q number or ID" value={c.query} onInput={(e) => onChange({ ...c, query: (e.target as HTMLInputElement).value })} />;
+    case "import": {
+      const opts = (boot.imports ?? []).map((im) => ({
+        value: im.id,
+        label: `${im.label || im.file_name} · ${new Date(im.committed_at).toLocaleString(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`,
+      }));
+      return <MultiSelect value={c.ids} onChange={(ids) => onChange({ ...c, ids })} options={opts} placeholder="No imports yet" />;
+    }
     case "has_solution":
       return (
         <select value={c.value} onChange={(e) => onChange({ ...c, value: (e.target as HTMLSelectElement).value as any })}>
@@ -324,51 +343,4 @@ function CondEditor(props: { boot: Boot; lib: LibQ[]; cond: Cond; onChange: (c: 
       return <MultiSelect value={c.names} onChange={(names) => onChange({ ...c, names })} options={files.map((f) => ({ value: f, label: f }))} />;
     }
   }
-}
-
-function BulkEdit(props: { boot: Boot; ids: string[]; onClose: () => void; onDone: () => void }) {
-  const [subject, setSubject] = useState<string>("__keep");
-  const [diff, setDiff] = useState<string>("__keep");
-  const [concept, setConcept] = useState<string>("");
-  const [weight, setWeight] = useState(1);
-  const [err, setErr] = useState<string | null>(null);
-  const [busy, setBusy] = useState(false);
-  const save = async () => {
-    const body: any = { ids: props.ids };
-    if (subject !== "__keep") body.subject_id = subject || null;
-    if (diff !== "__keep") body.difficulty_code = diff || null;
-    if (concept) body.add_concept = { concept_id: concept, weight };
-    setBusy(true);
-    try {
-      await api("POST", "/api/questions-bulk", body);
-      await refresh();
-      toast(`Updated ${props.ids.length} question(s)`);
-      props.onDone();
-    } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
-  };
-  return (
-    <Modal title={`Edit ${props.ids.length} questions`} onClose={props.onClose}>
-      <ErrorBox error={err} />
-      <label class="field">Subject
-        <select value={subject} onChange={(e) => setSubject((e.target as HTMLSelectElement).value)}>
-          <option value="__keep">(leave as is)</option><option value="">(none)</option>
-          {props.boot.subjects.filter((s) => !s.archived_at).map((s) => <option value={s.id}>{s.name}</option>)}
-        </select>
-      </label>
-      <label class="field">Difficulty label
-        <select value={diff} onChange={(e) => setDiff((e.target as HTMLSelectElement).value)}>
-          <option value="__keep">(leave as is)</option><option value="">(none)</option>
-          {props.boot.difficulties.map((d) => <option value={d.code}>{d.label}</option>)}
-        </select>
-      </label>
-      <label class="field">Add a concept tag
-        <select value={concept} onChange={(e) => setConcept((e.target as HTMLSelectElement).value)}>
-          <option value="">(none)</option>
-          {props.boot.concepts.filter((c) => !c.archived_at).map((c) => <option value={c.id}>{conceptPath(props.boot, c.id)}</option>)}
-        </select>
-      </label>
-      {concept && <label class="field">Weight (0–1)<input type="number" step="0.1" min="0.1" max="1" value={weight} onInput={(e) => setWeight(Number((e.target as HTMLInputElement).value))} /></label>}
-      <div class="row end"><button class="btn" onClick={props.onClose}>Cancel</button><button class="btn primary" disabled={busy} onClick={save}>Apply</button></div>
-    </Modal>
-  );
 }

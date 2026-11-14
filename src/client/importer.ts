@@ -37,6 +37,7 @@ export interface PreparedQuestion {
 }
 
 export interface PreparedPack {
+  label: string; // name of this import (R1), defaults to the pack title
   sourceName: string;
   sourceBytes: Uint8Array;
   sourceMime: string;
@@ -194,7 +195,7 @@ async function preparePack(
     });
   }
   return {
-    sourceName, sourceBytes, sourceMime, sourceSha: await sha256Hex(sourceBytes), pack, syntax: parsed.syntax, repairs: parsed.repairs,
+    label: pack.title ?? "", sourceName, sourceBytes, sourceMime, sourceSha: await sha256Hex(sourceBytes), pack, syntax: parsed.syntax, repairs: parsed.repairs,
     fixes: parsed.fixes, questions, assetBlobs, warnings,
   };
 }
@@ -319,6 +320,7 @@ export async function commitPacks(
       if (!batch.length) return;
       const r = await api("POST", "/api/imports/commit", {
         source: { sha256: p.sourceSha, name: p.sourceName },
+        label: p.label.trim() || null,
         parser_version: PARSER_VERSION,
         update_existing: mapping.updateExisting,
         new_difficulties: newDiffs,

@@ -20,7 +20,9 @@ Live address: **https://practice-app.aarhaan22.workers.dev**
 | Analytics (FR-5) | Per question stats, per subject and concept accuracy with weekly trend (weighted by concept weight), personal difficulty, familiarity, weakest concepts with one-tap "build a paper on these", daily activity and streak. Metrics update in the same save as each grade and can be rebuilt from history with identical results. |
 | Backup (FR-6.3–6.5, DR-12) | One zip with all tables, all files, CSV copies and a checksum list. Restore checks every checksum first, then rebuilds all analytics and runs the integrity check. |
 
-Also: custom fields (created from a pack's `fields`, editable and filterable), multi-part questions marked part by part, an import history where a whole import can be archived and restored, and questions from the first (HTML-template) importer keep working unchanged.
+| Imports and bulk edit | **Import → Your imports** lists every import by time (newest or oldest first) with a search box, an optional name and note, and **Edit questions**: it opens the Library filtered to exactly the questions that import brought in (several imports can be chosen together; the Library also has an **Import** filter). The bulk form sets subject, topics (add / replace / remove, with weights), answer format, any custom field (set / clear), notes, and archive / unarchive / **delete permanently** — with a preview of what would change, then one all-or-nothing save. Questions you have attempted, or that are in a paper, are archived instead of deleted so your history stays complete. |
+
+Also: custom fields (created from a pack's `fields`, editable and filterable), multi-part questions marked part by part, and questions from the first (HTML-template) importer keep working unchanged.
 
 Not built yet: concept prerequisites (no table in the schema yet), spreadsheet import of metadata, re-grading old attempts when a key is added (FR-4.8), reordering a paper before starting (FR-3.8).
 
@@ -79,6 +81,8 @@ src/client/*             the screens (Preact); filtering, sampling, import, rend
 src/client/render.ts     Markdown + LaTeX (Temml → MathML) renderer for the locked question box
 migrations/0001_…sql     schema version 1 (from Artefacts/Initial Schema.sql)
 migrations/0002_…sql     schema version 2: question packs (external reference, marks, content format, solution format, paper solutions mode)
+migrations/0003_…sql     schema version 3: name and note for each import
+src/worker/bulk.ts       bulk edit / delete: preview and one-batch apply, set-based SQL, every change logged
 docs/                    question pack spec, JSON Schema, AI prompt, examples
 ```
 

@@ -5,6 +5,8 @@ export interface ErrorType { code: string; label: string }
 export interface SavedFilter { id: string; name: string; definition: string; updated_at: number }
 export interface CustomField { id: string; name: string; data_type: "text" | "number" | "date" | "boolean"; is_filterable: number; archived_at: number | null }
 
+export interface ImportRef { id: string; label: string | null; committed_at: number; file_name: string }
+
 export interface Boot {
   subjects: Subject[];
   concepts: Concept[];
@@ -12,6 +14,7 @@ export interface Boot {
   errorTypes: ErrorType[];
   filters: SavedFilter[];
   fields: CustomField[];
+  imports: ImportRef[];
   schemaVersion: number | null;
 }
 
@@ -28,6 +31,7 @@ export interface LibQ {
   content_format: string | null;
   has_solution: number | null; // null = none, 1 = verified, 2 = AI (unverified)
   fields: Record<string, string | number>;
+  batches: string[]; // imports that brought in a version of this question
   version_id: string;
   version_no: number;
   qno: string;

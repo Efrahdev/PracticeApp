@@ -113,7 +113,7 @@ export async function blobGet(env: Env, sha: string) {
 // ------------------------------------------------------------------ bootstrap & library
 
 export async function bootstrap(env: Env) {
-  const [subjects, concepts, difficulties, errorTypes, filters, version, fields] = await env.DB.batch([
+  const [subjects, concepts, difficulties, errorTypes, filters, version, fields, imports] = await env.DB.batch([
     env.DB.prepare(`SELECT * FROM subject ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT * FROM concept ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT * FROM difficulty ORDER BY sort_rank`),
@@ -121,8 +121,10 @@ export async function bootstrap(env: Env) {
     env.DB.prepare(`SELECT * FROM saved_filter WHERE archived_at IS NULL ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT max(version) AS v FROM schema_migration`),
     env.DB.prepare(`SELECT * FROM custom_field ORDER BY name COLLATE NOCASE`),
+    env.DB.prepare(`SELECT b.id, b.label, b.committed_at, sf.file_name FROM import_batch b JOIN source_file sf ON sf.id = b.source_file_id ORDER BY b.committed_at DESC`),
   ]);
   return json({
+    imports: imports.results,
     fields: fields.results,
     subjects: subjects.results,
     concepts: concepts.results,
@@ -139,6 +141,7 @@ export async function library(env: Env) {
     env.DB,
     `SELECT v.id, v.subject_id, v.difficulty_code, v.answer_format, v.created_at, v.archived_at, v.marks,
             v.version_id, v.version_no, v.source_question_number AS qno, v.plain_text, v.content_format,
+            (SELECT json_group_array(DISTINCT import_batch_id) FROM question_version WHERE question_id = v.id) AS batches,
             sf.file_name,
             (SELECT json_group_array(json_array(concept_id, weight)) FROM question_concept WHERE question_id = v.id) AS concepts,
             EXISTS (SELECT 1 FROM answer_key k WHERE k.question_version_id = v.version_id AND k.retired_at IS NULL AND k.origin <> 'suggestion') AS has_key,
@@ -305,40 +308,6 @@ export async function questionPatch(req: Request, env: Env, id: string) {
   if (dailyRebuild) stmts.push(...rebuildDailyStatements(db));
   await db.batch(stmts);
   return json({ changed: stmts.length });
-}
-
-/** FR-1.7: set subject / difficulty on many questions at once. */
-export async function questionsBulk(req: Request, env: Env) {
-  const body = await readJson<{ ids: string[]; subject_id?: string | null; difficulty_code?: string | null; add_concept?: { concept_id: string; weight: number } }>(req);
-  const db = env.DB;
-  if (!Array.isArray(body.ids) || !body.ids.length) throw new HttpError(400, "No questions selected.");
-  const t = now();
-  const cur = await all(db, `SELECT id, subject_id, difficulty_code FROM question WHERE id IN (SELECT value FROM json_each(?))`, JSON.stringify(body.ids));
-  const stmts: D1PreparedStatement[] = [];
-  let daily = false;
-  for (const q of cur) {
-    for (const col of ["subject_id", "difficulty_code"] as const) {
-      if (!(col in body)) continue;
-      const val = body[col] || null;
-      if (q[col] === val) continue;
-      stmts.push(db.prepare(`UPDATE question SET ${col} = ? WHERE id = ?`).bind(val, q.id));
-      stmts.push(logChange(db, "question", q.id as string, col, "update", q[col], val, t));
-      if (col === "subject_id") daily = true;
-      else stmts.push(questionStatStatement(db, q.id as string));
-    }
-    if (body.add_concept) {
-      const w = Number(body.add_concept.weight);
-      if (!(w > 0 && w <= 1)) throw new HttpError(400, "Weight must be above 0 and at most 1.");
-      stmts.push(db.prepare(`INSERT OR IGNORE INTO question_concept (question_id, concept_id, weight, created_at) VALUES (?,?,?,?)`)
-        .bind(q.id, body.add_concept.concept_id, w, t));
-      stmts.push(logChange(db, "question_concept", `${q.id}|${body.add_concept.concept_id}`, "weight", "insert", null, w, t));
-      daily = true;
-    }
-  }
-  if (!stmts.length) return json({ changed: 0 });
-  if (daily) stmts.push(...rebuildDailyStatements(db));
-  await db.batch(stmts);
-  return json({ changed: cur.length });
 }
 
 export async function answerKeySet(req: Request, env: Env, id: string) {

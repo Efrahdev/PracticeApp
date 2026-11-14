@@ -18,6 +18,7 @@ export type Cond =
   | { type: "source_file"; names: string[] }
   | { type: "has_key"; value: boolean }
   | { type: "has_solution"; value: "any" | "none" | "unverified" }
+  | { type: "import"; ids: string[] }
   | { type: "field"; field_id: string; op: "contains" | "equals" | ">=" | "<=" | "is_true" | "is_false" | "on_or_after" | "on_or_before" | "has_value" | "no_value"; value: string };
 
 export interface Group { op: "and" | "or"; conds: Cond[] }
@@ -40,6 +41,7 @@ export const COND_LABELS: Record<Cond["type"], string> = {
   source_file: "Source file",
   has_key: "Has answer key",
   has_solution: "Solution",
+  import: "Import",
   field: "Custom field",
 };
 
@@ -59,6 +61,7 @@ export function defaultCond(type: Cond["type"]): Cond {
     case "source_file": return { type, names: [] };
     case "has_key": return { type, value: true };
     case "has_solution": return { type, value: "any" };
+    case "import": return { type, ids: [] };
     case "field": return { type, field_id: "", op: "has_value", value: "" };
   }
 }
@@ -140,6 +143,10 @@ export function compile(def: FilterDef, concepts: Concept[], now = Date.now()): 
       }
       case "has_key":
         return (q) => !!q.has_key === c.value;
+      case "import": {
+        const s = new Set(c.ids);
+        return (q) => s.size === 0 || q.batches.some((b) => s.has(b));
+      }
       case "has_solution":
         return (q) => (c.value === "none" ? !q.has_solution : c.value === "unverified" ? q.has_solution === 2 : !!q.has_solution);
       case "field": {

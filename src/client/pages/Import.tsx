@@ -11,6 +11,7 @@ import { refresh, useData } from "../store";
 import type { Boot } from "../types";
 import { conceptPath, ErrorBox, Modal, Progress, toast } from "../ui";
 import { QuestionView, SolutionView, StoredView } from "../views";
+import { ImportHistory } from "./ImportHistory";
 
 const STATUS: Record<string, { label: string; cls: string }> = {
   new: { label: "New", cls: "s-new" },
@@ -162,6 +163,7 @@ export function Import() {
             </div>
           </section>
           {failures.length > 0 && <Failures failures={failures} />}
+          <ImportHistory />
         </>
       )}
 
@@ -196,6 +198,7 @@ export function Import() {
           <div class="row end"><button class="btn" onClick={reset}>Import more</button><a class="btn primary" href="#/">Go to library</a></div>
         </section>
       )}
+      {stage === "done" && <ImportHistory />}
 
       {showPrompt && (
         <Modal title="AI conversion prompt" onClose={() => setShowPrompt(false)} wide>
@@ -259,6 +262,9 @@ function Review(props: {
         <section class="card">
           <h2>{p.pack.title ?? p.sourceName}</h2>
           <p class="muted small">{p.sourceName}{p.pack.source ? ` · source: ${p.pack.source}` : ""} · pack id <code>{p.pack.key}</code> · {p.syntax.toUpperCase()}</p>
+          <label class="field">Name for this import <span class="muted small">(shown in your import history; optional)</span>
+            <input value={p.label} placeholder="e.g. Olympiad set 2, batch 1" onInput={(e) => { p.label = (e.target as HTMLInputElement).value; props.rerender(); }} />
+          </label>
           {p.warnings.length > 0 && <ul class="notes">{p.warnings.map((w) => <li>{w}</li>)}</ul>}
         </section>
       ))}

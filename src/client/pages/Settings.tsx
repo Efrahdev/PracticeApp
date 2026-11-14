@@ -3,8 +3,7 @@ import { api } from "../api";
 import { exportArchive, restoreArchive, verifyArchive, type VerifyReport } from "../backup";
 import { refresh, useData } from "../store";
 import type { Boot, Concept } from "../types";
-import { ErrorBox, fmtDateTime, Progress, toast } from "../ui";
-import { useEffect } from "preact/hooks";
+import { ErrorBox, Progress, toast } from "../ui";
 
 export function Settings() {
   const { boot } = useData();
@@ -12,7 +11,10 @@ export function Settings() {
   return (
     <div class="page">
       <div class="page-head"><h1>Settings</h1><span class="muted small">Schema version {boot.schemaVersion}</span></div>
-      <Imports />
+      <section class="card">
+        <h2>Imports</h2>
+        <p class="small">Your import history — search, name, edit or archive whole imports — is on the <a href="#/import">Import</a> screen.</p>
+      </section>
       <Taxonomy boot={boot} />
       <Fields boot={boot} />
       <Backup />
@@ -80,44 +82,6 @@ function ConceptTree(props: { boot: Boot; subjectId: string; parentId: string | 
         </li>
       ))}
     </ul>
-  );
-}
-
-function Imports() {
-  const [rows, setRows] = useState<any[] | null>(null);
-  const load = () => api("GET", "/api/imports").then((r) => setRows(r.imports)).catch(() => setRows([]));
-  useEffect(() => { load(); }, []);
-  const archive = async (id: string, archived: boolean, label: string) => {
-    if (archived && !confirm(`Archive every question first added by “${label}”? They disappear from the library and papers you build, but nothing is deleted and you can bring them back here.`)) return;
-    try {
-      const r = await api("POST", `/api/imports/${id}/archive`, { archived });
-      toast(`${archived ? "Archived" : "Restored"} ${r.changed} question(s)`);
-      await load();
-      await refresh();
-    } catch (e) { toast((e as Error).message, "error"); }
-  };
-  return (
-    <section class="card">
-      <h2>Import history</h2>
-      <p class="muted small">Every import is kept. If an import went wrong, archive its questions here (nothing is deleted; attempts stay), then import a corrected pack.</p>
-      {!rows ? <p class="muted">Loading…</p> : rows.length === 0 ? <p class="muted">No imports yet.</p> : (
-        <table class="table">
-          <thead><tr><th>File</th><th class="hide-sm">When</th><th>Added</th><th>Active</th><th /></tr></thead>
-          <tbody>{rows.map((r) => (
-            <tr>
-              <td>{r.file_name}<div class="small muted">{r.parser_version === "parse.ts@1" ? "old HTML importer" : "question pack"}{r.duplicate_count ? ` · ${r.duplicate_count} already had` : ""}</div></td>
-              <td class="hide-sm small">{fmtDateTime(r.committed_at)}</td>
-              <td>{r.new_count}{r.new_version_count ? ` + ${r.new_version_count} v` : ""}</td>
-              <td>{r.active_count}{r.archived_count ? <span class="muted small"> ({r.archived_count} archived)</span> : null}</td>
-              <td class="nowrap">
-                {r.active_count > 0 && <button class="btn ghost small" onClick={() => archive(r.id, true, r.file_name)}>Archive</button>}
-                {r.archived_count > 0 && <button class="btn ghost small" onClick={() => archive(r.id, false, r.file_name)}>Restore</button>}
-              </td>
-            </tr>
-          ))}</tbody>
-        </table>
-      )}
-    </section>
   );
 }
 

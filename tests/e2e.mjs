@@ -164,23 +164,83 @@ await shot("6-practice-solution");
 await page.getByRole("button", { name: "Pause & exit" }).click();
 await page.getByRole("link", { name: /Resume \(question/ }).waitFor();
 
-// 8. Undo an import: archive the YAML pack's questions, then bring them back
-await page.goto(`${BASE}/#/settings`);
-await page.getByRole("heading", { name: "Import history" }).waitFor();
-const yamlRow = page.locator("tr", { hasText: "mixed-pack.yaml" });
-await yamlRow.getByRole("button", { name: "Archive" }).click();
-await page.getByText("Archived 4 question(s)").waitFor();
-await page.goto(`${BASE}/#/`);
-await page.getByText("5 matches").waitFor({ timeout: 8000 }).catch(async (e) => {
-  if (shots) await page.screenshot({ path: path.join(shots, "fail-archive.png"), fullPage: true });
-  throw e;
-});
-await page.goto(`${BASE}/#/settings`);
-await page.locator("tr", { hasText: "mixed-pack.yaml" }).getByRole("button", { name: "Restore" }).click();
-await page.getByText("Restored 4 question(s)").waitFor();
-log("import history: archived a whole import (4) and restored it");
+// 8. Import history (R1): sorted by time, search, name + note
+await page.goto(`${BASE}/#/import`);
+await page.getByRole("heading", { name: "Your imports" }).waitFor();
+const firstRow = await page.locator(".import-row").first().innerText();
+if (!firstRow.includes("pasted")) fail("history is not newest first: " + firstRow.slice(0, 60));
+const yamlRow = () => page.locator(".import-row", { hasText: "mixed-pack.yaml" });
+await yamlRow().getByRole("button", { name: "Name / note" }).click();
+await yamlRow().getByLabel("Name").fill("Physics batch 1");
+await yamlRow().getByLabel("Note").fill("from the example pack");
+await yamlRow().getByRole("button", { name: "Save" }).click();
+await page.getByText("Saved", { exact: true }).waitFor();
+await page.getByLabel("Search imports").fill("physics batch");
+await page.locator(".import-row").first().getByText("Physics batch 1").waitFor();
+if ((await page.locator(".import-row").count()) !== 1) fail("search did not narrow the history");
+await page.getByLabel("Search imports").fill("");
+log("import history: newest first, named an import, search finds it");
 
-// 9. Integrity + rebuild + backup
+// 9. Edit questions of one import in bulk (R2–R4)
+await page.locator(".import-row", { hasText: "fractions-pack.json" }).getByRole("button", { name: "Edit questions" }).click();
+await page.getByRole("heading", { name: "Edit 5 questions" }).waitFor();
+const modal = page.locator(".modal");
+await modal.locator("label.field", { hasText: "Subject" }).locator("select").selectOption({ label: "Physics" });
+await modal.locator(".field", { hasText: "Topics" }).locator("select").first().selectOption("add");
+await modal.getByLabel("Topic to add to the list").selectOption({ label: "Physics: Mechanics › Forces" });
+await modal.getByRole("button", { name: "Add to list" }).click();
+await modal.getByLabel("Weight").fill("0.5");
+await modal.getByLabel("Collection: action").selectOption("set");
+await modal.getByLabel("Collection: value").fill("Renamed collection");
+await modal.locator(".field", { hasText: "Notes" }).locator("select").selectOption("append");
+await modal.locator(".field", { hasText: "Notes" }).locator("textarea").fill("Checked in bulk");
+await modal.getByRole("button", { name: "Preview changes" }).click();
+for (const line of ["5 subject changes", "5 topic tags added", "5 “Collection” values change", "5 notes change"]) await modal.getByText(line).waitFor();
+log("bulk preview: 5 subject, 5 topics, 5 field values, 5 notes");
+await modal.getByRole("button", { name: "Apply changes" }).click();
+await page.getByText("Changes saved").waitFor();
+const libNow = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions);
+const boot = await page.evaluate(async () => (await (await fetch("/api/bootstrap")).json()));
+const physics = boot.subjects.find((x) => x.name === "Physics").id;
+if (libNow.filter((q) => q.subject_id === physics).length !== 9) fail("subject not applied to all 5");
+log("bulk changes saved in one step (all 9 questions now Physics)");
+
+// 10. Bulk delete: a throwaway import is removed for good
+await page.goto(`${BASE}/#/import`);
+await page.locator("textarea").fill(JSON.stringify({ pack: { id: "throwaway", title: "Throwaway" }, questions: [{ stem: "Useless question one?" }, { stem: "Useless question two?" }] }));
+await page.getByRole("button", { name: "Check" }).click();
+await page.getByRole("button", { name: "Save 2 questions" }).click();
+await page.getByText("Import finished").waitFor();
+await page.locator(".import-row", { hasText: "Throwaway" }).getByRole("button", { name: "Edit questions" }).click();
+await page.getByRole("heading", { name: "Edit 2 questions" }).waitFor();
+await modal.locator(".field", { hasText: "Status" }).locator("select").selectOption("delete");
+await modal.getByRole("button", { name: "Preview changes" }).click();
+await modal.getByText("2 deleted permanently").waitFor();
+if (!(await modal.getByRole("button", { name: "Delete now" }).isDisabled())) fail("delete allowed without typing DELETE");
+await modal.getByLabel("Type DELETE to confirm").fill("DELETE");
+await modal.getByRole("button", { name: "Delete now" }).click();
+await page.getByText("Deleted 2 question(s)").waitFor();
+const after = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.length);
+if (after !== 9) fail(`expected 9 questions after delete, got ${after}`);
+log("bulk delete: 2 useless questions deleted permanently (typed confirmation)");
+
+// 11. Questions with history are archived instead of deleted, then restored
+await page.goto(`${BASE}/#/import`);
+await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("button", { name: "Edit questions" }).click();
+await page.getByRole("heading", { name: "Edit 4 questions" }).waitFor();
+await modal.locator(".field", { hasText: "Status" }).locator("select").selectOption("delete");
+await modal.getByRole("button", { name: "Preview changes" }).click();
+await modal.getByText("0 deleted permanently").waitFor();
+await modal.getByText(/4 kept because they have attempts or are in papers — 4 of them will be archived instead/).waitFor();
+await modal.getByRole("button", { name: "Delete now" }).click();
+await page.getByText(/archived 4 that have history/).waitFor();
+await page.goto(`${BASE}/#/import`);
+await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("button", { name: "Restore" }).click();
+await page.getByText("Restored 4 question(s)").waitFor();
+log("delete of practised questions archives them instead (history kept); restored from import history");
+
+// 12. Integrity + rebuild + backup
+await page.goto(`${BASE}/#/settings`);
 await page.getByRole("button", { name: "Run integrity check" }).click();
 await page.getByText(/no problems found/).waitFor();
 await page.getByRole("button", { name: "Rebuild all metrics" }).click();
@@ -192,7 +252,7 @@ const out = path.resolve(shots ?? ".", "backup-test.zip");
 await (await dl).saveAs(out);
 log("backup archive downloaded:", fs.statSync(out).size, "bytes");
 
-// 10. Phone layout
+// 13. Phone layout
 await page.setViewportSize({ width: 390, height: 844 });
 for (const route of ["#/", "#/import", "#/papers", "#/settings"]) {
   await page.goto(`${BASE}/${route}`);

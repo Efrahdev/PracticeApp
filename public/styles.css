@@ -149,6 +149,20 @@ li.error { color: var(--bad); }
 .nowrap { white-space: nowrap; }
 code { font-family: ui-monospace, Menlo, monospace; font-size: .88em; background: var(--accent-soft); padding: .05em .3em; border-radius: 4px; }
 
+/* bulk edit, import history */
+fieldset.bulk { border: 0; padding: 0; margin: 0; min-width: 0; }
+fieldset.bulk:disabled { opacity: .45; }
+.w8 { width: 8.5em; }
+.field-row { padding: .15rem 0; }
+.block-input { width: 100%; margin: .4rem 0 .6rem; }
+.imports { list-style: none; padding: 0; margin: 0; }
+.import-row { border-top: 1px solid var(--line); padding: .6rem 0; }
+.import-row .actions { justify-content: flex-end; }
+.import-row .note { color: var(--muted); font-style: italic; margin-top: .15rem; }
+.meta-edit { margin-top: .4rem; }
+.picked-bar { background: var(--accent-soft); border-radius: 8px; padding: .4rem .6rem; margin-bottom: .4rem; }
+.btn.danger { background: var(--bad); border-color: var(--bad); color: #fff; }
+
 /* practice */
 .practice-head { display: flex; align-items: center; gap: .5rem; }
 .dots { display: flex; gap: 3px; justify-content: center; flex-wrap: wrap; margin-top: .3rem; }
