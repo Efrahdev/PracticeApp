@@ -15,7 +15,7 @@ Live address: **https://practice-app.aarhaan22.workers.dev**
 | Papers with or without solutions | Each paper is built either **with solutions** (open any solution while practising; the printed copy ends with a solutions section) or **without** (test conditions). Any paper prints / saves as PDF. |
 | Questions (FR-1.6–1.7, 1.9, 1.11) | Shown in a locked box (sandboxed iframe: no scripts, no internet). Edit subject, concepts with weights, difficulty label, answer format, answer key, solution and notes; every edit goes to `change_log`. Bulk edit many at once. Concept tree with sub-concepts. Search by text, Q number or ID. |
 | Filters (FR-2) | Subject, concept (+ sub-concepts, minimum weight), difficulty, never attempted, attempt count, last result, last attempted N days ago, personal difficulty, date added, average time, source file, has key, text — combined with AND / OR groups, saved by name with relative dates. Runs on the device. |
-| Papers (FR-3) | Build from any filter, any length, never repeats; warns when the filter is too small; optional difficulty mix; favour wrong / not recent / weak concepts; same filter + settings + seed = same paper; shows why each question was picked; frozen forever once saved. |
+| Papers (FR-3) | **Paper builder** (Papers → New paper, or Library → Build paper with the current filter): a full page with the rules on the left and a live preview on the right. **Which questions:** your history (last attempted any time / never / more than / within / between N days, weeks or months ago; number of attempts; last result; average time; personal difficulty), a subject → concept tree with tick boxes at any level, difficulty labels, answer type, marks, solution, answer key, import, date added, archived, text, plus any Library AND / OR condition — every choice shows a live count. **How to pick:** mixes by subject, concept, difficulty, last result and answer type as % or counts, several at once (met together; anything that can't be met is reported, never hidden); favour wrong / not recent / weak concepts; order (random, easiest or hardest first, by subject, your own). **Preview:** summary tiles, split bars, and a detailed table (subject, concepts, difficulty, marks, type, solution, history, why it's here; columns fit the width or are chosen by you; text wraps; cards on a phone) where you can pin, replace, remove, reorder, add a specific question and open the question itself. Same rules + same seed = same paper; the rules are saved with the paper and shown on its page; frozen forever once saved. |
 | Practice (FR-4) | One at a time, pause and resume, time recorded quietly (no timers shown, no limits). Manual grading (correct / partial / incorrect) with error type, confidence and note; auto-marking for multiple choice and numeric questions that have a verified key; the solution after grading; correct any past grade (the old grade is kept); summary at the end. |
 | Analytics (FR-5) | Per question stats, per subject and concept accuracy with weekly trend (weighted by concept weight), personal difficulty, familiarity, weakest concepts with one-tap "build a paper on these", daily activity and streak. Metrics update in the same save as each grade and can be rebuilt from history with identical results. |
 | Backup (FR-6.3–6.5, DR-12) | One zip with all tables, all files, CSV copies and a checksum list. Restore checks every checksum first, then rebuilds all analytics and runs the integrity check. |
@@ -24,7 +24,7 @@ Live address: **https://practice-app.aarhaan22.workers.dev**
 
 Also: custom fields (created from a pack's `fields`, editable and filterable), multi-part questions marked part by part, and questions from the first (HTML-template) importer keep working unchanged.
 
-Not built yet: concept prerequisites (no table in the schema yet), spreadsheet import of metadata, re-grading old attempts when a key is added (FR-4.8), reordering a paper before starting (FR-3.8).
+Not built yet: concept prerequisites (no table in the schema yet), spreadsheet import of metadata, re-grading old attempts when a key is added (FR-4.8).
 
 ## Importing questions
 
@@ -47,7 +47,7 @@ Everything runs in a cloud container (Claude Code on the web, or GitHub Codespac
 ```bash
 npm install
 npm run build            # bundles the screens into the Worker
-npm test                 # unit tests (parser, filters, sampler)
+npm test                 # unit tests (parser, filters, sampler, paper builder)
 npm run dev              # local Worker with local D1 + R2 (needs .dev.vars: DEV_ALLOW_NO_AUTH=1)
 node tests/e2e.mjs       # full browser walk-through against the local Worker (start from an empty local DB: ./scripts/local-reset.sh)
 ```
@@ -77,6 +77,7 @@ src/worker/auth.ts       verifies the Cloudflare Access token (fails closed)
 src/worker/api.ts        import, metadata, papers, attempts, grades
 src/worker/metrics.ts    the SQL behind every metric — the live update and the rebuild share it
 src/worker/admin.ts      export, restore, integrity check
+src/client/builder/*     paper builder: blueprint (spec), pool rules + live counts, generator v2, table and panels
 src/client/*             the screens (Preact); filtering, sampling, import, rendering, printing and backup zips run on the device
 src/client/render.ts     Markdown + LaTeX (Temml → MathML) renderer for the locked question box
 migrations/0001_…sql     schema version 1 (from Artefacts/Initial Schema.sql)

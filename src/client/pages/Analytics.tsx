@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import { api, localDate } from "../api";
-import { emptyFilter } from "../filter";
-import { setPendingFilter, useData } from "../store";
+import { descendants } from "../filter";
+import { openBuilder, useData } from "../store";
 import { conceptPath, ErrorBox, LineChart, names } from "../ui";
 
 interface AData {
@@ -94,12 +94,8 @@ export function Analytics() {
     .sort((a, b) => a.acc - b.acc);
   const weakest = concepts.filter((c) => c.n >= 3).slice(0, 5);
 
-  const buildOn = (ids: string[]) => {
-    const def = emptyFilter();
-    def.groups[0].conds.push({ type: "concept", ids, includeSub: true, minWeight: 0 });
-    setPendingFilter(def);
-    location.hash = "#/";
-  };
+  // Straight into the paper builder with these concepts (and their sub-concepts) ticked.
+  const buildOn = (ids: string[]) => openBuilder({ tree: [...descendants(boot.concepts, ids)], favourWeak: true, name: "Weak concepts" });
 
   const subjIds = [...view.subjAgg.keys()];
   const shownSubj = subjectSel ? [subjectSel] : subjIds.slice(0, 5);

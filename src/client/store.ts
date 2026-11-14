@@ -52,3 +52,23 @@ export const takePendingFilter = () => {
   pendingFilter = null;
   return f;
 };
+
+// Hand-off into the paper builder (#/papers/new): the Library's current filter,
+// "build a paper on these concepts" from Progress, or nothing (a fresh paper).
+export interface BuildInit {
+  def?: unknown; // a Library FilterDef
+  savedFilterId?: string | null;
+  tree?: string[];
+  name?: string;
+  favourWeak?: boolean;
+}
+let pendingBuild: BuildInit | null = null;
+export function openBuilder(init: BuildInit = {}) {
+  pendingBuild = init;
+  location.hash = "#/papers/new";
+}
+export const takePendingBuild = () => {
+  const p = pendingBuild;
+  pendingBuild = null;
+  return p;
+};

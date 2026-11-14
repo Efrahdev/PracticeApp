@@ -638,7 +638,7 @@ export async function paperDetail(env: Env, id: string) {
   const [items, sessions, attempts] = await db.batch([
     db.prepare(
       `SELECT pi.position, pi.question_id, pi.question_version_id, pi.pick_reason,
-              v.html_blob_sha256, v.content_format, v.source_question_number AS qno, v.plain_text,
+              v.html_blob_sha256, v.content_format, v.source_question_number AS qno, v.plain_text, v.version_no,
               q.subject_id, q.difficulty_code, q.answer_format, q.option_labels, q.marks,
               EXISTS (SELECT 1 FROM solution s WHERE s.question_version_id = v.id AND s.retired_at IS NULL) AS has_solution,
               (SELECT blob_sha256 FROM question_version_asset WHERE question_version_id = v.id AND role = 'stylesheet' LIMIT 1) AS css_sha256,

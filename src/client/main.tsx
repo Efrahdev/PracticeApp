@@ -1,4 +1,4 @@
-import { render, type ComponentType } from "preact";
+import { render, type ComponentChild, type ComponentType } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import temmlCss from "temml/dist/Temml-Local.css";
 import { setMathCss } from "./render";
@@ -6,6 +6,7 @@ import { Toaster } from "./ui";
 import { Library } from "./pages/Library";
 import { Question } from "./pages/Question";
 import { Papers, PaperDetail } from "./pages/Papers";
+import { PaperBuilder } from "./pages/PaperBuilder";
 import { Practice } from "./pages/Practice";
 import { Analytics } from "./pages/Analytics";
 import { Settings } from "./pages/Settings";
@@ -33,14 +34,16 @@ function useHash() {
   return h;
 }
 
-function route(h: string) {
+function route(h: string): { tab: string; el: ComponentChild; bare?: boolean; wide?: boolean } {
   const parts = h.replace(/^#\/?/, "").split("/").filter(Boolean);
   const [a, b] = parts;
   switch (a) {
     case undefined: return { tab: "library", el: <Library /> };
     case "import": return { tab: "import", el: <LazyImport /> };
     case "q": return { tab: "library", el: <Question id={b} /> };
-    case "papers": return b ? { tab: "papers", el: <PaperDetail id={b} /> } : { tab: "papers", el: <Papers /> };
+    case "papers":
+      if (b === "new") return { tab: "papers", el: <PaperBuilder />, wide: true };
+      return b ? { tab: "papers", el: <PaperDetail id={b} /> } : { tab: "papers", el: <Papers /> };
     case "practice": return { tab: "papers", el: <Practice key={b} paperId={b} />, bare: true };
     case "practice-q": return { tab: "library", el: <Practice key={b} questionId={b} />, bare: true };
     case "analytics": return { tab: "analytics", el: <Analytics /> };
@@ -74,7 +77,7 @@ function App() {
           </nav>
         </header>
       )}
-      <main class={r.bare ? "bare" : ""}>{r.el}</main>
+      <main class={r.bare ? "bare" : r.wide ? "wide" : ""}>{r.el}</main>
       <Toaster />
     </>
   );

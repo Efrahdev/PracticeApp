@@ -103,10 +103,37 @@ await page.goto(`${BASE}/#/`);
 await page.getByRole("button", { name: "Clear" }).click();
 await page.getByText("9 matches").waitFor();
 await page.getByRole("button", { name: "Build paper" }).click();
-await page.locator('label.field:has-text("Number of questions") input').fill("9");
-await page.locator('label.field:has-text("Name") input').fill("Test paper");
-await page.getByLabel(/No solutions/).check();
-await page.getByRole("button", { name: /Save paper \(9\)/ }).click();
+await page.getByRole("heading", { name: "Build a paper" }).waitFor();
+await page.getByRole("textbox", { name: "Paper name" }).fill("Test paper");
+await page.getByRole("spinbutton", { name: "Number of questions" }).fill("9");
+await page.getByRole("radio", { name: "Test conditions" }).click();
+// Builder: two mixes at once, a history rule, pin and replace, the detailed table
+const mixRow = (name) => page.locator(".mix-dim", { hasText: name });
+await mixRow("By subject").locator("input.switch").check();
+await mixRow("By subject").getByLabel("Maths share").fill("50");
+await mixRow("By difficulty").locator("input.switch").check();
+await page.locator(".dt-row:not(.dt-head)").nth(8).waitFor();
+if (await page.locator(".mix-dim", { hasText: "By subject" }).getByText("On target").count() !== 1) fail("subject mix not on target");
+await page.getByRole("radio", { name: "Never", exact: true }).click();
+await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
+await page.getByRole("radio", { name: "More than" }).click();
+await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor(); // never attempted counts as "long ago"
+await page.getByRole("radio", { name: "Within" }).click();
+await page.locator(".pb-meter-n", { hasText: "0 of 9 questions match" }).waitFor();
+await page.getByRole("radio", { name: "Any time" }).click();
+const rowsB = page.locator(".dt-row:not(.dt-head)");
+const firstPick = await rowsB.nth(0).locator(".dt-qno").innerText();
+await rowsB.nth(0).getByRole("button", { name: /^Pin / }).click();
+await page.getByRole("button", { name: "Shuffle", exact: true }).click();
+if (!(await page.locator(".dt-qno", { hasText: new RegExp(`^${firstPick}$`) }).count())) fail("pinned question lost on shuffle");
+await rowsB.nth(1).getByRole("button", { name: /^Replace / }).click();
+await page.getByText("Removed from this paper (1)").waitFor();
+await page.getByText(/Only 8 questions can be used, but the paper asks for 9/).waitFor(); // only 9 in the library
+await shot("4a-builder");
+await page.getByText("Removed from this paper (1)").click();
+await page.getByRole("button", { name: "Put back" }).click();
+log("builder: subject + difficulty mixes on target, history rule, pin survives shuffle, replace");
+await page.getByRole("button", { name: /Save paper \(9\)/ }).first().click();
 await page.getByText("No solutions", { exact: true }).waitFor();
 log("paper saved with solutions left out");
 await page.getByRole("link", { name: "Start" }).click();
@@ -137,10 +164,12 @@ await shot("4-summary");
 
 // 7. Paper WITH solutions: solution available before grading; print
 await page.goto(`${BASE}/#/`);
-await page.getByRole("button", { name: "Build paper" }).click();
-await page.locator('label.field:has-text("Number of questions") input').fill("3");
-await page.locator('label.field:has-text("Name") input').fill("With solutions");
-await page.getByRole("button", { name: /Save paper \(3\)/ }).click();
+await page.goto(`${BASE}/#/papers`);
+await page.getByRole("button", { name: "New paper" }).click();
+await page.getByRole("heading", { name: "Build a paper" }).waitFor();
+await page.getByRole("spinbutton", { name: "Number of questions" }).fill("3");
+await page.getByRole("textbox", { name: "Paper name" }).fill("With solutions");
+await page.getByRole("button", { name: /Save paper \(3\)/ }).first().click();
 await page.getByText("Solutions included", { exact: true }).waitFor();
 const [popup] = await Promise.all([page.waitForEvent("popup"), page.getByRole("button", { name: "Print / PDF" }).click()]);
 await popup.getByRole("heading", { name: "Solutions", exact: true }).waitFor({ timeout: 20000 });
@@ -254,7 +283,7 @@ log("backup archive downloaded:", fs.statSync(out).size, "bytes");
 
 // 13. Phone layout
 await page.setViewportSize({ width: 390, height: 844 });
-for (const route of ["#/", "#/import", "#/papers", "#/settings"]) {
+for (const route of ["#/", "#/import", "#/papers", "#/papers/new", "#/settings"]) {
   await page.goto(`${BASE}/${route}`);
   await page.waitForTimeout(400);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) fail(`horizontal scroll on phone width at ${route}`);

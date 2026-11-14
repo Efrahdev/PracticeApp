@@ -1,10 +1,9 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import { api } from "../api";
 import { compile, COND_LABELS, defaultCond, emptyFilter, parseDef, type Cond, type FilterDef, type Group } from "../filter";
-import { refresh, takePendingFilter, useData } from "../store";
+import { openBuilder, refresh, takePendingFilter, useData } from "../store";
 import type { Boot, LibQ } from "../types";
 import { conceptPath, ErrorBox, fmtDate, fmtSecs, familiarityNow, Modal, MultiSelect, names, pct, ResultBadge, toast } from "../ui";
-import { PaperBuilder } from "./PaperBuilder";
 import { BulkEdit } from "./BulkEdit";
 
 const SESSION_KEY = "library.filter";
@@ -27,7 +26,6 @@ export function Library() {
   const { def, savedId } = state;
   const setDef = (d: FilterDef, id: string | null = savedId) => setState({ def: d, savedId: id });
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const [showBuilder, setShowBuilder] = useState(false);
   const [showBulk, setShowBulk] = useState(false);
   const [limit, setLimit] = useState(100);
   const [sort, setSort] = useState<"qno" | "added" | "last" | "attempts">("added");
@@ -138,7 +136,8 @@ export function Library() {
               </select>
             </label>
             {selected.size > 0 && <button class="btn" onClick={() => setShowBulk(true)}>Edit {selected.size} selected</button>}
-            <button class="btn primary" disabled={!results.length} onClick={() => setShowBuilder(true)}>Build paper</button>
+            <button class="btn primary" disabled={!results.length} onClick={() => openBuilder({ def, savedFilterId: savedId })}
+              title="Open the paper builder with this filter">Build paper</button>
           </div>
 
           <div class="qlist" role="list">
@@ -173,13 +172,12 @@ export function Library() {
         </>
       )}
 
-      {showBuilder && <PaperBuilder candidates={results} def={def} savedFilterId={savedId} onClose={() => setShowBuilder(false)} />}
       {showBulk && <BulkEdit boot={boot} ids={[...selected]} onClose={() => setShowBulk(false)} onDone={() => { setShowBulk(false); setSelected(new Set()); }} />}
     </div>
   );
 }
 
-function FilterEditor(props: { boot: Boot; lib: LibQ[]; def: FilterDef; onChange: (d: FilterDef) => void }) {
+export function FilterEditor(props: { boot: Boot; lib: LibQ[]; def: FilterDef; onChange: (d: FilterDef) => void }) {
   const { def, onChange } = props;
   const setGroup = (i: number, g: Group) => onChange({ ...def, groups: def.groups.map((x, j) => (j === i ? g : x)) });
   return (
