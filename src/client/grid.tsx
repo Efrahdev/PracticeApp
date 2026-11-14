@@ -264,11 +264,11 @@ export function SortTable<T>(props: { rows: T[]; cols: SortCol<T>[]; initial?: S
   for (const c of props.cols) if (c.get) getters[c.key] = c.get;
   const { sorted, Th } = useTableSort(props.rows, getters, props.initial ?? null);
   return (
-    <table class={`table ${props.class ?? ""}`}>
+    <div class="table-scroll"><table class={`table ${props.class ?? ""}`}>
       <thead>
         <tr>{props.cols.map((c) => (c.get ? <Th k={c.key} first={c.first} class={c.class}>{c.label}</Th> : <th class={c.class}>{c.label}</th>))}</tr>
       </thead>
       <tbody>{sorted.map((r) => <tr>{props.cols.map((c) => <td class={c.class}>{c.render(r)}</td>)}</tr>)}</tbody>
-    </table>
+    </table></div>
   );
 }

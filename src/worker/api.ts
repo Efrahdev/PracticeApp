@@ -850,10 +850,25 @@ export async function gradeCorrect(req: Request, env: Env, attemptId: string) {
 // ------------------------------------------------------------------ analytics (FR-5)
 
 export async function analytics(env: Env) {
-  const [concept, subject, daily] = await env.DB.batch([
-    env.DB.prepare(`SELECT * FROM concept_daily_stat ORDER BY local_date`),
-    env.DB.prepare(`SELECT * FROM subject_daily_stat ORDER BY local_date`),
-    env.DB.prepare(`SELECT * FROM v_daily_activity ORDER BY local_date`),
+  const db = env.DB;
+  const G = `FROM attempt a LEFT JOIN v_effective_grade g ON g.attempt_id = a.id`;
+  const [concept, subject, daily, days, byDiff, errors, confidence] = await db.batch([
+    db.prepare(`SELECT * FROM concept_daily_stat ORDER BY local_date`),
+    db.prepare(`SELECT * FROM subject_daily_stat ORDER BY local_date`),
+    db.prepare(`SELECT * FROM v_daily_activity ORDER BY local_date`),
+    // Per day: answered, graded, score, correct, time (for period KPIs and trends)
+    db.prepare(`SELECT a.local_date, count(*) AS attempts, count(g.id) AS graded, coalesce(sum(g.score_permille), 0) AS score_sum,
+                       sum(CASE WHEN g.result = 'correct' THEN 1 ELSE 0 END) AS correct, sum(a.time_taken_seconds) AS secs
+                ${G} GROUP BY a.local_date ORDER BY a.local_date`),
+    db.prepare(`SELECT a.local_date, q.difficulty_code AS code, count(g.id) AS graded, coalesce(sum(g.score_permille), 0) AS score_sum, sum(a.time_taken_seconds) AS secs, count(*) AS attempts
+                ${G} JOIN question q ON q.id = a.question_id GROUP BY a.local_date, q.difficulty_code`),
+    db.prepare(`SELECT a.local_date, g.error_type_code AS code, count(*) AS n ${G}
+                WHERE g.error_type_code IS NOT NULL AND g.result <> 'correct' GROUP BY a.local_date, g.error_type_code`),
+    db.prepare(`SELECT a.local_date, g.confidence AS level, count(*) AS n, sum(g.score_permille) AS score_sum ${G}
+                WHERE g.confidence IS NOT NULL GROUP BY a.local_date, g.confidence`),
   ]);
-  return json({ concept: concept.results, subject: subject.results, daily: daily.results });
+  return json({
+    concept: concept.results, subject: subject.results, daily: daily.results,
+    days: days.results, byDiff: byDiff.results, errors: errors.results, confidence: confidence.results,
+  });
 }

@@ -293,6 +293,15 @@ const bootNow = await page.evaluate(async () => (await (await fetch("/api/bootst
 if (bootNow.subjects.some((x) => x.name === "Junk subject") || bootNow.concepts.some((c) => c.name === "Equivalent fractions")) fail("taxonomy delete did not remove the items");
 log("taxonomy: junk subject deleted; used concept deleted with its question re-tagged", eqBefore >= 0 ? "" : "");
 
+// Dashboard: KPIs, insights and charts render from the practice above
+await page.goto(`${BASE}/#/analytics`);
+await page.getByRole("heading", { name: "Your dashboard" }).waitFor();
+await page.getByRole("radio", { name: "All time" }).click();
+await page.locator(".kpi", { hasText: "Questions answered" }).locator(".kpi-value", { hasText: /^[1-9]\d*$/ }).waitFor();
+await page.locator(".heatmap").waitFor();
+await page.getByRole("heading", { name: "Mastery of your question bank" }).waitFor();
+log("dashboard: period switch, KPIs from real attempts, calendar and mastery");
+
 // 13. Integrity + rebuild + backup
 await page.goto(`${BASE}/#/settings`);
 await page.getByRole("button", { name: "Run integrity check" }).click();
@@ -308,7 +317,7 @@ log("backup archive downloaded:", fs.statSync(out).size, "bytes");
 
 // 13. Phone layout
 await page.setViewportSize({ width: 390, height: 844 });
-for (const route of ["#/", "#/import", "#/papers", "#/papers/new", "#/settings"]) {
+for (const route of ["#/", "#/import", "#/papers", "#/papers/new", "#/analytics", "#/settings"]) {
   await page.goto(`${BASE}/${route}`);
   await page.waitForTimeout(400);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) fail(`horizontal scroll on phone width at ${route}`);

@@ -46,7 +46,7 @@ function route(h: string): { tab: string; el: ComponentChild; bare?: boolean; wi
       return b ? { tab: "papers", el: <PaperDetail id={b} />, wide: true } : { tab: "papers", el: <Papers />, wide: true };
     case "practice": return { tab: "papers", el: <Practice key={b} paperId={b} />, bare: true };
     case "practice-q": return { tab: "library", el: <Practice key={b} questionId={b} />, bare: true };
-    case "analytics": return { tab: "analytics", el: <Analytics /> };
+    case "analytics": return { tab: "analytics", el: <Analytics />, wide: true };
     case "settings": return { tab: "settings", el: <Settings /> };
     default: return { tab: "", el: <div class="page"><p>Page not found. <a href="#/">Go to library</a></p></div> };
   }
