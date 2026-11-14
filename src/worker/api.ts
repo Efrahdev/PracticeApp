@@ -113,15 +113,17 @@ export async function blobGet(env: Env, sha: string) {
 // ------------------------------------------------------------------ bootstrap & library
 
 export async function bootstrap(env: Env) {
-  const [subjects, concepts, difficulties, errorTypes, filters, version] = await env.DB.batch([
+  const [subjects, concepts, difficulties, errorTypes, filters, version, fields] = await env.DB.batch([
     env.DB.prepare(`SELECT * FROM subject ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT * FROM concept ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT * FROM difficulty ORDER BY sort_rank`),
     env.DB.prepare(`SELECT * FROM error_type WHERE archived_at IS NULL ORDER BY label`),
     env.DB.prepare(`SELECT * FROM saved_filter WHERE archived_at IS NULL ORDER BY name COLLATE NOCASE`),
     env.DB.prepare(`SELECT max(version) AS v FROM schema_migration`),
+    env.DB.prepare(`SELECT * FROM custom_field ORDER BY name COLLATE NOCASE`),
   ]);
   return json({
+    fields: fields.results,
     subjects: subjects.results,
     concepts: concepts.results,
     difficulties: difficulties.results,
@@ -135,11 +137,14 @@ export async function bootstrap(env: Env) {
 export async function library(env: Env) {
   const rows = await all(
     env.DB,
-    `SELECT v.id, v.subject_id, v.difficulty_code, v.answer_format, v.created_at, v.archived_at,
-            v.version_id, v.version_no, v.source_question_number AS qno, v.plain_text,
+    `SELECT v.id, v.subject_id, v.difficulty_code, v.answer_format, v.created_at, v.archived_at, v.marks,
+            v.version_id, v.version_no, v.source_question_number AS qno, v.plain_text, v.content_format,
             sf.file_name,
             (SELECT json_group_array(json_array(concept_id, weight)) FROM question_concept WHERE question_id = v.id) AS concepts,
-            EXISTS (SELECT 1 FROM answer_key k WHERE k.question_version_id = v.version_id AND k.retired_at IS NULL) AS has_key,
+            EXISTS (SELECT 1 FROM answer_key k WHERE k.question_version_id = v.version_id AND k.retired_at IS NULL AND k.origin <> 'suggestion') AS has_key,
+            (SELECT CASE WHEN s.origin = 'suggestion' THEN 2 ELSE 1 END FROM solution s WHERE s.question_version_id = v.version_id AND s.retired_at IS NULL) AS has_solution,
+            (SELECT json_group_object(field_id, CASE WHEN value_text IS NOT NULL THEN value_text WHEN value_number IS NOT NULL THEN value_number
+                     WHEN value_date IS NOT NULL THEN value_date ELSE value_bool END) FROM question_field_value WHERE question_id = v.id) AS fields,
             s.attempt_count, s.graded_count, s.correct_count, s.score_permille_sum, s.total_time_seconds,
             s.last_attempted_at, s.last_time_seconds, s.last_result,
             s.personal_difficulty_permille, s.familiarity_permille
@@ -169,8 +174,10 @@ export async function questionDetail(env: Env, id: string) {
     env.DB.prepare(`SELECT sf.file_name, b.committed_at FROM import_batch b JOIN source_file sf ON sf.id = b.source_file_id WHERE b.id = ?`).bind(q.import_batch_id),
   ]);
   const stat = await first(env.DB, `SELECT * FROM question_stat WHERE question_id = ?`, id);
+  const fieldValues = await all(env.DB, `SELECT * FROM question_field_value WHERE question_id = ?`, id);
   return json({
     question: q,
+    fields: fieldValues,
     versions: versions.results,
     concepts: concepts.results,
     answerKey: key.results[0] ?? null,
@@ -180,227 +187,6 @@ export async function questionDetail(env: Env, id: string) {
     grades: grades.results,
     source: source.results[0] ?? null,
     stat,
-  });
-}
-
-// ------------------------------------------------------------------ import (FR-1.1–1.4, DR-1/2/4)
-
-interface ImportQuestionIn {
-  position: number;
-  number: string;
-  category_key: string | null;
-  band: string | null;
-  html_sha256: string;
-  content_sha256: string;
-  plain_text: string;
-  solution_sha256: string | null;
-  accept: boolean;
-}
-
-async function classify(env: Env, fileName: string, qs: { number: string; content_sha256: string }[]) {
-  const byContent = new Map(
-    (await all<{ content_sha256: string; question_id: string }>(
-      env.DB,
-      `SELECT content_sha256, question_id FROM question_version WHERE content_sha256 IN (SELECT value FROM json_each(?))`,
-      JSON.stringify(qs.map((q) => q.content_sha256)),
-    )).map((r) => [r.content_sha256, r.question_id]),
-  );
-  // Same file name + same printed question number = the same question (a changed one becomes a new version).
-  const bySource = new Map<string, { question_id: string; version_no: number }>();
-  for (const r of await all<{ question_id: string; qno: string; version_no: number }>(
-    env.DB,
-    `SELECT v.id AS question_id, v.source_question_number AS qno, v.version_no
-       FROM v_question_current v
-       JOIN import_batch b ON b.id = v.import_batch_id
-       JOIN source_file sf ON sf.id = b.source_file_id
-      WHERE sf.file_name = ? AND v.archived_at IS NULL
-      ORDER BY v.created_at`,
-    fileName,
-  )) bySource.set(r.qno, { question_id: r.question_id, version_no: r.version_no });
-
-  const seen = new Map<string, number>();
-  return qs.map((q, i) => {
-    const dupOf = byContent.get(q.content_sha256);
-    if (dupOf) return { status: "duplicate" as const, question_id: dupOf };
-    if (seen.has(q.content_sha256)) return { status: "duplicate_in_file" as const, question_id: null, same_as: seen.get(q.content_sha256) };
-    seen.set(q.content_sha256, i);
-    const src = bySource.get(q.number);
-    if (src) return { status: "new_version" as const, question_id: src.question_id, next_version: src.version_no + 1 };
-    return { status: "new" as const, question_id: null };
-  });
-}
-
-export async function importPreview(req: Request, env: Env) {
-  const body = await readJson<{ file_name: string; questions: { number: string; content_sha256: string }[] }>(req);
-  need(body.file_name, "file_name is required");
-  return json({ results: await classify(env, body.file_name, body.questions ?? []) });
-}
-
-export async function importCommit(req: Request, env: Env) {
-  const body = await readJson<{
-    file: { sha256: string; name: string };
-    css_sha256: string;
-    parser_version: string;
-    subject: { id?: string; name?: string } | null;
-    categories: { key: string; name: string }[];
-    questions: ImportQuestionIn[];
-  }>(req);
-  const db = env.DB;
-  const t = now();
-  need(body.file?.sha256, "file.sha256 is required");
-  need(body.file?.name, "file.name is required");
-  if (!Array.isArray(body.questions) || body.questions.length === 0) throw new HttpError(400, "No questions to import.");
-
-  // Every referenced file must already be in storage.
-  const needed = new Set<string>([body.file.sha256, body.css_sha256]);
-  for (const q of body.questions) {
-    if (!q.accept) continue;
-    needed.add(q.html_sha256);
-    if (q.solution_sha256) needed.add(q.solution_sha256);
-  }
-  const have = new Set(
-    (await all<{ sha256: string }>(db, `SELECT sha256 FROM blob WHERE sha256 IN (SELECT value FROM json_each(?))`, JSON.stringify([...needed])))
-      .map((r) => r.sha256),
-  );
-  const missing = [...needed].filter((h) => !have.has(h));
-  if (missing.length) throw new HttpError(409, `${missing.length} file(s) were not uploaded yet; retry the import.`);
-
-  const status = await classify(env, body.file.name, body.questions);
-  const stmts: D1PreparedStatement[] = [];
-
-  // Subject: existing id, existing name, or new.
-  let subjectId: string | null = null;
-  if (body.subject?.id) {
-    const s = await first(db, `SELECT id FROM subject WHERE id = ?`, body.subject.id);
-    if (!s) throw new HttpError(400, "Chosen subject does not exist.");
-    subjectId = body.subject.id;
-  } else if (body.subject?.name?.trim()) {
-    const name = body.subject.name.trim();
-    const s = await first<{ id: string }>(db, `SELECT id FROM subject WHERE name = ? COLLATE NOCASE AND archived_at IS NULL`, name);
-    if (s) subjectId = s.id;
-    else {
-      subjectId = ulid(t);
-      stmts.push(db.prepare(`INSERT INTO subject (id, name, created_at) VALUES (?,?,?)`).bind(subjectId, name, t));
-    }
-  }
-
-  // Categories become top-level concepts under the subject (matched by name).
-  const conceptByKey = new Map<string, string>();
-  if (subjectId) {
-    const existing = await all<{ id: string; name: string }>(
-      db,
-      `SELECT id, name FROM concept WHERE subject_id = ? AND parent_id IS NULL AND archived_at IS NULL`,
-      subjectId,
-    );
-    const byName = new Map(existing.map((c) => [c.name.toLowerCase(), c.id]));
-    for (const c of body.categories ?? []) {
-      const nm = (c.name ?? "").trim();
-      if (!nm) continue;
-      let id = byName.get(nm.toLowerCase());
-      if (!id) {
-        id = ulid(t);
-        byName.set(nm.toLowerCase(), id);
-        stmts.push(db.prepare(`INSERT INTO concept (id, subject_id, parent_id, name, created_at) VALUES (?,?,NULL,?,?)`).bind(id, subjectId, nm, t));
-      }
-      conceptByKey.set(c.key, id);
-    }
-  }
-
-  // Source file (same bytes = same row) and the batch.
-  const sf = await first<{ id: string }>(db, `SELECT id FROM source_file WHERE blob_sha256 = ?`, body.file.sha256);
-  const sourceFileId = sf?.id ?? ulid(t);
-  if (!sf) {
-    stmts.push(db.prepare(`INSERT INTO source_file (id, blob_sha256, file_name, created_at) VALUES (?,?,?,?)`)
-      .bind(sourceFileId, body.file.sha256, body.file.name, t));
-  }
-  const batchId = ulid(t);
-  const difficulties = new Set((await all<{ code: string }>(db, `SELECT code FROM difficulty WHERE archived_at IS NULL`)).map((r) => r.code));
-
-  const qRows: Row[] = [];
-  const vRows: Row[] = [];
-  const aRows: Row[] = [];
-  const solRows: Row[] = [];
-  const tagRows: Row[] = [];
-  let newCount = 0, newVersionCount = 0, dupCount = 0, rejected = 0;
-  const outcome: { position: number; status: string; question_id: string | null }[] = [];
-
-  body.questions.forEach((q, i) => {
-    const st = status[i];
-    if (!q.accept) {
-      rejected++;
-      outcome.push({ position: q.position, status: "rejected", question_id: null });
-      return;
-    }
-    if (st.status === "duplicate" || st.status === "duplicate_in_file") {
-      dupCount++;
-      outcome.push({ position: q.position, status: "duplicate", question_id: st.question_id });
-      return;
-    }
-    let questionId: string;
-    let versionNo = 1;
-    if (st.status === "new_version") {
-      questionId = st.question_id!;
-      versionNo = st.next_version!;
-      newVersionCount++;
-    } else {
-      questionId = ulid(t);
-      newCount++;
-      qRows.push({
-        id: questionId,
-        subject_id: subjectId,
-        difficulty_code: q.band && difficulties.has(q.band) ? q.band : null,
-        created_at: t,
-      });
-      const cid = q.category_key ? conceptByKey.get(q.category_key) : undefined;
-      if (cid) tagRows.push({ question_id: questionId, concept_id: cid, weight: 1.0, created_at: t });
-    }
-    const versionId = ulid(t);
-    vRows.push({
-      id: versionId,
-      question_id: questionId,
-      version_no: versionNo,
-      content_sha256: q.content_sha256,
-      html_blob_sha256: q.html_sha256,
-      plain_text: q.plain_text ?? "",
-      import_batch_id: batchId,
-      source_position: q.position,
-      source_question_number: String(q.number),
-      created_at: t,
-    });
-    aRows.push({ question_version_id: versionId, original_ref: "<style> blocks", role: "stylesheet", blob_sha256: body.css_sha256 });
-    if (q.solution_sha256) {
-      solRows.push({ id: ulid(t), question_version_id: versionId, solution_no: 1, body_blob_sha256: q.solution_sha256, origin: "import", created_at: t });
-    }
-    outcome.push({ position: q.position, status: st.status, question_id: questionId });
-  });
-
-  stmts.push(
-    db.prepare(
-      `INSERT INTO import_batch (id, source_file_id, parser_version, found_count, new_count, new_version_count, duplicate_count, rejected_count, committed_at)
-       VALUES (?,?,?,?,?,?,?,?,?)`,
-    ).bind(batchId, sourceFileId, body.parser_version ?? "unknown", body.questions.length, newCount, newVersionCount, dupCount, rejected, t),
-  );
-  const jx = (cols: string[]) => cols.map((c) => `json_extract(value,'$.${c}')`).join(", ");
-  const bulk = (table: string, cols: string[], rows: Row[]) => {
-    if (rows.length) {
-      stmts.push(db.prepare(`INSERT INTO ${table} (${cols.join(", ")}) SELECT ${jx(cols)} FROM json_each(?)`).bind(JSON.stringify(rows)));
-    }
-  };
-  bulk("question", ["id", "subject_id", "difficulty_code", "created_at"], qRows);
-  bulk("question_version", ["id", "question_id", "version_no", "content_sha256", "html_blob_sha256", "plain_text", "import_batch_id", "source_position", "source_question_number", "created_at"], vRows);
-  bulk("question_version_asset", ["question_version_id", "original_ref", "role", "blob_sha256"], aRows);
-  bulk("solution", ["id", "question_version_id", "solution_no", "body_blob_sha256", "origin", "created_at"], solRows);
-  bulk("question_concept", ["question_id", "concept_id", "weight", "created_at"], tagRows);
-
-  await db.batch(stmts); // all-or-nothing (DR-4)
-  return json({
-    import_batch_id: batchId,
-    found: body.questions.length,
-    new: newCount,
-    new_versions: newVersionCount,
-    duplicates: dupCount,
-    rejected,
-    outcome,
   });
 }
 
@@ -415,7 +201,9 @@ export async function questionPatch(req: Request, env: Env, id: string) {
     option_labels?: string[] | null;
     notes?: string | null;
     archived?: boolean;
+    marks?: number | null;
     concepts?: { concept_id: string; weight: number }[];
+    field_values?: Record<string, string | number | boolean | null>;
   }>(req);
   const cur = await first(db, `SELECT * FROM question WHERE id = ?`, id);
   if (!cur) throw new HttpError(404, "Question not found.");
@@ -431,6 +219,11 @@ export async function questionPatch(req: Request, env: Env, id: string) {
   if ("option_labels" in body) fields.option_labels = body.option_labels && body.option_labels.length ? JSON.stringify(body.option_labels) : null;
   if ("notes" in body) fields.notes = body.notes?.trim() ? body.notes : null;
   if ("archived" in body) fields.archived_at = body.archived ? (cur.archived_at ?? t) : null;
+  if ("marks" in body) {
+    const m = body.marks === null || (body.marks as unknown) === "" ? null : Number(body.marks);
+    if (m !== null && !(m >= 0)) throw new HttpError(400, "Marks must be a number of 0 or more.");
+    fields.marks = m;
+  }
 
   for (const [col, val] of Object.entries(fields)) {
     if (cur[col] === val) continue;
@@ -469,6 +262,42 @@ export async function questionPatch(req: Request, env: Env, id: string) {
         stmts.push(logChange(db, "question_concept", `${id}|${cid}`, "weight", "update", old, w, t));
         dailyRebuild = true;
       }
+    }
+  }
+  if (body.field_values) {
+    // FR-1.8: custom field values; "no value" = no row.
+    const defs = new Map((await all<{ id: string; data_type: string; name: string }>(db, `SELECT id, data_type, name FROM custom_field`)).map((f) => [f.id, f]));
+    const curVals = new Map((await all(db, `SELECT * FROM question_field_value WHERE question_id = ?`, id)).map((r) => [r.field_id as string, r]));
+    for (const [fid, raw] of Object.entries(body.field_values)) {
+      const def = defs.get(fid);
+      if (!def) throw new HttpError(400, "Unknown custom field.");
+      const old = curVals.get(fid);
+      const oldV = old ? (old.value_text ?? old.value_number ?? old.value_date ?? old.value_bool) : null;
+      if (raw === null || raw === "") {
+        if (old) {
+          stmts.push(db.prepare(`DELETE FROM question_field_value WHERE question_id = ? AND field_id = ?`).bind(id, fid));
+          stmts.push(logChange(db, "question_field_value", `${id}|${fid}`, def.name, "delete", oldV, null, t));
+        }
+        continue;
+      }
+      const cols = { value_text: null as unknown, value_number: null as unknown, value_date: null as unknown, value_bool: null as unknown };
+      if (def.data_type === "number") {
+        const n = Number(raw);
+        if (!Number.isFinite(n)) throw new HttpError(400, `${def.name} must be a number.`);
+        cols.value_number = n;
+      } else if (def.data_type === "boolean") cols.value_bool = raw === true || raw === "true" || raw === 1 ? 1 : 0;
+      else if (def.data_type === "date") {
+        if (!DATE_RE.test(String(raw))) throw new HttpError(400, `${def.name} must be a date (YYYY-MM-DD).`);
+        cols.value_date = String(raw);
+      } else cols.value_text = String(raw);
+      const newV = cols.value_text ?? cols.value_number ?? cols.value_date ?? cols.value_bool;
+      if (oldV === newV) continue;
+      stmts.push(
+        db.prepare(
+          `INSERT OR REPLACE INTO question_field_value (question_id, field_id, value_text, value_number, value_date, value_bool, updated_at) VALUES (?,?,?,?,?,?,?)`,
+        ).bind(id, fid, cols.value_text, cols.value_number, cols.value_date, cols.value_bool, t),
+      );
+      stmts.push(logChange(db, "question_field_value", `${id}|${fid}`, def.name, old ? "update" : "insert", oldV, newV, t));
     }
   }
   if (!stmts.length) return json({ changed: 0 });
@@ -558,8 +387,9 @@ export async function answerKeySet(req: Request, env: Env, id: string) {
 
 export async function solutionSet(req: Request, env: Env, id: string) {
   const db = env.DB;
-  const body = await readJson<{ body_text: string }>(req);
+  const body = await readJson<{ body_text: string; body_format?: string }>(req);
   const text = need(body.body_text, "Write the solution first.");
+  const format = body.body_format === "text" ? "text" : "markdown";
   const q = await first<{ version_id: string }>(db, `SELECT version_id FROM v_question_current WHERE id = ?`, id);
   if (!q) throw new HttpError(404, "Question not found.");
   const t = now();
@@ -569,11 +399,91 @@ export async function solutionSet(req: Request, env: Env, id: string) {
   const stmts: D1PreparedStatement[] = [];
   if (active) stmts.push(db.prepare(`UPDATE solution SET retired_at = ? WHERE id = ?`).bind(t, active.id));
   stmts.push(
-    db.prepare(`INSERT INTO solution (id, question_version_id, solution_no, body_text, origin, created_at) VALUES (?,?,?,?,'manual',?)`)
-      .bind(sid, q.version_id, (max?.m ?? 0) + 1, text, t),
+    db.prepare(`INSERT INTO solution (id, question_version_id, solution_no, body_text, body_format, origin, created_at) VALUES (?,?,?,?,?,'manual',?)`)
+      .bind(sid, q.version_id, (max?.m ?? 0) + 1, text, format, t),
   );
   stmts.push(logChange(db, "solution", sid, "body_text", active ? "update" : "insert", active?.body_text ?? active?.body_blob_sha256 ?? null, text, t));
   await db.batch(stmts);
+  return json({ ok: true });
+}
+
+/** FR-1.10: approve an AI-written (Unverified) solution or answer key — the approved copy is a new, manual row. */
+export async function verifyMetadata(env: Env, id: string, what: "solution" | "answer-key") {
+  const db = env.DB;
+  const q = await first<{ version_id: string }>(db, `SELECT version_id FROM v_question_current WHERE id = ?`, id);
+  if (!q) throw new HttpError(404, "Question not found.");
+  const t = now();
+  const table = what === "solution" ? "solution" : "answer_key";
+  const noCol = what === "solution" ? "solution_no" : "key_no";
+  const active = await first(db, `SELECT * FROM ${table} WHERE question_version_id = ? AND retired_at IS NULL`, q.version_id);
+  if (!active) throw new HttpError(404, `No ${what === "solution" ? "solution" : "answer key"} to verify.`);
+  if (active.origin !== "suggestion") return json({ ok: true, already: true });
+  const max = await first<{ m: number }>(db, `SELECT max(${noCol}) AS m FROM ${table} WHERE question_version_id = ?`, q.version_id);
+  const nid = ulid(t);
+  const cols = what === "solution"
+    ? ["body_text", "body_blob_sha256", "body_format"]
+    : ["answer_type", "mcq_correct", "numeric_value", "numeric_tolerance", "text_value"];
+  await db.batch([
+    db.prepare(`UPDATE ${table} SET retired_at = ? WHERE id = ?`).bind(t, active.id),
+    db.prepare(
+      `INSERT INTO ${table} (id, question_version_id, ${noCol}, ${cols.join(", ")}, origin, created_at)
+       SELECT ?, question_version_id, ?, ${cols.join(", ")}, 'manual', ? FROM ${table} WHERE id = ?`,
+    ).bind(nid, (max?.m ?? 0) + 1, t, active.id),
+    logChange(db, table, nid, "origin", "update", "suggestion", "manual", t),
+  ]);
+  return json({ ok: true });
+}
+
+/** Solution + answer key of one exact question version (papers are pinned to versions). */
+export async function versionSolution(env: Env, versionId: string) {
+  const db = env.DB;
+  const [sol, key, css] = await db.batch([
+    db.prepare(`SELECT * FROM solution WHERE question_version_id = ? AND retired_at IS NULL`).bind(versionId),
+    db.prepare(`SELECT * FROM answer_key WHERE question_version_id = ? AND retired_at IS NULL`).bind(versionId),
+    db.prepare(`SELECT blob_sha256 FROM question_version_asset WHERE question_version_id = ? AND role = 'stylesheet' LIMIT 1`).bind(versionId),
+  ]);
+  return json({ solution: sol.results[0] ?? null, answer_key: key.results[0] ?? null, css_sha256: (css.results[0] as Row | undefined)?.blob_sha256 ?? null });
+}
+
+// ------------------------------------------------------------------ custom fields (FR-1.8)
+
+export async function fieldCreate(req: Request, env: Env) {
+  const body = await readJson<{ name: string; data_type: string; is_filterable?: boolean }>(req);
+  const name = need(body.name, "Name is required").trim();
+  if (!["text", "number", "date", "boolean"].includes(body.data_type)) throw new HttpError(400, "Type must be text, number, date or yes/no.");
+  const id = ulid();
+  try {
+    await env.DB.prepare(`INSERT INTO custom_field (id, name, data_type, is_filterable, created_at) VALUES (?,?,?,?,?)`)
+      .bind(id, name, body.data_type, body.is_filterable === false ? 0 : 1, now()).run();
+  } catch (e) {
+    if (String(e).includes("UNIQUE")) throw new HttpError(409, "A field with that name already exists.");
+    throw e;
+  }
+  return json({ id });
+}
+
+export async function fieldPatch(req: Request, env: Env, id: string) {
+  const body = await readJson<{ name?: string; is_filterable?: boolean; archived?: boolean }>(req);
+  const cur = await first(env.DB, `SELECT * FROM custom_field WHERE id = ?`, id);
+  if (!cur) throw new HttpError(404, "Field not found.");
+  const t = now();
+  const stmts: D1PreparedStatement[] = [];
+  const set = (col: string, val: unknown) => {
+    if (cur[col] === val) return;
+    stmts.push(env.DB.prepare(`UPDATE custom_field SET ${col} = ? WHERE id = ?`).bind(val, id));
+    stmts.push(logChange(env.DB, "custom_field", id, col, "update", cur[col], val, t));
+  };
+  if (body.name?.trim()) set("name", body.name.trim());
+  if (body.is_filterable !== undefined) set("is_filterable", body.is_filterable ? 1 : 0);
+  if (body.archived !== undefined) set("archived_at", body.archived ? (cur.archived_at ?? t) : null);
+  if (stmts.length) {
+    try {
+      await env.DB.batch(stmts);
+    } catch (e) {
+      if (String(e).includes("UNIQUE")) throw new HttpError(409, "A field with that name already exists.");
+      throw e;
+    }
+  }
   return json({ ok: true });
 }
 
@@ -701,6 +611,7 @@ export async function paperCreate(req: Request, env: Env) {
     seed: number;
     generator_version: number;
     requested_count: number;
+    solutions_mode?: "included" | "hidden";
     items: { question_id: string; question_version_id: string; pick_reason?: unknown }[];
   }>(req);
   const items = body.items ?? [];
@@ -724,11 +635,11 @@ export async function paperCreate(req: Request, env: Env) {
   }));
   await db.batch([
     db.prepare(
-      `INSERT INTO paper (id, name, saved_filter_id, filter_definition, sampling_settings, seed, generator_version, requested_count, created_at, frozen_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?)`,
+      `INSERT INTO paper (id, name, saved_filter_id, filter_definition, sampling_settings, seed, generator_version, requested_count, created_at, frozen_at, solutions_mode)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?)`,
     ).bind(id, need(body.name, "Give the paper a name").trim(), body.saved_filter_id || null, JSON.stringify(body.filter_definition ?? {}),
       JSON.stringify(body.sampling_settings ?? {}), Math.trunc(body.seed), Math.trunc(body.generator_version ?? 1),
-      Math.max(1, Math.trunc(body.requested_count || items.length)), t, t),
+      Math.max(1, Math.trunc(body.requested_count || items.length)), t, t, body.solutions_mode === "hidden" ? "hidden" : "included"),
     db.prepare(
       `INSERT INTO paper_item (paper_id, position, question_id, question_version_id, pick_reason)
        SELECT json_extract(value,'$.paper_id'), json_extract(value,'$.position'), json_extract(value,'$.question_id'),
@@ -741,7 +652,7 @@ export async function paperCreate(req: Request, env: Env) {
 export async function paperList(env: Env) {
   const rows = await all(
     env.DB,
-    `SELECT p.id, p.name, p.seed, p.requested_count, p.created_at, p.frozen_at,
+    `SELECT p.id, p.name, p.seed, p.requested_count, p.created_at, p.frozen_at, p.solutions_mode,
             (SELECT count(*) FROM paper_item WHERE paper_id = p.id) AS item_count,
             (SELECT id FROM practice_session WHERE paper_id = p.id AND completed_at IS NULL) AS open_session_id,
             (SELECT current_position FROM practice_session WHERE paper_id = p.id AND completed_at IS NULL) AS open_position,
@@ -758,11 +669,12 @@ export async function paperDetail(env: Env, id: string) {
   const [items, sessions, attempts] = await db.batch([
     db.prepare(
       `SELECT pi.position, pi.question_id, pi.question_version_id, pi.pick_reason,
-              v.html_blob_sha256, v.source_question_number AS qno, v.plain_text,
-              q.subject_id, q.difficulty_code, q.answer_format, q.option_labels,
+              v.html_blob_sha256, v.content_format, v.source_question_number AS qno, v.plain_text,
+              q.subject_id, q.difficulty_code, q.answer_format, q.option_labels, q.marks,
+              EXISTS (SELECT 1 FROM solution s WHERE s.question_version_id = v.id AND s.retired_at IS NULL) AS has_solution,
               (SELECT blob_sha256 FROM question_version_asset WHERE question_version_id = v.id AND role = 'stylesheet' LIMIT 1) AS css_sha256,
               (SELECT json_group_array(concept_id) FROM question_concept WHERE question_id = q.id) AS concept_ids,
-              EXISTS (SELECT 1 FROM answer_key k WHERE k.question_version_id = v.id AND k.retired_at IS NULL) AS has_key
+              EXISTS (SELECT 1 FROM answer_key k WHERE k.question_version_id = v.id AND k.retired_at IS NULL AND k.origin <> 'suggestion') AS has_key
          FROM paper_item pi
          JOIN question_version v ON v.id = pi.question_version_id
          JOIN question q ON q.id = pi.question_id
@@ -835,6 +747,7 @@ function normaliseGrade(g: GradeIn): { result: string; score: number } {
 }
 
 function autoGrade(key: Row, resp: { kind: string; options?: string[]; numeric?: number | null }) {
+  if (key.origin === "suggestion") return null; // AI-written keys are never used to mark you (FR-1.10)
   const type = key.answer_type as string;
   if ((type === "mcq_single" || type === "mcq_multi") && resp.kind === "mcq" && Array.isArray(resp.options)) {
     const want = (JSON.parse(key.mcq_correct as string) as string[]).slice().sort();
@@ -843,7 +756,8 @@ function autoGrade(key: Row, resp: { kind: string; options?: string[]; numeric?:
     return { result: ok ? "correct" : "incorrect", score: ok ? 1000 : 0, rule: "mcq_exact_v1" };
   }
   if (type === "numeric" && resp.kind === "numeric" && typeof resp.numeric === "number" && Number.isFinite(resp.numeric)) {
-    const ok = Math.abs(resp.numeric - (key.numeric_value as number)) <= (key.numeric_tolerance as number);
+    const k = key.numeric_value as number;
+    const ok = Math.abs(resp.numeric - k) <= (key.numeric_tolerance as number) + 1e-9 * Math.max(1, Math.abs(k));
     return { result: ok ? "correct" : "incorrect", score: ok ? 1000 : 0, rule: "numeric_tolerance_v1" };
   }
   return null;

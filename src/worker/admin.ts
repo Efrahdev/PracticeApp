@@ -101,7 +101,7 @@ export async function integrityCheck(env: Env, reason: "manual" | "restore" | "m
   const [missingAssets, noVersion, noStyle, orphanTags] = await db.batch<{ n: number }>([
     db.prepare(`SELECT count(*) AS n FROM question_version_asset WHERE blob_sha256 IS NULL`),
     db.prepare(`SELECT count(*) AS n FROM question q WHERE NOT EXISTS (SELECT 1 FROM question_version v WHERE v.question_id = q.id)`),
-    db.prepare(`SELECT count(*) AS n FROM question_version v WHERE NOT EXISTS (SELECT 1 FROM question_version_asset a WHERE a.question_version_id = v.id AND a.role = 'stylesheet')`),
+    db.prepare(`SELECT count(*) AS n FROM question_version v WHERE v.content_format = 'html_fragment' AND NOT EXISTS (SELECT 1 FROM question_version_asset a WHERE a.question_version_id = v.id AND a.role = 'stylesheet')`),
     db.prepare(`SELECT count(*) AS n FROM question_concept qc JOIN concept c ON c.id = qc.concept_id WHERE c.archived_at IS NOT NULL`),
   ]);
   if (missingAssets.results[0].n) issues.push({ kind: "missing_asset", detail: `${missingAssets.results[0].n} referenced image/font/style file(s) are missing` });

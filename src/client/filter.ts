@@ -16,7 +16,9 @@ export type Cond =
   | { type: "avg_time"; op: ">=" | "<="; seconds: number }
   | { type: "text"; query: string }
   | { type: "source_file"; names: string[] }
-  | { type: "has_key"; value: boolean };
+  | { type: "has_key"; value: boolean }
+  | { type: "has_solution"; value: "any" | "none" | "unverified" }
+  | { type: "field"; field_id: string; op: "contains" | "equals" | ">=" | "<=" | "is_true" | "is_false" | "on_or_after" | "on_or_before" | "has_value" | "no_value"; value: string };
 
 export interface Group { op: "and" | "or"; conds: Cond[] }
 export interface FilterDef { v: 1; op: "and" | "or"; groups: Group[]; includeArchived?: boolean }
@@ -37,6 +39,8 @@ export const COND_LABELS: Record<Cond["type"], string> = {
   text: "Text / ID search",
   source_file: "Source file",
   has_key: "Has answer key",
+  has_solution: "Solution",
+  field: "Custom field",
 };
 
 export function defaultCond(type: Cond["type"]): Cond {
@@ -54,6 +58,8 @@ export function defaultCond(type: Cond["type"]): Cond {
     case "text": return { type, query: "" };
     case "source_file": return { type, names: [] };
     case "has_key": return { type, value: true };
+    case "has_solution": return { type, value: "any" };
+    case "field": return { type, field_id: "", op: "has_value", value: "" };
   }
 }
 
@@ -134,6 +140,29 @@ export function compile(def: FilterDef, concepts: Concept[], now = Date.now()): 
       }
       case "has_key":
         return (q) => !!q.has_key === c.value;
+      case "has_solution":
+        return (q) => (c.value === "none" ? !q.has_solution : c.value === "unverified" ? q.has_solution === 2 : !!q.has_solution);
+      case "field": {
+        if (!c.field_id) return () => true;
+        const val = c.value.trim().toLowerCase();
+        const num = Number(c.value);
+        return (q) => {
+          const v = q.fields?.[c.field_id];
+          const has = v !== undefined && v !== null && v !== "";
+          switch (c.op) {
+            case "has_value": return has;
+            case "no_value": return !has;
+            case "contains": return has && String(v).toLowerCase().includes(val);
+            case "equals": return has && String(v).toLowerCase() === val;
+            case ">=": return has && Number(v) >= num;
+            case "<=": return has && Number(v) <= num;
+            case "is_true": return v === 1 || v === "1" || (v as unknown) === true;
+            case "is_false": return v === 0 || v === "0" || (v as unknown) === false;
+            case "on_or_after": return has && String(v) >= c.value;
+            case "on_or_before": return has && String(v) <= c.value;
+          }
+        };
+      }
     }
   };
   const groups = def.groups.map((g) => {

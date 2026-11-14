@@ -2,7 +2,8 @@ import { useEffect, useState } from "preact/hooks";
 import { api } from "../api";
 import { refresh, useData } from "../store";
 import type { Boot } from "../types";
-import { conceptPath, ErrorBox, fmtDateTime, fmtSecs, names, pct, QuestionFrame, ResultBadge, toast } from "../ui";
+import { conceptPath, ErrorBox, fmtDateTime, fmtSecs, pct, ResultBadge, toast } from "../ui";
+import { QuestionView, SolutionView } from "../views";
 import { GradeForm } from "./Practice";
 
 export function Question(props: { id: string }) {
@@ -24,11 +25,14 @@ export function Question(props: { id: string }) {
       <div class="page-head">
         <a href="#/" class="back">← Library</a>
         <h1>Q{q.source_question_number} {q.archived_at && <span class="badge muted">archived</span>}</h1>
-        <span class="muted small">{d.source?.file_name} · position {q.source_position} · version {q.version_no} of {d.versions.length} · ID {q.id}</span>
+        <span class="muted small">{d.source?.file_name} · position {q.source_position} · version {q.version_no} of {d.versions.length}
+          {q.marks !== null && q.marks !== undefined ? ` · ${q.marks} mark${q.marks === 1 ? "" : "s"}` : ""} · ID {q.id}{q.external_ref ? ` · ref ${q.external_ref}` : ""}</span>
       </div>
       <div class="cols">
         <div class="col-main">
-          <section class="card flush"><QuestionFrame htmlSha={q.html_blob_sha256} cssSha={css} minHeight={120} /></section>
+          <section class="card flush">
+            <QuestionView v={{ content_format: q.content_format, blob_sha256: q.html_blob_sha256, css_sha256: css }} opts={{ showMarks: true, marks: q.marks, showHints: true }} minHeight={100} />
+          </section>
           <div class="row wrap">
             <a class="btn primary" href={`#/practice-q/${q.id}`}>Practise this question</a>
           </div>
@@ -65,6 +69,10 @@ function MetaForm(props: { boot: Boot; d: any; onSaved: () => void }) {
   const [format, setFormat] = useState<string>(q.answer_format);
   const [labels, setLabels] = useState<string>(q.option_labels ? JSON.parse(q.option_labels).join(", ") : "A, B, C, D");
   const [notes, setNotes] = useState<string>(q.notes ?? "");
+  const [marks, setMarks] = useState<string>(q.marks === null || q.marks === undefined ? "" : String(q.marks));
+  const initialFields: Record<string, string | number | boolean | null> = {};
+  for (const fv of props.d.fields ?? []) initialFields[fv.field_id] = fv.value_text ?? fv.value_number ?? fv.value_date ?? (fv.value_bool === null ? null : !!fv.value_bool);
+  const [fieldVals, setFieldVals] = useState(initialFields);
   const [tags, setTags] = useState<{ concept_id: string; weight: number }[]>(props.d.concepts);
   const [add, setAdd] = useState("");
   const [err, setErr] = useState<string | null>(null);
@@ -81,7 +89,9 @@ function MetaForm(props: { boot: Boot; d: any; onSaved: () => void }) {
         answer_format: format,
         option_labels: format.startsWith("mcq") ? labels.split(",").map((s) => s.trim()).filter(Boolean) : null,
         notes,
+        marks: marks.trim() === "" ? null : Number(marks),
         concepts: tags,
+        field_values: fieldVals,
         ...extra,
       });
       toast("Saved");
@@ -136,6 +146,21 @@ function MetaForm(props: { boot: Boot; d: any; onSaved: () => void }) {
       {format.startsWith("mcq") && (
         <label class="field">Option labels (comma separated)<input value={labels} onInput={(e) => setLabels((e.target as HTMLInputElement).value)} /></label>
       )}
+      <label class="field">Marks<input type="number" min="0" step="any" class="w5" value={marks} onInput={(e) => setMarks((e.target as HTMLInputElement).value)} /></label>
+      {boot.fields.filter((f) => !f.archived_at || fieldVals[f.id] !== undefined).map((f) => (
+        <label class="field">{f.name}
+          {f.data_type === "boolean" ? (
+            <select value={fieldVals[f.id] === undefined || fieldVals[f.id] === null ? "" : fieldVals[f.id] ? "true" : "false"}
+              onChange={(e) => { const v = (e.target as HTMLSelectElement).value; setFieldVals({ ...fieldVals, [f.id]: v === "" ? null : v === "true" }); }}>
+              <option value="">—</option><option value="true">Yes</option><option value="false">No</option>
+            </select>
+          ) : (
+            <input type={(f.data_type === "number" ? "number" : f.data_type === "date" ? "date" : "text") as any} step="any"
+              value={fieldVals[f.id] === undefined || fieldVals[f.id] === null ? "" : String(fieldVals[f.id])}
+              onInput={(e) => { const v = (e.target as HTMLInputElement).value; setFieldVals({ ...fieldVals, [f.id]: v === "" ? null : f.data_type === "number" ? Number(v) : v }); }} />
+          )}
+        </label>
+      ))}
       <label class="field">Notes<textarea rows={3} value={notes} onInput={(e) => setNotes((e.target as HTMLTextAreaElement).value)} /></label>
       <div class="row end">
         <button class="btn ghost small" disabled={busy} onClick={() => save({ archived: !q.archived_at })}>{q.archived_at ? "Unarchive" : "Archive"}</button>
@@ -168,7 +193,11 @@ function AnswerKeyForm(props: { d: any; onSaved: () => void }) {
   };
   return (
     <section class="card">
-      <h3>Answer key {k && <span class="badge ok">verified · v{k.key_no}</span>}</h3>
+      <h3>Answer key {k && (k.origin === "suggestion" ? <span class="badge r-partial">AI-written · unverified</span> : <span class="badge ok">verified · v{k.key_no}</span>)}</h3>
+      {k?.origin === "suggestion" && (
+        <div class="warn-box small">An AI wrote this key, so it is not used to mark you automatically.{" "}
+          <button class="btn small" onClick={async () => { await api("POST", `/api/questions/${q.id}/answer-key/verify`); toast("Answer key verified"); props.onSaved(); }}>It's right — verify</button></div>
+      )}
       <p class="muted small">With a key, multiple-choice and number answers are marked automatically. Changing it keeps the old key so past grades still point at the key that produced them.</p>
       <ErrorBox error={err} />
       <label class="field">Type
@@ -204,28 +233,45 @@ function AnswerKeyForm(props: { d: any; onSaved: () => void }) {
 
 function SolutionPanel(props: { d: any; css: string | null; onSaved: () => void }) {
   const s = props.d.solution;
+  const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [text, setText] = useState(s?.body_text ?? "");
+  const [text, setText] = useState(s && s.body_format !== "html" ? s.body_text ?? "" : "");
+  const [draft, setDraft] = useState(text);
+  useEffect(() => {
+    const t = setTimeout(() => setDraft(text), 400);
+    return () => clearTimeout(t);
+  }, [text]);
   const save = async () => {
     try {
-      await api("POST", `/api/questions/${props.d.question.id}/solution`, { body_text: text });
+      await api("POST", `/api/questions/${props.d.question.id}/solution`, { body_text: text, body_format: "markdown" });
       setEditing(false);
-      toast("Solution saved");
+      setOpen(true);
+      toast("Solution saved (the old one is kept in history)");
       props.onSaved();
     } catch (e) { toast((e as Error).message, "error"); }
   };
   return (
     <section class="card">
-      <div class="row"><h3 class="grow">Solution {s?.origin === "import" && <span class="muted small">(from file)</span>}</h3>
-        <button class="btn ghost small" onClick={() => setEditing(!editing)}>{editing ? "Cancel" : s ? "Replace" : "Write one"}</button></div>
+      <div class="row wrap">
+        <h3 class="grow">Solution {s?.origin === "import" && <span class="muted small">(from import)</span>}
+          {s?.origin === "suggestion" && <span class="badge r-partial">AI-written · unverified</span>}</h3>
+        {s && !editing && <button class="btn small" onClick={() => setOpen(!open)}>{open ? "Hide solution" : "Show solution"}</button>}
+        <button class="btn ghost small" onClick={() => setEditing(!editing)}>{editing ? "Cancel" : s ? "Edit" : "Write one"}</button>
+      </div>
+      {s?.origin === "suggestion" && !editing && (
+        <div class="warn-box small">An AI wrote this solution. Check it, then{" "}
+          <button class="btn small" onClick={async () => { await api("POST", `/api/questions/${props.d.question.id}/solution/verify`); toast("Solution verified"); props.onSaved(); }}>mark it verified</button></div>
+      )}
       {editing ? (
         <>
-          <textarea rows={6} value={text} onInput={(e) => setText((e.target as HTMLTextAreaElement).value)} placeholder="Worked solution…" />
-          <div class="row end"><button class="btn primary" onClick={save}>Save solution</button></div>
+          <p class="small muted">Markdown with LaTeX maths: <code>$\frac{"{"}3{"}"}{"{"}4{"}"}$</code> inline, <code>$$ … $$</code> on its own line.{s?.body_format === "html" ? " The current solution is HTML; writing a new one replaces it (the old one is kept)." : ""}</p>
+          <textarea rows={8} value={text} onInput={(e) => setText((e.target as HTMLTextAreaElement).value)} placeholder="**Answer:** …&#10;&#10;1. First step…" />
+          {draft.trim() && <><div class="small muted">Preview</div><SolutionView s={{ body_text: draft, body_format: "markdown" }} /></>}
+          <div class="row end"><button class="btn primary" disabled={!text.trim()} onClick={save}>Save solution</button></div>
         </>
       ) : !s ? <p class="muted">No solution yet.</p>
-        : s.body_blob_sha256 ? <details><summary>Show solution</summary><QuestionFrame htmlSha={s.body_blob_sha256} cssSha={props.css} title="Solution" /></details>
-        : <details><summary>Show solution</summary><p class="pre">{s.body_text}</p></details>}
+        : open ? <SolutionView s={s} cssSha={props.css} />
+        : <p class="muted small">Hidden — open it whenever you want to check.</p>}
     </section>
   );
 }

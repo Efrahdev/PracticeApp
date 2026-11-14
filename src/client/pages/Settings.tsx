@@ -3,7 +3,8 @@ import { api } from "../api";
 import { exportArchive, restoreArchive, verifyArchive, type VerifyReport } from "../backup";
 import { refresh, useData } from "../store";
 import type { Boot, Concept } from "../types";
-import { ErrorBox, Progress, toast } from "../ui";
+import { ErrorBox, fmtDateTime, Progress, toast } from "../ui";
+import { useEffect } from "preact/hooks";
 
 export function Settings() {
   const { boot } = useData();
@@ -11,7 +12,9 @@ export function Settings() {
   return (
     <div class="page">
       <div class="page-head"><h1>Settings</h1><span class="muted small">Schema version {boot.schemaVersion}</span></div>
+      <Imports />
       <Taxonomy boot={boot} />
+      <Fields boot={boot} />
       <Backup />
       <Health />
     </div>
@@ -77,6 +80,81 @@ function ConceptTree(props: { boot: Boot; subjectId: string; parentId: string | 
         </li>
       ))}
     </ul>
+  );
+}
+
+function Imports() {
+  const [rows, setRows] = useState<any[] | null>(null);
+  const load = () => api("GET", "/api/imports").then((r) => setRows(r.imports)).catch(() => setRows([]));
+  useEffect(() => { load(); }, []);
+  const archive = async (id: string, archived: boolean, label: string) => {
+    if (archived && !confirm(`Archive every question first added by “${label}”? They disappear from the library and papers you build, but nothing is deleted and you can bring them back here.`)) return;
+    try {
+      const r = await api("POST", `/api/imports/${id}/archive`, { archived });
+      toast(`${archived ? "Archived" : "Restored"} ${r.changed} question(s)`);
+      await load();
+      await refresh();
+    } catch (e) { toast((e as Error).message, "error"); }
+  };
+  return (
+    <section class="card">
+      <h2>Import history</h2>
+      <p class="muted small">Every import is kept. If an import went wrong, archive its questions here (nothing is deleted; attempts stay), then import a corrected pack.</p>
+      {!rows ? <p class="muted">Loading…</p> : rows.length === 0 ? <p class="muted">No imports yet.</p> : (
+        <table class="table">
+          <thead><tr><th>File</th><th class="hide-sm">When</th><th>Added</th><th>Active</th><th /></tr></thead>
+          <tbody>{rows.map((r) => (
+            <tr>
+              <td>{r.file_name}<div class="small muted">{r.parser_version === "parse.ts@1" ? "old HTML importer" : "question pack"}{r.duplicate_count ? ` · ${r.duplicate_count} already had` : ""}</div></td>
+              <td class="hide-sm small">{fmtDateTime(r.committed_at)}</td>
+              <td>{r.new_count}{r.new_version_count ? ` + ${r.new_version_count} v` : ""}</td>
+              <td>{r.active_count}{r.archived_count ? <span class="muted small"> ({r.archived_count} archived)</span> : null}</td>
+              <td class="nowrap">
+                {r.active_count > 0 && <button class="btn ghost small" onClick={() => archive(r.id, true, r.file_name)}>Archive</button>}
+                {r.archived_count > 0 && <button class="btn ghost small" onClick={() => archive(r.id, false, r.file_name)}>Restore</button>}
+              </td>
+            </tr>
+          ))}</tbody>
+        </table>
+      )}
+    </section>
+  );
+}
+
+function Fields(props: { boot: Boot }) {
+  const [name, setName] = useState("");
+  const [type, setType] = useState("text");
+  const run = async (fn: () => Promise<unknown>, ok: string) => {
+    try { await fn(); await refresh(); toast(ok); } catch (e) { toast((e as Error).message, "error"); }
+  };
+  const fields = props.boot.fields ?? [];
+  return (
+    <section class="card">
+      <h2>Custom fields</h2>
+      <p class="muted small">Extra facts about questions (exam board, year, paper…). Imports create them from a pack's <code>fields</code>. Filterable ones appear in the library filter.</p>
+      {fields.length > 0 && (
+        <table class="table">
+          <thead><tr><th>Name</th><th>Type</th><th>Filter</th><th /></tr></thead>
+          <tbody>{fields.map((f) => (
+            <tr class={f.archived_at ? "muted" : ""}>
+              <td>{f.name}</td><td>{f.data_type === "boolean" ? "yes/no" : f.data_type}</td>
+              <td><input type="checkbox" aria-label={`Filterable: ${f.name}`} checked={!!f.is_filterable} onChange={(e) => run(() => api("PATCH", `/api/fields/${f.id}`, { is_filterable: (e.target as HTMLInputElement).checked }), "Saved")} /></td>
+              <td class="nowrap">
+                <button class="btn ghost small" onClick={() => { const n = prompt("Rename field:", f.name); if (n) run(() => api("PATCH", `/api/fields/${f.id}`, { name: n }), "Renamed"); }}>Rename</button>
+                <button class="btn ghost small" onClick={() => run(() => api("PATCH", `/api/fields/${f.id}`, { archived: !f.archived_at }), f.archived_at ? "Restored" : "Archived")}>{f.archived_at ? "Unarchive" : "Archive"}</button>
+              </td>
+            </tr>
+          ))}</tbody>
+        </table>
+      )}
+      <div class="row wrap">
+        <input class="grow" placeholder="New field name" value={name} onInput={(e) => setName((e.target as HTMLInputElement).value)} />
+        <select value={type} onChange={(e) => setType((e.target as HTMLSelectElement).value)}>
+          <option value="text">Text</option><option value="number">Number</option><option value="date">Date</option><option value="boolean">Yes/no</option>
+        </select>
+        <button class="btn" disabled={!name.trim()} onClick={() => run(async () => { await api("POST", "/api/fields", { name, data_type: type }); setName(""); }, "Field added")}>Add field</button>
+      </div>
+    </section>
   );
 }
 

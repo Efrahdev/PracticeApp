@@ -1,13 +1,27 @@
-import { render } from "preact";
+import { render, type ComponentType } from "preact";
 import { useEffect, useState } from "preact/hooks";
+import temmlCss from "temml/dist/Temml-Local.css";
+import { setMathCss } from "./render";
 import { Toaster } from "./ui";
 import { Library } from "./pages/Library";
-import { Import } from "./pages/Import";
 import { Question } from "./pages/Question";
 import { Papers, PaperDetail } from "./pages/Papers";
 import { Practice } from "./pages/Practice";
 import { Analytics } from "./pages/Analytics";
 import { Settings } from "./pages/Settings";
+
+setMathCss(temmlCss);
+
+/** The importer (YAML, zip, validation) loads only when the Import screen opens. */
+function LazyImport() {
+  const [C, setC] = useState<ComponentType | null>(null);
+  const [err, setErr] = useState<string | null>(null);
+  useEffect(() => {
+    import("./pages/Import").then((m) => setC(() => m.Import)).catch(() => setErr("Could not load the importer — reload the page."));
+  }, []);
+  if (err) return <p class="error-box">{err}</p>;
+  return C ? <C /> : <p class="muted">Loading…</p>;
+}
 
 function useHash() {
   const [h, setH] = useState(location.hash || "#/");
@@ -24,7 +38,7 @@ function route(h: string) {
   const [a, b] = parts;
   switch (a) {
     case undefined: return { tab: "library", el: <Library /> };
-    case "import": return { tab: "import", el: <Import /> };
+    case "import": return { tab: "import", el: <LazyImport /> };
     case "q": return { tab: "library", el: <Question id={b} /> };
     case "papers": return b ? { tab: "papers", el: <PaperDetail id={b} /> } : { tab: "papers", el: <Papers /> };
     case "practice": return { tab: "papers", el: <Practice key={b} paperId={b} />, bare: true };

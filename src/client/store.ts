@@ -13,7 +13,7 @@ async function load() {
   try {
     const [b, l] = await Promise.all([api<Boot>("GET", "/api/bootstrap"), api<{ questions: any[] }>("GET", "/api/library")]);
     boot = b;
-    lib = l.questions.map((q) => ({ ...q, concepts: q.concepts ? JSON.parse(q.concepts) : [] }));
+    lib = l.questions.map((q) => ({ ...q, concepts: q.concepts ? JSON.parse(q.concepts) : [], fields: q.fields ? JSON.parse(q.fields) : {} }));
     error = null;
   } catch (e) {
     error = (e as Error).message;

@@ -2,6 +2,7 @@ import { checkAccess } from "./auth";
 import { HttpError, json } from "./http";
 import * as api from "./api";
 import * as admin from "./admin";
+import * as imports from "./imports";
 import type { Env } from "./api";
 import { STATIC } from "./static.gen";
 
@@ -16,8 +17,15 @@ on("POST", "/api/blobs/check", (r, env) => api.blobsCheck(r, env));
 on("POST", "/api/blobs", (r, env) => api.blobsUploadText(r, env));
 on("PUT", "/api/blobs/:sha", (r, env, p) => api.blobPut(r, env, p[0]));
 on("GET", "/api/blobs/:sha", (_r, env, p) => api.blobGet(env, p[0]));
-on("POST", "/api/imports/preview", (r, env) => api.importPreview(r, env));
-on("POST", "/api/imports/commit", (r, env) => api.importCommit(r, env));
+on("POST", "/api/imports/preview", (r, env) => imports.importPreview(r, env));
+on("POST", "/api/imports/commit", (r, env) => imports.importCommit(r, env));
+on("GET", "/api/imports", (_r, env) => imports.importList(env));
+on("POST", "/api/imports/:id/archive", (r, env, p) => imports.importArchive(r, env, p[0]));
+on("POST", "/api/questions/:id/solution/verify", (_r, env, p) => api.verifyMetadata(env, p[0], "solution"));
+on("POST", "/api/questions/:id/answer-key/verify", (_r, env, p) => api.verifyMetadata(env, p[0], "answer-key"));
+on("GET", "/api/versions/:id/solution", (_r, env, p) => api.versionSolution(env, p[0]));
+on("POST", "/api/fields", (r, env) => api.fieldCreate(r, env));
+on("PATCH", "/api/fields/:id", (r, env, p) => api.fieldPatch(r, env, p[0]));
 on("GET", "/api/questions/:id", (_r, env, p) => api.questionDetail(env, p[0]));
 on("PATCH", "/api/questions/:id", (r, env, p) => api.questionPatch(r, env, p[0]));
 on("POST", "/api/questions-bulk", (r, env) => api.questionsBulk(r, env));
@@ -46,6 +54,18 @@ on("POST", "/api/admin/rebuild-metrics", (_r, env) => admin.rebuildMetrics(env))
 on("POST", "/api/admin/restore/begin", (_r, env) => admin.restoreBegin(env));
 on("POST", "/api/admin/restore/table/:table", (r, env, p) => admin.restoreTable(r, env, p[0]));
 on("POST", "/api/admin/restore/finish", (r, env) => admin.restoreFinish(r, env));
+
+const decoded = new Map<string, Uint8Array>();
+function decodeOnce(key: string, b64: string): Uint8Array {
+  let d = decoded.get(key);
+  if (!d) {
+    const bin = atob(b64);
+    d = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) d[i] = bin.charCodeAt(i);
+    decoded.set(key, d);
+  }
+  return d;
+}
 
 const SECURITY_HEADERS: Record<string, string> = {
   "content-security-policy":
@@ -82,14 +102,16 @@ export default {
     if (!isApi) {
       // Hash routing: every page path serves the app shell.
       const f = STATIC[url.pathname] ?? STATIC["/index.html"];
+      const immutable = url.pathname.startsWith("/chunks/") || url.pathname.startsWith("/fonts/");
       const headers: Record<string, string> = {
         ...SECURITY_HEADERS,
         "content-type": f.type,
         etag: f.etag,
-        "cache-control": f.type.startsWith("text/html") ? "no-cache" : "private, max-age=300",
+        "cache-control": f.type.startsWith("text/html") ? "no-cache" : immutable ? "public, max-age=31536000, immutable" : "no-cache",
       };
+      if (url.pathname.startsWith("/fonts/")) headers["access-control-allow-origin"] = "*";
       if (req.headers.get("if-none-match") === f.etag) return new Response(null, { status: 304, headers });
-      return new Response(f.body, { headers });
+      return new Response((f.b64 ? decodeOnce(url.pathname, f.b64) : f.body!) as BodyInit, { headers });
     }
 
     try {

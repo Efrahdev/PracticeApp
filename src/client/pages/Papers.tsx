@@ -3,6 +3,7 @@ import { api } from "../api";
 import { useData } from "../store";
 import { ErrorBox, fmtDate, fmtDateTime, names, ResultBadge, toast } from "../ui";
 import { PaperSummary } from "./Practice";
+import { openPrint, type PrintSolutions } from "../print";
 
 export function Papers() {
   const [papers, setPapers] = useState<any[] | null>(null);
@@ -21,7 +22,7 @@ export function Papers() {
             <div class="card paper-card">
               <div class="grow">
                 <a href={`#/papers/${p.id}`}><strong>{p.name}</strong></a>
-                <div class="muted small">{p.item_count} questions · made {fmtDate(p.created_at)} · seed {p.seed}{p.completed_sessions ? ` · done ${p.completed_sessions}×` : ""}</div>
+                <div class="muted small">{p.item_count} questions · made {fmtDate(p.created_at)} · {p.solutions_mode === "hidden" ? "no solutions" : "with solutions"}{p.completed_sessions ? ` · done ${p.completed_sessions}×` : ""}</div>
               </div>
               {p.open_session_id
                 ? <a class="btn primary" href={`#/practice/${p.id}`}>Resume ({p.open_position}/{p.item_count})</a>
@@ -38,6 +39,8 @@ export function PaperDetail(props: { id: string }) {
   const { boot } = useData();
   const [d, setD] = useState<any>(null);
   const [err, setErr] = useState<string | null>(null);
+  const [printSol, setPrintSol] = useState<PrintSolutions>("end");
+  const [printing, setPrinting] = useState(false);
   useEffect(() => { api("GET", `/api/papers/${props.id}`).then(setD).catch((e) => setErr(e.message)); }, [props.id]);
   if (err) return <ErrorBox error={err} />;
   if (!d || !boot) return <p class="muted">Loading…</p>;
@@ -50,11 +53,25 @@ export function PaperDetail(props: { id: string }) {
       <div class="page-head">
         <a class="back" href="#/papers">← Papers</a>
         <h1>{d.paper.name}</h1>
+        <span class={`badge ${d.paper.solutions_mode === "hidden" ? "muted" : "ok"}`}>{d.paper.solutions_mode === "hidden" ? "No solutions" : "Solutions included"}</span>
         <span class="muted small">Frozen {fmtDateTime(d.paper.frozen_at)} · seed {d.paper.seed} · generator v{d.paper.generator_version}
           {settings.favourWrong || settings.favourStale || settings.favourWeak ? " · favoured: " + [settings.favourWrong && "wrong", settings.favourStale && "not recent", settings.favourWeak && "weak concepts"].filter(Boolean).join(", ") : ""}</span>
       </div>
       <div class="row wrap">
         <a class="btn primary" href={`#/practice/${d.paper.id}`}>{open ? `Resume (question ${open.current_position})` : done.length ? "Sit again" : "Start"}</a>
+        {d.paper.solutions_mode !== "hidden" && (
+          <select aria-label="Solutions in the printed copy" value={printSol} onChange={(e) => setPrintSol((e.target as HTMLSelectElement).value as PrintSolutions)}>
+            <option value="end">Print: solutions at the end</option>
+            <option value="after">Print: solution after each question</option>
+            <option value="none">Print: questions only</option>
+          </select>
+        )}
+        <button class="btn" disabled={printing} onClick={async () => {
+          setPrinting(true);
+          try { await openPrint(d, d.paper.solutions_mode === "hidden" ? "none" : printSol); }
+          catch (e) { toast((e as Error).message, "error"); }
+          finally { setPrinting(false); }
+        }}>{printing ? "Preparing…" : "Print / PDF"}</button>
         <button class="btn ghost" onClick={async () => {
           if (!confirm("Hide this paper? Its history stays.")) return;
           await api("DELETE", `/api/papers/${d.paper.id}`);

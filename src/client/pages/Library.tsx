@@ -140,7 +140,7 @@ export function Library() {
                 <input type="checkbox" aria-label={`Select Q${q.qno}`} checked={selected.has(q.id)}
                   onChange={() => { const s = new Set(selected); s.has(q.id) ? s.delete(q.id) : s.add(q.id); setSelected(s); }} />
                 <a href={`#/q/${q.id}`} class="qmain">
-                  <span class="qtitle">Q{q.qno} <span class="muted small">· {q.file_name}{q.version_no > 1 ? ` · v${q.version_no}` : ""}</span></span>
+                  <span class="qtitle">Q{q.qno} <span class="muted small">· {q.file_name}{q.version_no > 1 ? ` · v${q.version_no}` : ""}{q.marks !== null ? ` · ${q.marks}m` : ""}{q.has_solution === 2 ? " · AI solution" : q.has_solution ? " · solution" : ""}</span></span>
                   <span class="qtext">{q.plain_text.slice(0, 120)}</span>
                 </a>
                 <span class="hide-sm small">
@@ -286,6 +286,39 @@ function CondEditor(props: { boot: Boot; lib: LibQ[]; cond: Cond; onChange: (c: 
       );
     case "text":
       return <input type="search" placeholder="words, Q number or ID" value={c.query} onInput={(e) => onChange({ ...c, query: (e.target as HTMLInputElement).value })} />;
+    case "has_solution":
+      return (
+        <select value={c.value} onChange={(e) => onChange({ ...c, value: (e.target as HTMLSelectElement).value as any })}>
+          <option value="any">has a solution</option><option value="none">has no solution</option><option value="unverified">AI-written, not verified</option>
+        </select>
+      );
+    case "field": {
+      const fields = boot.fields.filter((f) => !f.archived_at && f.is_filterable);
+      const f = fields.find((x) => x.id === c.field_id);
+      const ops: [string, string][] = !f ? [] : f.data_type === "number" ? [[">=", "at least"], ["<=", "at most"], ["equals", "equals"]]
+        : f.data_type === "boolean" ? [["is_true", "is yes"], ["is_false", "is no"]]
+        : f.data_type === "date" ? [["on_or_after", "on or after"], ["on_or_before", "on or before"]]
+        : [["contains", "contains"], ["equals", "is exactly"]];
+      return (
+        <span class="row wrap">
+          <select value={c.field_id} onChange={(e) => onChange({ ...c, field_id: (e.target as HTMLSelectElement).value, op: "has_value", value: "" })}>
+            <option value="">choose field…</option>
+            {fields.map((x) => <option value={x.id}>{x.name}</option>)}
+          </select>
+          {f && (
+            <select value={c.op} onChange={(e) => onChange({ ...c, op: (e.target as HTMLSelectElement).value as any })}>
+              <option value="has_value">has a value</option><option value="no_value">has no value</option>
+              {ops.map(([v, l]) => <option value={v}>{l}</option>)}
+            </select>
+          )}
+          {f && !["has_value", "no_value", "is_true", "is_false"].includes(c.op) && (
+            <input type={(f.data_type === "number" ? "number" : f.data_type === "date" ? "date" : "text") as any} class={f.data_type === "number" ? "w5" : ""}
+              value={c.value} onInput={(e) => onChange({ ...c, value: (e.target as HTMLInputElement).value })} />
+          )}
+          {fields.length === 0 && <span class="muted small">No filterable fields yet.</span>}
+        </span>
+      );
+    }
     case "source_file": {
       const files = [...new Set(props.lib.map((q) => q.file_name))].sort();
       return <MultiSelect value={c.names} onChange={(names) => onChange({ ...c, names })} options={files.map((f) => ({ value: f, label: f }))} />;

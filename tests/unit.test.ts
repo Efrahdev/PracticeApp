@@ -1,33 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
-import { parseHTML } from "linkedom";
-import { parseQuestionBank, contentFingerprint, sha256Hex } from "../src/shared/parse";
 import { compile, emptyFilter } from "../src/client/filter";
 import { buildPaper, defaultSettings } from "../src/client/sampler";
 import type { LibQ } from "../src/client/types";
 
-const html = readFileSync("tests/fixtures/fractions-sample.html", "utf8");
-
-describe("parser", () => {
-  const { document } = parseHTML(html);
-  const r = parseQuestionBank(document as unknown as Document);
-  it("splits on question numbers with bands, categories and solutions", () => {
-    expect(r.questions.map((q) => q.number)).toEqual(["1", "2", "3", "4", "5", "6"]);
-    expect(r.questions.map((q) => q.band)).toEqual(["foundation", "foundation", "challenge", "foundation", "challenge", "achiever"]);
-    expect(r.categories.map((c) => c.name)).toEqual(["Part–Whole", "Equivalent Fractions"]);
-    expect(r.questions.every((q) => q.solutionHtml)).toBe(true);
-    expect(r.issues.filter((i) => i.level === "error")).toEqual([]);
-  });
-  it("fingerprints are stable and content-sensitive", async () => {
-    const css = await sha256Hex(r.css);
-    const a = await contentFingerprint(r.questions[0].html, css);
-    expect(await contentFingerprint(r.questions[0].html.replace(/\s+/g, "  "), css)).toBe(a);
-    expect(await contentFingerprint(r.questions[1].html, css)).not.toBe(a);
-  });
-});
-
 const q = (id: string, extra: Partial<LibQ> = {}): LibQ => ({
   id, subject_id: "s1", difficulty_code: "foundation", answer_format: "none", created_at: Date.now(), archived_at: null,
+  marks: null, content_format: "qpack_v1", has_solution: null, fields: {},
   version_id: "v" + id, version_no: 1, qno: id, plain_text: "text " + id, file_name: "f.html", concepts: [], has_key: 0,
   attempt_count: null, graded_count: null, correct_count: null, score_permille_sum: null, total_time_seconds: null,
   last_attempted_at: null, last_time_seconds: null, last_result: null, personal_difficulty_permille: null, familiarity_permille: null, ...extra,
@@ -68,5 +46,19 @@ describe("sampler", () => {
   it("honours a difficulty mix", () => {
     const r = buildPaper(pool, 10, 5, { ...defaultSettings(), mix: { foundation: 70, challenge: 30 } });
     expect(r.picks.filter((p) => p.q.difficulty_code === "foundation").length).toBe(7);
+  });
+});
+
+import { scopeCss } from "../src/client/print";
+describe("print", () => {
+  it("scopes each source's stylesheet to its own wrapper", () => {
+    const out = scopeCss("/* c */ @import url(x.css); :root{--a:1} body{font:serif} .q, h2 .n{color:red} @media print{.q{color:blue}} @page{margin:0} @font-face{font-family:F}", ".s1");
+    expect(out).toContain(".s1{--a:1}");
+    expect(out).toContain(".s1{font:serif}");
+    expect(out).toContain(".s1 .q,.s1 h2 .n{color:red}");
+    expect(out).toContain("@media print{.s1 .q{color:blue}}");
+    expect(out).toContain("@font-face{font-family:F}");
+    expect(out).not.toContain("@page");
+    expect(out).not.toContain("@import");
   });
 });

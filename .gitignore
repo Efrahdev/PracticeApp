@@ -6,3 +6,5 @@ public/app.js.map
 test-results/
 backups/
 src/worker/static.gen.ts
+public/chunks/
+public/fonts/

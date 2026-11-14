@@ -4,7 +4,10 @@ import { useEffect, useRef, useState } from "preact/hooks";
 import { api, localDate } from "../api";
 import { refresh, useData } from "../store";
 import type { Boot } from "../types";
-import { ErrorBox, fmtSecs, names, pct, QuestionFrame, ResultBadge, toast } from "../ui";
+import { ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
+import { loadStored, QuestionView, SolutionView } from "../views";
+import { parseNumberish } from "../../shared/qpack/numbers";
+import type { StoredQuestion } from "../../shared/qpack/types";
 
 export interface GradeIn { result: "correct" | "incorrect" | "partial"; score_permille?: number; error_type_code?: string | null; confidence?: number | null; note?: string | null }
 
@@ -65,11 +68,14 @@ interface Item {
   question_id: string;
   question_version_id: string;
   html_blob_sha256: string;
+  content_format: string | null;
   css_sha256: string | null;
   qno: string;
   answer_format: string;
   option_labels: string | null;
+  marks: number | null;
   has_key: number;
+  has_solution: number;
   concept_ids?: string;
 }
 
@@ -106,7 +112,15 @@ function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void
       </div>
     );
   }
-  if (f === "numeric") return <input class="answer" type="number" step="any" inputMode="decimal" placeholder="Your answer" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLInputElement).value)} />;
+  if (f === "numeric") {
+    const parsed = typeof props.value === "string" && props.value.trim() ? parseNumberish(props.value) : null;
+    return (
+      <div class="answer">
+        <input type="text" inputMode="decimal" placeholder="Your answer — 0.625, 5/8 or 1 1/2" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLInputElement).value)} />
+        {typeof props.value === "string" && props.value.trim() && !parsed && <p class="small warn-text">That isn't a number yet.</p>}
+      </div>
+    );
+  }
   if (f === "text") return <textarea class="answer" rows={3} placeholder="Your answer" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLTextAreaElement).value)} />;
   return <p class="muted small">Work it out (on paper is fine), then grade yourself.</p>;
 }
@@ -114,7 +128,7 @@ function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void
 function responseOf(item: Item, v: any) {
   const f = item.answer_format;
   if ((f === "mcq_single" || f === "mcq_multi") && Array.isArray(v) && v.length) return { kind: "mcq", options: v };
-  if (f === "numeric" && v !== undefined && v !== "" && Number.isFinite(Number(v))) return { kind: "numeric", numeric: Number(v) };
+  if (f === "numeric" && typeof v === "string" && parseNumberish(v)) return { kind: "numeric", numeric: parseNumberish(v)!.value };
   if (f === "text" && typeof v === "string" && v.trim()) return { kind: "text", text: v };
   return { kind: "none" };
 }
@@ -131,7 +145,14 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
   const [finished, setFinished] = useState(false);
   const [busy, setBusy] = useState(false);
   const [fixing, setFixing] = useState(false);
+  const [solOpen, setSolOpen] = useState(false);
+  const [stored, setStored] = useState<StoredQuestion | null>(null);
   const watch = useStopwatch(0, !saved && !finished && !!items);
+  const current = items ? items.find((i) => i.position === pos) ?? items[0] : null;
+  useEffect(() => {
+    setStored(null);
+    if (current?.content_format === "qpack_v1") loadStored(current.html_blob_sha256).then(setStored).catch(() => {});
+  }, [current?.question_version_id]);
 
   useEffect(() => {
     (async () => {
@@ -148,9 +169,10 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
           const d = await api("GET", `/api/questions/${props.questionId}`);
           const q = d.question;
           setItems([{
-            position: 1, question_id: q.id, question_version_id: q.version_id, html_blob_sha256: q.html_blob_sha256,
+            position: 1, question_id: q.id, question_version_id: q.version_id, html_blob_sha256: q.html_blob_sha256, content_format: q.content_format,
             css_sha256: d.stylesheets.find((s: any) => s.question_version_id === q.version_id)?.blob_sha256 ?? null,
-            qno: q.source_question_number, answer_format: q.answer_format, option_labels: q.option_labels, has_key: d.answerKey ? 1 : 0,
+            qno: q.source_question_number, answer_format: q.answer_format, option_labels: q.option_labels, marks: q.marks,
+            has_key: d.answerKey && d.answerKey.origin !== "suggestion" ? 1 : 0, has_solution: d.solution ? 1 : 0,
           }]);
           watch.reset(0);
         }
@@ -182,9 +204,12 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
   if (!items || !boot) return <p class="muted">Loading…</p>;
   if (session?.completed_at || finished) return <Summary paperId={props.paperId} questionId={props.questionId} />;
 
-  const item = items.find((i) => i.position === pos) ?? items[0];
+  const item = current!;
   const resp = responseOf(item, answer);
   const canAuto = !!item.has_key && resp.kind !== "none" && resp.kind !== "text";
+  // FR: a paper can include or leave out solutions; single questions always have them.
+  const solutionsAllowed = !paper || paper.solutions_mode !== "hidden";
+  const parts = stored?.parts ?? [];
 
   const submit = async (g?: GradeIn) => {
     setBusy(true);
@@ -209,6 +234,7 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
     setSaved(null);
     setAnswer(undefined);
     setFixing(false);
+    setSolOpen(false);
     if (!session || pos >= items.length) { setFinished(true); return; }
     setPos(pos + 1);
     watch.reset(0);
@@ -230,14 +256,26 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         }}>Finish early</button>}
       </div>
 
-      <section class="card flush"><QuestionFrame key={item.question_version_id} htmlSha={item.html_blob_sha256} cssSha={item.css_sha256} minHeight={140} title={`Question ${item.qno}`} /></section>
+      <section class="card flush">
+        <QuestionView key={item.question_version_id} v={{ content_format: item.content_format, blob_sha256: item.html_blob_sha256, css_sha256: item.css_sha256 }}
+          opts={{ showMarks: true, marks: item.marks, showHints: true }} minHeight={120} title={`Question ${item.qno}`} />
+      </section>
       <ErrorBox error={err} />
+      {solutionsAllowed && item.has_solution ? (
+        <div class="row">
+          <button class="btn ghost small" onClick={() => setSolOpen(!solOpen)}>{solOpen ? "Hide solution" : "Show solution"}</button>
+          {!saved && !solOpen && <span class="small muted">(you can check it any time)</span>}
+        </div>
+      ) : null}
+      {solutionsAllowed && solOpen && <VersionSolution versionId={item.question_version_id} />}
 
       {!saved ? (
         <section class="card">
           <AnswerInput item={item} value={answer} onChange={setAnswer} disabled={busy} />
           {canAuto ? (
             <div class="row end"><button class="btn primary" disabled={busy} onClick={() => submit()}>Check answer</button></div>
+          ) : parts.length > 1 ? (
+            <PartMarker boot={boot} parts={parts} onSubmit={submit} />
           ) : (
             <GradeForm boot={boot} onSubmit={submit} />
           )}
@@ -251,8 +289,8 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
             <span class="grow" />
             <button class="btn ghost small" onClick={() => setFixing(!fixing)}>Correct grade</button>
           </div>
-          {saved.answer_key && saved.grade.method === "auto" && (
-            <p class="small">Answer: {saved.answer_key.mcq_correct ? JSON.parse(saved.answer_key.mcq_correct).join(", ") : saved.answer_key.numeric_value ?? saved.answer_key.text_value}</p>
+          {saved.answer_key && (saved.grade.method === "auto" || solutionsAllowed) && (
+            <p class="small">{saved.answer_key.origin === "suggestion" ? "AI-suggested answer (unverified)" : "Answer"}: {saved.answer_key.mcq_correct ? JSON.parse(saved.answer_key.mcq_correct).join(", ") : saved.answer_key.numeric_value ?? saved.answer_key.text_value}</p>
           )}
           {fixing && (
             <GradeForm boot={boot} submitLabel="Save correction" onSubmit={async (g) => {
@@ -263,13 +301,68 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
               refresh();
             }} />
           )}
-          <h3>Solution</h3>
-          {!saved.solution ? <p class="muted">No solution saved for this question.</p>
-            : saved.solution.body_blob_sha256 ? <QuestionFrame htmlSha={saved.solution.body_blob_sha256} cssSha={item.css_sha256} title="Solution" />
-            : <p class="pre">{saved.solution.body_text}</p>}
+          {!solutionsAllowed ? <p class="small muted">Solutions are not included in this paper. You can open them later from each question's page.</p>
+            : !saved.solution ? <p class="small muted">No solution saved for this question.</p>
+            : !solOpen ? <button class="btn small" onClick={() => setSolOpen(true)}>Show solution</button> : null}
           <div class="row end"><button class="btn primary" onClick={next}>{session && pos < items.length ? "Next question →" : "Finish"}</button></div>
         </section>
       )}
+    </div>
+  );
+}
+
+/** Solution of one exact version, fetched only when asked for. */
+function VersionSolution(props: { versionId: string }) {
+  const [d, setD] = useState<any>(null);
+  const [err, setErr] = useState<string | null>(null);
+  useEffect(() => {
+    setD(null);
+    api("GET", `/api/versions/${props.versionId}/solution`).then(setD).catch((e) => setErr(e.message));
+  }, [props.versionId]);
+  if (err) return <ErrorBox error={err} />;
+  if (!d) return <p class="muted small">Loading solution…</p>;
+  if (!d.solution) return <p class="muted small">No solution saved for this question.</p>;
+  return (
+    <section class="card">
+      <h3>Solution {d.solution.origin === "suggestion" && <span class="badge r-partial">AI-written · unverified</span>}</h3>
+      <SolutionView s={d.solution} cssSha={d.css_sha256} />
+    </section>
+  );
+}
+
+/** Multi-part questions: tick the parts you got right; the score follows the marks. */
+function PartMarker(props: { boot: Boot; parts: StoredQuestion["parts"]; onSubmit: (g: GradeIn) => Promise<void> }) {
+  const [got, setGot] = useState<Record<string, "yes" | "half" | "no">>({});
+  const [overall, setOverall] = useState(false);
+  const [busy, setBusy] = useState(false);
+  if (overall) return <><GradeForm boot={props.boot} onSubmit={props.onSubmit} /><button class="btn ghost small" onClick={() => setOverall(false)}>Mark part by part instead</button></>;
+  const weight = (m: number | null) => (m === null || m === undefined ? 1 : m);
+  const total = props.parts.reduce((s, p) => s + weight(p.marks), 0) || 1;
+  const earned = props.parts.reduce((s, p) => s + (got[p.label] === "yes" ? weight(p.marks) : got[p.label] === "half" ? weight(p.marks) / 2 : 0), 0);
+  const all = props.parts.every((p) => got[p.label]);
+  const permille = Math.round((earned / total) * 1000);
+  const result: GradeIn["result"] = permille >= 1000 ? "correct" : permille <= 0 ? "incorrect" : "partial";
+  return (
+    <div class="grade-form">
+      <p class="small muted">Mark each part:</p>
+      {props.parts.map((p) => (
+        <div class="row part-mark">
+          <strong class="w5">({p.label})</strong>
+          <span class="muted small grow">{p.marks !== null && p.marks !== undefined ? `${p.marks} mark${p.marks === 1 ? "" : "s"}` : ""}</span>
+          {(["yes", "half", "no"] as const).map((v) => (
+            <button type="button" class={`chip ${got[p.label] === v ? "on" : ""}`} aria-pressed={got[p.label] === v}
+              onClick={() => setGot({ ...got, [p.label]: v })}>{v === "yes" ? "✓" : v === "half" ? "½" : "✗"}</button>
+          ))}
+        </div>
+      ))}
+      <div class="row wrap end">
+        <span class="small">{all ? `Score: ${Math.round(earned * 100) / 100} / ${total} (${Math.round(permille / 10)}%)` : "Mark every part"}</span>
+        <button class="btn ghost small" onClick={() => setOverall(true)}>Mark overall instead</button>
+        <button class="btn primary" disabled={!all || busy} onClick={async () => {
+          setBusy(true);
+          try { await props.onSubmit({ result, score_permille: result === "partial" ? Math.min(999, Math.max(1, permille)) : undefined }); } finally { setBusy(false); }
+        }}>Save grade</button>
+      </div>
     </div>
   );
 }

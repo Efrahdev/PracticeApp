@@ -15,6 +15,7 @@ export function PaperBuilder(props: { candidates: LibQ[]; def: FilterDef; savedF
   const [name, setName] = useState(`Paper ${new Date().toLocaleDateString(undefined, { day: "numeric", month: "short" })}`);
   const [settings, setSettings] = useState<SamplingSettings>(defaultSettings());
   const [useMix, setUseMix] = useState(false);
+  const [withSolutions, setWithSolutions] = useState(true);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const accuracy = useConceptAccuracy();
@@ -37,6 +38,7 @@ export function PaperBuilder(props: { candidates: LibQ[]; def: FilterDef; savedF
         seed,
         generator_version: GENERATOR_VERSION,
         requested_count: count,
+        solutions_mode: withSolutions ? "included" : "hidden",
         items: result.picks.map((p) => ({ question_id: p.q.id, question_version_id: p.q.version_id, pick_reason: p.reason })),
       });
       toast("Paper saved");
@@ -61,6 +63,11 @@ export function PaperBuilder(props: { candidates: LibQ[]; def: FilterDef; savedF
           <label><input type="checkbox" checked={settings.favourStale} onChange={(e) => setSettings({ ...settings, favourStale: (e.target as HTMLInputElement).checked })} /> ones not seen recently</label>
           <label><input type="checkbox" checked={settings.favourWeak} onChange={(e) => setSettings({ ...settings, favourWeak: (e.target as HTMLInputElement).checked })} /> weak concepts</label>
         </div>
+      </div>
+      <div class="field solutions-choice">
+        <span>Solutions</span>
+        <label><input type="radio" name="sol" checked={withSolutions} onChange={() => setWithSolutions(true)} /> <b>Include solutions</b> — open any question's worked solution while practising; printed copy ends with a solutions section</label>
+        <label><input type="radio" name="sol" checked={!withSolutions} onChange={() => setWithSolutions(false)} /> <b>No solutions</b> — test conditions: solutions stay hidden in this paper and its printed copy</label>
       </div>
       <div class="field">
         <label><input type="checkbox" checked={useMix} onChange={(e) => setUseMix((e.target as HTMLInputElement).checked)} /> Set a difficulty mix</label>
