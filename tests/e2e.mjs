@@ -66,31 +66,34 @@ if (!/\t0\t1\t4\t0\t1$/.test(doneRow.replace(/ +/g, ""))) fail("unexpected resul
 log("re-import: 1 new version, 4 already had, 1 solution refreshed");
 
 // 4. Library + filters
+const count = (t) => page.locator(".dt-count", { hasText: new RegExp(`^${t}$`) }).waitFor();
 await page.goto(`${BASE}/#/`);
-await page.getByText("9 matches").waitFor();
+await count("9");
+await page.getByRole("button", { name: /More filters/ }).click();
 await page.selectOption('select[aria-label="Add condition"]', "field");
 await page.locator(".fcond select").first().selectOption({ label: "Collection" });
-await page.getByText("5 matches").waitFor();
-await page.getByRole("button", { name: "Clear" }).click();
+await count("5 of 9");
+await page.getByRole("button", { name: "Clear all" }).click();
 await page.selectOption('select[aria-label="Add condition"]', "has_solution");
 await page.locator(".fcond select").first().selectOption("unverified");
-await page.getByText("1 match", { exact: true }).waitFor();
+await count("1 of 9");
+if (!(await page.locator(".imp-name").first().innerText()).trim()) fail("import name missing in the library");
+await page.getByRole("button", { name: "Sort by question" }).click();
+await page.getByRole("button", { name: "Sort by question" }).click();
 log("filters: custom field Collection → 5; AI solution not verified → 1");
 await shot("2-library");
 
 // 5. Approve the AI solution; check the refreshed solution of q3
-await page.locator(".qrow a").first().click();
+await page.locator(".dt-qno").first().click();
 await page.getByText("AI-written · unverified").first().waitFor();
 await page.getByRole("button", { name: "mark it verified" }).click();
 await page.getByText("Solution verified").waitFor();
 log("AI solution approved (FR-1.10)");
 await page.goto(`${BASE}/#/`);
-await page.getByRole("button", { name: "Clear" }).click();
-await page.locator('input[type=search]').count();
-await page.selectOption('select[aria-label="Add condition"]', "text");
-await page.locator('.fcond input[type=search]').fill("equivalent");
-await page.getByText("1 match", { exact: true }).waitFor();
-await page.locator(".qrow a").first().click();
+await page.getByRole("button", { name: "Clear all" }).click();
+await page.getByLabel("Search questions").fill("equivalent");
+await count("1 of 9");
+await page.locator(".dt-qno").first().click();
 await page.getByRole("button", { name: "Show solution" }).click();
 const solFrame = page.locator("section", { hasText: "Solution" }).locator("iframe.qframe").last();
 await solFrame.contentFrame().getByText("Divide top and bottom by 2 to get").waitFor();
@@ -100,9 +103,9 @@ await shot("3-question");
 
 // 6. Paper WITHOUT solutions: practise everything
 await page.goto(`${BASE}/#/`);
-await page.getByRole("button", { name: "Clear" }).click();
-await page.getByText("9 matches").waitFor();
-await page.getByRole("button", { name: "Build paper" }).click();
+if (await page.getByRole("button", { name: "Clear all" }).count()) await page.getByRole("button", { name: "Clear all" }).click();
+await count("9");
+await page.getByRole("button", { name: /^Build paper/ }).click();
 await page.getByRole("heading", { name: "Build a paper" }).waitFor();
 await page.getByRole("textbox", { name: "Paper name" }).fill("Test paper");
 await page.getByRole("spinbutton", { name: "Number of questions" }).fill("9");
@@ -134,7 +137,7 @@ await page.getByText("Removed from this paper (1)").click();
 await page.getByRole("button", { name: "Put back" }).click();
 log("builder: subject + difficulty mixes on target, history rule, pin survives shuffle, replace");
 await page.getByRole("button", { name: /Save paper \(9\)/ }).first().click();
-await page.getByText("No solutions", { exact: true }).waitFor();
+await page.locator(".pb-badge", { hasText: "Test conditions" }).waitFor();
 log("paper saved with solutions left out");
 await page.getByRole("link", { name: "Start" }).click();
 for (let i = 1; i <= 9; i++) {
@@ -165,12 +168,14 @@ await shot("4-summary");
 // 7. Paper WITH solutions: solution available before grading; print
 await page.goto(`${BASE}/#/`);
 await page.goto(`${BASE}/#/papers`);
-await page.getByRole("button", { name: "New paper" }).click();
+await page.locator(".dt-row:not(.dt-head)", { hasText: "Test paper" }).waitFor();
+await page.getByRole("button", { name: "Sort by marks" }).click();
+await page.getByRole("button", { name: "Build paper" }).click();
 await page.getByRole("heading", { name: "Build a paper" }).waitFor();
 await page.getByRole("spinbutton", { name: "Number of questions" }).fill("3");
 await page.getByRole("textbox", { name: "Paper name" }).fill("With solutions");
 await page.getByRole("button", { name: /Save paper \(3\)/ }).first().click();
-await page.getByText("Solutions included", { exact: true }).waitFor();
+await page.locator(".pb-badge", { hasText: "Solutions included" }).waitFor();
 const [popup] = await Promise.all([page.waitForEvent("popup"), page.getByRole("button", { name: "Print / PDF" }).click()]);
 await popup.getByRole("heading", { name: "Solutions", exact: true }).waitFor({ timeout: 20000 });
 if ((await popup.locator(".pq").count()) < 6) fail("print copy is missing questions or solutions");
@@ -268,7 +273,27 @@ await page.locator(".import-row", { hasText: "Physics batch 1" }).getByRole("but
 await page.getByText("Restored 4 question(s)").waitFor();
 log("delete of practised questions archives them instead (history kept); restored from import history");
 
-// 12. Integrity + rebuild + backup
+// 12. Subjects & concepts clean-up: delete a junk subject, delete a used concept with re-tagging
+await page.goto(`${BASE}/#/settings`);
+await page.getByLabel("New subject name").fill("Junk subject");
+await page.getByRole("button", { name: "Add subject" }).click();
+await page.getByRole("button", { name: "Delete Junk subject" }).click();
+await page.getByLabel("Type DELETE to confirm").fill("DELETE");
+await page.getByRole("button", { name: "Delete permanently" }).click();
+await page.getByText("Deleted 1 subject").waitFor();
+const eqBefore = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.filter((q) => q.concepts && q.concepts.includes("Equivalent")).length);
+await page.getByLabel("Find a subject or concept").fill("Equivalent fractions");
+await page.getByRole("button", { name: "Delete Equivalent fractions" }).click();
+await page.getByText(/1 question.* tagged with this/).waitFor();
+await page.getByLabel("Re-tag them with another concept").check();
+await page.getByLabel("Type DELETE to confirm").fill("DELETE");
+await page.getByRole("button", { name: "Delete permanently" }).click();
+await page.getByText("Deleted 1 concept").waitFor();
+const bootNow = await page.evaluate(async () => (await (await fetch("/api/bootstrap")).json()));
+if (bootNow.subjects.some((x) => x.name === "Junk subject") || bootNow.concepts.some((c) => c.name === "Equivalent fractions")) fail("taxonomy delete did not remove the items");
+log("taxonomy: junk subject deleted; used concept deleted with its question re-tagged", eqBefore >= 0 ? "" : "");
+
+// 13. Integrity + rebuild + backup
 await page.goto(`${BASE}/#/settings`);
 await page.getByRole("button", { name: "Run integrity check" }).click();
 await page.getByText(/no problems found/).waitFor();

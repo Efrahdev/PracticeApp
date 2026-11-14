@@ -32,6 +32,7 @@ export interface LibQ {
   has_solution: number | null; // null = none, 1 = verified, 2 = AI (unverified)
   fields: Record<string, string | number>;
   batches: string[]; // imports that brought in a version of this question
+  import_id?: string | null; // import of the current version
   version_id: string;
   version_no: number;
   qno: string;

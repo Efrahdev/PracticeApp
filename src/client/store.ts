@@ -61,6 +61,7 @@ export interface BuildInit {
   tree?: string[];
   name?: string;
   favourWeak?: boolean;
+  pool?: Record<string, unknown>; // extra builder pool rules (e.g. the Library's quick filters)
 }
 let pendingBuild: BuildInit | null = null;
 export function openBuilder(init: BuildInit = {}) {

@@ -1,6 +1,7 @@
 // Practice (FR-4). One question at a time; pause and resume; no countdowns or
 // time limits anywhere — time is recorded quietly for information only.
 import { useEffect, useRef, useState } from "preact/hooks";
+import { SortTable } from "../grid";
 import { api, localDate } from "../api";
 import { refresh, useData } from "../store";
 import type { Boot } from "../types";
@@ -413,12 +414,12 @@ export function PaperSummary(props: { d: any; boot: Boot; embedded?: boolean }) 
         </div>
         <h3>Mistakes by concept</h3>
         {byConcept.size === 0 ? <p class="muted small">No concept tags on these questions.</p> : (
-          <table class="table">
-            <thead><tr><th>Concept</th><th>Missed</th><th>Of</th></tr></thead>
-            <tbody>{[...byConcept.entries()].sort((a, b) => b[1].miss - a[1].miss).map(([cid, c]) => (
-              <tr><td>{n.concept.get(cid) ?? cid}</td><td>{c.miss}</td><td>{c.total}</td></tr>
-            ))}</tbody>
-          </table>
+          <SortTable rows={[...byConcept.entries()].map(([cid, c]) => ({ name: n.concept.get(cid) ?? cid, miss: c.miss, total: c.total }))} initial={{ key: "miss", dir: "desc" }}
+            cols={[
+              { key: "name", label: "Concept", get: (r) => r.name, render: (r) => r.name },
+              { key: "miss", label: "Missed", get: (r) => r.miss, first: "desc", render: (r) => r.miss },
+              { key: "total", label: "Of", get: (r) => r.total, first: "desc", render: (r) => r.total },
+            ]} />
         )}
         <h3>Questions</h3>
         <ol class="pick-list">

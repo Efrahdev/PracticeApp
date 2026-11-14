@@ -1,3 +1,4 @@
+import { taxonomyEdit } from "./taxonomy";
 import { checkAccess } from "./auth";
 import { HttpError, json } from "./http";
 import * as api from "./api";
@@ -37,6 +38,7 @@ on("POST", "/api/subjects", (r, env) => api.subjectCreate(r, env));
 on("PATCH", "/api/subjects/:id", (r, env, p) => api.subjectPatch(r, env, p[0]));
 on("POST", "/api/concepts", (r, env) => api.conceptCreate(r, env));
 on("PATCH", "/api/concepts/:id", (r, env, p) => api.conceptPatch(r, env, p[0]));
+on("POST", "/api/taxonomy", (r, env) => taxonomyEdit(r, env));
 on("POST", "/api/filters", (r, env) => api.filterSave(r, env));
 on("PUT", "/api/filters/:id", (r, env, p) => api.filterSave(r, env, p[0]));
 on("DELETE", "/api/filters/:id", (_r, env, p) => api.filterArchive(env, p[0]));

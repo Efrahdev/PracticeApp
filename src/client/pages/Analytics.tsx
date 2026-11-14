@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
+import { SortTable } from "../grid";
 import { api, localDate } from "../api";
 import { descendants } from "../filter";
 import { openBuilder, useData } from "../store";
@@ -142,10 +143,12 @@ export function Analytics() {
               label: n.subject.get(id) ?? id,
               points: [...(view.subjWeekly.get(id) ?? new Map()).entries()].sort().map(([wk, b]) => ({ x: wk, y: b.n ? b.s / b.n / 10 : 0 })),
             }))} />
-            <table class="table">
-              <thead><tr><th>Subject</th><th>Accuracy</th><th>Graded</th></tr></thead>
-              <tbody>{subjIds.map((id) => { const a = view.subjAgg.get(id)!; return <tr><td>{n.subject.get(id)}</td><td>{Math.round(a.s / a.n / 10)}%</td><td>{a.n}</td></tr>; })}</tbody>
-            </table>
+            <SortTable rows={subjIds.map((id) => ({ id, name: n.subject.get(id) ?? id, acc: view.subjAgg.get(id)!.s / view.subjAgg.get(id)!.n / 10, n: view.subjAgg.get(id)!.n }))}
+              cols={[
+                { key: "name", label: "Subject", get: (r) => r.name, render: (r) => r.name },
+                { key: "acc", label: "Accuracy", get: (r) => r.acc, first: "desc", render: (r) => `${Math.round(r.acc)}%` },
+                { key: "n", label: "Graded", get: (r) => r.n, first: "desc", render: (r) => r.n },
+              ]} />
           </section>
 
           <section class="card">
@@ -160,19 +163,14 @@ export function Analytics() {
 
           <section class="card">
             <h3>All concepts (weighted by concept weight)</h3>
-            <table class="table">
-              <thead><tr><th>Concept</th><th>Accuracy</th><th>Graded</th><th class="hide-sm">Trend</th><th /></tr></thead>
-              <tbody>{concepts.map((c) => {
-                const pts = [...(view.conceptWeekly.get(c.id) ?? new Map()).entries()].sort().map(([, b]) => (b.w ? b.s / b.w / 1000 : 0));
-                return (
-                  <tr>
-                    <td>{conceptPath(boot, c.id)}</td><td>{Math.round(c.acc * 100)}%</td><td>{c.n}</td>
-                    <td class="hide-sm"><Spark values={pts} /></td>
-                    <td><button class="btn ghost small" onClick={() => buildOn([c.id])}>Practise</button></td>
-                  </tr>
-                );
-              })}</tbody>
-            </table>
+            <SortTable rows={concepts.map((c) => ({ ...c, path: conceptPath(boot, c.id) }))} initial={{ key: "acc", dir: "asc" }}
+              cols={[
+                { key: "path", label: "Concept", get: (c) => c.path, render: (c) => c.path },
+                { key: "acc", label: "Accuracy", get: (c) => c.acc, render: (c) => `${Math.round(c.acc * 100)}%` },
+                { key: "n", label: "Graded", get: (c) => c.n, first: "desc", render: (c) => c.n },
+                { key: "trend", label: "Trend", class: "hide-sm", render: (c) => <Spark values={[...(view.conceptWeekly.get(c.id) ?? new Map()).entries()].sort().map(([, b]) => (b.w ? b.s / b.w / 1000 : 0))} /> },
+                { key: "go", label: "", render: (c) => <button class="btn ghost small" onClick={() => buildOn([c.id])}>Practise</button> },
+              ]} />
           </section>
         </>
       )}

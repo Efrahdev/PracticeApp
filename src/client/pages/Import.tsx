@@ -1,4 +1,5 @@
 import { useMemo, useState } from "preact/hooks";
+import { SortTable } from "../grid";
 import promptTemplate from "../../../docs/ai-prompt.md";
 import schemaJson from "../../../docs/question-pack.schema.json";
 import exampleJson from "../../../docs/examples/fractions-pack.json";
@@ -191,10 +192,14 @@ export function Import() {
       {stage === "done" && results && (
         <section class="card">
           <h2>Import finished</h2>
-          <table class="table">
-            <thead><tr><th>Pack</th><th>New</th><th>New versions</th><th>Already had</th><th>Skipped</th><th>Solutions updated</th></tr></thead>
-            <tbody>{results.map((r) => <tr><td>{r.pack}</td><td>{r.new}</td><td>{r.new_versions}</td><td>{r.duplicates}</td><td>{r.rejected}</td><td>{r.updated_solutions + r.updated_keys}</td></tr>)}</tbody>
-          </table>
+          <SortTable rows={results} cols={[
+            { key: "pack", label: "Pack", get: (r) => r.pack, render: (r) => r.pack },
+            { key: "new", label: "New", get: (r) => r.new, first: "desc", render: (r) => r.new },
+            { key: "nv", label: "New versions", get: (r) => r.new_versions, first: "desc", render: (r) => r.new_versions },
+            { key: "dup", label: "Already had", get: (r) => r.duplicates, first: "desc", render: (r) => r.duplicates },
+            { key: "rej", label: "Skipped", get: (r) => r.rejected, first: "desc", render: (r) => r.rejected },
+            { key: "upd", label: "Solutions updated", get: (r) => r.updated_solutions + r.updated_keys, first: "desc", render: (r) => r.updated_solutions + r.updated_keys },
+          ]} />
           <div class="row end"><button class="btn" onClick={reset}>Import more</button><a class="btn primary" href="#/">Go to library</a></div>
         </section>
       )}

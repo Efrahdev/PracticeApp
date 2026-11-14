@@ -38,12 +38,12 @@ function route(h: string): { tab: string; el: ComponentChild; bare?: boolean; wi
   const parts = h.replace(/^#\/?/, "").split("/").filter(Boolean);
   const [a, b] = parts;
   switch (a) {
-    case undefined: return { tab: "library", el: <Library /> };
+    case undefined: return { tab: "library", el: <Library />, wide: true };
     case "import": return { tab: "import", el: <LazyImport /> };
     case "q": return { tab: "library", el: <Question id={b} /> };
     case "papers":
       if (b === "new") return { tab: "papers", el: <PaperBuilder />, wide: true };
-      return b ? { tab: "papers", el: <PaperDetail id={b} /> } : { tab: "papers", el: <Papers /> };
+      return b ? { tab: "papers", el: <PaperDetail id={b} />, wide: true } : { tab: "papers", el: <Papers />, wide: true };
     case "practice": return { tab: "papers", el: <Practice key={b} paperId={b} />, bare: true };
     case "practice-q": return { tab: "library", el: <Practice key={b} questionId={b} />, bare: true };
     case "analytics": return { tab: "analytics", el: <Analytics /> };

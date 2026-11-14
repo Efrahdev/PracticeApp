@@ -1,56 +1,76 @@
+// Library = the question bank: every question in one wide, sortable table, with a
+// filter bar on top and "Build paper" in the corner (it carries the current filter).
 import { useEffect, useMemo, useState } from "preact/hooks";
-import { api } from "../api";
-import { compile, COND_LABELS, defaultCond, emptyFilter, parseDef, type Cond, type FilterDef, type Group } from "../filter";
-import { openBuilder, refresh, takePendingFilter, useData } from "../store";
+import { compile, COND_LABELS, defaultCond, emptyFilter, type Cond, type FilterDef, type Group } from "../filter";
+import { openBuilder, takePendingFilter, useData } from "../store";
 import type { Boot, LibQ } from "../types";
-import { conceptPath, ErrorBox, fmtDate, fmtSecs, familiarityNow, Modal, MultiSelect, names, pct, ResultBadge, toast } from "../ui";
+import { conceptPath, ErrorBox, fmtDate, fmtSecs, MultiSelect, pct } from "../ui";
 import { BulkEdit } from "./BulkEdit";
+import { DataGrid, type GridCol } from "../grid";
+import { Badge, Icon } from "../builder/controls";
+import { FORMAT_SHORT, RESULT_LABEL } from "../builder/describe";
+import { mainConceptPath } from "../builder/engine";
+import { ConceptsCell, DiffMark, FieldsCell, HistoryCell, QuestionPeek, rankOf, avgSecs, SolutionCell, SubjectCell } from "../builder/PaperTable";
+import { makeCtx, type Ctx } from "../builder/pool";
+import { NONE, RESULT_BUCKETS, resultBucket } from "../builder/spec";
 
-const SESSION_KEY = "library.filter";
-function loadFilter(): { def: FilterDef; savedId: string | null } {
+interface Quick { text: string; subject: string; importId: string; difficulty: string; result: string }
+const noQuick = (): Quick => ({ text: "", subject: "", importId: "", difficulty: "", result: "" });
+const VIEW_KEY = "library.view";
+
+function loadView(): { def: FilterDef; quick: Quick } {
   try {
-    const s = sessionStorage.getItem(SESSION_KEY);
-    if (s) return JSON.parse(s);
+    const s = sessionStorage.getItem(VIEW_KEY);
+    if (s) {
+      const v = JSON.parse(s);
+      if (v?.def?.v === 1) return { def: v.def, quick: { ...noQuick(), ...(v.quick ?? {}) } };
+    }
   } catch { /* storage unavailable */ }
-  return { def: emptyFilter(), savedId: null };
+  return { def: emptyFilter(), quick: noQuick() };
 }
+
+const snippet = (t: string, n = 200) => {
+  const s = t.replace(/\s+/g, " ").trim();
+  return s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s;
+};
+export const importName = (ctx: Ctx, q: LibQ) => (q.import_id ? ctx.importLabel.get(q.import_id) : undefined) ?? q.file_name;
 
 export function Library() {
   const { boot, lib, error } = useData();
   const [pending] = useState(() => takePendingFilter());
-  const [state, setState] = useState(() => {
+  const [view, setView] = useState(() => {
     const p = pending;
-    if (p && p.def) return { def: p.def as FilterDef, savedId: null };
-    return p ? { def: p as FilterDef, savedId: null } : loadFilter();
+    if (p && p.def) return { def: p.def as FilterDef, quick: noQuick() };
+    return p ? { def: p as FilterDef, quick: noQuick() } : loadView();
   });
-  const { def, savedId } = state;
-  const setDef = (d: FilterDef, id: string | null = savedId) => setState({ def: d, savedId: id });
+  const { def, quick } = view;
+  const setDef = (d: FilterDef) => setView((v) => ({ ...v, def: d }));
+  const setQuick = (q: Partial<Quick>) => setView((v) => ({ ...v, quick: { ...v.quick, ...q } }));
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [showBulk, setShowBulk] = useState(false);
-  const [limit, setLimit] = useState(100);
-  const [sort, setSort] = useState<"qno" | "added" | "last" | "attempts">("added");
-
+  const [showFilters, setShowFilters] = useState(() => def.groups.some((g) => g.conds.length > 0));
+  const [open, setOpen] = useState<Set<string>>(new Set());
   useEffect(() => {
-    try { sessionStorage.setItem(SESSION_KEY, JSON.stringify(state)); } catch { /* ignore */ }
-  }, [state]);
-  // Arriving from an import's "Edit questions": select everything it matched and open the form.
+    try { sessionStorage.setItem(VIEW_KEY, JSON.stringify(view)); } catch { /* ignore */ }
+  }, [view]);
   const [autoDone, setAutoDone] = useState(false);
+  const ctx = useMemo(() => (boot && lib ? makeCtx(boot, lib) : null), [boot, lib]);
+  const now = useMemo(() => Date.now(), [lib]);
 
   const results = useMemo(() => {
-    if (!lib || !boot) return [];
-    const t0 = performance.now();
+    if (!lib || !boot || !ctx) return [];
     const f = compile(def, boot.concepts);
-    const out = lib.filter(f);
-    const cmp: Record<typeof sort, (a: LibQ, b: LibQ) => number> = {
-      qno: (a, b) => a.file_name.localeCompare(b.file_name) || Number(a.qno) - Number(b.qno),
-      added: (a, b) => b.created_at - a.created_at || Number(a.qno) - Number(b.qno),
-      last: (a, b) => (b.last_attempted_at ?? 0) - (a.last_attempted_at ?? 0),
-      attempts: (a, b) => (b.attempt_count ?? 0) - (a.attempt_count ?? 0),
-    };
-    out.sort(cmp[sort]);
-    (out as any).ms = performance.now() - t0;
-    return out;
-  }, [lib, boot, def, sort]);
+    const terms = quick.text.toLowerCase().split(/\s+/).filter(Boolean);
+    return lib.filter((q) => {
+      if (!f(q)) return false;
+      if (terms.length && !terms.every((t) => (ctx.hay.get(q.id) ?? "").includes(t) || importName(ctx, q).toLowerCase().includes(t))) return false;
+      if (quick.subject && (q.subject_id ?? NONE) !== quick.subject) return false;
+      if (quick.importId && !q.batches.includes(quick.importId)) return false;
+      if (quick.difficulty && (q.difficulty_code ?? NONE) !== quick.difficulty) return false;
+      if (quick.result && resultBucket(q) !== quick.result) return false;
+      return true;
+    });
+  }, [lib, boot, ctx, def, quick]);
 
   useEffect(() => {
     if (autoDone || !pending?.selectAll || !lib || !boot) return;
@@ -60,118 +80,167 @@ export function Library() {
   }, [lib, boot, results]);
 
   if (error) return <ErrorBox error={error} />;
-  if (!boot || !lib) return <p class="muted">Loading library…</p>;
-  const n = names(boot);
+  if (!boot || !lib || !ctx) return <p class="muted">Loading library…</p>;
 
-  const saveFilter = async () => {
-    const existing = boot.filters.find((f) => f.id === savedId);
-    const name = prompt("Name for this filter:", existing?.name ?? "");
-    if (!name) return;
-    try {
-      const r = existing && existing.name === name
-        ? await api("PUT", `/api/filters/${existing.id}`, { name, definition: def })
-        : await api("POST", "/api/filters", { name, definition: def });
-      await refresh();
-      setDef(def, r.id);
-      toast("Filter saved");
-    } catch (e) { toast((e as Error).message, "error"); }
+  const condCount = def.groups.reduce((a, g) => a + g.conds.length, 0);
+  const quickCount = Object.values(quick).filter(Boolean).length;
+  const allSelected = results.length > 0 && results.every((q) => selected.has(q.id));
+  const toggle = (id: string) => { const s = new Set(selected); s.has(id) ? s.delete(id) : s.add(id); setSelected(s); };
+  const toggleOpen = (id: string) => { const s = new Set(open); s.has(id) ? s.delete(id) : s.add(id); setOpen(s); };
+  const attempted = lib.filter((q) => q.attempt_count && !q.archived_at).length;
+  const live = lib.filter((q) => !q.archived_at).length;
+  const buildPaper = () => {
+    const subj = quick.subject ? ctx.node.get(quick.subject === NONE ? "u:__none" : `s:${quick.subject}`) : undefined;
+    openBuilder({
+      def,
+      pool: {
+        text: quick.text.trim(),
+        imports: quick.importId ? [quick.importId] : [],
+        difficulty: quick.difficulty ? [quick.difficulty] : null,
+        results: quick.result ? [quick.result as any] : [],
+        tree: subj ? [...subj.keys] : null,
+      },
+    });
   };
 
-  const allSelected = results.length > 0 && results.every((q) => selected.has(q.id));
+  const cols: GridCol<LibQ>[] = [
+    {
+      id: "sel", label: "Select", min: 0, fr: 0, px: 44, fixed: true, sticky: true, card: "lead",
+      header: <input type="checkbox" class="cb" aria-label="Select all matching questions" checked={allSelected} onChange={() => setSelected(allSelected ? new Set() : new Set(results.map((q) => q.id)))} />,
+      render: (q) => <input type="checkbox" class="cb" aria-label={`Select Q${q.qno}`} checked={selected.has(q.id)} onChange={() => toggle(q.id)} />,
+    },
+    {
+      id: "question", label: "Question", min: 240, fr: 3.2, fixed: true, sticky: true, card: "main", sortValue: (q) => q.qno,
+      render: (q) => (
+        <div class="dt-q">
+          <div class="dt-qhead">
+            <a class="dt-qno" href={`#/q/${q.id}`}>Q{q.qno}</a>
+            {q.version_no > 1 && <span class="pb-badge muted">v{q.version_no}</span>}
+            {q.archived_at && <span class="pb-badge warn">Archived</span>}
+          </div>
+          <p class="dt-snip">{snippet(q.plain_text) || <em class="muted">No text</em>}</p>
+          <button type="button" class="dt-peek-btn" aria-expanded={open.has(q.id)} onClick={() => toggleOpen(q.id)}>
+            <Icon name={open.has(q.id) ? "down" : "eye"} size={13} /> {open.has(q.id) ? "Hide question" : "Show question"}
+          </button>
+        </div>
+      ),
+    },
+    {
+      id: "import", label: "Import", min: 130, fr: 1.3, prio: 0, sortValue: (q) => importName(ctx, q),
+      render: (q) => {
+        const others = q.batches.filter((b) => b !== q.import_id).map((b) => ctx.importLabel.get(b) ?? "?");
+        return (
+          <div class="stack-tight" title={others.length ? `Also in: ${others.join(", ")}` : undefined}>
+            <span class="imp-name">{importName(ctx, q)}</span>
+            {others.length > 0 && <span class="sub">+{others.length} other import{others.length === 1 ? "" : "s"}</span>}
+          </div>
+        );
+      },
+    },
+    { id: "subject", label: "Subject", min: 100, fr: 1, prio: 1, sortValue: (q) => (q.subject_id ? ctx.subjectName.get(q.subject_id) ?? null : null), render: (q) => <SubjectCell q={q} ctx={ctx} /> },
+    { id: "concepts", label: "Concepts", min: 160, fr: 2, prio: 2, card: "full", sortValue: (q) => mainConceptPath(q, ctx) || null, render: (q) => <ConceptsCell q={q} ctx={ctx} /> },
+    { id: "difficulty", label: "Difficulty", min: 118, fr: 1, prio: 3, sortValue: (q) => rankOf(ctx, q), render: (q) => (
+      <div class="stack-tight">
+        <DiffMark ctx={ctx} code={q.difficulty_code} />
+        {q.personal_difficulty_permille !== null && <span class="sub" title="Personal difficulty">yours {pct(q.personal_difficulty_permille)}</span>}
+      </div>
+    ) },
+    { id: "history", label: "History", min: 124, fr: 1.15, prio: 4, firstDir: "desc", sortValue: (q) => q.last_attempted_at, render: (q) => <HistoryCell q={q} now={now} /> },
+    { id: "marks", label: "Marks", min: 64, fr: 0.45, prio: 5, align: "end", firstDir: "desc", sortValue: (q) => q.marks, render: (q) => (q.marks === null ? <span class="muted">—</span> : <span class="num">{q.marks}</span>) },
+    { id: "solution", label: "Solution", min: 100, fr: 0.9, prio: 6, sortValue: (q) => q.has_solution ?? 0, render: (q) => <SolutionCell q={q} /> },
+    { id: "added", label: "Added", min: 104, fr: 0.8, prio: 7, firstDir: "desc", sortValue: (q) => q.created_at, render: (q) => <span>{fmtDate(q.created_at)}</span> },
+    { id: "format", label: "Type", min: 92, fr: 0.8, prio: 8, sortValue: (q) => FORMAT_SHORT[q.answer_format] ?? q.answer_format, render: (q) => <span>{FORMAT_SHORT[q.answer_format] ?? q.answer_format}</span> },
+    { id: "time", label: "Avg time", min: 88, fr: 0.7, align: "end", sortValue: avgSecs, render: (q) => (avgSecs(q) === null ? <span class="muted">—</span> : <span class="num">{fmtSecs(avgSecs(q)!)}</span>) },
+    { id: "personal", label: "Your difficulty", min: 108, fr: 0.8, align: "end", sortValue: (q) => q.personal_difficulty_permille, render: (q) => (q.personal_difficulty_permille === null ? <span class="muted">—</span> : <span class="num">{pct(q.personal_difficulty_permille)}</span>) },
+    { id: "source", label: "Source file", min: 130, fr: 1.2, sortValue: (q) => q.file_name, render: (q) => <span class="dt-wrapall">{q.file_name}</span> },
+    { id: "fields", label: "Custom fields", min: 150, fr: 1.4, card: "full", sortValue: (q) => Object.values(q.fields ?? {}).join(" ") || null, render: (q) => <FieldsCell q={q} ctx={ctx} /> },
+  ];
+
+  const subjects = ctx.tree.filter((n) => n.kind === "subject");
+  const imports = boot.imports ?? [];
 
   return (
-    <div class="page">
-      <div class="page-head">
-        <h1>Library</h1>
-        <span class="muted">{lib.length} question{lib.length === 1 ? "" : "s"}</span>
-      </div>
+    <div class="lib">
+      <header class="pb-top">
+        <div class="pb-top-main">
+          <span class="pb-h1">Library</span>
+          <h1 class="lib-h1">Question bank</h1>
+          <div class="lib-stats">
+            <span><b>{live.toLocaleString()}</b> questions</span>
+            <span><b>{attempted.toLocaleString()}</b> attempted</span>
+            <span><b>{subjects.length}</b> subjects</span>
+            <span><b>{imports.length}</b> imports</span>
+          </div>
+        </div>
+        <div class="pb-top-actions">
+          <a class="btn" href="#/import"><Icon name="plus" size={15} /> Import</a>
+          <button type="button" class="btn primary" disabled={!results.length} onClick={buildPaper} title="Open the paper builder with the questions shown here">
+            <Icon name="target" size={15} /> Build paper{results.length !== live ? ` (${results.length})` : ""}
+          </button>
+        </div>
+      </header>
 
       {lib.length === 0 ? (
-        <div class="empty">
-          <p>No questions yet.</p>
-          <a class="btn primary" href="#/import">Import your first HTML file</a>
-        </div>
+        <div class="empty card"><p>No questions yet.</p><a class="btn primary" href="#/import">Import your first questions</a></div>
       ) : (
         <>
-          <section class="card">
-            <div class="row wrap">
-              <label class="grow">
-                <span class="sr">Saved filters</span>
-                <select
-                  value={savedId ?? ""}
-                  onChange={(e) => {
-                    const id = (e.target as HTMLSelectElement).value;
-                    const f = boot.filters.find((x) => x.id === id);
-                    setDef(f ? parseDef(f.definition) : emptyFilter(), f ? f.id : null);
-                  }}
-                >
-                  <option value="">— Saved filters —</option>
-                  {boot.filters.map((f) => <option value={f.id}>{f.name}</option>)}
-                </select>
-              </label>
-              <button class="btn" onClick={saveFilter}>Save filter</button>
-              {savedId && (
-                <button class="btn ghost" onClick={async () => {
-                  if (!confirm("Remove this saved filter?")) return;
-                  await api("DELETE", `/api/filters/${savedId}`);
-                  await refresh();
-                  setDef(def, null);
-                }}>Delete</button>
-              )}
-              <button class="btn ghost" onClick={() => setDef(emptyFilter(), null)}>Clear</button>
-            </div>
-            <FilterEditor boot={boot} lib={lib} def={def} onChange={(d) => setDef(d)} />
-          </section>
-
-          <div class="row wrap results-head">
-            <strong>{results.length} match{results.length === 1 ? "" : "es"}</strong>
-            <span class="muted small">({Math.max(1, Math.round((results as any).ms ?? 0))} ms)</span>
-            <span class="grow" />
-            <label class="small">Sort{" "}
-              <select value={sort} onChange={(e) => setSort((e.target as HTMLSelectElement).value as any)}>
-                <option value="added">Newest first</option>
-                <option value="qno">File &amp; number</option>
-                <option value="last">Last attempted</option>
-                <option value="attempts">Most attempts</option>
-              </select>
+          <section class="lib-bar">
+            <label class="search-sm lib-search">
+              <Icon name="search" size={16} />
+              <input type="search" placeholder="Search text, Q number, ID or import name" aria-label="Search questions" value={quick.text} onInput={(e) => setQuick({ text: (e.target as HTMLInputElement).value })} />
             </label>
-            {selected.size > 0 && <button class="btn" onClick={() => setShowBulk(true)}>Edit {selected.size} selected</button>}
-            <button class="btn primary" disabled={!results.length} onClick={() => openBuilder({ def, savedFilterId: savedId })}
-              title="Open the paper builder with this filter">Build paper</button>
-          </div>
+            <select class="sel-sm" aria-label="Subject" value={quick.subject} onChange={(e) => setQuick({ subject: (e.target as HTMLSelectElement).value })}>
+              <option value="">All subjects</option>
+              {subjects.map((n) => <option value={n.subjectId}>{n.label}</option>)}
+              <option value={NONE}>No subject</option>
+            </select>
+            <select class="sel-sm" aria-label="Import" value={quick.importId} onChange={(e) => setQuick({ importId: (e.target as HTMLSelectElement).value })}>
+              <option value="">All imports</option>
+              {imports.map((im) => <option value={im.id}>{im.label || im.file_name}</option>)}
+            </select>
+            <select class="sel-sm" aria-label="Difficulty" value={quick.difficulty} onChange={(e) => setQuick({ difficulty: (e.target as HTMLSelectElement).value })}>
+              <option value="">Any difficulty</option>
+              {[...boot.difficulties].sort((a, b) => a.sort_rank - b.sort_rank).map((d) => <option value={d.code}>{d.label}</option>)}
+              <option value={NONE}>No label</option>
+            </select>
+            <select class="sel-sm" aria-label="Last result" value={quick.result} onChange={(e) => setQuick({ result: (e.target as HTMLSelectElement).value })}>
+              <option value="">Any result</option>
+              {RESULT_BUCKETS.map((b) => <option value={b}>{RESULT_LABEL[b]}</option>)}
+            </select>
+            <button type="button" class={`btn small${showFilters ? " on" : ""}`} aria-expanded={showFilters} onClick={() => setShowFilters(!showFilters)}>
+              <Icon name="filter" size={14} /> More filters {condCount > 0 && <Badge tone="accent">{condCount}</Badge>}
+            </button>
+            {(condCount > 0 || quickCount > 0) && <button type="button" class="btn ghost small" onClick={() => setView({ def: emptyFilter(), quick: noQuick() })}>Clear all</button>}
+          </section>
+          {showFilters && (
+            <section class="lib-filters">
+              <FilterEditor boot={boot} lib={lib} def={def} onChange={setDef} />
+            </section>
+          )}
 
-          <div class="qlist" role="list">
-            <div class="qrow head" role="listitem">
-              <input type="checkbox" aria-label="Select all" checked={allSelected}
-                onChange={() => setSelected(allSelected ? new Set() : new Set(results.map((q) => q.id)))} />
-              <span>Question</span><span class="hide-sm">Subject · concepts</span><span>Label</span><span>Tries</span><span>Last</span>
+          {selected.size > 0 && (
+            <div class="sel-bar" role="status">
+              <span><b>{selected.size}</b> selected</span>
+              <button type="button" class="btn small primary" onClick={() => setShowBulk(true)}>Edit {selected.size} selected</button>
+              <button type="button" class="btn small ghost" onClick={() => setSelected(new Set())}>Clear selection</button>
             </div>
-            {results.slice(0, limit).map((q) => (
-              <div class={`qrow ${q.archived_at ? "archived" : ""}`} role="listitem">
-                <input type="checkbox" aria-label={`Select Q${q.qno}`} checked={selected.has(q.id)}
-                  onChange={() => { const s = new Set(selected); s.has(q.id) ? s.delete(q.id) : s.add(q.id); setSelected(s); }} />
-                <a href={`#/q/${q.id}`} class="qmain">
-                  <span class="qtitle">Q{q.qno} <span class="muted small">· {q.file_name}{q.version_no > 1 ? ` · v${q.version_no}` : ""}{q.marks !== null ? ` · ${q.marks}m` : ""}{q.has_solution === 2 ? " · AI solution" : q.has_solution ? " · solution" : ""}</span></span>
-                  <span class="qtext">{q.plain_text.slice(0, 120)}</span>
-                </a>
-                <span class="hide-sm small">
-                  {q.subject_id ? n.subject.get(q.subject_id) : <em class="muted">no subject</em>}
-                  {q.concepts.length > 0 && <span class="muted"> · {q.concepts.map(([c]) => n.concept.get(c)).join(", ")}</span>}
-                </span>
-                <span class="small">{q.difficulty_code ? n.difficulty.get(q.difficulty_code) : "—"}
-                  {q.personal_difficulty_permille !== null && <span class="muted" title="Personal difficulty"> · {pct(q.personal_difficulty_permille)}</span>}
-                </span>
-                <span class="small" title={q.attempt_count ? `Average ${fmtSecs((q.total_time_seconds ?? 0) / q.attempt_count)} · familiarity ${pct(familiarityNow(q))}` : ""}>
-                  {q.attempt_count ?? 0}
-                </span>
-                <span class="small"><ResultBadge result={q.last_result} /> <span class="muted hide-sm">{fmtDate(q.last_attempted_at)}</span></span>
-              </div>
-            ))}
-          </div>
-          {results.length > limit && <button class="btn ghost block" onClick={() => setLimit(limit + 200)}>Show more ({results.length - limit} left)</button>}
+          )}
+
+          <DataGrid
+            cols={cols}
+            rows={results}
+            rowKey={(q) => q.id}
+            storageKey="library.columns"
+            label="Questions"
+            title={<><h2 class="dt-h">Questions</h2><span class="dt-count">{results.length.toLocaleString()}{results.length !== lib.length ? ` of ${lib.length.toLocaleString()}` : ""}</span></>}
+            defaultSort={{ key: "added", dir: "desc" }}
+            pageSize={100}
+            rowClass={(q) => `${selected.has(q.id) ? "selected" : ""}${q.archived_at ? " archived" : ""}`}
+            expanded={(q) => (open.has(q.id) ? <QuestionPeek id={q.id} qno={q.qno} marks={q.marks} /> : null)}
+            empty={<div class="dt-empty-inner"><Icon name="filter" size={22} /><p><b>No questions match.</b></p><p class="muted">Clear a filter or the search to see more.</p></div>}
+          />
         </>
       )}
-
       {showBulk && <BulkEdit boot={boot} ids={[...selected]} onClose={() => setShowBulk(false)} onDone={() => { setShowBulk(false); setSelected(new Set()); }} />}
     </div>
   );

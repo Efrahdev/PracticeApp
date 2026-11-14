@@ -2,12 +2,14 @@ import { useState } from "preact/hooks";
 import { api } from "../api";
 import { exportArchive, restoreArchive, verifyArchive, type VerifyReport } from "../backup";
 import { refresh, useData } from "../store";
-import type { Boot, Concept } from "../types";
+import type { Boot } from "../types";
+import { TaxonomyManager } from "./Taxonomy";
+import { SortTable } from "../grid";
 import { ErrorBox, Progress, toast } from "../ui";
 
 export function Settings() {
-  const { boot } = useData();
-  if (!boot) return <p class="muted">Loading…</p>;
+  const { boot, lib } = useData();
+  if (!boot || !lib) return <p class="muted">Loading…</p>;
   return (
     <div class="page">
       <div class="page-head"><h1>Settings</h1><span class="muted small">Schema version {boot.schemaVersion}</span></div>
@@ -15,73 +17,11 @@ export function Settings() {
         <h2>Imports</h2>
         <p class="small">Your import history — search, name, edit or archive whole imports — is on the <a href="#/import">Import</a> screen.</p>
       </section>
-      <Taxonomy boot={boot} />
+      <TaxonomyManager boot={boot} lib={lib} />
       <Fields boot={boot} />
       <Backup />
       <Health />
     </div>
-  );
-}
-
-function Taxonomy(props: { boot: Boot }) {
-  const { boot } = props;
-  const [newSubject, setNewSubject] = useState("");
-  const [showArchived, setShowArchived] = useState(false);
-  const run = async (fn: () => Promise<unknown>, ok: string) => {
-    try { await fn(); await refresh(); toast(ok); } catch (e) { toast((e as Error).message, "error"); }
-  };
-  const subjects = boot.subjects.filter((s) => showArchived || !s.archived_at);
-  return (
-    <section class="card">
-      <div class="row wrap"><h2 class="grow">Subjects &amp; concepts</h2>
-        <label class="small"><input type="checkbox" checked={showArchived} onChange={(e) => setShowArchived((e.target as HTMLInputElement).checked)} /> show archived</label></div>
-      <p class="muted small">Nothing is ever deleted — archiving hides an item but keeps all history. Renaming never breaks past data.</p>
-      <div class="row">
-        <input class="grow" placeholder="New subject name" value={newSubject} onInput={(e) => setNewSubject((e.target as HTMLInputElement).value)} />
-        <button class="btn" disabled={!newSubject.trim()} onClick={() => run(async () => { await api("POST", "/api/subjects", { name: newSubject }); setNewSubject(""); }, "Subject added")}>Add subject</button>
-      </div>
-      {subjects.map((s) => (
-        <details class="subject" open={subjects.length < 4}>
-          <summary>
-            <strong>{s.name}</strong> {s.archived_at && <span class="badge muted">archived</span>}
-            <span class="muted small"> · {boot.concepts.filter((c) => c.subject_id === s.id && !c.archived_at).length} concepts</span>
-          </summary>
-          <div class="row wrap small">
-            <button class="btn ghost small" onClick={() => { const name = prompt("Rename subject:", s.name); if (name) run(() => api("PATCH", `/api/subjects/${s.id}`, { name }), "Renamed"); }}>Rename</button>
-            <button class="btn ghost small" onClick={() => run(() => api("PATCH", `/api/subjects/${s.id}`, { archived: !s.archived_at }), s.archived_at ? "Restored" : "Archived")}>{s.archived_at ? "Unarchive" : "Archive"}</button>
-            <button class="btn ghost small" onClick={() => { const name = prompt("New top-level concept:"); if (name) run(() => api("POST", "/api/concepts", { subject_id: s.id, name }), "Concept added"); }}>+ Concept</button>
-          </div>
-          <ConceptTree boot={boot} subjectId={s.id} parentId={null} showArchived={showArchived} run={run} />
-        </details>
-      ))}
-    </section>
-  );
-}
-
-function ConceptTree(props: { boot: Boot; subjectId: string; parentId: string | null; showArchived: boolean; run: (fn: () => Promise<unknown>, ok: string) => void }) {
-  const { boot, run } = props;
-  const kids = boot.concepts.filter((c) => c.subject_id === props.subjectId && c.parent_id === props.parentId && (props.showArchived || !c.archived_at));
-  if (!kids.length) return null;
-  const others = (c: Concept) => boot.concepts.filter((x) => x.subject_id === c.subject_id && x.id !== c.id && !x.archived_at);
-  return (
-    <ul class="tree">
-      {kids.map((c) => (
-        <li>
-          <div class="row wrap">
-            <span class={c.archived_at ? "muted" : ""}>{c.name}</span>
-            <span class="grow" />
-            <button class="btn ghost small" onClick={() => { const name = prompt("Sub-concept of " + c.name + ":"); if (name) run(() => api("POST", "/api/concepts", { subject_id: c.subject_id, parent_id: c.id, name }), "Added"); }}>+ Sub</button>
-            <button class="btn ghost small" onClick={() => { const name = prompt("Rename concept:", c.name); if (name) run(() => api("PATCH", `/api/concepts/${c.id}`, { name }), "Renamed"); }}>Rename</button>
-            <select class="small" aria-label="Move under" value={c.parent_id ?? ""} onChange={(e) => run(() => api("PATCH", `/api/concepts/${c.id}`, { parent_id: (e.target as HTMLSelectElement).value || null }), "Moved")}>
-              <option value="">(top level)</option>
-              {others(c).map((o) => <option value={o.id}>under {o.name}</option>)}
-            </select>
-            <button class="btn ghost small" onClick={() => run(() => api("PATCH", `/api/concepts/${c.id}`, { archived: !c.archived_at }), c.archived_at ? "Restored" : "Archived")}>{c.archived_at ? "Unarchive" : "Archive"}</button>
-          </div>
-          <ConceptTree {...props} parentId={c.id} />
-        </li>
-      ))}
-    </ul>
   );
 }
 
@@ -97,19 +37,17 @@ function Fields(props: { boot: Boot }) {
       <h2>Custom fields</h2>
       <p class="muted small">Extra facts about questions (exam board, year, paper…). Imports create them from a pack's <code>fields</code>. Filterable ones appear in the library filter.</p>
       {fields.length > 0 && (
-        <table class="table">
-          <thead><tr><th>Name</th><th>Type</th><th>Filter</th><th /></tr></thead>
-          <tbody>{fields.map((f) => (
-            <tr class={f.archived_at ? "muted" : ""}>
-              <td>{f.name}</td><td>{f.data_type === "boolean" ? "yes/no" : f.data_type}</td>
-              <td><input type="checkbox" aria-label={`Filterable: ${f.name}`} checked={!!f.is_filterable} onChange={(e) => run(() => api("PATCH", `/api/fields/${f.id}`, { is_filterable: (e.target as HTMLInputElement).checked }), "Saved")} /></td>
-              <td class="nowrap">
-                <button class="btn ghost small" onClick={() => { const n = prompt("Rename field:", f.name); if (n) run(() => api("PATCH", `/api/fields/${f.id}`, { name: n }), "Renamed"); }}>Rename</button>
-                <button class="btn ghost small" onClick={() => run(() => api("PATCH", `/api/fields/${f.id}`, { archived: !f.archived_at }), f.archived_at ? "Restored" : "Archived")}>{f.archived_at ? "Unarchive" : "Archive"}</button>
-              </td>
-            </tr>
-          ))}</tbody>
-        </table>
+        <SortTable rows={fields} initial={{ key: "name", dir: "asc" }} cols={[
+          { key: "name", label: "Name", get: (f) => f.name, render: (f) => <span class={f.archived_at ? "muted" : ""}>{f.name}{f.archived_at ? " (archived)" : ""}</span> },
+          { key: "type", label: "Type", get: (f) => f.data_type, render: (f) => (f.data_type === "boolean" ? "yes/no" : f.data_type) },
+          { key: "filter", label: "Filter", get: (f) => f.is_filterable, first: "desc", render: (f) => <input type="checkbox" aria-label={`Filterable: ${f.name}`} checked={!!f.is_filterable} onChange={(e) => run(() => api("PATCH", `/api/fields/${f.id}`, { is_filterable: (e.target as HTMLInputElement).checked }), "Saved")} /> },
+          { key: "act", label: "", class: "nowrap", render: (f) => (
+            <>
+              <button class="btn ghost small" onClick={() => { const n = prompt("Rename field:", f.name); if (n) run(() => api("PATCH", `/api/fields/${f.id}`, { name: n }), "Renamed"); }}>Rename</button>
+              <button class="btn ghost small" onClick={() => run(() => api("PATCH", `/api/fields/${f.id}`, { archived: !f.archived_at }), f.archived_at ? "Restored" : "Archived")}>{f.archived_at ? "Unarchive" : "Archive"}</button>
+            </>
+          ) },
+        ]} />
       )}
       <div class="row wrap">
         <input class="grow" placeholder="New field name" value={name} onInput={(e) => setName((e.target as HTMLInputElement).value)} />

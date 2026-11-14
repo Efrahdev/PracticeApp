@@ -140,7 +140,7 @@ export async function library(env: Env) {
   const rows = await all(
     env.DB,
     `SELECT v.id, v.subject_id, v.difficulty_code, v.answer_format, v.created_at, v.archived_at, v.marks,
-            v.version_id, v.version_no, v.source_question_number AS qno, v.plain_text, v.content_format,
+            v.version_id, v.version_no, v.source_question_number AS qno, v.plain_text, v.content_format, v.import_batch_id AS import_id,
             (SELECT json_group_array(DISTINCT import_batch_id) FROM question_version WHERE question_id = v.id) AS batches,
             sf.file_name,
             (SELECT json_group_array(json_array(concept_id, weight)) FROM question_concept WHERE question_id = v.id) AS concepts,
@@ -625,7 +625,14 @@ export async function paperList(env: Env) {
             (SELECT count(*) FROM paper_item WHERE paper_id = p.id) AS item_count,
             (SELECT id FROM practice_session WHERE paper_id = p.id AND completed_at IS NULL) AS open_session_id,
             (SELECT current_position FROM practice_session WHERE paper_id = p.id AND completed_at IS NULL) AS open_position,
-            (SELECT count(*) FROM practice_session WHERE paper_id = p.id AND completed_at IS NOT NULL) AS completed_sessions
+            (SELECT count(*) FROM practice_session WHERE paper_id = p.id AND completed_at IS NOT NULL) AS completed_sessions,
+            (SELECT sum(q.marks) FROM paper_item pi JOIN question q ON q.id = pi.question_id WHERE pi.paper_id = p.id) AS total_marks,
+            (SELECT json_group_array(DISTINCT q.subject_id) FROM paper_item pi JOIN question q ON q.id = pi.question_id WHERE pi.paper_id = p.id) AS subject_ids,
+            (SELECT max(completed_at) FROM practice_session WHERE paper_id = p.id AND completed_at IS NOT NULL) AS last_completed_at,
+            (SELECT avg(g.score_permille) FROM attempt a JOIN v_effective_grade g ON g.attempt_id = a.id
+              WHERE a.session_id = (SELECT id FROM practice_session WHERE paper_id = p.id AND completed_at IS NOT NULL ORDER BY completed_at DESC LIMIT 1)) AS last_score,
+            (SELECT max(s_avg) FROM (SELECT avg(g.score_permille) AS s_avg FROM attempt a JOIN v_effective_grade g ON g.attempt_id = a.id
+               JOIN practice_session ps ON ps.id = a.session_id WHERE ps.paper_id = p.id AND ps.completed_at IS NOT NULL GROUP BY a.session_id)) AS best_score
        FROM paper p WHERE p.archived_at IS NULL ORDER BY p.created_at DESC`,
   );
   return json({ papers: rows });

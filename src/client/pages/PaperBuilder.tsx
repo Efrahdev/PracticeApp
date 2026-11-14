@@ -43,6 +43,7 @@ function fresh(init: BuildInit = {}): BuilderState {
     bp.pool.includeArchived = !!def.includeArchived;
   }
   if (init.tree) bp.pool.tree = [...init.tree];
+  if (init.pool) bp.pool = normaliseBlueprint({ pool: { ...bp.pool, ...init.pool } }).pool;
   if (init.favourWeak) bp.favourWeak = true;
   return { name: init.name ?? defaultName(), solutions: "included", seed: randomSeed(), bp, savedFilterId: init.savedFilterId ?? null };
 }
@@ -147,6 +148,7 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
       [ids[i], ids[j]] = [ids[j], ids[i]];
       setBp((b) => ({ ...b, order: "manual", manual: ids }));
     },
+    onOrder: (ids: string[]) => setBp((b) => ({ ...b, order: "manual", manual: ids })),
   };
   const addQuestion = (id: string) => setBp((b) => ({ ...b, pinned: [...b.pinned.filter((x) => x !== id), id], excluded: b.excluded.filter((x) => x !== id), count: Math.max(b.count, plan.want) + 1 }));
   const putBack = (ids: string[]) => setBp((b) => ({ ...b, excluded: b.excluded.filter((x) => !ids.includes(x)) }));
