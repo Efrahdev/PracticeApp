@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+public/app.js
+public/app.js.map
+test-results/
+backups/
+src/worker/static.gen.ts

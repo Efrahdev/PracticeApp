@@ -1,0 +1,71 @@
+import { render } from "preact";
+import { useEffect, useState } from "preact/hooks";
+import { Toaster } from "./ui";
+import { Library } from "./pages/Library";
+import { Import } from "./pages/Import";
+import { Question } from "./pages/Question";
+import { Papers, PaperDetail } from "./pages/Papers";
+import { Practice } from "./pages/Practice";
+import { Analytics } from "./pages/Analytics";
+import { Settings } from "./pages/Settings";
+
+function useHash() {
+  const [h, setH] = useState(location.hash || "#/");
+  useEffect(() => {
+    const f = () => { setH(location.hash || "#/"); window.scrollTo(0, 0); };
+    window.addEventListener("hashchange", f);
+    return () => window.removeEventListener("hashchange", f);
+  }, []);
+  return h;
+}
+
+function route(h: string) {
+  const parts = h.replace(/^#\/?/, "").split("/").filter(Boolean);
+  const [a, b] = parts;
+  switch (a) {
+    case undefined: return { tab: "library", el: <Library /> };
+    case "import": return { tab: "import", el: <Import /> };
+    case "q": return { tab: "library", el: <Question id={b} /> };
+    case "papers": return b ? { tab: "papers", el: <PaperDetail id={b} /> } : { tab: "papers", el: <Papers /> };
+    case "practice": return { tab: "papers", el: <Practice key={b} paperId={b} />, bare: true };
+    case "practice-q": return { tab: "library", el: <Practice key={b} questionId={b} />, bare: true };
+    case "analytics": return { tab: "analytics", el: <Analytics /> };
+    case "settings": return { tab: "settings", el: <Settings /> };
+    default: return { tab: "", el: <div class="page"><p>Page not found. <a href="#/">Go to library</a></p></div> };
+  }
+}
+
+const TABS = [
+  { id: "library", href: "#/", label: "Library", icon: "▤" },
+  { id: "papers", href: "#/papers", label: "Papers", icon: "✎" },
+  { id: "analytics", href: "#/analytics", label: "Progress", icon: "↗" },
+  { id: "import", href: "#/import", label: "Import", icon: "⇪" },
+  { id: "settings", href: "#/settings", label: "Settings", icon: "⚙" },
+];
+
+function App() {
+  const h = useHash();
+  const r = route(h);
+  return (
+    <>
+      {!r.bare && (
+        <header class="topbar">
+          <a href="#/" class="brand">Practice</a>
+          <nav class="tabs" aria-label="Main">
+            {TABS.map((t) => (
+              <a href={t.href} class={r.tab === t.id ? "on" : ""} aria-current={r.tab === t.id ? "page" : undefined}>
+                <span class="ti" aria-hidden="true">{t.icon}</span><span class="tl">{t.label}</span>
+              </a>
+            ))}
+          </nav>
+        </header>
+      )}
+      <main class={r.bare ? "bare" : ""}>{r.el}</main>
+      <Toaster />
+    </>
+  );
+}
+
+const root = document.getElementById("app")!;
+root.textContent = "";
+render(<App />, root);
