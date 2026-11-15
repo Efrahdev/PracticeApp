@@ -111,7 +111,11 @@ class Doc:
                     st = self.doc.xref_stream(x) or b""
                     if len(st) < 4000 and b"BT" in st and re.search(rb"-?[\d.]+ -?0?\.\d+ -?0?\.\d+ -?[\d.]+ -?[\d.]+ -?[\d.]+ cm", st):
                         self.doc.update_stream(x, re.sub(rb"BT.*?ET", b"", st, flags=re.S))
-        self.fontmap = prof.get("font_charmap", {})
+        # Fonts that draw a different glyph from the character they store.
+        sym = {0x2b: "+", 0x2d: "−", 0x3d: "=", 0x5c: "∴", 0xae: "→", 0xb4: "×", 0xb8: "÷", 0xb0: "°", 0xb1: "±", 0xa3: "≤", 0xb3: "≥", 0xb9: "≠",
+               0xbb: "≈", 0x3c: "<", 0x3e: ">", 0x28: "(", 0x29: ")", 0x20: " ", 0xd0: "∠", 0x44: "Δ", 0x70: "π", 0xd6: "√", 0xb7: "•", 0xde: "⇒", 0x2f: "/", 0x25: "%", 0x2c: ","}
+        self.fontmap = {"Rupee": {"`": "₹"}, "Symbol": {chr(0xF000 + k): v for k, v in sym.items()}}
+        self.fontmap.update(prof.get("font_charmap", {}))
 
     def page(self, pno):  # 1-based
         if pno not in self._pages:
@@ -192,7 +196,7 @@ class Doc:
                     continue
                 xs, ys = [q.x for q in pts], [q.y for q in pts]
                 subs.append((min(xs), min(ys), max(xs), max(ys)))
-            if len(subs) < 2:
+            if len(subs) < 2 or (r.width < 14 and r.height < 14):
                 subs = [(r.x0, r.y0, r.x1, r.y1)]
             for x0, y0, x1, y1 in subs:
                 x0, y0, x1, y1 = x0 - hw, y0 - hw, x1 + hw, y1 + hw
@@ -386,7 +390,7 @@ def text_trouble(lines, prof):
     return None
 
 
-LIST_START = re.compile(r"^(\(?[ivxIVX]{1,4}\)|\(?[a-hA-HP-Sp-s1-9]\)|[•●▪■–-]\s|\d{1,2}\.\s|Statement|Assertion|Reason|Conclusion|Column)")
+LIST_START = re.compile(r"^(\(?[ivxIVX]{1,4}\)|\(?[a-hA-HP-Sp-s1-9]\)|[•●▪■–-]\s|\d{1,2}\.\s|Statement|Assertion|Reason|Conclusion|Column|[A-Z][A-Za-z.]{1,14}\s?:\s)")
 
 
 def paragraphs(lines, base_bold, base_ital):
@@ -423,10 +427,8 @@ def paragraphs(lines, base_bold, base_ital):
     return out
 
 
-def cluster(boxes, gap=4.0):
+def _union_pass(boxes, gap):
     n = len(boxes)
-    if n == 0:
-        return []
     par = list(range(n))
 
     def find(i):
@@ -435,17 +437,27 @@ def cluster(boxes, gap=4.0):
             i = par[i]
         return i
 
-    cell, grid = 24.0, {}
+    cell, grid = 32.0, {}
     for i, b in enumerate(boxes):
-        for gx in range(int((b.x0 - gap) // cell), int((b.x1 + gap) // cell) + 1):
-            for gy in range(int((b.y0 - gap) // cell), int((b.y1 + gap) // cell) + 1):
+        gx0, gx1 = int((b.x0 - gap) // cell), int((b.x1 + gap) // cell)
+        gy0, gy1 = int((b.y0 - gap) // cell), int((b.y1 + gap) // cell)
+        for gx in range(gx0, gx1 + 1):
+            for gy in range(gy0, gy1 + 1):
                 grid.setdefault((gx, gy), []).append(i)
     for ids in grid.values():
+        if len(ids) < 2:
+            continue
+        ids.sort(key=lambda i: boxes[i].x0)
         for a in range(len(ids)):
+            A = boxes[ids[a]]
             for c in range(a + 1, len(ids)):
-                i, j = find(ids[a]), find(ids[c])
-                if i != j and inter(boxes[ids[a]], boxes[ids[c]], gap):
-                    par[j] = i
+                B = boxes[ids[c]]
+                if B.x0 - gap >= A.x1:
+                    break
+                if A.y0 - gap < B.y1 and B.y0 - gap < A.y1:
+                    i, j = find(ids[a]), find(ids[c])
+                    if i != j:
+                        par[j] = i
     groups = {}
     for i, b in enumerate(boxes):
         r = find(i)
@@ -454,21 +466,17 @@ def cluster(boxes, gap=4.0):
             groups[r] = Box(b.x0, b.y0, b.x1, b.y1, b.kind)
         else:
             g.x0, g.y0, g.x1, g.y1 = min(g.x0, b.x0), min(g.y0, b.y0), max(g.x1, b.x1), max(g.y1, b.y1)
-    cl = list(groups.values())
-    changed = True
-    while changed:  # whatever sits inside / against a figure's frame belongs to it
-        changed = False
-        out = []
-        for b in cl:
-            for o in out:
-                if inter(o, b, min(gap, 1.0)):
-                    o.x0, o.y0, o.x1, o.y1 = min(o.x0, b.x0), min(o.y0, b.y0), max(o.x1, b.x1), max(o.y1, b.y1)
-                    changed = True
-                    break
-            else:
-                out.append(b)
-        cl = out
-    return cl
+    return list(groups.values())
+
+
+def cluster(boxes, gap=4.0):
+    """Connected fragments first, then anything inside / against a figure's bounding box joins it."""
+    cl = _union_pass(list(boxes), gap)
+    while True:
+        nxt = _union_pass(cl, min(gap, 1.0))
+        if len(nxt) == len(cl):
+            return nxt
+        cl = nxt
 
 
 def clean_boxes(boxes, lines, width, gap=2.5):
@@ -479,7 +487,7 @@ def clean_boxes(boxes, lines, width, gap=2.5):
 
 def alt_text(lines, limit=400):
     t = re.sub(r"\s+", " ", " ".join(" ".join(l.text for l in r) for r in rows_of(lines))).strip()
-    t = re.sub(r"[\[\]()!\\`*_<>|$#]", " ", t)
+    t = re.sub(r"[\[\]()!\\`*_<>|$#\x00-\x1f\ue000-\uf8ff\ufffd]", " ", t)
     return re.sub(r"\s+", " ", t).strip()[:limit]
 
 
@@ -704,14 +712,18 @@ def find_markers(doc: Doc, pages, cfg):
             if secs and re.search(secs["regex"], tn) and (not secs.get("size") or abs(l.size - secs["size"]) < 0.7) and (not secs.get("font") or secs["font"].lower() in l.font.lower()):
                 out.append(Marker("section", s["pno"], si, l.y0, l, None, top))
                 continue
-            if grx and (m := grx.search(tn)) and (not cfg.get("group_x") or cfg["group_x"][0] <= l.x0 - s["x0"] <= cfg["group_x"][1]):
+            in_panel = [p for p in pg["panels"] if contains(p, l, 2)]
+            first_in_panel = bool(in_panel) and not any(o is not l and contains(in_panel[0], o, 2) and o.cy < l.y0 for o in ls)
+            if grx and (m := grx.search(tn)) and (not cfg.get("group_panel_only") or first_in_panel) and (not cfg.get("group_x") or cfg["group_x"][0] <= l.x0 - s["x0"] <= cfg["group_x"][1]):
                 out.append(Marker("group", s["pno"], si, l.y0, l, m, top))
                 continue
             m = arx.match(t)
             if m and a["x"][0] <= l.x0 - s["x0"] <= a["x"][1] and (not a.get("bold") or l.bold) and (not a.get("size") or abs(l.size - a["size"]) < 0.8):
                 colw = s["x1"] - s["x0"]
                 floor = max([p.y1 for p in ls if p.y1 <= l.y0 + 1 and p.x0 - s["x0"] < 60 and p is not l] + [s["y0"]]) - 0.5
-                for b in pg["boxes"]:
+                if "clusters" not in pg:
+                    pg["clusters"] = cluster(pg["boxes"], 3)
+                for b in pg["clusters"]:
                     if s["x0"] <= b.x0 < s["x1"] and b.x0 >= l.x0 + 6 and b.y0 < top and b.y1 > l.cy and l.y0 - b.y0 < 160 and b.w < 0.8 * colw:
                         top = min(top, max(b.y0, floor))
                 out.append(Marker("q", s["pno"], si, l.y0, l, m, top))
@@ -860,7 +872,14 @@ def split_question(reg: Region, anchor_vline, cfg, pack, qname, prof, flags, gro
         for ri, row in enumerate(lrows):
             row.sort(key=lambda t: t[0].x0)
             for ci, (l, m) in enumerate(row):
-                cells.append({"l": l, "m": m, "row": ri, "x0": l.x0 - 2, "x1": row[ci + 1][0].x0 - 2 if ci + 1 < len(row) else 1e9, "figs": []})
+                cell = {"l": l, "m": m, "row": ri, "x0": l.x0 - 2, "x1": row[ci + 1][0].x0 - 2 if ci + 1 < len(row) else 1e9, "figs": [], "caps": set()}
+                # the option's own words on the label line: an unbroken run starting at the label
+                edge = l.x1
+                for o in sorted(others, key=lambda o: o.x0):
+                    if cell["x0"] <= o.cx < cell["x1"] and o.x0 >= l.x0 and o.y0 < l.y1 + 6 and l.y0 - 6 < o.y1 and o.x0 - edge < 40:
+                        edge = max(edge, o.x1)
+                cell["edge"] = edge
+                cells.append(cell)
         # which pictures are options: they start right after a label (or after that option's own content)
         owned, changed = set(), True
         while changed:
@@ -874,14 +893,12 @@ def split_question(reg: Region, anchor_vline, cfg, pack, qname, prof, flags, gro
                         continue
                     ok = False
                     if c.y0 < L.y1 + 2 and c.y1 > L.y0 - 2 and c.x1 > L.x0:
-                        edge = L.x1
-                        for o in others:
-                            if cell["x0"] <= o.cx < cell["x1"] and o.x1 <= c.x0 + 1 and o.y0 < c.y1 and c.y0 < o.y1 and o.x0 >= L.x0:
-                                edge = max(edge, o.x1)
+                        edge = cell["edge"]
                         for f in cell["figs"]:
                             if f.x1 <= c.x0 + 1:
                                 edge = max(edge, f.x1)
-                        ok = c.x0 - edge < 40
+                        nrows = sum(1 for r in lrows if c.y0 < max(q.y1 for q, _ in r) - 2 and c.y1 > min(q.y0 for q, _ in r) + 2)
+                        ok = c.x0 - edge < (40 if nrows < 2 else 12)
                     if not ok and any(inter(f, c, 3) for f in cell["figs"]):
                         ok = True
                     if ok:
@@ -889,7 +906,19 @@ def split_question(reg: Region, anchor_vline, cfg, pack, qname, prof, flags, gro
                         owned.add(k)
                         changed = True
                         break
-        stem_figs = [c for k, c in enumerate(clusters) if k not in owned]
+        stem_figs = cluster([c for k, c in enumerate(clusters) if k not in owned], 6)
+        # labels printed on / around an option's picture (measurements, letters) go with that option
+        first_top = min(l.y0 for l, _ in lrows[0])
+        for cell in cells:
+            pics = list(cell["figs"])
+            for l in others:
+                if not (cell["x0"] <= l.cx < cell["x1"]) or any(id(l) in c2["caps"] for c2 in cells):
+                    continue
+                if margin is not None and abs(l.x0 - margin) < 3.5 and l.y1 <= first_top + 1:
+                    continue  # the question's own sentence
+                if any(inter(f, l, 6) for f in pics):
+                    cell["caps"].add(id(l))
+                    cell["figs"].append(Box(l.x0, l.y0, l.x1, l.y1))
         bands = []
         for ri, row in enumerate(lrows):
             b = [min(l.y0 for l, _ in row), max(l.y1 for l, _ in row)]
@@ -909,22 +938,36 @@ def split_question(reg: Region, anchor_vline, cfg, pack, qname, prof, flags, gro
             for l in others:
                 if l.cy < split_y:
                     continue
-                if l.x0 >= f.x0 - 3 and l.x1 <= f.x1 + 3 and (inter(f, l, 3) or 0 <= l.y0 - f.y1 < 14):
+                if l.x0 >= f.x0 - 3 and l.x1 <= f.x1 + 3 and (inter(f, l, 3) or 0 <= l.y0 - f.y1 < 14 or 0 <= f.y0 - l.y1 < 14):
                     absorbed.add(id(l))
         stem_lines = [l for l in others if l.cy < split_y or id(l) in absorbed]
-        opt_lines = [l for l in others if l.cy >= split_y and id(l) not in absorbed]
+        capped = set().union(*[c["caps"] for c in cells])
+        stem_lines = [l for l in stem_lines if id(l) not in capped]
+        opt_lines = [l for l in others if (l.cy >= split_y and id(l) not in absorbed) or id(l) in capped]
+        opt_ids = {id(l) for l in opt_lines}
         placed = []  # (label, rect) of every option, to prove nothing overlaps
         for cell in cells:
             ll, m, bi = cell["l"], cell["m"], cell["row"]
             y_top = bands[bi][0] - 0.5
             y_bot = bands[bi + 1][0] - 0.5 if bi + 1 < len(bands) else reg.vh
-            cl = [l for l in opt_lines if y_top <= l.cy < y_bot and cell["x0"] <= l.cx < cell["x1"]]
+            cl = [l for l in others if id(l) in cell["caps"] or (id(l) in opt_ids and y_top <= l.cy < y_bot and cell["x0"] <= l.cx < cell["x1"])]
             rest_start = m.end() + (len(ll.text) - len(ll.text.lstrip()))
             rest = [c for c in ll.chars[rest_start:] if c[0].strip()]
             if rest:
                 cl.append(Line(rest[0][1], ll.y0, rest[-1][2], ll.y1, "".join(c[0] for c in ll.chars[rest_start:]), ll.chars[rest_start:], ll.size, ll.bold, ll.font, ll.piece))
             cf = cell["figs"]
             lab = m.group(1)
+            kept = []
+            for r in rows_of(cl):
+                edge = None
+                for l in r:
+                    left = [f.x1 for f in cf if f.x1 <= l.x0 + 1 and f.y0 < l.y1 and l.y0 < f.y1]
+                    e = max([edge if edge is not None else ll.x1] + left)
+                    if l.x0 - e > 70 and id(l) not in cell["caps"]:
+                        break
+                    kept.append(l)
+                    edge = l.x1
+            cl = kept
             allb = [Box(l.x0, l.y0, l.x1, l.y1) for l in cl] + cf
             if allb:
                 placed.append((lab, Box(min(b.x0 for b in allb), min(b.y0 for b in allb), max(b.x1 for b in allb), max(b.y1 for b in allb)), {id(l) for l in cl}, {id(c) for c in cf}))
@@ -941,16 +984,23 @@ def split_question(reg: Region, anchor_vline, cfg, pack, qname, prof, flags, gro
             if kind == "empty":
                 flags.append(f"option {lab} is empty")
             opts.append({"label": lab, "text": md, "_kind": kind})
-        # nothing may sit inside another option's rectangle
+        # a cropped option must not contain anything that belongs elsewhere
+        kinds = {o["label"]: o["_kind"] for o in opts}
+        stem_ids = {id(l) for l in stem_lines}
         for lab, u, lids, cids in placed:
-            for l in lines:
-                if id(l) not in lids and id(l) not in lab_ids and inter(u, l, -1.5):
-                    flags.append(f"option {lab} overlaps other text")
-                    break
-            for c in clusters:
-                if id(c) not in cids and inter(u, c, -1.5):
-                    flags.append(f"option {lab} overlaps another picture")
-                    break
+            if kinds.get(lab) != "image":
+                continue
+            if os.environ.get("PDFPACK_DEBUG") == qname:
+                print("DBG", lab, [round(v) for v in (u.x0, u.y0, u.x1, u.y1)],
+                      "text:", [(l.text.strip()[:12], round(l.x0), round(l.y0)) for l in lines if id(l) not in lids and id(l) not in lab_ids and inter(u, l, -1.5)],
+                      "pics:", [[round(v) for v in (c.x0, c.y0, c.x1, c.y1)] for k, c in enumerate(clusters) if k in owned and id(c) not in cids and inter(u, c, -1.5)],
+                      "stemfig:", [[round(v) for v in (f.x0, f.y0, f.x1, f.y1)] for f in stem_figs if inter(u, f, -1.5)])
+            if any(id(l) not in lids and id(l) not in lab_ids and inter(u, l, -1.5) for l in lines):
+                flags.append(f"option {lab} overlaps other text")
+            if any(id(c) not in cids and inter(u, c, -1.5) for k, c in enumerate(clusters) if k in owned):
+                flags.append(f"option {lab} overlaps another picture")
+            if any(inter(u, f, -1.5) for f in stem_figs):
+                flags.append(f"option {lab} overlaps the question's figure")
         used = set().union(*[p[2] for p in placed]) if placed else set()
         stray = [l for l in opt_lines if id(l) not in used]
         if stray:
@@ -1011,7 +1061,8 @@ def write_report(out_dir, title, qs, flags_all):
 # --------------------------------------------------------------------------- build
 
 def title_case(s):
-    return " ".join(w.capitalize() if w.isupper() else w for w in s.split())
+    s = re.sub(r"(?i)^section\s*[-–]?\s*[ivx\d]+\s*[:–-]\s*", "", s).strip()
+    return " ".join(w.capitalize() if (w.isupper() or w.islower()) and w.lower() not in ("and", "of", "in") else w for w in s.split())
 
 
 def parse_solutions(doc: Doc, prof):
@@ -1021,9 +1072,42 @@ def parse_solutions(doc: Doc, prof):
         return {}, []
     flags = []
     pages = list(range(cfg["pages"][0], cfg["pages"][1] + 1))
+    if cfg.get("mode") == "key_grid":
+        # a bare answer-key table: "1. (A)  2. (D) ..." under one heading per paper
+        out, key, k = {}, None, 0
+        prx = re.compile(cfg["paper_regex"])
+        end = re.compile(cfg["end_regex"]) if cfg.get("end_regex") else None
+        for pno in pages:
+            ls = sorted(doc.page(pno)["lines"], key=lambda l: (round(l.cy / 4), l.x0))
+            toks = []
+            for l in ls:
+                t = norm(l.text.replace("\u00a0", " "))
+                if end and end.search(t):
+                    break
+                if prx.search(t):
+                    toks.append(("paper", None))
+                    continue
+                for m in re.finditer(r"(\d{1,3})\s*[.:]|\(([A-E])\)|(?<![A-Za-z])([A-E])(?![A-Za-z])", t):
+                    toks.append(("n", int(m.group(1))) if m.group(1) else ("a", m.group(2) or m.group(3)))
+            cur = None
+            for kind, v in toks:
+                if kind == "paper":
+                    k += 1
+                    key = f"#{k}"
+                    out[key] = {}
+                    cur = None
+                elif kind == "n":
+                    cur = v
+                elif cur is not None and key:
+                    out[key].setdefault(cur, v)
+                    cur = None
+        return out, flags
     slots, ms = find_markers(doc, pages, cfg)
     segs = numbered(segments(slots, ms), flags, "solutions")
     out, key, k = {}, None, 0
+    if not cfg.get("paper_regex"):
+        key, k = "#1", 1
+        out[key] = {}
     for m, pieces, n in segs:
         if m.kind == "paper":
             k += 1
@@ -1037,7 +1121,7 @@ def parse_solutions(doc: Doc, prof):
 
 
 def build_paper(doc: Doc, prof, paper, sols, out_root):
-    cfg = prof["question"]
+    cfg = dict(prof["question"], **paper.get("question", {}))
     pid = paper["id"]
     out_dir = os.path.join(out_root, pid)
     os.makedirs(os.path.join(out_dir, "snapshots"), exist_ok=True)
@@ -1047,16 +1131,28 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
     slots, ms = find_markers(doc, pages, cfg)
     segs = numbered(segments(slots, ms), flags_all, "questions")
     section, groups, qs = None, [], []
-    sol_cfg = prof.get("solutions") or {}
-    psol = sols.get(str(paper.get("sol_key", "")), {})
+    sol_cfg = paper.get("solutions") or prof.get("solutions") or {}
+    psol = dict(sols.get(str(paper.get("sol_key", "")), {}))
+    if paper.get("solutions"):
+        one, f1 = parse_solutions(doc, {"solutions": dict(paper["solutions"])})
+        psol.update(one.get("#1", {}))
+        flags_all += f1
+    pkey = {}
+    if paper.get("key"):
+        kk, _ = parse_solutions(doc, {"solutions": dict(paper["key"], mode="key_grid")})
+        pkey = kk.get("#1", {})
+    sol_ign = [re.compile(x) for x in sol_cfg.get("ignore", [])]
+    inline_sol = re.compile(cfg["inline_solution"]) if cfg.get("inline_solution") else None
     for m, pieces, n in segs:
         if m.kind == "section":
             section = title_case(re.sub(r"\s+", " ", m.line.text.strip()))
             continue
         if m.kind == "group":
             reg = Region(doc, pieces)
-            nums = [int(x) for x in re.findall(r"\d+", m.m.group(0))]
-            lo, hi = (nums[0], nums[-1]) if nums else (0, 0)
+            head = re.match(r"[^.:]*", norm(m.line.text)).group(0)
+            nums = [int(x) for x in re.findall(r"\d+", head)] if re.search(r"(?i)questions?|directions?", head) else []
+            nxt_n = max([int(q["number"]) for q in qs] + [0]) + 1
+            lo, hi = (nums[0], nums[-1]) if nums else (nxt_n, nxt_n)
             gflags = []
             cl = clean_boxes(reg.boxes, reg.lines, reg.w)
             mg = min((l.x0 for l in reg.lines), default=None)
@@ -1069,6 +1165,21 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
         reg = Region(doc, pieces)
         qname = f"q{n}"
         flags = []
+        isol = None
+        if inline_sol:  # "Sol: (B) ..." printed straight after the question
+            sl_ = next((l for l in reg.lines if inline_sol.match(l.text.strip())), None)
+            if sl_ is not None:
+                cut, qp, sp = sl_.y0 - 0.5, [], []
+                for pc in reg.pieces:
+                    a, b = pc.voff, pc.voff + (pc.y1 - pc.y0)
+                    if cut >= b:
+                        qp.append(Piece(pc.pno, pc.x0, pc.y0, pc.x1, pc.y1))
+                    elif cut <= a:
+                        sp.append(Piece(pc.pno, pc.x0, pc.y0, pc.x1, pc.y1))
+                    else:
+                        qp.append(Piece(pc.pno, pc.x0, pc.y0, pc.x1, pc.y0 + cut - a))
+                        sp.append(Piece(pc.pno, pc.x0, pc.y0 + cut - a, pc.x1, pc.y1))
+                reg, isol = Region(doc, qp), Region(doc, sp)
         anchor = next((l for l in reg.lines if l.piece == 0 and abs(l.y0 - reg.pieces[0].voff - (m.line.y0 - pieces[0].y0)) < 0.6 and abs(l.x0 - (m.line.x0 - pieces[0].x0)) < 0.6), None)
         # anchors that also carry the first words of the stem ("12. Find ...")
         if anchor is not None and cfg["anchor"].get("inline"):
@@ -1079,9 +1190,11 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
                 reg.lines.append(Line(rest[0][1], anchor.y0, rest[-1][2], anchor.y1, "".join(c[0] for c in anchor.chars[k:]), anchor.chars[k:], anchor.size, anchor.bold, anchor.font, 0))
             if num:
                 anchor.x1 = num[-1][2]
-        g = next((x for x in groups if x[0] <= n <= x[1]), None)
+        g = next((x for x in reversed(groups) if x[0] <= n <= x[1]), None)
         stem, plain, kind, opts, margin, want = split_question(reg, anchor, cfg, pack, qname, prof, flags, g[2] if g else None)
         notes = []
+        if cfg.get("force_picture"):
+            flags.append("no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)")
         if any(h in f for f in flags for h in ("options found", "no options", "is empty", "overlaps", "belongs to no option", "nothing to crop")):
             # Layout could not be split with certainty: keep the question exactly as printed.
             pack.drop(f"{qname}-")
@@ -1101,11 +1214,26 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
         q = {"id": qname, "number": str(n), "type": "mcq_single", "stem": stem,
              "options": [{"label": o["label"], "text": o["text"]} for o in opts]}
         # answer + solution
-        if n in psol:
+        if isol is not None:
+            sl2 = [l for l in isol.lines if not inline_sol.match(l.text.strip())]
+            am = next((re.match(r"\(?([A-E])\)", l.text.strip()) for l in sorted(sl2, key=lambda l: (round(l.cy / 4), l.x0)) if l.text.strip()), None)
+            if am:
+                q["answer"] = am.group(1)
+            sflags = []
+            mg = min((l.x0 for l in sl2), default=None)
+            smd, _sp, _k = build_content(isol, sl2, clean_boxes(isol.boxes, sl2, isol.w), mg, pack, f"{qname}-sol", prof, sflags, whole=True, label="solution")
+            if smd:
+                q["solution"] = smd
+        elif n in psol and isinstance(psol[n], str):
+            q["answer"] = psol[n]
+        elif n in psol:
             sm, spieces = psol[n]
-            sreg = Region(doc, [Piece(p.pno, p.x0, p.y0, p.x1, p.y1) for p in spieces])
+            sreg = Region(doc, [Piece(p.pno, p.x0, p.y0, p.x1, p.y1) for p in spieces], sol_ign)
             sflags = []
             ans = sm.m.group(2) if sm.m.re.groups >= 2 else None
+            if not ans:
+                am = next((re.match(r"\(([A-E])\)", l.text.strip()) for l in sorted(sreg.lines, key=lambda l: (round(l.cy / 4), l.x0)) if l.piece == 0 and l.cy < 16 and re.match(r"\(([A-E])\)", l.text.strip())), None)
+                ans = am.group(1) if am else None
             sl = list(sreg.lines)
             sa = next((l for l in sl if l.piece == 0 and abs(l.y0 - (sm.line.y0 - spieces[0].y0)) < 0.6 and abs(l.x0 - (sm.line.x0 - spieces[0].x0)) < 0.6), None)
             mg = None
@@ -1123,6 +1251,10 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
             if smd:
                 q["solution"] = smd
             flags += sflags
+        if n in pkey:
+            if q.get("answer") and q["answer"] != pkey[n]:
+                flags.append(f"answer key says {pkey[n]} but the explanation says {q['answer']}")
+            q["answer"] = pkey[n]
         if "answer" not in q:
             flags.append("no answer found")
         q["topics"] = [section] if section else []

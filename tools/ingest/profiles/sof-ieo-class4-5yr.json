@@ -38,7 +38,8 @@
    "size": 13,
    "font": "Helvetica-Bold"
   },
-  "group_regex": "^DIRECTIONS?\\s*\\(\\s*\\d+\\s*(?:[-\u2013&]|to|and)\\s*\\d+\\s*\\)"
+  "group_regex": "^(?:DIRECTIONS?\\b|For questions?\\b|Choose|Select|Identify|Pick|Find|Read|Fill|Complete|Rearrange|Arrange|Look|Study)",
+  "group_panel_only": true
  },
  "solutions": {
   "pages": [

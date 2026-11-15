@@ -1,0 +1,500 @@
+{
+ "source": "UIMO_CLASS-4_Past-8-Papers.pdf",
+ "subject": "Maths",
+ "fields": {
+  "Exam": "UIMO",
+  "Class": 4
+ },
+ "question": {
+  "columns": [
+   [
+    30,
+    369
+   ]
+  ],
+  "band": [
+   58,
+   548
+  ],
+  "anchor": {
+   "regex": "^0?(\\d{1,2})\\.?(?:\\s+|$)",
+   "x": [
+    8,
+    22
+   ],
+   "inline": true
+  },
+  "option_regex": "^\\(([A-D])\\)(?:\\s|$)",
+  "stop": [
+   "^Paper\\s*Code"
+  ],
+  "ignore": [
+   "^Class\\s*.\\s*4$",
+   "^CLASS\\s*:"
+  ],
+  "section": {
+   "regex": "^(Mathematics|Reasoning|Critical Thinking|Logical Reasoning|Everyday Mathematics|Science|General Science)$",
+   "font": "Italic"
+  }
+ },
+ "papers": [
+  {
+   "id": "uimo-class4-um-set-01",
+   "title": "UIMO Class 4 \u00b7 Set 01",
+   "pages": [
+    2,
+    23
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM_SET_01",
+    "Paper code": "UM_SET_01"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ],
+    "inline_solution": "^Sol\\s*:"
+   }
+  },
+  {
+   "id": "uimo-class4-um9000",
+   "title": "UIMO Class 4 \u00b7 UM9000",
+   "pages": [
+    24,
+    39
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9000",
+    "Paper code": "UM9000"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     40,
+     40
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     40,
+     43
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9009",
+   "title": "UIMO Class 4 \u00b7 UM9009",
+   "pages": [
+    44,
+    59
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9009",
+    "Paper code": "UM9009"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      426
+     ]
+    ],
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\.?(?:\\s+|$)",
+     "x": [
+      40,
+      60
+     ],
+     "inline": true
+    },
+    "force_picture": true
+   },
+   "key": {
+    "pages": [
+     60,
+     60
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     60,
+     63
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9246",
+   "title": "UIMO Class 4 \u00b7 UM9246",
+   "pages": [
+    64,
+    79
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9246",
+    "Paper code": "UM9246"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     80,
+     80
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     80,
+     84
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9248",
+   "title": "UIMO Class 4 \u00b7 UM9248",
+   "pages": [
+    85,
+    99
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9248",
+    "Paper code": "UM9248"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     100,
+     100
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     100,
+     104
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9254",
+   "title": "UIMO Class 4 \u00b7 UM9254",
+   "pages": [
+    105,
+    121
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     122,
+     122
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     122,
+     125
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9257",
+   "title": "UIMO Class 4 \u00b7 UM9257",
+   "pages": [
+    126,
+    141
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     142,
+     142
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     142,
+     146
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  },
+  {
+   "id": "uimo-class4-um9259",
+   "title": "UIMO Class 4 \u00b7 UM9259",
+   "pages": [
+    147,
+    163
+   ],
+   "count": 50,
+   "fields": {
+    "Paper": "UIMO UM9259",
+    "Paper code": "UM9259"
+   },
+   "question": {
+    "columns": [
+     [
+      30,
+      369
+     ]
+    ]
+   },
+   "key": {
+    "pages": [
+     164,
+     164
+    ],
+    "paper_regex": "^KEY$",
+    "end_regex": "^EXPLANATIONS?"
+   },
+   "solutions": {
+    "pages": [
+     164,
+     168
+    ],
+    "columns": [
+     [
+      36,
+      298
+     ],
+     [
+      299,
+      562
+     ]
+    ],
+    "band": [
+     30,
+     810
+    ],
+    "paper_regex": "^EXPLANATIONS?$",
+    "anchor": {
+     "regex": "^0?(\\d{1,2})\\s*[:.]\\s*(?:\\(([A-D])\\))?\\s*",
+     "x": [
+      0,
+      14
+     ],
+     "inline": true
+    },
+    "ignore": [
+     "^(MATHEMATICS|REASONING|CRITICAL THINKING|SCIENCE|ENGLISH|website\\b.*|www\\..*)$"
+    ]
+   }
+  }
+ ]
+}
