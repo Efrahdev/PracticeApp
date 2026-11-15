@@ -1,0 +1,91 @@
+{
+ "source": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+ "subject": "Maths",
+ "count": 35,
+ "fields": {
+  "Exam": "SOF IMO",
+  "Class": 4,
+  "Level": 2
+ },
+ "question": {
+  "columns": [
+   [
+    30,
+    566
+   ]
+  ],
+  "band": [
+   30,
+   745
+  ],
+  "anchor": {
+   "regex": "^(\\d{1,2})\\.(?:\\s+|$)",
+   "x": [
+    0,
+    16
+   ],
+   "inline": true
+  },
+  "option_regex": "^\\(?([A-D])[.)](?:\\s|$)",
+  "stop": [
+   "(?i)^space for rough work"
+  ],
+  "section": {
+   "regex": "^(?:Section\\b.*|[A-Z][A-Z &'-]{6,})$",
+   "bold": true
+  },
+  "group_regex": "^DIRECTIONS?\\s*\\(\\s*\\d+\\s*(?:[-\u2013&]|to|and)\\s*\\d+\\s*\\)"
+ },
+ "solutions": {
+  "mode": "key_grid",
+  "pages": [
+   35,
+   35
+  ],
+  "paper_regex": "^\\d\\s*th\\s*IMO"
+ },
+ "papers": [
+  {
+   "id": "sof-imo-class4-level2-2011-12",
+   "title": "SOF IMO Class 4 \u00b7 Level 2 \u00b7 2011-12",
+   "pages": [
+    12,
+    18
+   ],
+   "sol_key": "#1",
+   "fields": {
+    "Year": "2011-12",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2011-12"
+   }
+  },
+  {
+   "id": "sof-imo-class4-level2-2012-13",
+   "title": "SOF IMO Class 4 \u00b7 Level 2 \u00b7 2012-13",
+   "pages": [
+    20,
+    26
+   ],
+   "sol_key": "#2",
+   "fields": {
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13"
+   }
+  },
+  {
+   "id": "sof-imo-class4-level2-2013-14",
+   "title": "SOF IMO Class 4 \u00b7 Level 2 \u00b7 2013-14",
+   "pages": [
+    28,
+    34
+   ],
+   "sol_key": "#3",
+   "fields": {
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14"
+   }
+  }
+ ]
+}
