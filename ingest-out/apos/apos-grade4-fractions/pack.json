@@ -120,6 +120,10 @@
    "type": "image/png",
    "file": "images/apos-grade4-fractions-q27.png"
   },
+  "apos-grade4-fractions-q28": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q28.png"
+  },
   "apos-grade4-fractions-q29": {
    "type": "image/png",
    "file": "images/apos-grade4-fractions-q29.png"
@@ -127,6 +131,10 @@
   "apos-grade4-fractions-q30": {
    "type": "image/png",
    "file": "images/apos-grade4-fractions-q30.png"
+  },
+  "apos-grade4-fractions-q31": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q31.png"
   },
   "apos-grade4-fractions-q32": {
    "type": "image/png",
@@ -596,6 +604,10 @@
    "type": "image/png",
    "file": "images/apos-grade4-fractions-q148.png"
   },
+  "apos-grade4-fractions-q149": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q149.png"
+  },
   "apos-grade4-fractions-q150": {
    "type": "image/png",
    "file": "images/apos-grade4-fractions-q150.png"
@@ -670,7 +682,7 @@
    "id": "q1",
    "number": "1",
    "type": "open",
-   "stem": "![1. What number is 1 3 of 15? 0 15](asset:apos-grade4-fractions-q1)",
+   "stem": "![1. What number is 1 3 of 15? 0 15 3. What is 1 6 of 18? 0 18](asset:apos-grade4-fractions-q1)",
    "topics": [
     "Fractions > Fractions Of"
    ],
@@ -706,7 +718,7 @@
    "id": "q3",
    "number": "3",
    "type": "open",
-   "stem": "![3. What is 1 6 of 18? 0 18](asset:apos-grade4-fractions-q3)",
+   "stem": "![3. 4.](asset:apos-grade4-fractions-q3)",
    "topics": [
     "Fractions > Fractions Of"
    ],
@@ -1157,6 +1169,24 @@
    }
   },
   {
+   "id": "q28",
+   "number": "28",
+   "type": "open",
+   "stem": "![28. 4×2 3 =](asset:apos-grade4-fractions-q28)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
    "id": "q29",
    "number": "29",
    "type": "open",
@@ -1179,6 +1209,24 @@
    "number": "30",
    "type": "open",
    "stem": "![30. 8×5 8 =](asset:apos-grade4-fractions-q30)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "open",
+   "stem": "![31. 8× 3 10 =](asset:apos-grade4-fractions-q31)",
    "topics": [
     "Fractions > Practice"
    ],
@@ -1250,7 +1298,7 @@
    "id": "q35",
    "number": "35",
    "type": "open",
-   "stem": "![35. What is 4 7 of 5?](asset:apos-grade4-fractions-q35)",
+   "stem": "![35. What is 4 7 of 5? 37. What is 5 8 of 3? 39. Compute 2 9 ×4. 41. What is the perimeter of a square field whose sides are 2 Give your answer as a mixed number in simplest form and include units.](asset:apos-grade4-fractions-q35)",
    "topics": [
     "Fractions > Multiplying Fractions"
    ],
@@ -1286,7 +1334,7 @@
    "id": "q37",
    "number": "37",
    "type": "open",
-   "stem": "![37. What is 5 8 of 3?](asset:apos-grade4-fractions-q37)",
+   "stem": "![37. 38.](asset:apos-grade4-fractions-q37)",
    "topics": [
     "Fractions > Multiplying Fractions"
    ],
@@ -1322,7 +1370,7 @@
    "id": "q39",
    "number": "39",
    "type": "open",
-   "stem": "![39. Compute 2 9 ×4.](asset:apos-grade4-fractions-q39)",
+   "stem": "![39.](asset:apos-grade4-fractions-q39)",
    "topics": [
     "Fractions > Multiplying Fractions"
    ],
@@ -1358,7 +1406,7 @@
    "id": "q41",
    "number": "41",
    "type": "open",
-   "stem": "![41. What is the perimeter of a square field whose sides are 2 5 miles long? Give your answer as a mixed number in simplest form and include units.](asset:apos-grade4-fractions-q41)",
+   "stem": "![41.](asset:apos-grade4-fractions-q41)",
    "topics": [
     "Fractions > Multiplying Fractions"
    ],
@@ -3131,7 +3179,7 @@
    "id": "q139",
    "number": "139",
    "type": "open",
-   "stem": "![139. 9÷( 1 10 ÷ 1 5 ) = 4 cups? 3 of a gallon to each of her](asset:apos-grade4-fractions-q139)",
+   "stem": "![139. 9÷( 1 10 ÷ 1 5 ) =](asset:apos-grade4-fractions-q139)",
    "topics": [
     "Fractions > Division By Unit Fractions"
    ],
@@ -3276,15 +3324,14 @@
    "id": "q147",
    "number": "147",
    "type": "open",
-   "stem": "![147. 18 × = 30 × ÷ × 1 4 ÷ 1 9 = = = = × = 149.★ × 5 = ÷ ÷ ÷ 1 36 × 4 = = = = 24 × =](asset:apos-grade4-fractions-q147)",
+   "stem": "![147. 18 × = 30 × ÷ × 1 4 ÷ 1 9 = = = = × =](asset:apos-grade4-fractions-q147)",
    "topics": [
     "Fractions > Cross-Number Puzzles"
    ],
    "fields": {
     "Book": "Beast Academy Practice 4D",
     "Class": 4,
-    "Chapter": "Fractions",
-    "Challenge": "★"
+    "Chapter": "Fractions"
    },
    "source": {
     "file": "APOS Grade4.pdf",
@@ -3295,7 +3342,25 @@
    "id": "q148",
    "number": "148",
    "type": "open",
-   "stem": "![148. 35 × = 15 × ÷ × ÷ 1 4 = = = = 14 × = 149.★ × 5 = ÷ ÷ ÷ 1 36 × 4 = = = = 24 × =](asset:apos-grade4-fractions-q148)",
+   "stem": "![148. 35 × = 15 × ÷ × ÷ 1 4 = = = = 14 × =](asset:apos-grade4-fractions-q148)",
+   "topics": [
+    "Fractions > Cross-Number Puzzles"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q149",
+   "number": "149",
+   "type": "open",
+   "stem": "![149.★ × 5 = ÷ ÷ ÷ 1 36 × 4 = = = = 24 × =](asset:apos-grade4-fractions-q149)",
    "topics": [
     "Fractions > Cross-Number Puzzles"
    ],

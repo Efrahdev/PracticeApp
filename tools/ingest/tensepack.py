@@ -373,7 +373,7 @@ def build(doc, filename):
         out_q.append(rec)
         counts[(label, qtype)] = counts.get((label, qtype), 0) + 1
 
-    title = (doc.metadata or {}).get("title") or os.path.splitext(filename)[0]
+    title = TITLE_OVERRIDE or (doc.metadata or {}).get("title") or os.path.splitext(filename)[0]
     pack = {
         "format": "practice-app/question-pack@1",
         "pack": {"id": PACK_ID, "title": title, "source": filename, "subject": SUBJECT,
@@ -398,7 +398,22 @@ def write_outputs(pack, outdir):
     return os.path.join(d, "pack.json"), zpath
 
 
+TITLE_OVERRIDE = None
+
+
 def main(argv):
+    global PACK_ID, TITLE_OVERRIDE
+    # optional: --id <pack-id> --title <title>  (needed when several papers share one PDF title)
+    argv = list(argv)
+    for flag in ("--id", "--title"):
+        if flag in argv:
+            i = argv.index(flag)
+            val = argv[i + 1]
+            del argv[i:i + 2]
+            if flag == "--id":
+                PACK_ID = val
+            else:
+                TITLE_OVERRIDE = val
     if len(argv) != 3:
         print(__doc__)
         return 2

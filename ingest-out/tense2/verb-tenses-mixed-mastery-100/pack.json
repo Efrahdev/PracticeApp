@@ -1,12 +1,12 @@
 {
   "format": "practice-app/question-pack@1",
   "pack": {
-    "id": "verb-tenses-diagnostic-assessment",
-    "title": "100 Toughest Mixed Verb Tenses Mastery Challenge",
+    "id": "verb-tenses-mixed-mastery-100",
+    "title": "The 100 Toughest Mixed Verb Tenses - Mastery Challenge",
     "source": "TENSE PRACTICE 2.pdf",
     "subject": "English",
     "fields": {
-      "Collection": "100 Toughest Mixed Verb Tenses Mastery Challenge"
+      "Collection": "The 100 Toughest Mixed Verb Tenses - Mastery Challenge"
     }
   },
   "questions": [

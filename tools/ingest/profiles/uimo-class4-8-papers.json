@@ -57,7 +57,8 @@
       369
      ]
     ],
-    "inline_solution": "^Sol\\s*:"
+    "inline_solution": "^Sol\\s*[:.]",
+    "extend_last": true
    }
   },
   {

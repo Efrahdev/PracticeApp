@@ -13,7 +13,7 @@ import pymupdf
 from PIL import Image
 
 ZOOM = 3.0
-RE_NUM = re.compile(r"^(\d{1,3})\.(?:\s|$)")
+RE_NUM = re.compile(r"^(\d{1,3})\.(?:\s|$|★)")
 
 
 def page_lines(page):
@@ -37,7 +37,7 @@ def build_chapter(doc, prof, ch, flags):
         info[pn] = {"head": head, "lines": L}
         for t, b in L:
             m = RE_NUM.match(t)
-            if m and b[0] < prof["answer_label_x"] and b[1] > top:
+            if m and b[1] > top:
                 cand.append((pn, int(m.group(1)), b[0], b[1]))
     # accept 1, 2, 3 ... in reading order (page, then column-major within a row band)
     cand.sort(key=lambda r: (r[0], r[3], r[2]))
@@ -53,27 +53,29 @@ def build_chapter(doc, prof, ch, flags):
     by_page = {}
     for r in accepted:
         by_page.setdefault(r[0], []).append(r)
-    qs, assets = [], {}
+    qs, assets, lessons = [], {}, []
     for pn in pages:
         page = doc[pn - 1]; W = page.rect.width
         rs = by_page.get(pn)
         L = info[pn]["lines"]
         if not rs:
-            if qs and any(b[1] > top for t, b in L):     # continuation page: append to previous question
-                qs[-1]["_extra"].append((pn, 0, top, W, bot))
-                flags.append(f"{ch['title']}: page {pn} has no numbered question; attached to Q{qs[-1]['number']} as extra picture")
+            lessons.append(pn)        # no numbered question: lesson / chapter title page, not question content
             continue
         # right limit: answer-label column (numbers printed on the right edge)
-        lab = [b[0] for t, b in L if RE_NUM.match(t) and b[0] >= prof["answer_label_x"] and b[1] > top]
+        acc = {(round(r[2]), round(r[3])) for r in rs}
+        lab = [b[0] for t, b in L if RE_NUM.match(t) and b[0] >= prof["answer_label_x"] and b[1] > top
+               and (round(b[0]), round(b[1])) not in acc]
         xr_page = (min(lab) - 3) if lab else W - 20
         for r in rs:
             _, n, x0, y0 = r
             xl = max(prof["margin"], x0 - 5)
             # right edge: next anchor to the right that overlaps this one's rows
             below = [q for q in rs if q is not r and q[3] > y0 + 8 and abs(q[2] - x0) < 40]
+            if any(q is not r and abs(q[3] - y0) < 20 and q[2] < x0 - 60 for q in rs):   # last cell of a row
+                below = [q for q in rs if q is not r and q[3] > y0 + 8]
             ybot = min([q[3] - 14 for q in below] + [bot])
             right = [q for q in rs if q is not r and q[2] > x0 + 60 and q[3] < ybot and q[3] > y0 - 40]
-            xr = min([q[2] - 7 for q in right] + [xr_page])
+            xr = min([q[2] - 7 for q in right] + [xr_page if xr_page > x0 + 60 else W - 20])
             ytop = max(y0 - 14, top)
             if xr - xl < 40:
                 flags.append(f"{ch['title']}: Q{n} cell too narrow on page {pn}; widened to the full row")
@@ -111,6 +113,7 @@ def build_chapter(doc, prof, ch, flags):
         if star:
             d["fields"]["Challenge"] = "★"
         out.append(d)
+    ch["_lessons"] = lessons
     if len(out) != N:
         flags.append(f"{ch['title']}: expected {N} questions, built {len(out)}")
     return out, assets
@@ -146,7 +149,7 @@ def main(argv):
         flags = []
         qs, assets = build_chapter(doc, prof, ch, flags)
         write_pack(out, ch, prof, qs, assets)
-        print(f"{ch['id']}: {len(qs)} questions, {len(assets)} images, {len(flags)} flags")
+        print(f"{ch['id']}: {len(qs)} questions, {len(assets)} images, {len(flags)} flags, lesson pages without questions: {ch.get('_lessons')}")
         allflags += flags
     open(os.path.join(out, "FLAGGED.md"), "w").write("# Flagged for review\n\n" + "\n".join(f"- {f}" for f in allflags) + "\n")
     print("flags written to", os.path.join(out, "FLAGGED.md"))

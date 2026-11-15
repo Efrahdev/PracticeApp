@@ -730,7 +730,7 @@ def find_markers(doc: Doc, pages, cfg):
     return slots, out
 
 
-def segments(slots, markers):
+def segments(slots, markers, extend_last=False):
     """Marker i owns everything up to marker i+1 (possibly across columns / pages)."""
     ms = sorted(markers, key=lambda m: (m.col, m.y))
     segs = []
@@ -739,7 +739,7 @@ def segments(slots, markers):
             continue
         nxt = ms[i + 1] if i + 1 < len(ms) else None
         pieces = []
-        e = nxt.col if nxt else m.col
+        e = nxt.col if nxt else (len(slots) - 1 if extend_last else m.col)
         for k in range(m.col, e + 1):
             s = slots[k]
             y0 = m.top - 0.5 if k == m.col else s["y0"]
@@ -1129,7 +1129,7 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
     flags_all = []
     pages = list(range(paper["pages"][0], paper["pages"][1] + 1))
     slots, ms = find_markers(doc, pages, cfg)
-    segs = numbered(segments(slots, ms), flags_all, "questions")
+    segs = numbered(segments(slots, ms, bool(cfg.get("extend_last"))), flags_all, "questions")
     section, groups, qs = None, [], []
     sol_cfg = paper.get("solutions") or prof.get("solutions") or {}
     psol = dict(sols.get(str(paper.get("sol_key", "")), {}))
@@ -1219,6 +1219,13 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
             am = next((re.match(r"\(?([A-E])\)", l.text.strip()) for l in sorted(sl2, key=lambda l: (round(l.cy / 4), l.x0)) if l.text.strip()), None)
             if am:
                 q["answer"] = am.group(1)
+            else:  # "Sol. (B)" on the marker line, or "Sol:  (C)" with stray symbols sorted first
+                mm = re.search(r"\(([A-E])\)", sl_.text)
+                if not mm:
+                    row = [re.match(r"\(([A-E])\)", l.text.strip()) for l in isol.lines if abs(l.cy - (sl_.h / 2 + 0.5)) < 8 and l.x0 >= sl_.x1 - 1]
+                    mm = next((r for r in row if r), None)
+                if mm:
+                    q["answer"] = mm.group(1)
             sflags = []
             mg = min((l.x0 for l in sl2), default=None)
             smd, _sp, _k = build_content(isol, sl2, clean_boxes(isol.boxes, sl2, isol.w), mg, pack, f"{qname}-sol", prof, sflags, whole=True, label="solution")

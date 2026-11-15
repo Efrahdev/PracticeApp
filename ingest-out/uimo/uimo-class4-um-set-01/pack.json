@@ -226,17 +226,41 @@
   "q45-sol": {
    "file": "images/q45-sol.png"
   },
-  "q46-full": {
-   "file": "images/q46-full.png"
+  "q46-stem-fig": {
+   "file": "images/q46-stem-fig.png"
   },
-  "q47-full": {
-   "file": "images/q47-full.png"
+  "q47-optA": {
+   "file": "images/q47-optA.png"
   },
-  "q48-full": {
-   "file": "images/q48-full.png"
+  "q47-optB": {
+   "file": "images/q47-optB.png"
   },
-  "q49-full": {
-   "file": "images/q49-full.png"
+  "q47-optC": {
+   "file": "images/q47-optC.png"
+  },
+  "q47-optD": {
+   "file": "images/q47-optD.png"
+  },
+  "q47-stem-fig1": {
+   "file": "images/q47-stem-fig1.png"
+  },
+  "q47-stem-fig2": {
+   "file": "images/q47-stem-fig2.png"
+  },
+  "q47-sol": {
+   "file": "images/q47-sol.png"
+  },
+  "q48-stem-fig1": {
+   "file": "images/q48-stem-fig1.png"
+  },
+  "q48-stem-fig2": {
+   "file": "images/q48-stem-fig2.png"
+  },
+  "q48-sol": {
+   "file": "images/q48-sol.png"
+  },
+  "q49-stem-fig": {
+   "file": "images/q49-stem-fig.png"
   },
   "q50-optA": {
    "file": "images/q50-optA.png"
@@ -250,8 +274,14 @@
   "q50-optD": {
    "file": "images/q50-optD.png"
   },
-  "q50-stem-fig": {
-   "file": "images/q50-stem-fig.png"
+  "q50-stem-fig1": {
+   "file": "images/q50-stem-fig1.png"
+  },
+  "q50-stem-fig2": {
+   "file": "images/q50-stem-fig2.png"
+  },
+  "q50-sol": {
+   "file": "images/q50-sol.png"
   }
  },
  "questions": [
@@ -1878,6 +1908,7 @@
      "text": "![option D](asset:q41-optD)"
     }
    ],
+   "answer": "A",
    "solution": "![A – =](asset:q41-sol)",
    "topics": [
     "Reasoning"
@@ -2037,6 +2068,7 @@
      "text": "![option D](asset:q45-optD)"
     }
    ],
+   "answer": "C",
    "solution": "![C + =](asset:q45-sol)",
    "topics": [
     "Reasoning"
@@ -2057,25 +2089,27 @@
    "id": "q46",
    "number": "46",
    "type": "mcq_single",
-   "stem": "![Select the option with the elements that most closely resembles the given Venn diagram. A Electricity, Doors, Cardamoms B Pencils, Eraser, Stationery C Glasses, Clothes, Aluminium D None of these Sol. B Pencils and erasers are available in stationery.](asset:q46-full)",
+   "stem": "Select the option with the elements that most closely resembles the given Venn diagram.\n\n![figure](asset:q46-stem-fig)",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Electricity, Doors, Cardamoms"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Pencils, Eraser, Stationery"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Glasses, Clothes, Aluminium"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "None of these"
     }
    ],
+   "answer": "B",
+   "solution": "Pencils and erasers are available in stationery.",
    "topics": [
     "Critical Thinking"
    ],
@@ -2095,25 +2129,27 @@
    "id": "q47",
    "number": "47",
    "type": "mcq_single",
-   "stem": "![In a stack of three cards with holes, the top of each card is white and the bottom is yellow. Balu threaded these cards on a rope as shown below. Balu rearranged the cards without untying the rope. Which option below is possible to obtain the same threaded cards ? A B C D Sol. D](asset:q47-full)",
+   "stem": "In a stack of three cards with holes, the top of each card is white and the bottom is yellow. Balu threaded these cards on a rope as shown below. Balu rearranged the cards without untying the rope. Which option below is possible to obtain the same threaded cards ?\n\n![figure](asset:q47-stem-fig1)\n\n![figure](asset:q47-stem-fig2)",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "![option A](asset:q47-optA)"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "![option B](asset:q47-optB)"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "![option C](asset:q47-optC)"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "![option D](asset:q47-optD)"
     }
    ],
+   "answer": "D",
+   "solution": "![solution](asset:q47-sol)",
    "topics": [
     "Critical Thinking"
    ],
@@ -2133,25 +2169,27 @@
    "id": "q48",
    "number": "48",
    "type": "mcq_single",
-   "stem": "![Akash assembled a stacking toy as shown in the picture below. How many rings will he see looking at it from above ? A 4 B 3 C 2 D 1 Sol. B](asset:q48-full)",
+   "stem": "Akash assembled a stacking toy as shown in the picture below. How many rings will he see looking at it from above ?\n\n![figure](asset:q48-stem-fig1)\n\n![figure](asset:q48-stem-fig2)",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "4"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "3"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "2"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "1"
     }
    ],
+   "answer": "B",
+   "solution": "![solution](asset:q48-sol)",
    "topics": [
     "Critical Thinking"
    ],
@@ -2171,25 +2209,27 @@
    "id": "q49",
    "number": "49",
    "type": "mcq_single",
-   "stem": "![Seven sticks lie on top of each other. Stick 6 is at the top. Which stick is at the bottom ? 7 5 6 3 4 2 1 A 3 B 2 C 4 D 5 Sol. B Stick 2 at the bottom.](asset:q49-full)",
+   "stem": "Seven sticks lie on top of each other. Stick 6 is at the top. Which stick is at the bottom ?\n\n![figure](asset:q49-stem-fig)",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "3"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "2"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "4"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "5"
     }
    ],
+   "answer": "B",
+   "solution": "Stick 2 at the bottom.",
    "topics": [
     "Critical Thinking"
    ],
@@ -2209,7 +2249,7 @@
    "id": "q50",
    "number": "50",
    "type": "mcq_single",
-   "stem": "The given figure shows a strip of stickers. What is the result after all the patterns have been removed from it ?\n\n![figure](asset:q50-stem-fig)",
+   "stem": "The given figure shows a strip of stickers. What is the result after all the patterns have been removed from it ?\n\n![figure](asset:q50-stem-fig1)\n\n![figure](asset:q50-stem-fig2)",
    "options": [
     {
      "label": "A",
@@ -2228,6 +2268,8 @@
      "text": "![option D](asset:q50-optD)"
     }
    ],
+   "answer": "A",
+   "solution": "![solution](asset:q50-sol)",
    "topics": [
     "Critical Thinking"
    ],
