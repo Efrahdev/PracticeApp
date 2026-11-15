@@ -1,0 +1,1671 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2023-24-set-a",
+  "title": "SOF IMO Class 4 · 2023-24 · Set A",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-full": {
+   "file": "images/q2-full.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-full": {
+   "file": "images/q5-full.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q7-optA": {
+   "file": "images/q7-optA.png"
+  },
+  "q7-optB": {
+   "file": "images/q7-optB.png"
+  },
+  "q7-optC": {
+   "file": "images/q7-optC.png"
+  },
+  "q7-optD": {
+   "file": "images/q7-optD.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-stem-fig": {
+   "file": "images/q9-stem-fig.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-stem-fig": {
+   "file": "images/q10-stem-fig.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q11-full": {
+   "file": "images/q11-full.png"
+  },
+  "q12-full": {
+   "file": "images/q12-full.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "g16-17-fig": {
+   "file": "images/g16-17-fig.png"
+  },
+  "q16-full": {
+   "file": "images/q16-full.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q17-sol": {
+   "file": "images/q17-sol.png"
+  },
+  "q19-stem-fig": {
+   "file": "images/q19-stem-fig.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q23-stem-fig": {
+   "file": "images/q23-stem-fig.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q25-stem": {
+   "file": "images/q25-stem.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q26-sol": {
+   "file": "images/q26-sol.png"
+  },
+  "q27-stem": {
+   "file": "images/q27-stem.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q28-sol": {
+   "file": "images/q28-sol.png"
+  },
+  "q29-optB": {
+   "file": "images/q29-optB.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q30-optA": {
+   "file": "images/q30-optA.png"
+  },
+  "q30-optB": {
+   "file": "images/q30-optB.png"
+  },
+  "q30-optC": {
+   "file": "images/q30-optC.png"
+  },
+  "q30-optD": {
+   "file": "images/q30-optD.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q33-optA": {
+   "file": "images/q33-optA.png"
+  },
+  "q33-optB": {
+   "file": "images/q33-optB.png"
+  },
+  "q33-optC": {
+   "file": "images/q33-optC.png"
+  },
+  "q33-optD": {
+   "file": "images/q33-optD.png"
+  },
+  "q33-stem": {
+   "file": "images/q33-stem.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-stem": {
+   "file": "images/q34-stem.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "How many different possible combinations of 1 rabbit and 1 carrot each can be formed from the given rabbits and carrots?\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "15"
+    },
+    {
+     "label": "C",
+     "text": "10"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Number of rabbits = 5 Number of carrots = 3 So, number of possible combinations = 5 × 3 = 15](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "![Which of the following letters do not have any line of symmetry? B. M C. L D. T A.](asset:q2-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![A. B. D.](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Find the missing number, if a certain rule is followed either row-wise or column-wise.\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "20"
+    },
+    {
+     "label": "B",
+     "text": "18"
+    },
+    {
+     "label": "C",
+     "text": "15"
+    },
+    {
+     "label": "D",
+     "text": "21"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The rule followed is : 5 × 6 = 30 and 30 + 3 = 33; 7 × 4 = 28 and 28 + 3 = 31 So, 6 × 3 = 18 and 18 + 3 = 21](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "The codes for some letters are given below.\n\n![figure](asset:q4-stem-fig)\n\nFind the code for BRAIN.",
+   "options": [
+    {
+     "label": "A",
+     "text": "!©@\\$+"
+    },
+    {
+     "label": "B",
+     "text": "×•!@©"
+    },
+    {
+     "label": "C",
+     "text": "©!?+@"
+    },
+    {
+     "label": "D",
+     "text": "!©@\\$?"
+    }
+   ],
+   "answer": "A",
+   "solution": "![The code for BRAIN is ©@ +.](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "![Select the CORRECT mirror image of the given figure. A. B. Mirror C. D.](asset:q5-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Mirror](asset:q5-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Select the combination of numbers from the options in which the given letters are arranged accordingly to form a meaningful English word.\n\nT C B K U E\n\n1 2 3 4 5 6",
+   "options": [
+    {
+     "label": "A",
+     "text": "3, 1, 2, 6, 5, 4"
+    },
+    {
+     "label": "B",
+     "text": "3, 5, 2, 4, 6, 1"
+    },
+    {
+     "label": "C",
+     "text": "4, 2, 3, 1, 5, 6"
+    },
+    {
+     "label": "D",
+     "text": "3, 2, 4, 5, 6, 1"
+    }
+   ],
+   "answer": "B",
+   "solution": "The meaningful English word formed is BUCKET, *i.e.*, 3, 5, 2, 4, 6, 1.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "There is a certain relationship between the pair of figures on the either side of : :. Identify the relationship of the given pair and find the missing figure.\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![M % • P](asset:q7-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![Q % • N](asset:q7-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![N • % Q](asset:q7-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![P % • M](asset:q7-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "In the left pair, from first figure to second figure, the top left element interchanges its position with bottom right element and top right element interchanges its position with bottom left element.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![Mahima is facing the Book shop. If she takes 3 8 turn clockwise and then 1 then she will be facing .](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Temple"
+    },
+    {
+     "label": "B",
+     "text": "School"
+    },
+    {
+     "label": "C",
+     "text": "Market"
+    },
+    {
+     "label": "D",
+     "text": "Bus stop"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Church School Garden 1 3/8 2 Mahima Temple Cricket academy Book shop Market Bus stop So, Mahima will be facing the market.](asset:q8-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "If star R and star T are removed from the given arrangement, then star \\_\\_\\_\\_\\_\\_\\_\\_\\_ is third to the right of third star from the left end.\n\n![figure](asset:q9-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "P"
+    },
+    {
+     "label": "B",
+     "text": "W"
+    },
+    {
+     "label": "C",
+     "text": "S"
+    },
+    {
+     "label": "D",
+     "text": "K"
+    }
+   ],
+   "answer": "A",
+   "solution": "![The new arrangement becomes : M J K S W P V Z Left Right So, third star from the left end is star K and third to the right of star K is star P.](asset:q9-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Which of the following figures is exactly embedded in the given figure as one of its parts?\n\n![figure](asset:q10-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q10-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![solution](asset:q10-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "![Given figure is made up of a square and a rectangle. Find G H the length of LK. 6 cm A. 8 cm M N B. 9 cm 19 cm C. 7 cm L K 3 cm D. 10 cm J I](asset:q11-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "As, *GHIJ* is a rectangle.\n\n\\\\ *GJ* = *HI* = 19 cm\n\n⇒ *GN* + *NK* + *KJ* = 19 cm\n\n⇒ 6 cm + *NK* + 3 cm = 19 cm\n\n⇒ *NK* = 19 cm – 9 cm = 10 cm\n\nAs, *KLMN* is a square, so *LK* = *NK* = 10 cm",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "![Which of the following figures shows 1 2 as shaded fraction? A. B. C. D.](asset:q12-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "![A. Total number of equal parts = 3 Number of shaded parts = 1 Shaded fraction = 1 3 B. Total number of equal parts = 12 Number of shaded parts = 6 Shaded fraction = 6 = 1 12 2 C. Total number of equal parts = 6 Number of shaded parts = 4 Shaded fraction = 4 = 2 6 3 D. Total number of equal parts = 6 Number of shaded parts = 2 Shaded fraction = 2 = 1 6 3](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "Find the estimated value of the number shown on the abacus when rounded off to the nearest hundreds.\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "24000"
+    },
+    {
+     "label": "B",
+     "text": "23500"
+    },
+    {
+     "label": "C",
+     "text": "23520"
+    },
+    {
+     "label": "D",
+     "text": "23600"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number shown on the abacus = 23524\n\n23524 when rounded off to the nearest hundreds becomes 23500.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "If X is the seventh multiple of 8 and Y is the smallest factor of 150, then find the value of X – Y.",
+   "options": [
+    {
+     "label": "A",
+     "text": "151"
+    },
+    {
+     "label": "B",
+     "text": "60"
+    },
+    {
+     "label": "C",
+     "text": "149"
+    },
+    {
+     "label": "D",
+     "text": "55"
+    }
+   ],
+   "answer": "D",
+   "solution": "X = Seventh multiple of 8 = 7 × 8 = 56 Y = Smallest factor of 150 = 1\n\nSo, X – Y = 56 – 1 = 55",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Mini took 14 mins 8 secs to walk from her home to school. On her way back home, she took another route and reached home in 12 mins 44 secs. How much time did she save by taking the shorter route?",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 min 2 secs"
+    },
+    {
+     "label": "B",
+     "text": "82 secs"
+    },
+    {
+     "label": "C",
+     "text": "1 min 24 secs"
+    },
+    {
+     "label": "D",
+     "text": "Both B and C"
+    }
+   ],
+   "answer": "C",
+   "solution": "Time taken by Mini to reach to school from home\n\n= 14 mins 8 secs = (14 × 60) secs + 8 secs = 840 secs + 8 secs = 848 secs\n\nTime taken by her to reach to home from school by new route = 12 mins 44 secs\n\n= (12 × 60) secs + 44 secs\n\n= 720 secs + 44 secs = 764 secs\n\nSo, time saved by Mini = (848 – 764) secs\n\n= 84 secs = 1 min 24 secs",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**Direction (16-17) :** The given bar graph shows the number of packets of diyas sold during the given five days of a week. Study the graph carefully and answer the following questions.\n\n![figure](asset:g16-17-fig)\n\n![60 What fraction of total number of packets of diyas were 50 sold on Wednesday? 40 7 3 30 A. 29 B. 20 4 10 8 0 Mon Tue Wed Thu Fri C. 29 D. None of these Days](asset:q16-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of packets of diyas sold in all the five days = 65 + 50 + 80 + 35 + 60 = 290 Number of packets of diyas sold on Wednesday = 80 80 = 8 Required fraction = 290 29](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "**Direction (16-17) :** The given bar graph shows the number of packets of diyas sold during the given five days of a week. Study the graph carefully and answer the following questions.\n\n![figure](asset:g16-17-fig)\n\nIf each packet of diyas costs ₹ 250, then how much total money was earned on Tuesday and Friday together?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 25000"
+    },
+    {
+     "label": "B",
+     "text": "₹ 27500"
+    },
+    {
+     "label": "C",
+     "text": "₹ 22000"
+    },
+    {
+     "label": "D",
+     "text": "₹ 23500"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Number of packets of diyas sold on Tuesday and Friday together = 50 + 60 = 110 Cost of 1 packet of diyas = ₹ 250 Total money earned in these two days = ₹ 110 × 250 = ₹ 27500](asset:q17-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Which of the following gives the greatest value?",
+   "options": [
+    {
+     "label": "A",
+     "text": "CMLX + XCIX"
+    },
+    {
+     "label": "B",
+     "text": "DCCV – CXV"
+    },
+    {
+     "label": "C",
+     "text": "CDLIV + CCC"
+    },
+    {
+     "label": "D",
+     "text": "MCMXC – DCX"
+    }
+   ],
+   "answer": "D",
+   "solution": "A.  CMLX + XCIX = 960 + 99 = 1059 B. DCCV – CXV = 705 – 115 = 590\n\nC. CDLIV + CCC = 454 + 300 = 754\n\nD. MCMXC – DCX = 1990 – 610 = 1380 So, MCMXC – DCX is greatest.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Compare and fill the box.\n\n![figure](asset:q19-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\="
+    },
+    {
+     "label": "B",
+     "text": "\\<"
+    },
+    {
+     "label": "C",
+     "text": "\\>"
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "B",
+   "solution": "![LCM of 18, 6 and 9 = 18 3 3 × 3 9 2 2 × 2 4 = = , = = and 6 6 × 3 18 9 9 × 2 18 7 7 × 3 21 1 1 × 2 2 = = , = = 6 6 × 3 18 9 9 × 2 18 Now, 5 3 2 5 9 4 5 + 9 − 4 10 + − = + − = = 18 6 9 18 18 18 18 18 Also, 7 3 1 21 3 2 21 + 3 − 2 22 + − = + − = = 6 18 9 18 18 18 18 18 As, 10 22 ⇒ 5 + 3 − 2 7 + 3 − 1 18 18 18 6 9 6 18 9](asset:q19-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "A big milk container contains 18 L 450 mL of milk. The milk is then poured into 3 small containers of capacity 4L 200 mL each. How much quantity of milk is left in the big container?",
+   "options": [
+    {
+     "label": "A",
+     "text": "7 L 250 mL"
+    },
+    {
+     "label": "B",
+     "text": "5 L 850 mL"
+    },
+    {
+     "label": "C",
+     "text": "6 L 150 mL"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Quantity of milk in big container = 18 L 450 mL = 18450 mL Quantity of milk poured in 1 small container = 4 L 200 mL = 4200 mL So, quantity of milk in 3 small containers = 3 × 4200 mL = 12600 mL Quantity of milk left in big container = 18450 – 12600 mL = 5850 mL or 5 L 850 mL](asset:q20-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Kartik bought 515 sacks of sugar. If each sack contains 43 kg of sugar, then how much total sugar did he buy?",
+   "options": [
+    {
+     "label": "A",
+     "text": "21500 kg"
+    },
+    {
+     "label": "B",
+     "text": "22145 kg"
+    },
+    {
+     "label": "C",
+     "text": "19250 kg"
+    },
+    {
+     "label": "D",
+     "text": "18545 kg"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of sacks of sugar bought = 515 Quantity of sugar in 1 sack = 43 kg\n\n\\\\ Total quantity of sugar bought = (515 × 43) kg\n\n= 22145 kg",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Purvi travelled 45 km 750 m on Friday, 52 km 435 m on Saturday and 67 km 864 m on Sunday from her home and reached her grandparents’ home. How far is Purvi’s grandparents’ home from her home?",
+   "options": [
+    {
+     "label": "A",
+     "text": "166 km 49 m"
+    },
+    {
+     "label": "B",
+     "text": "166 km 409 m"
+    },
+    {
+     "label": "C",
+     "text": "166 km 490 m"
+    },
+    {
+     "label": "D",
+     "text": "165 km 409 m"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total distance from Purvi’s home to her grandparents’ home = 45 km 750 m + 52 km 435 m + 67 km 864 m\n\n= 45750 m + 52435 m + 67864 m\n\n= 166049 m = 166 km 49 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "In one round of a number game, Ashima got the given number cards. Which of the following greatest 5-digit number can she form by using each digit at least once?\n\n![figure](asset:q23-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "77314"
+    },
+    {
+     "label": "B",
+     "text": "77777"
+    },
+    {
+     "label": "C",
+     "text": "77431"
+    },
+    {
+     "label": "D",
+     "text": "74431"
+    }
+   ],
+   "answer": "C",
+   "solution": "Greatest 5 - digit number formed = 77431",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Virat's daily income is ₹ 750. How much total money will he earn in the month of August and September together, if he works every day?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 45000"
+    },
+    {
+     "label": "B",
+     "text": "₹ 45750"
+    },
+    {
+     "label": "C",
+     "text": "₹ 42000"
+    },
+    {
+     "label": "D",
+     "text": "₹ 46500"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Amount of money Virat earns in 1 day = ₹ 750 Total number of days in the month of August and September = 31 + 30 = 61 Total amount of money Virat earns in these 2 months = ₹ 750 × 61 = ₹ 45750](asset:q24-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "![In a marathon, 2562 people participated. Out of these, 2 3 of the total people were 60 years or above. How many people below 60 years participated in the marathon?](asset:q25-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "854"
+    },
+    {
+     "label": "B",
+     "text": "816"
+    },
+    {
+     "label": "C",
+     "text": "1708"
+    },
+    {
+     "label": "D",
+     "text": "982"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Total number of people participated in the marathon = 2562 Number of people participated who are 60 years or above = 2 of 2562 = 2 × 2562 = 2 × 854 = 1708 3 3 Number of people participated who are below 60 years = 2562 – 1708 = 854](asset:q25-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Atul bought 15 packets of milk which cost ₹ 645. How much will 24 such packets of milk cost?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 945"
+    },
+    {
+     "label": "B",
+     "text": "₹ 1032"
+    },
+    {
+     "label": "C",
+     "text": "₹ 1120"
+    },
+    {
+     "label": "D",
+     "text": "₹ 1302"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Cost of 15 packets of milk = ₹ 645 645 So, cost of 1 packet of milk = ₹ 15 = ₹ 43 Cost of 24 packets of milk = ₹ 43 × 24 = ₹ 1032](asset:q26-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "![Kirti walks around the given rectangular field two times. Find the total distance covered by her. 50 m](asset:q27-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "280 m"
+    },
+    {
+     "label": "B",
+     "text": "480 m"
+    },
+    {
+     "label": "C",
+     "text": "240 m"
+    },
+    {
+     "label": "D",
+     "text": "320 m"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Distance covered by Kirti in 1 round = Perimeter of rectangle = 2 × 70 + 50 = 2 × 120 = 240 m Distance covered by her in 2 rounds = 2 × 240 = 480 m](asset:q27-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "A bicycle company manufactures 48520 bicycles in a month. Out of these, 8719 bicycles were defective. How many manufactured bicycles were not defective?",
+   "options": [
+    {
+     "label": "A",
+     "text": "39719"
+    },
+    {
+     "label": "B",
+     "text": "41615"
+    },
+    {
+     "label": "C",
+     "text": "37519"
+    },
+    {
+     "label": "D",
+     "text": "39801"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of bicycles manufactured in a month = 48520 Number of defected bicycles = 8719 Number of non-defected bicycles = 48520 – 8719 = 39801](asset:q28-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Kavya bought the given washing machine, the tag on the machine is the price of machine after rounding it off to the nearest hundreds. Which of the following could be the price of the washing machine?\n\n![figure](asset:q29-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 58652"
+    },
+    {
+     "label": "B",
+     "text": "![₹ 58485](asset:q29-optB)"
+    },
+    {
+     "label": "C",
+     "text": "₹ 58595"
+    },
+    {
+     "label": "D",
+     "text": "₹ 59584"
+    }
+   ],
+   "answer": "C",
+   "solution": "From the given options, 58595 when rounded off to nearest hundreds becomes 58600.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "There are 60 passengers in a bus, out of which, 25 are males, 20 are females and rest are children. What fraction of total passengers in the bus are children?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![3 4](asset:q30-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![2 3](asset:q30-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 3](asset:q30-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1 4](asset:q30-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of passengers in the bus = 60 Number of males = 25 Number of females = 20 So, number of children = 60 – 25 + 20 = 60 – 45 = 15 15 = 1 Required fraction = 60 4](asset:q30-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "If the digits at hundreds place and units place in each of the following numbers are interchanged, then find the Roman numeral for the new numbers formed.\n\n**(p)** 3518 **(q)** 2917\n\n**(p)** **(q)**",
+   "options": [
+    {
+     "label": "A",
+     "text": "MMMDCCCXV MMDCCXIX"
+    },
+    {
+     "label": "B",
+     "text": "MMMDXVIII MMCMVII"
+    },
+    {
+     "label": "C",
+     "text": "MMMDCCXIV MCMLXIX"
+    },
+    {
+     "label": "D",
+     "text": "MMDCCCXV MCMXLIV"
+    }
+   ],
+   "answer": "A",
+   "solution": "(p) New number formed = 3815 = 3000 + 800 + 10 + 5 = MMMDCCCXV\n\n(q) New number formed = 2719\n\n= 2000 + 700 + 10 + 9 = MMDCCXIX",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Read the given statements carefully and state T for true and F for false.\n\n**(i)** The largest factor of a number is always 1.\n\n**(ii)** There are 6 common multiples of 5 and 15 that lie between 1 and 100.\n\n**(iii)** The HCF of 40 and 200 is 20.\n\n**(i)** **(ii)** **(iii)**",
+   "options": [
+    {
+     "label": "A",
+     "text": "T T F"
+    },
+    {
+     "label": "B",
+     "text": "T F T"
+    },
+    {
+     "label": "C",
+     "text": "F F T"
+    },
+    {
+     "label": "D",
+     "text": "F T F"
+    }
+   ],
+   "answer": "D",
+   "solution": "(i)  False; The largest factor of any number is the number itself.\n\n(ii) True; Multiples of 5 that lies between 1 and 100 are : 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90 and 95.\n\nMultiples of 15 lies between 1 and 100 are : 15, 30, 45, 60, 75 and 90.\n\n\\\\ Common multiples of 5 and 15 are : 15, 30, 45, 60, 75 and 90 *i.e*., 6 in number.\n\n(iii) False; Factors of 40 are : 1, 2, 4, 5, 8, 10, 20 and 40. Factor of 200 are : 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100 and 200.\n\n\\\\ Common factors of 40 and 200 are : 1, 2, 4, 5, 8, 10, 20 and 40\n\nSo, HCF of 40 and 200 = 40",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![The given table shows the points scored by Raghav and Puneet in three rounds of a quiz competition. If Raghav scored 40 points less than Puneet in the second round, then a What fraction of the total points is scored by Raghav in second round? b Who won the quiz and by how many points? a b](asset:q33-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![3 5 Puneet, 50 points](asset:q33-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![2 5 Raghav, 30 points](asset:q33-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![9 2 Puneet, 30 points](asset:q33-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1 9 Raghav, 50 points](asset:q33-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Points scored by Puneet in second round = 80 Points scored by Raghav in second round = 80 – 40 = 40 a Total points scored by Raghav = 50 + 40 + 90 = 180 Required fraction = 40 = 2 180 9 b Total points scored by Raghav = 50 + 40 + 90 = 180 Total points scored by Puneet = 70 + 80 + 60 = 210 So, Puneet won the quiz by 210 – 180 = 30 points](asset:q33-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "![The given pictograph shows the number of tickets sold for five movies on Sunday. Study the graph carefully and answer the following questions. p If each ticket costs ₹ 250, then how much more money was earned on selling tickets for movie T than movie U? q Find the fraction of the number of tickets sold for movie S to the number of tickets sold for movie W. p](asset:q34-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 150000"
+    },
+    {
+     "label": "B",
+     "text": "₹ 125000"
+    },
+    {
+     "label": "C",
+     "text": "₹ 150000"
+    },
+    {
+     "label": "D",
+     "text": "₹ 135000"
+    }
+   ],
+   "answer": "C",
+   "solution": "![p Number of tickets sold for movie T = 7 × 150 = 1050 Number of tickets sold for movie U = 3 × 150 = 450 Number of more tickets sold for movie T than movie U = 1050 – 450 = 600 Cost of 1 ticket = ₹ 250 More money earned on selling tickets for movie T than movie U = ₹ 250 × 600 = ₹ 150000 q Number of tickets sold for movie S = 4 × 150 = 600 Number of tickets sold for movie W = 6 × 150 = 900 600 = 2](asset:q34-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 53
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![Study the given pictures carefully and arrange them in ascending order according to their weights. 900 g 950 g 850 g A. , , B. , , C. , , D. , ,](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![+ = 900 g ... i + = 950 g ... ii + = 850 g ... iii Adding i , ii and iii , we get 2 × + 2 × × + 2 × × = 900 + 950 + 850 g = 2700 g ⇒ + + = 2700 ÷ 2 g = 1350 g ... iv ⇒ ⇒ 900 g + = 1350 g Using i and iv ⇒ = 1350 – 900 g = 450 g Also, + 950 g = 1350 g Using ii and iv ⇒ = 1350 – 950 g = 400 g Now, + 850 g = 1350 g Using iii and iv ⇒ = 1350 – 850 g = 500 g As, 400 g 450 g 500 g Correct ascending order](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 53
+   }
+  }
+ ]
+}

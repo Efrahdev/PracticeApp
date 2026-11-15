@@ -1,0 +1,276 @@
+[
+ {
+  "id": "sof-imo-class4-2025-26-set-a",
+  "questions": 35,
+  "flagged": 1,
+  "answers": 35,
+  "solutions": 35,
+  "images": 76,
+  "paper_flags": [],
+  "pictures": {
+   "19": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 4 cm"
+   ],
+   "33": [
+    "kept as a picture of the whole question: option B overlaps other text"
+   ]
+  },
+  "flags": {
+   "30": [
+    "an option label is misprinted in the source (read leniently)"
+   ]
+  }
+ },
+ {
+  "id": "sof-imo-class4-2025-26-set-b",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 59,
+  "paper_flags": [],
+  "pictures": {
+   "9": [
+    "kept as a picture of the whole question: no options found"
+   ],
+   "13": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: Q"
+   ],
+   "24": [
+    "kept as a picture of the whole question: option B overlaps other text; stem is empty"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2024-25-set-a",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 68,
+  "paper_flags": [],
+  "pictures": {
+   "32": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: F T T T"
+   ],
+   "33": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 3 cm 4 cm"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2024-25-set-b",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 59,
+  "paper_flags": [],
+  "pictures": {
+   "2": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: Amusement park"
+   ],
+   "11": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: L P O"
+   ],
+   "14": [
+    "kept as a picture of the whole question: stem is empty"
+   ],
+   "33": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: P T R P"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2023-24-set-a",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 61,
+  "paper_flags": [],
+  "pictures": {
+   "2": [
+    "kept as a picture of the whole question: option B overlaps another picture; stem is empty"
+   ],
+   "5": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: Mirror"
+   ],
+   "11": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: M 19 cm L I"
+   ],
+   "12": [
+    "kept as a picture of the whole question: option A overlaps other text; option A overlaps another picture; option A overlaps the question's figure; option C overlaps other text; option C overlaps another picture; option C overlaps the question's figure"
+   ],
+   "16": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 30 20 10 0"
+   ],
+   "35": [
+    "kept as a picture of the whole question: option A overlaps another picture; option A overlaps the question's figure; option B overlaps other text; option B overlaps another picture; option C overlaps another picture"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2023-24-set-b",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 66,
+  "paper_flags": [],
+  "pictures": {
+   "20": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: Q"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2022-23-set-a",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 85,
+  "paper_flags": [],
+  "pictures": {
+   "4": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: Mirror"
+   ],
+   "9": [
+    "kept as a picture of the whole question: stem is empty"
+   ],
+   "15": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 2 0"
+   ],
+   "18": [
+    "kept as a picture of the whole question: stem is empty"
+   ],
+   "32": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 5"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2022-23-set-b",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 79,
+  "paper_flags": [],
+  "pictures": {
+   "7": [
+    "kept as a picture of the whole question: stem is empty"
+   ],
+   "9": [
+    "kept as a picture of the whole question: option C is empty; option A overlaps other text"
+   ],
+   "15": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 1 cm"
+   ],
+   "31": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 20900 20900 21000 20800"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2021-22-set-a",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 52,
+  "paper_flags": [],
+  "pictures": {
+   "3": [
+    "kept as a picture of the whole question: option A is empty; option C is empty; option D is empty"
+   ],
+   "14": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 8 cm 12 cm"
+   ],
+   "18": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 45 30 15 0"
+   ],
+   "32": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 250 150 350 100 350 50 0 300"
+   ],
+   "33": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: I"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-2021-22-set-b",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 81,
+  "paper_flags": [],
+  "pictures": {
+   "2": [
+    "kept as a picture of the whole question: no options found"
+   ],
+   "8": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: "
+   ],
+   "11": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 3 cm 3 cm 3 cm 3 cm"
+   ],
+   "34": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 110 10 0 110 100 Milk flavours"
+   ],
+   "35": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: 6 cm"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-model-test-1",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 58,
+  "paper_flags": [],
+  "pictures": {
+   "1": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: "
+   ],
+   "3": [
+    "kept as a picture of the whole question: option B overlaps other text"
+   ],
+   "6": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: "
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-model-test-2",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 35,
+  "images": 61,
+  "paper_flags": [],
+  "pictures": {
+   "11": [
+    "kept as a picture of the whole question: option A overlaps other text; option A overlaps the question's figure"
+   ],
+   "32": [
+    "kept as a picture of the whole question: option A overlaps the question's figure"
+   ]
+  },
+  "flags": {}
+ }
+]

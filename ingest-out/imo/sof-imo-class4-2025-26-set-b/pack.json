@@ -1,0 +1,1665 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2025-26-set-b",
+  "title": "SOF IMO Class 4 · 2025-26 · Set B",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q4-optA": {
+   "file": "images/q4-optA.png"
+  },
+  "q4-optB": {
+   "file": "images/q4-optB.png"
+  },
+  "q4-optC": {
+   "file": "images/q4-optC.png"
+  },
+  "q4-optD": {
+   "file": "images/q4-optD.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q5-stem": {
+   "file": "images/q5-stem.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-full": {
+   "file": "images/q9-full.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q11-stem-fig": {
+   "file": "images/q11-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q14-sol": {
+   "file": "images/q14-sol.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q16-optD": {
+   "file": "images/q16-optD.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q17-stem-fig": {
+   "file": "images/q17-stem-fig.png"
+  },
+  "g18-19-fig": {
+   "file": "images/g18-19-fig.png"
+  },
+  "q18-stem-fig": {
+   "file": "images/q18-stem-fig.png"
+  },
+  "q19-stem": {
+   "file": "images/q19-stem.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q20-stem": {
+   "file": "images/q20-stem.png"
+  },
+  "q21-stem-fig": {
+   "file": "images/q21-stem-fig.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q22-optA": {
+   "file": "images/q22-optA.png"
+  },
+  "q22-optB": {
+   "file": "images/q22-optB.png"
+  },
+  "q22-optC": {
+   "file": "images/q22-optC.png"
+  },
+  "q22-sol": {
+   "file": "images/q22-sol.png"
+  },
+  "q24-full": {
+   "file": "images/q24-full.png"
+  },
+  "q26-optA": {
+   "file": "images/q26-optA.png"
+  },
+  "q26-optB": {
+   "file": "images/q26-optB.png"
+  },
+  "q26-optC": {
+   "file": "images/q26-optC.png"
+  },
+  "q26-optD": {
+   "file": "images/q26-optD.png"
+  },
+  "q26-sol": {
+   "file": "images/q26-sol.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q31-stem-fig": {
+   "file": "images/q31-stem-fig.png"
+  },
+  "q32-stem": {
+   "file": "images/q32-stem.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-stem": {
+   "file": "images/q33-stem.png"
+  },
+  "q34-stem": {
+   "file": "images/q34-stem.png"
+  },
+  "q34-stem-fig1": {
+   "file": "images/q34-stem-fig1.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Find the missing number, if same rule is followed in all the three figures.\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "240"
+    },
+    {
+     "label": "B",
+     "text": "120"
+    },
+    {
+     "label": "C",
+     "text": "180"
+    },
+    {
+     "label": "D",
+     "text": "160"
+    }
+   ],
+   "answer": "A",
+   "solution": "![The rule followed is : 5 × 3 × 6 = 90 ; 7 × 2 × 8 = 112 So, 6 × 4 × 10 = 240](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "How many possible combinations of 1 school bag and 1 book each can be formed from the given school bags and books?\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "30"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "35"
+    },
+    {
+     "label": "D",
+     "text": "28"
+    }
+   ],
+   "answer": "C",
+   "solution": "Number of school bags = 5\n\nNumber of books = 7\n\nSo, number of possible combinations = 5 × 7 = 35",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "The given clock shows the time at which an exhibition starts in the morning. If it lasts for 4 hours 15 minutes, then at what time the exhibition ends?\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "11 : 10 a.m."
+    },
+    {
+     "label": "B",
+     "text": "10 : 20 a.m."
+    },
+    {
+     "label": "C",
+     "text": "10 : 50 a.m."
+    },
+    {
+     "label": "D",
+     "text": "11 : 25 a.m."
+    }
+   ],
+   "answer": "D",
+   "solution": "Time at which the exhibition starts = 7 : 10 a.m. Time at which the exhibition ends = 4 hrs 15 mins after 7 : 10 a.m. *i.e*., 11 : 25 a.m.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "There is a certain relationship between the pair of figures on the either side of : :. Identify the relationship between the given pair and find the missing figure.\n\n![figure](asset:q4-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q4-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q4-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q4-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q4-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "In the left pair, from first figure to second figure, shapes having one more side is added inside as well as outside of the first figure.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "![Which of the following points is in North-West of point J?](asset:q5-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "S"
+    },
+    {
+     "label": "B",
+     "text": "L"
+    },
+    {
+     "label": "C",
+     "text": "U"
+    },
+    {
+     "label": "D",
+     "text": "T"
+    }
+   ],
+   "answer": "B",
+   "solution": "Point L is in North-West of point J.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "If cows P and M are removed from the given arrangement, then cow \\_\\_\\_\\_\\_\\_\\_\\_ is fifth to the right of fourth cow from the left end.\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "G"
+    },
+    {
+     "label": "B",
+     "text": "W"
+    },
+    {
+     "label": "C",
+     "text": "T"
+    },
+    {
+     "label": "D",
+     "text": "Q"
+    }
+   ],
+   "answer": "A",
+   "solution": "![After removing cows P and M, the new arrangement becomes: Left U J K Q T R W S G L So, fourth cow from the left end is cow Q and fifth to the right of cow Q is cow G.](asset:q6-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Which letter should replace the question mark (?) to form two meaningful English words?\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "I"
+    },
+    {
+     "label": "B",
+     "text": "O"
+    },
+    {
+     "label": "C",
+     "text": "E"
+    },
+    {
+     "label": "D",
+     "text": "K"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Two meaningful English words formed are : TOUGH and KNOCK.](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "How many squares are there in the given figure?\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "8"
+    },
+    {
+     "label": "B",
+     "text": "10"
+    },
+    {
+     "label": "C",
+     "text": "9"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "C",
+   "solution": "![a b c d e f g h Squares formed are: a, b, c, d, e, f, g, h and cdef i.e., 9 in number.](asset:q8-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![Select the CORRECT mirror image of the given combination of letters and symbols. KI& NG Mirror A. B. KI& NG C. D.](asset:q9-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![KI& NG Mirror](asset:q9-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "If ‘March’ means ‘January’, ‘January’ means ‘February’, ‘February’ means ‘August’ and ‘August’ means ‘September’, then which month has least number of days in a year?",
+   "options": [
+    {
+     "label": "A",
+     "text": "February"
+    },
+    {
+     "label": "B",
+     "text": "August"
+    },
+    {
+     "label": "C",
+     "text": "January"
+    },
+    {
+     "label": "D",
+     "text": "September"
+    }
+   ],
+   "answer": "C",
+   "solution": "February has least number of days in a year but January means February.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Which of the following is the factor of the number shown on the given abacus?\n\n![figure](asset:q11-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "131"
+    },
+    {
+     "label": "C",
+     "text": "262"
+    },
+    {
+     "label": "D",
+     "text": "All of these"
+    }
+   ],
+   "answer": "D",
+   "solution": "Number shown on the abacus = 524 As, 524 is completely divisible by 4, 131 and 262. So, 4, 131 and 262 all are factors of 524.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "Which of the following will give the GREATEST value when each number is rounded off to nearest hundreds place?",
+   "options": [
+    {
+     "label": "A",
+     "text": "4598"
+    },
+    {
+     "label": "B",
+     "text": "5271"
+    },
+    {
+     "label": "C",
+     "text": "4386"
+    },
+    {
+     "label": "D",
+     "text": "5079"
+    }
+   ],
+   "answer": "B",
+   "solution": "![A. 4598 rounded off to nearest hundreds place = 4600 B. 5271 rounded off to nearest hundreds place = 5300 Greatest C. 4386 rounded off to nearest hundreds place = 4400 D. 5079 rounded off to nearest hundreds place = 5100 P 1](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![P What is the minimum number of squares that must be added so that the line PQ becomes a line of symmetry? A. 2 B. 5 C. 4 D. 3 Q](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![2 3 Q](asset:q13-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Solve for P and select the CORRECT option.\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "14"
+    },
+    {
+     "label": "B",
+     "text": "17"
+    },
+    {
+     "label": "C",
+     "text": "15"
+    },
+    {
+     "label": "D",
+     "text": "19"
+    }
+   ],
+   "answer": "C",
+   "solution": "![We have, 7 1 5 + 3 5 6 + 4 3 5 = P 19 30 ⇒ 36 5 + 23 6 + 23 5 = P 19 30 ⇒ P 19 = 216 +115 +138 = 469 = 15 19 30 30 30 30 So, P = 15](asset:q14-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "If\n\n![figure](asset:q15-stem-fig)\n\n+",
+   "options": [
+    {
+     "label": "A",
+     "text": "4 kg"
+    },
+    {
+     "label": "B",
+     "text": "3 kg"
+    },
+    {
+     "label": "C",
+     "text": "2 kg"
+    },
+    {
+     "label": "D",
+     "text": "5 kg"
+    }
+   ],
+   "answer": "A",
+   "solution": "![We have, + = 19 kg ... i + = 22 kg ... ii And, + + + + + + + + = 94 kg = + + + + + + + = 94 kg ⇒ 3 × 19 kg + 22 kg + = 94 kg using i and ii ⇒ Weight of = 94 kg – 57 kg – 22 kg = 15 kg From i , 15 kg + = 19 kg ⇒ Weight of = 19 kg – 15 kg = 4 kg](asset:q15-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "Which of the following does not have half of its figure shaded?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q16-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![In option D; total number of equal parts = 8 Number of shaded parts = 5 So, shaded fraction = 5 ≠ 1 8 2](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "The time at which a train starts and ends its journey is shown here. Find the duration of the journey.\n\n![figure](asset:q17-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 hours 50 minutes"
+    },
+    {
+     "label": "B",
+     "text": "2 hours 45 minutes"
+    },
+    {
+     "label": "C",
+     "text": "1 hour 55 minutes"
+    },
+    {
+     "label": "D",
+     "text": "3 hours 50 minutes"
+    }
+   ],
+   "answer": "A",
+   "solution": "Starting time = 7 : 15\n\nEnding time = 10 : 05\n\nSo, duration of journey = 2 hours 50 minutes",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (18-19) : The given bar graph shows the amount of milk consumed by the children of six orphanages in a particular month. Study the given bar graph carefully and answer the following questions.\n\n![figure](asset:g18-19-fig)\n\nHow much less amount of milk was consumed by the children of orphanage T than the total amount of milk consumed by the children of orphanages Q and S?\n\n![figure](asset:q18-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "350 litres"
+    },
+    {
+     "label": "B",
+     "text": "450 litres"
+    },
+    {
+     "label": "C",
+     "text": "300 litres"
+    },
+    {
+     "label": "D",
+     "text": "200 litres\n\n**th**"
+    }
+   ],
+   "answer": "B",
+   "solution": "Quantity of milk consumed by the children of orphanage T = 700 litres\n\nTotal quantity of milk consumed by the children of orphanages Q and S = 600 + 550 = 1150 litres\n\n∴ Required difference = (1150 – 700) litres = 450 litres",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (18-19) : The given bar graph shows the amount of milk consumed by the children of six orphanages in a particular month. Study the given bar graph carefully and answer the following questions.\n\n![figure](asset:g18-19-fig)\n\n![If for any orphanage V, the amount of milk consumed by the children is 3 of the amount of milk consumed by the children of orphanage U, then find the amount of milk consumed by the children of orphanage V.](asset:q19-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "280 litres"
+    },
+    {
+     "label": "B",
+     "text": "360 litres"
+    },
+    {
+     "label": "C",
+     "text": "380 litres"
+    },
+    {
+     "label": "D",
+     "text": "250 litres"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Quantity of milk consumed by the children of orphanage U = 600 litres So, quantity of milk consumed by the children of orphanage V = 3 × 600 litres = 360 litres 5](asset:q19-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "![What could not be the number on star Q, so that the numbers on stars are arranged in ascending order?](asset:q20-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "3462"
+    },
+    {
+     "label": "B",
+     "text": "3500"
+    },
+    {
+     "label": "C",
+     "text": "3476"
+    },
+    {
+     "label": "D",
+     "text": "3480"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of star Q must be greater than 3456 and less than 3482.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Priya has the following jars of fruits and nuts.\n\n![figure](asset:q21-stem-fig)\n\nHow many total fruits and nuts are there in all the jars?",
+   "options": [
+    {
+     "label": "A",
+     "text": "7913"
+    },
+    {
+     "label": "B",
+     "text": "7531"
+    },
+    {
+     "label": "C",
+     "text": "8351"
+    },
+    {
+     "label": "D",
+     "text": "9250"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of fruits and nuts in all the jars = 1226 + 1920 +2570 + 1815 = 7531](asset:q21-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "460 people visited a zoo on Saturday and 355 people visited the zoo on Sunday. If total number of men who visited the zoo on these two days is 315, then find the fraction of people who visited the zoo in these two days are not men.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![100 163](asset:q22-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1 1 63](asset:q22-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![93 163](asset:q22-optC)"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Total number of people visited the zoo on Saturday and Sunday = 460 + 355 = 815 Number of men visited the zoo on both the days = 315 So, number of people who are not men and visited the zoo on both the days = 815 – 315 = 500 ∴ Required fraction = 500 = 100 815 163](asset:q22-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Rohit packed 4375 cookies into packets of 5. He sold them at ₹ 13 per packet. How much total amount did he get?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 11785"
+    },
+    {
+     "label": "B",
+     "text": "₹ 13590"
+    },
+    {
+     "label": "C",
+     "text": "₹ 4780"
+    },
+    {
+     "label": "D",
+     "text": "₹ 11375"
+    }
+   ],
+   "answer": "D",
+   "solution": "Total number of cookies = 4375\n\nNumber of cookies in 1 packet = 5\n\nSo, number of packets formed = 4375 ÷ 5 = 875 Now, cost of each packet = ₹ 13\n\nSo, total amount he gets = ₹ (13 × 875 ) = ₹ 11375",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "![Sakshi used a rope to form the given rectangle. If the length of rectangle is thrice its breadth, then find the total length of rope used by her. A. 90 cm B. 150 cm C. 120 cm D. 60 cm](asset:q24-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "Breadth of rectangle = 15 cm\n\nSo, length of rectangle = 3 × 15 = 45 cm\n\n∴ Total length of rope used = 2 (length + breadth) = 2 (15 + 45)\n\n= 120 cm",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "On the occasion of kite festival, three friends Mayank, Puneet and Sachin sold 15890, 27183 and 18595 kites respectively. Who sold maximum number of kites?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Sachin"
+    },
+    {
+     "label": "B",
+     "text": "Mayank"
+    },
+    {
+     "label": "C",
+     "text": "Puneet"
+    },
+    {
+     "label": "D",
+     "text": "Can’t say"
+    }
+   ],
+   "answer": "C",
+   "solution": "As, 15890 \\< 18595 \\< 27183\n\nSo, Puneet sold maximum number of kites.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "For a sports academy, the coach bought 15 tennis balls, 7 basketballs, 8 footballs and 10 shuttlecocks. Find the fraction of number of shuttlecocks bought to the total number of items bought.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5 1](asset:q26-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1 4](asset:q26-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![2 3](asset:q26-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![3 5](asset:q26-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of items bought = 15 + 7 + 8 + 10 = 40 Number of shuttlecocks bought = 10 ∴ Required fraction = 10 = 1 40 4](asset:q26-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "A restaurant can accommodate 5200 guests. If there are 1205 adults and 1820 children in the restaurant, then how many more guests can be accommodated in the restaurant?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2175"
+    },
+    {
+     "label": "B",
+     "text": "2792"
+    },
+    {
+     "label": "C",
+     "text": "1854"
+    },
+    {
+     "label": "D",
+     "text": "1967"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of guests that can be accommodated in the restaurant = 5200\n\nNumber of guests that are in the restaurant = 1205 + 1820 = 3025 So, number of more guests that can be accommodated in the restaurant = 5200 – 3025 = 2175",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Mr. Sharma put 4 kg 150 g apples, 5 kg 830 g oranges and 3 kg 70 g mangoes in an empty fruit basket. If the total weight of fruits and empty basket is 14 kg 400 g, then find the weight of empty basket.",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 kg 350 g"
+    },
+    {
+     "label": "B",
+     "text": "1 kg 425 g"
+    },
+    {
+     "label": "C",
+     "text": "1280 g"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total weight of empty basket and fruit = 14 kg 400 g Total weight of fruits = 4 kg 150 g + 5 kg 830 g + 3 kg 70 g = 4150 g + 5830 g + 3070 g = 13050 g = 13 kg 50 g\n\nSo, weight of empty basket = 14 kg 400 g – 13 kg 50 g\n\n= 1 kg 350 g",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "The distance between city X and city Y when rounded off to nearest thousands is 5000 km. Which of the following is the possible actual distance between the two cities?",
+   "options": [
+    {
+     "label": "A",
+     "text": "4294 km"
+    },
+    {
+     "label": "B",
+     "text": "6103 km"
+    },
+    {
+     "label": "C",
+     "text": "4145 km"
+    },
+    {
+     "label": "D",
+     "text": "4782 km"
+    }
+   ],
+   "answer": "D",
+   "solution": "A. 4294 rounded off to nearest thousands = 4000 B. 6103 rounded off to nearest thousands = 6000\n\nC. 4145 rounded off to nearest thousands = 4000\n\nD. 4782 rounded off to nearest thousands = 5000\n\nSo, the possible actual distance between city X and city Y is 4782 km.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Priyanka uses 18 tomatoes to make half litre of tomato sauce. How many tomatoes does she need to make 5 litres of tomato sauce?",
+   "options": [
+    {
+     "label": "A",
+     "text": "120"
+    },
+    {
+     "label": "B",
+     "text": "155"
+    },
+    {
+     "label": "C",
+     "text": "135"
+    },
+    {
+     "label": "D",
+     "text": "180"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Number of tomatoes required for 1 2 litres sauce = 18 Number of tomatoes required for 1 litre sauce = 18 × 2 = 36 So, number of tomatoes required for 5 litres sauce = 36 × 5 = 180](asset:q30-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "Sonali, Sneha and Mahira get ₹ 2500, ₹ 1900 and ₹ 2050 respectively from their parents for the party. They bought the following items for the party.\n\n![figure](asset:q31-stem-fig)\n\nWho among the following was left with the least amount?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Mahira"
+    },
+    {
+     "label": "B",
+     "text": "Sonali"
+    },
+    {
+     "label": "C",
+     "text": "Sneha"
+    },
+    {
+     "label": "D",
+     "text": "Can’t say"
+    }
+   ],
+   "answer": "A",
+   "solution": "• Amount of money Sonali has = ₹ 2500\n\nAmount of money she spent = ₹ (350 + 410 + 780) = ₹1540 So, amount of money left with her = ₹ (2500 – 1540) = ₹ 960\n\n• Amount of money Sneha has = ₹1900\n\nAmount of money she spent = ₹(485 + 305 + 290) = ₹1080 So, amount of money left with her = ₹(1900 – 1080) = ₹ 820\n\n• Amount of money Mahira has = ₹ 2050\n\nAmount of money she spent = ₹ (550 + 380 + 650) = ₹1580 So, amount of money left with her = ₹ (2050 – 1580) = ₹ 470 Now, ₹ 960 \\> ₹ 820 \\> ₹ 470\n\nSo, Mahira left with the least amount.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![The given pictograph shows the number of cakes sold by four bakeries in a particular week. Study the given pictograph carefully and answer the following questions. i Which two bakeries sold 90 cakes Bakeries together? ii If the delivery charge of each cake is ₹ 35, then find the delivery charges of cakes sold by bakeries M and T together. i ii](asset:q32-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "M and T ₹ 4550"
+    },
+    {
+     "label": "B",
+     "text": "J and P ₹ 4900"
+    },
+    {
+     "label": "C",
+     "text": "T and J ₹ 5130"
+    },
+    {
+     "label": "D",
+     "text": "J and P ₹ 5250"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Number of cakes sold by bakery M = 7 × 10 = 70 Number of cakes sold by bakery J = 5 × 10 = 50 Number of cakes sold by bakery P = 4 × 10 = 40 Number of cakes sold by bakery T = 8 × 10 = 80 i As, 50 + 40 = 90 So, total number of cakes sold by bakeries J and P together is 90. ii Total number of cakes sold by bakeries M and T together = 70 + 80 = 150 Delivery charges on each cake = ₹ 35 So, total deli](asset:q32-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![Read the given statements carefully and state T for true and F for false. i The value of CMXCIX when rounded off to nearest hundreds place becomes 1000. ii The number name of the greatest 5-digit number that can be formed by using the digits 3, 0, 4 and 8 using each digit at least once is eighty thousand four hundred thirty. iii The Roman numeral DCCXXC is meaningless. i ii iii](asset:q33-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "F T F"
+    },
+    {
+     "label": "B",
+     "text": "F F T"
+    },
+    {
+     "label": "C",
+     "text": "T T F"
+    },
+    {
+     "label": "D",
+     "text": "T F T"
+    }
+   ],
+   "answer": "D",
+   "solution": "(i) True; CMXCIX = 900 + 90 + 9 = 999\n\nSo, 999 rounded off to nearest hundreds place becomes 1000.\n\n(ii) False; Greatest 5-digit number that can be formed by using 3, 0, 4 and 8 (using each digit at least once)\n\n= 88430 *i.e.*, Eighty eight thousand four hundred thirty\n\n(iii) True",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "![Fill in the blanks and select the CORRECT option. i The number of pairs of parallel lines in the given figure is . ii The number of letters having exactly two lines of symmetry in the given word is .](asset:q34-stem)\n\n![figure](asset:q34-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "(i) : 3; (ii) : 2"
+    },
+    {
+     "label": "B",
+     "text": "(i) : 4; (ii) : 2"
+    },
+    {
+     "label": "C",
+     "text": "(i) : 3; (ii) : 4"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "B",
+   "solution": "![i Pair of parallel lines are : l, m , m, n , l, n and p, q , i.e., 4 in number. ii](asset:q34-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![Who among the following students has written the CORRECT statement? Rashi : The difference between the fractions of consonants and vowels in the word KNOWLEDGE is 2 3 . Yukti : The fraction 11 15 must be added to 5 7 9 to get 6 23 45 . Niharika : The fraction of months having exactly 30 days in a leap year is 1 3 .](asset:q35-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Only Yukti"
+    },
+    {
+     "label": "B",
+     "text": "Both Yukti and Niharika"
+    },
+    {
+     "label": "C",
+     "text": "Both Rashi and Yukti"
+    },
+    {
+     "label": "D",
+     "text": "All of them"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Rashi: Total number of letters = 9 Number of consonants = 6 Number of vowels = 3 6 3 So, fraction of consonants = 9 and fraction of vowels = 9 ∴ Required difference = 6 - 3 = 6 - 3 = 3 = 1 Incorrect 9 9 9 9 3 Yukti : Sum of 11 15 and 5 7 = 15 + 52 11 9 = 33 + 260 = 293 = 6 23 9 45 45 45 Correct Niharika: Number of months having 30 days = 4 ∴ Required fraction = 4 = 1 Correct 12 3](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 23
+   }
+  }
+ ]
+}

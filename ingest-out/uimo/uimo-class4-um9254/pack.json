@@ -1,0 +1,2355 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "uimo-class4-um9254",
+  "title": "UIMO Class 4 · UM9254",
+  "source": "UIMO_CLASS-4_Past-8-Papers.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-optA": {
+   "file": "images/q8-optA.png"
+  },
+  "q8-optB": {
+   "file": "images/q8-optB.png"
+  },
+  "q8-optC": {
+   "file": "images/q8-optC.png"
+  },
+  "q8-optD": {
+   "file": "images/q8-optD.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-stem": {
+   "file": "images/q10-stem.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q15-optA": {
+   "file": "images/q15-optA.png"
+  },
+  "q15-optB": {
+   "file": "images/q15-optB.png"
+  },
+  "q15-optC": {
+   "file": "images/q15-optC.png"
+  },
+  "q15-optD": {
+   "file": "images/q15-optD.png"
+  },
+  "q15-stem": {
+   "file": "images/q15-stem.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q16-stem-fig": {
+   "file": "images/q16-stem-fig.png"
+  },
+  "q20-stem-fig": {
+   "file": "images/q20-stem-fig.png"
+  },
+  "q21-optA": {
+   "file": "images/q21-optA.png"
+  },
+  "q21-optB": {
+   "file": "images/q21-optB.png"
+  },
+  "q21-optC": {
+   "file": "images/q21-optC.png"
+  },
+  "q21-optD": {
+   "file": "images/q21-optD.png"
+  },
+  "q21-stem-fig": {
+   "file": "images/q21-stem-fig.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q22-stem-fig": {
+   "file": "images/q22-stem-fig.png"
+  },
+  "q22-sol": {
+   "file": "images/q22-sol.png"
+  },
+  "q23-optA": {
+   "file": "images/q23-optA.png"
+  },
+  "q23-optB": {
+   "file": "images/q23-optB.png"
+  },
+  "q23-optC": {
+   "file": "images/q23-optC.png"
+  },
+  "q23-optD": {
+   "file": "images/q23-optD.png"
+  },
+  "q23-stem-fig": {
+   "file": "images/q23-stem-fig.png"
+  },
+  "q23-sol": {
+   "file": "images/q23-sol.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q25-optA": {
+   "file": "images/q25-optA.png"
+  },
+  "q25-optB": {
+   "file": "images/q25-optB.png"
+  },
+  "q25-optC": {
+   "file": "images/q25-optC.png"
+  },
+  "q25-optD": {
+   "file": "images/q25-optD.png"
+  },
+  "q25-stem-fig": {
+   "file": "images/q25-stem-fig.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q26-stem-fig": {
+   "file": "images/q26-stem-fig.png"
+  },
+  "q26-sol": {
+   "file": "images/q26-sol.png"
+  },
+  "q27-stem-fig1": {
+   "file": "images/q27-stem-fig1.png"
+  },
+  "q27-stem-fig2": {
+   "file": "images/q27-stem-fig2.png"
+  },
+  "q27-stem-fig3": {
+   "file": "images/q27-stem-fig3.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q28-optA": {
+   "file": "images/q28-optA.png"
+  },
+  "q28-optB": {
+   "file": "images/q28-optB.png"
+  },
+  "q28-optC": {
+   "file": "images/q28-optC.png"
+  },
+  "q28-optD": {
+   "file": "images/q28-optD.png"
+  },
+  "q28-stem-fig": {
+   "file": "images/q28-stem-fig.png"
+  },
+  "q28-sol": {
+   "file": "images/q28-sol.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q29-sol": {
+   "file": "images/q29-sol.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-optA": {
+   "file": "images/q35-optA.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  },
+  "q35-optC": {
+   "file": "images/q35-optC.png"
+  },
+  "q35-optD": {
+   "file": "images/q35-optD.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  },
+  "q36-optA": {
+   "file": "images/q36-optA.png"
+  },
+  "q36-optB": {
+   "file": "images/q36-optB.png"
+  },
+  "q36-optC": {
+   "file": "images/q36-optC.png"
+  },
+  "q36-optD": {
+   "file": "images/q36-optD.png"
+  },
+  "q36-stem-fig": {
+   "file": "images/q36-stem-fig.png"
+  },
+  "q36-sol": {
+   "file": "images/q36-sol.png"
+  },
+  "q37-optA": {
+   "file": "images/q37-optA.png"
+  },
+  "q37-optB": {
+   "file": "images/q37-optB.png"
+  },
+  "q37-optC": {
+   "file": "images/q37-optC.png"
+  },
+  "q37-optD": {
+   "file": "images/q37-optD.png"
+  },
+  "q37-stem-fig": {
+   "file": "images/q37-stem-fig.png"
+  },
+  "q37-sol": {
+   "file": "images/q37-sol.png"
+  },
+  "q38-stem-fig": {
+   "file": "images/q38-stem-fig.png"
+  },
+  "q38-sol": {
+   "file": "images/q38-sol.png"
+  },
+  "q39-optA": {
+   "file": "images/q39-optA.png"
+  },
+  "q39-optB": {
+   "file": "images/q39-optB.png"
+  },
+  "q39-optC": {
+   "file": "images/q39-optC.png"
+  },
+  "q39-optD": {
+   "file": "images/q39-optD.png"
+  },
+  "q39-stem-fig": {
+   "file": "images/q39-stem-fig.png"
+  },
+  "q39-sol": {
+   "file": "images/q39-sol.png"
+  },
+  "q40-stem-fig": {
+   "file": "images/q40-stem-fig.png"
+  },
+  "q41-optA": {
+   "file": "images/q41-optA.png"
+  },
+  "q41-optB": {
+   "file": "images/q41-optB.png"
+  },
+  "q41-optC": {
+   "file": "images/q41-optC.png"
+  },
+  "q41-optD": {
+   "file": "images/q41-optD.png"
+  },
+  "q41-stem-fig": {
+   "file": "images/q41-stem-fig.png"
+  },
+  "q41-sol": {
+   "file": "images/q41-sol.png"
+  },
+  "q43-stem-fig": {
+   "file": "images/q43-stem-fig.png"
+  },
+  "q45-optA": {
+   "file": "images/q45-optA.png"
+  },
+  "q45-optB": {
+   "file": "images/q45-optB.png"
+  },
+  "q45-optC": {
+   "file": "images/q45-optC.png"
+  },
+  "q45-optD": {
+   "file": "images/q45-optD.png"
+  },
+  "q45-stem": {
+   "file": "images/q45-stem.png"
+  },
+  "q45-sol": {
+   "file": "images/q45-sol.png"
+  },
+  "q46-stem-fig": {
+   "file": "images/q46-stem-fig.png"
+  },
+  "q49-optA": {
+   "file": "images/q49-optA.png"
+  },
+  "q49-optB": {
+   "file": "images/q49-optB.png"
+  },
+  "q49-optC": {
+   "file": "images/q49-optC.png"
+  },
+  "q49-optD": {
+   "file": "images/q49-optD.png"
+  },
+  "q49-stem-fig": {
+   "file": "images/q49-stem-fig.png"
+  },
+  "q49-sol": {
+   "file": "images/q49-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Find the sum of the values of the digit 9 in 59701, 20892 and 15889. \\_\\_\\_\\_\\_\\_",
+   "options": [
+    {
+     "label": "A",
+     "text": "9909"
+    },
+    {
+     "label": "B",
+     "text": "9990"
+    },
+    {
+     "label": "C",
+     "text": "9999"
+    },
+    {
+     "label": "D",
+     "text": "9099"
+    }
+   ],
+   "answer": "D",
+   "solution": "(D) 9000 + 90 + 9 = 9099",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "94560 in words is \\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Ninety-four hundred and fifty-six"
+    },
+    {
+     "label": "B",
+     "text": "Nine thousand, four hundred and fifty-six"
+    },
+    {
+     "label": "C",
+     "text": "Nine thousand, five hundred and sixty"
+    },
+    {
+     "label": "D",
+     "text": "Ninety-four thousand, five hundred and sixty"
+    }
+   ],
+   "answer": "D",
+   "solution": "(D) 94560 → Ninety four thousand five\n\nhundred & sixty",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Estimate the value of 3321 + 45678 + 13145 by rounding off each number to the nearest hundred.",
+   "options": [
+    {
+     "label": "A",
+     "text": "62100"
+    },
+    {
+     "label": "B",
+     "text": "6200"
+    },
+    {
+     "label": "C",
+     "text": "62144"
+    },
+    {
+     "label": "D",
+     "text": "62140"
+    }
+   ],
+   "answer": "A",
+   "solution": "![A Rounding off nearest to hundred 3321 = 3300 45678 = 45700 13145 = 13100 Sum of 3300 + 45700 + 13100 = 62100](asset:q3-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Choose the difference between the ninth multiple of 8 and the second multiple of 9.",
+   "options": [
+    {
+     "label": "A",
+     "text": "90"
+    },
+    {
+     "label": "B",
+     "text": "54"
+    },
+    {
+     "label": "C",
+     "text": "72"
+    },
+    {
+     "label": "D",
+     "text": "82"
+    }
+   ],
+   "answer": "B",
+   "solution": "![B Ninth multiple of 8 = 8 × 9 = 72 Second multiple of 9 = 9 × 2 = 18 difference = 72 – 18 = 54](asset:q4-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "A number is between 47 and 63. It is also a multiple of\n\n8\\. When divided by 9, the remainder is 2. What is the number ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "48"
+    },
+    {
+     "label": "B",
+     "text": "56"
+    },
+    {
+     "label": "C",
+     "text": "40"
+    },
+    {
+     "label": "D",
+     "text": "60"
+    }
+   ],
+   "answer": "B",
+   "solution": "(B) Multiples of 8 = 8, 16, 24, 32, 40, 48, 56,\n\n63, 80\n\nNumbers between = 47 & 63 = 48 and 56 Divide 48 ÷ 9 = 5 R 3\n\nDivide 56 ÷ 9 = 6 R 2\n\nSo, the number is 56",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "What is the missing number in the box ?\n\n![figure](asset:q6-stem-fig)\n\ntens",
+   "options": [
+    {
+     "label": "A",
+     "text": "14"
+    },
+    {
+     "label": "B",
+     "text": "20"
+    },
+    {
+     "label": "C",
+     "text": "10"
+    },
+    {
+     "label": "D",
+     "text": "140"
+    }
+   ],
+   "answer": "A",
+   "solution": "(A) 70 tens ÷ 5 = 700 ÷ 5\n\n= 140 = 14 tens",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 105
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Ashwin bought 6 packets of sweets. Each packet contained 495 sweets. He gave 60 sweets to his sister and divided the remaining sweets equally among 5 friends. How many sweets did each friend get ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "582"
+    },
+    {
+     "label": "B",
+     "text": "495"
+    },
+    {
+     "label": "C",
+     "text": "2910"
+    },
+    {
+     "label": "D",
+     "text": "2970"
+    }
+   ],
+   "answer": "A",
+   "solution": "![A Number of sweet packets = 6 Number of sweets in 1 packet = 495 Number of sweets in 6 packets = 495 × 6 = 2970 Number of sweets given to his sister = 60 Number of remaining sweets = 2970 – 60 = 2910 2910 ÷ 5 = 582 Each friend will get 582 sweets](asset:q7-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Tom has thrice as much money as his sister, Sharon. If Sharon has 45, how much money must Tom give Sharon so that they will have an equal amount of money ?\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![90](asset:q8-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![130](asset:q8-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![180](asset:q8-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![45](asset:q8-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![D Amount of money Tom has = 45 × 3 = 135 Difference between the amount Tom & Sharon have = 135 – 45 = 90 90 ÷ 2 = 45 Tom must give sharon 45](asset:q8-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![Mrs. Lasya has 48 sweets. She gave 1 4 of them to Tarun. How many sweets had she left ?](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "24"
+    },
+    {
+     "label": "C",
+     "text": "36"
+    },
+    {
+     "label": "D",
+     "text": "50"
+    }
+   ],
+   "answer": "C",
+   "solution": "![C Number of sweets with Lasya = 48 Number of sweets given to Tarun = 1 ×48 = 12 4 Sweets with Lasya left = 48 – 12 = 36 4 4 4 + 4 8](asset:q9-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "![Choose the missing value. 4 4 5](asset:q10-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![7 5](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 5](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![8 5](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![4 5](asset:q10-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![+ = = 5 5 5 5 8 8 − 5 3 − 1 = = 5 5 5 ∴4 4 3 + = 1+ 5 5 5 8 8 = 5 5](asset:q10-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Choose the duration from 18:45 to 16:45 the following day.",
+   "options": [
+    {
+     "label": "A",
+     "text": "24 h"
+    },
+    {
+     "label": "B",
+     "text": "22 h"
+    },
+    {
+     "label": "C",
+     "text": "20 h"
+    },
+    {
+     "label": "D",
+     "text": "18 h"
+    }
+   ],
+   "answer": "B",
+   "solution": "Duration from 18 : 45 to 16 : 45 the following day\n\n18 : 45 to 00 : 45 = 6 hours\n\n00 : 45 to 16 : 45 = 16 hours\n\nDuration = 6 hours + 16 hours = 22 hours",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "Yamini started washing some dishes at 20:35. She finished washing the dishes at 21:20. How long did she take to wash the dishes ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "40 min"
+    },
+    {
+     "label": "B",
+     "text": "60 min"
+    },
+    {
+     "label": "C",
+     "text": "45 min"
+    },
+    {
+     "label": "D",
+     "text": "50 min"
+    }
+   ],
+   "answer": "C",
+   "solution": "![25 min + 20 min = 45 min She took 45 min to wash the dishes 25 min 20 min 20 35 : 21 00 : 21 20 :](asset:q12-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 106
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "What is the total capacity of the largest container and the smallest container ?\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "8 *l* 320 m*l*"
+    },
+    {
+     "label": "B",
+     "text": "8 *l* 500 m*l*"
+    },
+    {
+     "label": "C",
+     "text": "8 *l* 945 m*l*"
+    },
+    {
+     "label": "D",
+     "text": "8 *l* 20 m*l*"
+    }
+   ],
+   "answer": "A",
+   "solution": "![8 l 20 ml + 300 ml = 8 l 320 ml](asset:q13-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "There are 3 parcels A, B and C. Parcel A is 3 kg. Parcel B is twice as heavy as Parcel C but is 500 g heavier than parcel A. Find the total mass of the three parcels.",
+   "options": [
+    {
+     "label": "A",
+     "text": "8 kg 250 g"
+    },
+    {
+     "label": "B",
+     "text": "8 kg 200 g"
+    },
+    {
+     "label": "C",
+     "text": "8 kg 150 g"
+    },
+    {
+     "label": "D",
+     "text": "8 kg 100 g"
+    }
+   ],
+   "answer": "A",
+   "solution": "Parcel B → 3 kg + 500 g = 3 kg 500 g Parcel C → 3 kg + 500 g ÷ 2 = 1 kg 750 g Total mass\n\n= 3 kg + 3 kg 500 g + 1 kg 750 g\n\n= 8 kg 250 g\n\nThe total mass of the three parcels is 8 kg 250 g",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "![Vinay saves 2 every day. For every 5 saved, his father gives him another 1. How much will he save after 2 weeks ?](asset:q15-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![31](asset:q15-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![33](asset:q15-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![32](asset:q15-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![30](asset:q15-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![2 × 7 – 14 days 14 × 2 = 28 28 + 5 = 33 He will save 33 after 2 weeks](asset:q15-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "What is the perimeter of the figure below ?\n\n![figure](asset:q16-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "23 cm"
+    },
+    {
+     "label": "B",
+     "text": "29 cm"
+    },
+    {
+     "label": "C",
+     "text": "31 cm"
+    },
+    {
+     "label": "D",
+     "text": "35 cm"
+    }
+   ],
+   "answer": "C",
+   "solution": "8 + 6 + 5 + 4 + 8 = 31 cm",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Arjun took 1 h 20 min to travel from Town A to Town B. He took another 2 h 45 min to travel from Town B to Town C. What was the total time taken by Arjun to travel from Town A to Town C ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "4 h 5 min"
+    },
+    {
+     "label": "B",
+     "text": "3 h 15 min"
+    },
+    {
+     "label": "C",
+     "text": "3 h 5 min"
+    },
+    {
+     "label": "D",
+     "text": "1 h 25 min"
+    }
+   ],
+   "answer": "A",
+   "solution": "1 h 20 min + 2 h 45 min = 80 min + 165 min\n\n= 245 min\n\n= 4 h 5 min",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "The total mass of a box of biscuits and a box of sweets is 1 kg 840 g. If the mass of the box of biscuits is 850 g more than the box of sweets, what is the mass of the box of biscuits ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 kg 690 g"
+    },
+    {
+     "label": "B",
+     "text": "1 kg 850 g"
+    },
+    {
+     "label": "C",
+     "text": "1 kg 345 g"
+    },
+    {
+     "label": "D",
+     "text": "1 kg 435 g"
+    }
+   ],
+   "answer": "C",
+   "solution": "1 kg 840 g + 850 g = 2 kg 690 g 2 kg 690 g ÷ 2 = 1 kg 345 g",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Choose the correct statement(s).\n\nP: A square has 4 right angles.\n\nQ: A triangle has 3 right angles.\n\nR: We can have closed figures with no angles. S: Some figures are made up of curved and straight\n\nlines.",
+   "options": [
+    {
+     "label": "A",
+     "text": "P only"
+    },
+    {
+     "label": "B",
+     "text": "P and S only"
+    },
+    {
+     "label": "C",
+     "text": "P, Q and S only"
+    },
+    {
+     "label": "D",
+     "text": "P, R and S only"
+    }
+   ],
+   "answer": "D",
+   "solution": "Note that we can have closed figures (like circles, ovals, etc.) which have no angles. They are made up of smooth curves. Only statement B is not true as a triangle cannot have more than 1 right angle.",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Observe the figures carefully.\n\n![figure](asset:q20-stem-fig)\n\nThe total volume of water in containers A and B is \\_\\_\\_\\_\\_ m*l*.",
+   "options": [
+    {
+     "label": "A",
+     "text": "560"
+    },
+    {
+     "label": "B",
+     "text": "550"
+    },
+    {
+     "label": "C",
+     "text": "505"
+    },
+    {
+     "label": "D",
+     "text": "500"
+    }
+   ],
+   "answer": "C",
+   "solution": "Total volume of water in containers A and B → 180 + 325\n\n= 505 m*l*",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "The cube in the figure was cut and separated into three pieces.\n\n![figure](asset:q21-stem-fig)\n\nWhich option makes the three pieces of the cube ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q21-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q21-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q21-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q21-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q21-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Look at the tessellation below.\n\n![figure](asset:q22-stem-fig)\n\nWhich one of the unit shapes is placed in the wrong position ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "P"
+    },
+    {
+     "label": "B",
+     "text": "Q"
+    },
+    {
+     "label": "C",
+     "text": "R"
+    },
+    {
+     "label": "D",
+     "text": "S"
+    }
+   ],
+   "answer": "C",
+   "solution": "![P Q R S](asset:q22-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Choose the symmetrical option.\n\n![figure](asset:q23-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q23-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q23-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q23-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q23-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q23-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "It took 4 min to fill Tank A completely. It took 3 min 31 s longer to fill Tank B completely. How long did it take to fill Tank B ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "451 s"
+    },
+    {
+     "label": "B",
+     "text": "351 s"
+    },
+    {
+     "label": "C",
+     "text": "271 s"
+    },
+    {
+     "label": "D",
+     "text": "29 s"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Time taken to fill Tank A = 4 min Time taken to fill Tank B = 4 min + 3 m 31 s = 7 m 31 s 1 min = 60 s 7 min 31 s = 7 × 60 + 31 s = 420 + 31 = 451 s](asset:q24-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "A number line is shown below. What is the missing mixed number in the box ?\n\n![figure](asset:q25-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![7 4 8](asset:q25-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 4 4](asset:q25-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 58](asset:q25-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1 54](asset:q25-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Each interval is 1 8 6 3 4 = 4 8 4](asset:q25-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "ABCD is a square.\n\n![figure](asset:q26-stem-fig)\n\nChoose the perimeter of the shaded region.",
+   "options": [
+    {
+     "label": "A",
+     "text": "23 cm"
+    },
+    {
+     "label": "B",
+     "text": "32 cm"
+    },
+    {
+     "label": "C",
+     "text": "46 cm"
+    },
+    {
+     "label": "D",
+     "text": "64 cm"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Perimeter of shaded region = 2 + 3 + 3 + 5 + 5 + 3 + 3 + 2 + 3 + 3 = 32 cm 3 cm 2 cm 3 cm A B 3 cm 3 cm 3 cm 3 cm 3 cm 2 cm 3 cm 5 cm 3 cm 3 cm D C 5 cm](asset:q26-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 113
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "If = 4041\n\n![figure](asset:q27-stem-fig1)\n\n![figure](asset:q27-stem-fig2)\n\n= 5118\n\n![figure](asset:q27-stem-fig3)\n\nthen = ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2335"
+    },
+    {
+     "label": "B",
+     "text": "2353"
+    },
+    {
+     "label": "C",
+     "text": "2533"
+    },
+    {
+     "label": "D",
+     "text": "3523"
+    }
+   ],
+   "answer": "A",
+   "solution": "![= 5118 ÷ 3 + = 4041 – 1706 = 2335](asset:q27-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 113
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Arrange the fractions in order, from the greatest to the smallest.\n\n![figure](asset:q28-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![8 8 8 8 , , , 3 4 5 6](asset:q28-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![8 8 8 8 , , , 3 5 4 6](asset:q28-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![8 8 8 8 , , , 6 3 4 5](asset:q28-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![8 8 8 8 , , , 6 5 4 3](asset:q28-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![L.C.M. of 6, 4, 3, 5 = 60 8 80 8 120 8 160 8 96 = , = , = , = 6 60 4 60 3 60 5 60 8 8 8 8 ∴ 3 4 5 6 –100 –100 –100 –100](asset:q28-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 113
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "What is the next number in this pattern ?\n\n![figure](asset:q29-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "46089"
+    },
+    {
+     "label": "B",
+     "text": "55089"
+    },
+    {
+     "label": "C",
+     "text": "55189"
+    },
+    {
+     "label": "D",
+     "text": "55989"
+    }
+   ],
+   "answer": "D",
+   "solution": "![56 389, 56 289, 56 189, 56 089, 55 989](asset:q29-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "The total marks that Shiva and Rakesh scored in a Mathematics test was 171. Shiva scored 23 more marks than Rakesh. How many marks did Rakesh score in the test ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "74"
+    },
+    {
+     "label": "B",
+     "text": "85.5"
+    },
+    {
+     "label": "C",
+     "text": "97"
+    },
+    {
+     "label": "D",
+     "text": "194"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Shiva 23 171 Rakesh ? 2 units → 170 – 23 = 148 1 unit → 148 + 2 = 74](asset:q30-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "During a school excursion, there were 2 teachers attending to every 9 pupils. How many teachers are required if there were 216 pupils ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "72"
+    },
+    {
+     "label": "B",
+     "text": "56"
+    },
+    {
+     "label": "C",
+     "text": "48"
+    },
+    {
+     "label": "D",
+     "text": "36"
+    }
+   ],
+   "answer": "C",
+   "solution": "216 ÷ 9 = 24 24 × 2 = 48",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Which option is the best estimate for 5788 × 39 ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "5000 × 40"
+    },
+    {
+     "label": "B",
+     "text": "5500 × 40"
+    },
+    {
+     "label": "C",
+     "text": "6000 × 30"
+    },
+    {
+     "label": "D",
+     "text": "6000 × 40"
+    }
+   ],
+   "answer": "D",
+   "solution": "5788 when rounded off to nearest hundreds it is 5800 (not in options) and when rounded off to nearest thousand it is 6000\n\n5788 ≈ 6000\n\n39 <sup>≈</sup> 40\n\n5788 × 39 <sup>≈</sup> 6000 × 40",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Thrice a number is greater than half the same number by 30. What is the number ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "6"
+    },
+    {
+     "label": "C",
+     "text": "30"
+    },
+    {
+     "label": "D",
+     "text": "15"
+    }
+   ],
+   "answer": "A",
+   "solution": "![5 units → 30 1 unit → 30 ÷ 5 = 6 2 units → 6 × 2 = 12 ? 30](asset:q33-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Jaya is thinking of an even number that is a multiple of 4 and a factor of 56. It is greater than 10 but smaller than 30. What number is Jaya thinking of ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "16\n\n**4**"
+    },
+    {
+     "label": "B",
+     "text": "20"
+    },
+    {
+     "label": "C",
+     "text": "24"
+    },
+    {
+     "label": "D",
+     "text": "28"
+    }
+   ],
+   "answer": "D",
+   "solution": "![56 = 1 × 56 = 2 × 28 = 4 × 14 = 7 × 8 Multiples of 4 : 4, 8, 12, 16, 20, 24, 28 , 32 ... 16](asset:q34-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 114
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![4× 7 is the same as .](asset:q35-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 4 4 4 + + + 7 7 7 7](asset:q35-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![4 4 4 4 × × × 7 7 7 7](asset:q35-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![32 7](asset:q35-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![44 7](asset:q35-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![4 × 4 = 7 7 Option A 4 4 4 4 16 + + + = 7 7 7 7 7](asset:q35-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 115
+   }
+  },
+  {
+   "id": "q36",
+   "number": "36",
+   "type": "mcq_single",
+   "stem": "Complete the matrix.\n\n![figure](asset:q36-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q36-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q36-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q36-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q36-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Two rules Rule 1 : There should be 3 shapes triangle, circle and square in every outer shape. Rule 2 : There should be 3 shapes triangle, circle and square in every inner shape.](asset:q36-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 116
+   }
+  },
+  {
+   "id": "q37",
+   "number": "37",
+   "type": "mcq_single",
+   "stem": "Which shape is similar to the group ?\n\n![figure](asset:q37-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q37-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q37-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q37-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q37-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Look at the pattern of the three shapes.](asset:q37-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 116
+   }
+  },
+  {
+   "id": "q38",
+   "number": "38",
+   "type": "mcq_single",
+   "stem": "Select the missing number in the series.\n\n![figure](asset:q38-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "18"
+    },
+    {
+     "label": "B",
+     "text": "21"
+    },
+    {
+     "label": "C",
+     "text": "25"
+    },
+    {
+     "label": "D",
+     "text": "29"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Adding sequence of odd number in given series. 1 + 3 = 4 4 + 5 = 9 9 + 7 = 16 16 + 9 = 25 25 + 11 = 36 3, 5, 7, 9, 11 are odd number.](asset:q38-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q39",
+   "number": "39",
+   "type": "mcq_single",
+   "stem": "Which option will come in place of question mark ?\n\n![figure](asset:q39-stem-fig)\n\n: ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q39-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q39-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q39-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q39-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![The blanks squares in the first image are coloured yellow. : :: :](asset:q39-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q40",
+   "number": "40",
+   "type": "mcq_single",
+   "stem": "Choose the odd one out from the following.\n\n![figure](asset:q40-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Pen"
+    },
+    {
+     "label": "B",
+     "text": "Newspaper"
+    },
+    {
+     "label": "C",
+     "text": "Magazine"
+    },
+    {
+     "label": "D",
+     "text": "Letter"
+    }
+   ],
+   "answer": "A",
+   "solution": "Except pen remaining words are belongs to paper.",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q41",
+   "number": "41",
+   "type": "mcq_single",
+   "stem": "Select the option which is exactly same as the given figure.\n\n![figure](asset:q41-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q41-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q41-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q41-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q41-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q41-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q42",
+   "number": "42",
+   "type": "mcq_single",
+   "stem": "If the following words were written BACKWARDS and then put into ALPHABETICAL order: which word would be THIRD from left ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "CONTACT"
+    },
+    {
+     "label": "B",
+     "text": "COTTON"
+    },
+    {
+     "label": "C",
+     "text": "CLINICAL"
+    },
+    {
+     "label": "D",
+     "text": "CAUSING"
+    }
+   ],
+   "answer": "B",
+   "solution": "COTTON\n\nWords written in backwards: TCATNOC, NOTTOC, LACINILC, GNISUAC\n\nArranged in alphabetical order : GNISUAC, LACINILC, NOTTOC, TCATNOC",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q43",
+   "number": "43",
+   "type": "mcq_single",
+   "stem": "Which one of the following sentences correctly describes the picture ?\n\n![figure](asset:q43-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "There are as many circles as squares"
+    },
+    {
+     "label": "B",
+     "text": "There are fewer circles than triangles"
+    },
+    {
+     "label": "C",
+     "text": "There are twice as many circles as triangles"
+    },
+    {
+     "label": "D",
+     "text": "There are two triangles less than circles"
+    }
+   ],
+   "answer": "D",
+   "solution": "There are two triangles less than circles",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q44",
+   "number": "44",
+   "type": "mcq_single",
+   "stem": "If 'MEAT' is written as 'TEAM', then 'BALE' is written as",
+   "options": [
+    {
+     "label": "A",
+     "text": "ELAB"
+    },
+    {
+     "label": "B",
+     "text": "EABL"
+    },
+    {
+     "label": "C",
+     "text": "EBLA"
+    },
+    {
+     "label": "D",
+     "text": "EALB"
+    }
+   ],
+   "answer": "D",
+   "solution": "Like M E A T → T E A M\n\nSimilarly BALE will be written as EALB",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q45",
+   "number": "45",
+   "type": "mcq_single",
+   "stem": "![What will come in place of question mark ? = ?](asset:q45-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q45-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q45-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q45-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q45-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![solution](asset:q45-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q46",
+   "number": "46",
+   "type": "mcq_single",
+   "stem": "If the speed of all the cars is same then which car will reach the other side first ?\n\n![figure](asset:q46-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "A"
+    },
+    {
+     "label": "B",
+     "text": "B"
+    },
+    {
+     "label": "C",
+     "text": "C"
+    },
+    {
+     "label": "D",
+     "text": "They all will reach together"
+    }
+   ],
+   "answer": "B",
+   "solution": "Horizontally from left to right - all of them travel the same distance. But vertically top to bottom and bottom to top, the distances will differ. As we can see that Car B will travel least distance vertically and therefore car B will reach the other side first.",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q47",
+   "number": "47",
+   "type": "mcq_single",
+   "stem": "Which option is the least from greatest ?\n\nFour friends have all been saving money. Bharat has more than Arjun but not as much as Ganesh. John has more than Ganesh. List in order of who has the least to the greatest.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Arjun, John, Ganesh, Bharat"
+    },
+    {
+     "label": "B",
+     "text": "John, Arjun, Ganesh, Bharat"
+    },
+    {
+     "label": "C",
+     "text": "Arjun, Bharat, Ganesh, John"
+    },
+    {
+     "label": "D",
+     "text": "John, Ganesh, Bharat, Arjun"
+    }
+   ],
+   "answer": "C",
+   "solution": "Arjun, Bharat, Ganesh, John",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q48",
+   "number": "48",
+   "type": "mcq_single",
+   "stem": "You are alone in the house and there is quite a danger of thieves around. Just then, you hear a knock at the door. You would :",
+   "options": [
+    {
+     "label": "A",
+     "text": "open the door to see who is there."
+    },
+    {
+     "label": "B",
+     "text": "ask the servant to see who is there."
+    },
+    {
+     "label": "C",
+     "text": "not open the door."
+    },
+    {
+     "label": "D",
+     "text": "first peep out from the window to confirm whether you know the person."
+    }
+   ],
+   "answer": "D",
+   "solution": "First peep out from the window to confirm whether you know the person.",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q49",
+   "number": "49",
+   "type": "mcq_single",
+   "stem": "Ahalya has to place different shapes in the table so that each distinct shape appears exactly once in each row and each column.\n\n![figure](asset:q49-stem-fig)\n\nWhat shape should Ahalya place in the shaded square ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q49-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q49-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q49-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q49-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![The shaded square is face of cow.](asset:q49-sol)",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q50",
+   "number": "50",
+   "type": "mcq_single",
+   "stem": "Choose the essential part of the word ‘Cage’.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Lock"
+    },
+    {
+     "label": "B",
+     "text": "Animal"
+    },
+    {
+     "label": "C",
+     "text": "Enclosure"
+    },
+    {
+     "label": "D",
+     "text": "Prisoner"
+    }
+   ],
+   "answer": "C",
+   "solution": "A cage is meant to keep something surrounded, so enclosure is the essential element. A prisoner (option D) or an animal (option B) are two things that may be kept in cages, among many other things.",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9254",
+    "Paper code": "UM9254",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 121
+   }
+  }
+ ]
+}

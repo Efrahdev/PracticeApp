@@ -1,0 +1,1481 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-model-test-1",
+  "title": "SOF IEO Class 4 · Model Test Paper 1",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q25-stem-fig": {
+   "file": "images/q25-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "There are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ eggs to bake a cake.",
+   "options": [
+    {
+     "label": "A",
+     "text": "little"
+    },
+    {
+     "label": "B",
+     "text": "enough"
+    },
+    {
+     "label": "C",
+     "text": "too"
+    },
+    {
+     "label": "D",
+     "text": "the few"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Raj’s father is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ engineer but he wants to become \\_\\_\\_\\_\\_\\_\\_\\_\\_ doctor.",
+   "options": [
+    {
+     "label": "A",
+     "text": "the, the"
+    },
+    {
+     "label": "B",
+     "text": "an, a"
+    },
+    {
+     "label": "C",
+     "text": "an, an"
+    },
+    {
+     "label": "D",
+     "text": "a, the"
+    }
+   ],
+   "answer": "B",
+   "solution": "In the given question, ‘e’ in ‘engineer’ is a vowel and ‘d’ in ‘doctor’ is a consonant. So, ‘an’ and ‘a’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Why don’t you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your shoes and relax?",
+   "options": [
+    {
+     "label": "A",
+     "text": "break on"
+    },
+    {
+     "label": "B",
+     "text": "take off"
+    },
+    {
+     "label": "C",
+     "text": "give at"
+    },
+    {
+     "label": "D",
+     "text": "look up"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Take off’’ is the phrasal verb and in this question it means ‘to remove’, so ‘take off’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "I’m sorry. I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ have done it by mistake.",
+   "options": [
+    {
+     "label": "A",
+     "text": "can"
+    },
+    {
+     "label": "B",
+     "text": "will"
+    },
+    {
+     "label": "C",
+     "text": "must"
+    },
+    {
+     "label": "D",
+     "text": "may"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Must’ is a modal verb and is used to show necessity in a sentence, so ‘must’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "All trains leaving from platform 6 are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ time.",
+   "options": [
+    {
+     "label": "A",
+     "text": "at"
+    },
+    {
+     "label": "B",
+     "text": "in"
+    },
+    {
+     "label": "C",
+     "text": "on"
+    },
+    {
+     "label": "D",
+     "text": "by"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Have you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ finished your work?",
+   "options": [
+    {
+     "label": "A",
+     "text": "ever"
+    },
+    {
+     "label": "B",
+     "text": "soon"
+    },
+    {
+     "label": "C",
+     "text": "yet"
+    },
+    {
+     "label": "D",
+     "text": "just"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Your brother bought a new house, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?",
+   "options": [
+    {
+     "label": "A",
+     "text": "don’t he"
+    },
+    {
+     "label": "B",
+     "text": "doesn’t he"
+    },
+    {
+     "label": "C",
+     "text": "didn’t he"
+    },
+    {
+     "label": "D",
+     "text": "wasn’t he"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ on this project for two months, I hope I will finish it soon.",
+   "options": [
+    {
+     "label": "A",
+     "text": "was working"
+    },
+    {
+     "label": "B",
+     "text": "have worked"
+    },
+    {
+     "label": "C",
+     "text": "have been working"
+    },
+    {
+     "label": "D",
+     "text": "am working"
+    }
+   ],
+   "answer": "C",
+   "solution": "Since the sentence is in present perfect continuous tense, so ‘have been working’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "This book \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ by Joseph Conrad.",
+   "options": [
+    {
+     "label": "A",
+     "text": "is written"
+    },
+    {
+     "label": "B",
+     "text": "was written"
+    },
+    {
+     "label": "C",
+     "text": "has been written"
+    },
+    {
+     "label": "D",
+     "text": "will be written"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "As hungry is to eat, tired is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "play"
+    },
+    {
+     "label": "B",
+     "text": "awake"
+    },
+    {
+     "label": "C",
+     "text": "jump\n\nFOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "rest"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "The Shatabdi Superfast is an express train which runs between Delhi to Lucknow.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The Shatabdi Superfast"
+    },
+    {
+     "label": "B",
+     "text": "is an express"
+    },
+    {
+     "label": "C",
+     "text": "train which runs"
+    },
+    {
+     "label": "D",
+     "text": "between Delhi to Lucknow."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence would be, ‘‘The Shatabdi Superfast is an express train which runs from Delhi to Lucknow’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "Sakshi does not enjoy her piano lessons when she was seven though she was very fond of music.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Sakshi does not enjoy"
+    },
+    {
+     "label": "B",
+     "text": "her piano lessons when"
+    },
+    {
+     "label": "C",
+     "text": "she was seven though"
+    },
+    {
+     "label": "D",
+     "text": "she was very fond of music."
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence would be, ‘‘Sakshi did not enjoy her piano lessons when she was seven though she was very fond of music’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SPELLING OF THE WORD THAT MEANS EXTREMELY GOOD OR PLEASING.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Mervallous"
+    },
+    {
+     "label": "B",
+     "text": "Marvelus"
+    },
+    {
+     "label": "C",
+     "text": "Marvellous"
+    },
+    {
+     "label": "D",
+     "text": "Marvellos"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF DISTRESS.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Headache"
+    },
+    {
+     "label": "B",
+     "text": "Aid"
+    },
+    {
+     "label": "C",
+     "text": "Cheer"
+    },
+    {
+     "label": "D",
+     "text": "Gladness"
+    }
+   ],
+   "answer": "A",
+   "solution": "‘Headache’ is the synonym of ‘distress’. Both these words mean ‘‘pain’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE ANTONYM OF CAPTIVITY.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Custody"
+    },
+    {
+     "label": "B",
+     "text": "Slavery"
+    },
+    {
+     "label": "C",
+     "text": "Restrain"
+    },
+    {
+     "label": "D",
+     "text": "Liberty"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘Liberty’ is the antonym of ‘Captivity’. The meaning of ‘liberty’ is ‘freedom’ and the meaning of ‘captivity’ is ‘a condition for being imprisoned or trapped’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "What was Alice doing when the story begins?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Cooking food"
+    },
+    {
+     "label": "B",
+     "text": "Washing clothes"
+    },
+    {
+     "label": "C",
+     "text": "Playing with her friends"
+    },
+    {
+     "label": "D",
+     "text": "Lying under a tree"
+    }
+   ],
+   "answer": "D",
+   "solution": "Alice was lying under a tree listening to her sister reading a story.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Who was reading a story?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Alice’s sister"
+    },
+    {
+     "label": "B",
+     "text": "The rabbit"
+    },
+    {
+     "label": "C",
+     "text": "Alice"
+    },
+    {
+     "label": "D",
+     "text": "Alice’s mother"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "What does Alice find so strange about the rabbit?",
+   "options": [
+    {
+     "label": "A",
+     "text": "It can talk."
+    },
+    {
+     "label": "B",
+     "text": "It is wearing a red waistcoat."
+    },
+    {
+     "label": "C",
+     "text": "It is carrying a watch."
+    },
+    {
+     "label": "D",
+     "text": "All of these"
+    }
+   ],
+   "answer": "D",
+   "solution": "Alice thought there was something very strange about the rabbit. It could talk, it wore a red waistcoat and it carried a watch.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Where does the rabbit go?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Into the park"
+    },
+    {
+     "label": "B",
+     "text": "Into a box"
+    },
+    {
+     "label": "C",
+     "text": "Into a large hole"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "C",
+   "solution": "The rabbit suddenly popped into a large rabbit hole.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "The word ‘scamper’ in the first paragraph means the same as \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "run"
+    },
+    {
+     "label": "B",
+     "text": "hurry"
+    },
+    {
+     "label": "C",
+     "text": "scared\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”"
+    },
+    {
+     "label": "D",
+     "text": "both A and B"
+    }
+   ],
+   "answer": "D",
+   "solution": "The meaning of ‘scamper’ is ‘to run quickly or hurriedly.’",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "What did the squirrel see?",
+   "options": [
+    {
+     "label": "A",
+     "text": "An apple tree"
+    },
+    {
+     "label": "B",
+     "text": "A basket full of nuts"
+    },
+    {
+     "label": "C",
+     "text": "A pomegranate"
+    },
+    {
+     "label": "D",
+     "text": "A groundnut"
+    }
+   ],
+   "answer": "B",
+   "solution": "The greedy squirrel saw a basket full of nuts.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "What happened to the squirrel after eating a lot of nuts?",
+   "options": [
+    {
+     "label": "A",
+     "text": "She was angry."
+    },
+    {
+     "label": "B",
+     "text": "She couldn’t come out as she became fat."
+    },
+    {
+     "label": "C",
+     "text": "She was disappointed."
+    },
+    {
+     "label": "D",
+     "text": "The hole was closed."
+    }
+   ],
+   "answer": "B",
+   "solution": "The squirrel wanted to come out through the small hole but she could not as she became fat after eating a lot of nuts.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Who helped the squirrel?",
+   "options": [
+    {
+     "label": "A",
+     "text": "A cat"
+    },
+    {
+     "label": "B",
+     "text": "A mouse"
+    },
+    {
+     "label": "C",
+     "text": "A rabbit"
+    },
+    {
+     "label": "D",
+     "text": "A crow"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Which trait of squirrel has been discussed in the story?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Her honesty"
+    },
+    {
+     "label": "B",
+     "text": "Her wisdom"
+    },
+    {
+     "label": "C",
+     "text": "Her greediness"
+    },
+    {
+     "label": "D",
+     "text": "Her angst"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "The antonym of squeezed as given in para 1 is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q25-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "released"
+    },
+    {
+     "label": "B",
+     "text": "gripped"
+    },
+    {
+     "label": "C",
+     "text": "bore"
+    },
+    {
+     "label": "D",
+     "text": "packed"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Disha : I haven’t seen you for days. Where \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?\n\nPinky : I went to visit my grandmother.",
+   "options": [
+    {
+     "label": "A",
+     "text": "were you gone"
+    },
+    {
+     "label": "B",
+     "text": "have you been"
+    },
+    {
+     "label": "C",
+     "text": "were you lost"
+    },
+    {
+     "label": "D",
+     "text": "do you go"
+    }
+   ],
+   "answer": "B",
+   "solution": "Since the sentence is in present perfect continuous tense, so, ‘have you been’ is the answer.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Ran : What did you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of the film?\n\nFred : Well, it wasn’t as good as I had expected it to be.",
+   "options": [
+    {
+     "label": "A",
+     "text": "thought"
+    },
+    {
+     "label": "B",
+     "text": "thinks"
+    },
+    {
+     "label": "C",
+     "text": "thinking"
+    },
+    {
+     "label": "D",
+     "text": "think"
+    }
+   ],
+   "answer": "D",
+   "solution": "Since the sentence is in simple past tense, interrogative, so ‘think’ is the answer.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Daniel : Come on in, Anne. Welcome to our house.\n\nAnne : Good morning Daniel. What a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ house you have!",
+   "options": [
+    {
+     "label": "A",
+     "text": "well"
+    },
+    {
+     "label": "B",
+     "text": "nice"
+    },
+    {
+     "label": "C",
+     "text": "good"
+    },
+    {
+     "label": "D",
+     "text": "better"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "A : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ has your day been? B : Oh, I had a busy day today.",
+   "options": [
+    {
+     "label": "A",
+     "text": "When"
+    },
+    {
+     "label": "B",
+     "text": "How"
+    },
+    {
+     "label": "C",
+     "text": "Where"
+    },
+    {
+     "label": "D",
+     "text": "What"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Interviewer : How \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ languages do you speak?\n\nInterviewee : I speak two languages.",
+   "options": [
+    {
+     "label": "A",
+     "text": "much"
+    },
+    {
+     "label": "B",
+     "text": "more"
+    },
+    {
+     "label": "C",
+     "text": "many"
+    },
+    {
+     "label": "D",
+     "text": "lot"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "I always do my assignment on time. I \\_\\_\\_\\_\\_\\_\\_\\_ want to get in trouble.",
+   "options": [
+    {
+     "label": "A",
+     "text": "didn’t"
+    },
+    {
+     "label": "B",
+     "text": "doesn’t"
+    },
+    {
+     "label": "C",
+     "text": "don’t"
+    },
+    {
+     "label": "D",
+     "text": "am not"
+    }
+   ],
+   "answer": "C",
+   "solution": "Since the sentence is in simple present tense, so, ‘don’t’ is the answer.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "James has some more work to do \\_\\_\\_\\_\\_\\_\\_\\_\\_ he’ll come home late.",
+   "options": [
+    {
+     "label": "A",
+     "text": "although"
+    },
+    {
+     "label": "B",
+     "text": "yet"
+    },
+    {
+     "label": "C",
+     "text": "so"
+    },
+    {
+     "label": "D",
+     "text": "because"
+    }
+   ],
+   "answer": "C",
+   "solution": "Conjunction ‘so’ is used to ‘‘show reason for doing the thing just mentioned’’, Therefore, ‘so’ is the answer.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Excuse me, I need some \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ about the fee structure and duration of MBA course in your college.",
+   "options": [
+    {
+     "label": "A",
+     "text": "informations"
+    },
+    {
+     "label": "B",
+     "text": "information"
+    },
+    {
+     "label": "C",
+     "text": "informations’"
+    },
+    {
+     "label": "D",
+     "text": "none of these"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF PATHETIC.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Concerned"
+    },
+    {
+     "label": "B",
+     "text": "Exciting"
+    },
+    {
+     "label": "C",
+     "text": "Poignant"
+    },
+    {
+     "label": "D",
+     "text": "Worthwhile"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Poignant’ is the synonym of ‘pathetic’. Both these words mean, ‘‘feeling pity or sadness’’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION. Richa : I had never seen such a beautiful place in my life. Lovely : . A. Neither had I B. Neither have I C. So I had D. So would I vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IEO Model Test Paper 1",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 112
+   }
+  }
+ ]
+}

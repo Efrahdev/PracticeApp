@@ -1,0 +1,1527 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2025-26-set-b",
+  "title": "SOF IEO Class 4 · 2025-26 · Set B",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q9-stem-fig1": {
+   "file": "images/q9-stem-fig1.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q22-full": {
+   "file": "images/q22-full.png"
+  },
+  "q27-stem-fig": {
+   "file": "images/q27-stem-fig.png"
+  },
+  "q29-optB": {
+   "file": "images/q29-optB.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nI saw a cat sitting on \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ wall and heard an owl hooting nearby.\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "C",
+   "solution": "The definite article “the” is to be used to refer to a specific or identifiable item (wall) that is known to the speaker and listener.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nHe said that he would meet \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ at the park later.",
+   "options": [
+    {
+     "label": "A",
+     "text": "we"
+    },
+    {
+     "label": "B",
+     "text": "us"
+    },
+    {
+     "label": "C",
+     "text": "some"
+    },
+    {
+     "label": "D",
+     "text": "it"
+    }
+   ],
+   "answer": "B",
+   "solution": "The personal pronoun “us” is to be used to refer to the speaker and one or more people who receive the action of the verb (meet).",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThe children were enjoying \\_\\_\\_\\_\\_\\_\\_\\_\\_ in the garden.\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "themself"
+    },
+    {
+     "label": "B",
+     "text": "their"
+    },
+    {
+     "label": "C",
+     "text": "themselves"
+    },
+    {
+     "label": "D",
+     "text": "theirs"
+    }
+   ],
+   "answer": "C",
+   "solution": "The reflexive pronoun “themselves” is to be used to refer back to the subject (the children) in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nSammy is the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ boy I have ever seen.",
+   "options": [
+    {
+     "label": "A",
+     "text": "strong"
+    },
+    {
+     "label": "B",
+     "text": "stronger"
+    },
+    {
+     "label": "C",
+     "text": "strongest"
+    },
+    {
+     "label": "D",
+     "text": "most strong"
+    }
+   ],
+   "answer": "C",
+   "solution": "The superlative degree of adjective “strongest” is to be used to show that Sammy has more strength than all the other boys.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the children and their parents were excited to visit the museum.\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Neither"
+    },
+    {
+     "label": "B",
+     "text": "Either"
+    },
+    {
+     "label": "C",
+     "text": "If"
+    },
+    {
+     "label": "D",
+     "text": "Both"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correlative conjunction “both” is to be used with “and” to connect two subjects (children and their parents).",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nMy teacher \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ at me because I hit another kid.",
+   "options": [
+    {
+     "label": "A",
+     "text": "called"
+    },
+    {
+     "label": "B",
+     "text": "said"
+    },
+    {
+     "label": "C",
+     "text": "yelled"
+    },
+    {
+     "label": "D",
+     "text": "crying"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct verb to be used is “yelled” because it means ‘to speak loudly, usually in anger or with strong emotion’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nWe saw a \\_\\_\\_\\_\\_\\_\\_\\_\\_ of fish swimming in the lake.",
+   "options": [
+    {
+     "label": "A",
+     "text": "pack"
+    },
+    {
+     "label": "B",
+     "text": "gang"
+    },
+    {
+     "label": "C",
+     "text": "shoal"
+    },
+    {
+     "label": "D",
+     "text": "herd"
+    }
+   ],
+   "answer": "C",
+   "solution": "The collective noun “shoal” is to be used because a group of fish is called a shoal.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![Look at the note written below the picture.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Adjective"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction"
+    },
+    {
+     "label": "D",
+     "text": "Pronoun"
+    }
+   ],
+   "answer": "B",
+   "solution": "The underlined word “below” is a preposition because it shows the position of something.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![My garden is full of colourful flowers.](asset:q9-stem)\n\n![figure](asset:q9-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Adverb"
+    },
+    {
+     "label": "C",
+     "text": "Pronoun"
+    },
+    {
+     "label": "D",
+     "text": "Adjective"
+    }
+   ],
+   "answer": "D",
+   "solution": "The underlined word “colourful” is an adjective because it describes the noun (flowers) and tells us more about its appearance.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nAtul didn’t knew the answer to any of the given questions.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Atul didn’t knew"
+    },
+    {
+     "label": "B",
+     "text": "the answer to any"
+    },
+    {
+     "label": "C",
+     "text": "of the given questions."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence is “Atul didn’t know the answer to any of the given questions.” Hence, option A has the error.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nThe puppies chasing butterflies in the garden yesterday.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The puppies chasing"
+    },
+    {
+     "label": "B",
+     "text": "butterflies in the"
+    },
+    {
+     "label": "C",
+     "text": "garden yesterday."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence is “The puppies were chasing butterflies in the garden yesterday.” Hence, option A has the error.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Exaggerate"
+    },
+    {
+     "label": "B",
+     "text": "Ezaggerate"
+    },
+    {
+     "label": "C",
+     "text": "Exagerate"
+    },
+    {
+     "label": "D",
+     "text": "Ejaggerate"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct spelling is “exaggerate”, which means ‘to make something seem bigger or more important than it really is’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Incouragment"
+    },
+    {
+     "label": "B",
+     "text": "Incourgement"
+    },
+    {
+     "label": "C",
+     "text": "Encouragement"
+    },
+    {
+     "label": "D",
+     "text": "Encourgemant"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct spelling is “encouragement”, which means ‘support or confidence given to someone’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of benign.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Harmless"
+    },
+    {
+     "label": "B",
+     "text": "Noxious"
+    },
+    {
+     "label": "C",
+     "text": "Sinister"
+    },
+    {
+     "label": "D",
+     "text": "Powerful"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct synonym of “benign” is “harmless”, because they both mean ‘not causing harm or danger’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Choose the correct antonym of excitement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Passion"
+    },
+    {
+     "label": "B",
+     "text": "Zest"
+    },
+    {
+     "label": "C",
+     "text": "Intensity"
+    },
+    {
+     "label": "D",
+     "text": "Apathy"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct antonym of “excitement” is “apathy” because excitement means ‘strong interest’, while apathy means ‘lack of interest’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nMany animals around the world are in danger of disappearing forever. These animals are called endangered species. They are few in number and may become extinct if we do not help them. When an animal becomes extinct, it means there are no more of that animal left in the world.\n\nThere are many reasons why animals become endangered. One big reason is the loss of their natural homes, or habitats. Forests are cut down, rivers get polluted, and land is used for construction. This means animals have no place to live, find food, or raise their young ones.\n\nAnother reason is hunting and poaching. Some people hunt animals for their skin, horns, or teeth to sell them for money. Animals like tigers, elephants, and rhinos are often harmed for these reasons. Climate change is also a big problem. It causes changes in weather, making it hard for some animals to survive.\n\nLet’s look at a few endangered animals. The giant panda, found in China, is endangered because its bamboo forests are being cut down. The blue whale, the largest animal on Earth, is endangered due to ocean pollution and hunting in the past. The Indian tiger, one of the most beautiful animals, is also in danger because of loss of forest area and illegal hunting.\n\nBut there is hope. Many people and groups around the world are working hard to save endangered animals. They protect forests and rivers, stop illegal hunting, and create safe parks where animals can live freely. These parks are called wildlife sanctuaries and national parks.\n\nWe can also help in small ways. We can learn about animals, protect nature, and never buy things made from animal parts. By taking care of the Earth, we are also taking care of all living creatures.\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Animals become endangered due to the loss of their natural habitats."
+    },
+    {
+     "label": "B",
+     "text": "Most of the animals around the world are in danger of disappearing briefly."
+    },
+    {
+     "label": "C",
+     "text": "![Many people and groups around the world are working hard to save endangered animals.](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "If we take care of the Earth, we can also take care of all living creatures."
+    }
+   ],
+   "answer": "B",
+   "solution": "As per paragraph 1 of the passage, many animals around the world are in danger of disappearing forever. Hence, option B is the correct answer.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nMany animals around the world are in danger of disappearing forever. These animals are called endangered species. They are few in number and may become extinct if we do not help them. When an animal becomes extinct, it means there are no more of that animal left in the world.\n\nThere are many reasons why animals become endangered. One big reason is the loss of their natural homes, or habitats. Forests are cut down, rivers get polluted, and land is used for construction. This means animals have no place to live, find food, or raise their young ones.\n\nAnother reason is hunting and poaching. Some people hunt animals for their skin, horns, or teeth to sell them for money. Animals like tigers, elephants, and rhinos are often harmed for these reasons. Climate change is also a big problem. It causes changes in weather, making it hard for some animals to survive.\n\nLet’s look at a few endangered animals. The giant panda, found in China, is endangered because its bamboo forests are being cut down. The blue whale, the largest animal on Earth, is endangered due to ocean pollution and hunting in the past. The Indian tiger, one of the most beautiful animals, is also in danger because of loss of forest area and illegal hunting.\n\nBut there is hope. Many people and groups around the world are working hard to save endangered animals. They protect forests and rivers, stop illegal hunting, and create safe parks where animals can live freely. These parks are called wildlife sanctuaries and national parks.\n\nWe can also help in small ways. We can learn about animals, protect nature, and never buy things made from animal parts. By taking care of the Earth, we are also taking care of all living creatures.\n\nWhat are wildlife sanctuaries and national parks used for?",
+   "options": [
+    {
+     "label": "A",
+     "text": "To build houses for human beings"
+    },
+    {
+     "label": "B",
+     "text": "To shelter domestic animals"
+    },
+    {
+     "label": "C",
+     "text": "To create safe places for animals to live freely"
+    },
+    {
+     "label": "D",
+     "text": "To train animals to perform tricks"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to paragraph 5, wildlife sanctuaries and national parks are used to create safe places for animals to live freely.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nMany animals around the world are in danger of disappearing forever. These animals are called endangered species. They are few in number and may become extinct if we do not help them. When an animal becomes extinct, it means there are no more of that animal left in the world.\n\nThere are many reasons why animals become endangered. One big reason is the loss of their natural homes, or habitats. Forests are cut down, rivers get polluted, and land is used for construction. This means animals have no place to live, find food, or raise their young ones.\n\nAnother reason is hunting and poaching. Some people hunt animals for their skin, horns, or teeth to sell them for money. Animals like tigers, elephants, and rhinos are often harmed for these reasons. Climate change is also a big problem. It causes changes in weather, making it hard for some animals to survive.\n\nLet’s look at a few endangered animals. The giant panda, found in China, is endangered because its bamboo forests are being cut down. The blue whale, the largest animal on Earth, is endangered due to ocean pollution and hunting in the past. The Indian tiger, one of the most beautiful animals, is also in danger because of loss of forest area and illegal hunting.\n\nBut there is hope. Many people and groups around the world are working hard to save endangered animals. They protect forests and rivers, stop illegal hunting, and create safe parks where animals can live freely. These parks are called wildlife sanctuaries and national parks.\n\nWe can also help in small ways. We can learn about animals, protect nature, and never buy things made from animal parts. By taking care of the Earth, we are also taking care of all living creatures.\n\nWhich of the following factors lead to animal endangerment?\n\n1\\. Pollution\n\n2\\. Animal safety rules\n\n3\\. Hunting and poaching\n\n4\\. Cutting down of forests\n\n5\\. Climate change",
+   "options": [
+    {
+     "label": "A",
+     "text": "1, 3, 4 and 5 only"
+    },
+    {
+     "label": "B",
+     "text": "2, 3 and 5 only"
+    },
+    {
+     "label": "C",
+     "text": "3 and 4 only"
+    },
+    {
+     "label": "D",
+     "text": "1 and 2 only"
+    }
+   ],
+   "answer": "A",
+   "solution": "According to paragraph 2 and 3, pollution, hunting and poaching, cutting down of forest, and climate change lead to animal endangerment. Hence, option ‘A’ is the correct answer.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nMany animals around the world are in danger of disappearing forever. These animals are called endangered species. They are few in number and may become extinct if we do not help them. When an animal becomes extinct, it means there are no more of that animal left in the world.\n\nThere are many reasons why animals become endangered. One big reason is the loss of their natural homes, or habitats. Forests are cut down, rivers get polluted, and land is used for construction. This means animals have no place to live, find food, or raise their young ones.\n\nAnother reason is hunting and poaching. Some people hunt animals for their skin, horns, or teeth to sell them for money. Animals like tigers, elephants, and rhinos are often harmed for these reasons. Climate change is also a big problem. It causes changes in weather, making it hard for some animals to survive.\n\nLet’s look at a few endangered animals. The giant panda, found in China, is endangered because its bamboo forests are being cut down. The blue whale, the largest animal on Earth, is endangered due to ocean pollution and hunting in the past. The Indian tiger, one of the most beautiful animals, is also in danger because of loss of forest area and illegal hunting.\n\nBut there is hope. Many people and groups around the world are working hard to save endangered animals. They protect forests and rivers, stop illegal hunting, and create safe parks where animals can live freely. These parks are called wildlife sanctuaries and national parks.\n\nWe can also help in small ways. We can learn about animals, protect nature, and never buy things made from animal parts. By taking care of the Earth, we are also taking care of all living creatures.\n\nThe giant panda is endangered because \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "it doesn’t know how to raise its young ones"
+    },
+    {
+     "label": "B",
+     "text": "of ocean pollution and illegal hunting"
+    },
+    {
+     "label": "C",
+     "text": "its bamboo forests are being cut down"
+    },
+    {
+     "label": "D",
+     "text": "rivers are getting polluted"
+    }
+   ],
+   "answer": "C",
+   "solution": "As stated in paragraph 4, the giant panda is endangered because its bamboo forests are being cut down.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nMany animals around the world are in danger of disappearing forever. These animals are called endangered species. They are few in number and may become extinct if we do not help them. When an animal becomes extinct, it means there are no more of that animal left in the world.\n\nThere are many reasons why animals become endangered. One big reason is the loss of their natural homes, or habitats. Forests are cut down, rivers get polluted, and land is used for construction. This means animals have no place to live, find food, or raise their young ones.\n\nAnother reason is hunting and poaching. Some people hunt animals for their skin, horns, or teeth to sell them for money. Animals like tigers, elephants, and rhinos are often harmed for these reasons. Climate change is also a big problem. It causes changes in weather, making it hard for some animals to survive.\n\nLet’s look at a few endangered animals. The giant panda, found in China, is endangered because its bamboo forests are being cut down. The blue whale, the largest animal on Earth, is endangered due to ocean pollution and hunting in the past. The Indian tiger, one of the most beautiful animals, is also in danger because of loss of forest area and illegal hunting.\n\nBut there is hope. Many people and groups around the world are working hard to save endangered animals. They protect forests and rivers, stop illegal hunting, and create safe parks where animals can live freely. These parks are called wildlife sanctuaries and national parks.\n\nWe can also help in small ways. We can learn about animals, protect nature, and never buy things made from animal parts. By taking care of the Earth, we are also taking care of all living creatures.\n\nChoose the correct antonym of the word ‘extinct’.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Vanished"
+    },
+    {
+     "label": "B",
+     "text": "Existing"
+    },
+    {
+     "label": "C",
+     "text": "Departed"
+    },
+    {
+     "label": "D",
+     "text": "Expired"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct antonym of “extinct” is “existing” because extinct means ‘no longer living’, while existing means ‘still alive’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nAryan was a curious 10-year-old boy who loved exploring nature. He lived in a small village surrounded by green fields and tall trees. His favourite place to visit was the forest near his home. There, he would watch birds, climb trees, and collect colourful stones and leaves.\n\nOne sunny afternoon, Aryan went deeper into the forest than ever before. As he walked, he noticed a large old tree with thick roots and a wide trunk. It looked different from all the other trees. He walked closer and saw something strange — a small wooden door carved into the trunk!\n\nAryan knocked gently. To his surprise, the door opened with a creak. Inside, he saw a cozy room with tiny chairs, bookshelves, and glowing lights. Out came a little creature with pointy ears and a kind face. “Hello! I’m Tiko, the forest elf,” said the tiny being.\n\nAryan’s eyes widened in wonder. “Is this your home?” said Aryan.\n\n“Yes,” said Tiko. “This is a secret library where I collect stories from the forest. Only those who truly love nature can find it.”\n\nTiko invited Aryan in. Inside the tree, there were shelves full of glowing books. “Each book tells the story of an animal, a plant, or a forest secret,” explained Tiko. “Would you like to add a story?”\n\nAryan was excited. He wrote a story about a bird he had rescued a week before. Tiko smiled and said, “Thank you! You are now a Guardian of the Forest.” Suddenly, the tree glowed brightly. Tiko gave Aryan a tiny wooden leaf. “This is your key. If you ever need help or want to read more stories, the tree will welcome you.”\n\nAryan left the forest with a big smile. From that day on, he took even better care of the plants and animals around him. He also told stories about the forest to his friends and how important it is to protect nature.\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Aryan loved to visit the forest near his home."
+    },
+    {
+     "label": "B",
+     "text": "He loved to watch birds, trees and collect colourful stones and leaves."
+    },
+    {
+     "label": "C",
+     "text": "In the forest, he noticed a large old tree with thick roots and a wide trunk."
+    },
+    {
+     "label": "D",
+     "text": "Aryan wrote an essay about an animal he had rescued."
+    }
+   ],
+   "answer": "D",
+   "solution": "As per the passage, Aryan wrote a story about a bird he had rescued. Hence, option D is the correct answer.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nAryan was a curious 10-year-old boy who loved exploring nature. He lived in a small village surrounded by green fields and tall trees. His favourite place to visit was the forest near his home. There, he would watch birds, climb trees, and collect colourful stones and leaves.\n\nOne sunny afternoon, Aryan went deeper into the forest than ever before. As he walked, he noticed a large old tree with thick roots and a wide trunk. It looked different from all the other trees. He walked closer and saw something strange — a small wooden door carved into the trunk!\n\nAryan knocked gently. To his surprise, the door opened with a creak. Inside, he saw a cozy room with tiny chairs, bookshelves, and glowing lights. Out came a little creature with pointy ears and a kind face. “Hello! I’m Tiko, the forest elf,” said the tiny being.\n\nAryan’s eyes widened in wonder. “Is this your home?” said Aryan.\n\n“Yes,” said Tiko. “This is a secret library where I collect stories from the forest. Only those who truly love nature can find it.”\n\nTiko invited Aryan in. Inside the tree, there were shelves full of glowing books. “Each book tells the story of an animal, a plant, or a forest secret,” explained Tiko. “Would you like to add a story?”\n\nAryan was excited. He wrote a story about a bird he had rescued a week before. Tiko smiled and said, “Thank you! You are now a Guardian of the Forest.” Suddenly, the tree glowed brightly. Tiko gave Aryan a tiny wooden leaf. “This is your key. If you ever need help or want to read more stories, the tree will welcome you.”\n\nAryan left the forest with a big smile. From that day on, he took even better care of the plants and animals around him. He also told stories about the forest to his friends and how important it is to protect nature.\n\n![Which of the following things were found by Aryan inside the room? 1. Tiny chairs 2. Glowing lights 3. Bookshelves 4. Leaves 5. Birds 6. Gleaming books A. 1, 2 and 6 only B. 3, 4 and 5 only C. 1, 4 and 5 only D.. 1, 2, 3 and 6 only](asset:q22-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "According to the passage, Aryan found tiny chairs, glowing lights, bookshelves, and glowing books inside the room. Hence, option D is the correct answer.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nAryan was a curious 10-year-old boy who loved exploring nature. He lived in a small village surrounded by green fields and tall trees. His favourite place to visit was the forest near his home. There, he would watch birds, climb trees, and collect colourful stones and leaves.\n\nOne sunny afternoon, Aryan went deeper into the forest than ever before. As he walked, he noticed a large old tree with thick roots and a wide trunk. It looked different from all the other trees. He walked closer and saw something strange — a small wooden door carved into the trunk!\n\nAryan knocked gently. To his surprise, the door opened with a creak. Inside, he saw a cozy room with tiny chairs, bookshelves, and glowing lights. Out came a little creature with pointy ears and a kind face. “Hello! I’m Tiko, the forest elf,” said the tiny being.\n\nAryan’s eyes widened in wonder. “Is this your home?” said Aryan.\n\n“Yes,” said Tiko. “This is a secret library where I collect stories from the forest. Only those who truly love nature can find it.”\n\nTiko invited Aryan in. Inside the tree, there were shelves full of glowing books. “Each book tells the story of an animal, a plant, or a forest secret,” explained Tiko. “Would you like to add a story?”\n\nAryan was excited. He wrote a story about a bird he had rescued a week before. Tiko smiled and said, “Thank you! You are now a Guardian of the Forest.” Suddenly, the tree glowed brightly. Tiko gave Aryan a tiny wooden leaf. “This is your key. If you ever need help or want to read more stories, the tree will welcome you.”\n\nAryan left the forest with a big smile. From that day on, he took even better care of the plants and animals around him. He also told stories about the forest to his friends and how important it is to protect nature.\n\nWhat was unusual about the old tree that Aryan found?",
+   "options": [
+    {
+     "label": "A",
+     "text": "It had shiny fruits."
+    },
+    {
+     "label": "B",
+     "text": "It could talk."
+    },
+    {
+     "label": "C",
+     "text": "It had a small wooden door in its trunk."
+    },
+    {
+     "label": "D",
+     "text": "It was taller than the sky."
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, the old tree that Aryan found had a small wooden door in its trunk.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nAryan was a curious 10-year-old boy who loved exploring nature. He lived in a small village surrounded by green fields and tall trees. His favourite place to visit was the forest near his home. There, he would watch birds, climb trees, and collect colourful stones and leaves.\n\nOne sunny afternoon, Aryan went deeper into the forest than ever before. As he walked, he noticed a large old tree with thick roots and a wide trunk. It looked different from all the other trees. He walked closer and saw something strange — a small wooden door carved into the trunk!\n\nAryan knocked gently. To his surprise, the door opened with a creak. Inside, he saw a cozy room with tiny chairs, bookshelves, and glowing lights. Out came a little creature with pointy ears and a kind face. “Hello! I’m Tiko, the forest elf,” said the tiny being.\n\nAryan’s eyes widened in wonder. “Is this your home?” said Aryan.\n\n“Yes,” said Tiko. “This is a secret library where I collect stories from the forest. Only those who truly love nature can find it.”\n\nTiko invited Aryan in. Inside the tree, there were shelves full of glowing books. “Each book tells the story of an animal, a plant, or a forest secret,” explained Tiko. “Would you like to add a story?”\n\nAryan was excited. He wrote a story about a bird he had rescued a week before. Tiko smiled and said, “Thank you! You are now a Guardian of the Forest.” Suddenly, the tree glowed brightly. Tiko gave Aryan a tiny wooden leaf. “This is your key. If you ever need help or want to read more stories, the tree will welcome you.”\n\nAryan left the forest with a big smile. From that day on, he took even better care of the plants and animals around him. He also told stories about the forest to his friends and how important it is to protect nature.\n\nAfter writing the story, Aryan became \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "the forest king"
+    },
+    {
+     "label": "B",
+     "text": "a book keeper"
+    },
+    {
+     "label": "C",
+     "text": "a Guardian of the Forest"
+    },
+    {
+     "label": "D",
+     "text": "a tree cutter of the forest"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, Aryan became a Guardian of the forest.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nAryan was a curious 10-year-old boy who loved exploring nature. He lived in a small village surrounded by green fields and tall trees. His favourite place to visit was the forest near his home. There, he would watch birds, climb trees, and collect colourful stones and leaves.\n\nOne sunny afternoon, Aryan went deeper into the forest than ever before. As he walked, he noticed a large old tree with thick roots and a wide trunk. It looked different from all the other trees. He walked closer and saw something strange — a small wooden door carved into the trunk!\n\nAryan knocked gently. To his surprise, the door opened with a creak. Inside, he saw a cozy room with tiny chairs, bookshelves, and glowing lights. Out came a little creature with pointy ears and a kind face. “Hello! I’m Tiko, the forest elf,” said the tiny being.\n\nAryan’s eyes widened in wonder. “Is this your home?” said Aryan.\n\n“Yes,” said Tiko. “This is a secret library where I collect stories from the forest. Only those who truly love nature can find it.”\n\nTiko invited Aryan in. Inside the tree, there were shelves full of glowing books. “Each book tells the story of an animal, a plant, or a forest secret,” explained Tiko. “Would you like to add a story?”\n\nAryan was excited. He wrote a story about a bird he had rescued a week before. Tiko smiled and said, “Thank you! You are now a Guardian of the Forest.” Suddenly, the tree glowed brightly. Tiko gave Aryan a tiny wooden leaf. “This is your key. If you ever need help or want to read more stories, the tree will welcome you.”\n\nAryan left the forest with a big smile. From that day on, he took even better care of the plants and animals around him. He also told stories about the forest to his friends and how important it is to protect nature.\n\nChoose the correct synonym of the word ‘explore’.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Discount"
+    },
+    {
+     "label": "B",
+     "text": "Rescue"
+    },
+    {
+     "label": "C",
+     "text": "Walked"
+    },
+    {
+     "label": "D",
+     "text": "Discover"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct synonym of “explore” is “discover”, because they both mean ‘to find something new by searching or investigating’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nTeacher : \\_\\_\\_\\_\\_\\_\\_\\_\\_ matter how much work you have done, submit your notebook.\n\nStudent : OK, ma’am.",
+   "options": [
+    {
+     "label": "A",
+     "text": "No"
+    },
+    {
+     "label": "B",
+     "text": "Not"
+    },
+    {
+     "label": "C",
+     "text": "None"
+    },
+    {
+     "label": "D",
+     "text": "No one"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct option “no” is to be used because the phrase “no matter” means ‘it is not important, or does not make a difference’.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nEmma : Will you give me a piece of chocolate cake?\n\n![figure](asset:q27-stem-fig)\n\nMother : Sure! If you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your room first.",
+   "options": [
+    {
+     "label": "A",
+     "text": "cleaning"
+    },
+    {
+     "label": "B",
+     "text": "cleans"
+    },
+    {
+     "label": "C",
+     "text": "clean"
+    },
+    {
+     "label": "D",
+     "text": "cleaned"
+    }
+   ],
+   "answer": "C",
+   "solution": "The verb form “clean” is to be used because when we use ‘if’ to talk about something that has to happen first, we use the base form of the verb (here, clean).",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nMary : I wonder \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ was ringing my doorbell an hour back.",
+   "options": [
+    {
+     "label": "A",
+     "text": "how"
+    },
+    {
+     "label": "B",
+     "text": "when"
+    },
+    {
+     "label": "C",
+     "text": "who"
+    },
+    {
+     "label": "D",
+     "text": "whom"
+    }
+   ],
+   "answer": "C",
+   "solution": "The relative pronoun “who” is to be used to refer to a person who is not known.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nSamira : You are as beautiful \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your elder sister.\n\n![figure](asset:q29-stem-fig)\n\nMyra : Thank you!",
+   "options": [
+    {
+     "label": "A",
+     "text": "if"
+    },
+    {
+     "label": "B",
+     "text": "![so](asset:q29-optB)"
+    },
+    {
+     "label": "C",
+     "text": "as"
+    },
+    {
+     "label": "D",
+     "text": "like"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable option “as” is to be used while making comparisons to show equality of degree.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nLalit : Come here, I’ll explain how to do this sum.\n\nSumit : Thanks! I really \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ help.\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "needed"
+    },
+    {
+     "label": "B",
+     "text": "needing"
+    },
+    {
+     "label": "C",
+     "text": "needs"
+    },
+    {
+     "label": "D",
+     "text": "needn’t"
+    }
+   ],
+   "answer": "A",
+   "solution": "The verb form “needed” is to be used to make the conversation sound natural and grammatically correct.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nJanice ignored all my warnings and failed; experience is the \\_\\_\\_\\_\\_\\_\\_\\_ of fools.",
+   "options": [
+    {
+     "label": "A",
+     "text": "enemy"
+    },
+    {
+     "label": "B",
+     "text": "father"
+    },
+    {
+     "label": "C",
+     "text": "teacher"
+    },
+    {
+     "label": "D",
+     "text": "slave"
+    }
+   ],
+   "answer": "C",
+   "solution": "The proverb “experience is the teacher of fools” means that ‘foolish people learn only from their own mistakes and not from advice’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nHardly have I ever seen such magnificent trees, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?",
+   "options": [
+    {
+     "label": "A",
+     "text": "haven’t I"
+    },
+    {
+     "label": "B",
+     "text": "have I"
+    },
+    {
+     "label": "C",
+     "text": "have they"
+    },
+    {
+     "label": "D",
+     "text": "has it"
+    }
+   ],
+   "answer": "B",
+   "solution": "The question tag “have I” is to be used because a negative statement follows a positive tag.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of validate.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Allege"
+    },
+    {
+     "label": "B",
+     "text": "Presume"
+    },
+    {
+     "label": "C",
+     "text": "Uphold"
+    },
+    {
+     "label": "D",
+     "text": "Assume"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct synonym of “validate” is “uphold” because they both mean ‘to approve or confirm something as correct or acceptable’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Choose the correct antonym of iconic.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Classic"
+    },
+    {
+     "label": "B",
+     "text": "Eminent"
+    },
+    {
+     "label": "C",
+     "text": "Pivotal"
+    },
+    {
+     "label": "D",
+     "text": "Trivial"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct antonym of “iconic” is “trivial” because iconic means ‘very important or famous’, while trivial means ‘unimportant or ordinary’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Choose the correct option to complete the conversation.\n\nJimmy : I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ my old photos while I was cleaning my closet.\n\nTim : That’s great! I want to see them.",
+   "options": [
+    {
+     "label": "A",
+     "text": "came along"
+    },
+    {
+     "label": "B",
+     "text": "![come into vvv](asset:q35-optB)"
+    },
+    {
+     "label": "C",
+     "text": "came across"
+    },
+    {
+     "label": "D",
+     "text": "come for"
+    }
+   ],
+   "answer": "C",
+   "solution": "The phrasal verb “came across” means to meet or find someone or something by chance.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IEO 2025-26 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 23
+   }
+  }
+ ]
+}

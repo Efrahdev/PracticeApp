@@ -1,0 +1,2875 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "verb-tenses-diagnostic-assessment",
+    "title": "100 Toughest Mixed Verb Tenses Mastery Challenge",
+    "source": "TENSE PRACTICE 2.pdf",
+    "subject": "English",
+    "fields": {
+      "Collection": "100 Toughest Mixed Verb Tenses Mastery Challenge"
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "type": "mcq_single",
+      "stem": "Don't schedule the call for five o'clock – by then the team \\_\\_\\_ since dawn, and everyone will be too exhausted to think clearly.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'will have been working'"
+        },
+        {
+          "label": "B",
+          "text": "'will be working'"
+        },
+        {
+          "label": "C",
+          "text": "'have been working'"
+        },
+        {
+          "label": "D",
+          "text": "'will work'"
+        }
+      ],
+      "answer": "A",
+      "solution": "**Why:** 'Since dawn' marks a duration reaching up to the future point 'by then', and the tiring result points to the ongoing activity, so the future perfect continuous is correct.\n\n**Distractor analysis:**\n\n- **(B)** 'will be working' (future continuous) describes being at work at five, but not the whole exhausting span stretching from dawn to that point. Misconception: using the future continuous where a duration up to a future point is meant.\n- **(C)** 'have been working' (present perfect continuous) links the span to now, not to the future five o'clock. Misconception: anchoring the duration to the present instead of the future point.\n- **(D)** 'will work' (simple future) states a future action with no sense of accumulated duration. Misconception: ignoring the 'since dawn ... by then' framing.\n\n**Principle:** Use the future perfect continuous for an activity that will have been going on for a length of time up to a future moment.\n\n**Intuition hook:** Count the hours piling up to a future point – 'will have been working since dawn'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future perfect continuous up to a future point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 20
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "type": "mcq_single",
+      "stem": "I \\_\\_\\_ you last night to explain everything, but my phone died before I had the chance.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'was going to call'"
+        },
+        {
+          "label": "B",
+          "text": "'would call'"
+        },
+        {
+          "label": "C",
+          "text": "'had called'"
+        },
+        {
+          "label": "D",
+          "text": "'will call'"
+        }
+      ],
+      "answer": "A",
+      "solution": "**Why:** 'Was going to' expresses a past intention or plan that did not happen – exactly what 'but my phone died before I had the chance' describes.\n\n**Distractor analysis:**\n\n- **(B)** 'would call' does not work for a single, specific unfulfilled plan on one occasion. Misconception: using 'would' for a one-off past intention.\n- **(C)** 'had called' claims the call actually happened earlier, which contradicts 'before I had the chance'. Misconception: using the past perfect for an action that never occurred.\n- **(D)** 'will call' is a future form and clashes with 'last night'. Misconception: leaving the past frame.\n\n**Principle:** 'Was/were going to' names a past plan or intention that was not carried out.\n\n**Intuition hook:** Planned it, but it never happened – 'I was going to call'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Was going to' for an unfulfilled past intention"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 20
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "type": "mcq_single",
+      "stem": "As a small child, I \\_\\_\\_ that the moon followed our car wherever we drove at night.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'would believe'"
+        },
+        {
+          "label": "B",
+          "text": "'used to believe'"
+        },
+        {
+          "label": "C",
+          "text": "'was believing'"
+        },
+        {
+          "label": "D",
+          "text": "'would have believed'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** A past state expressed with the stative verb 'believe' takes 'used to'. 'Would' works for repeated past actions, but not for ongoing states like believing.\n\n**Distractor analysis:**\n\n- **(A)** 'would believe' misuses 'would', which describes repeated actions, not a continuing state of mind. Misconception: treating 'would' and 'used to' as identical for all past habits.\n- **(C)** 'was believing' forces the stative verb 'believe' into the continuous. Misconception: '-ing' with a stative verb.\n- **(D)** 'would have believed' is a hypothetical/conditional form, not a description of a real past belief. Misconception: using a conditional form for a factual past state.\n\n**Principle:** For past states, use 'used to', not 'would' – 'would' is reserved for repeated past actions.\n\n**Intuition hook:** A lasting childhood belief is a state – 'used to believe', never 'would believe'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Used to' vs. 'would' with stative verbs"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 21
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "type": "mcq_single",
+      "stem": "Slow down – you \\_\\_\\_ faster and faster, and you're frightening me!",
+      "options": [
+        {
+          "label": "A",
+          "text": "'go'"
+        },
+        {
+          "label": "B",
+          "text": "'are going'"
+        },
+        {
+          "label": "C",
+          "text": "'have gone'"
+        },
+        {
+          "label": "D",
+          "text": "'went'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Faster and faster', happening right now, describes a change in progress at this moment, which takes the present continuous.\n\n**Distractor analysis:**\n\n- **(A)** 'go' (simple present) states a habit, but this is a change unfolding right now. Misconception: using the simple present for an action in progress.\n- **(C)** 'have gone' (present perfect) suggests a completed change, not one still happening. Misconception: treating an ongoing change as finished.\n- **(D)** 'went' (simple past) places it in finished time, but it is happening now. Misconception: leaving the present.\n\n**Principle:** Use the present continuous for a change or development happening at the moment of speaking.\n\n**Intuition hook:** It's speeding up as you watch – 'you are going faster and faster'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present continuous for a change in progress"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 21
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "type": "mcq_single",
+      "stem": "This old car is hopelessly unreliable – it \\_\\_\\_ break down at the worst possible moment, every single time.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'will'"
+        },
+        {
+          "label": "B",
+          "text": "'would'"
+        },
+        {
+          "label": "C",
+          "text": "'is'"
+        },
+        {
+          "label": "D",
+          "text": "'shall'"
+        }
+      ],
+      "answer": "A",
+      "solution": "**Why:** 'Will' can express characteristic, predictable (often annoying) behaviour: 'it will break down every time'. Structurally, only 'will' + the base verb 'break' fits and stays in the present.\n\n**Distractor analysis:**\n\n- **(B)** 'would' shifts the complaint into past narration, but the frame here is present ('is hopelessly unreliable'). Misconception: using past 'would' in a present complaint.\n- **(C)** 'is ... break down' is ungrammatical. Misconception: pairing 'is' with a bare base verb.\n- **(D)** 'shall' is archaic here and does not express characteristic behaviour of an object. Misconception: reaching for 'shall' as a general future.\n\n**Principle:** 'Will' can describe typical, predictable behaviour of people or things, not just future events.\n\n**Intuition hook:** Trust it to fail – 'it will break down every time'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Will' for characteristic behaviour"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 21
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "type": "mcq_single",
+      "stem": "Be patient with her at the wheel – this is the first time she \\_\\_\\_ in heavy traffic.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'drives'"
+        },
+        {
+          "label": "B",
+          "text": "'is driving'"
+        },
+        {
+          "label": "C",
+          "text": "'has driven'"
+        },
+        {
+          "label": "D",
+          "text": "'drove'"
+        }
+      ],
+      "answer": "C",
+      "solution": "**Why:** The pattern 'This is the first time (that) + present perfect' is standard: 'the first time she has driven'.\n\n**Distractor analysis:**\n\n- **(A)** 'drives' (simple present) does not fit the 'first time' pattern, which looks back over experience so far. Misconception: using the simple present after 'the first time'.\n- **(B)** 'is driving' describes the action now but not the 'first-time-in-all-her-experience' idea the pattern expresses. Misconception: replacing the perfect with the continuous.\n- **(D)** 'drove' (simple past) clashes with the present frame 'this is the first time'. Misconception: mixing past into a present pattern.\n\n**Principle:** 'It/This is the first (second, only) time ...' is followed by the present perfect.\n\n**Intuition hook:** 'First time she has \\_\\_\\_' – the pattern always pulls in the present perfect.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'First time' + present perfect pattern"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 21
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "type": "mcq_single",
+      "stem": "You've been putting this off for weeks. It's high time you \\_\\_\\_ the truth.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'tell'"
+        },
+        {
+          "label": "B",
+          "text": "'told'"
+        },
+        {
+          "label": "C",
+          "text": "'have told'"
+        },
+        {
+          "label": "D",
+          "text": "'will tell'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'It's high time' is followed by the simple past (an unreal past) to say something should already be happening: 'it's high time you told'.\n\n**Distractor analysis:**\n\n- **(A)** 'tell' (base form) does not follow 'it's high time'. Misconception: expecting a base verb after the idiom.\n- **(C)** 'have told' (present perfect) does not fit the fixed pattern. Misconception: substituting the perfect for the required past.\n- **(D)** 'will tell' (future) is wrong after 'it's high time'. Misconception: reading the idiom as ordinary future time.\n\n**Principle:** 'It's (high/about) time + subject' takes the simple past, even though it points to the present or future.\n\n**Intuition hook:** 'It's high time you told me' – the idiom demands a past-form verb.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'It's high time' + unreal past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 3,
+        "key_page": 22
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "type": "mcq_single",
+      "stem": "The concert was unforgettable. I only wish I \\_\\_\\_ my camera that night.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'brought'"
+        },
+        {
+          "label": "B",
+          "text": "'had brought'"
+        },
+        {
+          "label": "C",
+          "text": "'have brought'"
+        },
+        {
+          "label": "D",
+          "text": "'would bring'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** A regret about a finished past event, after 'wish', takes the past perfect: 'I wish I had brought'. (In careful, formal English this is the expected form; the informal 'wish I brought' is widely considered nonstandard in writing.)\n\n**Distractor analysis:**\n\n- **(A)** 'brought' (simple past) is used for present/general wishes, not for regret about a specific finished night. Misconception: using the simple past for a past regret in formal English.\n- **(C)** 'have brought' (present perfect) never follows 'wish' in this way. Misconception: attaching the present perfect to 'wish'.\n- **(D)** 'would bring' expresses a wish about someone else's future behaviour, not one's own past regret. Misconception: using 'would' for a personal past regret.\n\n**Principle:** 'Wish' + past perfect expresses regret about the past.\n\n**Intuition hook:** Regret about a finished night – 'I wish I had brought it'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Wish' + past perfect for past regret"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 22
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "type": "mcq_single",
+      "stem": "\\_\\_\\_ you be needing the conference room after lunch, or shall I book it for my team?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'Will'"
+        },
+        {
+          "label": "B",
+          "text": "'Do'"
+        },
+        {
+          "label": "C",
+          "text": "'Are'"
+        },
+        {
+          "label": "D",
+          "text": "'Have'"
+        }
+      ],
+      "answer": "A",
+      "solution": "**Why:** 'Will you be needing...?' is the future continuous used as a neutral, polite enquiry about future arrangements. Structurally, only 'Will ... be needing' works.\n\n**Distractor analysis:**\n\n- **(B)** 'Do you be needing' is ungrammatical. Misconception: forcing 'do' in front of 'be + -ing'.\n- **(C)** 'Are you be needing' is ungrammatical. Misconception: pairing 'are' with 'be needing'.\n- **(D)** 'Have you be needing' is ungrammatical. Misconception: using 'have' with a bare 'be'.\n\n**Principle:** The future continuous ('will you be doing...?') makes a neutral, non-pushy enquiry about future plans.\n\n**Intuition hook:** A gentle enquiry about later – 'Will you be needing it?'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future continuous for a neutral enquiry"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 22
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "type": "mcq_single",
+      "stem": "Whenever the river \\_\\_\\_ its banks, the low fields downstream flood within hours.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'will burst'"
+        },
+        {
+          "label": "B",
+          "text": "'bursts'"
+        },
+        {
+          "label": "C",
+          "text": "'is bursting'"
+        },
+        {
+          "label": "D",
+          "text": "'burst'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** A general truth introduced by 'whenever' takes the simple present in both clauses – there is no 'will' in the 'whenever' clause.\n\n**Distractor analysis:**\n\n- **(A)** 'will burst' wrongly puts a future form in the 'whenever' clause. Misconception: using 'will' in a time/condition clause about a general truth.\n- **(C)** 'is bursting' (present continuous) suggests one action in progress, not a repeating general truth. Misconception: using the continuous for a general pattern.\n- **(D)** 'burst' read as a past form breaks the present general-truth frame. Misconception: shifting to the past for a timeless truth.\n\n**Principle:** General truths with 'whenever' (or 'when', 'if') use the simple present, not 'will'.\n\n**Intuition hook:** It's a rule of nature, always true – 'whenever the river bursts'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "General truth with 'whenever' (no will)"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 23
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "type": "mcq_single",
+      "stem": "She moved to Canada in 2015; until then, she \\_\\_\\_ outside her home village.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'never travelled'"
+        },
+        {
+          "label": "B",
+          "text": "'has never travelled'"
+        },
+        {
+          "label": "C",
+          "text": "'had never travelled'"
+        },
+        {
+          "label": "D",
+          "text": "'was never travelling'"
+        }
+      ],
+      "answer": "C",
+      "solution": "**Why:** 'Until then' points to a past moment (2015), and the sentence describes the whole time before it, so the past perfect is required: 'had never travelled'.\n\n**Distractor analysis:**\n\n- **(A)** 'never travelled' (simple past) does not capture the idea of 'up to that past point'. Misconception: using the simple past where the past perfect marks 'before a past moment'.\n- **(B)** 'has never travelled' (present perfect) wrongly links to now, though this is a closed past situation. Misconception: connecting a finished past to the present.\n- **(D)** 'was never travelling' (past continuous) does not fit a state of never having done something. Misconception: using the continuous for a negative life-experience state.\n\n**Principle:** Use the past perfect for a state that held right up to a specific past point ('until then').\n\n**Intuition hook:** Before 2015, that was already true – 'she had never travelled'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Past perfect for a state up to a past point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 23
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "type": "mcq_single",
+      "stem": "By the time the referee blew the final whistle, the players \\_\\_\\_ in the rain for over ninety minutes and could barely stand.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'played'"
+        },
+        {
+          "label": "B",
+          "text": "'had been playing'"
+        },
+        {
+          "label": "C",
+          "text": "'were playing'"
+        },
+        {
+          "label": "D",
+          "text": "'have been playing'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** A duration ('for over ninety minutes') leading up to a past point ('by the time the referee blew...'), with its exhausting effect, calls for the past perfect continuous.\n\n**Distractor analysis:**\n\n- **(A)** 'played' (simple past) reports the fact but not the draining span leading up to that moment. Misconception: using the simple past for a duration up to a later past point.\n- **(C)** 'were playing' (past continuous) loses the 'for that long, up to that point' meaning. Misconception: using the past continuous where a completed duration to a past point is meant.\n- **(D)** 'have been playing' (present perfect continuous) is the wrong time frame – everything here is in the past. Misconception: mixing a present-perfect form into a past narrative.\n\n**Principle:** Use the past perfect continuous for an activity that continued for a stretch of time up to a past moment.\n\n**Intuition hook:** Ninety tiring minutes up to the whistle – 'had been playing'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Past perfect continuous up to a past point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 23
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "type": "mcq_single",
+      "stem": "Quick, everyone sit down and stop talking – the ceremony \\_\\_\\_ begin.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'is about to'"
+        },
+        {
+          "label": "B",
+          "text": "'will'"
+        },
+        {
+          "label": "C",
+          "text": "'begins'"
+        },
+        {
+          "label": "D",
+          "text": "'began'"
+        }
+      ],
+      "answer": "A",
+      "solution": "**Why:** 'Be about to' expresses that something is on the very point of happening, which matches the urgency of 'Quick, sit down'.\n\n**Distractor analysis:**\n\n- **(B)** 'will begin' places it in the future but does not convey 'right now, any second'. Misconception: using the plain future for imminence.\n- **(C)** 'begins' is a timetable/general present, not this immediate moment. Misconception: using the schedule present for something about to start now.\n- **(D)** 'began' is past. Misconception: leaving the present.\n\n**Principle:** 'Be about to + base verb' marks an action on the very point of happening.\n\n**Intuition hook:** Any second now – 'the ceremony is about to begin'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "'Be about to' for imminent future"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 24
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "type": "mcq_single",
+      "stem": "You're soaked through! How long \\_\\_\\_ out here in the storm waiting for me?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'are you standing'"
+        },
+        {
+          "label": "B",
+          "text": "'do you stand'"
+        },
+        {
+          "label": "C",
+          "text": "'have you been standing'"
+        },
+        {
+          "label": "D",
+          "text": "'did you stand'"
+        }
+      ],
+      "answer": "C",
+      "solution": "**Why:** 'How long...' about an action continuing up to now, with a present result ('soaked through'), takes the present perfect continuous.\n\n**Distractor analysis:**\n\n- **(A)** 'are you standing' (present continuous) cannot express 'for how long, up to now'. Misconception: using the plain continuous for a duration reaching the present.\n- **(B)** 'do you stand' asks about a habit. Misconception: using the simple present for a one-time duration.\n- **(D)** 'did you stand' (simple past) treats the standing as finished, but the person is still there, soaked, now. Misconception: closing off an action that is still ongoing.\n\n**Principle:** Use the present perfect continuous for 'how long' an action has continued up to the present.\n\n**Intuition hook:** Still here, still soaked – 'How long have you been standing?'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect continuous for duration up to now"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 4,
+        "key_page": 24
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "type": "mcq_single",
+      "stem": "After weeks of double shifts, right now you \\_\\_\\_ nothing less than a proper holiday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'are deserving'"
+        },
+        {
+          "label": "B",
+          "text": "'deserve'"
+        },
+        {
+          "label": "C",
+          "text": "'have been deserving'"
+        },
+        {
+          "label": "D",
+          "text": "'will deserve'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Deserve' is a stative verb, so it stays in the simple present even with 'right now'; stative verbs resist the continuous.\n\n**Distractor analysis:**\n\n- **(A)** 'are deserving' forces a stative verb into the continuous. Misconception: '-ing' with a stative verb because 'right now' appears.\n- **(C)** 'have been deserving' is a continuous perfect form of a stative verb. Misconception: using the perfect continuous with a stative verb.\n- **(D)** 'will deserve' shifts to the future, but the deserving is true now. Misconception: moving a present state into the future.\n\n**Principle:** Stative verbs stay in the simple present, even when a 'now' word is present.\n\n**Intuition hook:** 'Right now' can't rescue a stative verb – it's still 'you deserve'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb resists the continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 24
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "type": "mcq_single",
+      "stem": "When the customs officer asked me what the strange package \\_\\_\\_, I honestly had no idea.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'means'"
+        },
+        {
+          "label": "B",
+          "text": "'contained'"
+        },
+        {
+          "label": "C",
+          "text": "'is meaning'"
+        },
+        {
+          "label": "D",
+          "text": "'has meant'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** After the past verb 'asked', the reported clause backshifts to a past form. 'Contained' (simple past of the stative 'contain') fits both the sequence and the meaning – the officer wanted to know what was inside.\n\n**Distractor analysis:**\n\n- **(A)** 'means' fails to backshift after the past reporting verb 'asked', and does not fit a package's contents. Misconception: leaving the reported clause in the present.\n- **(C)** 'is meaning' forces a stative verb into the continuous and ignores backshift. Misconception: '-ing' with a stative verb plus no backshift.\n- **(D)** 'has meant' (present perfect) clashes with the past narrative. Misconception: mixing the present perfect into reported past speech.\n\n**Principle:** After a past reporting verb, the reported clause backshifts; stative verbs simply move to the simple past.\n\n**Intuition hook:** 'Asked what it contained' – the report shifts back with the story.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Stative verb with backshift"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 25
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "type": "mcq_single",
+      "stem": "I'm quite tired this evening; honestly, I'd rather we \\_\\_\\_ at home tonight.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'stay'"
+        },
+        {
+          "label": "B",
+          "text": "'stayed'"
+        },
+        {
+          "label": "C",
+          "text": "'have stayed'"
+        },
+        {
+          "label": "D",
+          "text": "'will stay'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Would rather + subject' is followed by the simple past for a present or future preference: 'I'd rather we stayed'.\n\n**Distractor analysis:**\n\n- **(A)** 'stay' (base form) does not follow 'would rather + we'. Misconception: using a base verb after 'would rather + subject'.\n- **(C)** 'have stayed' (present perfect) does not fit the pattern. Misconception: substituting the perfect for the required past.\n- **(D)** 'will stay' (future) is wrong after 'would rather we'. Misconception: reading the preference as ordinary future.\n\n**Principle:** 'Would rather + subject' takes the simple past for a present/future preference.\n\n**Intuition hook:** 'I'd rather we stayed' – the past form carries the preference.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Would rather + subject' + past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 25
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "type": "mcq_single",
+      "stem": "He strolled through the exam as though he \\_\\_\\_ every answer by heart, though he had barely studied.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'knows'"
+        },
+        {
+          "label": "B",
+          "text": "'knew'"
+        },
+        {
+          "label": "C",
+          "text": "'has known'"
+        },
+        {
+          "label": "D",
+          "text": "'will know'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'As though' introducing an unreal comparison takes the past for a present situation: 'as though he knew'. The clause 'though he had barely studied' confirms this is a pretence, not the truth.\n\n**Distractor analysis:**\n\n- **(A)** 'knows' would suggest he really did know, but he had barely studied. Misconception: using the present for an unreal 'as though' comparison.\n- **(C)** 'has known' (present perfect) does not fit the unreal comparison. Misconception: using the perfect after 'as though'.\n- **(D)** 'will know' (future) is unrelated to the pretence in the moment. Misconception: reading 'as though' as future time.\n\n**Principle:** 'As if / as though' introducing something untrue takes the past (an unreal past), not the present.\n\n**Intuition hook:** It only looked that way – 'as though he knew', but he didn't.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'As though' + unreal past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 25
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "type": "mcq_single",
+      "stem": "Hardly \\_\\_\\_ the sun risen when the workers were already out in the fields.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'has'"
+        },
+        {
+          "label": "B",
+          "text": "'had'"
+        },
+        {
+          "label": "C",
+          "text": "'did'"
+        },
+        {
+          "label": "D",
+          "text": "'was'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** After a fronted 'hardly', the clause inverts and uses the past perfect for the earlier event: 'Hardly had the sun risen ...'.\n\n**Distractor analysis:**\n\n- **(A)** 'has' (present perfect) clashes with the past narrative 'were already out'. Misconception: using a present form in a past story.\n- **(C)** 'did ... risen' mismatches the auxiliary and the participle. Misconception: pairing 'did' with a past participle.\n- **(D)** 'was ... risen' would need an '-ing' form, not the participle 'risen'. Misconception: confusing the past continuous with the past perfect.\n\n**Principle:** A fronted 'hardly / scarcely / no sooner' triggers inversion with the past perfect for the earlier action.\n\n**Intuition hook:** 'Hardly had it risen when...' – the front adverb pulls in inverted 'had risen'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 10,
+        "Cognitive skill": "Inversion with the past perfect"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 26
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "type": "mcq_single",
+      "stem": "Sorry about the mess and the smell of paint – we \\_\\_\\_ the whole flat since Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'redecorate'"
+        },
+        {
+          "label": "B",
+          "text": "'are redecorating'"
+        },
+        {
+          "label": "C",
+          "text": "'have been redecorating'"
+        },
+        {
+          "label": "D",
+          "text": "'redecorated'"
+        }
+      ],
+      "answer": "C",
+      "solution": "**Why:** 'Since Monday' marks a period from a past point up to now, and the ongoing activity explains the present mess, so the present perfect continuous fits.\n\n**Distractor analysis:**\n\n- **(A)** 'redecorate' (simple present) cannot take 'since Monday'. Misconception: using the simple present with 'since'.\n- **(B)** 'are redecorating' (present continuous) alone cannot express 'since Monday' stretching from the past to now. Misconception: using the plain continuous where duration-to-now is meant.\n- **(D)** 'redecorated' (simple past) treats it as finished, but it is clearly still going on. Misconception: closing off an ongoing activity.\n\n**Principle:** Use the present perfect continuous for an activity running from a past point ('since Monday') up to now.\n\n**Intuition hook:** Started Monday, still going, still messy – 'have been redecorating since Monday'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Present perfect continuous with 'since'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 26
+      }
+    },
+    {
+      "id": "q21",
+      "number": "21",
+      "type": "mcq_single",
+      "stem": "Cheer up – it won't be long before things \\_\\_\\_ better.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'will get'"
+        },
+        {
+          "label": "B",
+          "text": "'get'"
+        },
+        {
+          "label": "C",
+          "text": "'are getting'"
+        },
+        {
+          "label": "D",
+          "text": "'got'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Before' introduces a time clause, so it takes the present, not 'will': 'before things get better'.\n\n**Distractor analysis:**\n\n- **(A)** 'will get' wrongly puts a future form in the 'before' clause. Misconception: using 'will' in a time clause.\n- **(C)** 'are getting' (present continuous) suggests a change already in progress, not the future point. Misconception: using the continuous for a future turning point.\n- **(D)** 'got' (simple past) breaks the future meaning. Misconception: shifting to the past.\n\n**Principle:** Time clauses with 'before', 'when', 'until', 'as soon as' take the present for future meaning – no 'will'.\n\n**Intuition hook:** 'Before things get better' – the time clause stays in the present.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present in a 'before' time clause (no will)"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 26
+      }
+    },
+    {
+      "id": "q22",
+      "number": "22",
+      "type": "mcq_single",
+      "stem": "If you had set an alarm, you \\_\\_\\_ the start of the interview.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'wouldn't miss'"
+        },
+        {
+          "label": "B",
+          "text": "'wouldn't have missed'"
+        },
+        {
+          "label": "C",
+          "text": "'didn't miss'"
+        },
+        {
+          "label": "D",
+          "text": "'won't miss'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** A past unreal condition ('if you had set...') takes 'would have + past participle' in the result: 'wouldn't have missed'.\n\n**Distractor analysis:**\n\n- **(A)** 'wouldn't miss' belongs to a present/future unreal (second conditional), not a past one. Misconception: mixing the second conditional result into a third-conditional 'if' clause.\n- **(C)** 'didn't miss' (simple past) does not express the unreal consequence. Misconception: reporting instead of hypothesising.\n- **(D)** 'won't miss' (real future) contradicts the past unreal 'if you had set'. Misconception: treating an unreal past as a real future.\n\n**Principle:** A past unreal condition ('if + past perfect') takes 'would have + past participle' in the result.\n\n**Intuition hook:** 'Had set ... would have missed' – the past unreal pattern moves in pairs.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Third-conditional result ('would have + participle')"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 5,
+        "key_page": 27
+      }
+    },
+    {
+      "id": "q23",
+      "number": "23",
+      "type": "mcq_single",
+      "stem": "Which version sounds most natural as the opening of a joke told aloud to friends?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'So this man walked into a shop and asked for a talking parrot.'"
+        },
+        {
+          "label": "B",
+          "text": "'So this man walks into a shop and asks for a talking parrot.'"
+        },
+        {
+          "label": "C",
+          "text": "'So this man had walked into a shop and had asked for a talking parrot.'"
+        },
+        {
+          "label": "D",
+          "text": "'So this man will walk into a shop and ask for a talking parrot.'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** In casual spoken jokes and anecdotes, English often uses the 'historic present' (the present tense for past events) to make the story vivid and immediate: 'walks ... asks'.\n\n**Distractor analysis:**\n\n- **(A)** The past tense is perfectly grammatical, but for the opening of a spoken joke it is less lively than the conventional historic present, so it is not the MOST natural choice here. Misconception: assuming grammatical correctness alone settles a naturalness question.\n- **(C)** 'had walked ... had asked' (past perfect) needs an earlier event to relate to, and there is none. Misconception: using the past perfect with nothing earlier to anchor it.\n- **(D)** 'will walk' (future) cannot narrate a joke about the past. Misconception: using the future to tell a story.\n\n**Principle:** Spoken jokes and vivid anecdotes conventionally use the historic present for immediacy.\n\n**Intuition hook:** A good joke lives in the now – 'this man walks in and asks...'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Historic present for spoken narrative"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 27
+      }
+    },
+    {
+      "id": "q24",
+      "number": "24",
+      "type": "mcq_single",
+      "stem": "A chef narrating each step live to a studio audience says: 'First I \\_\\_\\_ the onions, then I add the garlic.' Which fits this running commentary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'am chopping'"
+        },
+        {
+          "label": "B",
+          "text": "'chop'"
+        },
+        {
+          "label": "C",
+          "text": "'have chopped'"
+        },
+        {
+          "label": "D",
+          "text": "'will chop'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** Live demonstrations and commentaries use the simple present for each step as it is performed: 'First I chop the onions, then I add the garlic'.\n\n**Distractor analysis:**\n\n- **(A)** 'am chopping' (present continuous) can describe a single action in progress, but it clashes with the step-by-step 'first ... then ...' commentary style, which stays in the simple present. Misconception: mixing continuous and simple in a running commentary.\n- **(C)** 'have chopped' (present perfect) reports a finished action, not a live step. Misconception: reporting completion during a live demonstration.\n- **(D)** 'will chop' (future) is wrong for narrating what is happening now. Misconception: using the future for a present commentary.\n\n**Principle:** Live commentary and demonstrations use the simple present, step by step.\n\n**Intuition hook:** Narrating as you go – 'First I chop, then I add'.",
+      "topics": [
+        "Grammar > Verb Tenses > Choose the Best Answer"
+      ],
+      "fields": {
+        "Task type": "Multiple choice",
+        "Section": "A",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Demonstration present for live commentary"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 27
+      }
+    },
+    {
+      "id": "q25",
+      "number": "25",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'I had woken up at seven o'clock yesterday and got ready for school.'",
+      "answer": "'had woken up' should be 'woke up'.",
+      "solution": "**Why:** The past perfect is only needed to show that one past event happened before another. Here 'yesterday at seven' is a plain past time, and the following verb 'got ready' is simple past, so the first verb should also be simple past: 'I woke up ... and got ready'.\n\n**Distractor analysis:**\n\n- Leaving 'had woken up' overuses the past perfect with nothing earlier to relate it to. Misconception: reaching for the past perfect whenever an action comes first, even in a plain sequence.\n\n**Principle:** Do not use the past perfect for a simple past sequence; it marks 'earlier than another past point' only.\n\n**Intuition hook:** Nothing earlier to point back to – just 'I woke up and got ready'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Past perfect overuse"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 28
+      }
+    },
+    {
+      "id": "q26",
+      "number": "26",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'This antique clock is belonging to my grandmother, who bought it in Vienna.'",
+      "answer": "'is belonging' should be 'belongs'.",
+      "solution": "**Why:** 'Belong' is a stative verb (it describes ownership, not an action), so it does not take the continuous: 'This antique clock belongs to my grandmother'.\n\n**Distractor analysis:**\n\n- Keeping 'is belonging' forces a stative verb into the continuous. Misconception: using '-ing' with verbs of possession.\n\n**Principle:** Stative verbs of possession (belong, own, have) resist the continuous.\n\n**Intuition hook:** Ownership isn't an action in progress – 'it belongs to her'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb in the continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 28
+      }
+    },
+    {
+      "id": "q27",
+      "number": "27",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'I have met your brother at a conference three years ago.'",
+      "answer": "'have met' should be 'met'.",
+      "solution": "**Why:** 'Three years ago' is a specific, finished past time, which cannot go with the present perfect. Use the simple past: 'I met your brother at a conference three years ago'.\n\n**Distractor analysis:**\n\n- Keeping 'have met' with 'three years ago' breaks the rule that the present perfect avoids finished-time expressions. Misconception: combining the present perfect with 'ago'.\n\n**Principle:** The present perfect cannot take a finished-time marker such as 'ago'; use the simple past.\n\n**Intuition hook:** 'Ago' pins it to finished time – 'I met him three years ago'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect with a finished-time marker"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 28
+      }
+    },
+    {
+      "id": "q28",
+      "number": "28",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'As soon as the results will be published, the school will inform all parents by email.'",
+      "answer": "'will be published' should be 'are published'.",
+      "solution": "**Why:** 'As soon as' introduces a future time clause, which takes the present, not 'will': 'As soon as the results are published, the school will inform all parents'.\n\n**Distractor analysis:**\n\n- Keeping 'will be published' puts 'will' inside the time clause. Misconception: using 'will' in both clauses because both actions lie in the future.\n\n**Principle:** No 'will' in a time clause ('as soon as', 'when', 'until'); use the present for future meaning.\n\n**Intuition hook:** 'As soon as' bars 'will' – 'as soon as the results are published'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 8,
+        "Cognitive skill": "No 'will' in a future time clause"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 6,
+        "key_page": 29
+      }
+    },
+    {
+      "id": "q29",
+      "number": "29",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'I'm not understanding why the train has been cancelled again this morning.'",
+      "answer": "'am not understanding' should be 'don't understand'.",
+      "solution": "**Why:** 'Understand' is a stative verb, so it stays in the simple present: 'I don't understand why the train has been cancelled'.\n\n**Distractor analysis:**\n\n- Keeping 'am not understanding' forces a stative verb into the continuous. Misconception: using '-ing' with verbs of mental state.\n\n**Principle:** Stative verbs of thinking and perceiving (understand, know, believe) resist the continuous.\n\n**Intuition hook:** Understanding is a state, not an action – 'I don't understand'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb in the continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 29
+      }
+    },
+    {
+      "id": "q30",
+      "number": "30",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'The pipes have froze twice this winter because of the poor insulation.'",
+      "answer": "'have froze' should be 'have frozen'.",
+      "solution": "**Why:** The present perfect needs the past participle, and the participle of 'freeze' is 'frozen', not 'froze': 'The pipes have frozen twice this winter'.\n\n**Distractor analysis:**\n\n- Using 'froze' (the simple past) after 'have' is a participle error. Misconception: confusing the simple past 'froze' with the past participle 'frozen'.\n\n**Principle:** After 'have/has', use the past participle: freeze → froze → frozen.\n\n**Intuition hook:** 'Have + frozen', not 'have froze' – the third form follows 'have'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Irregular past participle in the present perfect"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 29
+      }
+    },
+    {
+      "id": "q31",
+      "number": "31",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'Last week he promised that he will finish the report by Friday, but it's still not done.'",
+      "answer": "'will finish' should be 'would finish'.",
+      "solution": "**Why:** After the past reporting verb 'promised', 'will' backshifts to 'would': 'he promised that he would finish the report by Friday'.\n\n**Distractor analysis:**\n\n- Keeping 'will' after a past reporting verb ignores backshift. Misconception: not shifting 'will' to 'would' after a past verb.\n\n**Principle:** After a past reporting verb, 'will' becomes 'would' (future-in-the-past).\n\n**Intuition hook:** A past promise about the future – 'he would finish', not 'will finish'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Backshifting 'will' to 'would'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 29
+      }
+    },
+    {
+      "id": "q32",
+      "number": "32",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'If it will snow tomorrow, we'll build a snowman in the garden.'",
+      "answer": "'will snow' should be 'snows'.",
+      "solution": "**Why:** In a first conditional, the 'if' clause takes the simple present, not 'will': 'If it snows tomorrow, we'll build a snowman'.\n\n**Distractor analysis:**\n\n- Keeping 'will' in the 'if' clause is not allowed. Misconception: using 'will' in the condition because the result is in the future.\n\n**Principle:** No 'will' in the 'if' clause of a first conditional; use the simple present.\n\n**Intuition hook:** 'If' about the real future stays in the present – 'if it snows'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "No 'will' in a first-conditional 'if' clause"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 30
+      }
+    },
+    {
+      "id": "q33",
+      "number": "33",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'She has been reading forty-two books this year, which is a personal record.'",
+      "answer": "'has been reading' should be 'has read'.",
+      "solution": "**Why:** A completed, counted quantity ('forty-two books') takes the present perfect simple, not the continuous, which stresses ongoing activity rather than a finished total: 'She has read forty-two books this year'.\n\n**Distractor analysis:**\n\n- Keeping 'has been reading' with a fixed count wrongly emphasises the activity instead of the completed number. Misconception: using the perfect continuous where a completed count needs the perfect simple.\n\n**Principle:** Use the present perfect simple for a completed, counted result; the continuous is for ongoing/uncounted activity.\n\n**Intuition hook:** Forty-two finished books is a total – 'she has read', not 'has been reading'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Perfect simple for a completed count"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 30
+      }
+    },
+    {
+      "id": "q34",
+      "number": "34",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'She opened the letter, read it slowly, and suddenly starts to cry.'",
+      "answer": "'starts' should be 'started'.",
+      "solution": "**Why:** The sentence is a sequence of simple-past actions ('opened', 'read'), so the last verb must match: 'She opened the letter, read it slowly, and suddenly started to cry'.\n\n**Distractor analysis:**\n\n- Keeping 'starts' shifts into the present in the middle of a past sequence. Misconception: switching to the present for a dramatic final action.\n\n**Principle:** Keep a sequence of past actions consistently in the simple past.\n\n**Intuition hook:** Opened, read, started – don't let the last verb jump to the present.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Narrative tense consistency"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 30
+      }
+    },
+    {
+      "id": "q35",
+      "number": "35",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'We live in this neighbourhood since our eldest child was born.'",
+      "answer": "'live' should be 'have lived'.",
+      "solution": "**Why:** A situation continuing from a past point up to now, marked by 'since', takes the present perfect: 'We have lived in this neighbourhood since our eldest child was born'.\n\n**Distractor analysis:**\n\n- Keeping the simple present 'live' with 'since' is wrong. Misconception: using the simple present for a period that reaches from the past to now.\n\n**Principle:** 'Since' + a past starting point, continuing to now, calls for the present perfect.\n\n**Intuition hook:** Started then, still true now – 'we have lived here since...'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect with 'since'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 30
+      }
+    },
+    {
+      "id": "q36",
+      "number": "36",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'Yesterday evening we was gone to the new Italian restaurant near the station.'",
+      "answer": "'was gone' should be 'went' (giving 'we went').",
+      "solution": "**Why:** The simple past of 'go' is 'went'. 'Was gone' is not the past tense here; the sentence needs 'Yesterday evening we went to the new Italian restaurant'.\n\n**Distractor analysis:**\n\n- Keeping 'was gone' uses an incorrect form for the simple past of 'go'. Misconception: treating 'was gone' as a past tense of 'go' instead of 'went'.\n\n**Principle:** The simple past of 'go' is 'went'; 'was gone' is a different structure, not the simple past.\n\n**Intuition hook:** A finished trip last night – 'we went', not 'we was gone'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Correct simple-past form of 'go'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 7,
+        "key_page": 31
+      }
+    },
+    {
+      "id": "q37",
+      "number": "37",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'I was breaking my leg last winter while I was skiing in the Alps.'",
+      "answer": "'was breaking' should be 'broke'.",
+      "solution": "**Why:** Breaking a leg is a single, sudden, completed event, so it takes the simple past. The background action 'was skiing' is correctly in the past continuous: 'I broke my leg last winter while I was skiing'.\n\n**Distractor analysis:**\n\n- Keeping 'was breaking' turns a one-off event into an ongoing one. Misconception: using the past continuous for the short, completed action that interrupts the background.\n\n**Principle:** The interrupting event takes the simple past; the background action takes the past continuous.\n\n**Intuition hook:** The break was instant – 'I broke my leg while I was skiing'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Simple past for an interrupting event"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 31
+      }
+    },
+    {
+      "id": "q38",
+      "number": "38",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'When I was a child, I would have a small dog called Pip who followed me everywhere.'",
+      "answer": "'would have' should be 'used to have'.",
+      "solution": "**Why:** 'Have' meaning 'own/possess' is stative, and 'would' for past habits works only with repeated actions, not with states. A past state of possession takes 'used to': 'I used to have a small dog called Pip'.\n\n**Distractor analysis:**\n\n- Keeping 'would have' applies 'would' to a stative verb of possession. Misconception: assuming 'would' and 'used to' are interchangeable, even for states.\n\n**Principle:** For past states (including possession with 'have'), use 'used to', not 'would'.\n\n**Intuition hook:** Owning a pet is a state – 'I used to have a dog', not 'would have'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Used to' vs. 'would' with a stative verb"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 31
+      }
+    },
+    {
+      "id": "q39",
+      "number": "39",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'Please be quiet for a moment – I talk to my manager on the phone right now.'",
+      "answer": "'talk' should be 'am talking'.",
+      "solution": "**Why:** An action happening at this very moment ('right now') takes the present continuous: 'I am talking to my manager on the phone right now'.\n\n**Distractor analysis:**\n\n- Keeping 'talk' uses the simple present for an action in progress now. Misconception: using the simple present (a habit form) for a temporary action happening at this moment.\n\n**Principle:** Use the present continuous for an action in progress at the moment of speaking.\n\n**Intuition hook:** 'Right now' means in progress – 'I am talking'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present continuous for an action now"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 31
+      }
+    },
+    {
+      "id": "q40",
+      "number": "40",
+      "type": "open",
+      "stem": "Find and correct the one tense error: 'By the time you finish reading this book, you will forget how it began.'",
+      "answer": "'will forget' should be 'will have forgotten'.",
+      "solution": "**Why:** The forgetting will be complete before the future point 'by the time you finish', so the future perfect is needed: 'you will have forgotten how it began'. (Note the participle 'forgotten'.)\n\n**Distractor analysis:**\n\n- Keeping 'will forget' does not show the forgetting completed by that future moment. Misconception: using the simple future where completion before a future point ('by the time') is meant.\n\n**Principle:** Use the future perfect for something completed before a stated future point.\n\n**Intuition hook:** Done before you reach the end – 'you will have forgotten'.",
+      "topics": [
+        "Grammar > Verb Tenses > Correct the Sentence"
+      ],
+      "fields": {
+        "Task type": "Correct the sentence",
+        "Section": "B",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future perfect with 'by the time'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 32
+      }
+    },
+    {
+      "id": "q41",
+      "number": "41",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'I love this city, but sometimes I wish it \\_\\_\\_ (not rain) quite so often.'",
+      "answer": "didn't rain",
+      "solution": "**Why:** A wish about a present situation you would like to be different takes the simple past after 'wish': 'I wish it didn't rain so often'.\n\n**Distractor analysis:**\n\n- Writing 'doesn't rain' or 'wouldn't rain' misses the pattern. 'Wish' + simple past expresses a present unreal wish; 'wouldn't rain' would be about someone's behaviour, not the weather in general. Misconception: using the present after 'wish', or reaching for 'would' where the simple past is needed.\n\n**Principle:** 'Wish' + simple past expresses a wish about a present situation you would like to be otherwise.\n\n**Intuition hook:** Wishing the present were different – 'I wish it didn't rain'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'Wish' + past for a present unreal wish"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 32
+      }
+    },
+    {
+      "id": "q42",
+      "number": "42",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'The children have been up for hours; it's about time they \\_\\_\\_ (have) some breakfast.'",
+      "answer": "had",
+      "solution": "**Why:** 'It's about time + subject' is followed by the simple past (an unreal past) to say something should already be happening: 'it's about time they had some breakfast'.\n\n**Distractor analysis:**\n\n- Writing 'have' or 'should have' does not fit the fixed pattern. Misconception: expecting a present or a modal after 'it's about time'.\n\n**Principle:** 'It's (high/about) time + subject' takes the simple past, though it means 'now or overdue'.\n\n**Intuition hook:** Overdue right now – 'it's about time they had breakfast'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'It's about time' + unreal past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 32
+      }
+    },
+    {
+      "id": "q43",
+      "number": "43",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'This time tomorrow, I \\_\\_\\_ (fly) somewhere over the Atlantic.'",
+      "answer": "will be flying",
+      "solution": "**Why:** 'This time tomorrow' names a point in the future, and the sentence pictures an action in progress at that moment, so the future continuous is correct: 'I will be flying'.\n\n**Distractor analysis:**\n\n- Writing 'will fly' loses the 'in progress at that moment' picture, and 'am flying' (an arrangement form) is odd for being mid-flight at a precise future instant. Misconception: using the simple future or the arrangement present where the future continuous is meant.\n\n**Principle:** Use the future continuous for an action that will be in progress at a specific future time.\n\n**Intuition hook:** Picture yourself mid-flight then – 'I will be flying'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Future continuous at a future point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 33
+      }
+    },
+    {
+      "id": "q44",
+      "number": "44",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'If the goalkeeper \\_\\_\\_ (not slip) at that crucial moment, we might have won the final.'",
+      "answer": "hadn't slipped",
+      "solution": "**Why:** A past unreal condition takes the past perfect in the 'if' clause: 'If the goalkeeper hadn't slipped ...'. The result ('we might have won') is also past-unreal.\n\n**Distractor analysis:**\n\n- Writing 'didn't slip' or 'wouldn't slip' does not express a past unreal condition. Misconception: using the simple past or 'would' in the 'if' clause of a third conditional.\n\n**Principle:** A past unreal condition uses 'if + past perfect'.\n\n**Intuition hook:** Imagining a different past – 'if he hadn't slipped'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Third-conditional 'if' clause"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 8,
+        "key_page": 33
+      }
+    },
+    {
+      "id": "q45",
+      "number": "45",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'By the time the paramedics arrived, the driver \\_\\_\\_ (already / climb) out of the wreck by himself.'",
+      "answer": "had already climbed",
+      "solution": "**Why:** 'By the time the paramedics arrived' is a past point, and the climbing out was completed before it, so the past perfect is required: 'had already climbed'.\n\n**Distractor analysis:**\n\n- Writing 'already climbed' or 'was already climbing' fails to mark the action as completed before the arrival. Misconception: using the simple past or continuous where 'by the time' requires the past perfect.\n\n**Principle:** 'By the time' + a past event requires the past perfect for the action completed earlier.\n\n**Intuition hook:** Out before they arrived – 'he had already climbed out'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Past perfect with 'by the time'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 33
+      }
+    },
+    {
+      "id": "q46",
+      "number": "46",
+      "type": "short_answer",
+      "stem": "Complete BOTH blanks with the correct forms of the verbs in brackets. 'Wow, this \\_\\_\\_ (be) the first time I \\_\\_\\_ (taste) real Japanese ramen!'",
+      "answer": "is; have tasted",
+      "solution": "**Why:** The frame 'This is the first time' takes the simple present 'is', and the pattern 'the first time (that) + present perfect' gives 'have tasted'.\n\n**Distractor analysis:**\n\n- Writing 'was' or 'tasted' breaks the pattern. Misconception: using the past in a present 'this is the first time' frame, or dropping the present perfect the pattern requires.\n\n**Principle:** 'This is the first time' + present perfect: present 'is' plus 'have/has + participle'.\n\n**Intuition hook:** 'This is the first time I have tasted it' – present frame, perfect experience.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'First time' + present perfect"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 33
+      }
+    },
+    {
+      "id": "q47",
+      "number": "47",
+      "type": "mcq_single",
+      "stem": "Complete the dialogue. A: 'You seem to know this city really well.' B: 'I should – I \\_\\_\\_ here since long before the new district was built.'",
+      "options": [
+        {
+          "label": "A",
+          "text": "'live'"
+        },
+        {
+          "label": "B",
+          "text": "'am living'"
+        },
+        {
+          "label": "C",
+          "text": "'have lived'"
+        },
+        {
+          "label": "D",
+          "text": "'had lived'"
+        }
+      ],
+      "answer": "C",
+      "solution": "**Why:** 'Since long before ...' marks a period from a past point up to now, so the present perfect fits: 'I have lived here since ...'.\n\n**Distractor analysis:**\n\n- **(A)** 'live' (simple present) cannot take 'since'. Misconception: using the simple present for a period reaching the present.\n- **(B)** 'am living' (present continuous) suggests a temporary stay and cannot carry 'since' to now. Misconception: using the plain continuous for a long, continuing situation.\n- **(D)** 'had lived' (past perfect) needs a later past event to relate to, but the sentence connects to now. Misconception: using the past perfect with no anchoring past point.\n\n**Principle:** 'Since' + a past point, continuing to now, calls for the present perfect.\n\n**Intuition hook:** From way back, still true – 'I have lived here since...'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Complete the dialogue",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect with 'since'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 34
+      }
+    },
+    {
+      "id": "q48",
+      "number": "48",
+      "type": "mcq_single",
+      "stem": "Complete the dialogue. A: 'Why are your hands so dirty?' B: 'I \\_\\_\\_ in the garden all morning – I've only just come in.'",
+      "options": [
+        {
+          "label": "A",
+          "text": "'worked'"
+        },
+        {
+          "label": "B",
+          "text": "'have been working'"
+        },
+        {
+          "label": "C",
+          "text": "'had worked'"
+        },
+        {
+          "label": "D",
+          "text": "'am working'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** The present result (dirty hands, asked about now), the duration ('all morning') and the recency ('only just come in') together call for the present perfect continuous: 'I have been working in the garden all morning'.\n\n**Distractor analysis:**\n\n- **(A)** 'worked' (simple past) treats the morning as a closed, separate time, but the present question and result ('why ARE your hands dirty', 'only just come in') point to a present perfect. Misconception: using the simple past where present relevance and duration are being stressed.\n- **(C)** 'had worked' (past perfect) needs a later past reference point, which there is none. Misconception: using the past perfect with nothing to anchor it.\n- **(D)** 'am working' (present continuous) says the work is happening now, but the person has just come inside. Misconception: using the present continuous for an activity that has just stopped.\n\n**Principle:** Use the present perfect continuous for a recent, sustained activity whose result is visible now.\n\n**Intuition hook:** Just finished, hands still dirty – 'I've been working all morning'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Complete the dialogue",
+        "Section": "C",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Present perfect continuous for a recent activity"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 34
+      }
+    },
+    {
+      "id": "q49",
+      "number": "49",
+      "type": "mcq_single",
+      "stem": "Complete the dialogue. A: 'Shall we start the meeting?' B: 'Let's wait five minutes – not everyone \\_\\_\\_ yet.'",
+      "options": [
+        {
+          "label": "A",
+          "text": "'arrives'"
+        },
+        {
+          "label": "B",
+          "text": "'has arrived'"
+        },
+        {
+          "label": "C",
+          "text": "'is arriving'"
+        },
+        {
+          "label": "D",
+          "text": "'arrived'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Yet' with a present result (some people are still missing now) takes the present perfect: 'not everyone has arrived yet'.\n\n**Distractor analysis:**\n\n- **(A)** 'arrives' (simple present) is a habit form and does not express 'up to now, still incomplete'. Misconception: using the simple present with 'yet'.\n- **(C)** 'is arriving' (present continuous) describes people in the act of arriving, not the state of some still being absent. Misconception: using the continuous for a not-yet-complete state.\n- **(D)** 'arrived' (simple past) with 'yet' is not standard here; the situation is still open. Misconception: using the simple past for an unfinished 'up-to-now' situation.\n\n**Principle:** 'Yet', for something not completed up to now, takes the present perfect.\n\n**Intuition hook:** Still waiting on people now – 'not everyone has arrived yet'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Complete the dialogue",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect with 'yet'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 34
+      }
+    },
+    {
+      "id": "q50",
+      "number": "50",
+      "type": "mcq_single",
+      "stem": "Complete the dialogue. A: 'Did you enjoy the film?' B: 'To be honest, I \\_\\_\\_ films like that; they're just not my taste.'",
+      "options": [
+        {
+          "label": "A",
+          "text": "'am not liking'"
+        },
+        {
+          "label": "B",
+          "text": "'don't like'"
+        },
+        {
+          "label": "C",
+          "text": "'haven't liked'"
+        },
+        {
+          "label": "D",
+          "text": "'wasn't liking'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Like' is a stative verb expressing a general taste, so it takes the simple present: 'I don't like films like that'.\n\n**Distractor analysis:**\n\n- **(A)** 'am not liking' forces a stative verb into the continuous. Misconception: '-ing' with a verb of preference.\n- **(C)** 'haven't liked' (present perfect) does not fit a general, timeless taste. Misconception: using the perfect for a permanent preference.\n- **(D)** 'wasn't liking' is a past continuous of a stative verb, wrong on two counts. Misconception: continuous + stative, plus wrong time frame.\n\n**Principle:** Stative verbs of preference (like, love, hate) take the simple present for a general taste.\n\n**Intuition hook:** A standing taste is a state – 'I don't like them'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Complete the dialogue",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb of preference"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 35
+      }
+    },
+    {
+      "id": "q51",
+      "number": "51",
+      "type": "mcq_single",
+      "stem": "You planned to visit your friend but changed your mind at the last minute and stayed home. Which sentence best describes this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'I visited my friend, but I stayed home.'"
+        },
+        {
+          "label": "B",
+          "text": "'I was going to visit my friend, but I stayed home.'"
+        },
+        {
+          "label": "C",
+          "text": "'I will visit my friend, but I stayed home.'"
+        },
+        {
+          "label": "D",
+          "text": "'I had visited my friend, but I stayed home.'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Was going to' expresses a plan that was not carried out, which is exactly what happened: 'I was going to visit my friend, but I stayed home'.\n\n**Distractor analysis:**\n\n- **(A)** 'I visited my friend' says the visit happened, contradicting 'stayed home'. Misconception: reporting a completed action for an abandoned plan.\n- **(C)** 'I will visit' is future and clashes with 'stayed home'. Misconception: mixing future and past.\n- **(D)** 'I had visited my friend' claims the visit was completed earlier, again contradicting 'stayed home'. Misconception: using the past perfect for something that never happened.\n\n**Principle:** 'Was/were going to' names a plan that did not happen.\n\n**Intuition hook:** Planned but abandoned – 'I was going to visit, but I stayed home'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Choose the context",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "'Was going to' for an abandoned plan"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 35
+      }
+    },
+    {
+      "id": "q52",
+      "number": "52",
+      "type": "mcq_single",
+      "stem": "You want to make a very polite, softened request to borrow a colleague's laptop. Which is the most tentative, natural version?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'I wonder if I can borrow your laptop.'"
+        },
+        {
+          "label": "B",
+          "text": "'I was wondering if I could borrow your laptop.'"
+        },
+        {
+          "label": "C",
+          "text": "'I wondered if I will borrow your laptop.'"
+        },
+        {
+          "label": "D",
+          "text": "'I have wondered if I can borrow your laptop.'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** Past forms ('was wondering ... could') are used as a distancing, softening device to make a request especially gentle and tentative, without referring to past time.\n\n**Distractor analysis:**\n\n- **(A)** 'I wonder if I can ...' is polite and correct, but more direct; the question asks for the MOST softened, tentative version, which uses the past forms. Misconception: assuming there is only one 'polite' option and ignoring the extra softening the past adds.\n- **(C)** 'I wondered if I will borrow' mixes a past main verb with a future 'will' and sounds odd. Misconception: pairing a softening past with a bald 'will'.\n- **(D)** 'I have wondered if I can ...' suggests you have been wondering over a period, which is not a request. Misconception: using the present perfect where a tentative request is intended.\n\n**Principle:** Past forms ('was wondering', 'could') soften a present request, making it more polite and tentative.\n\n**Intuition hook:** Extra-gentle asking uses the past – 'I was wondering if I could...'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Choose the context",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Past forms for politeness"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 9,
+        "key_page": 35
+      }
+    },
+    {
+      "id": "q53",
+      "number": "53",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'It's such a lovely evening – I'd rather we \\_\\_\\_ (walk) home than take the bus.'",
+      "answer": "walked",
+      "solution": "**Why:** 'Would rather + subject' takes the simple past for a present/future preference: 'I'd rather we walked home'.\n\n**Distractor analysis:**\n\n- Writing 'walk' or 'will walk' misses the pattern. Misconception: using a base form or a future after 'would rather + subject'.\n\n**Principle:** 'Would rather + subject' takes the simple past for a preference.\n\n**Intuition hook:** 'I'd rather we walked' – the past form carries the preference.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Would rather + subject' + past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 36
+      }
+    },
+    {
+      "id": "q54",
+      "number": "54",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'Sshh! The baby \\_\\_\\_ (finally / sleep) for the last twenty minutes – please don't wake her.'",
+      "answer": "has finally been sleeping",
+      "solution": "**Why:** The action is still going on now ('please don't wake her') and has lasted a stretch of time ('for the last twenty minutes'), so the present perfect continuous fits: 'has finally been sleeping'.\n\n**Distractor analysis:**\n\n- Writing 'has finally slept' suggests a completed nap, but she is still asleep; 'is finally sleeping' loses the 'for the last twenty minutes' duration. Misconception: using the perfect simple (completed) or the plain continuous (no duration) for an ongoing activity with a stated length.\n\n**Principle:** Use the present perfect continuous for an action still in progress that has lasted up to now.\n\n**Intuition hook:** Still asleep, twenty minutes and counting – 'has been sleeping'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Present perfect continuous, still ongoing"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 36
+      }
+    },
+    {
+      "id": "q55",
+      "number": "55",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'Don't worry about the deadline – by Friday I \\_\\_\\_ (submit) all three reports.'",
+      "answer": "will have submitted",
+      "solution": "**Why:** The submitting will be complete before the future point 'by Friday', and it is a finished act (not an ongoing activity), so the future perfect fits: 'I will have submitted all three reports'.\n\n**Distractor analysis:**\n\n- Writing 'will submit' does not show completion before Friday, and 'will have been submitting' wrongly treats a set of completed acts as one continuous activity. Misconception: using the simple future, or the future perfect continuous for completed deliverables.\n\n**Principle:** Use the future perfect for completed actions finished before a future point.\n\n**Intuition hook:** All done before Friday – 'I will have submitted them'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Future perfect for completion by a point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 36
+      }
+    },
+    {
+      "id": "q56",
+      "number": "56",
+      "type": "mcq_single",
+      "stem": "Complete the dialogue. A: 'How's your new flatmate settling in?' B: 'Well, so far so good – we \\_\\_\\_ any problems at all.'",
+      "options": [
+        {
+          "label": "A",
+          "text": "'don't have'"
+        },
+        {
+          "label": "B",
+          "text": "'haven't had'"
+        },
+        {
+          "label": "C",
+          "text": "'didn't have'"
+        },
+        {
+          "label": "D",
+          "text": "'aren't having'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'So far' marks a period from the past up to now, so the present perfect fits: 'we haven't had any problems (so far)'.\n\n**Distractor analysis:**\n\n- **(A)** 'don't have' (simple present) does not express 'up to now across a period'. Misconception: using the simple present with 'so far'.\n- **(C)** 'didn't have' (simple past) closes the period off, but 'so far' keeps it open to now. Misconception: using the simple past for an ongoing 'up-to-now' period.\n- **(D)** 'aren't having' forces the stative 'have' (experience problems) into an odd continuous and loses 'so far'. Misconception: continuous with a stative-ish 'have', wrong time frame.\n\n**Principle:** 'So far', for a period reaching the present, takes the present perfect.\n\n**Intuition hook:** Up to now, all smooth – 'we haven't had any problems so far'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Complete the dialogue",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect with 'so far'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 36
+      }
+    },
+    {
+      "id": "q57",
+      "number": "57",
+      "type": "short_answer",
+      "stem": "Complete with the correct form of the verb in brackets. 'I don't know what's wrong with the engine, but something \\_\\_\\_ (seem) to be loose underneath.'",
+      "answer": "seems",
+      "solution": "**Why:** 'Seem' is a stative verb, so it takes the simple present: 'something seems to be loose'.\n\n**Distractor analysis:**\n\n- Writing 'is seeming' forces a stative verb into the continuous. Misconception: '-ing' with a verb of appearance like 'seem'.\n\n**Principle:** Stative verbs of appearance (seem, appear) take the simple present.\n\n**Intuition hook:** Seeming is a state, not an action – 'something seems loose'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Fill in the blank",
+        "Section": "C",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb 'seem'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 37
+      }
+    },
+    {
+      "id": "q58",
+      "number": "58",
+      "type": "mcq_single",
+      "stem": "You open the door just as your friend is lifting the phone to call you. You say: 'That's spooky – I \\_\\_\\_ call you!' Which fits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "'will'"
+        },
+        {
+          "label": "B",
+          "text": "'was about to'"
+        },
+        {
+          "label": "C",
+          "text": "'have'"
+        },
+        {
+          "label": "D",
+          "text": "'would'"
+        }
+      ],
+      "answer": "B",
+      "solution": "**Why:** 'Was about to' means you were on the very point of doing it: 'I was about to call you!'.\n\n**Distractor analysis:**\n\n- **(A)** 'will call you' is a plain future and does not capture 'I was just on the point of it'. Misconception: using the future for an action you were about to perform.\n- **(C)** 'I have call you' is ungrammatical. Misconception: pairing 'have' with a bare base verb.\n- **(D)** 'I would call you' does not fit this sudden coincidence. Misconception: using 'would' for a past intention on the point of action.\n\n**Principle:** 'Was/were about to' expresses being on the very point of doing something.\n\n**Intuition hook:** One second from doing it – 'I was about to call you'.",
+      "topics": [
+        "Grammar > Verb Tenses > Complete the Context"
+      ],
+      "fields": {
+        "Task type": "Choose the context",
+        "Section": "C",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Was about to' for imminent past intention"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 37
+      }
+    },
+    {
+      "id": "q59",
+      "number": "59",
+      "type": "open",
+      "stem": "Explain the difference in meaning between: (1) 'By June, I will have written three chapters.' (2) 'By June, I will have been writing for six months.'",
+      "answer": "(1) The future perfect simple emphasises a completed result or quantity: three finished chapters by June. (2) The future perfect continuous emphasises the duration of the ongoing activity up to June (how long I will have been writing), without naming a finished amount.",
+      "solution": "**Why:** The future perfect simple counts a completed achievement; the future perfect continuous measures the length of the activity leading up to the future point.\n\n**Distractor analysis:**\n\n- Treating them as the same misses that one states a finished quantity and the other stresses how long the activity has been going on. Misconception: assuming the simple and continuous perfect futures mean the same.\n\n**Principle:** Future perfect simple = completed result by a point; future perfect continuous = duration of activity up to a point.\n\n**Intuition hook:** Three chapters done (result) vs. six months of writing (duration).",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future perfect simple vs. continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 10,
+        "key_page": 37
+      }
+    },
+    {
+      "id": "q60",
+      "number": "60",
+      "type": "open",
+      "stem": "Are both acceptable? If so, how do they differ? (1) 'I think it'll snow tonight.' (2) 'It's going to snow tonight.'",
+      "answer": "Both are acceptable predictions. (1) 'will' (with 'I think') is a prediction based on personal opinion or belief. (2) 'going to' is a prediction based on present evidence – the sky, the temperature, the forecast you can see now. Which is better depends on whether you are simply guessing or reading visible signs.",
+      "solution": "**Why:** 'Will' and 'be going to' both predict, but 'going to' typically points to evidence in the present, while 'will' often expresses a belief or opinion.\n\n**Distractor analysis:**\n\n- Saying only one is correct misses that both predict; the difference is the basis (opinion vs. evidence). Misconception: thinking one future form is 'right' and the other 'wrong' for all predictions.\n\n**Principle:** 'Will' predicts from belief/opinion; 'be going to' predicts from present evidence.\n\n**Intuition hook:** Guessing? 'I think it'll snow.' Reading the sky? 'It's going to snow.'",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Are both acceptable?",
+        "Section": "D",
+        "Difficulty rating": 7,
+        "Cognitive skill": "'Will' vs. 'going to' for predictions"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 11,
+        "key_page": 38
+      }
+    },
+    {
+      "id": "q61",
+      "number": "61",
+      "type": "open",
+      "stem": "Both are correct. Explain the difference in meaning: (1) 'She always helps with the washing-up.' (2) 'She's always helping with the washing-up.'",
+      "answer": "(1) The simple present states a plain, neutral habit – a regular fact. (2) The present continuous with 'always' presents a repeated action the speaker finds notable, adding an emotional colour (here, admiration; in other contexts, irritation). It highlights the frequency as remarkable rather than merely stating it.",
+      "solution": "**Why:** 'Always' with the simple present is a neutral habit; 'always' with the continuous adds the speaker's attitude to a repeated action.\n\n**Distractor analysis:**\n\n- Treating them as identical misses the attitude the continuous adds. Misconception: assuming 'always' works the same with the simple present and the continuous.\n\n**Principle:** Simple present + 'always' = neutral habit; continuous + 'always' = a repeated action coloured by the speaker's feeling.\n\n**Intuition hook:** 'Always helps' is a fact; 'is always helping' carries a feeling about it.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'Always' with simple vs. continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 11,
+        "key_page": 38
+      }
+    },
+    {
+      "id": "q62",
+      "number": "62",
+      "type": "mcq_multi",
+      "stem": "Select ALL the sentences that are correct English. (More than one may be right.)",
+      "options": [
+        {
+          "label": "A",
+          "text": "'I have known him since we were at school together.'"
+        },
+        {
+          "label": "B",
+          "text": "'I have known him for we were at school together.'"
+        },
+        {
+          "label": "C",
+          "text": "'I know him since many years.'"
+        },
+        {
+          "label": "D",
+          "text": "'I have known him for many years.'"
+        }
+      ],
+      "answer": [
+        "A",
+        "D"
+      ],
+      "solution": "**Why:** (A) uses 'since' + a past starting point (a clause) with the present perfect; (D) uses 'for' + a length of time with the present perfect. Both are standard.\n\n**Distractor analysis:**\n\n- **(B)** 'for' cannot introduce a clause ('for we were...'); it should be 'since'. Misconception: confusing 'for' (duration) with 'since' (starting point).\n- **(C)** 'know' (simple present) with 'since' is wrong, and 'since many years' should be 'for many years'. Misconception: using the simple present with 'since', and 'since' with a duration.\n\n**Principle:** Present perfect + 'since' (a point) or 'for' (a duration); 'since' can take a clause, 'for' cannot.\n\n**Intuition hook:** 'Since we were at school' (point) and 'for many years' (duration) – both with 'have known'.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Choose ALL correct answers",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'Since' vs. 'for' with the present perfect"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 11,
+        "key_page": 38
+      }
+    },
+    {
+      "id": "q63",
+      "number": "63",
+      "type": "open",
+      "stem": "Explain how the meaning changes across these three: (1) 'When she arrived, he made coffee.' (2) 'When she arrived, he had made coffee.' (3) 'When she arrived, he had been making coffee.'",
+      "answer": "(1) Simple past: he made the coffee at or after she arrived (sequence: she arrives, then he makes it). (2) Past perfect: the coffee was already made before she arrived (finished earlier). (3) Past perfect continuous: he had been in the middle of making coffee for some time before she arrived – the emphasis is on the ongoing activity leading up to her arrival, which may not have been finished.",
+      "solution": "**Why:** The three forms locate the coffee-making differently: after the arrival, finished before it, or ongoing before it.\n\n**Distractor analysis:**\n\n- Blurring the three loses the 'after / finished-before / ongoing-before' distinctions. Misconception: assuming the past perfect and its continuous change nothing.\n\n**Principle:** Simple past = next action; past perfect = completed earlier; past perfect continuous = ongoing before a past point.\n\n**Intuition hook:** Made it after she came / already made / was in the middle of making.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Three past-time contrasts"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 11,
+        "key_page": 39
+      }
+    },
+    {
+      "id": "q64",
+      "number": "64",
+      "type": "open",
+      "stem": "Both are natural. Explain the different emphasis: (1) 'I've cleaned the kitchen.' (2) 'I've been cleaning the kitchen.'",
+      "answer": "(1) The present perfect simple focuses on the completed result: the kitchen is now clean. (2) The present perfect continuous focuses on the activity and the time spent – which might explain why I'm tired or why it still looks messy; it does not necessarily mean the job is finished.",
+      "solution": "**Why:** The simple perfect reports the finished outcome; the continuous perfect stresses the process and its recent effects.\n\n**Distractor analysis:**\n\n- Saying they mean the same misses the result-versus-process difference. Misconception: treating the perfect simple and continuous as interchangeable.\n\n**Principle:** Present perfect simple = completed result; present perfect continuous = the activity and its effects.\n\n**Intuition hook:** 'I've cleaned it' (it's done) vs. 'I've been cleaning it' (that's what I've been doing).",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Are both acceptable?",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Perfect simple vs. continuous emphasis"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 11,
+        "key_page": 39
+      }
+    },
+    {
+      "id": "q65",
+      "number": "65",
+      "type": "open",
+      "stem": "Two of these describe a repeated past habit; one does not fit. Explain each. (1) 'Every summer, we used to visit our grandparents.' (2) 'Every summer, we would visit our grandparents.' (3) 'Every summer, we were visiting our grandparents.'",
+      "answer": "(1) and (2) both correctly describe a repeated past habit; for repeated past ACTIONS like this, 'used to' and 'would' are interchangeable. (3) The past continuous does not fit a regular yearly routine – it suggests a single action in progress, not a repeated habit, so it sounds wrong here.",
+      "solution": "**Why:** 'Used to' and 'would' both express repeated past actions; the past continuous is for an action in progress, not a habit.\n\n**Distractor analysis:**\n\n- Accepting (3) as a habit misuses the past continuous. Misconception: thinking the past continuous can express a repeated routine.\n\n**Principle:** Repeated past actions take 'used to' or 'would'; the past continuous marks an action in progress, not a habit.\n\n**Intuition hook:** 'Used to visit' / 'would visit' = the routine; 'were visiting' = one moment, not a habit.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Used to' / 'would' / past continuous for habits"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 12,
+        "key_page": 39
+      }
+    },
+    {
+      "id": "q66",
+      "number": "66",
+      "type": "mcq_multi",
+      "stem": "The plan is already fixed: dinner with friends at eight tonight. Select ALL the natural ways to state this arrangement.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'We are having dinner with friends at eight tonight.'"
+        },
+        {
+          "label": "B",
+          "text": "'We have dinner with friends at eight tonight.'"
+        },
+        {
+          "label": "C",
+          "text": "'We are going to have dinner with friends at eight tonight.'"
+        },
+        {
+          "label": "D",
+          "text": "'We had dinner with friends at eight tonight.'"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "solution": "**Why:** (A) uses the present continuous for a fixed personal arrangement; (C) uses 'going to' for a plan/intention. Both naturally express an arranged future event.\n\n**Distractor analysis:**\n\n- **(B)** The simple present ('We have dinner...') is for timetables and public schedules, not a one-off social arrangement. Misconception: using the timetable present for a personal plan.\n- **(D)** 'We had dinner' is the simple past, which cannot describe a future plan. Misconception: using the past for a future arrangement.\n\n**Principle:** Fixed future arrangements use the present continuous or 'going to', not the simple present or the past.\n\n**Intuition hook:** 'We're having dinner at eight' / 'We're going to have dinner at eight' – both work.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Choose ALL correct answers",
+        "Section": "D",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Expressing a fixed future arrangement"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 12,
+        "key_page": 40
+      }
+    },
+    {
+      "id": "q67",
+      "number": "67",
+      "type": "open",
+      "stem": "Both are grammatical and both refer to the present. Explain the difference in tone: (1) 'Do you want to leave a message?' (2) 'Did you want to leave a message?'",
+      "answer": "Both ask about the present moment. (2) uses the past ('did') as a softening, distancing device: it sounds slightly more tentative, gentle or deferential (common in polite service situations), without referring to past time. (1) is neutral and direct. The past form does not mean the wanting happened earlier – it simply makes the question more polite.",
+      "solution": "**Why:** A past form can soften a present question, adding politeness rather than shifting the time.\n\n**Distractor analysis:**\n\n- Reading (2) as 'past time' misses that the past here is a politeness device. Misconception: assuming a past-form verb always refers to past time.\n\n**Principle:** The past can be used for politeness/tentativeness, not just for past time.\n\n**Intuition hook:** 'Did you want...?' is gentler now, not earlier – the past softens the ask.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Past for politeness/tentativeness"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 12,
+        "key_page": 40
+      }
+    },
+    {
+      "id": "q68",
+      "number": "68",
+      "type": "open",
+      "stem": "Explain how the meaning differs: (1) 'If you heat ice, it melts.' (2) 'If you heated the sun's core further, it would shine even brighter.'",
+      "answer": "(1) is a zero conditional (if + present, present result): a general or scientific truth that is always the case. (2) is a second conditional (if + past, would + base): a hypothetical, imagined situation and its imagined result. The past tense in (2) signals unreality, not past time.",
+      "solution": "**Why:** The zero conditional states an always-true fact; the second conditional imagines an unreal or unlikely situation, using the past to mark unreality.\n\n**Distractor analysis:**\n\n- Reading the past in (2) as past time misses that it marks a hypothetical. Misconception: assuming 'if + past' must refer to the past.\n\n**Principle:** Zero conditional = general truth (present/present); second conditional = unreal present/future (past/would).\n\n**Intuition hook:** Ice always melts (fact) vs. an imagined 'what if' (hypothesis).",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Zero vs. second conditional"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 12,
+        "key_page": 40
+      }
+    },
+    {
+      "id": "q69",
+      "number": "69",
+      "type": "mcq_multi",
+      "stem": "Select ALL the sentences that are correct. (More than one may be right.)",
+      "options": [
+        {
+          "label": "A",
+          "text": "'I'm thinking you're right.'"
+        },
+        {
+          "label": "B",
+          "text": "'I think you're right.'"
+        },
+        {
+          "label": "C",
+          "text": "'I'm thinking about your offer.'"
+        },
+        {
+          "label": "D",
+          "text": "'I think about my future a lot.'"
+        }
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "solution": "**Why:** (B) 'think' meaning 'hold an opinion' is stative, so the simple present is correct. (C) 'think about' meaning 'consider' is a dynamic activity, so the continuous is fine. (D) 'think about' as a repeated activity takes the simple present. All three are standard.\n\n**Distractor analysis:**\n\n- **(A)** 'think' meaning 'hold the opinion' is stative and cannot be continuous; it should be 'I think you're right'. Misconception: using the continuous for the opinion sense of 'think'.\n\n**Principle:** 'Think' = have an opinion (stative, no continuous); 'think about' = consider (dynamic, continuous allowed).\n\n**Intuition hook:** 'I think you're right' (opinion) vs. 'I'm thinking about it' (considering).",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Choose ALL correct answers",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Dynamic vs. stative 'think'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 12,
+        "key_page": 41
+      }
+    },
+    {
+      "id": "q70",
+      "number": "70",
+      "type": "open",
+      "stem": "Both are correct. Does the past perfect change anything here? (1) 'After the guests left, she tidied up.' (2) 'After the guests had left, she tidied up.'",
+      "answer": "The meaning is essentially the same, because 'after' already makes the order clear (the guests left first). Version (2) with the past perfect slightly emphasises that the leaving was fully completed before the tidying, but both are natural and mean the same sequence. This shows the past perfect is optional – not required – when a word like 'after' already signals the order.",
+      "solution": "**Why:** When 'after' (or 'before') already fixes the sequence, the past perfect becomes optional and adds only slight emphasis.\n\n**Distractor analysis:**\n\n- Insisting the past perfect is required here overlooks that 'after' already orders the events. Misconception: believing the past perfect is always needed for two past events.\n\n**Principle:** The past perfect is optional when 'after'/'before' already makes the order clear.\n\n**Intuition hook:** 'After' already tells the order – the past perfect is a small extra, not a must.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Are both acceptable?",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Optional past perfect after 'after'"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 13,
+        "key_page": 41
+      }
+    },
+    {
+      "id": "q71",
+      "number": "71",
+      "type": "open",
+      "stem": "Explain what each suggests about the future: (1) 'I'll help you move house.' (2) 'I'm helping Sam move house on Saturday.' (3) 'I'm going to help more people this year.'",
+      "answer": "(1) 'will' = an offer or a decision made at the moment of speaking. (2) present continuous = a fixed arrangement already made, with a specific time. (3) 'going to' = an intention or plan formed beforehand, but not a fixed appointment. Each future form signals a different kind of futurity: spontaneous offer, firm arrangement, or general intention.",
+      "solution": "**Why:** 'Will' for on-the-spot decisions/offers, the present continuous for fixed arrangements, and 'going to' for intentions.\n\n**Distractor analysis:**\n\n- Treating the three as interchangeable misses the offer/arrangement/intention distinctions. Misconception: assuming all future forms mean the same.\n\n**Principle:** 'Will' = decision now; present continuous = fixed arrangement; 'going to' = intention/plan.\n\n**Intuition hook:** Deciding now / already arranged / intending to – three different futures.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Compare the sentences",
+        "Section": "D",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Three future forms distinguished"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 13,
+        "key_page": 41
+      }
+    },
+    {
+      "id": "q72",
+      "number": "72",
+      "type": "mcq_multi",
+      "stem": "A student is telling a story about the past. Select ALL the sentences that are grammatically consistent and correct.",
+      "options": [
+        {
+          "label": "A",
+          "text": "'I was walking home when I saw a strange light.'"
+        },
+        {
+          "label": "B",
+          "text": "'I walked home when I was seeing a strange light.'"
+        },
+        {
+          "label": "C",
+          "text": "'I had walked home before the light appeared.'"
+        },
+        {
+          "label": "D",
+          "text": "'I walk home when I saw a strange light.'"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "solution": "**Why:** (A) uses the past continuous for the background and the simple past for the interrupting event. (C) uses the past perfect for the earlier action and the simple past for the later one. Both are correct.\n\n**Distractor analysis:**\n\n- **(B)** This reverses the logic: 'was seeing' (a stative verb in the continuous, and wrongly used as the sudden event) with 'walked' as the background. Misconception: swapping background and event, plus a stative continuous.\n- **(D)** 'walk' (present) with 'saw' (past) breaks tense consistency. Misconception: mixing present and past in one past narrative.\n\n**Principle:** Combine past continuous (background) with simple past (event), or past perfect (earlier) with simple past (later) – consistently.\n\n**Intuition hook:** 'Was walking when I saw' and 'had walked before it appeared' both hold together.",
+      "topics": [
+        "Grammar > Verb Tenses > Compare the Sentences"
+      ],
+      "fields": {
+        "Task type": "Choose ALL correct answers",
+        "Section": "D",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Consistent narrative tense combinations"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 13,
+        "key_page": 42
+      }
+    },
+    {
+      "id": "q73",
+      "number": "73",
+      "type": "open",
+      "stem": "A student writes: 'I have finished the project two days ago.' Explain why this is wrong and what it should be.",
+      "answer": "'Two days ago' is a specific, finished past time. The present perfect cannot be used with a finished-time expression, because it links an action to the present and deliberately avoids naming a past moment. The sentence must use the simple past: 'I finished the project two days ago.'",
+      "solution": "**Why:** The present perfect and a finished-time marker like 'ago' cannot combine; a named past time forces the simple past.\n\n**Distractor analysis:**\n\n- Keeping the present perfect with 'ago' breaks the core rule. Misconception: thinking the present perfect can carry a specific past-time expression.\n\n**Principle:** The present perfect never takes a finished-time marker such as 'ago'; use the simple past.\n\n**Intuition hook:** 'Ago' names a past moment – that demands 'I finished'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Present perfect vs. finished time"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 13,
+        "key_page": 42
+      }
+    },
+    {
+      "id": "q74",
+      "number": "74",
+      "type": "open",
+      "stem": "Explain why 'I am not believing a word he says' is unnatural, and give the correct form.",
+      "answer": "'Believe' is a stative verb – it describes a mental state, not a deliberate action – so it does not normally take the continuous. The correct form is: 'I don't believe a word he says.'",
+      "solution": "**Why:** Stative verbs resist the continuous because there is no 'action in progress' to picture; they stay in the simple present.\n\n**Distractor analysis:**\n\n- Keeping the continuous treats a state of mind as an ongoing action. Misconception: using '-ing' with mental-state verbs.\n\n**Principle:** Stative verbs of belief and thought stay in the simple present, not the continuous.\n\n**Intuition hook:** Believing is a state, not an act – 'I don't believe him'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Stative verb + continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 13,
+        "key_page": 42
+      }
+    },
+    {
+      "id": "q75",
+      "number": "75",
+      "type": "open",
+      "stem": "Explain why the past perfect is inappropriate in: 'Yesterday I had gone to the market and had bought some fruit.' Rewrite it correctly.",
+      "answer": "The past perfect is only needed to show that one past action happened before another past reference point. Here the two actions are simply a sequence at a plain past time ('yesterday'), with nothing earlier to relate them to, so both should be simple past: 'Yesterday I went to the market and bought some fruit.'",
+      "solution": "**Why:** With no second, later past point to anchor it, the past perfect is overused; a plain past sequence takes the simple past.\n\n**Distractor analysis:**\n\n- Keeping the past perfect for a simple sequence is overuse. Misconception: using the past perfect whenever actions come one after another, even without an earlier reference point.\n\n**Principle:** Use the past perfect only for an action earlier than another past point; otherwise use the simple past.\n\n**Intuition hook:** Nothing earlier to point back to – just 'I went and bought'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Past perfect overuse"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 14,
+        "key_page": 43
+      }
+    },
+    {
+      "id": "q76",
+      "number": "76",
+      "type": "open",
+      "stem": "Explain the error in: 'I will phone you when I will arrive at the hotel.' What is the rule?",
+      "answer": "English does not use 'will' in a time clause introduced by 'when' (also 'as soon as', 'until', 'before'). The time clause takes the simple present, even though it refers to the future: 'I will phone you when I arrive at the hotel.'",
+      "solution": "**Why:** The main clause keeps 'will', but the 'when' clause uses the simple present for future meaning.\n\n**Distractor analysis:**\n\n- Keeping 'will' in the 'when' clause doubles the future marker. Misconception: using 'will' in both clauses because both actions are in the future.\n\n**Principle:** No 'will' in a time clause; the time clause takes the simple present.\n\n**Intuition hook:** 'When I arrive', not 'when I will arrive' – the time clause stays present.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 7,
+        "Cognitive skill": "No 'will' in time clauses"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 14,
+        "key_page": 43
+      }
+    },
+    {
+      "id": "q77",
+      "number": "77",
+      "type": "open",
+      "stem": "The sentence 'She is resembling her mother more and more.' is sometimes heard, but many consider it unnatural. Explain the issue and give the preferred form.",
+      "answer": "'Resemble' is normally a stative verb – it describes a fixed similarity, not an action being performed – so the continuous sounds odd to most speakers. The preferred, standard form uses the simple present: 'She resembles her mother more and more.' The phrase 'more and more' already conveys the developing change without needing the continuous.",
+      "solution": "**Why:** Even when a situation is changing, a stative verb like 'resemble' expresses the change in the simple present.\n\n**Distractor analysis:**\n\n- Keeping the continuous forces a stative verb into an action form. Misconception: assuming a developing change ('more and more') requires the continuous, even with a stative verb.\n\n**Principle:** Stative verbs stay in the simple present even when describing a gradual change.\n\n**Intuition hook:** 'Resembles more and more' – the state changes, but the verb stays simple.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Stative verb 'resemble' + continuous"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 14,
+        "key_page": 43
+      }
+    },
+    {
+      "id": "q78",
+      "number": "78",
+      "type": "open",
+      "stem": "In 'By the time the film ends, we \\_\\_\\_ here for three hours', a student picks 'will sit'. Explain why 'will sit' is weaker than 'will have sat' (or 'will have been sitting').",
+      "answer": "'Will sit' merely places the sitting in the future; it does not connect it to the future point 'by the time the film ends'. To show that the three hours will be complete by that future moment, English uses the future perfect: 'we will have sat here for three hours' (or, stressing the ongoing duration, 'will have been sitting').",
+      "solution": "**Why:** 'By the time' + a future point calls for the future perfect, which links a completed span to that moment; the simple future does not.\n\n**Distractor analysis:**\n\n- Choosing 'will sit' ignores the 'by the time... for three hours' framing. Misconception: using the simple future where completion up to a future point is meant.\n\n**Principle:** Use the future perfect for a span completed by a future point ('by the time...').\n\n**Intuition hook:** Three hours done by then – 'we will have sat here for three hours'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future perfect for completion by a future point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 14,
+        "key_page": 43
+      }
+    },
+    {
+      "id": "q79",
+      "number": "79",
+      "type": "open",
+      "stem": "Explain why this reported sentence is wrong, assuming she is now fully recovered: 'She said that she is feeling ill, so she went home early yesterday.'",
+      "answer": "The reporting verb 'said' is in the past, and because she is no longer ill, the reported clause should backshift to the past: 'She said that she was feeling ill ...'. Keeping the present 'is feeling' wrongly suggests the illness is still true now.",
+      "solution": "**Why:** After a past reporting verb, the reported clause normally backshifts; keeping the present implies the statement is still currently true.\n\n**Distractor analysis:**\n\n- Leaving 'is feeling' after 'said' fails to backshift and misrepresents the illness as ongoing. Misconception: not shifting a reported present to the past after a past reporting verb.\n\n**Principle:** After a past reporting verb, backshift the reported clause to the past (unless it is still true now).\n\n**Intuition hook:** She's better now – 'she said she was feeling ill', not 'is feeling'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Backshift after a past reporting verb"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 14,
+        "key_page": 44
+      }
+    },
+    {
+      "id": "q80",
+      "number": "80",
+      "type": "open",
+      "stem": "A student writes: 'I have been breaking my phone screen.' Explain why this is wrong and what tense is needed.",
+      "answer": "Breaking a phone screen is a single, complete event with a clear result, not an ongoing or repeated activity, so the present perfect continuous (which stresses duration or repetition) does not fit. The present perfect simple is correct: 'I have broken my phone screen.'",
+      "solution": "**Why:** The continuous perfect emphasises activity over time; a one-off completed action takes the simple perfect.\n\n**Distractor analysis:**\n\n- Using the continuous for a single completed break wrongly implies an ongoing activity. Misconception: using the perfect continuous for a punctual, finished event.\n\n**Principle:** Use the present perfect simple for a single completed action; the continuous is for ongoing/repeated activity.\n\n**Intuition hook:** One break, one result – 'I have broken it', not 'been breaking'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Perfect simple for a single completed action"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 15,
+        "key_page": 44
+      }
+    },
+    {
+      "id": "q81",
+      "number": "81",
+      "type": "open",
+      "stem": "Explain why 'When I was younger, I would love horror films' sounds wrong to many, and give a better version.",
+      "answer": "'Love' is a stative verb (a feeling, not an action), and 'would' for past habits works with repeated ACTIONS, not with states or feelings. A past feeling is better expressed with 'used to': 'When I was younger, I used to love horror films.'",
+      "solution": "**Why:** 'Would' for past habits needs a repeatable action; stative feelings take 'used to' instead.\n\n**Distractor analysis:**\n\n- Using 'would' with 'love' applies it to a stative feeling. Misconception: assuming 'would' and 'used to' are interchangeable, even for states.\n\n**Principle:** For past states and feelings, use 'used to', not 'would'.\n\n**Intuition hook:** A past feeling is a state – 'I used to love them', not 'would love'.",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Used to' vs. 'would' with a stative verb"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 15,
+        "key_page": 44
+      }
+    },
+    {
+      "id": "q82",
+      "number": "82",
+      "type": "open",
+      "stem": "Explain why the present perfect is correct in 'I haven't seen her this week' but the simple past is correct in 'I didn't see her last week.'",
+      "answer": "'This week' is an unfinished period that still includes the present moment, so it takes the present perfect ('haven't seen'), leaving open the chance of seeing her before the week ends. 'Last week' is a finished period with no connection to now, so it takes the simple past ('didn't see'). The choice depends on whether the time period is still open or already closed.",
+      "solution": "**Why:** An unfinished time period (still ongoing) takes the present perfect; a finished period takes the simple past.\n\n**Distractor analysis:**\n\n- Using the same tense for both ignores whether the period is open or closed. Misconception: not distinguishing unfinished from finished time periods.\n\n**Principle:** Unfinished period (includes now) → present perfect; finished period → simple past.\n\n**Intuition hook:** 'This week' is still open (have/haven't); 'last week' is closed (did/didn't).",
+      "topics": [
+        "Grammar > Verb Tenses > Explain the Reasoning"
+      ],
+      "fields": {
+        "Task type": "Explain the error",
+        "Section": "E",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Finished vs. unfinished time periods"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 15,
+        "key_page": 45
+      }
+    },
+    {
+      "id": "q83",
+      "number": "83",
+      "type": "open",
+      "stem": "Rewrite so the meaning stays the same, beginning with 'I haven't': 'The last time I ate sushi was three years ago.'",
+      "answer": "I haven't eaten sushi for three years. (Also acceptable: 'I haven't eaten sushi since three years ago.')",
+      "solution": "**Why:** 'The last time ... was three years ago' means the eating has not happened in the three years since; that gap up to now is expressed with the present perfect + 'for': 'I haven't eaten sushi for three years'.\n\n**Distractor analysis:**\n\n- Writing 'I haven't eaten sushi since three years' is wrong ('since' needs a point, not a duration). Misconception: pairing 'since' with a length of time instead of 'for'.\n\n**Principle:** A gap of time up to now is expressed with the present perfect + 'for' (a duration) or 'since' (a point).\n\n**Intuition hook:** Three years with none – 'I haven't eaten sushi for three years'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 8,
+        "Cognitive skill": "'Last time' → present perfect + for/since"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 15,
+        "key_page": 45
+      }
+    },
+    {
+      "id": "q84",
+      "number": "84",
+      "type": "open",
+      "stem": "Rewrite with the same meaning, using 'used to': 'I played the violin as a child, but I don't any more.'",
+      "answer": "I used to play the violin (as a child).",
+      "solution": "**Why:** 'Used to' expresses a past habit or state that is no longer true, which captures both halves of the original ('I played ... but not any more').\n\n**Distractor analysis:**\n\n- Writing 'I was playing the violin' (past continuous) describes one moment, not a discontinued habit. Misconception: using the past continuous for a former habit.\n\n**Principle:** 'Used to + base verb' expresses a past habit or state that has stopped.\n\n**Intuition hook:** Did it then, not now – 'I used to play the violin'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 7,
+        "Cognitive skill": "'Used to' for a discontinued habit"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 45
+      }
+    },
+    {
+      "id": "q85",
+      "number": "85",
+      "type": "open",
+      "stem": "Combine into one sentence using 'by the time', keeping the meaning: 'The train left. Then we got to the platform.'",
+      "answer": "By the time we got to the platform, the train had (already) left.",
+      "solution": "**Why:** The train's departure happened before we arrived, so the earlier event takes the past perfect, and 'by the time' introduces the later point: 'By the time we got to the platform, the train had left'.\n\n**Distractor analysis:**\n\n- Writing 'By the time we got to the platform, the train left' loses the clear 'earlier' marking. Misconception: using the simple past for the earlier of two past events after 'by the time'.\n\n**Principle:** 'By the time' + a past point takes the past perfect for the action completed earlier.\n\n**Intuition hook:** Gone before we arrived – 'the train had left'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Sequencing with 'by the time' + past perfect"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 46
+      }
+    },
+    {
+      "id": "q86",
+      "number": "86",
+      "type": "open",
+      "stem": "Rewrite beginning with 'By 2030', keeping the meaning: 'I will finish my studies before 2030.'",
+      "answer": "By 2030, I will have finished my studies.",
+      "solution": "**Why:** Finishing before a future point is expressed with the future perfect: 'By 2030, I will have finished my studies'.\n\n**Distractor analysis:**\n\n- Writing 'By 2030, I will finish my studies' does not clearly express completion before that point. Misconception: using the simple future where the future perfect marks completion by a future point.\n\n**Principle:** Use the future perfect for completion before a stated future point.\n\n**Intuition hook:** Done before then – 'I will have finished by 2030'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Future perfect for completion by a point"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 46
+      }
+    },
+    {
+      "id": "q87",
+      "number": "87",
+      "type": "open",
+      "stem": "Report this speech, beginning 'She said that': 'I am tired and I will go home early.' (She said this yesterday.)",
+      "answer": "She said that she was tired and (that) she would go home early.",
+      "solution": "**Why:** After the past reporting verb 'said', the present 'am' backshifts to 'was', and 'will' backshifts to 'would': 'She said that she was tired and would go home early'.\n\n**Distractor analysis:**\n\n- Writing 'She said that she is tired and will go home early' keeps present/future forms after a past reporting verb. Misconception: not backshifting 'am' and 'will' in reported speech.\n\n**Principle:** After a past reporting verb, 'am' → 'was' and 'will' → 'would'.\n\n**Intuition hook:** Reported in the past – 'she was tired and would go home'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Backshifting in reported speech"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 46
+      }
+    },
+    {
+      "id": "q88",
+      "number": "88",
+      "type": "open",
+      "stem": "Rewrite as one sentence with the same meaning, using 'for': 'I started learning Spanish two years ago and I am still learning it.'",
+      "answer": "I have been learning Spanish for two years.",
+      "solution": "**Why:** An activity that began in the past and is still going on is expressed with the present perfect continuous + 'for': 'I have been learning Spanish for two years'.\n\n**Distractor analysis:**\n\n- Writing 'I am learning Spanish for two years' (present continuous) cannot express the two-year span reaching now. Misconception: using the plain present continuous for a duration up to the present.\n\n**Principle:** Use the present perfect continuous + 'for' for an activity continuing from the past to now.\n\n**Intuition hook:** Started then, still going – 'I have been learning for two years'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Present perfect continuous for continuing activity"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 46
+      }
+    },
+    {
+      "id": "q89",
+      "number": "89",
+      "type": "open",
+      "stem": "Express the same idea as an 'if' sentence: 'I didn't know you were in hospital, so I didn't visit you.'",
+      "answer": "If I had known you were in hospital, I would have visited you.",
+      "solution": "**Why:** A past situation that did not happen is expressed with the third conditional: 'if + past perfect' in the condition, and 'would have + past participle' in the result.\n\n**Distractor analysis:**\n\n- Writing 'If I knew you were in hospital, I would visit you' describes a present/future hypothetical, not the finished past. Misconception: using the second conditional for a past unreal situation.\n\n**Principle:** A past unreal situation takes the third conditional (if + past perfect, would have + participle).\n\n**Intuition hook:** A different past imagined – 'if I had known, I would have visited'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Third conditional for a past unreal situation"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 47
+      }
+    },
+    {
+      "id": "q90",
+      "number": "90",
+      "type": "open",
+      "stem": "Rewrite using the present continuous for a fixed arrangement, keeping the time: 'I intend to meet the lawyer at ten tomorrow (it is all arranged).'",
+      "answer": "I am meeting the lawyer at ten tomorrow.",
+      "solution": "**Why:** A fixed future arrangement with a set time is naturally expressed with the present continuous: 'I am meeting the lawyer at ten tomorrow'.\n\n**Distractor analysis:**\n\n- Writing 'I meet the lawyer at ten tomorrow' (simple present) suits a timetable of public events, not a personal arrangement. Misconception: using the timetable present for a personal fixed plan.\n\n**Principle:** Use the present continuous for a fixed personal arrangement with a set time.\n\n**Intuition hook:** Booked and set – 'I am meeting the lawyer at ten'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Present continuous for a fixed arrangement"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 47
+      }
+    },
+    {
+      "id": "q91",
+      "number": "91",
+      "type": "open",
+      "stem": "Rewrite with the same meaning, beginning 'It is the first time': 'I have never driven on the motorway before today.'",
+      "answer": "It is the first time (that) I have driven on the motorway.",
+      "solution": "**Why:** 'I have never done X before' is equivalent to the pattern 'It is the first time (that) I have done X': 'It is the first time I have driven on the motorway'.\n\n**Distractor analysis:**\n\n- Writing 'It is the first time I drive/drove on the motorway' breaks the pattern, which requires the present perfect. Misconception: using the simple present or past after 'It is the first time'.\n\n**Principle:** 'It is the first time (that) + present perfect' is the standard pattern.\n\n**Intuition hook:** Never before = 'It is the first time I have driven'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'First time' + present perfect transformation"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 16,
+        "key_page": 47
+      }
+    },
+    {
+      "id": "q92",
+      "number": "92",
+      "type": "open",
+      "stem": "Express the same regret using 'I wish': 'I'm sorry now that I didn't save more money last year.'",
+      "answer": "I wish I had saved more money last year.",
+      "solution": "**Why:** A regret about a finished past action is expressed with 'wish' + past perfect: 'I wish I had saved more money last year'.\n\n**Distractor analysis:**\n\n- Writing 'I wish I saved more money' (simple past) would express a present/general wish, not regret about the finished past 'last year'. Misconception: using the simple past after 'wish' for a past regret.\n\n**Principle:** 'Wish' + past perfect expresses regret about the past.\n\n**Intuition hook:** Regretting last year now – 'I wish I had saved more'.",
+      "topics": [
+        "Grammar > Verb Tenses > Rewrite Without Changing Meaning"
+      ],
+      "fields": {
+        "Task type": "Rewrite (keep the meaning)",
+        "Section": "F",
+        "Difficulty rating": 9,
+        "Cognitive skill": "'Wish' + past perfect for regret"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 17,
+        "key_page": 47
+      }
+    },
+    {
+      "id": "q93",
+      "number": "93",
+      "type": "open",
+      "stem": "This paragraph has THREE tense errors. Find each and write the correction. 'Last summer, we decide to hike up Mount Snowdon. We set off early because the forecast was poor. While we climb, thick clouds rolled in, and by the time we reached the top, the wind has become dangerously strong.'",
+      "answer": "(1) 'decide' → 'decided'; (2) 'climb' → 'were climbing'; (3) 'has become' → 'had become'.",
+      "solution": "**Why:** (1) The story is in the past, so 'decide' must be 'decided'. (2) The clouds rolled in during the ongoing climb, so the background action takes the past continuous 'were climbing'. (3) 'By the time we reached the top' is a past point, and the wind had strengthened before it, so the past perfect 'had become' is needed (the present perfect 'has become' breaks the past frame).\n\n**Distractor analysis:**\n\n- Leaving 'decide', 'climb' and 'has become' produces a present-tense slip, a missing background continuous, and a present-perfect intrusion into a past narrative. Misconceptions: shifting to the present in a past story; using the simple present for a background action; using the present perfect where the past perfect is required.\n\n**Principle:** Keep a past narrative consistent: simple past for events, past continuous for background, past perfect for the earlier action.\n\n**Intuition hook:** Decided, were climbing, had become – three fixes to keep it all in the past.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Multi-error narrative editing"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 17,
+        "key_page": 48
+      }
+    },
+    {
+      "id": "q94",
+      "number": "94",
+      "type": "open",
+      "stem": "This email contains TWO tense errors. Identify and correct them. 'Dear Ms Roberts, I write to confirm that I have received your parcel last Tuesday. I am currently checking the contents and will contact you again as soon as I will have finished. Kind regards, Sam.'",
+      "answer": "(1) 'have received ... last Tuesday' → 'received ... last Tuesday'; (2) 'as soon as I will have finished' → 'as soon as I have finished'.",
+      "solution": "**Why:** (1) 'Last Tuesday' is a finished past time, so the present perfect must become the simple past 'received'. (2) 'As soon as' introduces a future time clause, which cannot take 'will'; use the present perfect (or simple present) 'have finished'.\n\n**Distractor analysis:**\n\n- Leaving 'have received ... last Tuesday' and 'as soon as I will have finished' breaks the finished-time rule and the no-'will'-in-time-clauses rule. Misconceptions: present perfect with a specific past time; 'will' inside an 'as soon as' clause.\n\n**Principle:** A finished-time marker forces the simple past; a time clause takes the present, not 'will'.\n\n**Intuition hook:** 'Received last Tuesday' and 'as soon as I have finished' – two rules, two fixes.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Email editing (finished time + time clause)"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 17,
+        "key_page": 48
+      }
+    },
+    {
+      "id": "q95",
+      "number": "95",
+      "type": "open",
+      "stem": "This diary entry is mostly correct, but it shifts tense unnecessarily in ONE place. Find the shift and fix it. 'What a strange day. I woke up late and rushed to catch the bus. On the way, I realise I had left my project folder at home. Luckily, my brother brought it to school for me.'",
+      "answer": "'realise' → 'realised'.",
+      "solution": "**Why:** The entry recounts a finished day in the past (woke, rushed, brought), and 'had left' correctly marks the earlier action, so 'realise' must become the simple past 'realised' to keep the narrative consistent.\n\n**Distractor analysis:**\n\n- Leaving 'realise' in the present, or 'correcting' the correct past perfect 'had left', misreads the passage. Misconceptions: shifting into the present mid-narrative; mistaking a correct past perfect for an error.\n\n**Principle:** A past diary entry stays in the past; a correct past perfect is not an error.\n\n**Intuition hook:** One present verb spoils it – 'realise' must be 'realised'.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Detecting a single unnecessary shift"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 17,
+        "key_page": 48
+      }
+    },
+    {
+      "id": "q96",
+      "number": "96",
+      "type": "open",
+      "stem": "In this paragraph, ONE verb is in the wrong tense: the past perfect is used where it is not needed. Find it and give the simple-past correction. 'When the bell rang, the students packed their bags and left the room. The teacher had sighed, gathered her papers, and followed them out.'",
+      "answer": "'had sighed' → 'sighed'.",
+      "solution": "**Why:** The teacher's actions are a simple sequence (sighed, gathered, followed) at the same past time as the rest, with nothing earlier to relate them to, so the past perfect 'had sighed' is overused and should be the simple past 'sighed'.\n\n**Distractor analysis:**\n\n- Keeping 'had sighed' uses the past perfect for an action that is not earlier than another past point. Misconception: using the past perfect inside a plain past sequence.\n\n**Principle:** The past perfect marks an earlier action only; a plain sequence stays in the simple past.\n\n**Intuition hook:** No earlier moment to point to – 'she sighed, gathered, and followed'.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 7,
+        "Cognitive skill": "Spotting past-perfect overuse"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 17,
+        "key_page": 49
+      }
+    },
+    {
+      "id": "q97",
+      "number": "97",
+      "type": "open",
+      "stem": "Find and correct the THREE errors in this passage. 'My grandfather had been a sailor for over thirty years before he retired. He has sailed to every continent and seen things most people only read about. Last year, he has moved to a small cottage by the sea. He is owning a beautiful wooden dinghy, and yesterday he tells me an incredible story about a storm off the coast of Chile.'",
+      "answer": "(1) 'has moved' → 'moved'; (2) 'is owning' → 'owns'; (3) 'tells' → 'told'.",
+      "solution": "**Why:** (1) 'Last year' is a finished time, so 'has moved' must be the simple past 'moved'. (2) 'Own' is a stative verb and cannot take the continuous, so 'is owning' must be 'owns'. (3) 'Yesterday' is a finished time in a past account, so 'tells' must be 'told'. (The opening 'had been ... before he retired' and 'has sailed ... and seen' are both correct.)\n\n**Distractor analysis:**\n\n- Leaving 'has moved', 'is owning' and 'tells' breaks the finished-time rule twice and the stative rule once. Misconceptions: present perfect with 'last year'; continuous with a stative verb of possession; present tense with 'yesterday'.\n\n**Principle:** Finished-time markers force the simple past; stative verbs stay simple, never continuous.\n\n**Intuition hook:** Moved (last year), owns (stative), told (yesterday) – three clean fixes.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Multi-error mixed editing"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 18,
+        "key_page": 49
+      }
+    },
+    {
+      "id": "q98",
+      "number": "98",
+      "type": "open",
+      "stem": "This passage keeps slipping between past and present. Rewrite it so it is entirely in the past tense. 'The stranger enters the room and looks around slowly. Nobody spoke. He walked to the desk, opens the drawer, and takes out a single envelope.'",
+      "answer": "The stranger entered the room and looked around slowly. Nobody spoke. He walked to the desk, opened the drawer, and took out a single envelope.",
+      "solution": "**Why:** Every main verb must be in the past for consistency: enters → entered, looks → looked, opens → opened, takes → took. 'Spoke' and 'walked' are already past and stay unchanged.\n\n**Distractor analysis:**\n\n- Leaving any verb (enters, looks, opens, takes) in the present keeps the passage inconsistent. Misconception: allowing the narrative to drift between present and past.\n\n**Principle:** A narrative must keep one consistent time frame throughout.\n\n**Intuition hook:** Entered, looked, opened, took – move every verb into the past together.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 8,
+        "Cognitive skill": "Converting a passage to consistent past"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 18,
+        "key_page": 49
+      }
+    },
+    {
+      "id": "q99",
+      "number": "99",
+      "type": "open",
+      "stem": "This message has TWO errors. Correct them. 'Hi Priya, Just to let you know: I am going to send the files the moment they are ready. Once I will upload them, I let you know immediately so you can start.'",
+      "answer": "(1) 'Once I will upload them' → 'Once I upload them'; (2) 'I let you know' → 'I will let you know' (or 'I'll let you know').",
+      "solution": "**Why:** (1) 'Once' introduces a future time clause, which cannot take 'will'; use the present 'upload'. (2) The main clause is a promise about the future, so it needs the future 'will let you know', not the simple present 'let'. (The opening 'I am going to send ... the moment they are ready' is correct.)\n\n**Distractor analysis:**\n\n- Leaving 'Once I will upload' and 'I let you know' puts 'will' in the time clause and drops it from the main clause where it belongs. Misconceptions: 'will' inside 'once'; simple present for a future promise in the main clause.\n\n**Principle:** 'Will' goes in the main clause, not the time clause; the time clause takes the present.\n\n**Intuition hook:** 'Once I upload them, I'll let you know' – present in the clause, 'will' in the main.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 9,
+        "Cognitive skill": "Future + time clause in a message"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 18,
+        "key_page": 50
+      }
+    },
+    {
+      "id": "q100",
+      "number": "100",
+      "type": "open",
+      "stem": "This paragraph deliberately mixes several tenses, and all but ONE are correct. Find the single error and correct it. 'I have lived in this house since I was a baby, so I know every creak of its floorboards. When I was ten, a storm had damaged the roof, and we spent a whole winter without heating in the attic. These days, the house is finally being renovated, and by next spring it will have become the home I always dreamed of.'",
+      "answer": "'had damaged' → 'damaged'.",
+      "solution": "**Why:** 'When I was ten' is a plain past time, and the storm and the winter are simply past events with nothing earlier to anchor a past perfect, so 'had damaged' is overused and should be the simple past 'damaged'. Everything else is correct: 'have lived ... since I was a baby' (present perfect + since-clause), 'I know' (present stative), 'we spent' (simple past), 'is finally being renovated' (present continuous passive for a current process), and 'by next spring it will have become' (future perfect).\n\n**Distractor analysis:**\n\n- 'Correcting' any of the other verbs mistakes a correct form for an error; the only fault is the overused past perfect 'had damaged'. Misconceptions: not recognising correct present-perfect, present-continuous-passive, or future-perfect forms; missing the past-perfect overuse.\n\n**Principle:** Amid a legitimate mix of tenses, the error to hunt is the past perfect used with no earlier reference point.\n\n**Intuition hook:** One overused 'had' hides among correct tenses – 'a storm damaged the roof'.",
+      "topics": [
+        "Grammar > Verb Tenses > Edit the Passage"
+      ],
+      "fields": {
+        "Task type": "Paragraph editing",
+        "Section": "G",
+        "Difficulty rating": 10,
+        "Cognitive skill": "Spotting the lone error amid correct mixed tenses"
+      },
+      "source": {
+        "file": "TENSE PRACTICE 2.pdf",
+        "page": 18,
+        "key_page": 50
+      }
+    }
+  ]
+}

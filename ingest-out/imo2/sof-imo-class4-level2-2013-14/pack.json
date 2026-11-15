@@ -1,0 +1,1580 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-level2-2013-14",
+  "title": "SOF IMO Class 4 · Level 2 · 2013-14",
+  "source": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q3-full": {
+   "file": "images/q3-full.png"
+  },
+  "q5-optA": {
+   "file": "images/q5-optA.png"
+  },
+  "q5-optB": {
+   "file": "images/q5-optB.png"
+  },
+  "q5-optC": {
+   "file": "images/q5-optC.png"
+  },
+  "q5-optD": {
+   "file": "images/q5-optD.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q6-optA": {
+   "file": "images/q6-optA.png"
+  },
+  "q6-optB": {
+   "file": "images/q6-optB.png"
+  },
+  "q6-optC": {
+   "file": "images/q6-optC.png"
+  },
+  "q6-optD": {
+   "file": "images/q6-optD.png"
+  },
+  "q6-stem": {
+   "file": "images/q6-stem.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q8-full": {
+   "file": "images/q8-full.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-stem": {
+   "file": "images/q10-stem.png"
+  },
+  "q10-stem-fig1": {
+   "file": "images/q10-stem-fig1.png"
+  },
+  "q11-optD": {
+   "file": "images/q11-optD.png"
+  },
+  "q11-stem-fig": {
+   "file": "images/q11-stem-fig.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q14-optD": {
+   "file": "images/q14-optD.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q16-stem-fig": {
+   "file": "images/q16-stem-fig.png"
+  },
+  "q18-stem-fig": {
+   "file": "images/q18-stem-fig.png"
+  },
+  "q19-stem-fig": {
+   "file": "images/q19-stem-fig.png"
+  },
+  "q20-stem-fig": {
+   "file": "images/q20-stem-fig.png"
+  },
+  "q21-stem-fig": {
+   "file": "images/q21-stem-fig.png"
+  },
+  "q25-optA": {
+   "file": "images/q25-optA.png"
+  },
+  "q25-optB": {
+   "file": "images/q25-optB.png"
+  },
+  "q25-optC": {
+   "file": "images/q25-optC.png"
+  },
+  "q25-optD": {
+   "file": "images/q25-optD.png"
+  },
+  "q25-stem": {
+   "file": "images/q25-stem.png"
+  },
+  "q26-stem": {
+   "file": "images/q26-stem.png"
+  },
+  "q27-stem-fig": {
+   "file": "images/q27-stem-fig.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q33-optA": {
+   "file": "images/q33-optA.png"
+  },
+  "q33-optC": {
+   "file": "images/q33-optC.png"
+  },
+  "q33-optD": {
+   "file": "images/q33-optD.png"
+  },
+  "q34-optA": {
+   "file": "images/q34-optA.png"
+  },
+  "q34-optB": {
+   "file": "images/q34-optB.png"
+  },
+  "q34-optC": {
+   "file": "images/q34-optC.png"
+  },
+  "q34-optD": {
+   "file": "images/q34-optD.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "What is the missing number?\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "B",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "At a fair, every 6<sup>th</sup> person was given a pen and every 10<sup>th</sup> person was given a book. What was the position of the first person who received both a pen and a book?",
+   "options": [
+    {
+     "label": "A",
+     "text": "20<sup>th</sup>"
+    },
+    {
+     "label": "B",
+     "text": "30<sup>th</sup>"
+    },
+    {
+     "label": "C",
+     "text": "60<sup>th</sup>"
+    },
+    {
+     "label": "D",
+     "text": "15<sup>th</sup>"
+    }
+   ],
+   "answer": "B",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "![Some letters are given which are numbered 1, 2, 3, 4, 5 and 6. Find that combination of numbers so that letters arranged accordingly form a meaningful word.](asset:q3-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Which one word cannot be made from the letters of the given word?\n\nIntelligence",
+   "options": [
+    {
+     "label": "A",
+     "text": "CANCEL"
+    },
+    {
+     "label": "B",
+     "text": "INCITE"
+    },
+    {
+     "label": "C",
+     "text": "GENTLE"
+    },
+    {
+     "label": "D",
+     "text": "NEGLECT"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Select the correct mirror image of the fig. (X).\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q5-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q5-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q5-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q5-optD)"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "![If formed by exactly 10 straight lines?](asset:q6-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q6-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q6-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q6-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q6-optD)"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "How many more sleeping lines than the vertical lines are there in the given letters?\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "10"
+    },
+    {
+     "label": "B",
+     "text": "9"
+    },
+    {
+     "label": "C",
+     "text": "7"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![Which of the following parts is not embedded in the figure X ? A. B. C. D. Figure X](asset:q8-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![Study the adjoining diagram to answer the question given below. Grape tree is south-east of .](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Mango tree"
+    },
+    {
+     "label": "B",
+     "text": "Peach tree"
+    },
+    {
+     "label": "C",
+     "text": "Apple tree"
+    },
+    {
+     "label": "D",
+     "text": "Banana tree"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "![There is a certain relationship between the pair of figures on the either side of . Identify the relationship and find the missing figure.](asset:q10-stem)\n\n![figure](asset:q10-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q10-optD)"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Arrange the following from the smallest to the greatest.\n\n![figure](asset:q11-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "P, Q, R, S"
+    },
+    {
+     "label": "B",
+     "text": "P, R, S, Q"
+    },
+    {
+     "label": "C",
+     "text": "P, R, Q, S"
+    },
+    {
+     "label": "D",
+     "text": "![P, Q, S, R](asset:q11-optD)"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "Given below is the price list of three items. Latika wants to purchase the combination of 1 skirt, 1 top and 1 jacket. If she has only ₹ 3000, then which combination of skirt, top and jacket will she buy?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "S1 T2 J"
+    },
+    {
+     "label": "B",
+     "text": "S1 T1 J"
+    },
+    {
+     "label": "C",
+     "text": "S2 T2 J"
+    },
+    {
+     "label": "D",
+     "text": "S2 T1 J"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![Which of the following options is correct with respect to fraction of unshaded parts of the figures? A. = 3 16 B. 3 = 1 − 4 1 C. 1 1 D. = 3 3 − = + + 8 2 6 3 8 24](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Factors of sum of the common factors of 18, 24 and 36 is \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "1, 2, 3, 4, 6, 12"
+    },
+    {
+     "label": "B",
+     "text": "2, 4, 6, 12"
+    },
+    {
+     "label": "C",
+     "text": "1, 2, 4, 12"
+    },
+    {
+     "label": "D",
+     "text": "![1, 2, 4, 6, 12](asset:q14-optD)"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "How many beads should be removed from the tens place and hundreds place in the abacus shown here if it has to represent number 28 tens less than the number shown in the abacus?\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2, 2"
+    },
+    {
+     "label": "B",
+     "text": "8, 2"
+    },
+    {
+     "label": "C",
+     "text": "2, 1"
+    },
+    {
+     "label": "D",
+     "text": "3, 0"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "The given figure is formed by two rectangles. The length of each rectangle is 16 cm and its breadth is 10 cm. P and Q are the mid-points of the sides of the rectangles.\n\n![figure](asset:q16-stem-fig)\n\nFind the perimeter of the shaded part.",
+   "options": [
+    {
+     "label": "A",
+     "text": "32 cm"
+    },
+    {
+     "label": "B",
+     "text": "26 cm"
+    },
+    {
+     "label": "C",
+     "text": "30 cm"
+    },
+    {
+     "label": "D",
+     "text": "28 cm"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "I am a 4-digit number. All my digits are different. They add up to 23. The one's digit is half the hundred's digit and the one's digit is double the ten's digit.\n\nWhat number am I?",
+   "options": [
+    {
+     "label": "A",
+     "text": "9824"
+    },
+    {
+     "label": "B",
+     "text": "8663"
+    },
+    {
+     "label": "C",
+     "text": "7826"
+    },
+    {
+     "label": "D",
+     "text": "9653"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Put the correct sign to make the expression true.\n\n40 × 87 – 12 39 × 65 – 24\n\n![figure](asset:q18-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\>"
+    },
+    {
+     "label": "B",
+     "text": "\\<"
+    },
+    {
+     "label": "C",
+     "text": "\\="
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "The given table represents the number of visitors at a Zoo on a certain day, where each\n\n![figure](asset:q19-stem-fig)\n\nIf the price of an entrance ticket was ₹ 6, how much was collected from ticket sale on that day?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 6500"
+    },
+    {
+     "label": "B",
+     "text": "₹ 3900"
+    },
+    {
+     "label": "C",
+     "text": "₹ 4500"
+    },
+    {
+     "label": "D",
+     "text": "₹ 5400"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "What is the number that is a multiple of 7 as well as a factor of 119?\n\n![figure](asset:q20-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "28"
+    },
+    {
+     "label": "B",
+     "text": "49"
+    },
+    {
+     "label": "C",
+     "text": "17"
+    },
+    {
+     "label": "D",
+     "text": "119"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Sanya went to her friend's house at 9:45 am. Her mother told her to reach back home in 180 minutes. If given clock shows incorrect time when she reached back home then which of the following statements is correct?\n\n![figure](asset:q21-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Clock is 15 minutes slow."
+    },
+    {
+     "label": "B",
+     "text": "Clock is 30 minutes slow."
+    },
+    {
+     "label": "C",
+     "text": "Clock is 15 minutes fast."
+    },
+    {
+     "label": "D",
+     "text": "Clock is 30 minutes fast."
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Komal wants to decorate the boundary of a rectangular design with lace. If she uses 48 cm length of lace costing ₹ 15 per cm, then which are the possible dimensions of design and total cost of lace?",
+   "options": [
+    {
+     "label": "A",
+     "text": "l = 16 cm, b = 8 cm and ₹ 1920"
+    },
+    {
+     "label": "B",
+     "text": "l = 8 cm, b = 4 cm and ₹ 720"
+    },
+    {
+     "label": "C",
+     "text": "l = 4 cm, b = 8 cm and ₹ 620"
+    },
+    {
+     "label": "D",
+     "text": "l = 16 cm, b = 8 cm and ₹ 720"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Rahul has 90 pens costing ₹ 1350. Shipra bought 7 dozen pens from him. How much amount did Shipra pay to Rahul?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 1060"
+    },
+    {
+     "label": "B",
+     "text": "₹ 960"
+    },
+    {
+     "label": "C",
+     "text": "₹ 1260"
+    },
+    {
+     "label": "D",
+     "text": "₹ 1360"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Rehan's mother has gone to her friend's house on 19<sup>th</sup> December 2013 and stayed there for 1 month. If 11<sup>th</sup> January 2014 is Saturday, then on which day Rehan's mother left for her friend's house?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Thursday"
+    },
+    {
+     "label": "B",
+     "text": "Saturday"
+    },
+    {
+     "label": "C",
+     "text": "Wednesday"
+    },
+    {
+     "label": "D",
+     "text": "Friday"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "![Radhika bought 5 1 kg mangoes, 11 kg apples, 9 1 3 kg papayas. How much weight did she carry home?](asset:q25-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1613 12 kg](asset:q25-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![16 1 12 kg](asset:q25-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![15 1 13 kg](asset:q25-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1512 13 kg](asset:q25-optD)"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "![Pranav jogged 4 1 2 times around a rectangular field that measured 25 m by 12 m. What is the total distance he jogged?](asset:q26-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "323 m"
+    },
+    {
+     "label": "B",
+     "text": "333 m"
+    },
+    {
+     "label": "C",
+     "text": "433 m"
+    },
+    {
+     "label": "D",
+     "text": "443 m"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Garima went to movie with her two friends. She gave ₹ 1000 to counter for movie tickets, 1 bucket of popcorn and 3 pepsi cans, what information is needed to find the amount she will get back?\n\n![figure](asset:q27-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Movie name"
+    },
+    {
+     "label": "B",
+     "text": "Movie time"
+    },
+    {
+     "label": "C",
+     "text": "Number of tickets"
+    },
+    {
+     "label": "D",
+     "text": "Cost of a movie ticket"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Ankur earns ₹ 20,098 in a month. Every month he spends ₹ 15,026 and saves the rest. How much will he save in 2 years?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 21,728"
+    },
+    {
+     "label": "B",
+     "text": "₹ 2,20,728"
+    },
+    {
+     "label": "C",
+     "text": "₹ 1,21,728"
+    },
+    {
+     "label": "D",
+     "text": "₹ 2,21,728"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Sanchi takes 24 mins 25 sec to draw 15 rectangular designs. How long does she take to draw 30 rectangular designs if all are drawn in equal period of time?",
+   "options": [
+    {
+     "label": "A",
+     "text": "48 mins 50 sec"
+    },
+    {
+     "label": "B",
+     "text": "49 mins 50 sec"
+    },
+    {
+     "label": "C",
+     "text": "49 mins 10 sec"
+    },
+    {
+     "label": "D",
+     "text": "48 mins 10 sec"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Manha can only pack 16 apples into a box. If there are 560 apples to be packed, how many boxes of apples will be there?\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "35"
+    },
+    {
+     "label": "B",
+     "text": "15"
+    },
+    {
+     "label": "C",
+     "text": "45"
+    },
+    {
+     "label": "D",
+     "text": "25"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "A number multiplied by 5 and then added to 209, become 364. Three times of the number is \\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\nWhich of the following statements is/are true with respect to answer of the above question?\n\nStatement 1 : Greater than 85 and less than 95.\n\nStatement 2 : Number is multiple of 3.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Only statement 1 is true"
+    },
+    {
+     "label": "B",
+     "text": "Only statement 2 is true"
+    },
+    {
+     "label": "C",
+     "text": "Both statements 1 and 2 are true"
+    },
+    {
+     "label": "D",
+     "text": "Neither statement 1 nor 2 is true"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Fill in the blank.\n\nSubtract 65 minutes from the sum of 140 minutes and \\_\\_\\_\\_\\_\\_\\_\\_\\_. The answer is 2 hrs. 35 mins.",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 hr 20 mins"
+    },
+    {
+     "label": "B",
+     "text": "1 hr"
+    },
+    {
+     "label": "C",
+     "text": "1 hr 40 mins"
+    },
+    {
+     "label": "D",
+     "text": "1 hr 25 mins"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 34
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Which one of the following is incorrect?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![× + 8 + 3 = 2 6 12 076 . 1000 100](asset:q33-optA)"
+    },
+    {
+     "label": "B",
+     "text": "100 × (87) = 8700"
+    },
+    {
+     "label": "C",
+     "text": "![× 9 − 9 = 4 3 24 . 10 100](asset:q33-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![9 × 4 × 3 × 5 × 2 × 0 = 7 2 . 5 15 2 8 5 3](asset:q33-optD)"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 34
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Which one of the following figures, each made up of 3 cm squares, has the greatest perimeter?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q34-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q34-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q34-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q34-optD)"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 34
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "A number is greater than 50 but smaller than 59. It has only two factors. What is the number?",
+   "options": [
+    {
+     "label": "A",
+     "text": "51"
+    },
+    {
+     "label": "B",
+     "text": "55"
+    },
+    {
+     "label": "C",
+     "text": "53"
+    },
+    {
+     "label": "D",
+     "text": "57"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "E Q U A R S"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2013-14",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2013-14",
+    "Section": "E Q U A R S"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 34
+   }
+  }
+ ]
+}

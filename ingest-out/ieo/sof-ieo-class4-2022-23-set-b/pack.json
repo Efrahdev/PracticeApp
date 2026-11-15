@@ -1,0 +1,1505 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2022-23-set-b",
+  "title": "SOF IEO Class 4 · 2022-23 · Set B",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q12-full": {
+   "file": "images/q12-full.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q20-full": {
+   "file": "images/q20-full.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "My \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ is going to London for business.",
+   "options": [
+    {
+     "label": "A",
+     "text": "parents"
+    },
+    {
+     "label": "B",
+     "text": "friends"
+    },
+    {
+     "label": "C",
+     "text": "father"
+    },
+    {
+     "label": "D",
+     "text": "uncles"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "They lost \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ suitcase at the railway station.",
+   "options": [
+    {
+     "label": "A",
+     "text": "there"
+    },
+    {
+     "label": "B",
+     "text": "they"
+    },
+    {
+     "label": "C",
+     "text": "them"
+    },
+    {
+     "label": "D",
+     "text": "their"
+    }
+   ],
+   "answer": "D",
+   "solution": "The possessive adjective “their” is used to indicate the ownership of the subject in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Shivani likes to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the guitar and the piano.",
+   "options": [
+    {
+     "label": "A",
+     "text": "play"
+    },
+    {
+     "label": "B",
+     "text": "played"
+    },
+    {
+     "label": "C",
+     "text": "plays"
+    },
+    {
+     "label": "D",
+     "text": "playing"
+    }
+   ],
+   "answer": "A",
+   "solution": "We use the base form of the verb after the preposition “to” in the sentence, so the answer is “play”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Ritika \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ seeds in her garden yesterday.",
+   "options": [
+    {
+     "label": "A",
+     "text": "is sowing"
+    },
+    {
+     "label": "B",
+     "text": "was sowing"
+    },
+    {
+     "label": "C",
+     "text": "are sowing"
+    },
+    {
+     "label": "D",
+     "text": "were sowing"
+    }
+   ],
+   "answer": "B",
+   "solution": "The sentence is in the past continuous tense because it describes an ongoing past action that was ongoing at a particular moment in time, as indicated by the word “yesterday” in the sentence, so “was sowing” is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "John’s grandfather is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ European citizen.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "A",
+   "solution": "The indefinite article “a” is used before the words beginning with a consonant sound, so the answer is “a European citizen”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Mom said that she would be back \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ an hour.",
+   "options": [
+    {
+     "label": "A",
+     "text": "with"
+    },
+    {
+     "label": "B",
+     "text": "within"
+    },
+    {
+     "label": "C",
+     "text": "on"
+    },
+    {
+     "label": "D",
+     "text": "of"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable preposition to be used is “within”. It is used to state that a certain action should not exceed a particular point in time.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Would you like to come with us \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ stay at home?",
+   "options": [
+    {
+     "label": "A",
+     "text": "but"
+    },
+    {
+     "label": "B",
+     "text": "and"
+    },
+    {
+     "label": "C",
+     "text": "or\n\nFOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD."
+    },
+    {
+     "label": "D",
+     "text": "because"
+    }
+   ],
+   "answer": "C",
+   "solution": "The conjunction “or” is used to connect the two alternatives in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![Don’t wear shoes inside the house.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Adverb"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Verb"
+    },
+    {
+     "label": "D",
+     "text": "Noun"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable preposition to be used is “inside” because it is used to indicate the location in the inner part or surface of something.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 77
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![My uncle donates money to this charity every month.](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Pronoun"
+    },
+    {
+     "label": "C",
+     "text": "Verb\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "Adjective"
+    }
+   ],
+   "answer": "A",
+   "solution": "The word “charity” is a noun in the given sentence, which means “an organisation that collects money to help people who are poor, sick, etc”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Rohit goes to the temple with his mother regular.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Rohit goes"
+    },
+    {
+     "label": "B",
+     "text": "to the temple"
+    },
+    {
+     "label": "C",
+     "text": "with his"
+    },
+    {
+     "label": "D",
+     "text": "mother regular."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence is: Rohit goes to the temple with his mother regularly.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "This restaurant serves the better Chinese food in the city.",
+   "options": [
+    {
+     "label": "A",
+     "text": "This restaurant"
+    },
+    {
+     "label": "B",
+     "text": "serves the"
+    },
+    {
+     "label": "C",
+     "text": "better Chinese food"
+    },
+    {
+     "label": "D",
+     "text": "in the city.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct sentence is: This restaurant serves the best Chinese food in the city.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "![A. Coleague B. Colleague C. Callague D. Collegue](asset:q12-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is “colleague”, which means “a person who works at the same place as you”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![A. Strategic B. Stretagick C. Strategik D. Stratejic](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct spelling is “strategic”, which means “something that is related to careful planning and plotting in order to achieve a certain goal”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF ENCHANTING.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Enlarged"
+    },
+    {
+     "label": "B",
+     "text": "Captivating"
+    },
+    {
+     "label": "C",
+     "text": "Responsive"
+    },
+    {
+     "label": "D",
+     "text": "Boring"
+    }
+   ],
+   "answer": "B",
+   "solution": "The synonym of the word “enchanting” is “captivating”, as they both mean “something that is very attractive”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT ANTONYM OF OUTSKIRTS.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Edge"
+    },
+    {
+     "label": "B",
+     "text": "Boulder"
+    },
+    {
+     "label": "C",
+     "text": "Middle"
+    },
+    {
+     "label": "D",
+     "text": "Costumes"
+    }
+   ],
+   "answer": "C",
+   "solution": "The antonym of the word “outskirts” is “middle”. The word “outskirts” means “the outer area of a city or town” and the word “middle” means “in the center of something”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 78
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "What is the passage about?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Vostok 6"
+    },
+    {
+     "label": "B",
+     "text": "Bolshoye"
+    },
+    {
+     "label": "C",
+     "text": "Valentina Tereshkova"
+    },
+    {
+     "label": "D",
+     "text": "Yuri Gagarin"
+    }
+   ],
+   "answer": "C",
+   "solution": "The passage is about “Valentina Tereshkova”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 79
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Which hobby of Tereshkova impressed the Soviets’ space programme committee?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Jumping out of spacecrafts"
+    },
+    {
+     "label": "B",
+     "text": "Jumping out of planes"
+    },
+    {
+     "label": "C",
+     "text": "Jumping out of parachutes"
+    },
+    {
+     "label": "D",
+     "text": "Jumping out of rockets"
+    }
+   ],
+   "answer": "B",
+   "solution": "Tereshkova’s hobby of “jumping out of planes” impressed the Soviets’ space programme committee.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 79
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Tereshkova still holds the title of the youngest and the only woman to have been on a \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "solo space mission"
+    },
+    {
+     "label": "B",
+     "text": "crew space mission"
+    },
+    {
+     "label": "C",
+     "text": "double space mission"
+    },
+    {
+     "label": "D",
+     "text": "human-crewed flight"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 80
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "How many hours did Tereshkova spend orbiting the Earth on her mission?",
+   "options": [
+    {
+     "label": "A",
+     "text": "75 hours"
+    },
+    {
+     "label": "B",
+     "text": "72 hours"
+    },
+    {
+     "label": "C",
+     "text": "78 hours"
+    },
+    {
+     "label": "D",
+     "text": "70 hours"
+    }
+   ],
+   "answer": "D",
+   "solution": "Tereshkova spent “70 hours” orbiting the Earth on her mission.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 80
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "![In the third paragraph, the word ‘inducted’ means . A. rampant B. rescued C. admitted D. expelled FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. A tiny mouse was born between two bags of corn kernels in a cargo ship’s hold. Her mother had been chased away and had disappeared out-of-view. Frightened, the baby mouse snuggled between the bags and waited. The waves rock](asset:q20-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "In the third paragraph, the word “inducted” means “admitted”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 80
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "What is the passage about?",
+   "options": [
+    {
+     "label": "A",
+     "text": "The sea"
+    },
+    {
+     "label": "B",
+     "text": "The baby mouse"
+    },
+    {
+     "label": "C",
+     "text": "Corn kernels"
+    },
+    {
+     "label": "D",
+     "text": "Cargo ship"
+    }
+   ],
+   "answer": "B",
+   "solution": "The passage is about “the baby mouse”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Where was the baby mouse born?",
+   "options": [
+    {
+     "label": "A",
+     "text": "On ramp"
+    },
+    {
+     "label": "B",
+     "text": "In a bag"
+    },
+    {
+     "label": "C",
+     "text": "On a cargo ship"
+    },
+    {
+     "label": "D",
+     "text": "In sea"
+    }
+   ],
+   "answer": "C",
+   "solution": "The baby mouse was born on a “cargo ship”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "What felt good under the baby mouse’s paws?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Warm sand"
+    },
+    {
+     "label": "B",
+     "text": "Salty wind"
+    },
+    {
+     "label": "C",
+     "text": "Sea waves"
+    },
+    {
+     "label": "D",
+     "text": "Sea sponge"
+    }
+   ],
+   "answer": "A",
+   "solution": "The warm sand felt good under the baby mouse’s paws.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "The baby mouse lingered a bit longer to watch the \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "seagulls"
+    },
+    {
+     "label": "B",
+     "text": "sunrise"
+    },
+    {
+     "label": "C",
+     "text": "seashell"
+    },
+    {
+     "label": "D",
+     "text": "sunset"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "In the passage, the word ‘minuscule’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tiny"
+    },
+    {
+     "label": "B",
+     "text": "large"
+    },
+    {
+     "label": "C",
+     "text": "happy"
+    },
+    {
+     "label": "D",
+     "text": "serene"
+    }
+   ],
+   "answer": "A",
+   "solution": "In the passage, the word “minuscule” means “tiny”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Mike : Everyone is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to donate food for the poor.",
+   "options": [
+    {
+     "label": "A",
+     "text": "requested"
+    },
+    {
+     "label": "B",
+     "text": "request"
+    },
+    {
+     "label": "C",
+     "text": "requests"
+    },
+    {
+     "label": "D",
+     "text": "has request"
+    }
+   ],
+   "answer": "A",
+   "solution": "The suitable form of the verb to be used is “requested”.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Will : I am going \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ a swim. Are you coming?\n\nLucas : Yes, I am.",
+   "options": [
+    {
+     "label": "A",
+     "text": "to"
+    },
+    {
+     "label": "B",
+     "text": "on"
+    },
+    {
+     "label": "C",
+     "text": "for"
+    },
+    {
+     "label": "D",
+     "text": "in"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable preposition to be used is “for” because it states a particular purpose of the subject (I) in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 81
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Smith : Do you believe in supernatural things?\n\nMartin : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yes, I am not"
+    },
+    {
+     "label": "B",
+     "text": "Yes, I don’t"
+    },
+    {
+     "label": "C",
+     "text": "No, I don’t"
+    },
+    {
+     "label": "D",
+     "text": "No, I do"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Dustin : Have you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to school today?\n\nJane : Yes, I have.",
+   "options": [
+    {
+     "label": "A",
+     "text": "go"
+    },
+    {
+     "label": "B",
+     "text": "went"
+    },
+    {
+     "label": "C",
+     "text": "been"
+    },
+    {
+     "label": "D",
+     "text": "goes"
+    }
+   ],
+   "answer": "C",
+   "solution": "The sentence is in the present perfect tense, the third form of the verb “been” is used, which means “to be present”.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Garima : My bag is as light as a/an \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "feather"
+    },
+    {
+     "label": "B",
+     "text": "bolt"
+    },
+    {
+     "label": "C",
+     "text": "elephant"
+    },
+    {
+     "label": "D",
+     "text": "bed"
+    }
+   ],
+   "answer": "A",
+   "solution": "The phrase “as light as a feather” is used, which means “something that is extremely light”.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "This is the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ movie I have ever seen.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tame"
+    },
+    {
+     "label": "B",
+     "text": "good"
+    },
+    {
+     "label": "C",
+     "text": "best"
+    },
+    {
+     "label": "D",
+     "text": "worse"
+    }
+   ],
+   "answer": "C",
+   "solution": "With the definite article “the”, the superlative adjectives are used, so the answer is “best”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "The baby is sleeping \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "always"
+    },
+    {
+     "label": "B",
+     "text": "soundly"
+    },
+    {
+     "label": "C",
+     "text": "loudly"
+    },
+    {
+     "label": "D",
+     "text": "almost"
+    }
+   ],
+   "answer": "B",
+   "solution": "The adverb of manner “soundly” is used, which means “deeply and without disturbance”. It is used to modify the action of sleeping in the sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nI will be wait for you at the library.",
+   "options": [
+    {
+     "label": "A",
+     "text": "I will"
+    },
+    {
+     "label": "B",
+     "text": "be wait"
+    },
+    {
+     "label": "C",
+     "text": "for you"
+    },
+    {
+     "label": "D",
+     "text": "at the library."
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct sentence is: I will be waiting for you at the library.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 82
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF MARVELLOUS.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Fantastic"
+    },
+    {
+     "label": "B",
+     "text": "Average"
+    },
+    {
+     "label": "C",
+     "text": "Normal"
+    },
+    {
+     "label": "D",
+     "text": "Materialistic"
+    }
+   ],
+   "answer": "A",
+   "solution": "The synonym of the word “marvellous” is “fantastic”, as they both mean “something that is wonderful or excellent in nature”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 83
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION. Mother : I am heading to the market. Take care of yourself. A. out B. of C. up D. with vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "The preposition “out” followed by the verb “heading” is used in the sentence. “Heading out” means “to leave a place.”",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IEO 2022-23 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 83
+   }
+  }
+ ]
+}

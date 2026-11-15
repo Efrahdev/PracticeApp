@@ -1,0 +1,1492 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2021-22-set-b",
+  "title": "SOF IEO Class 4 · 2021-22 · Set B",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q12-full": {
+   "file": "images/q12-full.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "We need a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of bananas for the cake.",
+   "options": [
+    {
+     "label": "A",
+     "text": "pack"
+    },
+    {
+     "label": "B",
+     "text": "bunch"
+    },
+    {
+     "label": "C",
+     "text": "box"
+    },
+    {
+     "label": "D",
+     "text": "set"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Bunch’, is the correct option to name the group of bananas.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "I bought this bag as my sister wants to use \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "its"
+    },
+    {
+     "label": "B",
+     "text": "it’s"
+    },
+    {
+     "label": "C",
+     "text": "these"
+    },
+    {
+     "label": "D",
+     "text": "it"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘It’, pronoun is used in place of a thing in a sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "When I arrived at the party, my friend had already \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "left"
+    },
+    {
+     "label": "B",
+     "text": "leaving"
+    },
+    {
+     "label": "C",
+     "text": "leave"
+    },
+    {
+     "label": "D",
+     "text": "leaves"
+    }
+   ],
+   "answer": "A",
+   "solution": "The given sentence in question is in past tense and ‘left’ is the past form of verb ‘leave’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "This is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ most wonderful place I have ever visited.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "C",
+   "solution": "Most wonderful is the superlative degree of adjective in the given question. We use article ‘the’ before superlative degrees.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Taking a balanced diet is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ than eating junk food.",
+   "options": [
+    {
+     "label": "A",
+     "text": "healthy"
+    },
+    {
+     "label": "B",
+     "text": "healthier"
+    },
+    {
+     "label": "C",
+     "text": "more healthy"
+    },
+    {
+     "label": "D",
+     "text": "healthiest"
+    }
+   ],
+   "answer": "B",
+   "solution": "We use comparative degree of adjective in a sentence when there is a comparison between two things.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ there lived a bagpiper in a nearby town.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Usually"
+    },
+    {
+     "label": "B",
+     "text": "Ago"
+    },
+    {
+     "label": "C",
+     "text": "Once"
+    },
+    {
+     "label": "D",
+     "text": "Always"
+    }
+   ],
+   "answer": "C",
+   "solution": "We use adverb ‘once’ to show a time in the past.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "I saw a little girl peeping \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the window.",
+   "options": [
+    {
+     "label": "A",
+     "text": "for"
+    },
+    {
+     "label": "B",
+     "text": "through"
+    },
+    {
+     "label": "C",
+     "text": "to"
+    },
+    {
+     "label": "D",
+     "text": "over"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Through’ (preposition) is used in a sentence to indicate ‘from one side to the other’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "You must hurry up \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you will be late.",
+   "options": [
+    {
+     "label": "A",
+     "text": "although"
+    },
+    {
+     "label": "B",
+     "text": "unless"
+    },
+    {
+     "label": "C",
+     "text": "until"
+    },
+    {
+     "label": "D",
+     "text": "otherwise"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘Otherwise’, (the conjunction) is used for saying that if one thing doesn’t happen, something else (usually bad) will happen.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ food in the kitchen right now.",
+   "options": [
+    {
+     "label": "A",
+     "text": "is cooking"
+    },
+    {
+     "label": "B",
+     "text": "was cooking"
+    },
+    {
+     "label": "C",
+     "text": "cooked\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "has cooked"
+    }
+   ],
+   "answer": "A",
+   "solution": "In the given question an action is going on at the time of speaking which makes the given question a present continuous tense.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Jayashree passed her final examination with fly colours.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Jayashree passed"
+    },
+    {
+     "label": "B",
+     "text": "her final"
+    },
+    {
+     "label": "C",
+     "text": "examination with"
+    },
+    {
+     "label": "D",
+     "text": "fly colours."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence would be, “Jayashree passed her final examination with flying colours”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "We all preyed for my brother’s success.",
+   "options": [
+    {
+     "label": "A",
+     "text": "We all"
+    },
+    {
+     "label": "B",
+     "text": "preyed for"
+    },
+    {
+     "label": "C",
+     "text": "my brother’s"
+    },
+    {
+     "label": "D",
+     "text": "success.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct sentence would be “We all prayed for my brother’s success.”",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "![A. Temperemunt B. Tamparament C. Temperament D. Temprament](asset:q12-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![A. Bombastic B. Bumpastic C. Bombstik D. Bmobsatic](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF EXPLORE.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Find"
+    },
+    {
+     "label": "B",
+     "text": "Neglect"
+    },
+    {
+     "label": "C",
+     "text": "Ignore"
+    },
+    {
+     "label": "D",
+     "text": "Search"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘Search’ is the synonym of ‘Explore’. Both these words, ‘Search’ and ‘Explore’ mean, “to find out about something in detail”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE ANTONYM OF HAZARDOUS.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Secure"
+    },
+    {
+     "label": "B",
+     "text": "Banish"
+    },
+    {
+     "label": "C",
+     "text": "Small"
+    },
+    {
+     "label": "D",
+     "text": "Risky"
+    }
+   ],
+   "answer": "A",
+   "solution": "‘Secure’ is the antonym of ‘Hazardous’. The word ‘secure’ means ‘safe’ and ‘hazardous’ means ‘risky’ or ‘dangerous’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "The snake used to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "help the crow"
+    },
+    {
+     "label": "B",
+     "text": "protect crow babies"
+    },
+    {
+     "label": "C",
+     "text": "eat crow eggs"
+    },
+    {
+     "label": "D",
+     "text": "spare the eggs"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "The crow took away \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "king’s necklace"
+    },
+    {
+     "label": "B",
+     "text": "princess’ necklace"
+    },
+    {
+     "label": "C",
+     "text": "its eggs"
+    },
+    {
+     "label": "D",
+     "text": "guard’s sword"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Where did the crow throw what it picked?",
+   "options": [
+    {
+     "label": "A",
+     "text": "In its nest"
+    },
+    {
+     "label": "B",
+     "text": "On the ground"
+    },
+    {
+     "label": "C",
+     "text": "In snake’s pit"
+    },
+    {
+     "label": "D",
+     "text": "Nowhere"
+    }
+   ],
+   "answer": "C",
+   "solution": "The crow picked up the princess’s necklace in her beak and flew off to her nest. When the guards found the crow, she dropped the necklace right into the snake’s pit.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Who killed the snake?",
+   "options": [
+    {
+     "label": "A",
+     "text": "The king"
+    },
+    {
+     "label": "B",
+     "text": "The crow itself"
+    },
+    {
+     "label": "C",
+     "text": "The princess"
+    },
+    {
+     "label": "D",
+     "text": "The guards"
+    }
+   ],
+   "answer": "D",
+   "solution": "The guards saw the snake and killed it with big sticks.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Which word in the passage means same as ‘incapable’?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Spare"
+    },
+    {
+     "label": "B",
+     "text": "Helpless"
+    },
+    {
+     "label": "C",
+     "text": "Swooped\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington."
+    },
+    {
+     "label": "D",
+     "text": "Act"
+    }
+   ],
+   "answer": "B",
+   "solution": "Both these words ‘incapable’ and ‘helpless’ mean, “unable to do something”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "How many girls have played so far in Little League Baseball World Series?",
+   "options": [
+    {
+     "label": "A",
+     "text": "19"
+    },
+    {
+     "label": "B",
+     "text": "13"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "20"
+    }
+   ],
+   "answer": "D",
+   "solution": "20 girls have played so far in Little League Baseball World Series.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Ella’s role model is \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "her fellow teammates"
+    },
+    {
+     "label": "B",
+     "text": "her mother"
+    },
+    {
+     "label": "C",
+     "text": "her coach"
+    },
+    {
+     "label": "D",
+     "text": "basketball"
+    }
+   ],
+   "answer": "B",
+   "solution": "Ella’s role model is her mother. She followed in her mom’s footsteps as a young girl to play baseball.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Which of these sports does Ella not play?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Softball"
+    },
+    {
+     "label": "B",
+     "text": "Volleyball"
+    },
+    {
+     "label": "C",
+     "text": "Football"
+    },
+    {
+     "label": "D",
+     "text": "Basketball"
+    }
+   ],
+   "answer": "C",
+   "solution": "Except for Football, Ella plays baseball, softball basketball and volleyball.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "A nickname given to Ella is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Fellas"
+    },
+    {
+     "label": "B",
+     "text": "Ella"
+    },
+    {
+     "label": "C",
+     "text": "Studette"
+    },
+    {
+     "label": "D",
+     "text": "All stars"
+    }
+   ],
+   "answer": "C",
+   "solution": "Ella’s teammates sometimes calls her ‘studette’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "The word ‘potential’ in the second paragraph means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "lacking"
+    },
+    {
+     "label": "B",
+     "text": "impossible"
+    },
+    {
+     "label": "C",
+     "text": "helpless"
+    },
+    {
+     "label": "D",
+     "text": "promising"
+    }
+   ],
+   "answer": "D",
+   "solution": "Both the words ‘potential’ and ‘promising’ mean having or showing the ability to gain success in future.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Sameer : When are you leaving tomorrow?\n\nJatin : I am planning to head \\_\\_\\_\\_\\_\\_\\_\\_\\_ around 8 a.m.",
+   "options": [
+    {
+     "label": "A",
+     "text": "along"
+    },
+    {
+     "label": "B",
+     "text": "down"
+    },
+    {
+     "label": "C",
+     "text": "to"
+    },
+    {
+     "label": "D",
+     "text": "off"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘Head off’ mean to start a journey or leave a place.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Reena : Are you coming to the party tonight?\n\nRavi : My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_ think it’s a good idea. So, no.",
+   "options": [
+    {
+     "label": "A",
+     "text": "don’t"
+    },
+    {
+     "label": "B",
+     "text": "doesn’t"
+    },
+    {
+     "label": "C",
+     "text": "hasn’t"
+    },
+    {
+     "label": "D",
+     "text": "isn’t"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Seema : I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ running yesterday.",
+   "options": [
+    {
+     "label": "A",
+     "text": "go"
+    },
+    {
+     "label": "B",
+     "text": "went"
+    },
+    {
+     "label": "C",
+     "text": "have gone"
+    },
+    {
+     "label": "D",
+     "text": "gone"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Riti: Father scolded Riya really badly.\n\nKripa : She was wrong so she had to face the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "song"
+    },
+    {
+     "label": "B",
+     "text": "singing"
+    },
+    {
+     "label": "C",
+     "text": "music"
+    },
+    {
+     "label": "D",
+     "text": "tune"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Face the music’ is an idiom which means to accept unpleasant consequences.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Roy : Back \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, don’t disturb me.\n\nGeeta : Sorry, I didn’t mean to.",
+   "options": [
+    {
+     "label": "A",
+     "text": "on"
+    },
+    {
+     "label": "B",
+     "text": "at"
+    },
+    {
+     "label": "C",
+     "text": "in"
+    },
+    {
+     "label": "D",
+     "text": "off"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "I don’t think that is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I want to visit.",
+   "options": [
+    {
+     "label": "A",
+     "text": "somewhere"
+    },
+    {
+     "label": "B",
+     "text": "somehow"
+    },
+    {
+     "label": "C",
+     "text": "something"
+    },
+    {
+     "label": "D",
+     "text": "somewhat"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "I need a new jacket. Mine is coming \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tear"
+    },
+    {
+     "label": "B",
+     "text": "apart"
+    },
+    {
+     "label": "C",
+     "text": "out"
+    },
+    {
+     "label": "D",
+     "text": "tore"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Coming apart’ means to tear into pieces.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR. The more interesting part of this movie was the climax.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The more"
+    },
+    {
+     "label": "B",
+     "text": "interesting part of"
+    },
+    {
+     "label": "C",
+     "text": "this movie"
+    },
+    {
+     "label": "D",
+     "text": "was the climax."
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence would be, “The most interesting part of this movie was the climax”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF VALIANT.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Gutsy"
+    },
+    {
+     "label": "B",
+     "text": "Meek"
+    },
+    {
+     "label": "C",
+     "text": "Fearful"
+    },
+    {
+     "label": "D",
+     "text": "Timid"
+    }
+   ],
+   "answer": "A",
+   "solution": "‘Gutsy’ is the synonym of ‘Valiant’. Both these words mean, having or showing courage and determination towards something.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION. Trainee 1: I am so tired. Trainee 2 : Me too. Let’s call it a . A. month B. Sunday C. week D. day vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "‘Call it a day’ is an idiom which means to stop doing something because of tiredness or any other reason.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IEO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 103
+   }
+  }
+ ]
+}

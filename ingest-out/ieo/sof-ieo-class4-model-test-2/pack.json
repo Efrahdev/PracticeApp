@@ -1,0 +1,1476 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-model-test-2",
+  "title": "SOF IEO Class 4 · Model Test Paper 2",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "I bought \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ milk and \\_\\_\\_\\_\\_\\_ sugar from the supermarket.",
+   "options": [
+    {
+     "label": "A",
+     "text": "any, any"
+    },
+    {
+     "label": "B",
+     "text": "any, some"
+    },
+    {
+     "label": "C",
+     "text": "some, any"
+    },
+    {
+     "label": "D",
+     "text": "some, some"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Hurry up! The train will leave in \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_hour.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "B",
+   "solution": "Article ‘an’ is used with nouns starting with vowel sound *i.e.* an hour. Therefore, ‘an’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "The teacher wants us to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with a better idea.",
+   "options": [
+    {
+     "label": "A",
+     "text": "look up"
+    },
+    {
+     "label": "B",
+     "text": "come up"
+    },
+    {
+     "label": "C",
+     "text": "keep up"
+    },
+    {
+     "label": "D",
+     "text": "make up"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you do me a favour and lend me your science notes, please?",
+   "options": [
+    {
+     "label": "A",
+     "text": "May"
+    },
+    {
+     "label": "B",
+     "text": "Might"
+    },
+    {
+     "label": "C",
+     "text": "Shall"
+    },
+    {
+     "label": "D",
+     "text": "Could"
+    }
+   ],
+   "answer": "D",
+   "solution": "Helping verb ‘could’ is used to make polite request in a sentence, so ‘could’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Peter is not sure \\_\\_\\_\\_\\_\\_\\_\\_ his new job offer. He has still not decided.",
+   "options": [
+    {
+     "label": "A",
+     "text": "with"
+    },
+    {
+     "label": "B",
+     "text": "for"
+    },
+    {
+     "label": "C",
+     "text": "over"
+    },
+    {
+     "label": "D",
+     "text": "about"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "You can come over \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you want to.",
+   "options": [
+    {
+     "label": "A",
+     "text": "whichever"
+    },
+    {
+     "label": "B",
+     "text": "whoever"
+    },
+    {
+     "label": "C",
+     "text": "whenever"
+    },
+    {
+     "label": "D",
+     "text": "whatever"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "The waiter carried the bowl of soup very \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ because it was filled to the brim.",
+   "options": [
+    {
+     "label": "A",
+     "text": "hurriedly"
+    },
+    {
+     "label": "B",
+     "text": "quietly"
+    },
+    {
+     "label": "C",
+     "text": "diligently"
+    },
+    {
+     "label": "D",
+     "text": "carefully"
+    }
+   ],
+   "answer": "D",
+   "solution": "The sentence is about how the waiter carried the bowl of soup and adverb ‘carefully’ describes the action of waiter, so ‘carefully’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "My friends and I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ studying English last night.",
+   "options": [
+    {
+     "label": "A",
+     "text": "are"
+    },
+    {
+     "label": "B",
+     "text": "was"
+    },
+    {
+     "label": "C",
+     "text": "have been"
+    },
+    {
+     "label": "D",
+     "text": "were"
+    }
+   ],
+   "answer": "D",
+   "solution": "Since the subject is plural and in past tense so ‘were’ is the answer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "The final match \\_\\_\\_\\_\\_\\_\\_\\_\\_ by the Indian team.",
+   "options": [
+    {
+     "label": "A",
+     "text": "was winning"
+    },
+    {
+     "label": "B",
+     "text": "is won"
+    },
+    {
+     "label": "C",
+     "text": "had been won"
+    },
+    {
+     "label": "D",
+     "text": "have won"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "As safe is to dangerous, silent is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "quiet"
+    },
+    {
+     "label": "B",
+     "text": "noisy"
+    },
+    {
+     "label": "C",
+     "text": "quick\n\nFOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "delay"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "The robber stole the bike the boy parked in between of the shopping mall.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The robber stole"
+    },
+    {
+     "label": "B",
+     "text": "the bike the boy"
+    },
+    {
+     "label": "C",
+     "text": "parked in between of"
+    },
+    {
+     "label": "D",
+     "text": "the shopping mall."
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct sentence would be, ‘‘The robber stole the bike the boy parked in the shopping mall’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "The driver were badly hurt in the accident but the passenger suffered only a few bruises.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The driver were badly"
+    },
+    {
+     "label": "B",
+     "text": "hurt in the accident"
+    },
+    {
+     "label": "C",
+     "text": "but the passenger"
+    },
+    {
+     "label": "D",
+     "text": "suffered only a few bruises."
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence would be, ‘‘The driver was badly hurt in the accident but the passenger suffered only a few bruises’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SPELLING OF THE WORD THAT IS A FLOWERING PLANT AND IS OFTEN USED FOR GARNISHING.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Pearsley"
+    },
+    {
+     "label": "B",
+     "text": "Parsley"
+    },
+    {
+     "label": "C",
+     "text": "Peerslay"
+    },
+    {
+     "label": "D",
+     "text": "Perslay"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF REPELLENT.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Lovely"
+    },
+    {
+     "label": "B",
+     "text": "Difficult"
+    },
+    {
+     "label": "C",
+     "text": "Odious"
+    },
+    {
+     "label": "D",
+     "text": "Pleasing"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Odious’ is the synonym of ‘repellent’. Both these words mean ‘‘very unpleasant’’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE ANTONYM OF AGHAST.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Anxious"
+    },
+    {
+     "label": "B",
+     "text": "Alarmed"
+    },
+    {
+     "label": "C",
+     "text": "Afraid"
+    },
+    {
+     "label": "D",
+     "text": "Unsurprised"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "Which of the following bears eats only bamboo?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Sloth bear"
+    },
+    {
+     "label": "B",
+     "text": "Giant panda"
+    },
+    {
+     "label": "C",
+     "text": "Brown bear"
+    },
+    {
+     "label": "D",
+     "text": "Polar bear"
+    }
+   ],
+   "answer": "B",
+   "solution": "Giant pandas eat only the bamboo plant.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "How fast can bears run?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Two miles per hour"
+    },
+    {
+     "label": "B",
+     "text": "Ten miles per hour"
+    },
+    {
+     "label": "C",
+     "text": "Forty miles per hour"
+    },
+    {
+     "label": "D",
+     "text": "Fifteen miles per hour"
+    }
+   ],
+   "answer": "C",
+   "solution": "Bears can run up to forty miles per hour.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Which of the following are the most common bears?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Black bears"
+    },
+    {
+     "label": "B",
+     "text": "Polar bears"
+    },
+    {
+     "label": "C",
+     "text": "Sun bears"
+    },
+    {
+     "label": "D",
+     "text": "Brown bears"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Which of the following things sloth bears love to eat?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Termites"
+    },
+    {
+     "label": "B",
+     "text": "Berries"
+    },
+    {
+     "label": "C",
+     "text": "Honey"
+    },
+    {
+     "label": "D",
+     "text": "All of these"
+    }
+   ],
+   "answer": "D",
+   "solution": "Sloth bears eat termites, berries and honey too.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Bears can eat \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "plants and berries"
+    },
+    {
+     "label": "B",
+     "text": "seals and walruses"
+    },
+    {
+     "label": "C",
+     "text": "honey, nuts and insects"
+    },
+    {
+     "label": "D",
+     "text": "all of these\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again."
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "How is the weather of the day of the story?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Hot and humid"
+    },
+    {
+     "label": "B",
+     "text": "Foggy"
+    },
+    {
+     "label": "C",
+     "text": "Cold and windy"
+    },
+    {
+     "label": "D",
+     "text": "Cloudy and stormy"
+    }
+   ],
+   "answer": "C",
+   "solution": "It was a cold and windy night in the story.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "To whom did the speaker meet?",
+   "options": [
+    {
+     "label": "A",
+     "text": "His friend"
+    },
+    {
+     "label": "B",
+     "text": "His parents"
+    },
+    {
+     "label": "C",
+     "text": "His teacher"
+    },
+    {
+     "label": "D",
+     "text": "His brother"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Where did they stop?",
+   "options": [
+    {
+     "label": "A",
+     "text": "At a park"
+    },
+    {
+     "label": "B",
+     "text": "At a school"
+    },
+    {
+     "label": "C",
+     "text": "At a hospital"
+    },
+    {
+     "label": "D",
+     "text": "At a tea-shop"
+    }
+   ],
+   "answer": "D",
+   "solution": "They stopped at a tea shop to have some tea.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Why did the driver refuse to drink the tea?",
+   "options": [
+    {
+     "label": "A",
+     "text": "He didn’t like the tea."
+    },
+    {
+     "label": "B",
+     "text": "He was not hungry."
+    },
+    {
+     "label": "C",
+     "text": "He didn’t like the place."
+    },
+    {
+     "label": "D",
+     "text": "He didn’t want to trouble them."
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Which quality of the driver left the speaker awestruck?",
+   "options": [
+    {
+     "label": "A",
+     "text": "His honesty"
+    },
+    {
+     "label": "B",
+     "text": "His integrity"
+    },
+    {
+     "label": "C",
+     "text": "His generosity"
+    },
+    {
+     "label": "D",
+     "text": "All of these"
+    }
+   ],
+   "answer": "D",
+   "solution": "The speaker was speechless and was awe struck with the driver’s integrity, honesty and generosity.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Freda : What was the name of that cartoon \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ last week?\n\nJack : I’m sorry. I really don’t remember.",
+   "options": [
+    {
+     "label": "A",
+     "text": "that we seen"
+    },
+    {
+     "label": "B",
+     "text": "which we had saw"
+    },
+    {
+     "label": "C",
+     "text": "that we saw"
+    },
+    {
+     "label": "D",
+     "text": "which we did see"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Reena : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ was the weather yesterday?\n\nJoy : Oh! Don’t ask. It’s so hot and humid.",
+   "options": [
+    {
+     "label": "A",
+     "text": "When"
+    },
+    {
+     "label": "B",
+     "text": "How"
+    },
+    {
+     "label": "C",
+     "text": "What"
+    },
+    {
+     "label": "D",
+     "text": "Why"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Andrew : What do you do \\_\\_\\_\\_\\_\\_\\_\\_\\_ your savings?\n\nSam : I used to put it in the bank. But last month, I spent all of it on buying stocks.",
+   "options": [
+    {
+     "label": "A",
+     "text": "along"
+    },
+    {
+     "label": "B",
+     "text": "for"
+    },
+    {
+     "label": "C",
+     "text": "with"
+    },
+    {
+     "label": "D",
+     "text": "of"
+    }
+   ],
+   "answer": "C",
+   "solution": "Preposition ‘with’ is used to show ‘by the use of’ in a sentence. So, ‘with’ is the answer.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Sumit : I need a taxi, please.\n\nJay : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you prefer a private vehicle?\n\nSumit : No, thanks. A taxi is just fine.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Need"
+    },
+    {
+     "label": "B",
+     "text": "Did"
+    },
+    {
+     "label": "C",
+     "text": "Would"
+    },
+    {
+     "label": "D",
+     "text": "May"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Anjali : I’m staying for another two days.\n\nPriya : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "So do I"
+    },
+    {
+     "label": "B",
+     "text": "So can I"
+    },
+    {
+     "label": "C",
+     "text": "So am I"
+    },
+    {
+     "label": "D",
+     "text": "So have I"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "The kids always get late for the school as they are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ ready when the school bus arrives.",
+   "options": [
+    {
+     "label": "A",
+     "text": "occasionally"
+    },
+    {
+     "label": "B",
+     "text": "rarely"
+    },
+    {
+     "label": "C",
+     "text": "sometimes"
+    },
+    {
+     "label": "D",
+     "text": "often"
+    }
+   ],
+   "answer": "B",
+   "solution": "Adverb ‘rarely’ describes the verb ‘ready’, so ‘rarely’ is the answer.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "My brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ see a doctor yesterday because he had a headache.",
+   "options": [
+    {
+     "label": "A",
+     "text": "wants"
+    },
+    {
+     "label": "B",
+     "text": "wants to"
+    },
+    {
+     "label": "C",
+     "text": "wanted"
+    },
+    {
+     "label": "D",
+     "text": "wanted to"
+    }
+   ],
+   "answer": "D",
+   "solution": "Since the sentence is in past tense, so ‘wanted to’ is the answer.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Reema didn’t answer the phone \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ she didn’t hear it ring.",
+   "options": [
+    {
+     "label": "A",
+     "text": "as though"
+    },
+    {
+     "label": "B",
+     "text": "besides"
+    },
+    {
+     "label": "C",
+     "text": "because"
+    },
+    {
+     "label": "D",
+     "text": "unless"
+    }
+   ],
+   "answer": "C",
+   "solution": "Conjunction ‘because’ is the answer as it is used to show cause/reason in a sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF PECULIAR.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Specific"
+    },
+    {
+     "label": "B",
+     "text": "Vague"
+    },
+    {
+     "label": "C",
+     "text": "Normal"
+    },
+    {
+     "label": "D",
+     "text": "Like"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION. Gatekeeper : Do you have an entry ticket? Jill : No, I don’t have . Gatekeeper : Sorry, you’re not allowed to enter without a ticket. A. any B. some C. many D. anything vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IEO Model Test Paper 2",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 122
+   }
+  }
+ ]
+}

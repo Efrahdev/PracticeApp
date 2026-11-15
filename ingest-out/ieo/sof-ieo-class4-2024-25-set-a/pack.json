@@ -1,0 +1,1527 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2024-25-set-a",
+  "title": "SOF IEO Class 4 · 2024-25 · Set A",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q22-stem": {
+   "file": "images/q22-stem.png"
+  },
+  "q26-stem-fig": {
+   "file": "images/q26-stem-fig.png"
+  },
+  "q28-stem-fig": {
+   "file": "images/q28-stem-fig.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nI have known Samira since we \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ toddlers.",
+   "options": [
+    {
+     "label": "A",
+     "text": "are"
+    },
+    {
+     "label": "B",
+     "text": "were"
+    },
+    {
+     "label": "C",
+     "text": "will"
+    },
+    {
+     "label": "D",
+     "text": "has"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable verb form ‘were’ is to be used as the sentence talks about an event of past and the noun is in plural (toddlers).",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nYour dog will scratch me, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "doesn’t it"
+    },
+    {
+     "label": "B",
+     "text": "won’t it"
+    },
+    {
+     "label": "C",
+     "text": "don’t it"
+    },
+    {
+     "label": "D",
+     "text": "hasn’t it"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable question tag ‘won’t it’ is to be used, as the contraction of ‘will not’ is ‘won’t’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThe teacher, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ project I completed last night, is absent today.",
+   "options": [
+    {
+     "label": "A",
+     "text": "who"
+    },
+    {
+     "label": "B",
+     "text": "whom"
+    },
+    {
+     "label": "C",
+     "text": "which"
+    },
+    {
+     "label": "D",
+     "text": "whose"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable adjective ‘whose’ is to be used, as it describes to whom something belongs.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nI just received \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ most prestigious award from our school.\n\n![figure](asset:q4-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable definite article ‘the’ is to be used with the superlative degree of the adjective ‘most prestigious award’ in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nDon’t go there \\_\\_\\_\\_\\_\\_\\_\\_\\_ you are accompanied by an elder.",
+   "options": [
+    {
+     "label": "A",
+     "text": "so"
+    },
+    {
+     "label": "B",
+     "text": "because"
+    },
+    {
+     "label": "C",
+     "text": "unless"
+    },
+    {
+     "label": "D",
+     "text": "also"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable subordinating conjunction ‘unless’ is to be used, as it shows the condition that a particular situation will not happen if a condition is not met.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nKindly pass that sheet \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me.\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "to"
+    },
+    {
+     "label": "B",
+     "text": "from"
+    },
+    {
+     "label": "C",
+     "text": "by"
+    },
+    {
+     "label": "D",
+     "text": "on"
+    }
+   ],
+   "answer": "A",
+   "solution": "The appropriate preposition ‘to’ is to be used, as it indicates the direction of the action.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nEverybody struggled to rebuild \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ lives after the pandemic.",
+   "options": [
+    {
+     "label": "A",
+     "text": "ones"
+    },
+    {
+     "label": "B",
+     "text": "them"
+    },
+    {
+     "label": "C",
+     "text": "his"
+    },
+    {
+     "label": "D",
+     "text": "their"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable possessive adjective ‘their’ is to be used, as it provides reference to the indefinite pronoun ‘everybody’ in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\nRohan’s victory in the match is inevitable.\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Adverb"
+    },
+    {
+     "label": "C",
+     "text": "Verb"
+    },
+    {
+     "label": "D",
+     "text": "Adjective"
+    }
+   ],
+   "answer": "D",
+   "solution": "The underlined word ‘inevitable’ is an adjective because it describes the quality of Rohan’s victory in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![They decided to come a week later.](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Adverb"
+    },
+    {
+     "label": "D",
+     "text": "Conjunction"
+    }
+   ],
+   "answer": "C",
+   "solution": "The underlined word ‘later’ is an adverb because it describes the time in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nThe August is the best month for water sports.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The August is"
+    },
+    {
+     "label": "B",
+     "text": "the best month"
+    },
+    {
+     "label": "C",
+     "text": "for water sports."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "A",
+   "solution": "The error is in the option B as article ‘the’ is not to be used before the name of a month. Hence, the correct sentence is: ‘August is the best month for water sports.’",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nJatin volunteer joined the NGO to serve the underprivileged.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Jatin volunteer"
+    },
+    {
+     "label": "B",
+     "text": "joined the NGO"
+    },
+    {
+     "label": "C",
+     "text": "to serve"
+    },
+    {
+     "label": "D",
+     "text": "the underprivileged."
+    }
+   ],
+   "answer": "A",
+   "solution": "The error is in the option A as the adjective ‘volunteer’ should be replaced with the adverb ‘voluntarily’. The correct sentence is: ‘Jatin voluntarily joined the NGO to serve the underprivileged.’",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Helarious"
+    },
+    {
+     "label": "B",
+     "text": "Hilurious"
+    },
+    {
+     "label": "C",
+     "text": "Hillarious"
+    },
+    {
+     "label": "D",
+     "text": "Hilarious"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct spelling is ‘hilarious’, which means ‘extremely funny’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Adible"
+    },
+    {
+     "label": "B",
+     "text": "Eddible"
+    },
+    {
+     "label": "C",
+     "text": "Edible"
+    },
+    {
+     "label": "D",
+     "text": "Edeible"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct spelling is ‘edible’, which means ‘fit to be eaten’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of crisis.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Emergency"
+    },
+    {
+     "label": "B",
+     "text": "Centre"
+    },
+    {
+     "label": "C",
+     "text": "Criticise"
+    },
+    {
+     "label": "D",
+     "text": "Serene"
+    }
+   ],
+   "answer": "A",
+   "solution": "The synonym of the word ‘crisis’ is ‘emergency’, as they both mean ‘a serious event that needs immediate action’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Choose the correct antonym of whine.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Lament"
+    },
+    {
+     "label": "B",
+     "text": "Protest"
+    },
+    {
+     "label": "C",
+     "text": "Cry"
+    },
+    {
+     "label": "D",
+     "text": "Praise"
+    }
+   ],
+   "answer": "D",
+   "solution": "The antonym of the word ‘whine’ is ‘praise’. The word ‘whine’ means ‘to complain’, whereas the word ‘praise’ means ‘to glorify’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 28
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in a quaint village nestled between lush green hills, there lived a young boy named Sam. Sam was known for his kindness and honesty. He lived with his parents in a small cottage at the edge of the village.\n\nOne sunny morning, as Sam was strolling through the village, he stumbled upon a shiny gold coin lying on the ground. His eyes sparkled with excitement, and for a moment, he thought about keeping it for himself. But then he remembered his parents’ teachings about honesty. Sam picked up the coin and decided to inquire around the village if anyone had lost it. He went from door to door, asking every villager if they had misplaced a gold coin. However, no one claimed it. Just as he was about to return home, he saw a distressed old man searching something frantically near the village square. Sam approached him and asked, “Are you looking for something, sir?”\n\nThe old man’s eyes lit up with hope as he replied, “Yes, my dear boy! I lost a shiny gold coin that I was saving for my granddaughter’s birthday gift. It’s very precious to me.” Upon hearing this, Sam smiled and handed the coin to the old man. The man was overjoyed and insisted on rewarding Sam for his honesty. But Sam politely refused, saying, “Helping someone in need is its own reward, sir.” The news of Sam’s honesty spread throughout the village **like wildfire**. The villagers praised him for his integrity and kindness. Sam’s parents were immensely proud of him. As time passed, Sam’s act of honesty inspired others in the village to be truthful and compassionate. The village became known far and wide as a place where honesty and kindness prevailed. From that day on, whenever someone faced a dilemma, they would ask themselves, “What would Sam do?” And the answer was always clear : to choose honesty and kindness above all else. And so, the story of Sam taught everyone that, even in the face of temptation, honesty is the brightest treasure one can possess.\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![When Sam was strolling through the village, he stumbled upon a gold coin lying on the ground.](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![He wanted to return the coin because he remembered his parents’ teachings about honesty.](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "The old man wanted to chide Sam for his honesty."
+    },
+    {
+     "label": "D",
+     "text": "Sam was known for his honesty and kindness in the village."
+    }
+   ],
+   "answer": "C",
+   "solution": "The incorrect statement is ‘the old man wanted to chide Sam for his honesty’ because, according to the passage, the man was overjoyed and insisted on rewarding Sam for his honesty.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in a quaint village nestled between lush green hills, there lived a young boy named Sam. Sam was known for his kindness and honesty. He lived with his parents in a small cottage at the edge of the village.\n\nOne sunny morning, as Sam was strolling through the village, he stumbled upon a shiny gold coin lying on the ground. His eyes sparkled with excitement, and for a moment, he thought about keeping it for himself. But then he remembered his parents’ teachings about honesty. Sam picked up the coin and decided to inquire around the village if anyone had lost it. He went from door to door, asking every villager if they had misplaced a gold coin. However, no one claimed it. Just as he was about to return home, he saw a distressed old man searching something frantically near the village square. Sam approached him and asked, “Are you looking for something, sir?”\n\nThe old man’s eyes lit up with hope as he replied, “Yes, my dear boy! I lost a shiny gold coin that I was saving for my granddaughter’s birthday gift. It’s very precious to me.” Upon hearing this, Sam smiled and handed the coin to the old man. The man was overjoyed and insisted on rewarding Sam for his honesty. But Sam politely refused, saying, “Helping someone in need is its own reward, sir.” The news of Sam’s honesty spread throughout the village **like wildfire**. The villagers praised him for his integrity and kindness. Sam’s parents were immensely proud of him. As time passed, Sam’s act of honesty inspired others in the village to be truthful and compassionate. The village became known far and wide as a place where honesty and kindness prevailed. From that day on, whenever someone faced a dilemma, they would ask themselves, “What would Sam do?” And the answer was always clear : to choose honesty and kindness above all else. And so, the story of Sam taught everyone that, even in the face of temptation, honesty is the brightest treasure one can possess.\n\nChoose the correct sequence of events according to the passage.\n\ni. The news of Sam’s honesty spread everywhere.\n\nii. The old man’s eyes lit up with hope.\n\niii. Sam went from door to door to ask if they had misplaced a precious coin. iv. Sam handed the coin to the old man.\n\nv. Sam approached the old man and said, “Are you looking for something, sir?”",
+   "options": [
+    {
+     "label": "A",
+     "text": "iii, v, ii, iv, i"
+    },
+    {
+     "label": "B",
+     "text": "v, ii, iii, iv, i"
+    },
+    {
+     "label": "C",
+     "text": "i, ii, iii, iv, v"
+    },
+    {
+     "label": "D",
+     "text": "iii, i, ii, v, iv"
+    }
+   ],
+   "answer": "A",
+   "solution": "The most appropriate option is A as it is the correct sequence of events according to the passage.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in a quaint village nestled between lush green hills, there lived a young boy named Sam. Sam was known for his kindness and honesty. He lived with his parents in a small cottage at the edge of the village.\n\nOne sunny morning, as Sam was strolling through the village, he stumbled upon a shiny gold coin lying on the ground. His eyes sparkled with excitement, and for a moment, he thought about keeping it for himself. But then he remembered his parents’ teachings about honesty. Sam picked up the coin and decided to inquire around the village if anyone had lost it. He went from door to door, asking every villager if they had misplaced a gold coin. However, no one claimed it. Just as he was about to return home, he saw a distressed old man searching something frantically near the village square. Sam approached him and asked, “Are you looking for something, sir?”\n\nThe old man’s eyes lit up with hope as he replied, “Yes, my dear boy! I lost a shiny gold coin that I was saving for my granddaughter’s birthday gift. It’s very precious to me.” Upon hearing this, Sam smiled and handed the coin to the old man. The man was overjoyed and insisted on rewarding Sam for his honesty. But Sam politely refused, saying, “Helping someone in need is its own reward, sir.” The news of Sam’s honesty spread throughout the village **like wildfire**. The villagers praised him for his integrity and kindness. Sam’s parents were immensely proud of him. As time passed, Sam’s act of honesty inspired others in the village to be truthful and compassionate. The village became known far and wide as a place where honesty and kindness prevailed. From that day on, whenever someone faced a dilemma, they would ask themselves, “What would Sam do?” And the answer was always clear : to choose honesty and kindness above all else. And so, the story of Sam taught everyone that, even in the face of temptation, honesty is the brightest treasure one can possess.\n\nWhat does the phrase ‘like wildfire’ mean in the passage?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Uncontrolled fire"
+    },
+    {
+     "label": "B",
+     "text": "Very carefully"
+    },
+    {
+     "label": "C",
+     "text": "Very rapidly"
+    },
+    {
+     "label": "D",
+     "text": "Deliberately"
+    }
+   ],
+   "answer": "C",
+   "solution": "The appropriate option ‘very rapidly’ is correct because the phrase ‘like wildfire’ means ‘very quickly’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in a quaint village nestled between lush green hills, there lived a young boy named Sam. Sam was known for his kindness and honesty. He lived with his parents in a small cottage at the edge of the village.\n\nOne sunny morning, as Sam was strolling through the village, he stumbled upon a shiny gold coin lying on the ground. His eyes sparkled with excitement, and for a moment, he thought about keeping it for himself. But then he remembered his parents’ teachings about honesty. Sam picked up the coin and decided to inquire around the village if anyone had lost it. He went from door to door, asking every villager if they had misplaced a gold coin. However, no one claimed it. Just as he was about to return home, he saw a distressed old man searching something frantically near the village square. Sam approached him and asked, “Are you looking for something, sir?”\n\nThe old man’s eyes lit up with hope as he replied, “Yes, my dear boy! I lost a shiny gold coin that I was saving for my granddaughter’s birthday gift. It’s very precious to me.” Upon hearing this, Sam smiled and handed the coin to the old man. The man was overjoyed and insisted on rewarding Sam for his honesty. But Sam politely refused, saying, “Helping someone in need is its own reward, sir.” The news of Sam’s honesty spread throughout the village **like wildfire**. The villagers praised him for his integrity and kindness. Sam’s parents were immensely proud of him. As time passed, Sam’s act of honesty inspired others in the village to be truthful and compassionate. The village became known far and wide as a place where honesty and kindness prevailed. From that day on, whenever someone faced a dilemma, they would ask themselves, “What would Sam do?” And the answer was always clear : to choose honesty and kindness above all else. And so, the story of Sam taught everyone that, even in the face of temptation, honesty is the brightest treasure one can possess.\n\nSam came across an old man \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "in the market"
+    },
+    {
+     "label": "B",
+     "text": "near the pool"
+    },
+    {
+     "label": "C",
+     "text": "near the village square"
+    },
+    {
+     "label": "D",
+     "text": "near the village forest"
+    }
+   ],
+   "answer": "C",
+   "solution": "The option ‘near the village square’ is appropriate because when Sam was about to return home, he saw a distressed old man searching for something frantically near the village square.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in a quaint village nestled between lush green hills, there lived a young boy named Sam. Sam was known for his kindness and honesty. He lived with his parents in a small cottage at the edge of the village.\n\nOne sunny morning, as Sam was strolling through the village, he stumbled upon a shiny gold coin lying on the ground. His eyes sparkled with excitement, and for a moment, he thought about keeping it for himself. But then he remembered his parents’ teachings about honesty. Sam picked up the coin and decided to inquire around the village if anyone had lost it. He went from door to door, asking every villager if they had misplaced a gold coin. However, no one claimed it. Just as he was about to return home, he saw a distressed old man searching something frantically near the village square. Sam approached him and asked, “Are you looking for something, sir?”\n\nThe old man’s eyes lit up with hope as he replied, “Yes, my dear boy! I lost a shiny gold coin that I was saving for my granddaughter’s birthday gift. It’s very precious to me.” Upon hearing this, Sam smiled and handed the coin to the old man. The man was overjoyed and insisted on rewarding Sam for his honesty. But Sam politely refused, saying, “Helping someone in need is its own reward, sir.” The news of Sam’s honesty spread throughout the village **like wildfire**. The villagers praised him for his integrity and kindness. Sam’s parents were immensely proud of him. As time passed, Sam’s act of honesty inspired others in the village to be truthful and compassionate. The village became known far and wide as a place where honesty and kindness prevailed. From that day on, whenever someone faced a dilemma, they would ask themselves, “What would Sam do?” And the answer was always clear : to choose honesty and kindness above all else. And so, the story of Sam taught everyone that, even in the face of temptation, honesty is the brightest treasure one can possess.\n\nThe old man was saving the gold coin for \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "his birthday"
+    },
+    {
+     "label": "B",
+     "text": "his granddaughter’s birthday"
+    },
+    {
+     "label": "C",
+     "text": "his grandson’s wedding"
+    },
+    {
+     "label": "D",
+     "text": "his daughter’s wedding"
+    }
+   ],
+   "answer": "B",
+   "solution": "The most suitable option is ‘his granddaughter’s birthday’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nThe environment is our home, the place where we live, breathe, and grow. It includes everything around us, from the air we breathe to the water we drink to the trees, animals, and earth beneath our feet. It’s like a big, beautiful **puzzle** where every piece is essential for life to thrive. Imagine a world without trees, without birds chirping, or without flowers blooming. It would be a dull and lifeless place. That’s why it’s crucial to take care of our environment, just like we take care of our homes.\n\nOne of the most important things we can do to protect the environment is to reduce, reuse, and recycle. This means using less plastic, paper, and other materials that harm the environment. Instead of throwing things away, we can find creative ways to reuse them or recycle them into something new.\n\nAnother way to help the environment is by planting trees. Trees are like the lungs of the earth; they absorb carbon dioxide and release oxygen, which we need to\n\nbreathe. They also provide shade, habitat for animals, and help prevent soil erosion. We should also be mindful of how we use resources like water and electricity. Turning off the lights when we leave a room, taking shorter showers, and fixing leaky faucets can all help conserve water and energy.\n\nIt’s essential to protect the habitats of animals and plants by not littering or polluting our rivers, oceans, and forests. Every little action we take, whether it’s picking up trash or planting a sapling, can make a difference in preserving our environment for future generations.\n\nWater is essential for life. We use it to drink, bathe, and grow food. But when we pollute our rivers, lakes, and oceans, it harms the creatures living in them and makes the water unsafe for us too. We can all do our part to protect our environment. By taking care of our environment, we are taking care of ourselves and our planet. Let’s work together to keep our home clean, green, and beautiful for many years to come.\n\nWhy is water essential for life?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Because it’s fun to play with."
+    },
+    {
+     "label": "B",
+     "text": "Because we need it to water the crops only."
+    },
+    {
+     "label": "C",
+     "text": "Because we need it to drink, bathe, and grow food."
+    },
+    {
+     "label": "D",
+     "text": "Because it’s colourless."
+    }
+   ],
+   "answer": "C",
+   "solution": "The most appropriate option is ‘because we need it to drink, bathe, and grow food’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nThe environment is our home, the place where we live, breathe, and grow. It includes everything around us, from the air we breathe to the water we drink to the trees, animals, and earth beneath our feet. It’s like a big, beautiful **puzzle** where every piece is essential for life to thrive. Imagine a world without trees, without birds chirping, or without flowers blooming. It would be a dull and lifeless place. That’s why it’s crucial to take care of our environment, just like we take care of our homes.\n\nOne of the most important things we can do to protect the environment is to reduce, reuse, and recycle. This means using less plastic, paper, and other materials that harm the environment. Instead of throwing things away, we can find creative ways to reuse them or recycle them into something new.\n\nAnother way to help the environment is by planting trees. Trees are like the lungs of the earth; they absorb carbon dioxide and release oxygen, which we need to\n\nbreathe. They also provide shade, habitat for animals, and help prevent soil erosion. We should also be mindful of how we use resources like water and electricity. Turning off the lights when we leave a room, taking shorter showers, and fixing leaky faucets can all help conserve water and energy.\n\nIt’s essential to protect the habitats of animals and plants by not littering or polluting our rivers, oceans, and forests. Every little action we take, whether it’s picking up trash or planting a sapling, can make a difference in preserving our environment for future generations.\n\nWater is essential for life. We use it to drink, bathe, and grow food. But when we pollute our rivers, lakes, and oceans, it harms the creatures living in them and makes the water unsafe for us too. We can all do our part to protect our environment. By taking care of our environment, we are taking care of ourselves and our planet. Let’s work together to keep our home clean, green, and beautiful for many years to come.\n\n![Choose the option that lists the correct statements. i. Plants give us oxygen to breathe and make our surroundings beautiful. ii. Plants eat insects and cause soil erosion. iii. When we pollute rivers, lakes, and oceans, it harms the creatures living in them. iv. Plants make the air soiled. v. By using less plastic and paper, we can protect our environment.](asset:q22-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "i, ii, and iv only"
+    },
+    {
+     "label": "B",
+     "text": "i, iii, and v only"
+    },
+    {
+     "label": "C",
+     "text": "ii, iv, and v only"
+    },
+    {
+     "label": "D",
+     "text": "ii, iii and iv only"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct option is B.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nThe environment is our home, the place where we live, breathe, and grow. It includes everything around us, from the air we breathe to the water we drink to the trees, animals, and earth beneath our feet. It’s like a big, beautiful **puzzle** where every piece is essential for life to thrive. Imagine a world without trees, without birds chirping, or without flowers blooming. It would be a dull and lifeless place. That’s why it’s crucial to take care of our environment, just like we take care of our homes.\n\nOne of the most important things we can do to protect the environment is to reduce, reuse, and recycle. This means using less plastic, paper, and other materials that harm the environment. Instead of throwing things away, we can find creative ways to reuse them or recycle them into something new.\n\nAnother way to help the environment is by planting trees. Trees are like the lungs of the earth; they absorb carbon dioxide and release oxygen, which we need to\n\nbreathe. They also provide shade, habitat for animals, and help prevent soil erosion. We should also be mindful of how we use resources like water and electricity. Turning off the lights when we leave a room, taking shorter showers, and fixing leaky faucets can all help conserve water and energy.\n\nIt’s essential to protect the habitats of animals and plants by not littering or polluting our rivers, oceans, and forests. Every little action we take, whether it’s picking up trash or planting a sapling, can make a difference in preserving our environment for future generations.\n\nWater is essential for life. We use it to drink, bathe, and grow food. But when we pollute our rivers, lakes, and oceans, it harms the creatures living in them and makes the water unsafe for us too. We can all do our part to protect our environment. By taking care of our environment, we are taking care of ourselves and our planet. Let’s work together to keep our home clean, green, and beautiful for many years to come.\n\nThe environment includes \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "air"
+    },
+    {
+     "label": "B",
+     "text": "water"
+    },
+    {
+     "label": "C",
+     "text": "land"
+    },
+    {
+     "label": "D",
+     "text": "everything around us"
+    }
+   ],
+   "answer": "D",
+   "solution": "The most suitable option as per the given passage is ‘everything around us’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nThe environment is our home, the place where we live, breathe, and grow. It includes everything around us, from the air we breathe to the water we drink to the trees, animals, and earth beneath our feet. It’s like a big, beautiful **puzzle** where every piece is essential for life to thrive. Imagine a world without trees, without birds chirping, or without flowers blooming. It would be a dull and lifeless place. That’s why it’s crucial to take care of our environment, just like we take care of our homes.\n\nOne of the most important things we can do to protect the environment is to reduce, reuse, and recycle. This means using less plastic, paper, and other materials that harm the environment. Instead of throwing things away, we can find creative ways to reuse them or recycle them into something new.\n\nAnother way to help the environment is by planting trees. Trees are like the lungs of the earth; they absorb carbon dioxide and release oxygen, which we need to\n\nbreathe. They also provide shade, habitat for animals, and help prevent soil erosion. We should also be mindful of how we use resources like water and electricity. Turning off the lights when we leave a room, taking shorter showers, and fixing leaky faucets can all help conserve water and energy.\n\nIt’s essential to protect the habitats of animals and plants by not littering or polluting our rivers, oceans, and forests. Every little action we take, whether it’s picking up trash or planting a sapling, can make a difference in preserving our environment for future generations.\n\nWater is essential for life. We use it to drink, bathe, and grow food. But when we pollute our rivers, lakes, and oceans, it harms the creatures living in them and makes the water unsafe for us too. We can all do our part to protect our environment. By taking care of our environment, we are taking care of ourselves and our planet. Let’s work together to keep our home clean, green, and beautiful for many years to come.\n\nPlants absorb \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ gas.",
+   "options": [
+    {
+     "label": "A",
+     "text": "nitrous"
+    },
+    {
+     "label": "B",
+     "text": "nitrogen"
+    },
+    {
+     "label": "C",
+     "text": "carbon dioxide"
+    },
+    {
+     "label": "D",
+     "text": "methane"
+    }
+   ],
+   "answer": "C",
+   "solution": "The most appropriate option is ‘carbon dioxide,’ as trees absorb carbon dioxide and release oxygen into the air.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nThe environment is our home, the place where we live, breathe, and grow. It includes everything around us, from the air we breathe to the water we drink to the trees, animals, and earth beneath our feet. It’s like a big, beautiful **puzzle** where every piece is essential for life to thrive. Imagine a world without trees, without birds chirping, or without flowers blooming. It would be a dull and lifeless place. That’s why it’s crucial to take care of our environment, just like we take care of our homes.\n\nOne of the most important things we can do to protect the environment is to reduce, reuse, and recycle. This means using less plastic, paper, and other materials that harm the environment. Instead of throwing things away, we can find creative ways to reuse them or recycle them into something new.\n\nAnother way to help the environment is by planting trees. Trees are like the lungs of the earth; they absorb carbon dioxide and release oxygen, which we need to\n\nbreathe. They also provide shade, habitat for animals, and help prevent soil erosion. We should also be mindful of how we use resources like water and electricity. Turning off the lights when we leave a room, taking shorter showers, and fixing leaky faucets can all help conserve water and energy.\n\nIt’s essential to protect the habitats of animals and plants by not littering or polluting our rivers, oceans, and forests. Every little action we take, whether it’s picking up trash or planting a sapling, can make a difference in preserving our environment for future generations.\n\nWater is essential for life. We use it to drink, bathe, and grow food. But when we pollute our rivers, lakes, and oceans, it harms the creatures living in them and makes the water unsafe for us too. We can all do our part to protect our environment. By taking care of our environment, we are taking care of ourselves and our planet. Let’s work together to keep our home clean, green, and beautiful for many years to come.\n\nWhich of the following is not an antonym of the word ‘puzzle’?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Straightforward"
+    },
+    {
+     "label": "B",
+     "text": "Bemuse"
+    },
+    {
+     "label": "C",
+     "text": "Clear"
+    },
+    {
+     "label": "D",
+     "text": "Comprehensible"
+    }
+   ],
+   "answer": "B",
+   "solution": "The most suitable option is ‘bemuse’ which means problematic and is not an antonym of the word ‘puzzle’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nSumit : Could you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me your umbrella?\n\n![figure](asset:q26-stem-fig)\n\nJoy : Sure thing.",
+   "options": [
+    {
+     "label": "A",
+     "text": "borrow"
+    },
+    {
+     "label": "B",
+     "text": "lend"
+    },
+    {
+     "label": "C",
+     "text": "led"
+    },
+    {
+     "label": "D",
+     "text": "sent"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable verb ‘lend’ is to be used because it signifies temporary use of something.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nJenny : Riya has given \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ hope.",
+   "options": [
+    {
+     "label": "A",
+     "text": "off"
+    },
+    {
+     "label": "B",
+     "text": "on"
+    },
+    {
+     "label": "C",
+     "text": "up"
+    },
+    {
+     "label": "D",
+     "text": "at"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct option is ‘up’ as the phrasal verb ‘given up’ means losing hope.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nDivya : There is no bread left at home.\n\n![figure](asset:q28-stem-fig)\n\nRaj : I will buy \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ on my way back.",
+   "options": [
+    {
+     "label": "A",
+     "text": "much"
+    },
+    {
+     "label": "B",
+     "text": "few"
+    },
+    {
+     "label": "C",
+     "text": "little"
+    },
+    {
+     "label": "D",
+     "text": "some"
+    }
+   ],
+   "answer": "D",
+   "solution": "The appropriate quantifier ‘some’ is to be used, as it describes the unspecified unit of bread in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nHeena : Call me \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you need anything.",
+   "options": [
+    {
+     "label": "A",
+     "text": "since"
+    },
+    {
+     "label": "B",
+     "text": "so"
+    },
+    {
+     "label": "C",
+     "text": "if"
+    },
+    {
+     "label": "D",
+     "text": "because"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable conjunction ‘if’ is to be used, as it expresses a condition on which something depends.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nLibrarian : Please return the books that are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "your"
+    },
+    {
+     "label": "B",
+     "text": "due"
+    },
+    {
+     "label": "C",
+     "text": "my"
+    },
+    {
+     "label": "D",
+     "text": "later"
+    }
+   ],
+   "answer": "B",
+   "solution": "The appropriate adjective ‘due’ is to be used as it signifies the delay in return of the borrowed books in the conversation.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nSettling in this new city was such a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, but now we love it here.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tussles"
+    },
+    {
+     "label": "B",
+     "text": "hassle"
+    },
+    {
+     "label": "C",
+     "text": "tack"
+    },
+    {
+     "label": "D",
+     "text": "precinct"
+    }
+   ],
+   "answer": "B",
+   "solution": "The appropriate noun ‘hassle’ is to be used, as it means ‘trouble and annoyance’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 32
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nMy principal wrote me a letter \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ recommendation.",
+   "options": [
+    {
+     "label": "A",
+     "text": "for"
+    },
+    {
+     "label": "B",
+     "text": "from"
+    },
+    {
+     "label": "C",
+     "text": "of"
+    },
+    {
+     "label": "D",
+     "text": "to"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable preposition ‘of’ is to be used before the noun ‘letter of recommendation’ which means ‘a letter describing someone’s qualities and abilities’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Stretegy"
+    },
+    {
+     "label": "B",
+     "text": "Ilegible"
+    },
+    {
+     "label": "C",
+     "text": "Horizontel"
+    },
+    {
+     "label": "D",
+     "text": "Significant"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct spelling is ‘significant’, which means ‘important’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of enthrall.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Upset"
+    },
+    {
+     "label": "B",
+     "text": "Droopy"
+    },
+    {
+     "label": "C",
+     "text": "Fascinate"
+    },
+    {
+     "label": "D",
+     "text": "Glum"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct synonym of the word ‘enthrall’ is ‘fascinate,’ as they both mean ‘to hold someone’s interest or attention’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 33
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Choose the correct option to complete the conversation.\n\nRajat : I can’t take this anymore.\n\nSeema : Don’t worry. It’s just a storm in a \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "sea"
+    },
+    {
+     "label": "B",
+     "text": "![teacup vvv](asset:q35-optB)"
+    },
+    {
+     "label": "C",
+     "text": "boat"
+    },
+    {
+     "label": "D",
+     "text": "weather"
+    }
+   ],
+   "answer": "B",
+   "solution": "The appropriate option ‘teacup’ is to be used, as the idiom ‘storm in a teacup’ means ‘a lot of unnecessary anger and worry about an unimportant matter’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IEO 2024-25 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 33
+   }
+  }
+ ]
+}

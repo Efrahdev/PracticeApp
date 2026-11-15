@@ -1,0 +1,1513 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2023-24-set-a",
+  "title": "SOF IEO Class 4 · 2023-24 · Set A",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q7-full": {
+   "file": "images/q7-full.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q12-full": {
+   "file": "images/q12-full.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q18-optD": {
+   "file": "images/q18-optD.png"
+  },
+  "q23-optA": {
+   "file": "images/q23-optA.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ a piece of jewelry every year.",
+   "options": [
+    {
+     "label": "A",
+     "text": "buy"
+    },
+    {
+     "label": "B",
+     "text": "bought"
+    },
+    {
+     "label": "C",
+     "text": "is buying"
+    },
+    {
+     "label": "D",
+     "text": "buys"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable verb form “buys” is to be used with the singular subject (mother) to describe a habitual action, as indicated by the phrase “every year”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Casie has never seen \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ wombat before.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "A",
+   "solution": "The indefinite article “a” is to be used before the word (wombat) that starts with a consonant.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "My pet dog weighs between 8 \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ 10 kilograms.",
+   "options": [
+    {
+     "label": "A",
+     "text": "to"
+    },
+    {
+     "label": "B",
+     "text": "from"
+    },
+    {
+     "label": "C",
+     "text": "and"
+    },
+    {
+     "label": "D",
+     "text": "until"
+    }
+   ],
+   "answer": "C",
+   "solution": "The conjunction “and” is to be used to join the different parts of the same thing (kilograms) in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Somya felt very bad when her colleagues made a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of her pet’s name.",
+   "options": [
+    {
+     "label": "A",
+     "text": "mimic"
+    },
+    {
+     "label": "B",
+     "text": "just"
+    },
+    {
+     "label": "C",
+     "text": "mockery"
+    },
+    {
+     "label": "D",
+     "text": "fool"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable noun “mockery” is to be used in the sentence, as it means “insulting or making fun of someone” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Everyone in my class \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ a computer at home.",
+   "options": [
+    {
+     "label": "A",
+     "text": "has"
+    },
+    {
+     "label": "B",
+     "text": "have"
+    },
+    {
+     "label": "C",
+     "text": "having"
+    },
+    {
+     "label": "D",
+     "text": "are having"
+    }
+   ],
+   "answer": "A",
+   "solution": "The suitable verb form “has” is to be used with the singular pronoun “everyone” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Shamita sits \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me in class as she is taller than me.",
+   "options": [
+    {
+     "label": "A",
+     "text": "in front of"
+    },
+    {
+     "label": "B",
+     "text": "under"
+    },
+    {
+     "label": "C",
+     "text": "besides"
+    },
+    {
+     "label": "D",
+     "text": "behind"
+    }
+   ],
+   "answer": "D",
+   "solution": "The appropriate preposition “behind” is to be used to state the position of somebody (me) to the back of somebody (Shamita) in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "![There are three trophies on the shelf. The trophy is mine. A. two B. second C. twice D. secondly FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.](asset:q7-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable numeral adjective “second” is to be used to describe the noun “trophy” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![Rabbits normally have white fur.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Adjective"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction"
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "D",
+   "solution": "The underlined word “normally” is an adverb. It is used to modify the action of having white fur in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 47
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![Success or failure is a part of any task.](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Pronoun"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "C",
+   "solution": "The underlined word “or” is a conjunction. It is used to connect two alternatives, “success” and “failure”, in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "When did you bought this remote controlled car?",
+   "options": [
+    {
+     "label": "A",
+     "text": "When did"
+    },
+    {
+     "label": "B",
+     "text": "you bought this"
+    },
+    {
+     "label": "C",
+     "text": "remote controlled car?"
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct sentence is: When did you buy this remote controlled car?",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "They like to do everything by themself.",
+   "options": [
+    {
+     "label": "A",
+     "text": "They like"
+    },
+    {
+     "label": "B",
+     "text": "to do everything"
+    },
+    {
+     "label": "C",
+     "text": "by themself.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct sentence is: They like to do everything by themselves.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "![A. Damocrasy B. Demoucrcy C. Democracy D. Deomcracy](asset:q12-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct spelling is “democracy”, which means “a system in which the government of a country is elected by the people”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![A. Lucomotive B. Lacomative C. Loocmotive D. Locomotive](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct spelling is “locomotive”, which means “the engine of a train”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF CRAFTY.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Naive"
+    },
+    {
+     "label": "B",
+     "text": "Clever"
+    },
+    {
+     "label": "C",
+     "text": "Just"
+    },
+    {
+     "label": "D",
+     "text": "Genuine"
+    }
+   ],
+   "answer": "B",
+   "solution": "The synonym of the word “crafty” is “clever”, as they both mean “skilful”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE ANTONYM OF DISASTER.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Accident"
+    },
+    {
+     "label": "B",
+     "text": "Defeat"
+    },
+    {
+     "label": "C",
+     "text": "Miracle"
+    },
+    {
+     "label": "D",
+     "text": "Rough"
+    }
+   ],
+   "answer": "C",
+   "solution": "The antonym of the word “disaster” is “miracle”. The word “disaster” means “an event causing great damage or suffering”, and the word “miracle” means “an extremely outstanding or wonderful event”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 48
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "Choose a suitable title for the given passage.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Dolphins: The Majestic Creatures"
+    },
+    {
+     "label": "B",
+     "text": "Human Behaviour towards Dolphins"
+    },
+    {
+     "label": "C",
+     "text": "Dolphin: The Most Dangerous Aquatic Animal"
+    },
+    {
+     "label": "D",
+     "text": "Dolphin: A Type of Shark"
+    }
+   ],
+   "answer": "A",
+   "solution": "The suitable title for the given passage is “Dolphins: The Majestic Creatures”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 49
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "What makes dolphins likeable among humans?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Their beautiful, shiny bodies"
+    },
+    {
+     "label": "B",
+     "text": "Their friendly attitude towards humans"
+    },
+    {
+     "label": "C",
+     "text": "Their hunting techniques"
+    },
+    {
+     "label": "D",
+     "text": "Their eating habits"
+    }
+   ],
+   "answer": "B",
+   "solution": "Dolphins have a very friendly attitude towards humans, which makes them likeable among humans.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Choose the statement which is correct.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Dolphins have a length of about 13 feet and weigh about 10 tons."
+    },
+    {
+     "label": "B",
+     "text": "Dolphins live together but travel separately almost their entire lives."
+    },
+    {
+     "label": "C",
+     "text": "The diet of dolphins is similar for each species."
+    },
+    {
+     "label": "D",
+     "text": "![Each pod of dolphins has different characteristics and features unique to that particular pod.](asset:q18-optD)"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "How do dolphins hunt to satisfy their hunger?",
+   "options": [
+    {
+     "label": "A",
+     "text": "They surround the prey from all sides and hold it captive."
+    },
+    {
+     "label": "B",
+     "text": "They hunt separately and then share the prey with their pod."
+    },
+    {
+     "label": "C",
+     "text": "They pounce on the prey silently and then eat it alone."
+    },
+    {
+     "label": "D",
+     "text": "They do not hunt and eat only already dead fish and animals."
+    }
+   ],
+   "answer": "A",
+   "solution": "Dolphins hunt together in pods using techniques like surrounding the prey from all sides and holding it captive.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "In the passage, the word ‘incredulous’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "definite"
+    },
+    {
+     "label": "B",
+     "text": "unbelieving"
+    },
+    {
+     "label": "C",
+     "text": "obvious\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nThere were once six blind men who stood by the roadside every day and begged from the people who passed. They had often heard of elephants, but they had never seen one; for, being blind, how could they?\n\nIt so happened one morning that an elephant was walking down the road where they stood. When they were told that the great beast was before them, they asked the elephant handler to let him stop so that they might see him.\n\nOf course, they could not see him with their eyes, but they thought that by touching him, they could learn just what kind of animal he was.\n\nThe first one happened to put his hand on the elephant’s side. “Well, well!” he said, “now I know all about this beast. He is exactly like a wall.”\n\nThe second felt only the elephant’s tusk. “My brother,” he said, “you are mistaken. He is not at all like a wall. He is round, smooth and sharp. He is more like a spear than anything else.”\n\nThe third happened to take hold of the elephant’s trunk. “Both of you are wrong,” he said. “Anybody who knows anything can see that this elephant is like a snake.” The fourth reached out his arms and grasped one of the elephant’s legs. “Oh, how blind you are!” he said. “It is very plain to me that he is round and tall like a tree.” The fifth was a very tall man, and he chanced to take hold of the elephant’s ear. “The blindest man ought to know that this beast is not like any of the things that you named,” he said. “He is exactly like a huge fan.”\n\nThe sixth was indeed very blind, and it took some time before he could find the elephant at all. At last, he seized the animal’s tail. “O foolish fellows!” he cried. “You surely have lost your senses. This elephant is not like a wall, a spear, a snake, or a tree; neither is he like a fan. But any man with a particle of sense can see that he is exactly like a rope.”\n\nThen the elephant moved on, and the six blind men sat by the roadside all day and quarrelled about him. Each believed that he knew just how the animal looked, and each called the others hard names because they did not agree with him."
+    },
+    {
+     "label": "D",
+     "text": "imperfect\n\n***By James Baldwin***"
+    }
+   ],
+   "answer": "B",
+   "solution": "In the passage, the word “incredulous” means “unbelieving”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 50
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Choose a suitable title for the given passage.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The Journey of the Elephant"
+    },
+    {
+     "label": "B",
+     "text": "Blind Men and the Elephant"
+    },
+    {
+     "label": "C",
+     "text": "How the Elephant was Created"
+    },
+    {
+     "label": "D",
+     "text": "The Unity of Blind Men"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable title for the given passage is “Blind Men and the Elephant”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Why did the blind men ask the elephant handler to stop?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Because they wanted to see (feel) the elephant."
+    },
+    {
+     "label": "B",
+     "text": "Because they wanted to feed the elephant."
+    },
+    {
+     "label": "C",
+     "text": "Because they were scared of the elephant."
+    },
+    {
+     "label": "D",
+     "text": "Because they wanted to ride on the elephant."
+    }
+   ],
+   "answer": "A",
+   "solution": "The blind men asked the elephant handler to stop because they wanted to see (feel) the elephant.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Choose the statement which is incorrect.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![They thought that by touching the elephant they could learn just what kind of animal he was.](asset:q23-optA)"
+    },
+    {
+     "label": "B",
+     "text": "The first blind man put his hand on the elephant’s sides."
+    },
+    {
+     "label": "C",
+     "text": "The second blind man said that the elephant was like a snake."
+    },
+    {
+     "label": "D",
+     "text": "The sixth blind man touched the elephant’s tail."
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 51
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "According to the passage, the fifth man touched the elephant’s ear and said that he was exactly like a \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "snake"
+    },
+    {
+     "label": "B",
+     "text": "tree"
+    },
+    {
+     "label": "C",
+     "text": "spear"
+    },
+    {
+     "label": "D",
+     "text": "huge fan"
+    }
+   ],
+   "answer": "D",
+   "solution": "According to the passage, the fifth blind man touched the elephant’s ear and said that he was exactly like a huge fan.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "According to the passage, the fourth blind man grasped the elephant’s \\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "trunk"
+    },
+    {
+     "label": "B",
+     "text": "tusk"
+    },
+    {
+     "label": "C",
+     "text": "leg"
+    },
+    {
+     "label": "D",
+     "text": "tail"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, the fourth blind man grasped the elephant’s leg.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Father : Where are my car keys?\n\nSon : I have \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ idea. Sorry.",
+   "options": [
+    {
+     "label": "A",
+     "text": "none"
+    },
+    {
+     "label": "B",
+     "text": "not"
+    },
+    {
+     "label": "C",
+     "text": "any"
+    },
+    {
+     "label": "D",
+     "text": "no"
+    }
+   ],
+   "answer": "D",
+   "solution": "The appropriate option “no” is to be used to complete the phrase “no idea”, which means “to not know something”.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Neetu : Priya is flaunting a lot of new dresses these days.\n\nDivya : She must have \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ a jackpot.",
+   "options": [
+    {
+     "label": "A",
+     "text": "dig"
+    },
+    {
+     "label": "B",
+     "text": "hit"
+    },
+    {
+     "label": "C",
+     "text": "kicked"
+    },
+    {
+     "label": "D",
+     "text": "put"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable verb “hit” is to be used to complete the phrase “hit a jackpot”, which means “to win a big profit” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Monika : Can you give me \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ice for my juice?\n\nRachel : Yes, sure.",
+   "options": [
+    {
+     "label": "A",
+     "text": "any"
+    },
+    {
+     "label": "B",
+     "text": "some"
+    },
+    {
+     "label": "C",
+     "text": "much"
+    },
+    {
+     "label": "D",
+     "text": "few"
+    }
+   ],
+   "answer": "B",
+   "solution": "The quantitative adjective “some” is to be used to describe a particular amount of “ice” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Samy : Did you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ it to the finals?",
+   "options": [
+    {
+     "label": "A",
+     "text": "make"
+    },
+    {
+     "label": "B",
+     "text": "makes"
+    },
+    {
+     "label": "C",
+     "text": "made"
+    },
+    {
+     "label": "D",
+     "text": "making"
+    }
+   ],
+   "answer": "A",
+   "solution": "The auxiliary verb “did” indicates that the sentence is in the past tense, and with “did”, the base form of the verb is always used, so the correct verb to be used is “make”.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Riya : From now \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, I will only eat healthy food.\n\nKavya : That’s a great step.",
+   "options": [
+    {
+     "label": "A",
+     "text": "up"
+    },
+    {
+     "label": "B",
+     "text": "at"
+    },
+    {
+     "label": "C",
+     "text": "off"
+    },
+    {
+     "label": "D",
+     "text": "on"
+    }
+   ],
+   "answer": "D",
+   "solution": "The appropriate preposition “on” is to be used to indicate “starting from this moment to the future” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "My grandmother’s health \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ after she had fallen from stairs at home.",
+   "options": [
+    {
+     "label": "A",
+     "text": "decreased"
+    },
+    {
+     "label": "B",
+     "text": "decomposed"
+    },
+    {
+     "label": "C",
+     "text": "deteriorated"
+    },
+    {
+     "label": "D",
+     "text": "depreciated"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable verb “deteriorated” is to be used, which means “to become worse” in the sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 52
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "We \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ hear about robbery incidents in this area. It’s not safe.",
+   "options": [
+    {
+     "label": "A",
+     "text": "most"
+    },
+    {
+     "label": "B",
+     "text": "often"
+    },
+    {
+     "label": "C",
+     "text": "never"
+    },
+    {
+     "label": "D",
+     "text": "random"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable adverb of frequency “often” is to be used to modify the action of hearing in the sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 53
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR. One should not abandon a pet when one looses interest in it.",
+   "options": [
+    {
+     "label": "A",
+     "text": "One should not"
+    },
+    {
+     "label": "B",
+     "text": "abandon a pet"
+    },
+    {
+     "label": "C",
+     "text": "when one looses"
+    },
+    {
+     "label": "D",
+     "text": "interest in it."
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct sentence is: One should not abandon a pet when one loses interest in it.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 53
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF DEFILE.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Corrupt"
+    },
+    {
+     "label": "B",
+     "text": "Esteem"
+    },
+    {
+     "label": "C",
+     "text": "Hallow"
+    },
+    {
+     "label": "D",
+     "text": "Upgrade"
+    }
+   ],
+   "answer": "A",
+   "solution": "The synonym of the word “defile” is “corrupt”, as they both mean “spoiling the goodness of something”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 53
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION.\n\nTeacher : You have done well in the examination.\n\nStudent : Thanks, sir. My parents advised me to \\_\\_\\_\\_\\_\\_\\_\\_ up the good work.",
+   "options": [
+    {
+     "label": "A",
+     "text": "keeps"
+    },
+    {
+     "label": "B",
+     "text": "![keeping vvv](asset:q35-optB)"
+    },
+    {
+     "label": "C",
+     "text": "keep"
+    },
+    {
+     "label": "D",
+     "text": "kept"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable verb to be followed by the preposition “to” is “keep” in the sentence because with “to” the base (first) form of the verb is used.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IEO 2023-24 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 53
+   }
+  }
+ ]
+}

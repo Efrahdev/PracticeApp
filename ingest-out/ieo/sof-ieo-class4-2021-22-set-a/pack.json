@@ -1,0 +1,1490 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2021-22-set-a",
+  "title": "SOF IEO Class 4 · 2021-22 · Set A",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q12-full": {
+   "file": "images/q12-full.png"
+  },
+  "q13-full": {
+   "file": "images/q13-full.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "I thought you are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with this concept.",
+   "options": [
+    {
+     "label": "A",
+     "text": "known"
+    },
+    {
+     "label": "B",
+     "text": "familiar"
+    },
+    {
+     "label": "C",
+     "text": "equal"
+    },
+    {
+     "label": "D",
+     "text": "voluntary"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Familiar’ means having a good knowledge or understanding.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Richa is crying because the bag we lost in the fair was \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "her"
+    },
+    {
+     "label": "B",
+     "text": "its"
+    },
+    {
+     "label": "C",
+     "text": "hers"
+    },
+    {
+     "label": "D",
+     "text": "our"
+    }
+   ],
+   "answer": "C",
+   "solution": "The pronoun ‘hers’ is a possessive pronoun. It is used to show ownership in a sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "The meal \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ rice, curry and salad.",
+   "options": [
+    {
+     "label": "A",
+     "text": "includes"
+    },
+    {
+     "label": "B",
+     "text": "include"
+    },
+    {
+     "label": "C",
+     "text": "including"
+    },
+    {
+     "label": "D",
+     "text": "does includes"
+    }
+   ],
+   "answer": "A",
+   "solution": "The sentence given in question is in simple present tense and when the subject (the meal) of the sentence is singular, the verb becomes plural.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Jacob takes \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shower every morning.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "A",
+   "solution": "We use indefinite article ‘a’ with a noun that starts with a consonant sound.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Ajay’s \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ nature made him very unpopular.",
+   "options": [
+    {
+     "label": "A",
+     "text": "mature"
+    },
+    {
+     "label": "B",
+     "text": "kind"
+    },
+    {
+     "label": "C",
+     "text": "arrogant"
+    },
+    {
+     "label": "D",
+     "text": "calm"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Arrogant’ is the correct option because the sentence in question shows Ajay’s personality in a negative way.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Amidst the pandemic \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, I volunteered at the government hospital.",
+   "options": [
+    {
+     "label": "A",
+     "text": "before"
+    },
+    {
+     "label": "B",
+     "text": "last month"
+    },
+    {
+     "label": "C",
+     "text": "tomorrow"
+    },
+    {
+     "label": "D",
+     "text": "annual"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "She didn’t take part \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the dance competition.",
+   "options": [
+    {
+     "label": "A",
+     "text": "in"
+    },
+    {
+     "label": "B",
+     "text": "at"
+    },
+    {
+     "label": "C",
+     "text": "on"
+    },
+    {
+     "label": "D",
+     "text": "for"
+    }
+   ],
+   "answer": "A",
+   "solution": "Preposition ‘in’ is used while doing something.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "We went to the market \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shopped for eatables.",
+   "options": [
+    {
+     "label": "A",
+     "text": "but"
+    },
+    {
+     "label": "B",
+     "text": "yet"
+    },
+    {
+     "label": "C",
+     "text": "because"
+    },
+    {
+     "label": "D",
+     "text": "and"
+    }
+   ],
+   "answer": "D",
+   "solution": "Conjunction ‘and’ is used to link two sentences in a single sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "The boy \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ up the tree, so that the bear couldn’t see him.",
+   "options": [
+    {
+     "label": "A",
+     "text": "climb"
+    },
+    {
+     "label": "B",
+     "text": "climbs"
+    },
+    {
+     "label": "C",
+     "text": "climbed\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+    },
+    {
+     "label": "D",
+     "text": "climbing"
+    }
+   ],
+   "answer": "C",
+   "solution": "The given question talks about the past incident and we use second form of verb in simple past tense. ‘Climbed’ is the 2<sup>nd</sup> form of verb climb.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Sudden, Ravisha became super polite.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Sudden,"
+    },
+    {
+     "label": "B",
+     "text": "Ravisha became"
+    },
+    {
+     "label": "C",
+     "text": "super polite."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence would be, “Suddenly, Ravisha became super polite”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "The next fish trip would be great with our new gear.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The next fish"
+    },
+    {
+     "label": "B",
+     "text": "trip would be"
+    },
+    {
+     "label": "C",
+     "text": "great with our"
+    },
+    {
+     "label": "D",
+     "text": "new gear.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct sentence would be, “The next fishing trip would be great with our new gear”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "![A. Trensperent B. Transparent C. Trunsperunt D. Transperant](asset:q12-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![A. Philosophy B. Phylosophy C. Philosphy D. Phyilosophy](asset:q13-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF FEARLESS.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Shy"
+    },
+    {
+     "label": "B",
+     "text": "Timid"
+    },
+    {
+     "label": "C",
+     "text": "Heroic"
+    },
+    {
+     "label": "D",
+     "text": "Weak"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Heroic’, is the synonym of ‘fearless’. Both these words mean, “showing a lack of fear or admirably brave”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE ANTONYM OF PUZZLED.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Exhibited"
+    },
+    {
+     "label": "B",
+     "text": "Sure"
+    },
+    {
+     "label": "C",
+     "text": "Confused"
+    },
+    {
+     "label": "D",
+     "text": "Lost"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Sure’ is the antonym of ‘Puzzled’. ‘Puzzled’ means unable to understand something and ‘sure’ means having no doubts about anything.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "The old woman was driving \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Jazz"
+    },
+    {
+     "label": "B",
+     "text": "Mercedes"
+    },
+    {
+     "label": "C",
+     "text": "bike"
+    },
+    {
+     "label": "D",
+     "text": "van"
+    }
+   ],
+   "answer": "B",
+   "solution": "The old woman was driving Mercedes.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "What was wrong with the old lady’s vehicle?",
+   "options": [
+    {
+     "label": "A",
+     "text": "No fuel"
+    },
+    {
+     "label": "B",
+     "text": "Low battery"
+    },
+    {
+     "label": "C",
+     "text": "Flat tire"
+    },
+    {
+     "label": "D",
+     "text": "No key"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "How did the man ask the old lady to pay him?",
+   "options": [
+    {
+     "label": "A",
+     "text": "With money"
+    },
+    {
+     "label": "B",
+     "text": "By giving him her car"
+    },
+    {
+     "label": "C",
+     "text": "By passing on the kindness"
+    },
+    {
+     "label": "D",
+     "text": "By giving him a job"
+    }
+   ],
+   "answer": "C",
+   "solution": "The man asked the old lady to pay him by passing on the kindness to someone else in their time of need.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "The old lady left \\_\\_\\_\\_\\_\\_\\_\\_\\_ for the waitress.",
+   "options": [
+    {
+     "label": "A",
+     "text": "five hundred dollars"
+    },
+    {
+     "label": "B",
+     "text": "one hundred dollars"
+    },
+    {
+     "label": "C",
+     "text": "only change"
+    },
+    {
+     "label": "D",
+     "text": "just a handwritten note"
+    }
+   ],
+   "answer": "A",
+   "solution": "The old lady left five hundred dollars for the waitress and asked to repay her by continuing this chain of love.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "The word ‘dingy’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "dirty\n\nFOLLOW.\n\n68-feet wave.\n\nwave I’d ever ridden.”\n\nrigorous analysis."
+    },
+    {
+     "label": "B",
+     "text": "closed\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating**\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more"
+    },
+    {
+     "label": "C",
+     "text": "clean"
+    },
+    {
+     "label": "D",
+     "text": "bright"
+    }
+   ],
+   "answer": "A",
+   "solution": "‘Dirty’ is the correct option. Both these words ‘dingy’ and ‘dirty’ mean unclean.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "The first record was made by Gabeira on/in \\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a 73.5 feet wave"
+    },
+    {
+     "label": "B",
+     "text": "2018"
+    },
+    {
+     "label": "C",
+     "text": "2020"
+    },
+    {
+     "label": "D",
+     "text": "2010"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "What made the surfer realise, “it was probably the biggest wave”?",
+   "options": [
+    {
+     "label": "A",
+     "text": "The water"
+    },
+    {
+     "label": "B",
+     "text": "The speed"
+    },
+    {
+     "label": "C",
+     "text": "The noise"
+    },
+    {
+     "label": "D",
+     "text": "The time"
+    }
+   ],
+   "answer": "C",
+   "solution": "The noise that the wave made when it broke made the surfer realize that this was probably the biggest wave she’d ever ridden.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Who made sure the record was made by Gabeira?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Nazaré Tow Surfing Challenge"
+    },
+    {
+     "label": "B",
+     "text": "Guinness World Records"
+    },
+    {
+     "label": "C",
+     "text": "World Surf League"
+    },
+    {
+     "label": "D",
+     "text": "Brazil government"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "The height of the wave is from \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "trough only"
+    },
+    {
+     "label": "B",
+     "text": "trough to crest"
+    },
+    {
+     "label": "C",
+     "text": "crest only"
+    },
+    {
+     "label": "D",
+     "text": "sea"
+    }
+   ],
+   "answer": "B",
+   "solution": "The height of wave is from trough to crest.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "The word ‘intimidating’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "terrifying"
+    },
+    {
+     "label": "B",
+     "text": "possible"
+    },
+    {
+     "label": "C",
+     "text": "enjoyable"
+    },
+    {
+     "label": "D",
+     "text": "fruitful"
+    }
+   ],
+   "answer": "A",
+   "solution": "Both these words ‘intimidating’ and ‘terrifying’ mean having a frightening effect.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Sumita : I am going to get some coffee. Do you want some?\n\nRajan : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "No, I was"
+    },
+    {
+     "label": "B",
+     "text": "No, I am good"
+    },
+    {
+     "label": "C",
+     "text": "Yes, I am good"
+    },
+    {
+     "label": "D",
+     "text": "Yes, I don’t"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Ravi : Can you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me salt and pepper?\n\nSoma : Sure, here you go.",
+   "options": [
+    {
+     "label": "A",
+     "text": "send"
+    },
+    {
+     "label": "B",
+     "text": "take"
+    },
+    {
+     "label": "C",
+     "text": "pass"
+    },
+    {
+     "label": "D",
+     "text": "leave"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Rahul : Sumit plays football \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tomorrow"
+    },
+    {
+     "label": "B",
+     "text": "every evening"
+    },
+    {
+     "label": "C",
+     "text": "day"
+    },
+    {
+     "label": "D",
+     "text": "than"
+    }
+   ],
+   "answer": "B",
+   "solution": "‘Every evening’ is the correct answer.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Sachin : Did Hari \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ it with you?\n\nShama : No, he didn’t.",
+   "options": [
+    {
+     "label": "A",
+     "text": "discuss"
+    },
+    {
+     "label": "B",
+     "text": "discussed"
+    },
+    {
+     "label": "C",
+     "text": "discusses"
+    },
+    {
+     "label": "D",
+     "text": "discussing"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Rohit : I forgot to switch off the heater.\n\nBeena : Oh! We \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ go back and switch it off.",
+   "options": [
+    {
+     "label": "A",
+     "text": "can"
+    },
+    {
+     "label": "B",
+     "text": "need"
+    },
+    {
+     "label": "C",
+     "text": "must"
+    },
+    {
+     "label": "D",
+     "text": "dare"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "I love the way your baby brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your actions.",
+   "options": [
+    {
+     "label": "A",
+     "text": "mimic"
+    },
+    {
+     "label": "B",
+     "text": "mimics"
+    },
+    {
+     "label": "C",
+     "text": "copy"
+    },
+    {
+     "label": "D",
+     "text": "copying"
+    }
+   ],
+   "answer": "B",
+   "solution": "When the subject of sentence is singular then the verb becomes plural.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Shasha \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the drowning girl bravely.",
+   "options": [
+    {
+     "label": "A",
+     "text": "help"
+    },
+    {
+     "label": "B",
+     "text": "save"
+    },
+    {
+     "label": "C",
+     "text": "rescued"
+    },
+    {
+     "label": "D",
+     "text": "worried"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Rescued’, is the most suitable verb for the given question. Rescue means to protect someone from something bad or dangerous.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nThese shoes are exactly the same as my.",
+   "options": [
+    {
+     "label": "A",
+     "text": "These shoes"
+    },
+    {
+     "label": "B",
+     "text": "are exactly"
+    },
+    {
+     "label": "C",
+     "text": "the same"
+    },
+    {
+     "label": "D",
+     "text": "as my."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence would be, “These shoes are exactly the same as mine”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF NEGATE.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Refute"
+    },
+    {
+     "label": "B",
+     "text": "Allow"
+    },
+    {
+     "label": "C",
+     "text": "Enact"
+    },
+    {
+     "label": "D",
+     "text": "Support"
+    }
+   ],
+   "answer": "A",
+   "solution": "‘Refute’ is the synonym of ‘Negate’. Both these words mean, “to state that something is incorrect or does not exist”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 93
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION. Rajni : I have never classical music. Jyoti : Oh I love classical music. A. being in B. been C. been into D. be into vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "‘Been into; means ‘ to be interested in something.’",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IEO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 93
+   }
+  }
+ ]
+}

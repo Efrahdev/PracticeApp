@@ -1,0 +1,1565 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-level2-2012-13",
+  "title": "SOF IMO Class 4 · Level 2 · 2012-13",
+  "source": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q3-optA": {
+   "file": "images/q3-optA.png"
+  },
+  "q3-optB": {
+   "file": "images/q3-optB.png"
+  },
+  "q3-optC": {
+   "file": "images/q3-optC.png"
+  },
+  "q3-optD": {
+   "file": "images/q3-optD.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q6-optA": {
+   "file": "images/q6-optA.png"
+  },
+  "q6-optB": {
+   "file": "images/q6-optB.png"
+  },
+  "q6-optC": {
+   "file": "images/q6-optC.png"
+  },
+  "q6-optD": {
+   "file": "images/q6-optD.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q7-full": {
+   "file": "images/q7-full.png"
+  },
+  "q8-optA": {
+   "file": "images/q8-optA.png"
+  },
+  "q8-optB": {
+   "file": "images/q8-optB.png"
+  },
+  "q8-optC": {
+   "file": "images/q8-optC.png"
+  },
+  "q8-optD": {
+   "file": "images/q8-optD.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q9-stem-fig": {
+   "file": "images/q9-stem-fig.png"
+  },
+  "q10-stem-fig1": {
+   "file": "images/q10-stem-fig1.png"
+  },
+  "q10-stem-fig2": {
+   "file": "images/q10-stem-fig2.png"
+  },
+  "q11-stem-fig": {
+   "file": "images/q11-stem-fig.png"
+  },
+  "q13-stem": {
+   "file": "images/q13-stem.png"
+  },
+  "q16-stem-fig": {
+   "file": "images/q16-stem-fig.png"
+  },
+  "q18-optA": {
+   "file": "images/q18-optA.png"
+  },
+  "q18-optB": {
+   "file": "images/q18-optB.png"
+  },
+  "q18-optC": {
+   "file": "images/q18-optC.png"
+  },
+  "q18-optD": {
+   "file": "images/q18-optD.png"
+  },
+  "q18-stem-fig": {
+   "file": "images/q18-stem-fig.png"
+  },
+  "q22-stem-fig1": {
+   "file": "images/q22-stem-fig1.png"
+  },
+  "q22-stem-fig2": {
+   "file": "images/q22-stem-fig2.png"
+  },
+  "q24-optB": {
+   "file": "images/q24-optB.png"
+  },
+  "q24-stem-fig": {
+   "file": "images/q24-stem-fig.png"
+  },
+  "q27-stem": {
+   "file": "images/q27-stem.png"
+  },
+  "q28-optA": {
+   "file": "images/q28-optA.png"
+  },
+  "q28-optB": {
+   "file": "images/q28-optB.png"
+  },
+  "q28-optC": {
+   "file": "images/q28-optC.png"
+  },
+  "q28-optD": {
+   "file": "images/q28-optD.png"
+  },
+  "q32-stem": {
+   "file": "images/q32-stem.png"
+  },
+  "q35-stem-fig": {
+   "file": "images/q35-stem-fig.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Find out which of the letter series follows the given rule.\n\n\"Number of letters skipped in between adjacent letters in the series is two\"",
+   "options": [
+    {
+     "label": "A",
+     "text": "MPSVYBE"
+    },
+    {
+     "label": "B",
+     "text": "QSVYZCF"
+    },
+    {
+     "label": "C",
+     "text": "SVZCGJN"
+    },
+    {
+     "label": "D",
+     "text": "ZCGKMPR"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Find the missing number if both the figures follow same pattern.\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "18704"
+    },
+    {
+     "label": "B",
+     "text": "15984"
+    },
+    {
+     "label": "C",
+     "text": "17504"
+    },
+    {
+     "label": "D",
+     "text": "19803"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Choose the correct mirror-image of the Fig. (X), if the mirror is placed vertically to the right.\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q3-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q3-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q3-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q3-optD)"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "The positions of how many digits in the number 321465987 will remain same when the digits are arranged in ascending order?",
+   "options": [
+    {
+     "label": "A",
+     "text": "None"
+    },
+    {
+     "label": "B",
+     "text": "One"
+    },
+    {
+     "label": "C",
+     "text": "Two"
+    },
+    {
+     "label": "D",
+     "text": "Three"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "If in a certain code, O is written as E, A as C, M as I, S as O, N as P, E as M, I as A, P as N and C as S, then how will 'COMPANIES' be written in that code?",
+   "options": [
+    {
+     "label": "A",
+     "text": "SMINCPAMO"
+    },
+    {
+     "label": "B",
+     "text": "SEIACPAMO"
+    },
+    {
+     "label": "C",
+     "text": "SEINCPAMO"
+    },
+    {
+     "label": "D",
+     "text": "SEINCPMIO"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Identify the symmetrical figure corresponding to the half symmetrical figure as shown below.\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q6-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q6-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q6-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q6-optD)"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "![Garima's result slip for the mid-year examination is torn. What is her highest possible mark for Mathematics? XYZ School Result Slip for Mid-Year Examination Name : Garima English 8 Mathematics 9 Science 79 Total 256 A 96 B 97 C 98 D 99](asset:q7-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Which figure is embedded in Fig. (X)?\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q8-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q8-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q8-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q8-optD)"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "Meera is at position A facing D. She walks forward and makes a 90° turn to the right. She walks on the next position where she makes another 90° turn to the right to reach the next and final position. What is her final position?\n\n![figure](asset:q9-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "E"
+    },
+    {
+     "label": "B",
+     "text": "B"
+    },
+    {
+     "label": "C",
+     "text": "G"
+    },
+    {
+     "label": "D",
+     "text": "F"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "What is the minimum number of different colours required to paint the given figure such that no two adjacent regions have the same colour in the given diagram?\n\n![figure](asset:q10-stem-fig1)\n\n![figure](asset:q10-stem-fig2)",
+   "options": [
+    {
+     "label": "A",
+     "text": "3"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "6"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Use the working backward strategy to find the values of P, Q and R.\n\n![figure](asset:q11-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "300, 1800, 450"
+    },
+    {
+     "label": "B",
+     "text": "200, 1200, 300"
+    },
+    {
+     "label": "C",
+     "text": "290, 1300, 690"
+    },
+    {
+     "label": "D",
+     "text": "250, 1500, 375"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "How many numbers between 50 and 100 are multiples of 6?",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "9"
+    },
+    {
+     "label": "D",
+     "text": "10"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![How many 1 are there in 3 1 ?](asset:q13-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "28"
+    },
+    {
+     "label": "B",
+     "text": "26"
+    },
+    {
+     "label": "C",
+     "text": "30"
+    },
+    {
+     "label": "D",
+     "text": "22"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "I am a number between 50 and 80. If you divide me by 4, 5 or 6, I will leave a remainder of 3. What number am I?",
+   "options": [
+    {
+     "label": "A",
+     "text": "65"
+    },
+    {
+     "label": "B",
+     "text": "63"
+    },
+    {
+     "label": "C",
+     "text": "72"
+    },
+    {
+     "label": "D",
+     "text": "61"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "A number that is less than 100 is a common multiple of 6 and 8, and a factor of 120. The difference between its digits is \\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "The graph shows the number of people who signed up for different types of games during the Family Fun Day. Study the graph carefully and answer the question.\n\n![figure](asset:q16-stem-fig)\n\nIn which game is there twice as many adults as children participating?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Volleyball"
+    },
+    {
+     "label": "B",
+     "text": "Basketball"
+    },
+    {
+     "label": "C",
+     "text": "Table tennis"
+    },
+    {
+     "label": "D",
+     "text": "Badminton"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "G is a factor of 48 but not a multiple of 4. If G is larger than 5, find G.",
+   "options": [
+    {
+     "label": "A",
+     "text": "24"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "What fraction of the figure is unshaded?\n\n![figure](asset:q18-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![20 7](asset:q18-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![13 20](asset:q18-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![20 11](asset:q18-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![20 9](asset:q18-optD)"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "The second smallest 5-digit even number formed by using all the digits 9, 2, 0, 4 and 3, the digit in the ten thousands place stands for \\_\\_\\_\\_\\_ hundreds.",
+   "options": [
+    {
+     "label": "A",
+     "text": "204"
+    },
+    {
+     "label": "B",
+     "text": "240"
+    },
+    {
+     "label": "C",
+     "text": "200"
+    },
+    {
+     "label": "D",
+     "text": "203"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Danish has either ₹ 5 or ₹ 10 notes. He has a total of ₹ 260. How many more ₹ 5 notes than ₹ 10 notes will be there?",
+   "options": [
+    {
+     "label": "A",
+     "text": "22"
+    },
+    {
+     "label": "B",
+     "text": "26"
+    },
+    {
+     "label": "C",
+     "text": "28"
+    },
+    {
+     "label": "D",
+     "text": "10"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "The quotient of 2304 and 4 is less than the product of 6 and \\*. Find the smallest possible whole number in place of \\*.",
+   "options": [
+    {
+     "label": "A",
+     "text": "96"
+    },
+    {
+     "label": "B",
+     "text": "88"
+    },
+    {
+     "label": "C",
+     "text": "106"
+    },
+    {
+     "label": "D",
+     "text": "42"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Which is the standard form of the number represented by the given picture ?\n\n![figure](asset:q22-stem-fig1)\n\n![figure](asset:q22-stem-fig2)",
+   "options": [
+    {
+     "label": "A",
+     "text": "0,491"
+    },
+    {
+     "label": "B",
+     "text": "4,091"
+    },
+    {
+     "label": "C",
+     "text": "4,190"
+    },
+    {
+     "label": "D",
+     "text": "4,901"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "The place value of which digit is always equal to it's own value?",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "0"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "When is added to 59 hundreds, the answer is 300 tens more than 11 thousands.\n\n![figure](asset:q24-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "How many tens is\n\n4"
+    },
+    {
+     "label": "B",
+     "text": "![? 40](asset:q24-optB)"
+    },
+    {
+     "label": "C",
+     "text": "34"
+    },
+    {
+     "label": "D",
+     "text": "810"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "It was 23:20 when Jay reached home. If he spent 1 hr 42 mins on the bus ride, what time did he board the bus?",
+   "options": [
+    {
+     "label": "A",
+     "text": "9:30 p.m."
+    },
+    {
+     "label": "B",
+     "text": "10:38 p.m."
+    },
+    {
+     "label": "C",
+     "text": "9:38 p.m."
+    },
+    {
+     "label": "D",
+     "text": "9:38 a.m."
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "The time shown in Prerna's watch was 15 minutes slow. School started at 12:45 and Prerna was right on time. What was the time shown on Prerna's watch when she reached school?",
+   "options": [
+    {
+     "label": "A",
+     "text": "12:30"
+    },
+    {
+     "label": "B",
+     "text": "13:00"
+    },
+    {
+     "label": "C",
+     "text": "1:00"
+    },
+    {
+     "label": "D",
+     "text": "13:05"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "![An apple costs 1 as much as a papaya. Misha paid ₹ 32 for four papayas. How much did she spend on 9 apples?](asset:q27-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 16"
+    },
+    {
+     "label": "B",
+     "text": "₹ 28"
+    },
+    {
+     "label": "C",
+     "text": "₹ 30"
+    },
+    {
+     "label": "D",
+     "text": "₹ 36"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Rishab's weight is 28 kg. Deepali's weight is 4 kg more than Rishab's. What fraction of Rishab's weight is Deepali's weight?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 7](asset:q28-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![7 8](asset:q28-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![8 7](asset:q28-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![8 15](asset:q28-optD)"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Shilpa is four times as old as Raj. Riya is 6 years younger than Raj. If their total ages is 72, how much older is Shilpa than Riya?",
+   "options": [
+    {
+     "label": "A",
+     "text": "48 years"
+    },
+    {
+     "label": "B",
+     "text": "45 years"
+    },
+    {
+     "label": "C",
+     "text": "42 years"
+    },
+    {
+     "label": "D",
+     "text": "39 years"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Mary bought a new exercise book and she numbered all the pages. She wrote 151 digits in all. How many pages were there in the exercise book?",
+   "options": [
+    {
+     "label": "A",
+     "text": "80"
+    },
+    {
+     "label": "B",
+     "text": "90"
+    },
+    {
+     "label": "C",
+     "text": "95"
+    },
+    {
+     "label": "D",
+     "text": "91"
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "A group of 6 boys went to a carnival. The boys paired up for the bumper car rides so that each boy will ride with each of the other boys once. How many rides did the group take in all?",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "13"
+    },
+    {
+     "label": "C",
+     "text": "14"
+    },
+    {
+     "label": "D",
+     "text": "15"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![Sagar and Samir have an equal amount of money. 3 of Sagar's money is ₹ 2400. What is 2 of Samir's sum of money?](asset:q32-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 720"
+    },
+    {
+     "label": "B",
+     "text": "₹ 1280"
+    },
+    {
+     "label": "C",
+     "text": "₹ 1600"
+    },
+    {
+     "label": "D",
+     "text": "₹ 900"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Isha bought 80 peaches. She found out that out of every 10 peaches, 2 are rotten and had to be thrown away. How many peaches did she have left in the end?",
+   "options": [
+    {
+     "label": "A",
+     "text": "70"
+    },
+    {
+     "label": "B",
+     "text": "74"
+    },
+    {
+     "label": "C",
+     "text": "64"
+    },
+    {
+     "label": "D",
+     "text": "68"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "In a zoo, there were 15 lions and peacocks altogether. The number of heads was 25 less than the number of legs. How many more peacocks were there?",
+   "options": [
+    {
+     "label": "A",
+     "text": "20"
+    },
+    {
+     "label": "B",
+     "text": "15"
+    },
+    {
+     "label": "C",
+     "text": "10"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ],
+   "answer": "D",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "What is the total length of wire needed to form the given figure?\n\n![figure](asset:q35-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "83 cm"
+    },
+    {
+     "label": "B",
+     "text": "78 cm"
+    },
+    {
+     "label": "C",
+     "text": "88 cm"
+    },
+    {
+     "label": "D",
+     "text": "92 cm"
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 2,
+    "Year": "2012-13",
+    "Set": "Level 2",
+    "Paper": "IMO Level 2 2012-13",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "IMO class 4 Level 2 solved papers (2012-2014).pdf",
+    "page": 26
+   }
+  }
+ ]
+}
