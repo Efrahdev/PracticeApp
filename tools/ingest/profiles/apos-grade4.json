@@ -1,0 +1,12 @@
+{
+ "source": "APOS Grade4.pdf",
+ "subject": "Maths",
+ "fields": {"Book": "Beast Academy Practice 4D", "Class": 4},
+ "band": [40, 752, 0],
+ "margin": 30,
+ "answer_label_x": 460,
+ "chapters": [
+  {"id": "apos-grade4-fractions", "title": "Beast Academy 4D · Fractions", "pages": [1, 31], "count": 166, "fields": {"Chapter": "Fractions"}},
+  {"id": "apos-grade4-decimals", "title": "Beast Academy 4D · Decimals", "pages": [33, 60], "count": 180, "fields": {"Chapter": "Decimals"}}
+ ]
+}

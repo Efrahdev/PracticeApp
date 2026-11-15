@@ -1,0 +1,3623 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "apos-grade4-fractions",
+  "title": "Beast Academy 4D · Fractions",
+  "source": "APOS Grade4.pdf",
+  "subject": "Maths",
+  "fields": {
+   "Book": "Beast Academy Practice 4D",
+   "Class": 4,
+   "Chapter": "Fractions"
+  }
+ },
+ "assets": {
+  "apos-grade4-fractions-q1": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q1.png"
+  },
+  "apos-grade4-fractions-q2": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q2.png"
+  },
+  "apos-grade4-fractions-q3": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q3.png"
+  },
+  "apos-grade4-fractions-q4": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q4.png"
+  },
+  "apos-grade4-fractions-q5": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q5.png"
+  },
+  "apos-grade4-fractions-q6": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q6.png"
+  },
+  "apos-grade4-fractions-q7": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q7.png"
+  },
+  "apos-grade4-fractions-q8": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q8.png"
+  },
+  "apos-grade4-fractions-q9": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q9.png"
+  },
+  "apos-grade4-fractions-q10": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q10.png"
+  },
+  "apos-grade4-fractions-q11": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q11.png"
+  },
+  "apos-grade4-fractions-q12": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q12.png"
+  },
+  "apos-grade4-fractions-q13": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q13.png"
+  },
+  "apos-grade4-fractions-q14": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q14.png"
+  },
+  "apos-grade4-fractions-q15": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q15.png"
+  },
+  "apos-grade4-fractions-q16": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q16.png"
+  },
+  "apos-grade4-fractions-q17": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q17.png"
+  },
+  "apos-grade4-fractions-q18": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q18.png"
+  },
+  "apos-grade4-fractions-q19": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q19.png"
+  },
+  "apos-grade4-fractions-q20": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q20.png"
+  },
+  "apos-grade4-fractions-q21": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q21.png"
+  },
+  "apos-grade4-fractions-q22": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q22.png"
+  },
+  "apos-grade4-fractions-q23": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q23.png"
+  },
+  "apos-grade4-fractions-q24": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q24.png"
+  },
+  "apos-grade4-fractions-q25": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q25.png"
+  },
+  "apos-grade4-fractions-q26": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q26.png"
+  },
+  "apos-grade4-fractions-q27": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q27.png"
+  },
+  "apos-grade4-fractions-q29": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q29.png"
+  },
+  "apos-grade4-fractions-q30": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q30.png"
+  },
+  "apos-grade4-fractions-q32": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q32.png"
+  },
+  "apos-grade4-fractions-q33": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q33.png"
+  },
+  "apos-grade4-fractions-q34": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q34.png"
+  },
+  "apos-grade4-fractions-q35": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q35.png"
+  },
+  "apos-grade4-fractions-q36": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q36.png"
+  },
+  "apos-grade4-fractions-q37": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q37.png"
+  },
+  "apos-grade4-fractions-q38": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q38.png"
+  },
+  "apos-grade4-fractions-q39": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q39.png"
+  },
+  "apos-grade4-fractions-q40": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q40.png"
+  },
+  "apos-grade4-fractions-q41": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q41.png"
+  },
+  "apos-grade4-fractions-q42": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q42.png"
+  },
+  "apos-grade4-fractions-q43": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q43.png"
+  },
+  "apos-grade4-fractions-q44": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q44.png"
+  },
+  "apos-grade4-fractions-q45": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q45.png"
+  },
+  "apos-grade4-fractions-q46": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q46.png"
+  },
+  "apos-grade4-fractions-q47": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q47.png"
+  },
+  "apos-grade4-fractions-q48": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q48.png"
+  },
+  "apos-grade4-fractions-q49": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q49.png"
+  },
+  "apos-grade4-fractions-q50": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q50.png"
+  },
+  "apos-grade4-fractions-q51": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q51.png"
+  },
+  "apos-grade4-fractions-q52": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q52.png"
+  },
+  "apos-grade4-fractions-q53": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q53.png"
+  },
+  "apos-grade4-fractions-q54": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q54.png"
+  },
+  "apos-grade4-fractions-q55": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q55.png"
+  },
+  "apos-grade4-fractions-q56": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q56.png"
+  },
+  "apos-grade4-fractions-q57": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q57.png"
+  },
+  "apos-grade4-fractions-q58": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q58.png"
+  },
+  "apos-grade4-fractions-q59": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q59.png"
+  },
+  "apos-grade4-fractions-q60": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q60.png"
+  },
+  "apos-grade4-fractions-q61": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q61.png"
+  },
+  "apos-grade4-fractions-q62": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q62.png"
+  },
+  "apos-grade4-fractions-q63": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q63.png"
+  },
+  "apos-grade4-fractions-q64": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q64.png"
+  },
+  "apos-grade4-fractions-q65": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q65.png"
+  },
+  "apos-grade4-fractions-q66": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q66.png"
+  },
+  "apos-grade4-fractions-q67": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q67.png"
+  },
+  "apos-grade4-fractions-q68": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q68.png"
+  },
+  "apos-grade4-fractions-q69": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q69.png"
+  },
+  "apos-grade4-fractions-q70": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q70.png"
+  },
+  "apos-grade4-fractions-q71": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q71.png"
+  },
+  "apos-grade4-fractions-q72": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q72.png"
+  },
+  "apos-grade4-fractions-q73": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q73.png"
+  },
+  "apos-grade4-fractions-q74": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q74.png"
+  },
+  "apos-grade4-fractions-q75": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q75.png"
+  },
+  "apos-grade4-fractions-q76": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q76.png"
+  },
+  "apos-grade4-fractions-q77": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q77.png"
+  },
+  "apos-grade4-fractions-q78": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q78.png"
+  },
+  "apos-grade4-fractions-q79": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q79.png"
+  },
+  "apos-grade4-fractions-q80": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q80.png"
+  },
+  "apos-grade4-fractions-q81": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q81.png"
+  },
+  "apos-grade4-fractions-q82": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q82.png"
+  },
+  "apos-grade4-fractions-q83": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q83.png"
+  },
+  "apos-grade4-fractions-q84": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q84.png"
+  },
+  "apos-grade4-fractions-q85": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q85.png"
+  },
+  "apos-grade4-fractions-q86": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q86.png"
+  },
+  "apos-grade4-fractions-q87": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q87.png"
+  },
+  "apos-grade4-fractions-q88": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q88.png"
+  },
+  "apos-grade4-fractions-q89": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q89.png"
+  },
+  "apos-grade4-fractions-q90": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q90.png"
+  },
+  "apos-grade4-fractions-q91": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q91.png"
+  },
+  "apos-grade4-fractions-q92": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q92.png"
+  },
+  "apos-grade4-fractions-q93": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q93.png"
+  },
+  "apos-grade4-fractions-q94": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q94.png"
+  },
+  "apos-grade4-fractions-q95": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q95.png"
+  },
+  "apos-grade4-fractions-q96": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q96.png"
+  },
+  "apos-grade4-fractions-q97": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q97.png"
+  },
+  "apos-grade4-fractions-q98": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q98.png"
+  },
+  "apos-grade4-fractions-q99": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q99.png"
+  },
+  "apos-grade4-fractions-q100": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q100.png"
+  },
+  "apos-grade4-fractions-q101": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q101.png"
+  },
+  "apos-grade4-fractions-q102": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q102.png"
+  },
+  "apos-grade4-fractions-q103": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q103.png"
+  },
+  "apos-grade4-fractions-q104": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q104.png"
+  },
+  "apos-grade4-fractions-q105": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q105.png"
+  },
+  "apos-grade4-fractions-q106": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q106.png"
+  },
+  "apos-grade4-fractions-q107": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q107.png"
+  },
+  "apos-grade4-fractions-q108": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q108.png"
+  },
+  "apos-grade4-fractions-q109": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q109.png"
+  },
+  "apos-grade4-fractions-q110": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q110.png"
+  },
+  "apos-grade4-fractions-q111": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q111.png"
+  },
+  "apos-grade4-fractions-q112": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q112.png"
+  },
+  "apos-grade4-fractions-q113": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q113.png"
+  },
+  "apos-grade4-fractions-q114": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q114.png"
+  },
+  "apos-grade4-fractions-q115": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q115.png"
+  },
+  "apos-grade4-fractions-q116": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q116.png"
+  },
+  "apos-grade4-fractions-q117": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q117.png"
+  },
+  "apos-grade4-fractions-q118": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q118.png"
+  },
+  "apos-grade4-fractions-q119": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q119.png"
+  },
+  "apos-grade4-fractions-q120": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q120.png"
+  },
+  "apos-grade4-fractions-q121": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q121.png"
+  },
+  "apos-grade4-fractions-q122": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q122.png"
+  },
+  "apos-grade4-fractions-q123": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q123.png"
+  },
+  "apos-grade4-fractions-q124": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q124.png"
+  },
+  "apos-grade4-fractions-q125": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q125.png"
+  },
+  "apos-grade4-fractions-q126": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q126.png"
+  },
+  "apos-grade4-fractions-q127": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q127.png"
+  },
+  "apos-grade4-fractions-q128": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q128.png"
+  },
+  "apos-grade4-fractions-q129": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q129.png"
+  },
+  "apos-grade4-fractions-q130": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q130.png"
+  },
+  "apos-grade4-fractions-q131": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q131.png"
+  },
+  "apos-grade4-fractions-q132": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q132.png"
+  },
+  "apos-grade4-fractions-q133": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q133.png"
+  },
+  "apos-grade4-fractions-q134": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q134.png"
+  },
+  "apos-grade4-fractions-q135": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q135.png"
+  },
+  "apos-grade4-fractions-q136": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q136.png"
+  },
+  "apos-grade4-fractions-q137": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q137.png"
+  },
+  "apos-grade4-fractions-q138": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q138.png"
+  },
+  "apos-grade4-fractions-q139": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q139.png"
+  },
+  "apos-grade4-fractions-q140": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q140.png"
+  },
+  "apos-grade4-fractions-q141": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q141.png"
+  },
+  "apos-grade4-fractions-q142": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q142.png"
+  },
+  "apos-grade4-fractions-q143": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q143.png"
+  },
+  "apos-grade4-fractions-q144": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q144.png"
+  },
+  "apos-grade4-fractions-q145": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q145.png"
+  },
+  "apos-grade4-fractions-q146": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q146.png"
+  },
+  "apos-grade4-fractions-q147": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q147.png"
+  },
+  "apos-grade4-fractions-q148": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q148.png"
+  },
+  "apos-grade4-fractions-q150": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q150.png"
+  },
+  "apos-grade4-fractions-q151": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q151.png"
+  },
+  "apos-grade4-fractions-q152": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q152.png"
+  },
+  "apos-grade4-fractions-q153": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q153.png"
+  },
+  "apos-grade4-fractions-q154": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q154.png"
+  },
+  "apos-grade4-fractions-q155": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q155.png"
+  },
+  "apos-grade4-fractions-q156": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q156.png"
+  },
+  "apos-grade4-fractions-q157": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q157.png"
+  },
+  "apos-grade4-fractions-q158": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q158.png"
+  },
+  "apos-grade4-fractions-q159": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q159.png"
+  },
+  "apos-grade4-fractions-q160": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q160.png"
+  },
+  "apos-grade4-fractions-q161": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q161.png"
+  },
+  "apos-grade4-fractions-q162": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q162.png"
+  },
+  "apos-grade4-fractions-q163": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q163.png"
+  },
+  "apos-grade4-fractions-q164": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q164.png"
+  },
+  "apos-grade4-fractions-q165": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q165.png"
+  },
+  "apos-grade4-fractions-q166": {
+   "type": "image/png",
+   "file": "images/apos-grade4-fractions-q166.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "open",
+   "stem": "![1. What number is 1 3 of 15? 0 15](asset:apos-grade4-fractions-q1)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 1
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "open",
+   "stem": "![2. What number is 1 3 of 12? 0 12](asset:apos-grade4-fractions-q2)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 1
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "open",
+   "stem": "![3. What is 1 6 of 18? 0 18](asset:apos-grade4-fractions-q3)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 1
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "open",
+   "stem": "![4. What is 1 7 of 14? 0 14](asset:apos-grade4-fractions-q4)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 1
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "open",
+   "stem": "![5. What number is 2 9 of 36?](asset:apos-grade4-fractions-q5)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "open",
+   "stem": "![6. What number is 2 3 of 36?](asset:apos-grade4-fractions-q6)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "open",
+   "stem": "![7. What number is 3 5 of 15?](asset:apos-grade4-fractions-q7)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "open",
+   "stem": "![8. What number is 3 4 of 44?](asset:apos-grade4-fractions-q8)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "open",
+   "stem": "![9. Compute 7 9 ×18.](asset:apos-grade4-fractions-q9)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "open",
+   "stem": "![10. Compute 5 6 ×18.](asset:apos-grade4-fractions-q10)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "open",
+   "stem": "![11. Compute 5 17 ×17.](asset:apos-grade4-fractions-q11)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "open",
+   "stem": "![12. What number is 18 27 of 30?](asset:apos-grade4-fractions-q12)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 2
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "open",
+   "stem": "![13. Peter’s car holds 16 gallons of gas. Peter uses 3 4 of a tank of gas to drive to his grandmother’s house. How many gallons of gas does Peter use during his drive?](asset:apos-grade4-fractions-q13)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 3
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "open",
+   "stem": "![14. One foot is 12 inches. How many inches are in 2 3 of a foot?](asset:apos-grade4-fractions-q14)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 3
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "open",
+   "stem": "![15. Erica had 6 gallons of paint. She used 2 3 of her paint to decorate her living room. How many gallons of paint does Erica have left?](asset:apos-grade4-fractions-q15)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 3
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "open",
+   "stem": "![16. ★ Lisa had $36. She spent 1 6 of her money on a book. Then, she spent 1 5 of her remaining money on a pencil set. How much money did she spend all together?](asset:apos-grade4-fractions-q16)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 3
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "open",
+   "stem": "![17. ★ In a 90-minute basketball practice, 1 6 of the time is spent warming up, 1 5 of the time is spent doing passing drills, and 1 3 of the time is spent doing shooting drills. The remaining time is used for a scrimmage. How many minutes l](asset:apos-grade4-fractions-q17)",
+   "topics": [
+    "Fractions > Fractions Of"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 3
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "open",
+   "stem": "![18. Ralph spent 30 minutes playing soccer this weekend, which was 1 7 of the time he spent at the park. How many minutes did Ralph spend at the park this weekend?](asset:apos-grade4-fractions-q18)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 4
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "open",
+   "stem": "![19. When Matt’s gas tank is 1 5 full, it takes an additional 12 gallons of gas to fill the tank. How many gallons does Matt’s gas tank hold when full?](asset:apos-grade4-fractions-q19)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 4
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "open",
+   "stem": "![20. Paul travels by train for the first 600 miles of a trip, then takes a bus for the remaining 3 8 of the trip. How many miles did Paul travel on his trip?](asset:apos-grade4-fractions-q20)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 4
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "open",
+   "stem": "![21. Grogg’s mom brings a full box of markers to share with the class. After giving the first five students three markers each, she sees that 1 4 of the box is empty. How many markers were originally in the box?](asset:apos-grade4-fractions-q21)",
+   "topics": [
+    "Fractions > Fractions Visual Models"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 5
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "open",
+   "stem": "![22. After spending 5 9 of his money on a game, James is left with $8. How many dollars did James spend on his game?](asset:apos-grade4-fractions-q22)",
+   "topics": [
+    "Fractions > Fractions Visual Models"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 5
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "open",
+   "stem": "![23. Lizzie reads for 5 6 of her study hall time and spends the remaining 15 minutes on math homework. How many minutes long is Lizzie’s study hall?](asset:apos-grade4-fractions-q23)",
+   "topics": [
+    "Fractions > Fractions Visual Models"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 5
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "open",
+   "stem": "![24. ★ A middle school math team is made up of students from 6th, 7th, and 8th grade. Five team members are 6th graders, ten are 7th graders, and two sevenths of the team members are 8th graders. How many math team members are 8th graders?](asset:apos-grade4-fractions-q24)",
+   "topics": [
+    "Fractions > Fractions Visual Models"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 5
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "open",
+   "stem": "![25. ★★ Sue runs the first 7 10 of a race. Then, she jogs 3 4 of the remaining distance. Finally, she walks the last 375 meters of the race. What is the total length in meters of Sue’s race?](asset:apos-grade4-fractions-q25)",
+   "topics": [
+    "Fractions > Fractions Visual Models"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 5
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "open",
+   "stem": "![26. 5× 1 12 =](asset:apos-grade4-fractions-q26)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "open",
+   "stem": "![27. 8× 1 9 =](asset:apos-grade4-fractions-q27)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "open",
+   "stem": "![29. 6×5 7 =](asset:apos-grade4-fractions-q29)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "open",
+   "stem": "![30. 8×5 8 =](asset:apos-grade4-fractions-q30)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "open",
+   "stem": "![32. 2×7 5 =](asset:apos-grade4-fractions-q32)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "open",
+   "stem": "![33. 6×10 7 =](asset:apos-grade4-fractions-q33)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "open",
+   "stem": "![34. Alex’s snickerdoodle recipe calls for 2 3 cups of brown sugar for each batch. How many cups of brown sugar does Alex need to make 7 batches of snickerdoodles? Give your answer as a mixed number in simplest form.](asset:apos-grade4-fractions-q34)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 6
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "open",
+   "stem": "![35. What is 4 7 of 5?](asset:apos-grade4-fractions-q35)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q36",
+   "number": "36",
+   "type": "open",
+   "stem": "![36. What is 2 3 of 8?](asset:apos-grade4-fractions-q36)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q37",
+   "number": "37",
+   "type": "open",
+   "stem": "![37. What is 5 8 of 3?](asset:apos-grade4-fractions-q37)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q38",
+   "number": "38",
+   "type": "open",
+   "stem": "![38. What is 6 11 of 4?](asset:apos-grade4-fractions-q38)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q39",
+   "number": "39",
+   "type": "open",
+   "stem": "![39. Compute 2 9 ×4.](asset:apos-grade4-fractions-q39)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q40",
+   "number": "40",
+   "type": "open",
+   "stem": "![40. Compute 5 8 ×7. 5 miles long? 9 -pound bags of flour?](asset:apos-grade4-fractions-q40)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q41",
+   "number": "41",
+   "type": "open",
+   "stem": "![41. What is the perimeter of a square field whose sides are 2 5 miles long? Give your answer as a mixed number in simplest form and include units.](asset:apos-grade4-fractions-q41)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q42",
+   "number": "42",
+   "type": "open",
+   "stem": "![42. Which weighs more: 4 9 of a 7-pound bag of flour, or seven 4 9 -pound bags of flour? ✎](asset:apos-grade4-fractions-q42)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q43",
+   "number": "43",
+   "type": "open",
+   "stem": "![43. 4 11 ×55 =](asset:apos-grade4-fractions-q43)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q44",
+   "number": "44",
+   "type": "open",
+   "stem": "![44. 32×3 8 =](asset:apos-grade4-fractions-q44)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q45",
+   "number": "45",
+   "type": "open",
+   "stem": "![45. 13× 17 39 =](asset:apos-grade4-fractions-q45)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q46",
+   "number": "46",
+   "type": "open",
+   "stem": "![46. 99×7 9 =](asset:apos-grade4-fractions-q46)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q47",
+   "number": "47",
+   "type": "open",
+   "stem": "![47. 6×10 15 =](asset:apos-grade4-fractions-q47)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q48",
+   "number": "48",
+   "type": "open",
+   "stem": "![48. 12×10 3 =](asset:apos-grade4-fractions-q48)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q49",
+   "number": "49",
+   "type": "open",
+   "stem": "![49. Compute (66× 5 11 ) + ( 4 13 ×26).](asset:apos-grade4-fractions-q49)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q50",
+   "number": "50",
+   "type": "open",
+   "stem": "![50. ★ Compute 8 9 ×(3 4 ×54).](asset:apos-grade4-fractions-q50)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q51",
+   "number": "51",
+   "type": "open",
+   "stem": "![51. What fraction of 44 is 16?](asset:apos-grade4-fractions-q51)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q52",
+   "number": "52",
+   "type": "open",
+   "stem": "![52. 14 is what fraction of 63?](asset:apos-grade4-fractions-q52)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q53",
+   "number": "53",
+   "type": "open",
+   "stem": "![53. What fraction of 40 is 31?](asset:apos-grade4-fractions-q53)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q54",
+   "number": "54",
+   "type": "open",
+   "stem": "![54. Ted’s homework has 22 questions. Ted completed 12 of the questions last night and finished the rest this morning. What fraction of his homework questions did Ted answer last night?](asset:apos-grade4-fractions-q54)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q55",
+   "number": "55",
+   "type": "open",
+   "stem": "![55. Alice has 27 toy cars. Six of those cars are missing a wheel. What fraction of Alice’s toy cars are not missing a wheel?](asset:apos-grade4-fractions-q55)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q56",
+   "number": "56",
+   "type": "open",
+   "stem": "![56. Twenty students in Nick’s basketweaving class have brown eyes. The other five students have blue eyes. What fraction of the students have brown eyes?](asset:apos-grade4-fractions-q56)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q57",
+   "number": "57",
+   "type": "open",
+   "stem": "![57. × 8 = 54.](asset:apos-grade4-fractions-q57)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q58",
+   "number": "58",
+   "type": "open",
+   "stem": "![58. 15 × = 24.](asset:apos-grade4-fractions-q58)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q59",
+   "number": "59",
+   "type": "open",
+   "stem": "![59. 21 × = 9. PRACTICE Answer each question below in simplest form.](asset:apos-grade4-fractions-q59)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q60",
+   "number": "60",
+   "type": "open",
+   "stem": "![60. × 12 = 20.](asset:apos-grade4-fractions-q60)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q61",
+   "number": "61",
+   "type": "open",
+   "stem": "![61. If a×26 = 30, what is the value of a?](asset:apos-grade4-fractions-q61)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q62",
+   "number": "62",
+   "type": "open",
+   "stem": "![62. If 60×b = 35, what is the value of b?](asset:apos-grade4-fractions-q62)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q63",
+   "number": "63",
+   "type": "open",
+   "stem": "![63. ★ 24 is what fraction of 20?](asset:apos-grade4-fractions-q63)",
+   "topics": [
+    "Fractions > Multiplying Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q64",
+   "number": "64",
+   "type": "open",
+   "stem": "![64. What is the result when 3 5 of 16 is added to 2 5 of 10?](asset:apos-grade4-fractions-q64)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q65",
+   "number": "65",
+   "type": "open",
+   "stem": "![65. Compute ( 1 6 ×29)+( 1 6 ×31).](asset:apos-grade4-fractions-q65)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q66",
+   "number": "66",
+   "type": "open",
+   "stem": "![66. What number is 5 3 of the product of 23 and 6?](asset:apos-grade4-fractions-q66)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q67",
+   "number": "67",
+   "type": "open",
+   "stem": "![67. Draw a line to mark the top of the water when the 2-cup measuring glass below is 5 4 8 12 16 2 cups 1 cup fl oz](asset:apos-grade4-fractions-q67)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q68",
+   "number": "68",
+   "type": "open",
+   "stem": "![68. Bobby Bug walks from his house to his best friend Sammy Slug’s house along the straight path shown below. He stops to rest 7 10 of the way there. How far does Bobby walk before he stops to rest? Mark your answer with an arrow on the rul](asset:apos-grade4-fractions-q68)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q69",
+   "number": "69",
+   "type": "open",
+   "stem": "![69. Two paperclips are placed end-to-end as shown below. Draw an arrow to mark the length of five paperclips placed end-to-end on the ruler below. 0 1 2 3 4 5 in](asset:apos-grade4-fractions-q69)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q70",
+   "number": "70",
+   "type": "open",
+   "stem": "![70. Together, 2 identical blocks weigh 7 8 of a pound. Draw an arrow to display the correct weight of 8 identical blocks on the scale on the right. 0 1 2 3 4 lb 0 1 2 3 4 lb](asset:apos-grade4-fractions-q70)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q71",
+   "number": "71",
+   "type": "open",
+   "stem": "![71. Draw an arrow to display the correct weight when 3 8 of the pie has been eaten. 0 1 2 3 4 lb 0 1 2 3 4 lb](asset:apos-grade4-fractions-q71)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q72",
+   "number": "72",
+   "type": "open",
+   "stem": "![72. Find a simpler expression that equals n 20 ×100.](asset:apos-grade4-fractions-q72)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q73",
+   "number": "73",
+   "type": "open",
+   "stem": "![73. Winnie gives 2 3 of her 24 peanuts to Lizzie. Lizzie gives 1 4 of the peanuts she gets from Winnie to Alex. Alex gives 1 2 of these peanuts to Grogg. How many peanuts does Grogg get from Alex?](asset:apos-grade4-fractions-q73)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q74",
+   "number": "74",
+   "type": "open",
+   "stem": "![74. There are 48 students enrolled in Sam’s Saturday karate class. Last Saturday, 3 4 of the students were in class. This Saturday, 1 6 of the students missed class. How many more students were in class this Saturday than last Saturday?](asset:apos-grade4-fractions-q74)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q75",
+   "number": "75",
+   "type": "open",
+   "stem": "![75. What number is 1 3 of 1 2 of 1 5 of 900?](asset:apos-grade4-fractions-q75)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q76",
+   "number": "76",
+   "type": "open",
+   "stem": "![76. If 5 12 of n is 10, what is 7 12 of n?](asset:apos-grade4-fractions-q76)",
+   "topics": [
+    "Fractions > Fractions Review"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q77",
+   "number": "77",
+   "type": "open",
+   "stem": "![77. 4 11 of m equals 12. What is the value of m?](asset:apos-grade4-fractions-q77)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 14
+   }
+  },
+  {
+   "id": "q78",
+   "number": "78",
+   "type": "open",
+   "stem": "![78. Find a simpler expression that equals v w ×w.](asset:apos-grade4-fractions-q78)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 14
+   }
+  },
+  {
+   "id": "q79",
+   "number": "79",
+   "type": "open",
+   "stem": "![79. ★ Is 1 a of 1 b of 100 equal to 1 b of 1 a of 100? Explain. ✎](asset:apos-grade4-fractions-q79)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 14
+   }
+  },
+  {
+   "id": "q80",
+   "number": "80",
+   "type": "open",
+   "stem": "![80. 1 4 of 1 5 of 100 is equal to 1 n of 100. What is the value of n?](asset:apos-grade4-fractions-q80)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 14
+   }
+  },
+  {
+   "id": "q81",
+   "number": "81",
+   "type": "open",
+   "stem": "![81. ★★ 1 2 of 1 3 of y is the same as 1 z of y. What is the value of z?](asset:apos-grade4-fractions-q81)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 14
+   }
+  },
+  {
+   "id": "q82",
+   "number": "82",
+   "type": "open",
+   "stem": "![82. Digits: 2, 3, 5 × =](asset:apos-grade4-fractions-q82)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q83",
+   "number": "83",
+   "type": "open",
+   "stem": "![83. Digits: 4, 6, 7 + =](asset:apos-grade4-fractions-q83)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q84",
+   "number": "84",
+   "type": "open",
+   "stem": "![84. ★ . Digits: 3, 4, 7, 8 × + =](asset:apos-grade4-fractions-q84)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q85",
+   "number": "85",
+   "type": "open",
+   "stem": "![85. ★ . Digits: 2, 3, 5, 7 × − =](asset:apos-grade4-fractions-q85)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q86",
+   "number": "86",
+   "type": "open",
+   "stem": "![86. ★ . Digits: 4, 5, 6, 7 ( + ) × =](asset:apos-grade4-fractions-q86)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q87",
+   "number": "87",
+   "type": "open",
+   "stem": "![87. ★ . Digits: 3, 5, 8, 9 −( × ) =](asset:apos-grade4-fractions-q87)",
+   "topics": [
+    "Fractions > Fractions Digit Arrangements"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 15
+   }
+  },
+  {
+   "id": "q88",
+   "number": "88",
+   "type": "open",
+   "stem": "![88. Circle the number below that is closest to 31 210 . 1 700 1 70 1 7 1](asset:apos-grade4-fractions-q88)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 16
+   }
+  },
+  {
+   "id": "q89",
+   "number": "89",
+   "type": "open",
+   "stem": "![89. Circle the number below that is closest to 25 82 . 1 3 2 3 1 5 3](asset:apos-grade4-fractions-q89)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 16
+   }
+  },
+  {
+   "id": "q90",
+   "number": "90",
+   "type": "open",
+   "stem": "![90. Circle the number below that 6 55 of 70 is closest to. 2 8 15 22](asset:apos-grade4-fractions-q90)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 16
+   }
+  },
+  {
+   "id": "q91",
+   "number": "91",
+   "type": "open",
+   "stem": "![91. Circle the number below that is equal to 58 79 of 24 without computing the exact answer. 249 79 549 79 1049 79 1749 79 2849 79](asset:apos-grade4-fractions-q91)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 16
+   }
+  },
+  {
+   "id": "q92",
+   "number": "92",
+   "type": "open",
+   "stem": "![92. Circle the number below that is closest to 21 51 ×12,546. 1,000 5,000 20,000](asset:apos-grade4-fractions-q92)",
+   "topics": [
+    "Fractions > Fractions Estimating Products"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q93",
+   "number": "93",
+   "type": "open",
+   "stem": "![93. Circle the number below that is closest to 29 21 ×13,982. 1,000 5,000 20,000](asset:apos-grade4-fractions-q93)",
+   "topics": [
+    "Fractions > Fractions Estimating Products"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q94",
+   "number": "94",
+   "type": "open",
+   "stem": "![94. 6 19 ×58 is between which two consecutive multiples of 10?](asset:apos-grade4-fractions-q94)",
+   "topics": [
+    "Fractions > Fractions Estimating Products"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q95",
+   "number": "95",
+   "type": "open",
+   "stem": "![95. 298× 25 109 is between which two consecutive multiples of 20?](asset:apos-grade4-fractions-q95)",
+   "topics": [
+    "Fractions > Fractions Estimating Products"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q96",
+   "number": "96",
+   "type": "open",
+   "stem": "![96. Without computing the products, order these expressions from least to greatest. A. 41 104 ×13 B. 7×35 37 C. 4× 5 26 D. 3 28 ×33 < < <](asset:apos-grade4-fractions-q96)",
+   "topics": [
+    "Fractions > Fractions Estimating Products"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 17
+   }
+  },
+  {
+   "id": "q97",
+   "number": "97",
+   "type": "open",
+   "stem": "![97. 7×1 1 4 =](asset:apos-grade4-fractions-q97)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q98",
+   "number": "98",
+   "type": "open",
+   "stem": "![98. 15×2 1 3 =](asset:apos-grade4-fractions-q98)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q99",
+   "number": "99",
+   "type": "open",
+   "stem": "![99. 53 4 ×9 =](asset:apos-grade4-fractions-q99)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q100",
+   "number": "100",
+   "type": "open",
+   "stem": "![100. 85 6 ×11 =](asset:apos-grade4-fractions-q100)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q101",
+   "number": "101",
+   "type": "open",
+   "stem": "![101. 9×6 1 11 =](asset:apos-grade4-fractions-q101)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q102",
+   "number": "102",
+   "type": "open",
+   "stem": "![102. 34 7 ×12 =](asset:apos-grade4-fractions-q102)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 18
+   }
+  },
+  {
+   "id": "q103",
+   "number": "103",
+   "type": "open",
+   "stem": "![103. Wilson is 333 4 inches tall. Wilson’s dad is twice as tall as Wilson. How many inches tall is Wilson’s dad?](asset:apos-grade4-fractions-q103)",
+   "topics": [
+    "Fractions > Multiplying Mixed Numbers"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q104",
+   "number": "104",
+   "type": "open",
+   "stem": "![104. A dodecagon is a polygon with 12 sides. How many inches long is the perimeter of a regular dodecagon with side length 53 8 inches?](asset:apos-grade4-fractions-q104)",
+   "topics": [
+    "Fractions > Multiplying Mixed Numbers"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q105",
+   "number": "105",
+   "type": "open",
+   "stem": "![105. To prepare for the Beast Academy fitness test, Alex runs 13 4 miles twice per week for four weeks. How many total miles does Alex run in those four weeks?](asset:apos-grade4-fractions-q105)",
+   "topics": [
+    "Fractions > Multiplying Mixed Numbers"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q106",
+   "number": "106",
+   "type": "open",
+   "stem": "![106. Three identical bags of ice weigh a total of 8 pounds. How many pounds do ten identical bags of ice weigh together?](asset:apos-grade4-fractions-q106)",
+   "topics": [
+    "Fractions > Multiplying Mixed Numbers"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q107",
+   "number": "107",
+   "type": "open",
+   "stem": "![107. ★ Amber is painting a rectangular wall that is 15 feet tall and 182 3 feet wide. She uses 1 quart of paint for every 75 square feet of wall. How many quarts of paint will she use to paint the entire wall?](asset:apos-grade4-fractions-q107)",
+   "topics": [
+    "Fractions > Multiplying Mixed Numbers"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 19
+   }
+  },
+  {
+   "id": "q108",
+   "number": "108",
+   "type": "open",
+   "stem": "![108. What is the perimeter of the regular pentagon shown below? 4 3 8 cm](asset:apos-grade4-fractions-q108)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q109",
+   "number": "109",
+   "type": "open",
+   "stem": "![109. What is the area of the rectangle shown below? 2 4 5 km 6 km](asset:apos-grade4-fractions-q109)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q110",
+   "number": "110",
+   "type": "open",
+   "stem": "![110. Four congruent right triangles are attached as shown below. What is the area of the shaded region formed by the triangles? 9 in 4](asset:apos-grade4-fractions-q110)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 20
+   }
+  },
+  {
+   "id": "q111",
+   "number": "111",
+   "type": "open",
+   "stem": "![111. A rectangle and an isosceles triangle with the same height are attached as shown below to make a pentagon. What is the area of the pentagon? 12 m 3 1 2 m](asset:apos-grade4-fractions-q111)",
+   "topics": [
+    "Fractions > Fractions Perimeter And Area"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q112",
+   "number": "112",
+   "type": "open",
+   "stem": "![112. Three congruent rectangles are attached as shown below to create a large rectangle. What is the area of the large rectangle? 11 in](asset:apos-grade4-fractions-q112)",
+   "topics": [
+    "Fractions > Fractions Perimeter And Area"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q113",
+   "number": "113",
+   "type": "open",
+   "stem": "![113. Five equilateral triangles are arranged as shown to make a quadrilateral. The perimeter of each triangle is 5 feet. What is the perimeter of the quadrilateral?](asset:apos-grade4-fractions-q113)",
+   "topics": [
+    "Fractions > Fractions Perimeter And Area"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 21
+   }
+  },
+  {
+   "id": "q114",
+   "number": "114",
+   "type": "open",
+   "stem": "![114. The Burger Palace orders a box that contains 12 pounds of hamburger patties. Each patty weighs 1 3 of a pound. How many patties are in the box?](asset:apos-grade4-fractions-q114)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q115",
+   "number": "115",
+   "type": "open",
+   "stem": "![115. One lap around the track at Kayla’s school is 1 5 of a mile. Kayla runs 7 miles around the track. How many laps does Kayla run?](asset:apos-grade4-fractions-q115)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q116",
+   "number": "116",
+   "type": "open",
+   "stem": "![116. Captain Kraken has sheets of plywood that are 1 4 inches thick. A stack of these plywood sheets is 18 inches tall. How many sheets are in the stack?](asset:apos-grade4-fractions-q116)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q117",
+   "number": "117",
+   "type": "open",
+   "stem": "![117. A regular polygon whose sides are 1 6 of an inch long has a perimeter of 4 inches. How many sides does the polygon have?](asset:apos-grade4-fractions-q117)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q118",
+   "number": "118",
+   "type": "open",
+   "stem": "![118. The Beast Island Candy Shop makes 50 pounds of peppermint bark candy. The candy makers split the bark into 1 8 -pound bags, which are each sold for $6. How much money will the shop collect if they sell every bag of peppermint bark?](asset:apos-grade4-fractions-q118)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 22
+   }
+  },
+  {
+   "id": "q119",
+   "number": "119",
+   "type": "open",
+   "stem": "![119. 1 5 Reciprocal:](asset:apos-grade4-fractions-q119)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q120",
+   "number": "120",
+   "type": "open",
+   "stem": "![120. 17 Reciprocal:](asset:apos-grade4-fractions-q120)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q121",
+   "number": "121",
+   "type": "open",
+   "stem": "![121. 5+6 Reciprocal:](asset:apos-grade4-fractions-q121)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q122",
+   "number": "122",
+   "type": "open",
+   "stem": "![122. 6×9 Reciprocal:](asset:apos-grade4-fractions-q122)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q123",
+   "number": "123",
+   "type": "open",
+   "stem": "![123. 15 3 Reciprocal:](asset:apos-grade4-fractions-q123)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q124",
+   "number": "124",
+   "type": "open",
+   "stem": "![124. 13 39 Reciprocal:](asset:apos-grade4-fractions-q124)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q125",
+   "number": "125",
+   "type": "open",
+   "stem": "![125. Does 0 have a reciprocal? If so, what is it? If not, explain why not. ✎](asset:apos-grade4-fractions-q125)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q126",
+   "number": "126",
+   "type": "open",
+   "stem": "![126. Write an expression for the reciprocal of n. (Assume that n is not zero.)](asset:apos-grade4-fractions-q126)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q127",
+   "number": "127",
+   "type": "open",
+   "stem": "![127. Write an expression for the reciprocal of 1 a . (Assume that a is not zero.)](asset:apos-grade4-fractions-q127)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q128",
+   "number": "128",
+   "type": "open",
+   "stem": "![128. Write an expression for the reciprocal of c+1. (Assume that c is not -1.)](asset:apos-grade4-fractions-q128)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q129",
+   "number": "129",
+   "type": "open",
+   "stem": "![129. What is the sum of the reciprocals of 1 5 and 1 7 ?](asset:apos-grade4-fractions-q129)",
+   "topics": [
+    "Fractions > Fractions Reciprocals"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 23
+   }
+  },
+  {
+   "id": "q130",
+   "number": "130",
+   "type": "open",
+   "stem": "![130. 5÷ 1 7 =](asset:apos-grade4-fractions-q130)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q131",
+   "number": "131",
+   "type": "open",
+   "stem": "![131. 3÷ 1 16 =](asset:apos-grade4-fractions-q131)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q132",
+   "number": "132",
+   "type": "open",
+   "stem": "![132. 9÷ 1 4 =](asset:apos-grade4-fractions-q132)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q133",
+   "number": "133",
+   "type": "open",
+   "stem": "![133. 1 16 ÷ 1 8 =](asset:apos-grade4-fractions-q133)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 24
+   }
+  },
+  {
+   "id": "q134",
+   "number": "134",
+   "type": "open",
+   "stem": "![134. 3 2 11 ÷ 1 2 =](asset:apos-grade4-fractions-q134)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q135",
+   "number": "135",
+   "type": "open",
+   "stem": "![135. 2 1 5 ÷ 1 8 =](asset:apos-grade4-fractions-q135)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q136",
+   "number": "136",
+   "type": "open",
+   "stem": "![136. 5÷(3÷ 1 12 ) =](asset:apos-grade4-fractions-q136)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q137",
+   "number": "137",
+   "type": "open",
+   "stem": "![137. (5÷3)÷ 1 12 =](asset:apos-grade4-fractions-q137)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q138",
+   "number": "138",
+   "type": "open",
+   "stem": "![138. (9÷ 1 10 )÷ 1 5 = PRACTICE Answer each question below.](asset:apos-grade4-fractions-q138)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q139",
+   "number": "139",
+   "type": "open",
+   "stem": "![139. 9÷( 1 10 ÷ 1 5 ) = 4 cups? 3 of a gallon to each of her](asset:apos-grade4-fractions-q139)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q140",
+   "number": "140",
+   "type": "open",
+   "stem": "![140. How many 1 4 -cup scoops of flour are needed to equal 23 4 cups?](asset:apos-grade4-fractions-q140)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q141",
+   "number": "141",
+   "type": "open",
+   "stem": "![141. The tallest tree in Ranger Rick’s forest grows 1 8 of an inch every week. How many weeks will it take for the tree to grow 73 4 inches?](asset:apos-grade4-fractions-q141)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q142",
+   "number": "142",
+   "type": "open",
+   "stem": "![142. Tara brought 4 gallons of water on a hike. She gave 1 3 of a gallon to each of her hiking companions, which left her with 1 1 3 gallons of water. How many companions were on the hike with Tara?](asset:apos-grade4-fractions-q142)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q143",
+   "number": "143",
+   "type": "open",
+   "stem": "![143. ★ If a÷ 1 16 = 20, what is the value of a?](asset:apos-grade4-fractions-q143)",
+   "topics": [
+    "Fractions > Division By Unit Fractions"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 25
+   }
+  },
+  {
+   "id": "q144",
+   "number": "144",
+   "type": "open",
+   "stem": "![144. 6 × 2 5 = × × × 1 1 3 × 18 = = = =](asset:apos-grade4-fractions-q144)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q145",
+   "number": "145",
+   "type": "open",
+   "stem": "![145. 60 × = 2 ÷ ÷ × ÷ = 30 = = =](asset:apos-grade4-fractions-q145)",
+   "topics": [
+    "Fractions > Practice"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 26
+   }
+  },
+  {
+   "id": "q146",
+   "number": "146",
+   "type": "open",
+   "stem": "![146. 3 × = 12 ÷ ÷ ÷ 1 35 × 7 = = = = × =](asset:apos-grade4-fractions-q146)",
+   "topics": [
+    "Fractions > Cross-Number Puzzles"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q147",
+   "number": "147",
+   "type": "open",
+   "stem": "![147. 18 × = 30 × ÷ × 1 4 ÷ 1 9 = = = = × = 149.★ × 5 = ÷ ÷ ÷ 1 36 × 4 = = = = 24 × =](asset:apos-grade4-fractions-q147)",
+   "topics": [
+    "Fractions > Cross-Number Puzzles"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q148",
+   "number": "148",
+   "type": "open",
+   "stem": "![148. 35 × = 15 × ÷ × ÷ 1 4 = = = = 14 × = 149.★ × 5 = ÷ ÷ ÷ 1 36 × 4 = = = = 24 × =](asset:apos-grade4-fractions-q148)",
+   "topics": [
+    "Fractions > Cross-Number Puzzles"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 27
+   }
+  },
+  {
+   "id": "q150",
+   "number": "150",
+   "type": "open",
+   "stem": "![150. 3 4 2 3 3 4 2 3 2 3 5 6 1 2 2 3 1](asset:apos-grade4-fractions-q150)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q151",
+   "number": "151",
+   "type": "open",
+   "stem": "![151. 3 4 5 6 1 1 2 5 9 2 3 1 2 1 2 1 2](asset:apos-grade4-fractions-q151)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q152",
+   "number": "152",
+   "type": "open",
+   "stem": "![152. 3 4 2 3 2 3 1 2 1 2 5 9 2 3 2 3 1 4 1 2 5 6 1](asset:apos-grade4-fractions-q152)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q153",
+   "number": "153",
+   "type": "open",
+   "stem": "![153. 1 2 2 3 2 3 3 4 1 3 5 9 5 9 2 3 0 1 3 1 2 3 4](asset:apos-grade4-fractions-q153)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q154",
+   "number": "154",
+   "type": "open",
+   "stem": "![154. 0 1 3 1 3 1 2 1 6 4 9 1 3 1 2 1 4 1 2 1 3 1 2](asset:apos-grade4-fractions-q154)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q155",
+   "number": "155",
+   "type": "open",
+   "stem": "![155. 3 4 2 3 2 3 3 4 5 6 2 3 2 3 2 3 1 2 3 2 3 1 2](asset:apos-grade4-fractions-q155)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q156",
+   "number": "156",
+   "type": "open",
+   "stem": "![156. 1 4 1 6 0 1 3 1 2 1 2 4 9 1 3 4 9 1 2 1 3 1 3 4 9 5 9 2 3 1 2 1 2 2 3 2 3 3 4](asset:apos-grade4-fractions-q156)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q157",
+   "number": "157",
+   "type": "open",
+   "stem": "![157. 1 1 1 2 3 1 2 2 3 7 9 8 9 2 3 1 2 1 2 5 9 7 9 2 3 2 3 1 4 1 3 2 3 2 3 3 4](asset:apos-grade4-fractions-q157)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 29
+   }
+  },
+  {
+   "id": "q158",
+   "number": "158",
+   "type": "open",
+   "stem": "![158. 3 4 5 6 5 6 5 6 2 3 3 4 2 3 2 3 2 3 5 9 4 9 1 2 1 2 4 9 5 9 1 3 1 3 1 3 1 2 1 3 1 3 0 0 0](asset:apos-grade4-fractions-q158)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q159",
+   "number": "159",
+   "type": "open",
+   "stem": "![159. 1 2 1 3 0 1 3 1 2 3 4 1 2 4 9 1 3 5 9 2 3 5 6 2 3 2 3 5 9 5 9 2 3 5 6 3 4 5 6 5 6 2 3 2 3 3 4](asset:apos-grade4-fractions-q159)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q160",
+   "number": "160",
+   "type": "open",
+   "stem": "![160. 1 2 1 3 1 2 1 3 1 3 0 2 3 5 9 2 3 4 9 1 3 0 1 7 9 2 3 4 9 4 9 1 3 5 6 7 9 7 9 2 3 2 3 2 3 2 3 2 3 7 9 2 3 7 9 5 6 1 2 2 3 1 5 6 5 6 3 4](asset:apos-grade4-fractions-q160)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q161",
+   "number": "161",
+   "type": "open",
+   "stem": "![161. 3 4 2 3 1 2 1 2 1 2 1 2 2 3 5 9 4 9 1 3 4 9 1 2 5 6 2 3 5 9 1 3 4 9 1 2 2 3 4 9 2 9 0 1 3 1 2 5 6 2 3 4 9 2 9 1 3 1 3 3 4 2 3 1 2 1 3 1 3 1 4](asset:apos-grade4-fractions-q161)",
+   "topics": [
+    "Fractions > Fraction Fill"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 30
+   }
+  },
+  {
+   "id": "q162",
+   "number": "162",
+   "type": "open",
+   "stem": "![162. 50 is the product of Kyle’s favorite number and 35. What is Kyle’s favorite number?](asset:apos-grade4-fractions-q162)",
+   "topics": [
+    "Fractions > Fractions Challenge"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q163",
+   "number": "163",
+   "type": "open",
+   "stem": "![163. ★ What number divided by 1 5 gives the quotient 70?](asset:apos-grade4-fractions-q163)",
+   "topics": [
+    "Fractions > Fractions Challenge"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q164",
+   "number": "164",
+   "type": "open",
+   "stem": "![164. ★ Laura’s chocolate cake recipe calls for 3 eggs, 1 3 cups of cocoa powder, 1 2 cups of sugar, and 1 4 cups of butter. If Laura has only the ingredients below, how many whole chocolate cakes can she make? 50 eggs 6 cups of cocoa powder](asset:apos-grade4-fractions-q164)",
+   "topics": [
+    "Fractions > Fractions Challenge"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q165",
+   "number": "165",
+   "type": "open",
+   "stem": "![165. ★ When Billy adds 2 1 2 to 4 5 of his favorite number, the result is his favorite number. What is Billy’s favorite number?](asset:apos-grade4-fractions-q165)",
+   "topics": [
+    "Fractions > Fractions Challenge"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions",
+    "Challenge": "★"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 31
+   }
+  },
+  {
+   "id": "q166",
+   "number": "166",
+   "type": "open",
+   "stem": "![166. When we divide one whole number by another, our answer is not always a whole number. For example, 15÷7 = 2 1 7 . When we divide a whole number by a unit fraction, will our answer always be a whole number? If it will, explain why. If it](asset:apos-grade4-fractions-q166)",
+   "topics": [
+    "Fractions > Fractions Challenge"
+   ],
+   "fields": {
+    "Book": "Beast Academy Practice 4D",
+    "Class": 4,
+    "Chapter": "Fractions"
+   },
+   "source": {
+    "file": "APOS Grade4.pdf",
+    "page": 31
+   }
+  }
+ ]
+}

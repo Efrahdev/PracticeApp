@@ -1,0 +1,4388 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "olympiad-fractions-master-set-2",
+    "title": "Olympiad Fractions Master Problem Set (set 2)",
+    "source": "Claude Fractions 2 .html",
+    "subject": "Maths",
+    "fields": {
+      "Collection": "Olympiad Fractions Master Problem Set (set 2)"
+    }
+  },
+  "assets": {
+    "q73-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 90\" role=\"img\" aria-label=\"Number line 0 to 1 in 8 equal steps with point P at the fifth tick\">\n        <title>Number line from 0 to 1 divided into eight equal parts, P at the 5th tick</title>\n        <line x1=\"30\" y1=\"55\" x2=\"490\" y2=\"55\" stroke=\"#22409e\" stroke-width=\"2.5\"/>\n        <g stroke=\"#22409e\" stroke-width=\"2\">\n          <line x1=\"30\" y1=\"45\" x2=\"30\" y2=\"65\"/><line x1=\"87.5\" y1=\"47\" x2=\"87.5\" y2=\"63\"/>\n          <line x1=\"145\" y1=\"47\" x2=\"145\" y2=\"63\"/><line x1=\"202.5\" y1=\"47\" x2=\"202.5\" y2=\"63\"/>\n          <line x1=\"260\" y1=\"47\" x2=\"260\" y2=\"63\"/><line x1=\"317.5\" y1=\"45\" x2=\"317.5\" y2=\"65\"/>\n          <line x1=\"375\" y1=\"47\" x2=\"375\" y2=\"63\"/><line x1=\"432.5\" y1=\"47\" x2=\"432.5\" y2=\"63\"/>\n          <line x1=\"490\" y1=\"45\" x2=\"490\" y2=\"65\"/>\n        </g>\n        <circle cx=\"317.5\" cy=\"55\" r=\"6\" fill=\"#9a1750\"/>\n        <text x=\"30\" y=\"82\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e2632\">0</text>\n        <text x=\"490\" y=\"82\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e2632\">1</text>\n        <text x=\"317.5\" y=\"34\" font-size=\"14\" text-anchor=\"middle\" fill=\"#9a1750\" font-weight=\"700\">P</text>\n      </svg>"
+    },
+    "q133-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" role=\"img\" aria-label=\"Balance: one block on the left balances three marbles on the right\">\n        <title>A balance with one block on the left pan and three marbles on the right pan, level</title>\n        <line x1=\"230\" y1=\"20\" x2=\"230\" y2=\"130\" stroke=\"#22409e\" stroke-width=\"4\"/>\n        <line x1=\"80\" y1=\"45\" x2=\"380\" y2=\"45\" stroke=\"#22409e\" stroke-width=\"4\"/>\n        <polygon points=\"230,130 210,158 250,158\" fill=\"#22409e\"/>\n        <line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"80\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <line x1=\"380\" y1=\"45\" x2=\"380\" y2=\"80\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <path d=\"M45 80 h70 l-10 22 h-50 z\" fill=\"none\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <path d=\"M345 80 h70 l-10 22 h-50 z\" fill=\"none\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <rect x=\"63\" y=\"55\" width=\"34\" height=\"24\" rx=\"3\" fill=\"#9a1750\"/>\n        <text x=\"80\" y=\"72\" font-size=\"11\" text-anchor=\"middle\" fill=\"#fff\">1</text>\n        <circle cx=\"360\" cy=\"70\" r=\"8\" fill=\"#177a4d\"/><circle cx=\"380\" cy=\"70\" r=\"8\" fill=\"#177a4d\"/><circle cx=\"400\" cy=\"70\" r=\"8\" fill=\"#177a4d\"/>\n      </svg>"
+    },
+    "q137-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 170\" role=\"img\" aria-label=\"Balance: two-thirds of a bag on the left, one-quarter of a bag plus a 5 kg weight on the right\">\n        <title>Balance with two-thirds bag on left, one-quarter bag and a 5 kg weight on right, level</title>\n        <line x1=\"240\" y1=\"20\" x2=\"240\" y2=\"130\" stroke=\"#22409e\" stroke-width=\"4\"/>\n        <line x1=\"80\" y1=\"45\" x2=\"400\" y2=\"45\" stroke=\"#22409e\" stroke-width=\"4\"/>\n        <polygon points=\"240,130 220,158 260,158\" fill=\"#22409e\"/>\n        <line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"80\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <line x1=\"400\" y1=\"45\" x2=\"400\" y2=\"80\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <path d=\"M45 80 h70 l-10 24 h-50 z\" fill=\"none\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <path d=\"M365 80 h70 l-10 24 h-50 z\" fill=\"none\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <rect x=\"66\" y=\"52\" width=\"28\" height=\"30\" rx=\"3\" fill=\"#9a6206\"/>\n        <text x=\"80\" y=\"46\" font-size=\"12\" text-anchor=\"middle\" fill=\"#9a6206\" font-weight=\"700\">&frac23; bag</text>\n        <rect x=\"360\" y=\"58\" width=\"20\" height=\"22\" rx=\"3\" fill=\"#9a6206\"/>\n        <rect x=\"388\" y=\"56\" width=\"26\" height=\"24\" rx=\"3\" fill=\"#22409e\"/>\n        <text x=\"401\" y=\"72\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">5kg</text>\n        <text x=\"388\" y=\"46\" font-size=\"11\" text-anchor=\"middle\" fill=\"#9a6206\" font-weight=\"700\">&frac14; bag</text>\n      </svg>"
+    },
+    "q163-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 90\" role=\"img\" aria-label=\"Rectangle divided into six equal parts with two shaded\">\n        <title>A rectangle in six equal cells, two of them shaded</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.5\">\n          <rect x=\"20\" y=\"20\" width=\"55\" height=\"50\" fill=\"#9a1750\"/>\n          <rect x=\"75\" y=\"20\" width=\"55\" height=\"50\" fill=\"#9a1750\"/>\n          <rect x=\"130\" y=\"20\" width=\"55\" height=\"50\" fill=\"#fff\"/>\n          <rect x=\"185\" y=\"20\" width=\"55\" height=\"50\" fill=\"#fff\"/>\n          <rect x=\"240\" y=\"20\" width=\"55\" height=\"50\" fill=\"#fff\"/>\n          <rect x=\"295\" y=\"20\" width=\"55\" height=\"50\" fill=\"#fff\"/>\n        </g>\n      </svg>"
+    },
+    "q165-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" role=\"img\" aria-label=\"Four by four grid, a two by two block and two more squares shaded\">\n        <title>A 4 by 4 grid with a 2 by 2 corner block and two extra cells shaded</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.5\" fill=\"#fff\">\n          <rect x=\"20\" y=\"20\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"60\" y=\"20\" width=\"40\" height=\"40\" fill=\"#9a1750\"/>\n          <rect x=\"100\" y=\"20\" width=\"40\" height=\"40\"/><rect x=\"140\" y=\"20\" width=\"40\" height=\"40\"/>\n          <rect x=\"20\" y=\"60\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"60\" y=\"60\" width=\"40\" height=\"40\" fill=\"#9a1750\"/>\n          <rect x=\"100\" y=\"60\" width=\"40\" height=\"40\"/><rect x=\"140\" y=\"60\" width=\"40\" height=\"40\" fill=\"#9a1750\"/>\n          <rect x=\"20\" y=\"100\" width=\"40\" height=\"40\"/><rect x=\"60\" y=\"100\" width=\"40\" height=\"40\"/>\n          <rect x=\"100\" y=\"100\" width=\"40\" height=\"40\"/><rect x=\"140\" y=\"100\" width=\"40\" height=\"40\" fill=\"#9a1750\"/>\n          <rect x=\"20\" y=\"140\" width=\"40\" height=\"40\"/><rect x=\"60\" y=\"140\" width=\"40\" height=\"40\"/>\n          <rect x=\"100\" y=\"140\" width=\"40\" height=\"40\"/><rect x=\"140\" y=\"140\" width=\"40\" height=\"40\"/>\n        </g>\n      </svg>"
+    },
+    "q167-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 200 200\" role=\"img\" aria-label=\"Square with midpoints joined to form a rotated inner square\">\n        <title>Large square with its four side-midpoints joined to make a tilted inner square</title>\n        <rect x=\"30\" y=\"30\" width=\"140\" height=\"140\" fill=\"#fff\" stroke=\"#22409e\" stroke-width=\"2\"/>\n        <polygon points=\"100,30 170,100 100,170 30,100\" fill=\"#9a1750\" stroke=\"#22409e\" stroke-width=\"2\"/>\n        <g fill=\"#22409e\"><circle cx=\"100\" cy=\"30\" r=\"3\"/><circle cx=\"170\" cy=\"100\" r=\"3\"/><circle cx=\"100\" cy=\"170\" r=\"3\"/><circle cx=\"30\" cy=\"100\" r=\"3\"/></g>\n      </svg>"
+    },
+    "q168-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\" role=\"img\" aria-label=\"Three by three grid with the bottom row and left column shaded as an L\">\n        <title>A 3 by 3 grid with the whole bottom row and whole left column shaded</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.5\" fill=\"#fff\">\n          <rect x=\"20\" y=\"20\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"60\" y=\"20\" width=\"40\" height=\"40\"/><rect x=\"100\" y=\"20\" width=\"40\" height=\"40\"/>\n          <rect x=\"20\" y=\"60\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"60\" y=\"60\" width=\"40\" height=\"40\"/><rect x=\"100\" y=\"60\" width=\"40\" height=\"40\"/>\n          <rect x=\"20\" y=\"100\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"60\" y=\"100\" width=\"40\" height=\"40\" fill=\"#9a1750\"/><rect x=\"100\" y=\"100\" width=\"40\" height=\"40\" fill=\"#9a1750\"/>\n        </g>\n      </svg>"
+    },
+    "q169-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 180\" role=\"img\" aria-label=\"Five by five grid with ten cells coloured\">\n        <title>A 5 by 5 grid with ten cells coloured</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.2\" fill=\"#fff\">\n          <rect x=\"15\" y=\"15\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"45\" y=\"15\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"75\" y=\"15\" width=\"30\" height=\"30\"/><rect x=\"105\" y=\"15\" width=\"30\" height=\"30\"/><rect x=\"135\" y=\"15\" width=\"30\" height=\"30\"/>\n          <rect x=\"15\" y=\"45\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"45\" y=\"45\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"75\" y=\"45\" width=\"30\" height=\"30\"/><rect x=\"105\" y=\"45\" width=\"30\" height=\"30\"/><rect x=\"135\" y=\"45\" width=\"30\" height=\"30\"/>\n          <rect x=\"15\" y=\"75\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"45\" y=\"75\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"75\" y=\"75\" width=\"30\" height=\"30\"/><rect x=\"105\" y=\"75\" width=\"30\" height=\"30\"/><rect x=\"135\" y=\"75\" width=\"30\" height=\"30\"/>\n          <rect x=\"15\" y=\"105\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"45\" y=\"105\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"75\" y=\"105\" width=\"30\" height=\"30\"/><rect x=\"105\" y=\"105\" width=\"30\" height=\"30\"/><rect x=\"135\" y=\"105\" width=\"30\" height=\"30\"/>\n          <rect x=\"15\" y=\"135\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"45\" y=\"135\" width=\"30\" height=\"30\" fill=\"#22409e\"/><rect x=\"75\" y=\"135\" width=\"30\" height=\"30\"/><rect x=\"105\" y=\"135\" width=\"30\" height=\"30\"/><rect x=\"135\" y=\"135\" width=\"30\" height=\"30\"/>\n        </g>\n      </svg>"
+    },
+    "q175-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" role=\"img\" aria-label=\"Tree diagram for two coin tosses\">\n        <title>Tree diagram: first toss H or T, second toss H or T</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.6\" fill=\"none\">\n          <line x1=\"40\" y1=\"95\" x2=\"140\" y2=\"45\"/><line x1=\"40\" y1=\"95\" x2=\"140\" y2=\"145\"/>\n          <line x1=\"160\" y1=\"45\" x2=\"260\" y2=\"25\"/><line x1=\"160\" y1=\"45\" x2=\"260\" y2=\"70\"/>\n          <line x1=\"160\" y1=\"145\" x2=\"260\" y2=\"120\"/><line x1=\"160\" y1=\"145\" x2=\"260\" y2=\"165\"/>\n        </g>\n        <g font-size=\"12\" fill=\"#1e2632\" font-weight=\"700\">\n          <text x=\"150\" y=\"49\">H</text><text x=\"150\" y=\"149\">T</text>\n          <text x=\"272\" y=\"29\">H</text><text x=\"272\" y=\"74\">T</text><text x=\"272\" y=\"124\">H</text><text x=\"272\" y=\"169\">T</text>\n        </g>\n        <g font-size=\"10\" fill=\"#5b6575\">\n          <text x=\"78\" y=\"58\">&frac12;</text><text x=\"78\" y=\"130\">&frac12;</text>\n          <text x=\"200\" y=\"28\">&frac12;</text><text x=\"200\" y=\"63\">&frac12;</text><text x=\"200\" y=\"127\">&frac12;</text><text x=\"200\" y=\"162\">&frac12;</text>\n        </g>\n      </svg>"
+    },
+    "q206-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 70\" role=\"img\" aria-label=\"A bar of five equal parts with two parts shaded\">\n        <title>A fraction bar of five equal parts, two shaded</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.5\" fill=\"#fff\">\n          <rect x=\"20\" y=\"20\" width=\"56\" height=\"34\" fill=\"#177a4d\"/>\n          <rect x=\"76\" y=\"20\" width=\"56\" height=\"34\" fill=\"#177a4d\"/>\n          <rect x=\"132\" y=\"20\" width=\"56\" height=\"34\"/>\n          <rect x=\"188\" y=\"20\" width=\"56\" height=\"34\"/>\n          <rect x=\"244\" y=\"20\" width=\"56\" height=\"34\"/>\n        </g>\n      </svg>"
+    },
+    "q223-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 130 130\" role=\"img\" aria-label=\"A pizza in eight equal slices with three eaten\">\n        <title>A circle cut into eight equal slices, three shown as eaten (empty)</title>\n        <g stroke=\"#22409e\" stroke-width=\"1.5\">\n          <path d=\"M65 65 L65 15 A50 50 0 0 1 100.4 29.6 Z\" fill=\"#f0b23c\"/>\n          <path d=\"M65 65 L100.4 29.6 A50 50 0 0 1 115 65 Z\" fill=\"#f0b23c\"/>\n          <path d=\"M65 65 L115 65 A50 50 0 0 1 100.4 100.4 Z\" fill=\"#f0b23c\"/>\n          <path d=\"M65 65 L100.4 100.4 A50 50 0 0 1 65 115 Z\" fill=\"#f0b23c\"/>\n          <path d=\"M65 65 L65 115 A50 50 0 0 1 29.6 100.4 Z\" fill=\"#f0b23c\"/>\n          <path d=\"M65 65 L29.6 100.4 A50 50 0 0 1 15 65 Z\" fill=\"#fff\"/>\n          <path d=\"M65 65 L15 65 A50 50 0 0 1 29.6 29.6 Z\" fill=\"#fff\"/>\n          <path d=\"M65 65 L29.6 29.6 A50 50 0 0 1 65 15 Z\" fill=\"#fff\"/>\n        </g>\n      </svg>"
+    },
+    "q228-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 150 130\" role=\"img\" aria-label=\"Pie split into four shares A one third, B one quarter, C one sixth, D the rest\">\n        <title>Pie chart of shares A, B, C, D</title>\n        <g stroke=\"#fff\" stroke-width=\"1.5\">\n          <path d=\"M65 65 L65 15 A50 50 0 0 1 108.3 90 Z\" fill=\"#22409e\"/>\n          <path d=\"M65 65 L108.3 90 A50 50 0 0 1 40 108.3 Z\" fill=\"#9a1750\"/>\n          <path d=\"M65 65 L40 108.3 A50 50 0 0 1 15 65 Z\" fill=\"#177a4d\"/>\n          <path d=\"M65 65 L15 65 A50 50 0 0 1 65 15 Z\" fill=\"#f0b23c\"/>\n        </g>\n        <g font-size=\"11\" fill=\"#fff\" font-weight=\"700\">\n          <text x=\"88\" y=\"54\">A</text><text x=\"74\" y=\"98\">B</text><text x=\"40\" y=\"82\">C</text><text x=\"42\" y=\"46\">D</text>\n        </g>\n      </svg>"
+    },
+    "q229-fig": {
+      "type": "image/svg+xml",
+      "data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 120\" role=\"img\" aria-label=\"Bar chart of favourite fruit fractions\">\n        <title>Bar chart: apples one fifth, others make the rest of the 40 people</title>\n        <line x1=\"35\" y1=\"100\" x2=\"300\" y2=\"100\" stroke=\"#5b6575\" stroke-width=\"1.5\"/>\n        <g fill=\"#22409e\">\n          <rect x=\"55\" y=\"60\" width=\"40\" height=\"40\"/>\n          <rect x=\"130\" y=\"24\" width=\"40\" height=\"76\"/>\n          <rect x=\"205\" y=\"48\" width=\"40\" height=\"52\"/>\n        </g>\n        <g font-size=\"11\" fill=\"#1e2632\" text-anchor=\"middle\">\n          <text x=\"75\" y=\"114\">Apple</text><text x=\"150\" y=\"114\">Banana</text><text x=\"225\" y=\"114\">Mango</text>\n        </g>\n        <text x=\"75\" y=\"52\" font-size=\"10\" text-anchor=\"middle\" fill=\"#9a1750\" font-weight=\"700\">&frac15;</text>\n      </svg>"
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "stem": "A chocolate bar is split into 12 equal squares. Priya eats 5 squares and her brother eats 3. What fraction of the bar is left? Simplify your answer.",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q1"
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "stem": "In a class of 28 students, $\\frac{3}{7}$ wear glasses. How many students do **not** wear glasses?",
+      "type": "short_answer",
+      "answer": "16 students",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q2"
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "stem": "A ribbon is cut into equal pieces. Seven of those pieces together make up $\\frac{7}{10}$ of the ribbon. How many equal pieces make the whole ribbon, and what fraction is one piece?",
+      "type": "short_answer",
+      "answer": "10 pieces; each is 1/10",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q3"
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "stem": "In a bag of marbles, $\\frac{1}{4}$ are red, $\\frac{1}{3}$ are blue, and the remaining 20 are green. How many marbles are in the bag?",
+      "type": "short_answer",
+      "answer": "48 marbles",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q4"
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "stem": "A wall is painted in three sessions. In the first, $\\frac{1}{3}$ of the wall is painted; in the second, $\\frac{1}{4}$ of the whole wall is painted; in the third, the painter finishes the remaining 25 m². Find the total area of the wall.",
+      "type": "short_answer",
+      "answer": "60 m²",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q5"
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "stem": "A pile of coins is shared so that the first person gets $\\frac{1}{2}$ of the total, the second gets $\\frac{1}{3}$ of the total, and the third gets the rest. If the third person’s share is 8 coins fewer than the first person’s, how many coins are there in total?",
+      "type": "short_answer",
+      "answer": "24 coins",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Part–Whole"
+      ],
+      "fields": {
+        "Skill focus": "reading a fraction as a part of a fixed whole, and recovering the whole from a stated part."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q6"
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "stem": "Find $\\frac{2}{3}$ of $\\frac{3}{4}$. Give your answer in lowest terms.",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q7"
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "stem": "A jug is $\\frac{3}{4}$ full of juice. Of that juice, $\\frac{2}{5}$ is orange juice. What fraction of the whole jug is orange juice?",
+      "type": "numeric",
+      "answer": "3/10",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q8"
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "stem": "In a garden, $\\frac{5}{8}$ of the plot is lawn. Of the lawn, $\\frac{2}{5}$ lies in shade. Of the shaded lawn, $\\frac{3}{4}$ is damp. What fraction of the whole garden is damp, shaded lawn?",
+      "type": "numeric",
+      "answer": "3/16",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q9"
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "stem": "Half of a cake is left. A guest takes $\\frac{2}{3}$ of what is left; then a child takes $\\frac{1}{4}$ of what now remains. What fraction of the whole cake is left at the end?",
+      "type": "numeric",
+      "answer": "1/8",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q10"
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "stem": "A tank of water is emptied in stages. Each stage removes $\\frac{1}{3}$ of the water currently in the tank. After three stages, what fraction of the original water remains?",
+      "type": "numeric",
+      "answer": "8/27",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q11"
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "stem": "Of a group of people, $\\frac{3}{5}$ are adults. Of the adults, $\\frac{5}{6}$ hold a driving licence. Of those with a licence, $\\frac{4}{9}$ drove to the event. If 40 licensed adults drove, how many people are in the group?",
+      "type": "short_answer",
+      "answer": "180 people",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction of a Fraction"
+      ],
+      "fields": {
+        "Skill focus": "chaining multiplications of fractions and tracking a shrinking quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q12"
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "stem": "After spending $\\frac{2}{5}$ of her money, Aisha has ₹36 left. How much did she start with?",
+      "type": "short_answer",
+      "answer": "₹60",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q13"
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "stem": "A number increased by $\\frac{1}{4}$ of itself gives 45. Find the number.",
+      "type": "numeric",
+      "answer": "36",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q14"
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "stem": "A farmer sells $\\frac{1}{2}$ of his apples, then $\\frac{1}{3}$ of the remainder, and is left with 40 apples. How many did he start with?",
+      "type": "short_answer",
+      "answer": "120 apples",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q15"
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "stem": "A boy gives $\\frac{1}{3}$ of his stickers to A, then $\\frac{1}{4}$ of the remainder to B, and keeps the last 18. How many stickers did he have at the start?",
+      "type": "short_answer",
+      "answer": "36 stickers",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q16"
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "stem": "A jar of sweets is eaten over three days. Day 1: $\\frac{1}{4}$ of the jar is eaten. Day 2: $\\frac{1}{3}$ of the remainder is eaten. Day 3: $\\frac{1}{2}$ of what is now left is eaten, leaving 15 sweets. How many sweets were in the jar at the start?",
+      "type": "short_answer",
+      "answer": "60 sweets",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q17"
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "stem": "A traveller spends $\\frac{1}{3}$ of his money plus ₹10 more on the first day. On the next day he spends $\\frac{1}{2}$ of what remains plus ₹5 more, leaving ₹15. How much money did he start with?",
+      "type": "short_answer",
+      "answer": "₹75",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Reverse Fraction (Working Backwards)"
+      ],
+      "fields": {
+        "Skill focus": "undoing a sequence of fractional removals to recover the starting amount."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q18"
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "stem": "$\\frac{3}{8}$ of a number is 21. Find the number.",
+      "type": "numeric",
+      "answer": "56",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q19"
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "stem": "If $\\frac{5}{6}$ of a rope is 45 m long, how long is the whole rope?",
+      "type": "short_answer",
+      "answer": "54 m",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q20"
+      }
+    },
+    {
+      "id": "q21",
+      "number": "21",
+      "stem": "$\\frac{2}{7}$ of a herd of cows equals $\\frac{3}{5}$ of a herd of goats. If there are 30 goats, how many cows are there?",
+      "type": "short_answer",
+      "answer": "63 cows",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q21"
+      }
+    },
+    {
+      "id": "q22",
+      "number": "22",
+      "stem": "A crate is $\\frac{5}{9}$ full and holds 40 oranges at that level. How many more oranges are needed to fill it completely?",
+      "type": "short_answer",
+      "answer": "32 oranges",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q22"
+      }
+    },
+    {
+      "id": "q23",
+      "number": "23",
+      "stem": "In a school, $\\frac{3}{5}$ of students study Maths and $\\frac{1}{2}$ study Science; $\\frac{3}{10}$ study both. If 72 students study at least one of these two subjects, how many students are in the school?",
+      "type": "short_answer",
+      "answer": "90 students",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q23"
+      }
+    },
+    {
+      "id": "q24",
+      "number": "24",
+      "stem": "When $\\frac{1}{6}$ of a number is added to $\\frac{1}{4}$ of the same number, the result is 15. Find the number.",
+      "type": "numeric",
+      "answer": "36",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Missing Whole"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a whole from a part, including equalities between two different wholes."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q24"
+      }
+    },
+    {
+      "id": "q25",
+      "number": "25",
+      "stem": "Start with 64. Halve it, then take $\\frac{3}{4}$ of the result. What number do you get?",
+      "type": "numeric",
+      "answer": "24",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q25"
+      }
+    },
+    {
+      "id": "q26",
+      "number": "26",
+      "stem": "A ball rebounds to $\\frac{2}{3}$ of its drop height on each bounce. Dropped from 27 m, how high does it rise after the second bounce?",
+      "type": "short_answer",
+      "answer": "12 m",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q26"
+      }
+    },
+    {
+      "id": "q27",
+      "number": "27",
+      "stem": "A number is multiplied by $\\frac{2}{3}$, then that result by $\\frac{3}{5}$, then that by $\\frac{5}{4}$. If the final answer is 30, find the original number.",
+      "type": "numeric",
+      "answer": "60",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q27"
+      }
+    },
+    {
+      "id": "q28",
+      "number": "28",
+      "stem": "Each hour a candle loses $\\frac{1}{5}$ of its current length. If it starts at 100 mm, what is its length after 2 hours?",
+      "type": "short_answer",
+      "answer": "64 mm",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q28"
+      }
+    },
+    {
+      "id": "q29",
+      "number": "29",
+      "stem": "A colony of bacteria multiplies by $\\frac{3}{2}$ (grows by half of itself) every day. It starts at 32 units. After how many whole days does it first exceed 100 units?",
+      "type": "short_answer",
+      "answer": "3 days",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q29"
+      }
+    },
+    {
+      "id": "q30",
+      "number": "30",
+      "stem": "A sum of money changes over three years: year 1 it increases by $\\frac{1}{4}$; year 2 it decreases by $\\frac{1}{5}$; year 3 it increases by $\\frac{1}{2}$. If the final amount is ₹450, find the starting amount.",
+      "type": "short_answer",
+      "answer": "₹300",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Repeated Fraction Operations"
+      ],
+      "fields": {
+        "Skill focus": "composing repeated multiplicative steps and reading the combined effect."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q30"
+      }
+    },
+    {
+      "id": "q31",
+      "number": "31",
+      "stem": "A price of ₹200 is increased by $\\frac{1}{4}$, then the new price is decreased by $\\frac{1}{5}$. What is the final price?",
+      "type": "short_answer",
+      "answer": "₹200",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q31"
+      }
+    },
+    {
+      "id": "q32",
+      "number": "32",
+      "stem": "A tank loses $\\frac{1}{3}$ of its water, then loses $\\frac{1}{2}$ of what remains. What fraction of the original water is left?",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q32"
+      }
+    },
+    {
+      "id": "q33",
+      "number": "33",
+      "stem": "A shopkeeper raises a price by $\\frac{1}{5}$, then lowers the new price by $\\frac{1}{6}$. Compared with the original price, is the final price higher, lower, or equal? Justify with fractions.",
+      "type": "short_answer",
+      "answer": "Equal — no net change",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q33"
+      }
+    },
+    {
+      "id": "q34",
+      "number": "34",
+      "stem": "A salary rises by $\\frac{1}{10}$ one year and falls by $\\frac{1}{10}$ the next. Compared with the start, by what fraction has it changed, and in which direction?",
+      "type": "short_answer",
+      "answer": "Down by 1/100",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q34"
+      }
+    },
+    {
+      "id": "q35",
+      "number": "35",
+      "stem": "A population increases by $\\frac{1}{8}$ in one year and then decreases by $\\frac{1}{6}$ the next year, ending at 12,000. What was the population at the start?",
+      "type": "short_answer",
+      "answer": "12,800",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q35"
+      }
+    },
+    {
+      "id": "q36",
+      "number": "36",
+      "stem": "Two successive discounts of $\\frac{1}{4}$ and then $\\frac{1}{5}$ are applied to a price. A single discount of what fraction would have the same effect?",
+      "type": "numeric",
+      "answer": "2/5",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Successive Gain / Loss"
+      ],
+      "fields": {
+        "Skill focus": "why a rise then a fall by the same-looking fraction does not return to the start."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q36"
+      }
+    },
+    {
+      "id": "q37",
+      "number": "37",
+      "stem": "A 12-litre mixture is $\\frac{1}{3}$ syrup and the rest water. How many litres are syrup?",
+      "type": "short_answer",
+      "answer": "4 L",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q37"
+      }
+    },
+    {
+      "id": "q38",
+      "number": "38",
+      "stem": "A 30-litre solution is $\\frac{2}{5}$ acid. How much acid and how much water does it contain?",
+      "type": "short_answer",
+      "answer": "12 L acid, 18 L water",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q38"
+      }
+    },
+    {
+      "id": "q39",
+      "number": "39",
+      "stem": "A 20-litre mixture is $\\frac{3}{5}$ juice. If 5 litres of pure juice are added, what fraction of the new mixture is juice?",
+      "type": "numeric",
+      "answer": "17/25",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q39"
+      }
+    },
+    {
+      "id": "q40",
+      "number": "40",
+      "stem": "A 24-litre mixture is $\\frac{1}{4}$ milk. How much water must be added so that milk becomes $\\frac{1}{6}$ of the new mixture?",
+      "type": "short_answer",
+      "answer": "12 L",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q40"
+      }
+    },
+    {
+      "id": "q41",
+      "number": "41",
+      "stem": "A jar holds 18 litres of solution that is $\\frac{5}{6}$ water and the rest salt. How many litres of water must evaporate so that the mixture becomes $\\frac{3}{4}$ water?",
+      "type": "short_answer",
+      "answer": "6 L",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q41"
+      }
+    },
+    {
+      "id": "q42",
+      "number": "42",
+      "stem": "Container A holds 9 litres that is $\\frac{1}{3}$ alcohol; container B holds 8 litres that is $\\frac{3}{4}$ alcohol. Both are poured together. What fraction of the combined mixture is alcohol?",
+      "type": "numeric",
+      "answer": "9/17",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Mixture and Dilution"
+      ],
+      "fields": {
+        "Skill focus": "tracking one component as amounts are added or evaporated (fractional language only)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q42"
+      }
+    },
+    {
+      "id": "q43",
+      "number": "43",
+      "stem": "Which is larger, $\\frac{3}{5}$ or $\\frac{5}{8}$? Justify without using decimals.",
+      "type": "numeric",
+      "answer": "5/8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q43"
+      }
+    },
+    {
+      "id": "q44",
+      "number": "44",
+      "stem": "Which is larger, $\\frac{7}{9}$ or $\\frac{8}{11}$?",
+      "type": "numeric",
+      "answer": "7/9",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q44"
+      }
+    },
+    {
+      "id": "q45",
+      "number": "45",
+      "stem": "Of $\\frac{4}{7}$ and $\\frac{5}{9}$: which is the larger fraction, and which one is closer to $\\frac{1}{2}$?",
+      "type": "short_answer",
+      "answer": "4/7 is larger; 5/9 is closer to 1/2",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q45"
+      }
+    },
+    {
+      "id": "q46",
+      "number": "46",
+      "stem": "Using complements to 1, decide which is bigger: $\\frac{11}{13}$ or $\\frac{13}{15}$.",
+      "type": "numeric",
+      "answer": "13/15",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q46"
+      }
+    },
+    {
+      "id": "q47",
+      "number": "47",
+      "stem": "Show which is larger, $\\frac{100}{101}$ or $\\frac{101}{102}$, explaining your method using how far each is from 1.",
+      "type": "numeric",
+      "answer": "101/102",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q47"
+      }
+    },
+    {
+      "id": "q48",
+      "number": "48",
+      "stem": "Which is the largest among $\\frac{5}{6}$, $\\frac{6}{7}$ and $\\frac{7}{8}$? Explain using complements to 1.",
+      "type": "numeric",
+      "answer": "7/8",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Comparing Fractions"
+      ],
+      "fields": {
+        "Skill focus": "cross-multiplication and complement-to-one reasoning instead of decimals."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q48"
+      }
+    },
+    {
+      "id": "q49",
+      "number": "49",
+      "stem": "Order from smallest to largest: $\\frac{1}{2}$, $\\frac{2}{3}$, $\\frac{3}{4}$.",
+      "type": "short_answer",
+      "answer": "1/2 < 2/3 < 3/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q49"
+      }
+    },
+    {
+      "id": "q50",
+      "number": "50",
+      "stem": "Order from smallest to largest: $\\frac{3}{8}$, $\\frac{1}{2}$, $\\frac{5}{12}$.",
+      "type": "short_answer",
+      "answer": "3/8 < 5/12 < 1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q50"
+      }
+    },
+    {
+      "id": "q51",
+      "number": "51",
+      "stem": "Order from largest to smallest: $\\frac{5}{7}$, $\\frac{7}{10}$, $\\frac{9}{14}$.",
+      "type": "short_answer",
+      "answer": "5/7 > 7/10 > 9/14",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q51"
+      }
+    },
+    {
+      "id": "q52",
+      "number": "52",
+      "stem": "Arrange in increasing order: $\\frac{2}{3}$, $\\frac{5}{8}$, $\\frac{3}{5}$, $\\frac{7}{12}$.",
+      "type": "short_answer",
+      "answer": "7/12 < 3/5 < 5/8 < 2/3",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q52"
+      }
+    },
+    {
+      "id": "q53",
+      "number": "53",
+      "stem": "Arrange in increasing order, avoiding a full common denominator: $\\frac{4}{9}$, $\\frac{5}{11}$, $\\frac{6}{13}$, $\\frac{3}{7}$. (Hint: each consecutive pair differs by a single cross-product.)",
+      "type": "short_answer",
+      "answer": "3/7 < 4/9 < 5/11 < 6/13",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q53"
+      }
+    },
+    {
+      "id": "q54",
+      "number": "54",
+      "stem": "Place in increasing order: $\\frac{7}{15}$, $\\frac{8}{17}$, $\\frac{9}{19}$, $\\frac{1}{2}$.",
+      "type": "short_answer",
+      "answer": "7/15 < 8/17 < 9/19 < 1/2",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Ordering Fractions"
+      ],
+      "fields": {
+        "Skill focus": "placing several fractions in order using a shared denominator or benchmark reasoning."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q54"
+      }
+    },
+    {
+      "id": "q55",
+      "number": "55",
+      "stem": "Three identical pizzas are shared equally among 4 children. How much pizza does each child get?",
+      "type": "short_answer",
+      "answer": "3/4 of a pizza",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q55"
+      }
+    },
+    {
+      "id": "q56",
+      "number": "56",
+      "stem": "Five identical chocolate bars are shared equally among 8 friends. How much does each friend get?",
+      "type": "short_answer",
+      "answer": "5/8 of a bar",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q56"
+      }
+    },
+    {
+      "id": "q57",
+      "number": "57",
+      "stem": "Seven sandwiches are shared equally among 12 people. Rohan says each person gets “half a sandwich and a little more”. Write each person’s exact share and express the “little more” as a fraction.",
+      "type": "short_answer",
+      "answer": "7/12 each (= 1/2 + 1/12)",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q57"
+      }
+    },
+    {
+      "id": "q58",
+      "number": "58",
+      "stem": "Four cakes are shared equally so that each child receives exactly $\\frac{2}{9}$ of a cake. How many children share the cakes?",
+      "type": "short_answer",
+      "answer": "18 children",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q58"
+      }
+    },
+    {
+      "id": "q59",
+      "number": "59",
+      "stem": "Three friends share a bag of nuts. The first takes $\\frac{2}{5}$ of the bag, the second takes $\\frac{1}{2}$ of the remainder, and the third takes the rest. If the third friend gets 8 fewer nuts than the first, how many nuts were in the bag?",
+      "type": "short_answer",
+      "answer": "80 nuts",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q59"
+      }
+    },
+    {
+      "id": "q60",
+      "number": "60",
+      "stem": "A prize of ₹680 is shared among three people so that the second gets $\\frac{3}{4}$ of the first person’s share, and the third gets $\\frac{1}{2}$ of the second person’s share. Find each person’s share.",
+      "type": "short_answer",
+      "answer": "₹320, ₹240, ₹120",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Equal Sharing"
+      ],
+      "fields": {
+        "Skill focus": "interpreting a share as a fraction, and reversing to find the number of sharers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q60"
+      }
+    },
+    {
+      "id": "q61",
+      "number": "61",
+      "stem": "After using $\\frac{3}{7}$ of a roll of tape, what fraction of the roll remains?",
+      "type": "numeric",
+      "answer": "4/7",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q61"
+      }
+    },
+    {
+      "id": "q62",
+      "number": "62",
+      "stem": "A book has 200 pages. Raj reads $\\frac{2}{5}$ of it. How many pages are still unread?",
+      "type": "short_answer",
+      "answer": "120 pages",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q62"
+      }
+    },
+    {
+      "id": "q63",
+      "number": "63",
+      "stem": "A tank is $\\frac{5}{8}$ full. Water equal to $\\frac{1}{4}$ of the tank’s capacity is drained. What fraction of the tank is now filled?",
+      "type": "numeric",
+      "answer": "3/8",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q63"
+      }
+    },
+    {
+      "id": "q64",
+      "number": "64",
+      "stem": "Meena spent $\\frac{1}{3}$ of her savings on books and $\\frac{2}{5}$ on clothes. What fraction remains, and if that remainder is ₹80, how much did she save?",
+      "type": "short_answer",
+      "answer": "4/15 remains; ₹300 saved",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q64"
+      }
+    },
+    {
+      "id": "q65",
+      "number": "65",
+      "stem": "A worker completes $\\frac{1}{4}$ of a job on Monday and $\\frac{2}{5}$ of the whole job on Tuesday. On Wednesday she finishes exactly half of what still remains. What fraction of the job is left after Wednesday?",
+      "type": "numeric",
+      "answer": "7/40",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q65"
+      }
+    },
+    {
+      "id": "q66",
+      "number": "66",
+      "stem": "A cyclist has ridden $\\frac{3}{8}$ of a route. If he rides 21 km more, he will have covered $\\frac{2}{3}$ of the route. How long is the route?",
+      "type": "short_answer",
+      "answer": "72 km",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Remaining Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "distinguishing “fraction of the whole” from “fraction of what remains”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q66"
+      }
+    },
+    {
+      "id": "q67",
+      "number": "67",
+      "stem": "What must be added to $\\frac{3}{8}$ to make a whole (1)?",
+      "type": "numeric",
+      "answer": "5/8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q67"
+      }
+    },
+    {
+      "id": "q68",
+      "number": "68",
+      "stem": "A glass is $\\frac{2}{9}$ empty. What fraction of the glass is full?",
+      "type": "numeric",
+      "answer": "7/9",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q68"
+      }
+    },
+    {
+      "id": "q69",
+      "number": "69",
+      "stem": "Two fractions add up to 1. One of them is $\\frac{3}{4}$ of the other. Find both fractions.",
+      "type": "short_answer",
+      "answer": "4/7 and 3/7",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q69"
+      }
+    },
+    {
+      "id": "q70",
+      "number": "70",
+      "stem": "In a survey, $\\frac{1}{3}$ chose tea, $\\frac{1}{4}$ chose coffee, and the rest chose neither. What fraction chose neither?",
+      "type": "numeric",
+      "answer": "5/12",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q70"
+      }
+    },
+    {
+      "id": "q71",
+      "number": "71",
+      "stem": "Of a field, $\\frac{2}{5}$ is planted with wheat and $\\frac{1}{6}$ with corn; the remaining 26 hectares lie fallow. Find the total area of the field.",
+      "type": "short_answer",
+      "answer": "60 hectares",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q71"
+      }
+    },
+    {
+      "id": "q72",
+      "number": "72",
+      "stem": "A pie is shared. Person A takes some of it, B takes $\\frac{1}{4}$ of the whole pie, C takes $\\frac{1}{3}$ of the whole pie, and $\\frac{1}{6}$ of the pie is left over. What fraction did A take?",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Complement Fractions"
+      ],
+      "fields": {
+        "Skill focus": "using “the rest” = 1 minus the named parts to find an unknown share."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q72"
+      }
+    },
+    {
+      "id": "q73",
+      "number": "73",
+      "stem": "The number line below runs from 0 to 1 in 8 equal parts. What fraction is marked by the point P?\n\n![Number line 0 to 1 in 8 equal steps with point P at the fifth tick](asset:q73-fig)\n\n*P sits on the 5th tick counting from 0.*",
+      "type": "numeric",
+      "answer": "5/8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q73"
+      }
+    },
+    {
+      "id": "q74",
+      "number": "74",
+      "stem": "A point sits exactly halfway between $\\frac{1}{4}$ and $\\frac{3}{4}$ on the number line. What fraction is it?",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q74"
+      }
+    },
+    {
+      "id": "q75",
+      "number": "75",
+      "stem": "What fraction lies exactly one-third of the way from $\\frac{1}{2}$ to 1 on the number line?",
+      "type": "numeric",
+      "answer": "2/3",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q75"
+      }
+    },
+    {
+      "id": "q76",
+      "number": "76",
+      "stem": "The stretch of the line between $\\frac{2}{3}$ and 1 is split into 4 equal parts. What fraction is the third tick, counting from $\\frac{2}{3}$?",
+      "type": "numeric",
+      "answer": "11/12",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q76"
+      }
+    },
+    {
+      "id": "q77",
+      "number": "77",
+      "stem": "A number line from 0 to 2 is divided into 12 equal parts. A frog starts at 0, jumps to the 7th tick, then jumps forward another 5 ticks. Where does it land? Give the position as a fraction in lowest terms.",
+      "type": "numeric",
+      "answer": "2",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q77"
+      }
+    },
+    {
+      "id": "q78",
+      "number": "78",
+      "stem": "Points P and Q on a number line are at $\\frac{5}{6}$ and $\\frac{7}{4}$. What fraction is exactly midway between them?",
+      "type": "numeric",
+      "answer": "31/24",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fractions on the Number Line"
+      ],
+      "fields": {
+        "Skill focus": "locating fractions between marks and computing points a given fraction of the way along."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q78"
+      }
+    },
+    {
+      "id": "q79",
+      "number": "79",
+      "stem": "A journey is $\\frac{3}{4}$ km. Priya has walked $\\frac{1}{2}$ km. How much further must she walk?",
+      "type": "short_answer",
+      "answer": "1/4 km",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q79"
+      }
+    },
+    {
+      "id": "q80",
+      "number": "80",
+      "stem": "A car covers $\\frac{2}{5}$ of a 150 km trip. How far has it travelled?",
+      "type": "short_answer",
+      "answer": "60 km",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q80"
+      }
+    },
+    {
+      "id": "q81",
+      "number": "81",
+      "stem": "On a trip, a bus covers $\\frac{1}{3}$ of the distance before lunch and $\\frac{2}{5}$ after lunch. If 40 km still remain, how long is the whole trip?",
+      "type": "short_answer",
+      "answer": "150 km",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q81"
+      }
+    },
+    {
+      "id": "q82",
+      "number": "82",
+      "stem": "A runner completes $\\frac{5}{8}$ of a race, then runs $\\frac{1}{4}$ of the whole race more. What fraction of the race is left?",
+      "type": "numeric",
+      "answer": "1/8",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q82"
+      }
+    },
+    {
+      "id": "q83",
+      "number": "83",
+      "stem": "A road joins two towns. A cyclist rides $\\frac{2}{9}$ of the way, rests, then rides a further $\\frac{5}{12}$ of the whole way, and is now 26 km from the far town. Find the distance between the towns.",
+      "type": "short_answer",
+      "answer": "72 km",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q83"
+      }
+    },
+    {
+      "id": "q84",
+      "number": "84",
+      "stem": "A hiking route has three legs. The first is $\\frac{3}{10}$ of the total distance, the second is $\\frac{1}{4}$ of the total, and the third leg is 9 km. Find the total distance and the length of each leg.",
+      "type": "short_answer",
+      "answer": "Total 20 km (legs 6, 5, 9 km)",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Distance with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "combining fractional legs of a journey and recovering the total distance."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q84"
+      }
+    },
+    {
+      "id": "q85",
+      "number": "85",
+      "stem": "A rectangle measures $\\frac{3}{4}$ m by $\\frac{2}{3}$ m. Find its area.",
+      "type": "short_answer",
+      "answer": "1/2 m²",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q85"
+      }
+    },
+    {
+      "id": "q86",
+      "number": "86",
+      "stem": "A square has side $\\frac{5}{6}$ cm. Find its area.",
+      "type": "short_answer",
+      "answer": "25/36 cm²",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q86"
+      }
+    },
+    {
+      "id": "q87",
+      "number": "87",
+      "stem": "A rectangular garden is $\\frac{7}{2}$ m long and $\\frac{4}{3}$ m wide. Find its area.",
+      "type": "short_answer",
+      "answer": "14/3 m² (4 2/3 m²)",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q87"
+      }
+    },
+    {
+      "id": "q88",
+      "number": "88",
+      "stem": "A rectangle has area $\\frac{5}{6}$ m² and width $\\frac{5}{9}$ m. Find its length.",
+      "type": "short_answer",
+      "answer": "3/2 m",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q88"
+      }
+    },
+    {
+      "id": "q89",
+      "number": "89",
+      "stem": "A rectangular sheet measures $\\frac{3}{4}$ m by $\\frac{2}{5}$ m. A strip of width $\\frac{1}{10}$ m is cut off along the whole length of the longer side. Find the area of the piece that remains.",
+      "type": "short_answer",
+      "answer": "9/40 m²",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q89"
+      }
+    },
+    {
+      "id": "q90",
+      "number": "90",
+      "stem": "A square of side $\\frac{6}{7}$ m has a smaller square of side $\\frac{2}{7}$ m removed from one corner. What is the remaining area, and what fraction of the original square is left?",
+      "type": "short_answer",
+      "answer": "32/49 m²; 8/9 of the original",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Area with Fractional Dimensions"
+      ],
+      "fields": {
+        "Skill focus": "multiplying and dividing fractional lengths, including cut-away pieces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q90"
+      }
+    },
+    {
+      "id": "q91",
+      "number": "91",
+      "stem": "A bottle holds $\\frac{3}{4}$ litre when full. How much liquid is in it when it is $\\frac{2}{3}$ full?",
+      "type": "short_answer",
+      "answer": "1/2 L",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q91"
+      }
+    },
+    {
+      "id": "q92",
+      "number": "92",
+      "stem": "A tank holds 60 L and is $\\frac{5}{6}$ full. How many litres of water does it contain?",
+      "type": "short_answer",
+      "answer": "50 L",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q92"
+      }
+    },
+    {
+      "id": "q93",
+      "number": "93",
+      "stem": "A cuboid tank has base area $\\frac{3}{4}$ m² and the water stands $\\frac{2}{3}$ m deep. Find the volume of water.",
+      "type": "short_answer",
+      "answer": "1/2 m³",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q93"
+      }
+    },
+    {
+      "id": "q94",
+      "number": "94",
+      "stem": "A jug holds $\\frac{2}{3}$ L. It is used to fill a 6-litre bucket. How many full jugs are needed, and is the last jug exactly full?",
+      "type": "short_answer",
+      "answer": "9 jugs; the last is exactly full",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q94"
+      }
+    },
+    {
+      "id": "q95",
+      "number": "95",
+      "stem": "A tank is $\\frac{1}{5}$ full. Adding 24 L of water makes it $\\frac{1}{2}$ full. Find the tank’s full capacity.",
+      "type": "short_answer",
+      "answer": "80 L",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q95"
+      }
+    },
+    {
+      "id": "q96",
+      "number": "96",
+      "stem": "Container X holds $\\frac{3}{4}$ L and container Y holds $\\frac{5}{6}$ L, both when full. Both are filled and poured into an empty 2-litre jug. What fraction of the jug is now filled, and how much empty space is left?",
+      "type": "short_answer",
+      "answer": "19/24 full; 5/12 L empty",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Volume / Capacity with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "fractional fill levels, pouring, and finding capacities from partial fills."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q96"
+      }
+    },
+    {
+      "id": "q97",
+      "number": "97",
+      "stem": "Continue the sequence for two more terms: $\\frac{1}{2}$, $\\frac{1}{4}$, $\\frac{1}{8}$, …",
+      "type": "short_answer",
+      "answer": "1/16, 1/32",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q97"
+      }
+    },
+    {
+      "id": "q98",
+      "number": "98",
+      "stem": "Find the next term: $\\frac{1}{3}$, $\\frac{2}{5}$, $\\frac{3}{7}$, $\\frac{4}{9}$, …",
+      "type": "numeric",
+      "answer": "5/11",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q98"
+      }
+    },
+    {
+      "id": "q99",
+      "number": "99",
+      "stem": "Find the sum $\\frac{1}{2}$ + $\\frac{1}{4}$ + $\\frac{1}{8}$ + $\\frac{1}{16}$.",
+      "type": "numeric",
+      "answer": "15/16",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q99"
+      }
+    },
+    {
+      "id": "q100",
+      "number": "100",
+      "stem": "In the sequence $\\frac{2}{3}$, $\\frac{4}{9}$, $\\frac{8}{27}$, … each term is $\\frac{2}{3}$ of the previous one. Find the 5th term.",
+      "type": "numeric",
+      "answer": "32/243",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q100"
+      }
+    },
+    {
+      "id": "q101",
+      "number": "101",
+      "stem": "Find the exact sum $\\frac{1}{(1·2)}$ + $\\frac{1}{(2·3)}$ + $\\frac{1}{(3·4)}$ + $\\frac{1}{(4·5)}$. (Hint: $\\frac{1}{(n(n+1))}$ = $\\frac{1}{n}$ − $\\frac{1}{(n+1)}$.)",
+      "type": "numeric",
+      "answer": "4/5",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q101"
+      }
+    },
+    {
+      "id": "q102",
+      "number": "102",
+      "stem": "Let S<sub>n</sub> = $\\frac{1}{2}$ + $\\frac{1}{4}$ + … + $\\frac{1}{2n}$. Find S<sub>6</sub> and state how far it is short of 1.",
+      "type": "short_answer",
+      "answer": "63/64; short of 1 by 1/64",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Patterns"
+      ],
+      "fields": {
+        "Skill focus": "spotting the rule in a fraction sequence and summing telescoping or geometric patterns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q102"
+      }
+    },
+    {
+      "id": "q103",
+      "number": "103",
+      "stem": "Three-quarters of a number is 18. What is one-third of the number?",
+      "type": "numeric",
+      "answer": "8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q103"
+      }
+    },
+    {
+      "id": "q104",
+      "number": "104",
+      "stem": "If $\\frac{1}{4}$ of a number equals $\\frac{1}{6}$ of 30, find the number.",
+      "type": "numeric",
+      "answer": "20",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q104"
+      }
+    },
+    {
+      "id": "q105",
+      "number": "105",
+      "stem": "$\\frac{2}{5}$ of a number exceeds $\\frac{1}{3}$ of the same number by 2. Find the number.",
+      "type": "numeric",
+      "answer": "30",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q105"
+      }
+    },
+    {
+      "id": "q106",
+      "number": "106",
+      "stem": "When $\\frac{1}{3}$ of a number is subtracted from $\\frac{3}{4}$ of it, the result is 25. Find the number.",
+      "type": "numeric",
+      "answer": "60",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q106"
+      }
+    },
+    {
+      "id": "q107",
+      "number": "107",
+      "stem": "Half of a number, plus a third of it, plus a quarter of it, together make 39. Find the number.",
+      "type": "numeric",
+      "answer": "36",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q107"
+      }
+    },
+    {
+      "id": "q108",
+      "number": "108",
+      "stem": "$\\frac{3}{5}$ of a number is 12 more than $\\frac{1}{2}$ of it. What is the number?",
+      "type": "numeric",
+      "answer": "120",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Hidden Fraction"
+      ],
+      "fields": {
+        "Skill focus": "forming a single fractional equation from a “difference of parts” description."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q108"
+      }
+    },
+    {
+      "id": "q109",
+      "number": "109",
+      "stem": "Fill in the missing number: $\\frac{3}{5}$ = $\\frac{□}{20}$.",
+      "type": "numeric",
+      "answer": "12",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q109"
+      }
+    },
+    {
+      "id": "q110",
+      "number": "110",
+      "stem": "Fill in the missing number: $\\frac{24}{□}$ = $\\frac{3}{4}$.",
+      "type": "numeric",
+      "answer": "32",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q110"
+      }
+    },
+    {
+      "id": "q111",
+      "number": "111",
+      "stem": "Find x if $\\frac{4}{7}$ = $\\frac{(x+2)}{28}$.",
+      "type": "numeric",
+      "answer": "14",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q111"
+      }
+    },
+    {
+      "id": "q112",
+      "number": "112",
+      "stem": "For what value of n is $\\frac{(n+1)}{(n+4)}$ = $\\frac{2}{3}$?",
+      "type": "numeric",
+      "answer": "5",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q112"
+      }
+    },
+    {
+      "id": "q113",
+      "number": "113",
+      "stem": "A fraction equals $\\frac{3}{8}$. When 4 is added to both its numerator and its denominator, it becomes $\\frac{1}{2}$. Find the original fraction (before simplifying).",
+      "type": "numeric",
+      "answer": "6/16",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q113"
+      }
+    },
+    {
+      "id": "q114",
+      "number": "114",
+      "stem": "The numerator of a fraction is 5 less than its denominator. When both are increased by 3, the fraction equals $\\frac{3}{4}$. Find the original fraction.",
+      "type": "numeric",
+      "answer": "12/17",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Equivalent Fractions"
+      ],
+      "fields": {
+        "Skill focus": "generating and solving for equal fractions, including changes to numerator and denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q114"
+      }
+    },
+    {
+      "id": "q115",
+      "number": "115",
+      "stem": "Using a common denominator, compute $\\frac{2}{3}$ + $\\frac{1}{4}$.",
+      "type": "numeric",
+      "answer": "11/12",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q115"
+      }
+    },
+    {
+      "id": "q116",
+      "number": "116",
+      "stem": "Compute $\\frac{5}{6}$ − $\\frac{3}{8}$.",
+      "type": "numeric",
+      "answer": "11/24",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q116"
+      }
+    },
+    {
+      "id": "q117",
+      "number": "117",
+      "stem": "Find the smallest common denominator for $\\frac{1}{6}$, $\\frac{1}{9}$ and $\\frac{1}{4}$, then add the three fractions.",
+      "type": "short_answer",
+      "answer": "LCD 36; sum 19/36",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q117"
+      }
+    },
+    {
+      "id": "q118",
+      "number": "118",
+      "stem": "Two fractions have denominators 8 and 12. What is the smallest denominator into which both can be written? Rewrite $\\frac{3}{8}$ and $\\frac{5}{12}$ with it.",
+      "type": "short_answer",
+      "answer": "24; 9/24 and 10/24",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q118"
+      }
+    },
+    {
+      "id": "q119",
+      "number": "119",
+      "stem": "Find a fraction with denominator 24 that lies strictly between $\\frac{1}{3}$ and $\\frac{1}{2}$. Give all such fractions of the form $\\frac{k}{24}$.",
+      "type": "short_answer",
+      "answer": "9/24, 10/24, 11/24",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q119"
+      }
+    },
+    {
+      "id": "q120",
+      "number": "120",
+      "stem": "How many fractions of the form $\\frac{k}{36}$ (k a whole number) lie strictly between $\\frac{1}{4}$ and $\\frac{1}{2}$?",
+      "type": "short_answer",
+      "answer": "8 fractions",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Common Denominator Reasoning"
+      ],
+      "fields": {
+        "Skill focus": "using the least common denominator to add, compare, and count fractions between two values."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q120"
+      }
+    },
+    {
+      "id": "q121",
+      "number": "121",
+      "stem": "Write $\\frac{3}{4}$ as a sum of two **different** unit fractions (fractions with numerator 1).",
+      "type": "short_answer",
+      "answer": "1/2 + 1/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q121"
+      }
+    },
+    {
+      "id": "q122",
+      "number": "122",
+      "stem": "Which is larger, $\\frac{1}{7}$ or $\\frac{1}{9}$, and by how much?",
+      "type": "short_answer",
+      "answer": "1/7 is larger, by 2/63",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q122"
+      }
+    },
+    {
+      "id": "q123",
+      "number": "123",
+      "stem": "Express $\\frac{5}{6}$ as a sum of two distinct unit fractions.",
+      "type": "short_answer",
+      "answer": "1/2 + 1/3",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q123"
+      }
+    },
+    {
+      "id": "q124",
+      "number": "124",
+      "stem": "Express $\\frac{2}{7}$ as a sum of two distinct unit fractions.",
+      "type": "short_answer",
+      "answer": "1/4 + 1/28",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q124"
+      }
+    },
+    {
+      "id": "q125",
+      "number": "125",
+      "stem": "Find three distinct unit fractions that add up to exactly 1.",
+      "type": "short_answer",
+      "answer": "1/2 + 1/3 + 1/6",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q125"
+      }
+    },
+    {
+      "id": "q126",
+      "number": "126",
+      "stem": "Express $\\frac{4}{7}$ as a sum of two distinct unit fractions.",
+      "type": "short_answer",
+      "answer": "1/2 + 1/14",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Unit Fractions"
+      ],
+      "fields": {
+        "Skill focus": "decomposing fractions into sums of distinct unit fractions (Egyptian style)."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q126"
+      }
+    },
+    {
+      "id": "q127",
+      "number": "127",
+      "stem": "A fraction equals $\\frac{1}{2}$, and its numerator plus its denominator is 21. Find the fraction.",
+      "type": "numeric",
+      "answer": "7/14",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q127"
+      }
+    },
+    {
+      "id": "q128",
+      "number": "128",
+      "stem": "A fraction equals $\\frac{2}{5}$, and its numerator plus its denominator is 21. Find the fraction.",
+      "type": "numeric",
+      "answer": "6/15",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q128"
+      }
+    },
+    {
+      "id": "q129",
+      "number": "129",
+      "stem": "The numerator of a fraction is 3 less than its denominator. Adding 2 to both gives $\\frac{5}{6}$. Find the original fraction.",
+      "type": "numeric",
+      "answer": "13/16",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q129"
+      }
+    },
+    {
+      "id": "q130",
+      "number": "130",
+      "stem": "Find a fraction equal to $\\frac{3}{5}$ whose numerator and denominator differ by 8.",
+      "type": "numeric",
+      "answer": "12/20",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q130"
+      }
+    },
+    {
+      "id": "q131",
+      "number": "131",
+      "stem": "A fraction equals $\\frac{5}{8}$. If 3 is added to its numerator and 3 is subtracted from its denominator, the value becomes 1. Find the original fraction.",
+      "type": "numeric",
+      "answer": "10/16",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q131"
+      }
+    },
+    {
+      "id": "q132",
+      "number": "132",
+      "stem": "Two fractions with denominator 12 add up to $\\frac{3}{4}$, and one is exactly twice the other. Find the two fractions.",
+      "type": "short_answer",
+      "answer": "3/12 and 6/12 (1/4 and 1/2)",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Puzzles"
+      ],
+      "fields": {
+        "Skill focus": "reconstructing a fraction from clues about its value and its numerator/denominator."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q132"
+      }
+    },
+    {
+      "id": "q133",
+      "number": "133",
+      "stem": "On the balanced scale below, one block exactly balances three equal marbles. What fraction of a block is one marble?\n\n![Balance: one block on the left balances three marbles on the right](asset:q133-fig)\n\n*Left: 1 block. Right: 3 equal marbles. The scale is level.*",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q133"
+      }
+    },
+    {
+      "id": "q134",
+      "number": "134",
+      "stem": "Two identical apples balance five identical plums. One plum is what fraction of an apple?",
+      "type": "numeric",
+      "answer": "2/5",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q134"
+      }
+    },
+    {
+      "id": "q135",
+      "number": "135",
+      "stem": "A scale balances with an unknown weight W together with a $\\frac{1}{4}$ kg weight on the left, and a $\\frac{3}{4}$ kg weight on the right. Find W.",
+      "type": "short_answer",
+      "answer": "1/2 kg",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q135"
+      }
+    },
+    {
+      "id": "q136",
+      "number": "136",
+      "stem": "Three equal cubes on the left balance two equal cubes plus a $\\frac{2}{5}$ kg weight on the right. Find the mass of one cube.",
+      "type": "short_answer",
+      "answer": "2/5 kg",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q136"
+      }
+    },
+    {
+      "id": "q137",
+      "number": "137",
+      "stem": "The scale below balances. On the left is $\\frac{2}{3}$ of a bag of flour. On the right is $\\frac{1}{4}$ of the same bag plus a 5 kg weight. Find the mass of a full bag.\n\n![Balance: two-thirds of a bag on the left, one-quarter of a bag plus a 5 kg weight on the right](asset:q137-fig)\n\n*Left = $\\frac{2}{3}$ bag  ·  Right = $\\frac{1}{4}$ bag + 5 kg. The scale is level.*",
+      "type": "short_answer",
+      "answer": "12 kg",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q137"
+      }
+    },
+    {
+      "id": "q138",
+      "number": "138",
+      "stem": "Three weights P, Q, R balance in pairs. P balances Q plus $\\frac{1}{2}$ kg; Q balances R plus $\\frac{1}{4}$ kg. Then P balances R plus how many kilograms?",
+      "type": "short_answer",
+      "answer": "3/4 kg",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Balance Scale Problems"
+      ],
+      "fields": {
+        "Skill focus": "reading a balance as an equation and solving for an unknown fractional weight."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q138"
+      }
+    },
+    {
+      "id": "q139",
+      "number": "139",
+      "stem": "A boy’s age is $\\frac{1}{3}$ of his father’s. If the father is 36, how old is the boy?",
+      "type": "numeric",
+      "answer": "12",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q139"
+      }
+    },
+    {
+      "id": "q140",
+      "number": "140",
+      "stem": "A girl is $\\frac{1}{4}$ as old as her mother, who is 32. How old is the girl?",
+      "type": "numeric",
+      "answer": "8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q140"
+      }
+    },
+    {
+      "id": "q141",
+      "number": "141",
+      "stem": "Sara’s age is $\\frac{2}{3}$ of her brother’s age. The sum of their ages is 30. Find both ages.",
+      "type": "short_answer",
+      "answer": "Brother 18, Sara 12",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q141"
+      }
+    },
+    {
+      "id": "q142",
+      "number": "142",
+      "stem": "A father is 40. His son’s age is $\\frac{1}{5}$ of his. In how many years will the son be $\\frac{1}{3}$ of the father’s age?",
+      "type": "short_answer",
+      "answer": "8 years",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q142"
+      }
+    },
+    {
+      "id": "q143",
+      "number": "143",
+      "stem": "A daughter’s age is $\\frac{1}{3}$ of her mother’s. In 12 years it will be $\\frac{1}{2}$ of her mother’s age. Find both present ages.",
+      "type": "short_answer",
+      "answer": "Daughter 12, mother 36",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q143"
+      }
+    },
+    {
+      "id": "q144",
+      "number": "144",
+      "stem": "Five years ago, a boy’s age was $\\frac{1}{4}$ of his father’s. Now it is $\\frac{1}{3}$ of his father’s. Find their present ages.",
+      "type": "short_answer",
+      "answer": "Boy 15, father 45",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Age Problems"
+      ],
+      "fields": {
+        "Skill focus": "turning “a fraction of another age” and “in t years” into equations."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q144"
+      }
+    },
+    {
+      "id": "q145",
+      "number": "145",
+      "stem": "A recipe for 4 people uses $\\frac{2}{3}$ cup of sugar. How much sugar is needed for 8 people?",
+      "type": "short_answer",
+      "answer": "4/3 cups",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q145"
+      }
+    },
+    {
+      "id": "q146",
+      "number": "146",
+      "stem": "A recipe uses $\\frac{3}{4}$ cup of flour for one cake. How much flour is needed for 3 cakes?",
+      "type": "short_answer",
+      "answer": "9/4 cups",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q146"
+      }
+    },
+    {
+      "id": "q147",
+      "number": "147",
+      "stem": "A recipe for 6 people needs $\\frac{5}{8}$ kg of rice. How much rice per person, and how much for 15 people?",
+      "type": "short_answer",
+      "answer": "5/48 kg each; 25/16 kg for 15",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q147"
+      }
+    },
+    {
+      "id": "q148",
+      "number": "148",
+      "stem": "A recipe uses $\\frac{2}{3}$ cup of milk and $\\frac{1}{4}$ cup of oil. To scale the recipe by a factor of $\\frac{3}{2}$, how much of each is needed?",
+      "type": "short_answer",
+      "answer": "1 cup milk, 3/8 cup oil",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q148"
+      }
+    },
+    {
+      "id": "q149",
+      "number": "149",
+      "stem": "A recipe serving 8 people needs $\\frac{3}{4}$ cup of butter. Rehan has only $\\frac{1}{2}$ cup of butter. Keeping the proportions, what is the greatest whole number of servings he can make?",
+      "type": "short_answer",
+      "answer": "5 servings",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q149"
+      }
+    },
+    {
+      "id": "q150",
+      "number": "150",
+      "stem": "A syrup recipe needs $\\frac{3}{4}$ cup of syrup to make 12 glasses of drink. How much syrup is needed to make exactly 20 glasses?",
+      "type": "short_answer",
+      "answer": "5/4 cups",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Recipe Scaling"
+      ],
+      "fields": {
+        "Skill focus": "scaling fractional quantities up and down, including “how many servings from what I have”."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q150"
+      }
+    },
+    {
+      "id": "q151",
+      "number": "151",
+      "stem": "A town has 4000 people; $\\frac{3}{8}$ are children. How many children live in the town?",
+      "type": "short_answer",
+      "answer": "1500 children",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q151"
+      }
+    },
+    {
+      "id": "q152",
+      "number": "152",
+      "stem": "In a village of 900 people, $\\frac{2}{5}$ are women. How many people are not women?",
+      "type": "numeric",
+      "answer": "540",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q152"
+      }
+    },
+    {
+      "id": "q153",
+      "number": "153",
+      "stem": "In a city of 5400 people, $\\frac{5}{9}$ are adults; of the rest, exactly half are children under 10. How many children under 10 are there?",
+      "type": "numeric",
+      "answer": "1200",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q153"
+      }
+    },
+    {
+      "id": "q154",
+      "number": "154",
+      "stem": "A town’s population is $\\frac{3}{4}$ the size of a neighbouring city’s. Together they have 28,000 people. Find each population.",
+      "type": "short_answer",
+      "answer": "Town 12,000; city 16,000",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q154"
+      }
+    },
+    {
+      "id": "q155",
+      "number": "155",
+      "stem": "A town’s population grew by $\\frac{1}{10}$ to reach 7,700. What was the original population?",
+      "type": "numeric",
+      "answer": "7000",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q155"
+      }
+    },
+    {
+      "id": "q156",
+      "number": "156",
+      "stem": "Of a town’s people, $\\frac{2}{5}$ are men, $\\frac{1}{3}$ are women, and the remaining 1,600 are children. How many men live in the town?",
+      "type": "short_answer",
+      "answer": "2400 men",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Population Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractional breakdowns of a group and recovering totals from a known sub-count."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q156"
+      }
+    },
+    {
+      "id": "q157",
+      "number": "157",
+      "stem": "A pipe fills $\\frac{1}{6}$ of a tank each hour. What fraction is filled in 3 hours?",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q157"
+      }
+    },
+    {
+      "id": "q158",
+      "number": "158",
+      "stem": "A tap fills a tank in 8 hours. What fraction is filled in 3 hours?",
+      "type": "numeric",
+      "answer": "3/8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q158"
+      }
+    },
+    {
+      "id": "q159",
+      "number": "159",
+      "stem": "Pipe A fills $\\frac{1}{4}$ of a tank per hour and pipe B fills $\\frac{1}{6}$ per hour. Working together, what fraction fills in one hour, and how long to fill the whole tank?",
+      "type": "short_answer",
+      "answer": "5/12 per hour; full in 12/5 h (2 h 24 min)",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q159"
+      }
+    },
+    {
+      "id": "q160",
+      "number": "160",
+      "stem": "A tank is $\\frac{1}{2}$ full. A pipe adds $\\frac{1}{8}$ of the tank each hour. After how many hours is the tank full?",
+      "type": "short_answer",
+      "answer": "4 hours",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q160"
+      }
+    },
+    {
+      "id": "q161",
+      "number": "161",
+      "stem": "An empty tank is filled by a pipe adding $\\frac{1}{5}$ of the tank per hour, while a leak drains $\\frac{1}{20}$ per hour. What fraction is filled after 2 hours, and how long to fill it completely?",
+      "type": "short_answer",
+      "answer": "3/10 after 2 h; full in 20/3 h (6 h 40 min)",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q161"
+      }
+    },
+    {
+      "id": "q162",
+      "number": "162",
+      "stem": "A tank is $\\frac{3}{4}$ full. Pipe A drains $\\frac{1}{8}$ of the tank per hour while pipe B fills $\\frac{1}{12}$ per hour, both open. What is the net change per hour, and after how many hours is the tank empty?",
+      "type": "short_answer",
+      "answer": "Drains 1/24 per hour; empty in 18 h",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Tanks and Pipes"
+      ],
+      "fields": {
+        "Skill focus": "per-hour fractional fill/drain rates, combining inflow and outflow."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q162"
+      }
+    },
+    {
+      "id": "q163",
+      "number": "163",
+      "stem": "The rectangle below is divided into equal parts. What fraction is shaded? Simplify.\n\n![Rectangle divided into six equal parts with two shaded](asset:q163-fig)\n\n*6 equal cells; the two coloured cells are shaded.*",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q163"
+      }
+    },
+    {
+      "id": "q164",
+      "number": "164",
+      "stem": "A square is split into 4 equal triangles by its two diagonals. Three of the triangles are shaded. What fraction of the square is shaded?",
+      "type": "numeric",
+      "answer": "3/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q164"
+      }
+    },
+    {
+      "id": "q165",
+      "number": "165",
+      "stem": "The large square below is a 4×4 grid (16 small squares). A 2×2 block plus 2 extra small squares are shaded. What fraction is shaded?\n\n![Four by four grid, a two by two block and two more squares shaded](asset:q165-fig)\n\n*6 of the 16 small squares are shaded.*",
+      "type": "numeric",
+      "answer": "3/8",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q165"
+      }
+    },
+    {
+      "id": "q166",
+      "number": "166",
+      "stem": "A rectangle is half shaded. Then half of the still-unshaded part is also shaded. What fraction of the rectangle is shaded in total?",
+      "type": "numeric",
+      "answer": "3/4",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q166"
+      }
+    },
+    {
+      "id": "q167",
+      "number": "167",
+      "stem": "The midpoints of the four sides of a square are joined in order to form an inner square (shaded). What fraction of the large square is the inner square?\n\n![Square with midpoints joined to form a rotated inner square](asset:q167-fig)\n\n*The dots are the midpoints of the sides.*",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q167"
+      }
+    },
+    {
+      "id": "q168",
+      "number": "168",
+      "stem": "In a 3×3 grid, the shaded region is an L-shape covering the entire bottom row and the entire left column. What fraction of the grid is shaded?\n\n![Three by three grid with the bottom row and left column shaded as an L](asset:q168-fig)\n\n*The bottom row and the left column are shaded.*",
+      "type": "numeric",
+      "answer": "5/9",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Shaded Geometry"
+      ],
+      "fields": {
+        "Skill focus": "reading a shaded fraction of an area, including layered and diagonal partitions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q168"
+      }
+    },
+    {
+      "id": "q169",
+      "number": "169",
+      "stem": "In the 5×5 grid below, 10 cells are coloured. What fraction of the grid is coloured?\n\n![Five by five grid with ten cells coloured](asset:q169-fig)\n\n*Two full columns (10 cells) are coloured.*",
+      "type": "numeric",
+      "answer": "2/5",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q169"
+      }
+    },
+    {
+      "id": "q170",
+      "number": "170",
+      "stem": "A 4×5 grid has 20 cells. If $\\frac{1}{4}$ of the cells are coloured, how many cells is that?",
+      "type": "short_answer",
+      "answer": "5 cells",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q170"
+      }
+    },
+    {
+      "id": "q171",
+      "number": "171",
+      "stem": "A 6×6 grid (36 cells) has $\\frac{1}{3}$ coloured red and $\\frac{1}{4}$ coloured blue; the rest are white. How many white cells are there?",
+      "type": "short_answer",
+      "answer": "15 white cells",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q171"
+      }
+    },
+    {
+      "id": "q172",
+      "number": "172",
+      "stem": "In a grid of 40 cells, $\\frac{3}{8}$ are green and $\\frac{1}{5}$ are yellow. How many cells are neither green nor yellow?",
+      "type": "short_answer",
+      "answer": "17 cells",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q172"
+      }
+    },
+    {
+      "id": "q173",
+      "number": "173",
+      "stem": "A grid has 60 cells. First $\\frac{2}{5}$ of them are shaded; then $\\frac{1}{3}$ of the remaining unshaded cells are also shaded. How many cells are shaded in total?",
+      "type": "short_answer",
+      "answer": "36 cells",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q173"
+      }
+    },
+    {
+      "id": "q174",
+      "number": "174",
+      "stem": "A square grid is coloured so that exactly $\\frac{5}{9}$ of its cells are blue, and there are 20 blue cells. How many cells does the grid have, and what are its dimensions?",
+      "type": "short_answer",
+      "answer": "36 cells; 6×6",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Grid Colouring"
+      ],
+      "fields": {
+        "Skill focus": "counting cells as fractions of a grid, with two-step and reverse counting."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q174"
+      }
+    },
+    {
+      "id": "q175",
+      "number": "175",
+      "stem": "A fair coin is tossed twice, as shown. What fraction of the equally likely outcomes are two heads?\n\n![Tree diagram for two coin tosses](asset:q175-fig)\n\n*Each branch has probability $\\frac{1}{2}$.*",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q175"
+      }
+    },
+    {
+      "id": "q176",
+      "number": "176",
+      "stem": "A path first goes left or right, each with probability $\\frac{1}{2}$. The left path then splits into two equal branches. What fraction of travellers reach the left-then-first-branch leaf?",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q176"
+      }
+    },
+    {
+      "id": "q177",
+      "number": "177",
+      "stem": "A spinner lands on A with probability $\\frac{1}{3}$ and on B with probability $\\frac{2}{3}$. It is spun twice. What fraction of outcomes are exactly one A and one B (in either order)?",
+      "type": "numeric",
+      "answer": "4/9",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q177"
+      }
+    },
+    {
+      "id": "q178",
+      "number": "178",
+      "stem": "A bag is chosen first: Bag 1 with probability $\\frac{1}{2}$ (then a red ball with probability $\\frac{1}{4}$), or Bag 2 with probability $\\frac{1}{2}$ (then a red ball with probability $\\frac{2}{3}$). What fraction of the time is a red ball drawn?",
+      "type": "numeric",
+      "answer": "11/24",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q178"
+      }
+    },
+    {
+      "id": "q179",
+      "number": "179",
+      "stem": "A fair coin is tossed three times. What fraction of the equally likely outcomes contain at least two heads?",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q179"
+      }
+    },
+    {
+      "id": "q180",
+      "number": "180",
+      "stem": "On a path, $\\frac{2}{5}$ of travellers go up and $\\frac{3}{5}$ go down. Those who went up then split $\\frac{1}{2}$–$\\frac{1}{2}$, and a star is reached by taking the first up-branch. Those who went down reach a star with probability $\\frac{1}{3}$. What fraction of all travellers reach a star?",
+      "type": "numeric",
+      "answer": "2/5",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Tree Diagram Problems"
+      ],
+      "fields": {
+        "Skill focus": "multiplying along branches and adding across paths to find outcome fractions."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q180"
+      }
+    },
+    {
+      "id": "q181",
+      "number": "181",
+      "stem": "A fair six-sided die is rolled once. What fraction of the outcomes are even?",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q181"
+      }
+    },
+    {
+      "id": "q182",
+      "number": "182",
+      "stem": "One card is drawn from a standard 52-card deck. What fraction of the deck are hearts?",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q182"
+      }
+    },
+    {
+      "id": "q183",
+      "number": "183",
+      "stem": "A fair die is rolled. What fraction of outcomes are greater than 4?",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q183"
+      }
+    },
+    {
+      "id": "q184",
+      "number": "184",
+      "stem": "Two fair dice are rolled. Of the 36 equally likely outcomes, what fraction give a total of 7?",
+      "type": "numeric",
+      "answer": "1/6",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q184"
+      }
+    },
+    {
+      "id": "q185",
+      "number": "185",
+      "stem": "Two fair dice are rolled. What fraction of the 36 outcomes give a product that is even?",
+      "type": "numeric",
+      "answer": "3/4",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q185"
+      }
+    },
+    {
+      "id": "q186",
+      "number": "186",
+      "stem": "One card is drawn from a standard deck. What fraction of the deck are either a face card (Jack, Queen, King) or a spade?",
+      "type": "numeric",
+      "answer": "11/26",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Dice and Card Fraction Problems"
+      ],
+      "fields": {
+        "Skill focus": "favourable-over-total counting, including overlaps and two-dice sample spaces."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q186"
+      }
+    },
+    {
+      "id": "q187",
+      "number": "187",
+      "stem": "Write down one fraction that lies strictly between $\\frac{1}{3}$ and $\\frac{1}{2}$.",
+      "type": "short_answer",
+      "answer": "e.g. 2/5 (any fraction between 1/3 and 1/2)",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q187"
+      }
+    },
+    {
+      "id": "q188",
+      "number": "188",
+      "stem": "Is $\\frac{4}{9}$ greater than or less than $\\frac{1}{2}$? Explain.",
+      "type": "short_answer",
+      "answer": "Less than 1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q188"
+      }
+    },
+    {
+      "id": "q189",
+      "number": "189",
+      "stem": "For which whole numbers n is $\\frac{n}{12}$ greater than $\\frac{1}{4}$ and less than $\\frac{1}{2}$?",
+      "type": "short_answer",
+      "answer": "n = 4 or 5",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q189"
+      }
+    },
+    {
+      "id": "q190",
+      "number": "190",
+      "stem": "Find all whole numbers x for which $\\frac{2}{3}$ \\< $\\frac{x}{9}$ \\< 1.",
+      "type": "short_answer",
+      "answer": "x = 7 or 8",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q190"
+      }
+    },
+    {
+      "id": "q191",
+      "number": "191",
+      "stem": "Find the smallest whole number n such that $\\frac{1}{2}$ + $\\frac{1}{n}$ \\< $\\frac{5}{8}$.",
+      "type": "numeric",
+      "answer": "9",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q191"
+      }
+    },
+    {
+      "id": "q192",
+      "number": "192",
+      "stem": "For how many whole numbers n from 1 to 20 is $\\frac{7}{n}$ greater than $\\frac{1}{2}$?",
+      "type": "short_answer",
+      "answer": "13 values",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Inequalities"
+      ],
+      "fields": {
+        "Skill focus": "finding all whole numbers that satisfy a fractional inequality or bound."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q192"
+      }
+    },
+    {
+      "id": "q193",
+      "number": "193",
+      "stem": "Is $\\frac{7}{15}$ closest to 0, $\\frac{1}{2}$, or 1? Explain.",
+      "type": "short_answer",
+      "answer": "Closest to 1/2",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q193"
+      }
+    },
+    {
+      "id": "q194",
+      "number": "194",
+      "stem": "Without exact calculation, is $\\frac{5}{8}$ + $\\frac{3}{7}$ more or less than 1? Explain using benchmarks.",
+      "type": "short_answer",
+      "answer": "More than 1",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q194"
+      }
+    },
+    {
+      "id": "q195",
+      "number": "195",
+      "stem": "Is $\\frac{9}{20}$ + $\\frac{11}{21}$ more or less than 1? Justify by comparing each fraction with $\\frac{1}{2}$.",
+      "type": "short_answer",
+      "answer": "Less than 1",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q195"
+      }
+    },
+    {
+      "id": "q196",
+      "number": "196",
+      "stem": "Which is bigger, $\\frac{3}{7}$ + $\\frac{4}{9}$ or 1? Reason without exact arithmetic.",
+      "type": "short_answer",
+      "answer": "1 is bigger (sum < 1)",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q196"
+      }
+    },
+    {
+      "id": "q197",
+      "number": "197",
+      "stem": "Estimate $\\frac{11}{23}$ + $\\frac{14}{29}$ + $\\frac{8}{17}$ to the nearest whole number, and justify your estimate.",
+      "type": "numeric",
+      "answer": "1",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q197"
+      }
+    },
+    {
+      "id": "q198",
+      "number": "198",
+      "stem": "Between which two consecutive whole numbers does $\\frac{7}{8}$ + $\\frac{5}{6}$ + $\\frac{9}{10}$ lie? Justify without finding the exact sum.",
+      "type": "short_answer",
+      "answer": "Between 2 and 3",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Estimation and Benchmarking"
+      ],
+      "fields": {
+        "Skill focus": "judging fractions against 0, 1/2 and 1 to estimate sums quickly."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q198"
+      }
+    },
+    {
+      "id": "q199",
+      "number": "199",
+      "stem": "Find $\\frac{3}{4}$ of 48 using a quick mental strategy, and state the strategy.",
+      "type": "numeric",
+      "answer": "36",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q199"
+      }
+    },
+    {
+      "id": "q200",
+      "number": "200",
+      "stem": "Find $\\frac{5}{6}$ of 60 mentally.",
+      "type": "numeric",
+      "answer": "50",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q200"
+      }
+    },
+    {
+      "id": "q201",
+      "number": "201",
+      "stem": "Compute $\\frac{2}{3}$ + $\\frac{3}{4}$ − $\\frac{1}{2}$ using the most efficient common denominator.",
+      "type": "numeric",
+      "answer": "11/12",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q201"
+      }
+    },
+    {
+      "id": "q202",
+      "number": "202",
+      "stem": "Give a quick way to compare $\\frac{17}{34}$ and $\\frac{18}{35}$, then state which is larger.",
+      "type": "short_answer",
+      "answer": "18/35 is larger (17/34 = 1/2)",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q202"
+      }
+    },
+    {
+      "id": "q203",
+      "number": "203",
+      "stem": "Using cancellation, quickly evaluate \\\n(1 − $\\frac{1}{2}$)(1 − $\\frac{1}{3}$)(1 − $\\frac{1}{4}$)(1 − $\\frac{1}{5}$).",
+      "type": "numeric",
+      "answer": "1/5",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q203"
+      }
+    },
+    {
+      "id": "q204",
+      "number": "204",
+      "stem": "Using the distributive idea, compute $\\frac{7}{8}$ of 96 minus $\\frac{5}{6}$ of 96 in one step.",
+      "type": "numeric",
+      "answer": "4",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Strategy Choice / Mental Methods"
+      ],
+      "fields": {
+        "Skill focus": "choosing the fastest route — halves-of-halves, complements, and factoring out."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q204"
+      }
+    },
+    {
+      "id": "q205",
+      "number": "205",
+      "stem": "Write $\\frac{3}{4}$ as a decimal.",
+      "type": "numeric",
+      "answer": "0.75",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q205"
+      }
+    },
+    {
+      "id": "q206",
+      "number": "206",
+      "stem": "The bar below is divided into 5 equal parts. Write the shaded amount as a fraction and as a decimal.\n\n![A bar of five equal parts with two parts shaded](asset:q206-fig)\n\n*2 of the 5 equal parts are shaded.*",
+      "type": "short_answer",
+      "answer": "2/5 = 0.4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q206"
+      }
+    },
+    {
+      "id": "q207",
+      "number": "207",
+      "stem": "A shape is 0.6 shaded. Write this as a fraction in lowest terms, and state how many of 10 equal parts would be shaded.",
+      "type": "short_answer",
+      "answer": "3/5; 6 of 10 parts",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q207"
+      }
+    },
+    {
+      "id": "q208",
+      "number": "208",
+      "stem": "Convert $\\frac{7}{8}$ to a decimal, and say how far it is from 1 as a fraction.",
+      "type": "short_answer",
+      "answer": "0.875; 1/8 short of 1",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q208"
+      }
+    },
+    {
+      "id": "q209",
+      "number": "209",
+      "stem": "A grid of 25 cells has 0.44 of it shaded. How many cells are shaded, and what is 0.44 as a fraction in lowest terms?",
+      "type": "short_answer",
+      "answer": "11 cells; 11/25",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q209"
+      }
+    },
+    {
+      "id": "q210",
+      "number": "210",
+      "stem": "Order these from smallest to largest: 0.7, $\\frac{3}{5}$, $\\frac{5}{8}$, 0.62.",
+      "type": "short_answer",
+      "answer": "3/5 < 0.62 < 5/8 < 0.7",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Multiple Representations"
+      ],
+      "fields": {
+        "Skill focus": "moving between picture, fraction and decimal for the same quantity."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q210"
+      }
+    },
+    {
+      "id": "q211",
+      "number": "211",
+      "stem": "One-third of a number, plus 4, equals 10. Find the number.",
+      "type": "numeric",
+      "answer": "18",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q211"
+      }
+    },
+    {
+      "id": "q212",
+      "number": "212",
+      "stem": "Half of a number, minus 3, equals 7. Find the number.",
+      "type": "numeric",
+      "answer": "20",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q212"
+      }
+    },
+    {
+      "id": "q213",
+      "number": "213",
+      "stem": "Two-fifths of a number equals one-third of the number plus 2. Find the number.",
+      "type": "numeric",
+      "answer": "30",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q213"
+      }
+    },
+    {
+      "id": "q214",
+      "number": "214",
+      "stem": "A number decreased by one-quarter of itself equals 27. Find the number.",
+      "type": "numeric",
+      "answer": "36",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q214"
+      }
+    },
+    {
+      "id": "q215",
+      "number": "215",
+      "stem": "Three-quarters of a number is 6 more than two-thirds of it. Find the number.",
+      "type": "numeric",
+      "answer": "72",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q215"
+      }
+    },
+    {
+      "id": "q216",
+      "number": "216",
+      "stem": "A number is increased by half of itself and then by a third of the original number; the result is 55 more than the number. Find the number.",
+      "type": "numeric",
+      "answer": "66",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Fraction Equations in Word Problems"
+      ],
+      "fields": {
+        "Skill focus": "translating a sentence into a single-variable fractional equation and solving it."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q216"
+      }
+    },
+    {
+      "id": "q217",
+      "number": "217",
+      "stem": "A man gives $\\frac{1}{2}$ of his sweets to A, and A gives $\\frac{1}{2}$ of those to B. What fraction of the original amount does B receive?",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q217"
+      }
+    },
+    {
+      "id": "q218",
+      "number": "218",
+      "stem": "Water flows so that $\\frac{2}{3}$ of a supply reaches tank X, and $\\frac{1}{2}$ of that reaches tank Y. What fraction of the original supply reaches Y?",
+      "type": "numeric",
+      "answer": "1/3",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q218"
+      }
+    },
+    {
+      "id": "q219",
+      "number": "219",
+      "stem": "Water passes through three pipes in a row. The first passes on $\\frac{3}{4}$ of what it receives, the second $\\frac{2}{3}$, the third $\\frac{1}{2}$. What fraction of the original comes out of the third pipe?",
+      "type": "numeric",
+      "answer": "1/4",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q219"
+      }
+    },
+    {
+      "id": "q220",
+      "number": "220",
+      "stem": "A sum of money passes through three people; each keeps $\\frac{1}{3}$ and passes on the rest. What fraction remains after the third person passes it on?",
+      "type": "numeric",
+      "answer": "8/27",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q220"
+      }
+    },
+    {
+      "id": "q221",
+      "number": "221",
+      "stem": "A charity’s head office keeps $\\frac{1}{5}$ of the funds and sends the rest to regions. Each region keeps $\\frac{1}{4}$ and sends the rest to branches. Branches keep $\\frac{1}{2}$ and pass the rest to projects. If ₹6,000 finally reaches projects, how much money did the head office start with?",
+      "type": "short_answer",
+      "answer": "₹20,000",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q221"
+      }
+    },
+    {
+      "id": "q222",
+      "number": "222",
+      "stem": "Apples are passed down a chain. Person 1 keeps 6 and gives half of the rest to person 2. Person 2 keeps 6 and gives half of the rest to person 3. Person 3 receives 15 apples. How many apples did person 1 start with?",
+      "type": "short_answer",
+      "answer": "78 apples",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Distribution Chain Problems"
+      ],
+      "fields": {
+        "Skill focus": "tracking a quantity passed along a chain, each stage keeping or passing a fraction."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q222"
+      }
+    },
+    {
+      "id": "q223",
+      "number": "223",
+      "stem": "A pizza is cut into 8 equal slices; 3 are eaten. What fraction of the pizza remains?\n\n![A pizza in eight equal slices with three eaten](asset:q223-fig)\n\n*The three white slices have been eaten.*",
+      "type": "numeric",
+      "answer": "5/8",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q223"
+      }
+    },
+    {
+      "id": "q224",
+      "number": "224",
+      "stem": "A circular cake is divided into equal sectors, and one sector is $\\frac{1}{6}$ of the cake. How many sectors are there?",
+      "type": "short_answer",
+      "answer": "6 sectors",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q224"
+      }
+    },
+    {
+      "id": "q225",
+      "number": "225",
+      "stem": "Guests share a cake. The first takes $\\frac{1}{4}$ of the whole cake; the second takes $\\frac{1}{3}$ of what remains. What fraction of the cake is left for the others?",
+      "type": "numeric",
+      "answer": "1/2",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q225"
+      }
+    },
+    {
+      "id": "q226",
+      "number": "226",
+      "stem": "A circle is divided so that one sector is $\\frac{1}{2}$ and another is $\\frac{1}{4}$; the rest is split into two equal sectors. What fraction is each of these two equal sectors?",
+      "type": "short_answer",
+      "answer": "1/8 each",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q226"
+      }
+    },
+    {
+      "id": "q227",
+      "number": "227",
+      "stem": "Three friends sit in a circle and pass a plate of 27 biscuits. Each in turn takes $\\frac{1}{3}$ of the biscuits currently on the plate. How many biscuits remain after all three have taken their share?",
+      "type": "short_answer",
+      "answer": "8 biscuits",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q227"
+      }
+    },
+    {
+      "id": "q228",
+      "number": "228",
+      "stem": "A circular pie is shared: A gets $\\frac{1}{3}$, B gets $\\frac{1}{4}$, C gets $\\frac{1}{6}$, and D gets the rest. Express D’s share and state who got the most and who got the least.\n\n![Pie split into four shares A one third, B one quarter, C one sixth, D the rest](asset:q228-fig)\n\n*A = $\\frac{1}{3}$, B = $\\frac{1}{4}$, C = $\\frac{1}{6}$, D = the rest.*",
+      "type": "short_answer",
+      "answer": "D = 1/4; A most, C least",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Circular Sharing Problems"
+      ],
+      "fields": {
+        "Skill focus": "fractions of a circle/pie, including “fraction of the remainder” taken in turns."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q228"
+      }
+    },
+    {
+      "id": "q229",
+      "number": "229",
+      "stem": "In a survey of 40 people, $\\frac{1}{5}$ chose apples as their favourite fruit. How many people chose apples?\n\n![Bar chart of favourite fruit fractions](asset:q229-fig)\n\n*Apples make up $\\frac{1}{5}$ of the 40 responses.*",
+      "type": "short_answer",
+      "answer": "8 people",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q229"
+      }
+    },
+    {
+      "id": "q230",
+      "number": "230",
+      "stem": "In a class of 24 students, $\\frac{1}{2}$ like football and $\\frac{1}{4}$ like cricket; the rest like tennis. How many like tennis?",
+      "type": "short_answer",
+      "answer": "6 students",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q230"
+      }
+    },
+    {
+      "id": "q231",
+      "number": "231",
+      "stem": "120 people were surveyed about drinks: $\\frac{2}{5}$ chose tea, $\\frac{1}{3}$ chose coffee, and the rest chose juice. How many chose juice?",
+      "type": "numeric",
+      "answer": "32",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q231"
+      }
+    },
+    {
+      "id": "q232",
+      "number": "232",
+      "stem": "In a pet survey of 36 people: $\\frac{1}{2}$ have dogs, $\\frac{1}{6}$ have cats, $\\frac{1}{12}$ have fish, and the rest have birds. How many have birds?",
+      "type": "numeric",
+      "answer": "9",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q232"
+      }
+    },
+    {
+      "id": "q233",
+      "number": "233",
+      "stem": "In a travel survey, $\\frac{3}{8}$ walk to work, $\\frac{1}{4}$ cycle, $\\frac{1}{6}$ take the bus, and the remaining 40 people drive. How many people were surveyed?",
+      "type": "short_answer",
+      "answer": "192 people",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q233"
+      }
+    },
+    {
+      "id": "q234",
+      "number": "234",
+      "stem": "In a survey, $\\frac{2}{3}$ of people preferred product A. Of those who preferred A, $\\frac{3}{5}$ were women. If 60 women preferred A, how many people were surveyed in total?",
+      "type": "short_answer",
+      "answer": "150 people",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Survey / Data Interpretation with Fractions"
+      ],
+      "fields": {
+        "Skill focus": "reading fractional shares of survey totals and recovering the total from a remainder."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q234"
+      }
+    },
+    {
+      "id": "q235",
+      "number": "235",
+      "stem": "A 1 m ribbon is cut into pieces each $\\frac{1}{6}$ m long. How many pieces are obtained, and how much ribbon is left over?",
+      "type": "short_answer",
+      "answer": "6 pieces, none left",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q235"
+      }
+    },
+    {
+      "id": "q236",
+      "number": "236",
+      "stem": "Bottles each hold $\\frac{3}{4}$ L. What is the least number of bottles needed to store 5 L?",
+      "type": "short_answer",
+      "answer": "7 bottles",
+      "difficulty": "Foundation",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q236"
+      }
+    },
+    {
+      "id": "q237",
+      "number": "237",
+      "stem": "Boxes each hold $\\frac{2}{5}$ kg. What is the greatest whole number of boxes that can be completely filled from 7 kg, and how much is left over?",
+      "type": "short_answer",
+      "answer": "17 boxes; 1/5 kg left",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q237"
+      }
+    },
+    {
+      "id": "q238",
+      "number": "238",
+      "stem": "You have $\\frac{3}{4}$ m of wire. Each bracelet needs $\\frac{1}{10}$ m. What is the greatest number of bracelets you can make, and how much wire remains?",
+      "type": "short_answer",
+      "answer": "7 bracelets; 1/20 m left",
+      "difficulty": "Challenge",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q238"
+      }
+    },
+    {
+      "id": "q239",
+      "number": "239",
+      "stem": "Exactly 6 L of juice is poured into glasses so that none is left over. Small glasses hold $\\frac{1}{4}$ L and large glasses hold $\\frac{1}{2}$ L. If at least 4 small glasses must be used, what is the smallest total number of glasses, and how many of each?",
+      "type": "short_answer",
+      "answer": "14 glasses (4 small + 10 large)",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q239"
+      }
+    },
+    {
+      "id": "q240",
+      "number": "240",
+      "stem": "A baker has $\\frac{5}{2}$ kg of dough. Large loaves use $\\frac{1}{2}$ kg each and small loaves use $\\frac{1}{3}$ kg each. Using all the dough exactly with whole numbers of each type, what is the greatest total number of loaves he can make, and one combination that achieves it?",
+      "type": "short_answer",
+      "answer": "7 loaves (e.g. 1 large + 6 small)",
+      "difficulty": "Achiever",
+      "topics": [
+        "Number > Fractions > Optimisation Problems"
+      ],
+      "fields": {
+        "Skill focus": "maximising or minimising counts under fractional-capacity constraints, with leftovers."
+      },
+      "source": {
+        "file": "Claude Fractions 2 .html",
+        "question": "Q240"
+      }
+    }
+  ]
+}
