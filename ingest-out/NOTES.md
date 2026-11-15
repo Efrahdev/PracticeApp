@@ -3,7 +3,7 @@
 Built with tools/ingest per its README, no code changes. All packs validate (`validate.mjs`).
 Not imported to Cloudflare. Each pack folder also has report.html for visual review.
 
-## Built (36 packs)
+## Built (38 packs, all RESULT: OK)
 - Fractions 1 -> html/olympiad-fractions-master-set (Fractions 2 FAILED, see below)
 - Verb tenses diagnostic -> tense1/ (200 q); TENSE PRACTICE 2 -> tense2/ (100 q)
 - SOF IEO 5yr e-book (12 packs), SOF IMO 5yr e-book (12 packs), IMO Level 2 (3 packs, 0 solutions in source)
