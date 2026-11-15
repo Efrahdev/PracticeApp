@@ -1,36 +1,45 @@
-# Ingestion run notes (for reviewer)
+# Ingestion output - notes for reviewer
 
-Built with tools/ingest per its README, no code changes. All packs validate (`validate.mjs`).
-Not imported to Cloudflare. Each pack folder also has report.html for visual review.
+42 packs, 2,539 questions. All pass the app's own validator (`tools/ingest/validate.mjs`). Not yet imported to Cloudflare.
+Each PDF pack folder has `report.html` (original crop beside the rebuilt question).
 
-## Built (42 packs, all RESULT: OK)
-- Fractions 1 -> html/olympiad-fractions-master-set (Fractions 2 FAILED, see below)
-- Verb tenses diagnostic -> tense1/ (200 q); TENSE PRACTICE 2 -> tense2/ (100 q, own id verb-tenses-mixed-mastery-100)
-- SOF IEO 5yr e-book (12 packs), SOF IMO 5yr e-book (12 packs), IMO Level 2 (3 packs, 0 solutions in source)
-- UIMO 8 papers (8 packs)
+## Independent audit (re-run: `bash tools/ingest/audit/run_all.sh` from the repo root)
+Every check re-reads the ORIGINAL source with its own simple parser, not the ingester's code.
 
-- Fractions 2 -> html/olympiad-fractions-master-set-2 (240 q; answers only, no worked solutions)
-- Prepositions diagnostic -> prep/prepositions-diagnostic-assessment (200 q, all with answers + solutions)
-- APOS Grade4 (Beast Academy 4D workbook) -> apos/ (Fractions 166 q, Decimals 180 q, all numbers found; each question is an exact picture, type open, no answer key exists in the source)
+| Check | Result |
+| --- | --- |
+| Answer keys, SOF IMO + IEO (24 papers, 840 q) vs printed solutions | 840/840 match; every solution block matched to its paper by printed year/set |
+| Answer keys, IMO Level 2 (105 q) vs printed answer-key page | 105/105 |
+| Answer keys, UIMO (400 q) vs printed key grid AND printed explanations | 400/400 on both sources (set-01: inline "Sol" answers) |
+| Question page ranges vs printed paper headers | all 35 papers correct |
+| English (Tenses x2, Prepositions, 500 q): stems, answers, every option text | 500/500 stems, all answers, 1,070/1,070 options |
+| Fractions 1 (108 q): stems + worked solutions vs raw HTML | match (differences are spacing only) |
+| Fractions 2 (240 q): answers + figures vs raw HTML | 240/240, 13/13 figures |
+| SOF/UIMO text: every stem/option word present on the source page | yes (remaining hits are known false positives: passages starting 2 pages back; italic l in mL) |
+| Options | every SOF/UIMO question has exactly A-D; every answer is one of its options |
+| Leaked text (directions/passages/footers inside options) | none |
+| Whole-question pictures (129) | each viewed; alt text from its own page |
+| APOS (346 q) | numbering 1..N complete; every crop holds exactly its own question; no overlaps; all 346 viewed |
 
-## New tool code (needed because the README tools could not read these layouts)
-- tools/ingest/fractions2pack.py - Fractions 2 HTML layout (reuses htmlpack engine)
-- tools/ingest/prepositionpack.py - Prepositions PDF layout
-- tools/ingest/tensepack.py - new optional --id / --title (so TENSE PRACTICE 2 no longer shares the diagnostic's id)
-- tools/ingest/pdfpack.py - 3 small fixes: 'Sol. (B)' answers on the marker line, answer letter on the marker row, extend_last (last question's solution on the next page); used by UIMO set-01 only
-- tools/ingest/workbookpack.py + profiles/apos-grade4.json - mixed-column workbook PDFs
-Existing tools (htmlpack, tensepack, pdfpack) are unchanged.
+## Defects found by the audit and fixed
+1. IEO 2021-24 + model tests: "FOR QUESTIONS n TO m" headings printed without a box were missed. Their text leaked into the last option of the previous question AND the following questions lost their instructions / reading passage (e.g. Q21-25 had no passage). Fixed (`group_any_regex`); 21 questions repaired.
+2. Questions with small pictures inside a line of text ("If [shape][shape] = 18") came out as fragments. 24 questions now kept as the exact printed picture (automatic rule in pdfpack).
+3. Stray fragments in options (page number, neighbour label): IMO 25-26 B Q18, UIMO 9254 Q34, UIMO 9257 Q23 trimmed (trim may only shorten the source text).
+4. Scrambled layouts kept as printed picture: IMO 23-24 B Q18, IMO L2 12-13 Q24.
+5. UIMO set-01 picture questions showed the top of the solution drawing: cut now above the whole "Sol:" row.
+6. UIMO 9009 pages are taller: band extended so Q17 and Q26 are no longer cut off; footers trimmed from pictures.
+7. UIMO 9000 Q20: stray page decoration removed.
+8. APOS: margin answer-box labels were mistaken for question numbers on pages 1 and 7 (Q3, Q37-41 wrong); crops sliced stacked fractions, puzzles and long lines; group instructions ("Round each number below to the nearest tenth.") were sliced between crops. Rebuilt: crops follow each question's own content, and each group instruction is shown as text above every question it governs.
+All answers of affected questions were re-verified (key + own working).
+
+## Source defects (in the original files, not introduced by ingestion) - your decision
+- APOS Decimals Q100-Q105 (page 49): the PDF itself says "[UNCLEAR: handwritten answer marks obscure part of the original statement]" - these six have no usable question text.
+- APOS Decimals Q25-Q33 (pages 36-37): the PDF contains stray markup such as `over 10">` / `over 1,000">` inside the fraction expressions (29 occurrences). The picture shows exactly what is printed.
 
 ## Decisions
-- TENSE PRACTICE 1.pdf is byte-identical to Verb_Tenses_Diagnostic_Assessment.pdf, so it is the same pack (tense1/).
-- Fractions 2 has its own id (-set-2), so it will not overwrite the existing Fractions pack.
-- Fractions 2 numeric answers are typed numeric only when a bare number/fraction; the rest are short_answer.
-- Missing solutions are not a defect: IEO/IMO books with no solutions, IMO Level 2, Fractions 2 and APOS carry answers or pictures only.
-- APOS lesson/chapter pages (e.g. page 28 Fraction Fill explainer, page 32 chapter title) hold no numbered question, so they are not in the pack. The same applies to the worked examples above each PRACTICE block.
-- Questions the engine could not split into text + options are kept as an exact picture of the printed question (by design, 100% faithful); those are not uncertain.
-- UIMO 'solutions: unexpected number 6 on page N' log lines: a stray digit on the key page; answers 50/50 and solutions 50/50 in each, and no key-vs-explanation conflicts. Not a defect.
-- IMO 2025-26 set-a Q30: misprinted option label in the source, read leniently; answer present.
-- APOS is a commercial workbook (Beast Academy / AoPS) - confirm you are happy to ingest it.
+- TENSE PRACTICE 1.pdf is byte-identical to Verb_Tenses_Diagnostic_Assessment.pdf (same pack, tense1/).
+- TENSE PRACTICE 2 has its own id `verb-tenses-mixed-mastery-100`; Fractions 2 has its own id (`-set-2`).
+- No solution / no lesson is not a defect. APOS lesson and example blocks are not part of the packs (as requested).
 
-## FLAGGED (under 70% confidence) - review last
+## FLAGGED (under 70% confidence)
 None.

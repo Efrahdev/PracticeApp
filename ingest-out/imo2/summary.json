@@ -16,11 +16,14 @@
   "flagged": 0,
   "answers": 35,
   "solutions": 0,
-  "images": 39,
+  "images": 38,
   "paper_flags": [],
   "pictures": {
    "7": [
     "kept as a picture of the whole question: option B overlaps other text"
+   ],
+   "24": [
+    "kept as a picture of the whole question: no options found (kept as printed: reviewed layout)"
    ]
   },
   "flags": {}
@@ -41,7 +44,7 @@
     "kept as a picture of the whole question: text among the options that belongs to no option: "
    ],
    "13": [
-    "kept as a picture of the whole question: no options found"
+    "kept as a picture of the whole question: no options found; no options found (pictures printed inside the text line)"
    ]
   },
   "flags": {}

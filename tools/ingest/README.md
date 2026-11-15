@@ -39,3 +39,37 @@ profile for a new layout.
 
 Import through the app's Import page (upload the zip) or with `import.mjs`.
 `import.mjs` refuses non-local URLs unless `INGEST_ALLOW_REMOTE=1` is set.
+
+## More converters
+
+| Tool | Source | Use |
+| --- | --- | --- |
+| `fractions2pack.py` | Problem-set HTML with a final-answer key | `python3 -I tools/ingest/fractions2pack.py <page.html> <out>` |
+| `prepositionpack.py` | "Diagnostic Assessment" PDF (numbered questions + "Answer Key and Reasoning") | `python3 -I tools/ingest/prepositionpack.py <paper.pdf> <out>` |
+| `workbookpack.py` | Workbook PDF, 1-3 columns, no options, no key | `python3 -I tools/ingest/workbookpack.py profiles/<book>.json <book.pdf> <out>` |
+
+`tensepack.py` takes optional `--id <pack-id> --title <title>` when several papers share one PDF title.
+
+`workbookpack.py`: each question is cut out as an exact picture. A crop holds every printed object whose
+top-left lies in the question's cell (so long lines and puzzles are never cut), with cell boundaries placed in
+blank strips. Answer-box labels in the right margin and page footers are left out. Group instructions
+("PRACTICE | Round each number below ...") are shown as text above every question they govern.
+
+## Profile options added to `pdfpack.py`
+
+| Option | Where | Effect |
+| --- | --- | --- |
+| `group_any_regex` | question | also accept these direction headings when they are not inside a box |
+| `picture_cut` | question | regexes for page furniture where a whole-question picture stops (only if nothing but furniture follows) |
+| `extend_last` | paper.question | last question may continue to the paper's last page (its answer is printed there) |
+| `band` | paper.question | per-paper content band (pages of a different height) |
+| `picture_questions` | paper | reviewed: keep these question numbers as the printed picture |
+| `trim_options` | paper | reviewed: `{"18": {"D": "200 litres"}}` drop a stray fragment; must be a prefix of the source text |
+| `drop_stem_figures` | paper | reviewed: remove a stray decoration picked up as the stem figure |
+
+Automatic: a question whose stem has small pictures printed inside a line of text is kept as the printed picture,
+and answers printed as "Sol. (B)" or on the "Sol:" row are read.
+
+## Audit
+
+`bash tools/ingest/audit/run_all.sh` re-checks every pack in `ingest-out/` against its source with independent parsers.

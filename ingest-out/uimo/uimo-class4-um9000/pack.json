@@ -91,8 +91,8 @@
   "q14-sol": {
    "file": "images/q14-sol.png"
   },
-  "q15-stem-fig": {
-   "file": "images/q15-stem-fig.png"
+  "q15-full": {
+   "file": "images/q15-full.png"
   },
   "q15-sol": {
    "file": "images/q15-sol.png"
@@ -105,9 +105,6 @@
   },
   "q19-sol": {
    "file": "images/q19-sol.png"
-  },
-  "q20-stem-fig": {
-   "file": "images/q20-stem-fig.png"
   },
   "q21-stem-fig": {
    "file": "images/q21-stem-fig.png"
@@ -208,20 +205,8 @@
   "q38-sol": {
    "file": "images/q38-sol.png"
   },
-  "q39-optA": {
-   "file": "images/q39-optA.png"
-  },
-  "q39-optB": {
-   "file": "images/q39-optB.png"
-  },
-  "q39-optC": {
-   "file": "images/q39-optC.png"
-  },
-  "q39-optD": {
-   "file": "images/q39-optD.png"
-  },
-  "q39-stem-fig": {
-   "file": "images/q39-stem-fig.png"
+  "q39-full": {
+   "file": "images/q39-full.png"
   },
   "q40-optA": {
    "file": "images/q40-optA.png"
@@ -888,23 +873,23 @@
    "id": "q15",
    "number": "15",
    "type": "mcq_single",
-   "stem": "What number should go in the box ?\n\n![figure](asset:q15-stem-fig)\n\n10 × 30 × 50 × 70 = 1 × 30 × 500 ×",
+   "stem": "![What number should go in the box ? 10 × 30 × 50 × 70 = 1 × 30 × 500 × A 0.07 B 0.7 C 7 D 70](asset:q15-full)",
    "options": [
     {
      "label": "A",
-     "text": "0.07"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "0.7"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "7"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "70"
+     "text": "Option D"
     }
    ],
    "answer": "D",
@@ -1088,7 +1073,7 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "By how much is 51 km more than 40.6 km ?\n\n![figure](asset:q20-stem-fig)",
+   "stem": "By how much is 51 km more than 40.6 km ?",
    "options": [
     {
      "label": "A",
@@ -1848,23 +1833,23 @@
    "id": "q39",
    "number": "39",
    "type": "mcq_single",
-   "stem": "Which figure comes next in the sequence ?\n\n![figure](asset:q39-stem-fig)\n\n?",
+   "stem": "![Which figure comes next in the sequence ? ? A B C D](asset:q39-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q39-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q39-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q39-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q39-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "D",

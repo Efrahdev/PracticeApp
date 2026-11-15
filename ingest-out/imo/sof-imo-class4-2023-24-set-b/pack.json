@@ -145,8 +145,8 @@
   "q17-sol": {
    "file": "images/q17-sol.png"
   },
-  "q18-optB": {
-   "file": "images/q18-optB.png"
+  "q18-full": {
+   "file": "images/q18-full.png"
   },
   "q18-sol": {
    "file": "images/q18-sol.png"
@@ -925,23 +925,23 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "Compare and fill in the box.",
+   "stem": "![Compare and fill in the box. MMXLIV + DCCXV – CXCV MMCD + CDL – CCXIX A. B. = C. D. Can’t be determined](asset:q18-full)",
    "options": [
     {
      "label": "A",
-     "text": "MMXLIV + DCCXV – CXCV \\<"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![MMCD + CDL – CCXIX =](asset:q18-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "\\>"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "Can’t be determined"
+     "text": "Option D"
     }
    ],
    "answer": "A",

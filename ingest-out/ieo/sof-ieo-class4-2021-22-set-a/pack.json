@@ -7,14 +7,14 @@
   "subject": "English"
  },
  "assets": {
-  "q12-full": {
-   "file": "images/q12-full.png"
-  },
-  "q13-full": {
-   "file": "images/q13-full.png"
+  "g1-9-fig": {
+   "file": "images/g1-9-fig.png"
   },
   "q15-stem-fig": {
    "file": "images/q15-stem-fig.png"
+  },
+  "g26-30-fig": {
+   "file": "images/g26-30-fig.png"
   },
   "q35-full": {
    "file": "images/q35-full.png"
@@ -25,7 +25,7 @@
    "id": "q1",
    "number": "1",
    "type": "mcq_single",
-   "stem": "I thought you are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with this concept.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nI thought you are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with this concept.",
    "options": [
     {
      "label": "A",
@@ -67,7 +67,7 @@
    "id": "q2",
    "number": "2",
    "type": "mcq_single",
-   "stem": "Richa is crying because the bag we lost in the fair was \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nRicha is crying because the bag we lost in the fair was \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -109,7 +109,7 @@
    "id": "q3",
    "number": "3",
    "type": "mcq_single",
-   "stem": "The meal \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ rice, curry and salad.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nThe meal \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ rice, curry and salad.",
    "options": [
     {
      "label": "A",
@@ -151,7 +151,7 @@
    "id": "q4",
    "number": "4",
    "type": "mcq_single",
-   "stem": "Jacob takes \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shower every morning.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nJacob takes \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shower every morning.",
    "options": [
     {
      "label": "A",
@@ -193,7 +193,7 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "Ajay’s \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ nature made him very unpopular.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nAjay’s \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ nature made him very unpopular.",
    "options": [
     {
      "label": "A",
@@ -235,7 +235,7 @@
    "id": "q6",
    "number": "6",
    "type": "mcq_single",
-   "stem": "Amidst the pandemic \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, I volunteered at the government hospital.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nAmidst the pandemic \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, I volunteered at the government hospital.",
    "options": [
     {
      "label": "A",
@@ -276,7 +276,7 @@
    "id": "q7",
    "number": "7",
    "type": "mcq_single",
-   "stem": "She didn’t take part \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the dance competition.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nShe didn’t take part \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the dance competition.",
    "options": [
     {
      "label": "A",
@@ -318,7 +318,7 @@
    "id": "q8",
    "number": "8",
    "type": "mcq_single",
-   "stem": "We went to the market \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shopped for eatables.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nWe went to the market \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ shopped for eatables.",
    "options": [
     {
      "label": "A",
@@ -360,7 +360,7 @@
    "id": "q9",
    "number": "9",
    "type": "mcq_single",
-   "stem": "The boy \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ up the tree, so that the bear couldn’t see him.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nThe boy \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ up the tree, so that the bear couldn’t see him.",
    "options": [
     {
      "label": "A",
@@ -372,7 +372,7 @@
     },
     {
      "label": "C",
-     "text": "climbed\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+     "text": "climbed"
     },
     {
      "label": "D",
@@ -402,7 +402,7 @@
    "id": "q10",
    "number": "10",
    "type": "mcq_single",
-   "stem": "Sudden, Ravisha became super polite.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nSudden, Ravisha became super polite.",
    "options": [
     {
      "label": "A",
@@ -444,7 +444,7 @@
    "id": "q11",
    "number": "11",
    "type": "mcq_single",
-   "stem": "The next fish trip would be great with our new gear.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nThe next fish trip would be great with our new gear.",
    "options": [
     {
      "label": "A",
@@ -460,7 +460,7 @@
     },
     {
      "label": "D",
-     "text": "new gear.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+     "text": "new gear."
     }
    ],
    "answer": "A",
@@ -486,23 +486,23 @@
    "id": "q12",
    "number": "12",
    "type": "mcq_single",
-   "stem": "![A. Trensperent B. Transparent C. Trunsperunt D. Transperant](asset:q12-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Trensperent"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Transparent"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Trunsperunt"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Transperant"
     }
    ],
    "answer": "B",
@@ -527,23 +527,23 @@
    "id": "q13",
    "number": "13",
    "type": "mcq_single",
-   "stem": "![A. Philosophy B. Phylosophy C. Philosphy D. Phyilosophy](asset:q13-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Philosophy"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Phylosophy"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Philosphy"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Phyilosophy"
     }
    ],
    "answer": "A",
@@ -652,7 +652,7 @@
    "id": "q16",
    "number": "16",
    "type": "mcq_single",
-   "stem": "The old woman was driving \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day a man stopped to help an old lady who was stranded on the side of the road.\n\nHe decided to help her, so he stopped his old Jazz next to her Mercedes and got out. The old lady seemed a bit frightened and nervous because of his shabby appearance. The man, sensing this, approached carefully and tried to calm her.\n\nHe said to her, “Don’t worry. I’m here to help you. My name is John William.” He proceeded to fix her flat tire and became dirty and slightly injured in the process.\n\nWhen he was finished, the lady asked him how much she owed him. He responded by telling her that if she really wanted to repay him, she could pass on the kindness to someone else in their time of need.\n\nLater that evening the lady stopped at a small, dingy cafe. The waitress who served her was pregnant and tired. Despite her apparent exhaustion, the waitress was very sweet and friendly.\n\nThe lady wondered how someone who was so tired from a long day of work could still be so friendly and kind to her.\n\nThen she remembered John. When the lady finished her meal, she paid with a hundred dollar bill. The waitress went to get change and when she came back, the lady was gone.\n\nShe left a note on the napkin…“You don’t owe me anything. Somebody once helped me, just like I’m helping you now. If you really want to pay me back, do not let this chain of love end with you.”\n\nThe waitress found five one hundred dollar bills under the napkin.\n\nThat night, the waitress went home early. She thought about the lady and the money she left. She wondered how the lady could possibly know how much they needed it.\n\nShe knew her husband was worried and she was worried about him. She couldn’t wait to tell him the good news.\n\nThen she hugged him and whispered…Now everything will be okay. I love you, John William.\n\nThe old woman was driving \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -694,7 +694,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "What was wrong with the old lady’s vehicle?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day a man stopped to help an old lady who was stranded on the side of the road.\n\nHe decided to help her, so he stopped his old Jazz next to her Mercedes and got out. The old lady seemed a bit frightened and nervous because of his shabby appearance. The man, sensing this, approached carefully and tried to calm her.\n\nHe said to her, “Don’t worry. I’m here to help you. My name is John William.” He proceeded to fix her flat tire and became dirty and slightly injured in the process.\n\nWhen he was finished, the lady asked him how much she owed him. He responded by telling her that if she really wanted to repay him, she could pass on the kindness to someone else in their time of need.\n\nLater that evening the lady stopped at a small, dingy cafe. The waitress who served her was pregnant and tired. Despite her apparent exhaustion, the waitress was very sweet and friendly.\n\nThe lady wondered how someone who was so tired from a long day of work could still be so friendly and kind to her.\n\nThen she remembered John. When the lady finished her meal, she paid with a hundred dollar bill. The waitress went to get change and when she came back, the lady was gone.\n\nShe left a note on the napkin…“You don’t owe me anything. Somebody once helped me, just like I’m helping you now. If you really want to pay me back, do not let this chain of love end with you.”\n\nThe waitress found five one hundred dollar bills under the napkin.\n\nThat night, the waitress went home early. She thought about the lady and the money she left. She wondered how the lady could possibly know how much they needed it.\n\nShe knew her husband was worried and she was worried about him. She couldn’t wait to tell him the good news.\n\nThen she hugged him and whispered…Now everything will be okay. I love you, John William.\n\nWhat was wrong with the old lady’s vehicle?",
    "options": [
     {
      "label": "A",
@@ -735,7 +735,7 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "How did the man ask the old lady to pay him?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day a man stopped to help an old lady who was stranded on the side of the road.\n\nHe decided to help her, so he stopped his old Jazz next to her Mercedes and got out. The old lady seemed a bit frightened and nervous because of his shabby appearance. The man, sensing this, approached carefully and tried to calm her.\n\nHe said to her, “Don’t worry. I’m here to help you. My name is John William.” He proceeded to fix her flat tire and became dirty and slightly injured in the process.\n\nWhen he was finished, the lady asked him how much she owed him. He responded by telling her that if she really wanted to repay him, she could pass on the kindness to someone else in their time of need.\n\nLater that evening the lady stopped at a small, dingy cafe. The waitress who served her was pregnant and tired. Despite her apparent exhaustion, the waitress was very sweet and friendly.\n\nThe lady wondered how someone who was so tired from a long day of work could still be so friendly and kind to her.\n\nThen she remembered John. When the lady finished her meal, she paid with a hundred dollar bill. The waitress went to get change and when she came back, the lady was gone.\n\nShe left a note on the napkin…“You don’t owe me anything. Somebody once helped me, just like I’m helping you now. If you really want to pay me back, do not let this chain of love end with you.”\n\nThe waitress found five one hundred dollar bills under the napkin.\n\nThat night, the waitress went home early. She thought about the lady and the money she left. She wondered how the lady could possibly know how much they needed it.\n\nShe knew her husband was worried and she was worried about him. She couldn’t wait to tell him the good news.\n\nThen she hugged him and whispered…Now everything will be okay. I love you, John William.\n\nHow did the man ask the old lady to pay him?",
    "options": [
     {
      "label": "A",
@@ -777,7 +777,7 @@
    "id": "q19",
    "number": "19",
    "type": "mcq_single",
-   "stem": "The old lady left \\_\\_\\_\\_\\_\\_\\_\\_\\_ for the waitress.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day a man stopped to help an old lady who was stranded on the side of the road.\n\nHe decided to help her, so he stopped his old Jazz next to her Mercedes and got out. The old lady seemed a bit frightened and nervous because of his shabby appearance. The man, sensing this, approached carefully and tried to calm her.\n\nHe said to her, “Don’t worry. I’m here to help you. My name is John William.” He proceeded to fix her flat tire and became dirty and slightly injured in the process.\n\nWhen he was finished, the lady asked him how much she owed him. He responded by telling her that if she really wanted to repay him, she could pass on the kindness to someone else in their time of need.\n\nLater that evening the lady stopped at a small, dingy cafe. The waitress who served her was pregnant and tired. Despite her apparent exhaustion, the waitress was very sweet and friendly.\n\nThe lady wondered how someone who was so tired from a long day of work could still be so friendly and kind to her.\n\nThen she remembered John. When the lady finished her meal, she paid with a hundred dollar bill. The waitress went to get change and when she came back, the lady was gone.\n\nShe left a note on the napkin…“You don’t owe me anything. Somebody once helped me, just like I’m helping you now. If you really want to pay me back, do not let this chain of love end with you.”\n\nThe waitress found five one hundred dollar bills under the napkin.\n\nThat night, the waitress went home early. She thought about the lady and the money she left. She wondered how the lady could possibly know how much they needed it.\n\nShe knew her husband was worried and she was worried about him. She couldn’t wait to tell him the good news.\n\nThen she hugged him and whispered…Now everything will be okay. I love you, John William.\n\nThe old lady left \\_\\_\\_\\_\\_\\_\\_\\_\\_ for the waitress.",
    "options": [
     {
      "label": "A",
@@ -819,15 +819,15 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "The word ‘dingy’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day a man stopped to help an old lady who was stranded on the side of the road.\n\nHe decided to help her, so he stopped his old Jazz next to her Mercedes and got out. The old lady seemed a bit frightened and nervous because of his shabby appearance. The man, sensing this, approached carefully and tried to calm her.\n\nHe said to her, “Don’t worry. I’m here to help you. My name is John William.” He proceeded to fix her flat tire and became dirty and slightly injured in the process.\n\nWhen he was finished, the lady asked him how much she owed him. He responded by telling her that if she really wanted to repay him, she could pass on the kindness to someone else in their time of need.\n\nLater that evening the lady stopped at a small, dingy cafe. The waitress who served her was pregnant and tired. Despite her apparent exhaustion, the waitress was very sweet and friendly.\n\nThe lady wondered how someone who was so tired from a long day of work could still be so friendly and kind to her.\n\nThen she remembered John. When the lady finished her meal, she paid with a hundred dollar bill. The waitress went to get change and when she came back, the lady was gone.\n\nShe left a note on the napkin…“You don’t owe me anything. Somebody once helped me, just like I’m helping you now. If you really want to pay me back, do not let this chain of love end with you.”\n\nThe waitress found five one hundred dollar bills under the napkin.\n\nThat night, the waitress went home early. She thought about the lady and the money she left. She wondered how the lady could possibly know how much they needed it.\n\nShe knew her husband was worried and she was worried about him. She couldn’t wait to tell him the good news.\n\nThen she hugged him and whispered…Now everything will be okay. I love you, John William.\n\nThe word ‘dingy’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
-     "text": "dirty\n\nFOLLOW.\n\n68-feet wave.\n\nwave I’d ever ridden.”\n\nrigorous analysis."
+     "text": "dirty"
     },
     {
      "label": "B",
-     "text": "closed\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating**\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more"
+     "text": "closed"
     },
     {
      "label": "C",
@@ -861,7 +861,7 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "The first record was made by Gabeira on/in \\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating** 68-feet wave.\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest wave I’d ever ridden.”\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more rigorous analysis.\n\nThe first record was made by Gabeira on/in \\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -902,7 +902,7 @@
    "id": "q22",
    "number": "22",
    "type": "mcq_single",
-   "stem": "What made the surfer realise, “it was probably the biggest wave”?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating** 68-feet wave.\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest wave I’d ever ridden.”\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more rigorous analysis.\n\nWhat made the surfer realise, “it was probably the biggest wave”?",
    "options": [
     {
      "label": "A",
@@ -944,7 +944,7 @@
    "id": "q23",
    "number": "23",
    "type": "mcq_single",
-   "stem": "Who made sure the record was made by Gabeira?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating** 68-feet wave.\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest wave I’d ever ridden.”\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more rigorous analysis.\n\nWho made sure the record was made by Gabeira?",
    "options": [
     {
      "label": "A",
@@ -985,7 +985,7 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "The height of the wave is from \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating** 68-feet wave.\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest wave I’d ever ridden.”\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more rigorous analysis.\n\nThe height of the wave is from \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1027,7 +1027,7 @@
    "id": "q25",
    "number": "25",
    "type": "mcq_single",
-   "stem": "The word ‘intimidating’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nMost people would shudder at the idea of getting caught up in a 73.5-feet wave. But for Brazilian pro-surfer Maya, it presented the perfect opportunity to break her 2018 world record for the largest wave surfed by a female. The athlete skillfully conquered the massive wave earlier this year, at the inaugural World Surf League (WSL) Nazaré Tow Surfing Challenge in Praia do Norte, Portugal. It was the same site where she made her first world record by riding an equally **intimidating** 68-feet wave.\n\n“I was in the zone and braver than I usually am on that day,” said Gabeira. “I was risking more than I usually like to do. When I let go of the rope, I had a feeling it could be the one but wasn’t sure. The speed was very high, but the noise that the wave made when it broke made me realize that this was probably the biggest wave I’d ever ridden.”\n\nThough Gabeira completed the incredible feat on February 11, 2020, her record was not announced by the Guinness World Records until September 10, 2020. That’s because the WSL officials had to first determine whether it was the Brazilian surfer or her competitor, Justine Dupont, who had ridden the largest wave. The wave’s height from trough to crest is usually estimated with the help of photos and videos. However, the proximity of the large swells ridden by the two pro-surfers, and the possibility of a new world record being established, warranted a more rigorous analysis.\n\nThe word ‘intimidating’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1069,7 +1069,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "Sumita : I am going to get some coffee. Do you want some?\n\nRajan : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nSumita : I am going to get some coffee. Do you want some?\n\nRajan : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1110,7 +1110,7 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "Ravi : Can you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me salt and pepper?\n\nSoma : Sure, here you go.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nRavi : Can you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ me salt and pepper?\n\nSoma : Sure, here you go.",
    "options": [
     {
      "label": "A",
@@ -1151,7 +1151,7 @@
    "id": "q28",
    "number": "28",
    "type": "mcq_single",
-   "stem": "Rahul : Sumit plays football \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nRahul : Sumit plays football \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1193,7 +1193,7 @@
    "id": "q29",
    "number": "29",
    "type": "mcq_single",
-   "stem": "Sachin : Did Hari \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ it with you?\n\nShama : No, he didn’t.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nSachin : Did Hari \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ it with you?\n\nShama : No, he didn’t.",
    "options": [
     {
      "label": "A",
@@ -1234,7 +1234,7 @@
    "id": "q30",
    "number": "30",
    "type": "mcq_single",
-   "stem": "Rohit : I forgot to switch off the heater.\n\nBeena : Oh! We \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ go back and switch it off.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nRohit : I forgot to switch off the heater.\n\nBeena : Oh! We \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ go back and switch it off.",
    "options": [
     {
      "label": "A",
@@ -1275,7 +1275,7 @@
    "id": "q31",
    "number": "31",
    "type": "mcq_single",
-   "stem": "I love the way your baby brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your actions.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI love the way your baby brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your actions.",
    "options": [
     {
      "label": "A",
@@ -1318,7 +1318,7 @@
    "id": "q32",
    "number": "32",
    "type": "mcq_single",
-   "stem": "Shasha \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the drowning girl bravely.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nShasha \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the drowning girl bravely.",
    "options": [
     {
      "label": "A",

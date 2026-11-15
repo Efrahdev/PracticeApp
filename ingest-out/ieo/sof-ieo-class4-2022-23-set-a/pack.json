@@ -7,20 +7,11 @@
   "subject": "English"
  },
  "assets": {
-  "q7-full": {
-   "file": "images/q7-full.png"
-  },
   "q8-stem": {
    "file": "images/q8-stem.png"
   },
   "q9-stem": {
    "file": "images/q9-stem.png"
-  },
-  "q12-full": {
-   "file": "images/q12-full.png"
-  },
-  "q13-full": {
-   "file": "images/q13-full.png"
   },
   "q15-stem-fig": {
    "file": "images/q15-stem-fig.png"
@@ -28,8 +19,8 @@
   "q18-optD": {
    "file": "images/q18-optD.png"
   },
-  "q20-full": {
-   "file": "images/q20-full.png"
+  "g21-25": {
+   "file": "images/g21-25.png"
   },
   "q25-stem-fig": {
    "file": "images/q25-stem-fig.png"
@@ -43,7 +34,7 @@
    "id": "q1",
    "number": "1",
    "type": "mcq_single",
-   "stem": "We are collecting \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to help the homeless people.",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nWe are collecting \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to help the homeless people.",
    "options": [
     {
      "label": "A",
@@ -85,7 +76,7 @@
    "id": "q2",
    "number": "2",
    "type": "mcq_single",
-   "stem": "Are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ dresses and purses yours?",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nAre \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ dresses and purses yours?",
    "options": [
     {
      "label": "A",
@@ -127,7 +118,7 @@
    "id": "q3",
    "number": "3",
    "type": "mcq_single",
-   "stem": "They \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to know the truth.",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThey \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to know the truth.",
    "options": [
     {
      "label": "A",
@@ -169,7 +160,7 @@
    "id": "q4",
    "number": "4",
    "type": "mcq_single",
-   "stem": "Naina’s family will \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to their new house next week.",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nNaina’s family will \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to their new house next week.",
    "options": [
     {
      "label": "A",
@@ -211,7 +202,7 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "Our driver is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ honest man.",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nOur driver is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ honest man.",
    "options": [
     {
      "label": "A",
@@ -253,7 +244,7 @@
    "id": "q6",
    "number": "6",
    "type": "mcq_single",
-   "stem": "I was standing \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the shade of the neem tree.",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI was standing \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the shade of the neem tree.",
    "options": [
     {
      "label": "A",
@@ -295,23 +286,23 @@
    "id": "q7",
    "number": "7",
    "type": "mcq_single",
-   "stem": "![I was feeling cold I switched off the fan. A. so B. and C. but D. or FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.](asset:q7-full)",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI was feeling cold \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I switched off the fan.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "so"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "and"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "but"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "or"
     }
    ],
    "answer": "A",
@@ -337,7 +328,7 @@
    "id": "q8",
    "number": "8",
    "type": "mcq_single",
-   "stem": "![Rahul was listening to loud music last night.](asset:q8-stem)",
+   "stem": "FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.\n\n![Rahul was listening to loud music last night.](asset:q8-stem)",
    "options": [
     {
      "label": "A",
@@ -379,7 +370,7 @@
    "id": "q9",
    "number": "9",
    "type": "mcq_single",
-   "stem": "![Currently, they are living in Australia.](asset:q9-stem)",
+   "stem": "FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.\n\n![Currently, they are living in Australia.](asset:q9-stem)",
    "options": [
     {
      "label": "A",
@@ -391,7 +382,7 @@
     },
     {
      "label": "C",
-     "text": "Preposition\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+     "text": "Preposition"
     },
     {
      "label": "D",
@@ -421,7 +412,7 @@
    "id": "q10",
    "number": "10",
    "type": "mcq_single",
-   "stem": "Gold is most expensive than other metals.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nGold is most expensive than other metals.",
    "options": [
     {
      "label": "A",
@@ -463,7 +454,7 @@
    "id": "q11",
    "number": "11",
    "type": "mcq_single",
-   "stem": "We has never been anywhere outside the country.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nWe has never been anywhere outside the country.",
    "options": [
     {
      "label": "A",
@@ -475,7 +466,7 @@
     },
     {
      "label": "C",
-     "text": "anywhere outside\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+     "text": "anywhere outside"
     },
     {
      "label": "D",
@@ -505,23 +496,23 @@
    "id": "q12",
    "number": "12",
    "type": "mcq_single",
-   "stem": "![A. Preperation B. Preparasion C. Preparation D. Preparetion](asset:q12-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Preperation"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Preparasion"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Preparation"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Preparetion"
     }
    ],
    "answer": "C",
@@ -547,23 +538,23 @@
    "id": "q13",
    "number": "13",
    "type": "mcq_single",
-   "stem": "![A. Condenm B. Condemn C. Condamn D. Condanm](asset:q13-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Condenm"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Condemn"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Condamn"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Condanm"
     }
    ],
    "answer": "B",
@@ -673,7 +664,7 @@
    "id": "q16",
    "number": "16",
    "type": "mcq_single",
-   "stem": "What is the passage about?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nVultures may not be considered as beautiful birds. However, they play an important role in our ecosystem and food web.\n\nVultures are scavengers. They feed on **carcasses** of animals and remove their bodies from the environment. This is an important job that goes beyond keeping the environment clean and beautiful.\n\nVultures protect the environment and human beings from deadly diseases. If any dead body remains in the environment even for a short period of time, bacteria would grow. These bacteria are tiny organisms that cannot be seen with the human eye and can make animals and humans sick. Vultures remove carcasses of animals quickly before bacteria has time to grow. Additionally, their stomach contains a strong acid that helps in destroying these harmful bacteria they eat.\n\nUnfortunately, there are some poisons found in dead bodies that are deadly to vultures. These poisons have been responsible for the majority of vulture deaths for the last 40 years. There have been so many deaths that vultures are now on the list of endangered animals.\n\nThe future of vultures is an issue across the globe. Some of these deaths are accidental, but vultures have also been poisoned on purpose.\n\nAlmost 30 years ago in the United States, the California condor population was reduced to 22 birds. California condors are vultures whose wingspans can reach upto three meters, or almost ten feet. They were accidentally poisoned by lead bullets in carcasses of animals left behind by hunters. Condors accidentally ate the lead bullets and died.\n\nConservation has been effective. People around the world are working to prevent their extinction. Even though there are now more than 400 birds, the California condor is still considered as one of the rarest birds on the Earth.\n\nWhat is the passage about?",
    "options": [
     {
      "label": "A",
@@ -715,7 +706,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "California condors are vultures whose wingspans can reach upto \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ or almost \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nVultures may not be considered as beautiful birds. However, they play an important role in our ecosystem and food web.\n\nVultures are scavengers. They feed on **carcasses** of animals and remove their bodies from the environment. This is an important job that goes beyond keeping the environment clean and beautiful.\n\nVultures protect the environment and human beings from deadly diseases. If any dead body remains in the environment even for a short period of time, bacteria would grow. These bacteria are tiny organisms that cannot be seen with the human eye and can make animals and humans sick. Vultures remove carcasses of animals quickly before bacteria has time to grow. Additionally, their stomach contains a strong acid that helps in destroying these harmful bacteria they eat.\n\nUnfortunately, there are some poisons found in dead bodies that are deadly to vultures. These poisons have been responsible for the majority of vulture deaths for the last 40 years. There have been so many deaths that vultures are now on the list of endangered animals.\n\nThe future of vultures is an issue across the globe. Some of these deaths are accidental, but vultures have also been poisoned on purpose.\n\nAlmost 30 years ago in the United States, the California condor population was reduced to 22 birds. California condors are vultures whose wingspans can reach upto three meters, or almost ten feet. They were accidentally poisoned by lead bullets in carcasses of animals left behind by hunters. Condors accidentally ate the lead bullets and died.\n\nConservation has been effective. People around the world are working to prevent their extinction. Even though there are now more than 400 birds, the California condor is still considered as one of the rarest birds on the Earth.\n\nCalifornia condors are vultures whose wingspans can reach upto \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ or almost \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -756,7 +747,7 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "How do vultures protect the environment?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nVultures may not be considered as beautiful birds. However, they play an important role in our ecosystem and food web.\n\nVultures are scavengers. They feed on **carcasses** of animals and remove their bodies from the environment. This is an important job that goes beyond keeping the environment clean and beautiful.\n\nVultures protect the environment and human beings from deadly diseases. If any dead body remains in the environment even for a short period of time, bacteria would grow. These bacteria are tiny organisms that cannot be seen with the human eye and can make animals and humans sick. Vultures remove carcasses of animals quickly before bacteria has time to grow. Additionally, their stomach contains a strong acid that helps in destroying these harmful bacteria they eat.\n\nUnfortunately, there are some poisons found in dead bodies that are deadly to vultures. These poisons have been responsible for the majority of vulture deaths for the last 40 years. There have been so many deaths that vultures are now on the list of endangered animals.\n\nThe future of vultures is an issue across the globe. Some of these deaths are accidental, but vultures have also been poisoned on purpose.\n\nAlmost 30 years ago in the United States, the California condor population was reduced to 22 birds. California condors are vultures whose wingspans can reach upto three meters, or almost ten feet. They were accidentally poisoned by lead bullets in carcasses of animals left behind by hunters. Condors accidentally ate the lead bullets and died.\n\nConservation has been effective. People around the world are working to prevent their extinction. Even though there are now more than 400 birds, the California condor is still considered as one of the rarest birds on the Earth.\n\nHow do vultures protect the environment?",
    "options": [
     {
      "label": "A",
@@ -798,7 +789,7 @@
    "id": "q19",
    "number": "19",
    "type": "mcq_single",
-   "stem": "What did California condors accidentally eat from the carcasses of animals?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nVultures may not be considered as beautiful birds. However, they play an important role in our ecosystem and food web.\n\nVultures are scavengers. They feed on **carcasses** of animals and remove their bodies from the environment. This is an important job that goes beyond keeping the environment clean and beautiful.\n\nVultures protect the environment and human beings from deadly diseases. If any dead body remains in the environment even for a short period of time, bacteria would grow. These bacteria are tiny organisms that cannot be seen with the human eye and can make animals and humans sick. Vultures remove carcasses of animals quickly before bacteria has time to grow. Additionally, their stomach contains a strong acid that helps in destroying these harmful bacteria they eat.\n\nUnfortunately, there are some poisons found in dead bodies that are deadly to vultures. These poisons have been responsible for the majority of vulture deaths for the last 40 years. There have been so many deaths that vultures are now on the list of endangered animals.\n\nThe future of vultures is an issue across the globe. Some of these deaths are accidental, but vultures have also been poisoned on purpose.\n\nAlmost 30 years ago in the United States, the California condor population was reduced to 22 birds. California condors are vultures whose wingspans can reach upto three meters, or almost ten feet. They were accidentally poisoned by lead bullets in carcasses of animals left behind by hunters. Condors accidentally ate the lead bullets and died.\n\nConservation has been effective. People around the world are working to prevent their extinction. Even though there are now more than 400 birds, the California condor is still considered as one of the rarest birds on the Earth.\n\nWhat did California condors accidentally eat from the carcasses of animals?",
    "options": [
     {
      "label": "A",
@@ -840,23 +831,23 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "![In the given passage, the word ‘carcasses’ means . A. dead bodies of animals B. solid things C. alive animals D. food webs FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for al](asset:q20-full)",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nVultures may not be considered as beautiful birds. However, they play an important role in our ecosystem and food web.\n\nVultures are scavengers. They feed on **carcasses** of animals and remove their bodies from the environment. This is an important job that goes beyond keeping the environment clean and beautiful.\n\nVultures protect the environment and human beings from deadly diseases. If any dead body remains in the environment even for a short period of time, bacteria would grow. These bacteria are tiny organisms that cannot be seen with the human eye and can make animals and humans sick. Vultures remove carcasses of animals quickly before bacteria has time to grow. Additionally, their stomach contains a strong acid that helps in destroying these harmful bacteria they eat.\n\nUnfortunately, there are some poisons found in dead bodies that are deadly to vultures. These poisons have been responsible for the majority of vulture deaths for the last 40 years. There have been so many deaths that vultures are now on the list of endangered animals.\n\nThe future of vultures is an issue across the globe. Some of these deaths are accidental, but vultures have also been poisoned on purpose.\n\nAlmost 30 years ago in the United States, the California condor population was reduced to 22 birds. California condors are vultures whose wingspans can reach upto three meters, or almost ten feet. They were accidentally poisoned by lead bullets in carcasses of animals left behind by hunters. Condors accidentally ate the lead bullets and died.\n\nConservation has been effective. People around the world are working to prevent their extinction. Even though there are now more than 400 birds, the California condor is still considered as one of the rarest birds on the Earth.\n\nIn the given passage, the word ‘carcasses’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "dead bodies of animals"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "solid things"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "alive animals"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "food webs"
     }
    ],
    "answer": "A",
@@ -882,7 +873,7 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "Who is/are the main character(s) in the passage?",
+   "stem": "![FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for alms. One morning he got a pot of milk as part of the alms. He was extremely delighted and went home with the pot of milk. He](asset:g21-25)\n\nWho is/are the main character(s) in the passage?",
    "options": [
     {
      "label": "A",
@@ -924,7 +915,7 @@
    "id": "q22",
    "number": "22",
    "type": "mcq_single",
-   "stem": "What did the priest want to become one day?",
+   "stem": "![FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for alms. One morning he got a pot of milk as part of the alms. He was extremely delighted and went home with the pot of milk. He](asset:g21-25)\n\nWhat did the priest want to become one day?",
    "options": [
     {
      "label": "A",
@@ -966,7 +957,7 @@
    "id": "q23",
    "number": "23",
    "type": "mcq_single",
-   "stem": "According to the passage, the priest was dreaming about the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "![FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for alms. One morning he got a pot of milk as part of the alms. He was extremely delighted and went home with the pot of milk. He](asset:g21-25)\n\nAccording to the passage, the priest was dreaming about the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1007,7 +998,7 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "What is the moral of the story?",
+   "stem": "![FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for alms. One morning he got a pot of milk as part of the alms. He was extremely delighted and went home with the pot of milk. He](asset:g21-25)\n\nWhat is the moral of the story?",
    "options": [
     {
      "label": "A",
@@ -1049,7 +1040,7 @@
    "id": "q25",
    "number": "25",
    "type": "mcq_single",
-   "stem": "In the given passage, the word ‘alms’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q25-stem-fig)",
+   "stem": "![FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW. Once upon a time there was a priest who was extremely lazy and poor at the same time. He did not want to do any hard work but used to imagine becoming rich one day. He got his food by begging for alms. One morning he got a pot of milk as part of the alms. He was extremely delighted and went home with the pot of milk. He](asset:g21-25)\n\nIn the given passage, the word ‘alms’ means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q25-stem-fig)",
    "options": [
     {
      "label": "A",
@@ -1091,7 +1082,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "Ravi : Why haven’t you eaten anything \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the party?\n\nTiya : I was feeling unwell.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nRavi : Why haven’t you eaten anything \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the party?\n\nTiya : I was feeling unwell.",
    "options": [
     {
      "label": "A",
@@ -1133,7 +1124,7 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "Friend 1 : I love this show. It is very \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_. Friend 2 : I agree.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nFriend 1 : I love this show. It is very \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_. Friend 2 : I agree.",
    "options": [
     {
      "label": "A",
@@ -1175,7 +1166,7 @@
    "id": "q28",
    "number": "28",
    "type": "mcq_single",
-   "stem": "Anushka : I ran \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I was getting late for work.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nAnushka : I ran \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I was getting late for work.",
    "options": [
     {
      "label": "A",
@@ -1217,7 +1208,7 @@
    "id": "q29",
    "number": "29",
    "type": "mcq_single",
-   "stem": "Vendor : I sell \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ fruits and vegetables.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nVendor : I sell \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ fruits and vegetables.",
    "options": [
     {
      "label": "A",
@@ -1259,7 +1250,7 @@
    "id": "q30",
    "number": "30",
    "type": "mcq_single",
-   "stem": "Mother : Come home \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ 7 o’clock.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nMother : Come home \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ 7 o’clock.",
    "options": [
     {
      "label": "A",
@@ -1301,7 +1292,7 @@
    "id": "q31",
    "number": "31",
    "type": "mcq_single",
-   "stem": "The old man \\_\\_\\_\\_\\_\\_\\_\\_\\_ is standing over there is my neighbour.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe old man \\_\\_\\_\\_\\_\\_\\_\\_\\_ is standing over there is my neighbour.",
    "options": [
     {
      "label": "A",
@@ -1344,7 +1335,7 @@
    "id": "q32",
    "number": "32",
    "type": "mcq_single",
-   "stem": "I \\_\\_\\_\\_\\_\\_\\_\\_\\_ prefer dancing nor singing.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI \\_\\_\\_\\_\\_\\_\\_\\_\\_ prefer dancing nor singing.",
    "options": [
     {
      "label": "A",

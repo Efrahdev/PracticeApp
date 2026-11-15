@@ -24,6 +24,7 @@
    ],
    "inline": true
   },
+  "picture_cut": ["^Space for Rough", "^CLASS\\s*:", "^Class\\s*[–-]\\s*\\d", "^Paper\\s*Code", "(?i)^questions? from \\d+", "(?i)^(Mathematics|Reasoning|Critical Thinking|Logical Reasoning|Everyday Mathematics)$"],
   "option_regex": "^\\(([A-D])\\)(?:\\s|$)",
   "stop": [
    "^Paper\\s*Code"
@@ -63,6 +64,7 @@
   },
   {
    "id": "uimo-class4-um9000",
+   "drop_stem_figures": [20],
    "title": "UIMO Class 4 \u00b7 UM9000",
    "pages": [
     24,
@@ -135,6 +137,7 @@
     "Paper code": "UM9009"
    },
    "question": {
+    "band": [58, 580],
     "columns": [
      [
       30,
@@ -316,6 +319,7 @@
   },
   {
    "id": "uimo-class4-um9254",
+   "trim_options": {"34": {"A": "16"}},
    "title": "UIMO Class 4 \u00b7 UM9254",
    "pages": [
     105,
@@ -377,6 +381,7 @@
   },
   {
    "id": "uimo-class4-um9257",
+   "trim_options": {"23": {"A": "45 cm"}},
    "title": "UIMO Class 4 \u00b7 UM9257",
    "pages": [
     126,

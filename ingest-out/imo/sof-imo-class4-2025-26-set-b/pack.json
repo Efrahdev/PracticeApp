@@ -79,8 +79,8 @@
   "q14-sol": {
    "file": "images/q14-sol.png"
   },
-  "q15-stem-fig": {
-   "file": "images/q15-stem-fig.png"
+  "q15-full": {
+   "file": "images/q15-full.png"
   },
   "q15-sol": {
    "file": "images/q15-sol.png"
@@ -778,23 +778,23 @@
    "id": "q15",
    "number": "15",
    "type": "mcq_single",
-   "stem": "If\n\n![figure](asset:q15-stem-fig)\n\n+",
+   "stem": "![If + = 19 kg, + + + + + + + + = 94 kg and + = 22 kg, then the weight of is . A. 4 kg B. 3 kg C. 2 kg D. 5 kg](asset:q15-full)",
    "options": [
     {
      "label": "A",
-     "text": "4 kg"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "3 kg"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "2 kg"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "5 kg"
+     "text": "Option D"
     }
    ],
    "answer": "A",
@@ -920,7 +920,7 @@
     },
     {
      "label": "D",
-     "text": "200 litres\n\n**th**"
+     "text": "200 litres"
     }
    ],
    "answer": "B",

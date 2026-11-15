@@ -836,7 +836,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "![What is the difference of 4824 g and 4 kg 212 g ? A 612 g B 512 g CLASS : 4](asset:q17-full)",
+   "stem": "![What is the difference of 4824 g and 4 kg 212 g ? A 612 g B 512 g C 1612 g D 1621 g CLASS : 4](asset:q17-full)",
    "options": [
     {
      "label": "A",
@@ -1169,7 +1169,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "![The number in the blank is equal to 2 1 + 2 = 3 3 9 1 1 1 2 A 9 fourths B + + + 9 9 9 9 5 2 ╫ 2 CLASS : 4](asset:q26-full)",
+   "stem": "![The number in the blank is equal to 2 1 + 2 = 3 3 9 1 1 1 2 A 9 fourths B + + + 9 9 9 9 5 2 ╫ 2 C 1 + 9 D 9 CLASS : 4](asset:q26-full)",
    "options": [
     {
      "label": "A",

@@ -97,11 +97,8 @@
   "q22-stem-fig2": {
    "file": "images/q22-stem-fig2.png"
   },
-  "q24-optB": {
-   "file": "images/q24-optB.png"
-  },
-  "q24-stem-fig": {
-   "file": "images/q24-stem-fig.png"
+  "q24-full": {
+   "file": "images/q24-full.png"
   },
   "q27-stem": {
    "file": "images/q27-stem.png"
@@ -1073,23 +1070,23 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "When is added to 59 hundreds, the answer is 300 tens more than 11 thousands.\n\n![figure](asset:q24-stem-fig)",
+   "stem": "![When is added to 59 hundreds, the answer is 300 tens more than 11 thousands. How many tens is ? A 4 B 40 C 34 D 810](asset:q24-full)",
    "options": [
     {
      "label": "A",
-     "text": "How many tens is\n\n4"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![? 40](asset:q24-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "34"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "810"
+     "text": "Option D"
     }
    ],
    "answer": "D",

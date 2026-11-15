@@ -19,14 +19,8 @@
   "q4-stem-fig": {
    "file": "images/q4-stem-fig.png"
   },
-  "q5-stem-fig1": {
-   "file": "images/q5-stem-fig1.png"
-  },
-  "q5-stem-fig2": {
-   "file": "images/q5-stem-fig2.png"
-  },
-  "q5-stem-fig3": {
-   "file": "images/q5-stem-fig3.png"
+  "q5-full": {
+   "file": "images/q5-full.png"
   },
   "q5-sol": {
    "file": "images/q5-sol.png"
@@ -235,20 +229,8 @@
   "q40-stem-fig": {
    "file": "images/q40-stem-fig.png"
   },
-  "q41-optA": {
-   "file": "images/q41-optA.png"
-  },
-  "q41-optB": {
-   "file": "images/q41-optB.png"
-  },
-  "q41-optC": {
-   "file": "images/q41-optC.png"
-  },
-  "q41-optD": {
-   "file": "images/q41-optD.png"
-  },
-  "q41-stem-fig": {
-   "file": "images/q41-stem-fig.png"
+  "q41-full": {
+   "file": "images/q41-full.png"
   },
   "q41-sol": {
    "file": "images/q41-sol.png"
@@ -265,20 +247,8 @@
   "q44-sol": {
    "file": "images/q44-sol.png"
   },
-  "q45-optA": {
-   "file": "images/q45-optA.png"
-  },
-  "q45-optB": {
-   "file": "images/q45-optB.png"
-  },
-  "q45-optC": {
-   "file": "images/q45-optC.png"
-  },
-  "q45-optD": {
-   "file": "images/q45-optD.png"
-  },
-  "q45-stem-fig": {
-   "file": "images/q45-stem-fig.png"
+  "q45-full": {
+   "file": "images/q45-full.png"
   },
   "q45-sol": {
    "file": "images/q45-sol.png"
@@ -497,23 +467,23 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "If = 18\n\n![figure](asset:q5-stem-fig1)\n\n![figure](asset:q5-stem-fig2)\n\n= 16\n\n![figure](asset:q5-stem-fig3)\n\nFind .",
+   "stem": "![If + + + + = 18 + + = 10; + + = 16 Find . A 12 B 18 C 6 D 16](asset:q5-full)",
    "options": [
     {
      "label": "A",
-     "text": "12"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "18"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "6"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "16"
+     "text": "Option D"
     }
    ],
    "answer": "C",
@@ -1937,23 +1907,23 @@
    "id": "q41",
    "number": "41",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n![figure](asset:q41-stem-fig)\n\n= ?",
+   "stem": "![What will come in place of “?” – = ? A B C D](asset:q41-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q41-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q41-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q41-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q41-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "C",
@@ -2097,23 +2067,23 @@
    "id": "q45",
    "number": "45",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n![figure](asset:q45-stem-fig)\n\n= ?",
+   "stem": "![What will come in place of “?” + = ? A B C D](asset:q45-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q45-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q45-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q45-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q45-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "D",

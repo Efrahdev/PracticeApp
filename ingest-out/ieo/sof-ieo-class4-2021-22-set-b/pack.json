@@ -7,14 +7,14 @@
   "subject": "English"
  },
  "assets": {
-  "q12-full": {
-   "file": "images/q12-full.png"
-  },
-  "q13-full": {
-   "file": "images/q13-full.png"
+  "g1-9-fig": {
+   "file": "images/g1-9-fig.png"
   },
   "q15-stem-fig": {
    "file": "images/q15-stem-fig.png"
+  },
+  "g26-30-fig": {
+   "file": "images/g26-30-fig.png"
   },
   "q35-full": {
    "file": "images/q35-full.png"
@@ -25,7 +25,7 @@
    "id": "q1",
    "number": "1",
    "type": "mcq_single",
-   "stem": "We need a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of bananas for the cake.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nWe need a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of bananas for the cake.",
    "options": [
     {
      "label": "A",
@@ -67,7 +67,7 @@
    "id": "q2",
    "number": "2",
    "type": "mcq_single",
-   "stem": "I bought this bag as my sister wants to use \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nI bought this bag as my sister wants to use \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -109,7 +109,7 @@
    "id": "q3",
    "number": "3",
    "type": "mcq_single",
-   "stem": "When I arrived at the party, my friend had already \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nWhen I arrived at the party, my friend had already \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -151,7 +151,7 @@
    "id": "q4",
    "number": "4",
    "type": "mcq_single",
-   "stem": "This is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ most wonderful place I have ever visited.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nThis is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ most wonderful place I have ever visited.",
    "options": [
     {
      "label": "A",
@@ -193,7 +193,7 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "Taking a balanced diet is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ than eating junk food.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nTaking a balanced diet is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ than eating junk food.",
    "options": [
     {
      "label": "A",
@@ -235,7 +235,7 @@
    "id": "q6",
    "number": "6",
    "type": "mcq_single",
-   "stem": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ there lived a bagpiper in a nearby town.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ there lived a bagpiper in a nearby town.",
    "options": [
     {
      "label": "A",
@@ -277,7 +277,7 @@
    "id": "q7",
    "number": "7",
    "type": "mcq_single",
-   "stem": "I saw a little girl peeping \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the window.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nI saw a little girl peeping \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the window.",
    "options": [
     {
      "label": "A",
@@ -319,7 +319,7 @@
    "id": "q8",
    "number": "8",
    "type": "mcq_single",
-   "stem": "You must hurry up \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you will be late.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nYou must hurry up \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you will be late.",
    "options": [
     {
      "label": "A",
@@ -361,7 +361,7 @@
    "id": "q9",
    "number": "9",
    "type": "mcq_single",
-   "stem": "My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ food in the kitchen right now.",
+   "stem": "FOR QUESTIONS 1 TO 9, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n![figure](asset:g1-9-fig)\n\nMy mother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ food in the kitchen right now.",
    "options": [
     {
      "label": "A",
@@ -373,7 +373,7 @@
     },
     {
      "label": "C",
-     "text": "cooked\n\nFOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+     "text": "cooked"
     },
     {
      "label": "D",
@@ -403,7 +403,7 @@
    "id": "q10",
    "number": "10",
    "type": "mcq_single",
-   "stem": "Jayashree passed her final examination with fly colours.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nJayashree passed her final examination with fly colours.",
    "options": [
     {
      "label": "A",
@@ -445,7 +445,7 @@
    "id": "q11",
    "number": "11",
    "type": "mcq_single",
-   "stem": "We all preyed for my brother’s success.",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nWe all preyed for my brother’s success.",
    "options": [
     {
      "label": "A",
@@ -461,7 +461,7 @@
     },
     {
      "label": "D",
-     "text": "success.\n\nFOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING."
+     "text": "success."
     }
    ],
    "answer": "B",
@@ -487,23 +487,23 @@
    "id": "q12",
    "number": "12",
    "type": "mcq_single",
-   "stem": "![A. Temperemunt B. Tamparament C. Temperament D. Temprament](asset:q12-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Temperemunt"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Tamparament"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Temperament"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Temprament"
     }
    ],
    "answer": "C",
@@ -528,23 +528,23 @@
    "id": "q13",
    "number": "13",
    "type": "mcq_single",
-   "stem": "![A. Bombastic B. Bumpastic C. Bombstik D. Bmobsatic](asset:q13-full)",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "Bombastic"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "Bumpastic"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "Bombstik"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "Bmobsatic"
     }
    ],
    "answer": "A",
@@ -653,7 +653,7 @@
    "id": "q16",
    "number": "16",
    "type": "mcq_single",
-   "stem": "The snake used to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOnce upon a time there lived a crow. She had built her nest on a tree. At the root of the same tree, a snake had built its home.\n\nWhenever the crow laid eggs, the snake would eat them up. The crow felt helpless. “That evil snake. I must do something. Let me go and talk to him,” thought the crow. The next morning, the crow went to the snake and said politely, “Please spare my eggs, dear friend. Let us live like good neighbors and not disturb each other.” “Huh! You cannot expect me to go hungry. Eggs are what I eat,” replied the snake, in a nasty tone.\n\nThe crow felt angry and she thought, “I must teach that snake a lesson.”\n\nThe very next day, the crow was flying over the King’s palace. She saw the princess wearing an expensive necklace. Suddenly a thought flashed in her mind and she swooped down, picked up the necklace in her beak and flew off to her nest. When the princess saw the crow flying off with her necklace, she screamed, “Somebody help, the crow has taken my necklace.”\n\nSoon the palace guards were running around in search of the necklace. Within a short time the guards found the crow. She still sat with the necklace hanging from her beak.\n\nThe clever crow thought, “Now is the time to act.” And she dropped the necklace, which fell right into the snake’s pit.\n\nWhen the snake heard the noise, it came out of its pit. The palace guards saw the snake. “A snake! Kill it!” they shouted. With big sticks, they beat the snake and killed it.\n\nThen the guards took the necklace and went back to the princess. The crow was happy, “Now my eggs will be safe,” she thought and led a happy and peaceful life.\n\nThe snake used to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -694,7 +694,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "The crow took away \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOnce upon a time there lived a crow. She had built her nest on a tree. At the root of the same tree, a snake had built its home.\n\nWhenever the crow laid eggs, the snake would eat them up. The crow felt helpless. “That evil snake. I must do something. Let me go and talk to him,” thought the crow. The next morning, the crow went to the snake and said politely, “Please spare my eggs, dear friend. Let us live like good neighbors and not disturb each other.” “Huh! You cannot expect me to go hungry. Eggs are what I eat,” replied the snake, in a nasty tone.\n\nThe crow felt angry and she thought, “I must teach that snake a lesson.”\n\nThe very next day, the crow was flying over the King’s palace. She saw the princess wearing an expensive necklace. Suddenly a thought flashed in her mind and she swooped down, picked up the necklace in her beak and flew off to her nest. When the princess saw the crow flying off with her necklace, she screamed, “Somebody help, the crow has taken my necklace.”\n\nSoon the palace guards were running around in search of the necklace. Within a short time the guards found the crow. She still sat with the necklace hanging from her beak.\n\nThe clever crow thought, “Now is the time to act.” And she dropped the necklace, which fell right into the snake’s pit.\n\nWhen the snake heard the noise, it came out of its pit. The palace guards saw the snake. “A snake! Kill it!” they shouted. With big sticks, they beat the snake and killed it.\n\nThen the guards took the necklace and went back to the princess. The crow was happy, “Now my eggs will be safe,” she thought and led a happy and peaceful life.\n\nThe crow took away \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -735,7 +735,7 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "Where did the crow throw what it picked?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOnce upon a time there lived a crow. She had built her nest on a tree. At the root of the same tree, a snake had built its home.\n\nWhenever the crow laid eggs, the snake would eat them up. The crow felt helpless. “That evil snake. I must do something. Let me go and talk to him,” thought the crow. The next morning, the crow went to the snake and said politely, “Please spare my eggs, dear friend. Let us live like good neighbors and not disturb each other.” “Huh! You cannot expect me to go hungry. Eggs are what I eat,” replied the snake, in a nasty tone.\n\nThe crow felt angry and she thought, “I must teach that snake a lesson.”\n\nThe very next day, the crow was flying over the King’s palace. She saw the princess wearing an expensive necklace. Suddenly a thought flashed in her mind and she swooped down, picked up the necklace in her beak and flew off to her nest. When the princess saw the crow flying off with her necklace, she screamed, “Somebody help, the crow has taken my necklace.”\n\nSoon the palace guards were running around in search of the necklace. Within a short time the guards found the crow. She still sat with the necklace hanging from her beak.\n\nThe clever crow thought, “Now is the time to act.” And she dropped the necklace, which fell right into the snake’s pit.\n\nWhen the snake heard the noise, it came out of its pit. The palace guards saw the snake. “A snake! Kill it!” they shouted. With big sticks, they beat the snake and killed it.\n\nThen the guards took the necklace and went back to the princess. The crow was happy, “Now my eggs will be safe,” she thought and led a happy and peaceful life.\n\nWhere did the crow throw what it picked?",
    "options": [
     {
      "label": "A",
@@ -777,7 +777,7 @@
    "id": "q19",
    "number": "19",
    "type": "mcq_single",
-   "stem": "Who killed the snake?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOnce upon a time there lived a crow. She had built her nest on a tree. At the root of the same tree, a snake had built its home.\n\nWhenever the crow laid eggs, the snake would eat them up. The crow felt helpless. “That evil snake. I must do something. Let me go and talk to him,” thought the crow. The next morning, the crow went to the snake and said politely, “Please spare my eggs, dear friend. Let us live like good neighbors and not disturb each other.” “Huh! You cannot expect me to go hungry. Eggs are what I eat,” replied the snake, in a nasty tone.\n\nThe crow felt angry and she thought, “I must teach that snake a lesson.”\n\nThe very next day, the crow was flying over the King’s palace. She saw the princess wearing an expensive necklace. Suddenly a thought flashed in her mind and she swooped down, picked up the necklace in her beak and flew off to her nest. When the princess saw the crow flying off with her necklace, she screamed, “Somebody help, the crow has taken my necklace.”\n\nSoon the palace guards were running around in search of the necklace. Within a short time the guards found the crow. She still sat with the necklace hanging from her beak.\n\nThe clever crow thought, “Now is the time to act.” And she dropped the necklace, which fell right into the snake’s pit.\n\nWhen the snake heard the noise, it came out of its pit. The palace guards saw the snake. “A snake! Kill it!” they shouted. With big sticks, they beat the snake and killed it.\n\nThen the guards took the necklace and went back to the princess. The crow was happy, “Now my eggs will be safe,” she thought and led a happy and peaceful life.\n\nWho killed the snake?",
    "options": [
     {
      "label": "A",
@@ -819,7 +819,7 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "Which word in the passage means same as ‘incapable’?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOnce upon a time there lived a crow. She had built her nest on a tree. At the root of the same tree, a snake had built its home.\n\nWhenever the crow laid eggs, the snake would eat them up. The crow felt helpless. “That evil snake. I must do something. Let me go and talk to him,” thought the crow. The next morning, the crow went to the snake and said politely, “Please spare my eggs, dear friend. Let us live like good neighbors and not disturb each other.” “Huh! You cannot expect me to go hungry. Eggs are what I eat,” replied the snake, in a nasty tone.\n\nThe crow felt angry and she thought, “I must teach that snake a lesson.”\n\nThe very next day, the crow was flying over the King’s palace. She saw the princess wearing an expensive necklace. Suddenly a thought flashed in her mind and she swooped down, picked up the necklace in her beak and flew off to her nest. When the princess saw the crow flying off with her necklace, she screamed, “Somebody help, the crow has taken my necklace.”\n\nSoon the palace guards were running around in search of the necklace. Within a short time the guards found the crow. She still sat with the necklace hanging from her beak.\n\nThe clever crow thought, “Now is the time to act.” And she dropped the necklace, which fell right into the snake’s pit.\n\nWhen the snake heard the noise, it came out of its pit. The palace guards saw the snake. “A snake! Kill it!” they shouted. With big sticks, they beat the snake and killed it.\n\nThen the guards took the necklace and went back to the princess. The crow was happy, “Now my eggs will be safe,” she thought and led a happy and peaceful life.\n\nWhich word in the passage means same as ‘incapable’?",
    "options": [
     {
      "label": "A",
@@ -831,7 +831,7 @@
     },
     {
      "label": "C",
-     "text": "Swooped\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington."
+     "text": "Swooped"
     },
     {
      "label": "D",
@@ -861,7 +861,7 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "How many girls have played so far in Little League Baseball World Series?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington.\n\nHow many girls have played so far in Little League Baseball World Series?",
    "options": [
     {
      "label": "A",
@@ -903,7 +903,7 @@
    "id": "q22",
    "number": "22",
    "type": "mcq_single",
-   "stem": "Ella’s role model is \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington.\n\nElla’s role model is \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -945,7 +945,7 @@
    "id": "q23",
    "number": "23",
    "type": "mcq_single",
-   "stem": "Which of these sports does Ella not play?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington.\n\nWhich of these sports does Ella not play?",
    "options": [
     {
      "label": "A",
@@ -987,7 +987,7 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "A nickname given to Ella is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington.\n\nA nickname given to Ella is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1029,7 +1029,7 @@
    "id": "q25",
    "number": "25",
    "type": "mcq_single",
-   "stem": "The word ‘potential’ in the second paragraph means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nImagine making it to the biggest stage in youth baseball, yet already knowing you will stand out from the other players. Ella Bruning is just the 20<sup>th</sup> girl to ever play in the Little League Baseball World Series. While she is the odd girl out on her team of 13 boys, her talent has shined behind the plate and on the mound.\n\nElla grew up in a sports family. She followed in her mom’s footsteps as a young girl with tons of talent and lots of **potential.** Ella not only plays baseball, but also softball and basketball, and volleyball. It is no surprise that Ella, who lives in Texas, is a big fan of Astros infielder, Jose Altuve.\n\nWhen she played on the 10-year-old All-Stars team two years ago, with all boys, that’s when the team nickname “Ella and the Fellas” was born.\n\n“On-the-field, they don’t treat me any differently,” she said. “Off-the-field, it’s a little different because I can’t stay with them in a room. I have to stay in my own room.”\n\nSince the summer tournament season has started for the Texas West Little Leaguers, they have been nearly impossible to beat, with their ‘studette’ catcher behind the plate (a nickname her teammates sometimes call her). Ella went 2-for-2 with an RBI and a run in Texas’s win against Washington.\n\nThe word ‘potential’ in the second paragraph means \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1071,7 +1071,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "Sameer : When are you leaving tomorrow?\n\nJatin : I am planning to head \\_\\_\\_\\_\\_\\_\\_\\_\\_ around 8 a.m.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nSameer : When are you leaving tomorrow?\n\nJatin : I am planning to head \\_\\_\\_\\_\\_\\_\\_\\_\\_ around 8 a.m.",
    "options": [
     {
      "label": "A",
@@ -1113,7 +1113,7 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "Reena : Are you coming to the party tonight?\n\nRavi : My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_ think it’s a good idea. So, no.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nReena : Are you coming to the party tonight?\n\nRavi : My mother \\_\\_\\_\\_\\_\\_\\_\\_\\_ think it’s a good idea. So, no.",
    "options": [
     {
      "label": "A",
@@ -1154,7 +1154,7 @@
    "id": "q28",
    "number": "28",
    "type": "mcq_single",
-   "stem": "Seema : I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ running yesterday.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nSeema : I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ running yesterday.",
    "options": [
     {
      "label": "A",
@@ -1195,7 +1195,7 @@
    "id": "q29",
    "number": "29",
    "type": "mcq_single",
-   "stem": "Riti: Father scolded Riya really badly.\n\nKripa : She was wrong so she had to face the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nRiti: Father scolded Riya really badly.\n\nKripa : She was wrong so she had to face the \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -1237,7 +1237,7 @@
    "id": "q30",
    "number": "30",
    "type": "mcq_single",
-   "stem": "Roy : Back \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, don’t disturb me.\n\nGeeta : Sorry, I didn’t mean to.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\n![figure](asset:g26-30-fig)\n\nRoy : Back \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, don’t disturb me.\n\nGeeta : Sorry, I didn’t mean to.",
    "options": [
     {
      "label": "A",
@@ -1278,7 +1278,7 @@
    "id": "q31",
    "number": "31",
    "type": "mcq_single",
-   "stem": "I don’t think that is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I want to visit.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI don’t think that is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I want to visit.",
    "options": [
     {
      "label": "A",
@@ -1320,7 +1320,7 @@
    "id": "q32",
    "number": "32",
    "type": "mcq_single",
-   "stem": "I need a new jacket. Mine is coming \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI need a new jacket. Mine is coming \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",

@@ -121,8 +121,20 @@
   "q34-stem-fig": {
    "file": "images/q34-stem-fig.png"
   },
-  "q35-full": {
-   "file": "images/q35-full.png"
+  "q35-optA": {
+   "file": "images/q35-optA.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  },
+  "q35-optC": {
+   "file": "images/q35-optC.png"
+  },
+  "q35-optD": {
+   "file": "images/q35-optD.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
   },
   "q35-sol": {
    "file": "images/q35-sol.png"
@@ -148,53 +160,14 @@
   "q37-stem-fig": {
    "file": "images/q37-stem-fig.png"
   },
-  "q38-optA": {
-   "file": "images/q38-optA.png"
+  "q38-full": {
+   "file": "images/q38-full.png"
   },
-  "q38-optB": {
-   "file": "images/q38-optB.png"
+  "q39-full": {
+   "file": "images/q39-full.png"
   },
-  "q38-optC": {
-   "file": "images/q38-optC.png"
-  },
-  "q38-optD": {
-   "file": "images/q38-optD.png"
-  },
-  "q38-stem-fig": {
-   "file": "images/q38-stem-fig.png"
-  },
-  "q39-optA": {
-   "file": "images/q39-optA.png"
-  },
-  "q39-optB": {
-   "file": "images/q39-optB.png"
-  },
-  "q39-optC": {
-   "file": "images/q39-optC.png"
-  },
-  "q39-optD": {
-   "file": "images/q39-optD.png"
-  },
-  "q39-stem-fig": {
-   "file": "images/q39-stem-fig.png"
-  },
-  "q41-optA": {
-   "file": "images/q41-optA.png"
-  },
-  "q41-optB": {
-   "file": "images/q41-optB.png"
-  },
-  "q41-optC": {
-   "file": "images/q41-optC.png"
-  },
-  "q41-optD": {
-   "file": "images/q41-optD.png"
-  },
-  "q41-stem-fig1": {
-   "file": "images/q41-stem-fig1.png"
-  },
-  "q41-stem-fig2": {
-   "file": "images/q41-stem-fig2.png"
+  "q41-full": {
+   "file": "images/q41-full.png"
   },
   "q41-sol": {
    "file": "images/q41-sol.png"
@@ -202,26 +175,8 @@
   "q43-stem-fig": {
    "file": "images/q43-stem-fig.png"
   },
-  "q45-optA": {
-   "file": "images/q45-optA.png"
-  },
-  "q45-optB": {
-   "file": "images/q45-optB.png"
-  },
-  "q45-optC": {
-   "file": "images/q45-optC.png"
-  },
-  "q45-optD": {
-   "file": "images/q45-optD.png"
-  },
-  "q45-stem-fig1": {
-   "file": "images/q45-stem-fig1.png"
-  },
-  "q45-stem-fig2": {
-   "file": "images/q45-stem-fig2.png"
-  },
-  "q45-stem-fig3": {
-   "file": "images/q45-stem-fig3.png"
+  "q45-full": {
+   "file": "images/q45-full.png"
   },
   "q45-sol": {
    "file": "images/q45-sol.png"
@@ -241,20 +196,14 @@
   "q47-optD": {
    "file": "images/q47-optD.png"
   },
-  "q47-stem-fig1": {
-   "file": "images/q47-stem-fig1.png"
-  },
-  "q47-stem-fig2": {
-   "file": "images/q47-stem-fig2.png"
+  "q47-stem-fig": {
+   "file": "images/q47-stem-fig.png"
   },
   "q47-sol": {
    "file": "images/q47-sol.png"
   },
-  "q48-stem-fig1": {
-   "file": "images/q48-stem-fig1.png"
-  },
-  "q48-stem-fig2": {
-   "file": "images/q48-stem-fig2.png"
+  "q48-stem-fig": {
+   "file": "images/q48-stem-fig.png"
   },
   "q48-sol": {
    "file": "images/q48-sol.png"
@@ -274,11 +223,8 @@
   "q50-optD": {
    "file": "images/q50-optD.png"
   },
-  "q50-stem-fig1": {
-   "file": "images/q50-stem-fig1.png"
-  },
-  "q50-stem-fig2": {
-   "file": "images/q50-stem-fig2.png"
+  "q50-stem-fig": {
+   "file": "images/q50-stem-fig.png"
   },
   "q50-sol": {
    "file": "images/q50-sol.png"
@@ -1649,27 +1595,27 @@
    "id": "q35",
    "number": "35",
    "type": "mcq_single",
-   "stem": "![The shaded part of which figure represents the difference between 5 8 and 2 8 ? A B C D 5 2 3](asset:q35-full)",
+   "stem": "![The shaded part of which figure represents the difference between 5 8 and 2 8 ?](asset:q35-stem)",
    "options": [
     {
      "label": "A",
-     "text": "Option A"
+     "text": "![option A](asset:q35-optA)"
     },
     {
      "label": "B",
-     "text": "Option B"
+     "text": "![option B](asset:q35-optB)"
     },
     {
      "label": "C",
-     "text": "Option C"
+     "text": "![option C](asset:q35-optC)"
     },
     {
      "label": "D",
-     "text": "Option D"
+     "text": "![option D](asset:q35-optD)"
     }
    ],
    "answer": "C",
-   "solution": "![C Difference = − = 8 8 8 Option ‘C’ represents the shaded part of 3 8](asset:q35-sol)",
+   "solution": "![5 2 3 C Difference = − = 8 8 8 Option ‘C’ represents the shaded part of 3 8](asset:q35-sol)",
    "topics": [
     "Mathematics"
    ],
@@ -1769,23 +1715,23 @@
    "id": "q38",
    "number": "38",
    "type": "mcq_single",
-   "stem": "Identify the next figure in the given sequence.\n\n![figure](asset:q38-stem-fig)\n\n?",
+   "stem": "![Identify the next figure in the given sequence. ? A B C D](asset:q38-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q38-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q38-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q38-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q38-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "B",
@@ -1809,23 +1755,23 @@
    "id": "q39",
    "number": "39",
    "type": "mcq_single",
-   "stem": "Identify the missing pair.\n\n: ?\n\n![figure](asset:q39-stem-fig)",
+   "stem": "![Identify the missing pair. : :: : ? A B C D](asset:q39-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q39-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q39-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q39-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q39-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "C",
@@ -1889,23 +1835,23 @@
    "id": "q41",
    "number": "41",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n![figure](asset:q41-stem-fig1)\n\n= ?\n\n![figure](asset:q41-stem-fig2)",
+   "stem": "![What will come in place of “?” – = ? A B C D](asset:q41-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q41-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q41-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q41-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q41-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "A",
@@ -2049,23 +1995,23 @@
    "id": "q45",
    "number": "45",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n![figure](asset:q45-stem-fig1)\n\n= ?\n\n![figure](asset:q45-stem-fig2)\n\n![figure](asset:q45-stem-fig3)",
+   "stem": "![What will come in place of “?” + = ? A B C D](asset:q45-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q45-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q45-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q45-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q45-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "C",
@@ -2129,7 +2075,7 @@
    "id": "q47",
    "number": "47",
    "type": "mcq_single",
-   "stem": "In a stack of three cards with holes, the top of each card is white and the bottom is yellow. Balu threaded these cards on a rope as shown below. Balu rearranged the cards without untying the rope. Which option below is possible to obtain the same threaded cards ?\n\n![figure](asset:q47-stem-fig1)\n\n![figure](asset:q47-stem-fig2)",
+   "stem": "In a stack of three cards with holes, the top of each card is white and the bottom is yellow. Balu threaded these cards on a rope as shown below. Balu rearranged the cards without untying the rope. Which option below is possible to obtain the same threaded cards ?\n\n![figure](asset:q47-stem-fig)",
    "options": [
     {
      "label": "A",
@@ -2169,7 +2115,7 @@
    "id": "q48",
    "number": "48",
    "type": "mcq_single",
-   "stem": "Akash assembled a stacking toy as shown in the picture below. How many rings will he see looking at it from above ?\n\n![figure](asset:q48-stem-fig1)\n\n![figure](asset:q48-stem-fig2)",
+   "stem": "Akash assembled a stacking toy as shown in the picture below. How many rings will he see looking at it from above ?\n\n![figure](asset:q48-stem-fig)",
    "options": [
     {
      "label": "A",
@@ -2249,7 +2195,7 @@
    "id": "q50",
    "number": "50",
    "type": "mcq_single",
-   "stem": "The given figure shows a strip of stickers. What is the result after all the patterns have been removed from it ?\n\n![figure](asset:q50-stem-fig1)\n\n![figure](asset:q50-stem-fig2)",
+   "stem": "The given figure shows a strip of stickers. What is the result after all the patterns have been removed from it ?\n\n![figure](asset:q50-stem-fig)",
    "options": [
     {
      "label": "A",

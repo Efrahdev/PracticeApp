@@ -91,8 +91,8 @@
   "q19-sol": {
    "file": "images/q19-sol.png"
   },
-  "q21-stem-fig": {
-   "file": "images/q21-stem-fig.png"
+  "q21-full": {
+   "file": "images/q21-full.png"
   },
   "q21-sol": {
    "file": "images/q21-sol.png"
@@ -184,20 +184,8 @@
   "q37-stem-fig": {
    "file": "images/q37-stem-fig.png"
   },
-  "q38-optA": {
-   "file": "images/q38-optA.png"
-  },
-  "q38-optB": {
-   "file": "images/q38-optB.png"
-  },
-  "q38-optC": {
-   "file": "images/q38-optC.png"
-  },
-  "q38-optD": {
-   "file": "images/q38-optD.png"
-  },
-  "q38-stem-fig": {
-   "file": "images/q38-stem-fig.png"
+  "q38-full": {
+   "file": "images/q38-full.png"
   },
   "q38-sol": {
    "file": "images/q38-sol.png"
@@ -205,20 +193,8 @@
   "q39-stem-fig": {
    "file": "images/q39-stem-fig.png"
   },
-  "q41-optA": {
-   "file": "images/q41-optA.png"
-  },
-  "q41-optB": {
-   "file": "images/q41-optB.png"
-  },
-  "q41-optC": {
-   "file": "images/q41-optC.png"
-  },
-  "q41-optD": {
-   "file": "images/q41-optD.png"
-  },
-  "q41-stem-fig": {
-   "file": "images/q41-stem-fig.png"
+  "q41-full": {
+   "file": "images/q41-full.png"
   },
   "q41-sol": {
    "file": "images/q41-sol.png"
@@ -226,20 +202,8 @@
   "q42-stem-fig": {
    "file": "images/q42-stem-fig.png"
   },
-  "q45-optA": {
-   "file": "images/q45-optA.png"
-  },
-  "q45-optB": {
-   "file": "images/q45-optB.png"
-  },
-  "q45-optC": {
-   "file": "images/q45-optC.png"
-  },
-  "q45-optD": {
-   "file": "images/q45-optD.png"
-  },
-  "q45-stem-fig": {
-   "file": "images/q45-stem-fig.png"
+  "q45-full": {
+   "file": "images/q45-full.png"
   },
   "q45-sol": {
    "file": "images/q45-sol.png"
@@ -1092,23 +1056,23 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "State which of the following statements are false.\n\n(P) 200 thousandths = 2 tenths.\n\n(Q) 2, 3, 4, 6 and 12 are the only factors of 12.\n\n![figure](asset:q21-stem-fig)\n\n(R)\n\n(S) 45 678, 45 799, 45 900, 45 899, 45 978 are numbers\n\narranged in increasing order.",
+   "stem": "![State which of the following statements are false. P 200 thousandths = 2 tenths. Q 2, 3, 4, 6 and 12 are the only factors of 12. 21 is smaller than 9 8 R 22 . S 45 678, 45 799, 45 900, 45 899, 45 978 are numbers arranged in increasing order. A P, Q B Q, R C R, S D Q, S](asset:q21-full)",
    "options": [
     {
      "label": "A",
-     "text": "P, Q"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "Q, R"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "R, S"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "Q, S"
+     "text": "Option D"
     }
    ],
    "answer": "D",
@@ -1772,23 +1736,23 @@
    "id": "q38",
    "number": "38",
    "type": "mcq_single",
-   "stem": "Identify the next image in the series.\n\n![figure](asset:q38-stem-fig)\n\n?",
+   "stem": "![Identify the next image in the series. ? A B C D](asset:q38-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q38-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q38-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q38-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q38-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "A",
@@ -1892,23 +1856,23 @@
    "id": "q41",
    "number": "41",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n= ?\n\n![figure](asset:q41-stem-fig)",
+   "stem": "![What will come in place of “?” – = ? A B C D](asset:q41-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q41-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q41-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q41-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q41-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "C",
@@ -2052,23 +2016,23 @@
    "id": "q45",
    "number": "45",
    "type": "mcq_single",
-   "stem": "What will come in place of “?”\n\n![figure](asset:q45-stem-fig)\n\n= ?",
+   "stem": "![What will come in place of “?” + = ? A B C D](asset:q45-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q45-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q45-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q45-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q45-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "B",

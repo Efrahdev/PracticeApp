@@ -19,7 +19,7 @@
    "id": "q1",
    "number": "1",
    "type": "mcq_single",
-   "stem": "I bought \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ milk and \\_\\_\\_\\_\\_\\_ sugar from the supermarket.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI bought \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ milk and \\_\\_\\_\\_\\_\\_ sugar from the supermarket.",
    "options": [
     {
      "label": "A",
@@ -60,7 +60,7 @@
    "id": "q2",
    "number": "2",
    "type": "mcq_single",
-   "stem": "Hurry up! The train will leave in \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_hour.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nHurry up! The train will leave in \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_hour.",
    "options": [
     {
      "label": "A",
@@ -102,7 +102,7 @@
    "id": "q3",
    "number": "3",
    "type": "mcq_single",
-   "stem": "The teacher wants us to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with a better idea.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe teacher wants us to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with a better idea.",
    "options": [
     {
      "label": "A",
@@ -143,7 +143,7 @@
    "id": "q4",
    "number": "4",
    "type": "mcq_single",
-   "stem": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you do me a favour and lend me your science notes, please?",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you do me a favour and lend me your science notes, please?",
    "options": [
     {
      "label": "A",
@@ -185,7 +185,7 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "Peter is not sure \\_\\_\\_\\_\\_\\_\\_\\_ his new job offer. He has still not decided.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nPeter is not sure \\_\\_\\_\\_\\_\\_\\_\\_ his new job offer. He has still not decided.",
    "options": [
     {
      "label": "A",
@@ -226,7 +226,7 @@
    "id": "q6",
    "number": "6",
    "type": "mcq_single",
-   "stem": "You can come over \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you want to.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nYou can come over \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you want to.",
    "options": [
     {
      "label": "A",
@@ -267,7 +267,7 @@
    "id": "q7",
    "number": "7",
    "type": "mcq_single",
-   "stem": "The waiter carried the bowl of soup very \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ because it was filled to the brim.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe waiter carried the bowl of soup very \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ because it was filled to the brim.",
    "options": [
     {
      "label": "A",
@@ -309,7 +309,7 @@
    "id": "q8",
    "number": "8",
    "type": "mcq_single",
-   "stem": "My friends and I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ studying English last night.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nMy friends and I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ studying English last night.",
    "options": [
     {
      "label": "A",
@@ -351,7 +351,7 @@
    "id": "q9",
    "number": "9",
    "type": "mcq_single",
-   "stem": "The final match \\_\\_\\_\\_\\_\\_\\_\\_\\_ by the Indian team.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe final match \\_\\_\\_\\_\\_\\_\\_\\_\\_ by the Indian team.",
    "options": [
     {
      "label": "A",
@@ -392,7 +392,7 @@
    "id": "q10",
    "number": "10",
    "type": "mcq_single",
-   "stem": "As safe is to dangerous, silent is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nAs safe is to dangerous, silent is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -404,7 +404,7 @@
     },
     {
      "label": "C",
-     "text": "quick\n\nFOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+     "text": "quick"
     },
     {
      "label": "D",
@@ -433,7 +433,7 @@
    "id": "q11",
    "number": "11",
    "type": "mcq_single",
-   "stem": "The robber stole the bike the boy parked in between of the shopping mall.",
+   "stem": "FOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nThe robber stole the bike the boy parked in between of the shopping mall.",
    "options": [
     {
      "label": "A",
@@ -475,7 +475,7 @@
    "id": "q12",
    "number": "12",
    "type": "mcq_single",
-   "stem": "The driver were badly hurt in the accident but the passenger suffered only a few bruises.",
+   "stem": "FOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nThe driver were badly hurt in the accident but the passenger suffered only a few bruises.",
    "options": [
     {
      "label": "A",
@@ -641,7 +641,7 @@
    "id": "q16",
    "number": "16",
    "type": "mcq_single",
-   "stem": "Which of the following bears eats only bamboo?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nBears all over the world are considered to be a symbol of power. They are mainly found in north America and Asia. The biggest bear is a polar bear which can be as big as eight feet long and can weigh more than a thousand pounds. The sun bear is the smallest bear that can be as small as four feet long and weighs about 60 pounds.\n\nBears can run up to forty miles per hour. They have jaws strong enough to cut through a tree trunk. They are very smart and know how to snap a hunter’s trap and get the meat without getting caught themselves. Bears are massively built, they have non retractable claws, short tails and short legs. Their fur is very thick to keep them warm. They have an amazing sense of smell.\n\nThere are many species of bears: north American Black bears, mostly found in north America, brown bears which include grizzly bears are the most common bear, found in the forests and valleys in Europe, Asia and western North America, mostly in Canada or Alaska; giant pandas live in the mountains of China whereas sun bears live in south eastern Asian forests, polar bears live near the North Pole. Bears can be omnivores. Some, however, eat only plants and berries. What they eat depends on where they live. Polar bears eat seals and walruses. Brown bears in North America eat many kinds of animals and fish. In Japan, fruit, berries, nuts and insects make up the diet of the brown bears. Giant pandas eat only the bamboo plant. Sloth bears love termites, but will eat berries and honey too.\n\nWhich of the following bears eats only bamboo?",
    "options": [
     {
      "label": "A",
@@ -683,7 +683,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "How fast can bears run?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nBears all over the world are considered to be a symbol of power. They are mainly found in north America and Asia. The biggest bear is a polar bear which can be as big as eight feet long and can weigh more than a thousand pounds. The sun bear is the smallest bear that can be as small as four feet long and weighs about 60 pounds.\n\nBears can run up to forty miles per hour. They have jaws strong enough to cut through a tree trunk. They are very smart and know how to snap a hunter’s trap and get the meat without getting caught themselves. Bears are massively built, they have non retractable claws, short tails and short legs. Their fur is very thick to keep them warm. They have an amazing sense of smell.\n\nThere are many species of bears: north American Black bears, mostly found in north America, brown bears which include grizzly bears are the most common bear, found in the forests and valleys in Europe, Asia and western North America, mostly in Canada or Alaska; giant pandas live in the mountains of China whereas sun bears live in south eastern Asian forests, polar bears live near the North Pole. Bears can be omnivores. Some, however, eat only plants and berries. What they eat depends on where they live. Polar bears eat seals and walruses. Brown bears in North America eat many kinds of animals and fish. In Japan, fruit, berries, nuts and insects make up the diet of the brown bears. Giant pandas eat only the bamboo plant. Sloth bears love termites, but will eat berries and honey too.\n\nHow fast can bears run?",
    "options": [
     {
      "label": "A",
@@ -725,7 +725,7 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "Which of the following are the most common bears?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nBears all over the world are considered to be a symbol of power. They are mainly found in north America and Asia. The biggest bear is a polar bear which can be as big as eight feet long and can weigh more than a thousand pounds. The sun bear is the smallest bear that can be as small as four feet long and weighs about 60 pounds.\n\nBears can run up to forty miles per hour. They have jaws strong enough to cut through a tree trunk. They are very smart and know how to snap a hunter’s trap and get the meat without getting caught themselves. Bears are massively built, they have non retractable claws, short tails and short legs. Their fur is very thick to keep them warm. They have an amazing sense of smell.\n\nThere are many species of bears: north American Black bears, mostly found in north America, brown bears which include grizzly bears are the most common bear, found in the forests and valleys in Europe, Asia and western North America, mostly in Canada or Alaska; giant pandas live in the mountains of China whereas sun bears live in south eastern Asian forests, polar bears live near the North Pole. Bears can be omnivores. Some, however, eat only plants and berries. What they eat depends on where they live. Polar bears eat seals and walruses. Brown bears in North America eat many kinds of animals and fish. In Japan, fruit, berries, nuts and insects make up the diet of the brown bears. Giant pandas eat only the bamboo plant. Sloth bears love termites, but will eat berries and honey too.\n\nWhich of the following are the most common bears?",
    "options": [
     {
      "label": "A",
@@ -766,7 +766,7 @@
    "id": "q19",
    "number": "19",
    "type": "mcq_single",
-   "stem": "Which of the following things sloth bears love to eat?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nBears all over the world are considered to be a symbol of power. They are mainly found in north America and Asia. The biggest bear is a polar bear which can be as big as eight feet long and can weigh more than a thousand pounds. The sun bear is the smallest bear that can be as small as four feet long and weighs about 60 pounds.\n\nBears can run up to forty miles per hour. They have jaws strong enough to cut through a tree trunk. They are very smart and know how to snap a hunter’s trap and get the meat without getting caught themselves. Bears are massively built, they have non retractable claws, short tails and short legs. Their fur is very thick to keep them warm. They have an amazing sense of smell.\n\nThere are many species of bears: north American Black bears, mostly found in north America, brown bears which include grizzly bears are the most common bear, found in the forests and valleys in Europe, Asia and western North America, mostly in Canada or Alaska; giant pandas live in the mountains of China whereas sun bears live in south eastern Asian forests, polar bears live near the North Pole. Bears can be omnivores. Some, however, eat only plants and berries. What they eat depends on where they live. Polar bears eat seals and walruses. Brown bears in North America eat many kinds of animals and fish. In Japan, fruit, berries, nuts and insects make up the diet of the brown bears. Giant pandas eat only the bamboo plant. Sloth bears love termites, but will eat berries and honey too.\n\nWhich of the following things sloth bears love to eat?",
    "options": [
     {
      "label": "A",
@@ -808,7 +808,7 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "Bears can eat \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nBears all over the world are considered to be a symbol of power. They are mainly found in north America and Asia. The biggest bear is a polar bear which can be as big as eight feet long and can weigh more than a thousand pounds. The sun bear is the smallest bear that can be as small as four feet long and weighs about 60 pounds.\n\nBears can run up to forty miles per hour. They have jaws strong enough to cut through a tree trunk. They are very smart and know how to snap a hunter’s trap and get the meat without getting caught themselves. Bears are massively built, they have non retractable claws, short tails and short legs. Their fur is very thick to keep them warm. They have an amazing sense of smell.\n\nThere are many species of bears: north American Black bears, mostly found in north America, brown bears which include grizzly bears are the most common bear, found in the forests and valleys in Europe, Asia and western North America, mostly in Canada or Alaska; giant pandas live in the mountains of China whereas sun bears live in south eastern Asian forests, polar bears live near the North Pole. Bears can be omnivores. Some, however, eat only plants and berries. What they eat depends on where they live. Polar bears eat seals and walruses. Brown bears in North America eat many kinds of animals and fish. In Japan, fruit, berries, nuts and insects make up the diet of the brown bears. Giant pandas eat only the bamboo plant. Sloth bears love termites, but will eat berries and honey too.\n\nBears can eat \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -824,7 +824,7 @@
     },
     {
      "label": "D",
-     "text": "all of these\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again."
+     "text": "all of these"
     }
    ],
    "answer": "D",
@@ -849,7 +849,7 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "How is the weather of the day of the story?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again.\n\nHow is the weather of the day of the story?",
    "options": [
     {
      "label": "A",
@@ -891,7 +891,7 @@
    "id": "q22",
    "number": "22",
    "type": "mcq_single",
-   "stem": "To whom did the speaker meet?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again.\n\nTo whom did the speaker meet?",
    "options": [
     {
      "label": "A",
@@ -932,7 +932,7 @@
    "id": "q23",
    "number": "23",
    "type": "mcq_single",
-   "stem": "Where did they stop?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again.\n\nWhere did they stop?",
    "options": [
     {
      "label": "A",
@@ -974,7 +974,7 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "Why did the driver refuse to drink the tea?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again.\n\nWhy did the driver refuse to drink the tea?",
    "options": [
     {
      "label": "A",
@@ -1015,7 +1015,7 @@
    "id": "q25",
    "number": "25",
    "type": "mcq_single",
-   "stem": "Which quality of the driver left the speaker awestruck?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nIt was a cold and windy night. My friend and I met after so long. We were so lost in chatting that we didn’t notice the time. It was close to ten in the night. We became late so decided to take an autorickshaw to go to our house. Suddenly, it started raining heavily, and we hurried to get into an autorickshaw but because of the rain there was no one on the road. After a while an autorickshaw came. In a hurry we didn’t ask the fare and get into it. The driver asked us where we wanted to go and we gave him the address. He was so kind that he didn’t even bother about the fare.\n\nSince it was very cold, we decided to stop at any tea shop or restaurant to have some tea. We asked the driver and he agreed. He stopped near a small tea-stall. We ordered tea and some cookies, and asked the driver to join us and have a cup of tea. But the driver refused. I again insisted him, but he refused again politely.\n\nI wondered why he was refusing. When I asked, he replied that he didn’t want to trouble us. I was again surprised with his behaviour.\n\nIn fifteen minutes, we reached our home. We paid him the fare and he thanked us. Then I thought to pay him some extra amount as he was so kind and allowed us to have some tea at the tea shop, and also he dropped us to our house very safely and responsibly. When I offered him the money he refused and said’ “I cannot take any extra money, not even a single penny. I have done nothing great. Being a citizen of this country, it’s my duty to take care of my fellow-citizens and help them when they are in need.” I was speechless and was dumbstruck with his integrity, honesty and generosity. I just smiled, and thanked him again.\n\nWhich quality of the driver left the speaker awestruck?",
    "options": [
     {
      "label": "A",
@@ -1057,7 +1057,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "Freda : What was the name of that cartoon \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ last week?\n\nJack : I’m sorry. I really don’t remember.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nFreda : What was the name of that cartoon \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ last week?\n\nJack : I’m sorry. I really don’t remember.",
    "options": [
     {
      "label": "A",
@@ -1098,7 +1098,7 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "Reena : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ was the weather yesterday?\n\nJoy : Oh! Don’t ask. It’s so hot and humid.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nReena : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ was the weather yesterday?\n\nJoy : Oh! Don’t ask. It’s so hot and humid.",
    "options": [
     {
      "label": "A",
@@ -1139,7 +1139,7 @@
    "id": "q28",
    "number": "28",
    "type": "mcq_single",
-   "stem": "Andrew : What do you do \\_\\_\\_\\_\\_\\_\\_\\_\\_ your savings?\n\nSam : I used to put it in the bank. But last month, I spent all of it on buying stocks.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nAndrew : What do you do \\_\\_\\_\\_\\_\\_\\_\\_\\_ your savings?\n\nSam : I used to put it in the bank. But last month, I spent all of it on buying stocks.",
    "options": [
     {
      "label": "A",
@@ -1181,7 +1181,7 @@
    "id": "q29",
    "number": "29",
    "type": "mcq_single",
-   "stem": "Sumit : I need a taxi, please.\n\nJay : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you prefer a private vehicle?\n\nSumit : No, thanks. A taxi is just fine.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nSumit : I need a taxi, please.\n\nJay : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you prefer a private vehicle?\n\nSumit : No, thanks. A taxi is just fine.",
    "options": [
     {
      "label": "A",
@@ -1222,7 +1222,7 @@
    "id": "q30",
    "number": "30",
    "type": "mcq_single",
-   "stem": "Anjali : I’m staying for another two days.\n\nPriya : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q30-stem-fig)",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nAnjali : I’m staying for another two days.\n\nPriya : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q30-stem-fig)",
    "options": [
     {
      "label": "A",
@@ -1263,7 +1263,7 @@
    "id": "q31",
    "number": "31",
    "type": "mcq_single",
-   "stem": "The kids always get late for the school as they are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ ready when the school bus arrives.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe kids always get late for the school as they are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ ready when the school bus arrives.",
    "options": [
     {
      "label": "A",
@@ -1306,7 +1306,7 @@
    "id": "q32",
    "number": "32",
    "type": "mcq_single",
-   "stem": "My brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ see a doctor yesterday because he had a headache.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nMy brother \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ see a doctor yesterday because he had a headache.",
    "options": [
     {
      "label": "A",
@@ -1349,7 +1349,7 @@
    "id": "q33",
    "number": "33",
    "type": "mcq_single",
-   "stem": "Reema didn’t answer the phone \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ she didn’t hear it ring.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nReema didn’t answer the phone \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ she didn’t hear it ring.",
    "options": [
     {
      "label": "A",

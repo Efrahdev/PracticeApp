@@ -38,6 +38,7 @@
    "size": 13,
    "font": "Helvetica-Bold"
   },
+  "group_any_regex": "^(?:FOR QUESTIONS?|DIRECTIONS?)\\b",
   "group_regex": "^(?:DIRECTIONS?\\b|For questions?\\b|Choose|Select|Identify|Pick|Find|Read|Fill|Complete|Rearrange|Arrange|Look|Study)",
   "group_panel_only": true
  },

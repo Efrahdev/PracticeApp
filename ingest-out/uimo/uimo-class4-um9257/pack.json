@@ -289,20 +289,8 @@
   "q44-sol": {
    "file": "images/q44-sol.png"
   },
-  "q45-optA": {
-   "file": "images/q45-optA.png"
-  },
-  "q45-optB": {
-   "file": "images/q45-optB.png"
-  },
-  "q45-optC": {
-   "file": "images/q45-optC.png"
-  },
-  "q45-optD": {
-   "file": "images/q45-optD.png"
-  },
-  "q45-stem-fig": {
-   "file": "images/q45-stem-fig.png"
+  "q45-full": {
+   "file": "images/q45-full.png"
   },
   "q45-sol": {
    "file": "images/q45-sol.png"
@@ -1272,7 +1260,7 @@
    "options": [
     {
      "label": "A",
-     "text": "45 cm\n\n**1**"
+     "text": "45 cm"
     },
     {
      "label": "B",
@@ -2148,23 +2136,23 @@
    "id": "q45",
    "number": "45",
    "type": "mcq_single",
-   "stem": "What will come in place of question mark ?\n\n![figure](asset:q45-stem-fig)\n\n= ?",
+   "stem": "![What will come in place of question mark ? + = ? A B C D](asset:q45-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q45-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q45-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q45-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q45-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "D",

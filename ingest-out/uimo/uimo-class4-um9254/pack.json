@@ -163,14 +163,8 @@
   "q26-sol": {
    "file": "images/q26-sol.png"
   },
-  "q27-stem-fig1": {
-   "file": "images/q27-stem-fig1.png"
-  },
-  "q27-stem-fig2": {
-   "file": "images/q27-stem-fig2.png"
-  },
-  "q27-stem-fig3": {
-   "file": "images/q27-stem-fig3.png"
+  "q27-full": {
+   "file": "images/q27-full.png"
   },
   "q27-sol": {
    "file": "images/q27-sol.png"
@@ -268,20 +262,8 @@
   "q38-sol": {
    "file": "images/q38-sol.png"
   },
-  "q39-optA": {
-   "file": "images/q39-optA.png"
-  },
-  "q39-optB": {
-   "file": "images/q39-optB.png"
-  },
-  "q39-optC": {
-   "file": "images/q39-optC.png"
-  },
-  "q39-optD": {
-   "file": "images/q39-optD.png"
-  },
-  "q39-stem-fig": {
-   "file": "images/q39-stem-fig.png"
+  "q39-full": {
+   "file": "images/q39-full.png"
   },
   "q39-sol": {
    "file": "images/q39-sol.png"
@@ -1395,23 +1377,23 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "If = 4041\n\n![figure](asset:q27-stem-fig1)\n\n![figure](asset:q27-stem-fig2)\n\n= 5118\n\n![figure](asset:q27-stem-fig3)\n\nthen = ?",
+   "stem": "![If + + = 4041 + + = 5118 then + = ? A 2335 B 2353 C 2533 D 3523](asset:q27-full)",
    "options": [
     {
      "label": "A",
-     "text": "2335"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "2353"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "2533"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "3523"
+     "text": "Option D"
     }
    ],
    "answer": "A",
@@ -1679,7 +1661,7 @@
    "options": [
     {
      "label": "A",
-     "text": "16\n\n**4**"
+     "text": "16"
     },
     {
      "label": "B",
@@ -1875,23 +1857,23 @@
    "id": "q39",
    "number": "39",
    "type": "mcq_single",
-   "stem": "Which option will come in place of question mark ?\n\n![figure](asset:q39-stem-fig)\n\n: ?",
+   "stem": "![Which option will come in place of question mark ? : :: : ? A B C D](asset:q39-full)",
    "options": [
     {
      "label": "A",
-     "text": "![option A](asset:q39-optA)"
+     "text": "Option A"
     },
     {
      "label": "B",
-     "text": "![option B](asset:q39-optB)"
+     "text": "Option B"
     },
     {
      "label": "C",
-     "text": "![option C](asset:q39-optC)"
+     "text": "Option C"
     },
     {
      "label": "D",
-     "text": "![option D](asset:q39-optD)"
+     "text": "Option D"
     }
    ],
    "answer": "C",

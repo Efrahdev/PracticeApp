@@ -31,10 +31,13 @@
   "paper_flags": [],
   "pictures": {
    "9": [
-    "kept as a picture of the whole question: no options found"
+    "kept as a picture of the whole question: no options found; no options found (pictures printed inside the text line)"
    ],
    "13": [
     "kept as a picture of the whole question: text among the options that belongs to no option: Q"
+   ],
+   "15": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
    ],
    "24": [
     "kept as a picture of the whole question: option B overlaps other text; stem is empty"
@@ -123,6 +126,9 @@
   "images": 66,
   "paper_flags": [],
   "pictures": {
+   "18": [
+    "kept as a picture of the whole question: no options found (kept as printed: reviewed layout)"
+   ],
    "20": [
     "kept as a picture of the whole question: text among the options that belongs to no option: Q"
    ]

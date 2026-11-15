@@ -91,6 +91,7 @@
   },
   {
    "id": "sof-imo-class4-2025-26-set-b",
+   "trim_options": {"18": {"D": "200 litres"}},
    "title": "SOF IMO Class 4 \u00b7 2025-26 \u00b7 Set B",
    "pages": [
     17,
@@ -147,6 +148,7 @@
   },
   {
    "id": "sof-imo-class4-2023-24-set-b",
+   "picture_questions": [18],
    "title": "SOF IMO Class 4 \u00b7 2023-24 \u00b7 Set B",
    "pages": [
     57,

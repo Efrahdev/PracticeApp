@@ -61,19 +61,9 @@
   "flagged": 0,
   "answers": 35,
   "solutions": 33,
-  "images": 9,
+  "images": 6,
   "paper_flags": [],
-  "pictures": {
-   "7": [
-    "kept as a picture of the whole question: text among the options that belongs to no option: WORD."
-   ],
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ]
-  },
+  "pictures": {},
   "flags": {}
  },
  {
@@ -82,19 +72,9 @@
   "flagged": 0,
   "answers": 35,
   "solutions": 33,
-  "images": 7,
+  "images": 4,
   "paper_flags": [],
-  "pictures": {
-   "7": [
-    "kept as a picture of the whole question: text among the options that belongs to no option: WORD."
-   ],
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ]
-  },
+  "pictures": {},
   "flags": {}
  },
  {
@@ -103,21 +83,9 @@
   "flagged": 0,
   "answers": 35,
   "solutions": 33,
-  "images": 10,
+  "images": 7,
   "paper_flags": [],
   "pictures": {
-   "7": [
-    "kept as a picture of the whole question: text among the options that belongs to no option: WORD."
-   ],
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "20": [
-    "kept as a picture of the whole question: option D overlaps other text; text among the options that belongs to no option: - The Dreaming Priest from the Panchatantra Tales"
-   ],
    "35": [
     "kept as a picture of the whole question: text among the options that belongs to no option: vvv"
    ]
@@ -130,18 +98,9 @@
   "flagged": 0,
   "answers": 35,
   "solutions": 31,
-  "images": 7,
+  "images": 5,
   "paper_flags": [],
   "pictures": {
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "20": [
-    "kept as a picture of the whole question: option C overlaps other text"
-   ],
    "35": [
     "kept as a picture of the whole question: text among the options that belongs to no option: vvv"
    ]
@@ -157,12 +116,6 @@
   "images": 4,
   "paper_flags": [],
   "pictures": {
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
    "35": [
     "kept as a picture of the whole question: text among the options that belongs to no option: vvv"
    ]
@@ -178,12 +131,6 @@
   "images": 4,
   "paper_flags": [],
   "pictures": {
-   "12": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
-   "13": [
-    "kept as a picture of the whole question: stem is empty"
-   ],
    "35": [
     "kept as a picture of the whole question: text among the options that belongs to no option: vvv"
    ]

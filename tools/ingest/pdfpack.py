@@ -714,7 +714,7 @@ def find_markers(doc: Doc, pages, cfg):
                 continue
             in_panel = [p for p in pg["panels"] if contains(p, l, 2)]
             first_in_panel = bool(in_panel) and not any(o is not l and contains(in_panel[0], o, 2) and o.cy < l.y0 for o in ls)
-            if grx and (m := grx.search(tn)) and (not cfg.get("group_panel_only") or first_in_panel) and (not cfg.get("group_x") or cfg["group_x"][0] <= l.x0 - s["x0"] <= cfg["group_x"][1]):
+            if grx and (m := grx.search(tn)) and (not cfg.get("group_panel_only") or first_in_panel or (cfg.get("group_any_regex") and re.search(cfg["group_any_regex"], tn))) and (not cfg.get("group_x") or cfg["group_x"][0] <= l.x0 - s["x0"] <= cfg["group_x"][1]):
                 out.append(Marker("group", s["pno"], si, l.y0, l, m, top))
                 continue
             m = arx.match(t)
@@ -1120,6 +1120,21 @@ def parse_solutions(doc: Doc, prof):
     return out, flags
 
 
+def inline_split(stem):
+    """True if a text paragraph next to a figure is a dangling piece of an inline equation."""
+    for para in (x.strip() for x in stem.split("\n\n")):
+        if not para or "asset:" in para:
+            continue
+        core = re.sub(r"\\(.)", r"\1", para)
+        if len(core) <= 4 and not re.search(r"[A-Za-z]{2,}", core):
+            return True
+        if re.search(r"[=+×÷\-–]\s*$", core) or re.match(r"^\s*[=+×÷]", core):
+            return True
+        if re.search(r"(?:^|\s)(?:If|then|Find|of|is)\s*[=.?]", core):
+            return True
+    return False
+
+
 def build_paper(doc: Doc, prof, paper, sols, out_root):
     cfg = dict(prof["question"], **paper.get("question", {}))
     pid = paper["id"]
@@ -1169,7 +1184,10 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
         if inline_sol:  # "Sol: (B) ..." printed straight after the question
             sl_ = next((l for l in reg.lines if inline_sol.match(l.text.strip())), None)
             if sl_ is not None:
-                cut, qp, sp = sl_.y0 - 0.5, [], []
+                # cut above the whole "Sol:" row: shapes / symbols printed beside it start higher than the word
+                row = [o.y0 for o in reg.lines if o.y0 < sl_.y1 and o.y1 > sl_.y0]
+                row += [o.y0 for o in cluster(reg.boxes, 3) if o.y0 < sl_.y1 and o.y1 > sl_.y0 and o.h < 120]
+                cut, qp, sp = min([sl_.y0] + row) - 0.5, [], []
                 for pc in reg.pieces:
                     a, b = pc.voff, pc.voff + (pc.y1 - pc.y0)
                     if cut >= b:
@@ -1195,11 +1213,25 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
         notes = []
         if cfg.get("force_picture"):
             flags.append("no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)")
+        if "-fig" in stem and inline_split(stem):
+            # small pictures printed inside a line of text ("If [shape][shape] = 18") come out as separate
+            # fragments; the question would read wrongly, so keep it exactly as printed.
+            flags.append("no options found (pictures printed inside the text line)")
+        if n in paper.get("picture_questions", []):  # reviewed: text split is scrambled, keep the printed picture
+            flags.append("no options found (kept as printed: reviewed layout)")
         if any(h in f for f in flags for h in ("options found", "no options", "is empty", "overlaps", "belongs to no option", "nothing to crop")):
             # Layout could not be split with certainty: keep the question exactly as printed.
             pack.drop(f"{qname}-")
             x0 = (margin - 3) if margin is not None else ((anchor.x1 + 1) if anchor is not None else 0)
-            im = reg.crop(x0, 0, reg.w, reg.vh, pad=0)
+            vh = reg.vh
+            pcut = [re.compile(r) for r in cfg.get("picture_cut", [])]
+            if pcut:  # stop the picture at page furniture (footers, rough-work boxes, next-section banners)
+                furn = lambda l: any(r.search(norm(l.text)) for r in pcut) or len(norm(l.text)) <= 3
+                ys = [l.y0 for l in reg.lines if l is not anchor and l.y0 > 20 and any(r.search(norm(l.text)) for r in pcut)
+                      and all(furn(o) for o in reg.lines if o.y0 > l.y0)]  # only if nothing but furniture follows
+                if ys:
+                    vh = min(ys) - 2
+            im = reg.crop(x0, 0, reg.w, vh, pad=0)
             if im is not None:
                 alt = alt_text([l for l in reg.lines if l is not anchor]) or f"question {n}"
                 stem = f"![{alt}](asset:{pack.add(im, f'{qname}-full')})"
@@ -1213,6 +1245,20 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
             snap.save(os.path.join(out_dir, "snapshots", f"q{n}.png"), optimize=True)
         q = {"id": qname, "number": str(n), "type": "mcq_single", "stem": stem,
              "options": [{"label": o["label"], "text": o["text"]} for o in opts]}
+        if n in paper.get("drop_stem_figures", []):  # reviewed: the only "figure" is a stray page decoration
+            refs = re.findall(r"!\[[^\]]*\]\(asset:([^)]+-stem-fig[^)]*)\)", q["stem"])
+            if not refs:
+                raise SystemExit(f"{pid} Q{n}: drop_stem_figures set but no stem figure found")
+            q["stem"] = re.sub(r"\s*!\[[^\]]*\]\(asset:[^)]+-stem-fig[^)]*\)", "", q["stem"]).strip()
+            for r in refs:
+                pack.drop(r)
+        for lab, keep in (paper.get("trim_options", {}).get(str(n), {})).items():
+            # reviewed: drop a stray fragment (page number, neighbouring label) caught under an option.
+            # Only trimming is allowed: the kept text must be the start of what the page gave.
+            o = next(o for o in q["options"] if o["label"] == lab)
+            if not o["text"].startswith(keep):
+                raise SystemExit(f"{pid} Q{n} option {lab}: trim text {keep!r} is not a prefix of {o['text']!r}")
+            o["text"] = keep
         # answer + solution
         if isol is not None:
             sl2 = [l for l in isol.lines if not inline_sol.match(l.text.strip())]
@@ -1222,7 +1268,7 @@ def build_paper(doc: Doc, prof, paper, sols, out_root):
             else:  # "Sol. (B)" on the marker line, or "Sol:  (C)" with stray symbols sorted first
                 mm = re.search(r"\(([A-E])\)", sl_.text)
                 if not mm:
-                    row = [re.match(r"\(([A-E])\)", l.text.strip()) for l in isol.lines if abs(l.cy - (sl_.h / 2 + 0.5)) < 8 and l.x0 >= sl_.x1 - 1]
+                    row = [re.match(r"\(([A-E])\)", l.text.strip()) for l in isol.lines if abs(l.cy - (sl_.cy - cut)) < 8 and l.x0 >= sl_.x1 - 1]
                     mm = next((r for r in row if r), None)
                 if mm:
                     q["answer"] = mm.group(1)

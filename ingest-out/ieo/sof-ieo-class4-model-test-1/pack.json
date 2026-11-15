@@ -22,7 +22,7 @@
    "id": "q1",
    "number": "1",
    "type": "mcq_single",
-   "stem": "There are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ eggs to bake a cake.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThere are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ eggs to bake a cake.",
    "options": [
     {
      "label": "A",
@@ -63,7 +63,7 @@
    "id": "q2",
    "number": "2",
    "type": "mcq_single",
-   "stem": "Raj’s father is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ engineer but he wants to become \\_\\_\\_\\_\\_\\_\\_\\_\\_ doctor.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nRaj’s father is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ engineer but he wants to become \\_\\_\\_\\_\\_\\_\\_\\_\\_ doctor.",
    "options": [
     {
      "label": "A",
@@ -105,7 +105,7 @@
    "id": "q3",
    "number": "3",
    "type": "mcq_single",
-   "stem": "Why don’t you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your shoes and relax?",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nWhy don’t you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ your shoes and relax?",
    "options": [
     {
      "label": "A",
@@ -147,7 +147,7 @@
    "id": "q4",
    "number": "4",
    "type": "mcq_single",
-   "stem": "I’m sorry. I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ have done it by mistake.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI’m sorry. I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ have done it by mistake.",
    "options": [
     {
      "label": "A",
@@ -189,7 +189,7 @@
    "id": "q5",
    "number": "5",
    "type": "mcq_single",
-   "stem": "All trains leaving from platform 6 are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ time.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nAll trains leaving from platform 6 are \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ time.",
    "options": [
     {
      "label": "A",
@@ -230,7 +230,7 @@
    "id": "q6",
    "number": "6",
    "type": "mcq_single",
-   "stem": "Have you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ finished your work?",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nHave you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ finished your work?",
    "options": [
     {
      "label": "A",
@@ -271,7 +271,7 @@
    "id": "q7",
    "number": "7",
    "type": "mcq_single",
-   "stem": "Your brother bought a new house, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nYour brother bought a new house, \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?",
    "options": [
     {
      "label": "A",
@@ -312,7 +312,7 @@
    "id": "q8",
    "number": "8",
    "type": "mcq_single",
-   "stem": "I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ on this project for two months, I hope I will finish it soon.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ on this project for two months, I hope I will finish it soon.",
    "options": [
     {
      "label": "A",
@@ -354,7 +354,7 @@
    "id": "q9",
    "number": "9",
    "type": "mcq_single",
-   "stem": "This book \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ by Joseph Conrad.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThis book \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ by Joseph Conrad.",
    "options": [
     {
      "label": "A",
@@ -395,7 +395,7 @@
    "id": "q10",
    "number": "10",
    "type": "mcq_single",
-   "stem": "As hungry is to eat, tired is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 1 TO 10, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nAs hungry is to eat, tired is to \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -407,7 +407,7 @@
     },
     {
      "label": "C",
-     "text": "jump\n\nFOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR."
+     "text": "jump"
     },
     {
      "label": "D",
@@ -436,7 +436,7 @@
    "id": "q11",
    "number": "11",
    "type": "mcq_single",
-   "stem": "The Shatabdi Superfast is an express train which runs between Delhi to Lucknow.",
+   "stem": "FOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nThe Shatabdi Superfast is an express train which runs between Delhi to Lucknow.",
    "options": [
     {
      "label": "A",
@@ -478,7 +478,7 @@
    "id": "q12",
    "number": "12",
    "type": "mcq_single",
-   "stem": "Sakshi does not enjoy her piano lessons when she was seven though she was very fond of music.",
+   "stem": "FOR QUESTIONS 11 AND 12, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nSakshi does not enjoy her piano lessons when she was seven though she was very fond of music.",
    "options": [
     {
      "label": "A",
@@ -645,7 +645,7 @@
    "id": "q16",
    "number": "16",
    "type": "mcq_single",
-   "stem": "What was Alice doing when the story begins?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, Alice was lying under a tree listening to her sister reading a story. Suddenly, she saw a white rabbit scamper by. He had pink eyes and was wearing a blue coat. He took out a big watch from his waistcoat pocket as he hurried away, he said, “Oh dear, I will be too late!”\n\nShe thought there was something very different about this rabbit. It could talk, it wore a red waistcoat and it carried a watch.\n\nAlice wondered, “A talking rabbit? A rabbit who wears a waistcoat.” Alice was burning with curiosity and she followed the white rabbit.\n\nThe rabbit started running and Alice followed the rabbit. The rabbit suddenly popped into a large rabbit hole. Alice jumped into the rabbit hole too! The rabbit went down and down and down and down into the rabbit hole.\n\nWhat was Alice doing when the story begins?",
    "options": [
     {
      "label": "A",
@@ -687,7 +687,7 @@
    "id": "q17",
    "number": "17",
    "type": "mcq_single",
-   "stem": "Who was reading a story?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, Alice was lying under a tree listening to her sister reading a story. Suddenly, she saw a white rabbit scamper by. He had pink eyes and was wearing a blue coat. He took out a big watch from his waistcoat pocket as he hurried away, he said, “Oh dear, I will be too late!”\n\nShe thought there was something very different about this rabbit. It could talk, it wore a red waistcoat and it carried a watch.\n\nAlice wondered, “A talking rabbit? A rabbit who wears a waistcoat.” Alice was burning with curiosity and she followed the white rabbit.\n\nThe rabbit started running and Alice followed the rabbit. The rabbit suddenly popped into a large rabbit hole. Alice jumped into the rabbit hole too! The rabbit went down and down and down and down into the rabbit hole.\n\nWho was reading a story?",
    "options": [
     {
      "label": "A",
@@ -728,7 +728,7 @@
    "id": "q18",
    "number": "18",
    "type": "mcq_single",
-   "stem": "What does Alice find so strange about the rabbit?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, Alice was lying under a tree listening to her sister reading a story. Suddenly, she saw a white rabbit scamper by. He had pink eyes and was wearing a blue coat. He took out a big watch from his waistcoat pocket as he hurried away, he said, “Oh dear, I will be too late!”\n\nShe thought there was something very different about this rabbit. It could talk, it wore a red waistcoat and it carried a watch.\n\nAlice wondered, “A talking rabbit? A rabbit who wears a waistcoat.” Alice was burning with curiosity and she followed the white rabbit.\n\nThe rabbit started running and Alice followed the rabbit. The rabbit suddenly popped into a large rabbit hole. Alice jumped into the rabbit hole too! The rabbit went down and down and down and down into the rabbit hole.\n\nWhat does Alice find so strange about the rabbit?",
    "options": [
     {
      "label": "A",
@@ -770,7 +770,7 @@
    "id": "q19",
    "number": "19",
    "type": "mcq_single",
-   "stem": "Where does the rabbit go?",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, Alice was lying under a tree listening to her sister reading a story. Suddenly, she saw a white rabbit scamper by. He had pink eyes and was wearing a blue coat. He took out a big watch from his waistcoat pocket as he hurried away, he said, “Oh dear, I will be too late!”\n\nShe thought there was something very different about this rabbit. It could talk, it wore a red waistcoat and it carried a watch.\n\nAlice wondered, “A talking rabbit? A rabbit who wears a waistcoat.” Alice was burning with curiosity and she followed the white rabbit.\n\nThe rabbit started running and Alice followed the rabbit. The rabbit suddenly popped into a large rabbit hole. Alice jumped into the rabbit hole too! The rabbit went down and down and down and down into the rabbit hole.\n\nWhere does the rabbit go?",
    "options": [
     {
      "label": "A",
@@ -812,7 +812,7 @@
    "id": "q20",
    "number": "20",
    "type": "mcq_single",
-   "stem": "The word ‘scamper’ in the first paragraph means the same as \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, Alice was lying under a tree listening to her sister reading a story. Suddenly, she saw a white rabbit scamper by. He had pink eyes and was wearing a blue coat. He took out a big watch from his waistcoat pocket as he hurried away, he said, “Oh dear, I will be too late!”\n\nShe thought there was something very different about this rabbit. It could talk, it wore a red waistcoat and it carried a watch.\n\nAlice wondered, “A talking rabbit? A rabbit who wears a waistcoat.” Alice was burning with curiosity and she followed the white rabbit.\n\nThe rabbit started running and Alice followed the rabbit. The rabbit suddenly popped into a large rabbit hole. Alice jumped into the rabbit hole too! The rabbit went down and down and down and down into the rabbit hole.\n\nThe word ‘scamper’ in the first paragraph means the same as \\_\\_\\_\\_\\_\\_\\_\\_.",
    "options": [
     {
      "label": "A",
@@ -824,7 +824,7 @@
     },
     {
      "label": "C",
-     "text": "scared\n\nFOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”"
+     "text": "scared"
     },
     {
      "label": "D",
@@ -854,7 +854,7 @@
    "id": "q21",
    "number": "21",
    "type": "mcq_single",
-   "stem": "What did the squirrel see?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”\n\nWhat did the squirrel see?",
    "options": [
     {
      "label": "A",
@@ -896,7 +896,7 @@
    "id": "q22",
    "number": "22",
    "type": "mcq_single",
-   "stem": "What happened to the squirrel after eating a lot of nuts?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”\n\nWhat happened to the squirrel after eating a lot of nuts?",
    "options": [
     {
      "label": "A",
@@ -938,7 +938,7 @@
    "id": "q23",
    "number": "23",
    "type": "mcq_single",
-   "stem": "Who helped the squirrel?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”\n\nWho helped the squirrel?",
    "options": [
     {
      "label": "A",
@@ -979,7 +979,7 @@
    "id": "q24",
    "number": "24",
    "type": "mcq_single",
-   "stem": "Which trait of squirrel has been discussed in the story?",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”\n\nWhich trait of squirrel has been discussed in the story?",
    "options": [
     {
      "label": "A",
@@ -1020,7 +1020,7 @@
    "id": "q25",
    "number": "25",
    "type": "mcq_single",
-   "stem": "The antonym of squeezed as given in para 1 is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q25-stem-fig)",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nA greedy squirrel saw a basket full of nuts. She wanted to eat it. So she made a small hole in the basket. She squeezed in through the hole. She ate a lot of nuts. She felt so happy as she ate to the fullest.\n\nNow she wanted to come out. She tried to come out through the small hole. But she could not. Her belly was full. She tried again but it was of no use. She tried harder and harder to come out of the basket but all in vain. The squirrel started crying. A mouse was passing by. It heard the squirrel’s cry and asked, “What is the matter? Why are you crying?”\n\nThe squirrel explained, “I made a small hole and came into the basket to eat nuts. Now I am unable to come out. Can you please help me, little mouse?” The mouse felt pity on her and agreed to help her. He made another big hole into the basket and helped the squirrel to come out of it. The squirrel was so pleased with his kindness. She thanked him and they both became good friends. The mouse then advised her that, “Greed always leads to problems, so never allow greed to overpower you.”\n\nThe antonym of squeezed as given in para 1 is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q25-stem-fig)",
    "options": [
     {
      "label": "A",
@@ -1061,7 +1061,7 @@
    "id": "q26",
    "number": "26",
    "type": "mcq_single",
-   "stem": "Disha : I haven’t seen you for days. Where \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?\n\nPinky : I went to visit my grandmother.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nDisha : I haven’t seen you for days. Where \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_?\n\nPinky : I went to visit my grandmother.",
    "options": [
     {
      "label": "A",
@@ -1103,7 +1103,7 @@
    "id": "q27",
    "number": "27",
    "type": "mcq_single",
-   "stem": "Ran : What did you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of the film?\n\nFred : Well, it wasn’t as good as I had expected it to be.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nRan : What did you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of the film?\n\nFred : Well, it wasn’t as good as I had expected it to be.",
    "options": [
     {
      "label": "A",
@@ -1145,7 +1145,7 @@
    "id": "q28",
    "number": "28",
    "type": "mcq_single",
-   "stem": "Daniel : Come on in, Anne. Welcome to our house.\n\nAnne : Good morning Daniel. What a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ house you have!",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nDaniel : Come on in, Anne. Welcome to our house.\n\nAnne : Good morning Daniel. What a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ house you have!",
    "options": [
     {
      "label": "A",
@@ -1186,7 +1186,7 @@
    "id": "q29",
    "number": "29",
    "type": "mcq_single",
-   "stem": "A : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ has your day been? B : Oh, I had a busy day today.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nA : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ has your day been? B : Oh, I had a busy day today.",
    "options": [
     {
      "label": "A",
@@ -1227,7 +1227,7 @@
    "id": "q30",
    "number": "30",
    "type": "mcq_single",
-   "stem": "Interviewer : How \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ languages do you speak?\n\nInterviewee : I speak two languages.",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE CORRECT OPTION TO COMPLETE EACH CONVERSATION.\n\nInterviewer : How \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ languages do you speak?\n\nInterviewee : I speak two languages.",
    "options": [
     {
      "label": "A",
@@ -1268,7 +1268,7 @@
    "id": "q31",
    "number": "31",
    "type": "mcq_single",
-   "stem": "I always do my assignment on time. I \\_\\_\\_\\_\\_\\_\\_\\_ want to get in trouble.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nI always do my assignment on time. I \\_\\_\\_\\_\\_\\_\\_\\_ want to get in trouble.",
    "options": [
     {
      "label": "A",
@@ -1311,7 +1311,7 @@
    "id": "q32",
    "number": "32",
    "type": "mcq_single",
-   "stem": "James has some more work to do \\_\\_\\_\\_\\_\\_\\_\\_\\_ he’ll come home late.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nJames has some more work to do \\_\\_\\_\\_\\_\\_\\_\\_\\_ he’ll come home late.",
    "options": [
     {
      "label": "A",
@@ -1354,7 +1354,7 @@
    "id": "q33",
    "number": "33",
    "type": "mcq_single",
-   "stem": "Excuse me, I need some \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ about the fee structure and duration of MBA course in your college.",
+   "stem": "FOR QUESTIONS 31 TO 33, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nExcuse me, I need some \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ about the fee structure and duration of MBA course in your college.",
    "options": [
     {
      "label": "A",
