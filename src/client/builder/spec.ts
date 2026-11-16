@@ -38,6 +38,7 @@ export interface PoolSpec {
   text: string; // words, Q number or ID
   tree: string[] | null; // ticked concept ids + "u:<subject>" (not tagged); null = everything
   difficulty: string[] | null; // ticked labels (NONE = no label); null = all
+  attempted: "any" | "yes" | "no"; // attempted before / never attempted
   recency: Recency;
   attempts: Range;
   results: ResultBucket[]; // [] = any
@@ -83,6 +84,7 @@ export function defaultPool(): PoolSpec {
     text: "",
     tree: null,
     difficulty: null,
+    attempted: "any",
     recency: { mode: "any", n: 3, m: 8, unit: "weeks", includeNever: true },
     attempts: anyRange(),
     results: [],
@@ -146,8 +148,10 @@ export function normaliseBlueprint(raw: unknown): Blueprint {
     text: typeof p.text === "string" ? p.text : "",
     tree: p.tree === null || p.tree === undefined ? null : strs(p.tree),
     difficulty: p.difficulty === null || p.difficulty === undefined ? null : strs(p.difficulty),
+    // older rules said "never attempted" through Last attempted = Never; that is now the Attempted rule
+    attempted: p.recency?.mode === "never" ? "no" : oneOf(p.attempted, ["any", "yes", "no"] as const, "any"),
     recency: {
-      mode: oneOf(p.recency?.mode, ["any", "never", "more_than", "within", "between"] as const, "any"),
+      mode: p.recency?.mode === "never" ? "any" : oneOf(p.recency?.mode, ["any", "more_than", "within", "between"] as const, "any"),
       n: Math.max(0, num(p.recency?.n, dp.recency.n)),
       m: Math.max(0, num(p.recency?.m, dp.recency.m)),
       unit: oneOf(p.recency?.unit, UNITS, dp.recency.unit),

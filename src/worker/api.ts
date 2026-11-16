@@ -671,6 +671,31 @@ export async function paperArchive(env: Env, id: string) {
   return json({ ok: true });
 }
 
+/**
+ * Delete a saved paper permanently: the paper, its question list and its sittings. Answers given while sitting it are
+ * kept in each question's own history (they are detached from the paper), so question statistics and analytics do not
+ * change. One all-or-nothing batch; a short record stays in the change log.
+ */
+export async function paperDelete(env: Env, id: string) {
+  const db = env.DB;
+  const cur = await first(db, `SELECT id, name FROM paper WHERE id = ?`, id);
+  if (!cur) throw new HttpError(404, "Paper not found.");
+  const t = now();
+  const counts = await first<{ items: number; sessions: number; attempts: number }>(db,
+    `SELECT (SELECT count(*) FROM paper_item WHERE paper_id = ?1) AS items,
+            (SELECT count(*) FROM practice_session WHERE paper_id = ?1) AS sessions,
+            (SELECT count(*) FROM attempt WHERE paper_id = ?1 OR session_id IN (SELECT id FROM practice_session WHERE paper_id = ?1)) AS attempts`, id);
+  await db.batch([
+    db.prepare(`UPDATE attempt SET paper_id = NULL, paper_position = NULL, session_id = NULL
+                 WHERE paper_id = ?1 OR session_id IN (SELECT id FROM practice_session WHERE paper_id = ?1)`).bind(id),
+    db.prepare(`DELETE FROM practice_session WHERE paper_id = ?`).bind(id),
+    db.prepare(`DELETE FROM paper_item WHERE paper_id = ?`).bind(id),
+    db.prepare(`DELETE FROM paper WHERE id = ?`).bind(id),
+    logChange(db, "paper", id, "name", "delete", cur.name, null, t),
+  ]);
+  return json({ ok: true, deleted: { items: counts?.items ?? 0, sessions: counts?.sessions ?? 0, attempts_kept: counts?.attempts ?? 0 } });
+}
+
 // ------------------------------------------------------------------ practice sessions (FR-4.1)
 
 export async function sessionStart(env: Env, paperId: string) {

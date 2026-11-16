@@ -299,7 +299,6 @@ function ActionDialog(props: {
   const [into, setInto] = useState("");
   const [children, setChildren] = useState<"delete" | "lift">("delete");
   const [conceptsMode, setConceptsMode] = useState<"move" | "delete">("delete");
-  const [confirmText, setConfirmText] = useState("");
 
   // Everything under the chosen nodes (can't be a target)
   const under = new Set<string>();
@@ -339,7 +338,7 @@ function ActionDialog(props: {
     if (subjects.length) out.push({ op: "delete", kind: "subject", ids: ids("subject"), into: into ? into.slice(2) : null, concepts: into ? conceptsMode : "delete" });
     return out;
   };
-  const ready = op === "delete" ? confirmText.trim().toUpperCase() === "DELETE" : !!into;
+  const ready = op === "delete" ? true : !!into; // this dialog is the confirmation step; its Delete button confirms
 
   return (
     <Modal title={title} onClose={props.onClose} wide>
@@ -421,9 +420,6 @@ function ActionDialog(props: {
                 {!into && subCount > 0 && <span class="muted small">Its {plural(subCount, "concept")} will be deleted and their tags removed.</span>}
               </fieldset>
             )}
-            <label class="field">Type DELETE to confirm
-              <input value={confirmText} onInput={(e) => setConfirmText((e.target as HTMLInputElement).value)} aria-label="Type DELETE to confirm" autoComplete="off" />
-            </label>
           </>
         )}
 

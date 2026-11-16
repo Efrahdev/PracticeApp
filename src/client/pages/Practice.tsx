@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import { SortTable } from "../grid";
 import { api, localDate } from "../api";
-import { refresh, useData } from "../store";
+import { dataSnapshot, refresh, useData } from "../store";
 import type { Boot } from "../types";
-import { ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
+import { askConfirm, ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
 import { loadStored, QuestionView, SolutionView } from "../views";
 import { parseNumberish } from "../../shared/qpack/numbers";
 import type { StoredQuestion } from "../../shared/qpack/types";
@@ -251,7 +251,7 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
           {items.length > 1 && <div class="dots" aria-hidden="true">{items.map((i) => <i class={i.position < pos ? "done" : i.position === pos ? "now" : ""} />)}</div>}
         </div>
         {session && <button class="btn ghost small" onClick={async () => {
-          if (!confirm("Finish this paper now? Unanswered questions stay unanswered.")) return;
+          if (!(await askConfirm({ title: "Finish this paper now?", message: "Unanswered questions stay unanswered.", confirmLabel: "Finish" }))) return;
           await api("PATCH", `/api/sessions/${session.id}`, { complete: true });
           setFinished(true);
         }}>Finish early</button>}
@@ -261,6 +261,7 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         <QuestionView key={item.question_version_id} v={{ content_format: item.content_format, blob_sha256: item.html_blob_sha256, css_sha256: item.css_sha256 }}
           opts={{ showMarks: true, marks: item.marks, showHints: true }} minHeight={120} title={`Question ${item.qno}`} />
       </section>
+      <NoteField key={item.question_id} questionId={item.question_id} />
       <ErrorBox error={err} />
       {solutionsAllowed && item.has_solution ? (
         <div class="row">
@@ -309,6 +310,85 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         </section>
       )}
     </div>
+  );
+}
+
+/**
+ * Free-form note for the question being solved. Always visible; saves by itself (shortly after typing stops, on leaving
+ * the box, and when moving to another question). Stored as the question's value of the custom text field "Practice notes", so it
+ * can be filtered on under Advanced conditions → Custom field. The field is created the first time a note is saved.
+ */
+export const NOTES_FIELD = "Practice notes";
+
+function NoteField(props: { questionId: string }) {
+  const { boot, lib } = useData();
+  const field = boot?.fields.find((f) => f.name.toLowerCase() === NOTES_FIELD.toLowerCase() && f.data_type === "text" && !f.archived_at) ?? null;
+  const q = lib?.find((x) => x.id === props.questionId) ?? null;
+  const initial = field && q ? String(q.fields?.[field.id] ?? "") : "";
+  const [text, setText] = useState(initial);
+  const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const savedRef = useRef(initial);
+  const textRef = useRef(initial);
+  const timer = useRef<number | null>(null);
+  const fieldRef = useRef(field); fieldRef.current = field; // latest values for saves started by an old render
+  const qRef = useRef(q); qRef.current = q;
+  // the library may arrive after the question: take its value if the user has not typed yet
+  useEffect(() => {
+    if (textRef.current === savedRef.current && initial !== savedRef.current) {
+      savedRef.current = initial; textRef.current = initial; setText(initial);
+    }
+  }, [initial]);
+
+  const save = async () => {
+    if (timer.current) { clearTimeout(timer.current); timer.current = null; }
+    const value = textRef.current;
+    if (value === savedRef.current) return;
+    setState("saving");
+    try {
+      let fid = fieldRef.current?.id ?? null;
+      const q = qRef.current;
+      let created = false;
+      if (!fid) {
+        created = true;
+        try {
+          fid = (await api<{ id: string }>("POST", "/api/fields", { name: NOTES_FIELD, data_type: "text", is_filterable: true })).id;
+        } catch {
+          await refresh(); // created meanwhile (or exists under another case): look it up again
+          const { boot: b } = dataSnapshot();
+          fid = b?.fields.find((f) => f.name.toLowerCase() === NOTES_FIELD.toLowerCase() && f.data_type === "text" && !f.archived_at)?.id ?? null;
+          if (!fid) throw new Error("Could not create the Practice notes field.");
+        }
+      }
+      await api("PATCH", `/api/questions/${props.questionId}`, { field_values: { [fid]: value.trim() ? value : null } });
+      savedRef.current = value;
+      if (q) { if (value.trim()) q.fields = { ...q.fields, [fid]: value }; else { const { [fid]: _, ...rest } = q.fields ?? {}; q.fields = rest; } }
+      setState(textRef.current === value ? "saved" : "idle");
+      if (created) refresh(); // so the new "Practice notes" field (and this note) show up in the filters
+    } catch {
+      setState("error");
+    }
+  };
+  // flush when leaving this question
+  useEffect(() => () => { if (textRef.current !== savedRef.current) void save(); }, []);
+
+  return (
+    <section class="card note-card">
+      <label class="field note-field">
+        <span class="note-head"><b>Note</b>
+          <span class={`small ${state === "error" ? "warn-text" : "muted"}`} aria-live="polite">
+            {state === "saving" ? "Saving…" : state === "saved" ? "Saved" : state === "error" ? "Not saved — check your connection" : "Saved with this question"}
+          </span>
+        </span>
+        <textarea rows={3} value={text} placeholder="Anything you want to remember about this question"
+          onInput={(e) => {
+            const v = (e.target as HTMLTextAreaElement).value;
+            textRef.current = v; setText(v); setState("idle");
+            if (timer.current) clearTimeout(timer.current);
+            timer.current = window.setTimeout(() => void save(), 1200);
+          }}
+          onBlur={() => void save()} />
+      </label>
+    </section>
   );
 }
 

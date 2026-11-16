@@ -246,6 +246,9 @@ export function Library() {
   );
 }
 
+/** No longer offered as new conditions (average time; personal difficulty %). Saved filters that use them still work and can be removed. */
+const RETIRED_CONDS = new Set<string>(["avg_time", "personal_difficulty"]);
+
 export function FilterEditor(props: { boot: Boot; lib: LibQ[]; def: FilterDef; onChange: (d: FilterDef) => void }) {
   const { def, onChange } = props;
   const setGroup = (i: number, g: Group) => onChange({ ...def, groups: def.groups.map((x, j) => (j === i ? g : x)) });
@@ -281,7 +284,7 @@ export function FilterEditor(props: { boot: Boot; lib: LibQ[]; def: FilterDef; o
                 (e.target as HTMLSelectElement).value = "";
               }}>
                 <option value="">+ Add condition…</option>
-                {Object.entries(COND_LABELS).map(([k, v]) => <option value={k}>{v}</option>)}
+                {Object.entries(COND_LABELS).filter(([k]) => !RETIRED_CONDS.has(k)).map(([k, v]) => <option value={k}>{v}</option>)}
               </select>
               {def.groups.length > 1 && <button class="btn ghost small" onClick={() => onChange({ ...def, groups: def.groups.filter((_, j) => j !== gi) })}>Remove group</button>}
             </div>

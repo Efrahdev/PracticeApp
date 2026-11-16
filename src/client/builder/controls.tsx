@@ -28,6 +28,8 @@ const PATHS = {
   target: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z M12 11.2a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6z",
   clock: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 7v5l3.5 2",
   save: "M5 3h11l4 4v14H4V4a1 1 0 0 1 1-1z M8 3v5h7 M8 21v-7h8v7",
+  trash: "M4 7h16 M9 7V4h6v3 M6 7l1 13h10l1-13 M10 11v6 M14 11v6",
+  eyeOff: "M3 3l18 18 M10.6 5.2A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1 M6.6 6.6C3.9 8.4 2 12 2 12s3.6 7 10 7a9.6 9.6 0 0 0 4.3-1 M9.9 9.9a3 3 0 0 0 4.2 4.2",
 } as const;
 export type IconName = keyof typeof PATHS;
 

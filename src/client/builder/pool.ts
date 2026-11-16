@@ -130,7 +130,7 @@ export function treeState(sel: Set<string> | null, n: TreeNode): TriState {
 // ------------------------------------------------------------------ rules
 
 type Facet =
-  | "archived" | "advanced" | "text" | "tree" | "difficulty" | "recency" | "attempts" | "results"
+  | "archived" | "advanced" | "text" | "tree" | "difficulty" | "attempted" | "recency" | "attempts" | "results"
   | "time" | "personal" | "formats" | "marks" | "solution" | "key" | "imports" | "added";
 
 const inRange = (v: number, r: Range) => (r.min === null || v >= r.min) && (r.max === null || v <= r.max);
@@ -155,6 +155,7 @@ export function rules(p: PoolSpec, ctx: Ctx, now: number): [Facet, (q: LibQ) => 
     const s = new Set(p.difficulty);
     out.push(["difficulty", (q) => s.has(q.difficulty_code ?? NONE)]);
   }
+  if (p.attempted !== "any") out.push(["attempted", (q) => (q.last_attempted_at !== null) === (p.attempted === "yes")]);
   const r = p.recency;
   if (r.mode !== "any") {
     const d = UNIT_DAYS[r.unit] * DAY;
@@ -201,6 +202,7 @@ export interface PoolEval {
   activeFacets: Set<string>;
   counts: {
     tree: Map<string, number>;
+    attempted: Map<string, number>;
     difficulty: Map<string, number>;
     results: Map<string, number>;
     formats: Map<string, number>;
@@ -233,10 +235,11 @@ const bump = (m: Map<string, number>, k: string) => m.set(k, (m.get(k) ?? 0) + 1
 export function evaluatePool(lib: LibQ[], ctx: Ctx, p: PoolSpec, now: number): PoolEval {
   const rs = rules(p, ctx, now);
   const counts: PoolEval["counts"] = {
-    tree: new Map(), difficulty: new Map(), results: new Map(), formats: new Map(), imports: new Map(), solution: new Map(), key: new Map(),
+    tree: new Map(), attempted: new Map(), difficulty: new Map(), results: new Map(), formats: new Map(), imports: new Map(), solution: new Map(), key: new Map(),
   };
   const count = (q: LibQ, only: Facet | null) => {
     if (!only || only === "tree") for (const k of treeKeysOf(q, ctx)) bump(counts.tree, k);
+    if (!only || only === "attempted") bump(counts.attempted, q.last_attempted_at !== null ? "yes" : "no");
     if (!only || only === "difficulty") bump(counts.difficulty, q.difficulty_code ?? NONE);
     if (!only || only === "results") bump(counts.results, resultBucket(q));
     if (!only || only === "formats") bump(counts.formats, q.answer_format);
