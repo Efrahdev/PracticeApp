@@ -1,10 +1,11 @@
 :root {
-  --bg: #f5f6f9; --card: #ffffff; --ink: #1c2230; --muted: #667085; --line: #e2e6ee;
+  --bg: #f2f0e9; --card: #fbfaf6; --ink: #1c2230; --muted: #636b7a; --line: #e2ded3;
+  --paper: #fbfaf5; /* question box + images: same milky off-white in both themes */
   --accent: #2f4a8a; --accent-ink: #ffffff; --accent-soft: #e8edf8;
   --ok: #1f7a47; --ok-soft: #e4f4ea; --bad: #b42335; --bad-soft: #fbe9eb; --mid: #a26300; --mid-soft: #fdf2df;
   --c1: #2f4a8a; --c2: #c2410c; --c3: #15803d; --c4: #7c3aed; --c5: #0e7490;
   --radius: 12px; --shadow: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.08);
-  --surface-2: #f7f8fa; --ink-2: #344054; --line-2: #edf0f4; --line-strong: #c9d0dc; --ring: rgba(47,74,138,.16);
+  --surface-2: #f5f3ec; --ink-2: #344054; --line-2: #ebe8df; --line-strong: #cbc6b8; --ring: rgba(47,74,138,.16);
   --shadow-lg: 0 12px 32px rgba(16,24,40,.14), 0 2px 6px rgba(16,24,40,.06);
   /* data colours (validated: categorical, ordinal difficulty ramp, status) */
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #6250d6; --s8: #e34948; --sx: #a3a9b5;
@@ -13,7 +14,7 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0f131b; --card: #171c26; --ink: #e6e9ef; --muted: #98a2b3; --line: #2a3140;
     --accent: #7f9cf5; --accent-ink: #0f131b; --accent-soft: #1f2a44;
     --ok: #4ade80; --ok-soft: #12301f; --bad: #f87171; --bad-soft: #3a1418; --mid: #fbbf24; --mid-soft: #3a2a0a;
@@ -25,6 +26,18 @@
     --st-good: #0ca30c; --st-warn: #fab219; --st-crit: #d03b3b; --st-none: #4a5366; --st-muted: #343c4c;
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+    --bg: #0f131b; --card: #171c26; --ink: #e6e9ef; --muted: #98a2b3; --line: #2a3140;
+    --accent: #7f9cf5; --accent-ink: #0f131b; --accent-soft: #1f2a44;
+    --ok: #4ade80; --ok-soft: #12301f; --bad: #f87171; --bad-soft: #3a1418; --mid: #fbbf24; --mid-soft: #3a2a0a;
+    --c1: #7f9cf5; --c2: #fb923c; --c3: #4ade80; --c4: #c4b5fd; --c5: #67e8f9;
+    --surface-2: #1c2230; --ink-2: #cdd3de; --line-2: #222937; --line-strong: #3a4357; --ring: rgba(127,156,245,.28);
+    --shadow: 0 1px 2px rgba(0,0,0,.3); --shadow-lg: 0 14px 36px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.3);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #0ca30c; --s7: #9085e9; --s8: #e66767; --sx: #5b6476;
+    --d0: #184f95; --d1: #2a78d6; --d2: #6da7ec; --d3: #b7d3f6; --dn: #485165;
+    --st-good: #0ca30c; --st-warn: #fab219; --st-crit: #d03b3b; --st-none: #4a5366; --st-muted: #343c4c;
+    color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -113,7 +126,7 @@ li.error { color: var(--bad); }
 .stats span { color: var(--muted); font-size: .8rem; }
 
 /* question frame */
-.qframe { width: 100%; border: 0; display: block; background: #fff; border-radius: var(--radius); }
+.qframe { width: 100%; border: 0; display: block; background: var(--paper); border-radius: var(--radius); }
 .frame-loading, .frame-error { display: grid; place-items: center; color: var(--muted); padding: 1rem; }
 
 /* library */
@@ -713,13 +726,29 @@ details.subject summary { cursor: pointer; }
 .pb-config .segctl.sm > button { min-height: 28px; padding: 3px 10px; font-size: .84rem; }
 
 /* practice: note under each question */
-.note-card { padding: 10px 12px; }
+.note-card { padding: 8px 12px; }
 .note-field { margin: 0; gap: 6px; }
 .note-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-.note-field textarea { width: 100%; min-height: 64px; resize: vertical; }
+.note-field textarea { width: 100%; min-height: 44px; padding: 6px 10px; resize: vertical; font-size: .92rem; }
 
 /* confirmation prompt + delete buttons */
 .confirm-msg { margin: 4px 0 14px; color: var(--ink-2); line-height: 1.5; }
 .confirm-msg p { margin: 0; }
 .btn.ghost.danger-text { color: var(--bad); }
 .btn.ghost.danger-text:hover { background: var(--bad-soft); }
+
+/* theme switch */
+.theme-switch { margin-left: auto; }
+.theme-switch .segctl > button { min-height: 28px; padding: 3px 10px; font-size: .8rem; }
+@media (max-width: 640px) { .topbar .theme-switch { display: none; } }
+.settings-theme { margin: .3rem 0 0; }
+/* toast with an action (Undo) */
+.toast.has-action { display: flex; align-items: center; gap: 14px; }
+.toast-btn { border: 0; background: transparent; color: inherit; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; padding: 2px 4px; }
+.sitting-list { list-style: none; margin: 0; padding: 0; }
+.sitting-list li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; padding: 8px 0; border-top: 1px solid var(--line-2); font-size: .9rem; }
+.sitting-list li:first-child { border-top: 0; }
+.note-list { list-style: none; margin: 0 0 .5rem; padding: 0; }
+.note-list li { padding: 8px 0; border-top: 1px solid var(--line-2); }
+.note-list li:first-child { border-top: 0; }
+.note-text { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .92rem; }

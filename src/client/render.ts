@@ -213,7 +213,7 @@ export const blobAssetResolver: AssetResolver = (hex) => {
 
 const CONTENT_CSS = `
 :root{color-scheme:light}
-html,body{margin:0;padding:0;background:#fff;color:#1c2230}
+html,body{margin:0;padding:0;background:#fbfaf5;color:#1c2230}
 body{font:16px/1.55 Georgia,"Times New Roman",serif;padding:10px 12px;overflow-wrap:anywhere}
 p{margin:.45em 0} ul,ol{margin:.4em 0;padding-left:1.6em}
 img,svg{max-width:100%;height:auto} table{border-collapse:collapse;margin:.5em 0;max-width:100%}

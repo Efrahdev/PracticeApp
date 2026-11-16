@@ -118,7 +118,7 @@ await mixRow("By difficulty").locator("input.switch").check();
 await page.locator(".dt-row:not(.dt-head)").nth(8).waitFor();
 if (await page.locator(".mix-dim", { hasText: "By subject" }).getByText("On target").count() !== 1) fail("subject mix not on target");
 const secTitles = await page.locator(".pb-group", { has: page.getByRole("heading", { name: "Which questions" }) }).locator(".pb-sec-title").allInnerTexts();
-const wantOrder = ["Attempted", "Subject", "Concept", "Last attempted, attempts & result", "More filters", "Advanced conditions", "Difficulty level"];
+const wantOrder = ["Attempted", "Subject", "Concept", "Last attempted, attempts & result", "My notes", "More filters", "Advanced conditions", "Difficulty level"];
 if (secTitles.join("|") !== wantOrder.join("|")) fail("filter order is " + secTitles.join(" | "));
 for (const gone of ["Average time taken", "How hard it has been for you"]) if (await page.locator(".pb-side").getByText(gone).count()) fail(`removed filter still shown: ${gone}`);
 if (await page.locator(".pb-meter").count() !== 1) fail("expected exactly one sample-space counter");
@@ -158,6 +158,7 @@ for (let i = 1; i <= 9; i++) {
   await page.getByText(`Question ${i} of 9`).waitFor();
   await page.locator("iframe.qframe").first().contentFrame().locator("body").waitFor();
   if (!(await page.locator(".note-field textarea").isVisible())) fail("note box not shown by default");
+  if (await page.getByText("How sure were you?").count()) fail("confidence question still shown");
   if (i === 1) {
     await page.locator(".note-field textarea").fill("Remember to simplify first");
     await page.locator(".note-field textarea").blur();
@@ -191,6 +192,30 @@ log("practised 9 questions (auto-marked MCQ/number, part-by-part, manual) with n
   const withNote = l.filter((q) => q.fields && JSON.parse(q.fields)[f.id] === "Remember to simplify first");
   if (withNote.length !== 1) fail(`expected the note on 1 question, found ${withNote.length}`);
   log("note typed while solving is saved to the question's “Practice notes” field (filterable)");
+  // delete an attempt from the question's history, then Undo
+  const qn = withNote[0];
+  const total = async () => page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.reduce((a, q) => a + (q.attempt_count ?? 0), 0));
+  const before = await total();
+  await page.goto(`${BASE}/#/q/${qn.id}`);
+  await page.getByRole("heading", { name: "History" }).waitFor();
+  await page.locator(".history").getByRole("button", { name: /^Delete attempt/ }).first().click();
+  await page.locator(".modal", { hasText: "Delete this attempt?" }).getByRole("button", { name: "Delete", exact: true }).click();
+  await page.getByText("Attempt deleted").waitFor();
+  if ((await total()) !== before - 1) fail("attempt not removed from history/metrics");
+  await page.getByText("Not attempted yet.").waitFor();
+  await page.locator(".toast").getByRole("button", { name: "Undo" }).click();
+  await page.getByText("Restored", { exact: true }).waitFor();
+  if ((await total()) !== before) fail("undo did not bring the attempt back");
+  log("attempt deleted from history (question shows not attempted), then restored with Undo");
+  // notes as a filter (builder) and a metric (Progress)
+  await page.goto(`${BASE}/#/papers/new`);
+  await page.getByRole("button", { name: /^Has my note/ }).click();
+  await page.locator(".pb-meter-n", { hasText: /^1 of 9 questions match/ }).waitFor();
+  await page.getByRole("button", { name: /^Any$/ }).nth(1).click();
+  await page.goto(`${BASE}/#/analytics`);
+  await page.locator(".notes-card", { hasText: "Remember to simplify first" }).waitFor();
+  if (!(await page.locator(".notes-card .stats b").first().innerText()).startsWith("1")) fail("progress notes count wrong");
+  log("notes: “Has my note” filter in the builder (1 of 9) and the My notes card on Progress");
 }
 await shot("4-summary");
 
@@ -222,6 +247,17 @@ for (let i = 1; i <= 3 && !opened; i++) {
   }
 }
 if (!opened) fail("no Show solution button in a paper with solutions");
+// answer question 1, then "Undo this attempt" puts it back unanswered
+await page.getByText("Question 1 of 3").waitFor();
+if (await page.locator(".chips.answer").count()) { await page.locator(".chips.answer .chip").first().click(); await page.getByRole("button", { name: "Check answer" }).click(); }
+else if (await page.getByText("Mark each part:").count()) { for (const b of await page.locator(".part-mark").all()) await b.getByRole("button", { name: "✓" }).click(); await page.getByRole("button", { name: "Save grade" }).click(); }
+else { if (await page.locator('.answer input[inputmode="decimal"]').count()) await page.locator('.answer input[inputmode="decimal"]').fill("1"); if (await page.getByRole("button", { name: "Check answer" }).count()) await page.getByRole("button", { name: "Check answer" }).click(); else { await page.getByRole("button", { name: "◐ Partly" }).click(); await page.getByRole("button", { name: "Save grade" }).click(); } }
+await page.getByRole("button", { name: "Undo this attempt" }).click();
+await page.locator(".modal", { hasText: "Undo this attempt?" }).getByRole("button", { name: "Delete", exact: true }).click();
+await page.getByText("Attempt deleted").waitFor();
+await page.getByText("Question 1 of 3").waitFor();
+if (await page.getByRole("button", { name: "Undo this attempt" }).count()) fail("still shows the answered state after undo");
+log("practice: Undo this attempt returns the question to unanswered");
 log("paper with solutions: worked solution opens on demand before grading");
 await shot("6-practice-solution");
 await page.getByRole("button", { name: "Pause & exit" }).click();
@@ -319,6 +355,24 @@ const bootNow = await page.evaluate(async () => (await (await fetch("/api/bootst
 if (bootNow.subjects.some((x) => x.name === "Junk subject") || bootNow.concepts.some((c) => c.name === "Equivalent fractions")) fail("taxonomy delete did not remove the items");
 log("taxonomy: junk subject deleted; used concept deleted with its question re-tagged", eqBefore >= 0 ? "" : "");
 
+// 12a. Delete a whole sitting (answers recorded by mistake), then Undo
+{
+  const total = async () => page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.reduce((a, q) => a + (q.attempt_count ?? 0), 0));
+  const before = await total();
+  await page.goto(`${BASE}/#/papers`);
+  await page.locator(".dt-row:not(.dt-head)", { hasText: "Test paper" }).getByRole("link", { name: "Test paper", exact: true }).click();
+  await page.getByRole("button", { name: "Delete sitting 1" }).click();
+  await page.locator(".modal", { hasText: "Delete sitting 1?" }).getByRole("button", { name: "Delete", exact: true }).click();
+  await page.getByText(/attempts deleted/).waitFor();
+  const mid = await total();
+  if (mid !== before - 9) fail(`sitting delete removed ${before - mid}, expected 9`);
+  await page.locator(".toast").getByRole("button", { name: "Undo" }).click();
+  await page.getByText("Restored", { exact: true }).waitFor();
+  if ((await total()) !== before) fail("sitting undo did not restore the answers");
+  await page.getByRole("button", { name: "Delete sitting 1" }).waitFor();
+  log("whole sitting deleted (9 answers out of history), then restored with Undo");
+}
+
 // 12b. Delete a saved paper: Delete -> confirmation -> Delete; answers stay in question history
 {
   const attemptsBefore = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.reduce((a, q) => a + (q.attempt_count ?? 0), 0));
@@ -351,6 +405,21 @@ await page.getByRole("button", { name: "Download backup archive" }).click();
 const out = path.resolve(shots ?? ".", "backup-test.zip");
 await (await dl).saveAs(out);
 log("backup archive downloaded:", fs.statSync(out).size, "bytes");
+
+// 12c. Appearance: Light / Dark / Auto
+await page.goto(`${BASE}/#/settings`);
+const bg = () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+await page.locator(".settings-theme").getByRole("radio", { name: "Dark" }).click();
+if ((await page.evaluate(() => document.documentElement.dataset.theme)) !== "dark") fail("dark not applied");
+const darkBg = await bg();
+await page.locator(".settings-theme").getByRole("radio", { name: "Light" }).click();
+const lightBg = await bg();
+if (lightBg !== "rgb(242, 240, 233)") fail(`light background not the warm off-white: ${lightBg}`);
+if (darkBg === lightBg) fail("dark and light look the same");
+await page.reload();
+if ((await page.evaluate(() => document.documentElement.dataset.theme)) !== "light") fail("theme not remembered after reload");
+await page.locator(".settings-theme").getByRole("radio", { name: "Auto" }).click();
+log(`appearance: Light ${lightBg} / Dark ${darkBg} / Auto, remembered across reloads`);
 
 // 13. Phone layout
 await page.setViewportSize({ width: 390, height: 844 });

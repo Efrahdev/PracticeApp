@@ -5,7 +5,7 @@ import { refresh, useData } from "../store";
 import type { Boot } from "../types";
 import { TaxonomyManager } from "./Taxonomy";
 import { SortTable } from "../grid";
-import { ErrorBox, Progress, toast } from "../ui";
+import { ErrorBox, Progress, ThemeSwitch, toast } from "../ui";
 
 export function Settings() {
   const { boot, lib } = useData();
@@ -13,6 +13,11 @@ export function Settings() {
   return (
     <div class="page">
       <div class="page-head"><h1>Settings</h1><span class="muted small">Schema version {boot.schemaVersion}</span></div>
+      <section class="card">
+        <h2>Appearance</h2>
+        <p class="small muted">Auto follows this device. Light uses a warm off-white that matches scanned question pages; question boxes and images keep their own colours in Dark.</p>
+        <ThemeSwitch class="settings-theme" />
+      </section>
       <section class="card">
         <h2>Imports</h2>
         <p class="small">Your import history — search, name, edit or archive whole imports — is on the <a href="#/import">Import</a> screen.</p>

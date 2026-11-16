@@ -11,6 +11,7 @@ import { makeCtx } from "../builder/pool";
 import { normaliseBlueprint } from "../builder/spec";
 import { PaperSummary } from "./Practice";
 import { openPrint, type PrintSolutions } from "../print";
+import { deleteAttempts } from "../attempts";
 
 interface PaperRow {
   id: string; name: string; created_at: number; solutions_mode: string; item_count: number; total_marks: number | null;
@@ -187,7 +188,8 @@ export function PaperDetail(props: { id: string }) {
   const [err, setErr] = useState<string | null>(null);
   const [printSol, setPrintSol] = useState<PrintSolutions>("end");
   const [printing, setPrinting] = useState(false);
-  useEffect(() => { api("GET", `/api/papers/${props.id}`).then(setD).catch((e) => setErr(e.message)); }, [props.id]);
+  const [rev, setRev] = useState(0);
+  useEffect(() => { api("GET", `/api/papers/${props.id}`).then(setD).catch((e) => setErr(e.message)); }, [props.id, rev]);
   if (err) return <ErrorBox error={err} />;
   if (!d || !boot || !lib || !ctx) return <p class="muted">Loading…</p>;
   const open = d.sessions.find((s: any) => !s.completed_at);
@@ -255,6 +257,27 @@ export function PaperDetail(props: { id: string }) {
         </div>
       </header>
       {done.length > 0 && <PaperSummary d={{ ...d, sessions: done }} boot={boot} embedded />}
+      {d.sessions.length > 0 && (
+        <section class="card sittings">
+          <h3>Sittings</h3>
+          <ul class="sitting-list">
+            {d.sessions.map((s: any, i: number) => {
+              const n = d.attempts.filter((a: any) => a.session_id === s.id).length;
+              return (
+                <li>
+                  <span><b>Sitting {i + 1}</b> · started {fmtDateTime(s.started_at)} · {n} answered · {s.completed_at ? "finished" : "in progress"}</span>
+                  <button class="btn ghost small danger-text" aria-label={`Delete sitting ${i + 1}`} title="Answered by mistake? Remove this sitting and its answers from your history"
+                    onClick={() => deleteAttempts({ session_id: s.id }, {
+                      title: `Delete sitting ${i + 1}?`,
+                      message: `Its ${n} answer${n === 1 ? "" : "s"} are removed from each question's history and from your results, and the questions no longer show as attempted (unless attempted elsewhere). You can undo straight afterwards.`,
+                      onChange: () => setRev((r) => r + 1),
+                    })}><Icon name="trash" size={14} /> Delete sitting</button>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
       {rules && (
         <details class="card rules-card">
           <summary><b>How this paper was built</b> <span class="muted small">— the rules saved with it</span></summary>

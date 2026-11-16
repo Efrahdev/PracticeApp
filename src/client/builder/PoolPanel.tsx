@@ -48,6 +48,7 @@ export function PoolPanel(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx:
       <SubjectSection {...props} />
       <TreeSection {...props} />
       <HistorySection {...props} />
+      <NotesSection {...props} />
       {hasConditions(pool.advanced) && <LibraryFilter {...props} />}
       <MoreSection {...props} />
       {!hasConditions(pool.advanced) && <AdvancedSection {...props} />}
@@ -100,6 +101,21 @@ function AttemptedSection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
           ))}
         </div>
       </Field>
+    </Section>
+  );
+}
+
+// ------------------------------------------------------------------ my notes
+
+function NotesSection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
+  const { pool, set, ev } = props;
+  return (
+    <Section title="My notes" badge={pool.note !== "any" ? <Badge tone="accent">On</Badge> : undefined}>
+      <div class="pb-chips" role="group" aria-label="My notes">
+        <ChipToggle on={pool.note === "any"} onClick={() => set({ note: "any" })}>Any</ChipToggle>
+        <ChipToggle on={pool.note === "yes"} count={ev.counts.note.get("yes") ?? 0} onClick={() => set({ note: "yes" })}>Has my note</ChipToggle>
+        <ChipToggle on={pool.note === "no"} count={ev.counts.note.get("no") ?? 0} onClick={() => set({ note: "no" })}>No note</ChipToggle>
+      </div>
     </Section>
   );
 }
@@ -407,6 +423,6 @@ function withAdvanced(pool: PoolSpec, advanced: FilterDef): Partial<PoolSpec> {
 }
 
 export const poolIsDefault = (p: PoolSpec) =>
-  !p.text && !p.tree && !p.difficulty && p.attempted === "any" && p.recency.mode === "any" && !rangeOn(p.attempts) && !p.results.length && !rangeOn(p.avgMinutes) &&
+  !p.text && !p.tree && !p.difficulty && p.attempted === "any" && p.note === "any" && p.recency.mode === "any" && !rangeOn(p.attempts) && !p.results.length && !rangeOn(p.avgMinutes) &&
   !rangeOn(p.personal) && !p.formats.length && !rangeOn(p.marks) && p.solution === "any" && p.key === "any" && !p.imports.length &&
   p.added.mode === "any" && !p.includeArchived && !hasConditions(p.advanced);

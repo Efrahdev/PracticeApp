@@ -13,9 +13,10 @@ import { mainConceptPath } from "../builder/engine";
 import { ConceptsCell, DiffMark, FieldsCell, HistoryCell, QuestionPeek, rankOf, avgSecs, SolutionCell, SubjectCell } from "../builder/PaperTable";
 import { makeCtx, type Ctx } from "../builder/pool";
 import { NONE, RESULT_BUCKETS, resultBucket } from "../builder/spec";
+import { noteOf, notesFieldId } from "../notes";
 
-interface Quick { text: string; subject: string; importId: string; difficulty: string; result: string }
-const noQuick = (): Quick => ({ text: "", subject: "", importId: "", difficulty: "", result: "" });
+interface Quick { text: string; subject: string; importId: string; difficulty: string; result: string; note: string }
+const noQuick = (): Quick => ({ text: "", subject: "", importId: "", difficulty: "", result: "", note: "" });
 const VIEW_KEY = "library.view";
 
 function loadView(): { def: FilterDef; quick: Quick } {
@@ -60,6 +61,7 @@ export function Library() {
   const results = useMemo(() => {
     if (!lib || !boot || !ctx) return [];
     const f = compile(def, boot.concepts);
+    const notesFid = notesFieldId(boot);
     const terms = quick.text.toLowerCase().split(/\s+/).filter(Boolean);
     return lib.filter((q) => {
       if (!f(q)) return false;
@@ -68,6 +70,7 @@ export function Library() {
       if (quick.importId && !q.batches.includes(quick.importId)) return false;
       if (quick.difficulty && (q.difficulty_code ?? NONE) !== quick.difficulty) return false;
       if (quick.result && resultBucket(q) !== quick.result) return false;
+      if (quick.note && (noteOf(q, notesFid) !== null) !== (quick.note === "yes")) return false;
       return true;
     });
   }, [lib, boot, ctx, def, quick]);
@@ -98,6 +101,7 @@ export function Library() {
         imports: quick.importId ? [quick.importId] : [],
         difficulty: quick.difficulty ? [quick.difficulty] : null,
         results: quick.result ? [quick.result as any] : [],
+        note: quick.note === "yes" || quick.note === "no" ? quick.note : "any",
         tree: subj ? [...subj.keys] : null,
       },
     });
@@ -207,6 +211,9 @@ export function Library() {
               <option value="">Any result</option>
               {RESULT_BUCKETS.map((b) => <option value={b}>{RESULT_LABEL[b]}</option>)}
             </select>
+            <select class="sel-sm" aria-label="My notes" value={quick.note} onChange={(e) => setQuick({ note: (e.target as HTMLSelectElement).value })}>
+              <option value="">Any notes</option><option value="yes">Has my note</option><option value="no">No note</option>
+            </select>
             <button type="button" class={`btn small${showFilters ? " on" : ""}`} aria-expanded={showFilters} onClick={() => setShowFilters(!showFilters)}>
               <Icon name="filter" size={14} /> More filters {condCount > 0 && <Badge tone="accent">{condCount}</Badge>}
             </button>
@@ -279,11 +286,14 @@ export function FilterEditor(props: { boot: Boot; lib: LibQ[]; def: FilterDef; o
             ))}
             <div class="row wrap">
               <select aria-label="Add condition" value="" onChange={(e) => {
-                const t = (e.target as HTMLSelectElement).value as Cond["type"];
-                if (t) setGroup(gi, { ...g, conds: [...g.conds, defaultCond(t)] });
+                const t = (e.target as HTMLSelectElement).value as Cond["type"] | "__note";
+                const fid = notesFieldId(props.boot);
+                if (t === "__note" && fid) setGroup(gi, { ...g, conds: [...g.conds, { type: "field", field_id: fid, op: "has_value", value: "" }] });
+                else if (t && t !== "__note") setGroup(gi, { ...g, conds: [...g.conds, defaultCond(t)] });
                 (e.target as HTMLSelectElement).value = "";
               }}>
                 <option value="">+ Add condition…</option>
+                {notesFieldId(props.boot) && <option value="__note">My note (has / has none)</option>}
                 {Object.entries(COND_LABELS).filter(([k]) => !RETIRED_CONDS.has(k)).map(([k, v]) => <option value={k}>{v}</option>)}
               </select>
               {def.groups.length > 1 && <button class="btn ghost small" onClick={() => onChange({ ...def, groups: def.groups.filter((_, j) => j !== gi) })}>Remove group</button>}

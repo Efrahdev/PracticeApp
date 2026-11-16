@@ -5,6 +5,7 @@ import type { Boot } from "../types";
 import { conceptPath, ErrorBox, fmtDateTime, fmtSecs, pct, ResultBadge, toast } from "../ui";
 import { QuestionView, SolutionView } from "../views";
 import { GradeForm } from "./Practice";
+import { deleteAttempts } from "../attempts";
 
 export function Question(props: { id: string }) {
   const { boot } = useData();
@@ -301,6 +302,12 @@ function History(props: { d: any; boot: Boot; onChanged: () => void }) {
                 {eff?.error_type_code && <span class="small">{errLabel.get(eff.error_type_code)}</span>}
                 <span class="grow" />
                 <button class="btn ghost small" onClick={() => setFixing(fixing === a.id ? null : a.id)}>Correct grade</button>
+                <button class="btn ghost small danger-text" aria-label={`Delete attempt of ${fmtDateTime(a.attempted_at)}`} title="Recorded by mistake? Remove it from your history"
+                  onClick={() => deleteAttempts({ ids: [a.id] }, {
+                    title: "Delete this attempt?",
+                    message: "It is removed from this question's history and from your results. You can undo straight afterwards.",
+                    onChange: props.onChanged,
+                  })}>Delete</button>
               </div>
               {gs.length > 1 && (
                 <p class="small muted">Earlier: {gs.slice(0, -1).map((g: any) => `${g.result}${g.result === "partial" ? ` ${pct(g.score_permille)}` : ""}`).join(" → ")}</p>

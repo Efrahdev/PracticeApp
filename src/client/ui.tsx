@@ -55,15 +55,25 @@ export function ConfirmHost() {
   );
 }
 
-let toastSet: ((t: { msg: string; kind: string } | null) => void) | null = null;
-export function toast(msg: string, kind: "ok" | "error" = "ok") {
-  toastSet?.({ msg, kind });
-  setTimeout(() => toastSet?.(null), kind === "error" ? 7000 : 3000);
+type ToastT = { msg: string; kind: string; action?: { label: string; run: () => void }; id: number };
+let toastSet: ((t: ToastT | null) => void) | null = null;
+let toastId = 0;
+/** Show a short message; with `action` it carries a button (e.g. Undo) and stays up longer. */
+export function toast(msg: string, kind: "ok" | "error" = "ok", action?: { label: string; run: () => void }) {
+  const id = ++toastId;
+  toastSet?.({ msg, kind, action, id });
+  setTimeout(() => { if (toastId === id) toastSet?.(null); }, action ? 12000 : kind === "error" ? 7000 : 3000);
 }
 export function Toaster() {
-  const [t, setT] = useState<{ msg: string; kind: string } | null>(null);
+  const [t, setT] = useState<ToastT | null>(null);
   toastSet = setT;
-  return t ? <div class={`toast ${t.kind}`} role="status">{t.msg}</div> : null;
+  if (!t) return null;
+  return (
+    <div class={`toast ${t.kind}${t.action ? " has-action" : ""}`} role="status">
+      <span>{t.msg}</span>
+      {t.action && <button type="button" class="toast-btn" onClick={() => { const a = t.action!; setT(null); a.run(); }}>{t.action.label}</button>}
+    </div>
+  );
 }
 
 export function ErrorBox(props: { error: string | null }) {
@@ -175,5 +185,42 @@ export function LineChart(props: { series: { label: string; points: { x: string;
         </figcaption>
       )}
     </figure>
+  );
+}
+
+// ---------------------------------------------------------------- appearance (Auto / Light / Dark)
+
+export type Theme = "auto" | "light" | "dark";
+export function currentTheme(): Theme {
+  const a = document.documentElement.getAttribute("data-theme");
+  return a === "light" || a === "dark" ? a : "auto";
+}
+export function setTheme(t: Theme) {
+  if (t === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", t);
+  try { t === "auto" ? localStorage.removeItem("theme") : localStorage.setItem("theme", t); } catch { /* storage unavailable */ }
+  window.dispatchEvent(new Event("themechange"));
+}
+
+export function ThemeSwitch(props: { class?: string }) {
+  const [t, setT] = useState<Theme>(currentTheme);
+  useEffect(() => {
+    const f = () => setT(currentTheme());
+    window.addEventListener("themechange", f);
+    return () => window.removeEventListener("themechange", f);
+  }, []);
+  const opts: { v: Theme; label: string; title: string }[] = [
+    { v: "auto", label: "Auto", title: "Follow this device" },
+    { v: "light", label: "Light", title: "Light (warm off-white)" },
+    { v: "dark", label: "Dark", title: "Dark" },
+  ];
+  return (
+    <div class={`theme-switch ${props.class ?? ""}`}>
+      <div class="segctl sm" role="radiogroup" aria-label="Appearance">
+        {opts.map((o) => (
+          <button type="button" role="radio" aria-checked={t === o.v} class={t === o.v ? "on" : ""} title={o.title} onClick={() => setTheme(o.v)}>{o.label}</button>
+        ))}
+      </div>
+    </div>
   );
 }

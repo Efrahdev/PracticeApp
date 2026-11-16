@@ -2,7 +2,7 @@ import { render, type ComponentChild, type ComponentType } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import temmlCss from "temml/dist/Temml-Local.css";
 import { setMathCss } from "./render";
-import { ConfirmHost, Toaster } from "./ui";
+import { ConfirmHost, ThemeSwitch, Toaster } from "./ui";
 import { Library } from "./pages/Library";
 import { Question } from "./pages/Question";
 import { Papers, PaperDetail } from "./pages/Papers";
@@ -75,6 +75,7 @@ function App() {
               </a>
             ))}
           </nav>
+          <ThemeSwitch />
         </header>
       )}
       <main class={r.bare ? "bare" : r.wide ? "wide" : ""}>{r.el}</main>

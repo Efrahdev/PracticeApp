@@ -4,6 +4,8 @@ import { api, localDate } from "../api";
 import { descendants } from "../filter";
 import { openBuilder, useData } from "../store";
 import { conceptPath, ErrorBox, LineChart, names } from "../ui";
+import { noteOf, notesFieldId } from "../notes";
+import { resultBucket } from "../builder/spec";
 
 interface AData {
   concept: { concept_id: string; local_date: string; graded_count: number; weight_sum: number; score_weight_sum: number }[];
@@ -128,6 +130,7 @@ export function Analytics() {
           {cells.map((c) => <i title={`${c.date}: ${c.n}`} style={{ opacity: c.n ? 0.25 + 0.75 * (c.n / maxDay) : 1 }} class={c.n ? "on" : ""} />)}
         </div>
       </section>
+      <NotesCard />
 
       {totalAttempts === 0 ? <div class="empty"><p>Grade some questions and your progress appears here.</p></div> : (
         <>
@@ -184,4 +187,65 @@ function Spark(props: { values: number[] }) {
   const W = 90, H = 22;
   const pts = v.map((y, i) => `${(i / (v.length - 1)) * W},${H - 2 - y * (H - 4)}`).join(" ");
   return <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} aria-hidden="true"><polyline fill="none" stroke="var(--c1)" stroke-width="2" points={pts} /></svg>;
+}
+
+/** "My notes": questions with a practice note, by subject and concept, with the notes themselves. */
+function NotesCard() {
+  const { boot, lib } = useData();
+  const [showAll, setShowAll] = useState(false);
+  if (!boot || !lib) return null;
+  const fid = notesFieldId(boot);
+  const live = lib.filter((q) => !q.archived_at);
+  const noted = fid ? live.filter((q) => noteOf(q, fid) !== null) : [];
+  const n = names(boot);
+  const wrong = live.filter((q) => q.last_result === "incorrect" || q.last_result === "partial");
+  const wrongNoted = wrong.filter((q) => noteOf(q, fid) !== null).length;
+  const bySubject = new Map<string, number>();
+  const byConcept = new Map<string, number>();
+  for (const q of noted) {
+    bySubject.set(q.subject_id ?? "", (bySubject.get(q.subject_id ?? "") ?? 0) + 1);
+    for (const [c] of q.concepts) byConcept.set(c, (byConcept.get(c) ?? 0) + 1);
+  }
+  const list = [...noted].sort((a, b) => (b.last_attempted_at ?? 0) - (a.last_attempted_at ?? 0));
+  const shown = showAll ? list : list.slice(0, 8);
+  return (
+    <section class="card notes-card">
+      <div class="row wrap"><h2 class="grow">My notes</h2>
+        {noted.length > 0 && <button class="btn small" onClick={() => openBuilder({ pool: { note: "yes" }, name: "Questions with my notes" })}>Build a paper from these</button>}
+        {noted.length > 0 && <a class="btn small ghost" href="#/" onClick={() => { try { const v = JSON.parse(sessionStorage.getItem("library.view") ?? "{}"); sessionStorage.setItem("library.view", JSON.stringify({ def: v?.def?.v === 1 ? v.def : { v: 1, op: "and", groups: [{ op: "and", conds: [] }] }, quick: { ...(v.quick ?? {}), note: "yes" } })); } catch { /* ignore */ } }}>Show in Library</a>}
+      </div>
+      <div class="stats">
+        <div><b>{noted.length}</b><span>questions with a note</span></div>
+        <div><b>{live.length ? Math.round((noted.length / live.length) * 100) : 0}%</b><span>of the library</span></div>
+        <div><b>{wrongNoted}/{wrong.length}</b><span>wrong last time have a note</span></div>
+      </div>
+      {noted.length === 0 ? <p class="muted small">No notes yet. Write one under any question while solving a paper.</p> : (
+        <>
+          <div class="grid2">
+            <div>
+              <h3>By subject</h3>
+              <SortTable rows={[...bySubject.entries()].map(([sid, c]) => ({ name: sid ? n.subject.get(sid) ?? "?" : "No subject", c }))} initial={{ key: "c", dir: "desc" }}
+                cols={[{ key: "name", label: "Subject", get: (r) => r.name, render: (r) => r.name }, { key: "c", label: "Notes", get: (r) => r.c, first: "desc", render: (r) => r.c }]} />
+            </div>
+            <div>
+              <h3>By concept</h3>
+              <SortTable rows={[...byConcept.entries()].map(([cid, c]) => ({ name: conceptPath(boot, cid) || cid, c }))} initial={{ key: "c", dir: "desc" }}
+                cols={[{ key: "name", label: "Concept", get: (r) => r.name, render: (r) => r.name }, { key: "c", label: "Notes", get: (r) => r.c, first: "desc", render: (r) => r.c }]} />
+            </div>
+          </div>
+          <h3>Notes</h3>
+          <ul class="note-list">
+            {shown.map((q) => (
+              <li>
+                <a href={`#/q/${q.id}`}><b>Q{q.qno}</b></a>
+                <span class="muted small"> · {q.subject_id ? n.subject.get(q.subject_id) : "No subject"} · {resultBucket(q) === "never" ? "not attempted" : `last: ${q.last_result ?? "not graded"}`}</span>
+                <p class="note-text">{noteOf(q, fid)}</p>
+              </li>
+            ))}
+          </ul>
+          {list.length > 8 && <button class="btn small ghost" onClick={() => setShowAll(!showAll)}>{showAll ? "Show fewer" : `Show all ${list.length}`}</button>}
+        </>
+      )}
+    </section>
+  );
 }

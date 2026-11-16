@@ -3,6 +3,7 @@
 // ticked that item, given all your OTHER rules — like a shop's filter sidebar.
 // Runs on the device over the whole library (~1,000 rows) in a few milliseconds.
 import { compile } from "../filter";
+import { noteOf, notesFieldId } from "../notes";
 import type { Boot, Concept, LibQ } from "../types";
 import { hasConditions, NONE, rangeOn, resultBucket, UNIT_DAYS, type PoolSpec, type Range } from "./spec";
 
@@ -130,7 +131,7 @@ export function treeState(sel: Set<string> | null, n: TreeNode): TriState {
 // ------------------------------------------------------------------ rules
 
 type Facet =
-  | "archived" | "advanced" | "text" | "tree" | "difficulty" | "attempted" | "recency" | "attempts" | "results"
+  | "archived" | "advanced" | "text" | "tree" | "difficulty" | "attempted" | "note" | "recency" | "attempts" | "results"
   | "time" | "personal" | "formats" | "marks" | "solution" | "key" | "imports" | "added";
 
 const inRange = (v: number, r: Range) => (r.min === null || v >= r.min) && (r.max === null || v <= r.max);
@@ -154,6 +155,10 @@ export function rules(p: PoolSpec, ctx: Ctx, now: number): [Facet, (q: LibQ) => 
   if (p.difficulty) {
     const s = new Set(p.difficulty);
     out.push(["difficulty", (q) => s.has(q.difficulty_code ?? NONE)]);
+  }
+  if (p.note !== "any") {
+    const fid = notesFieldId(ctx.boot);
+    out.push(["note", (q) => (noteOf(q, fid) !== null) === (p.note === "yes")]);
   }
   if (p.attempted !== "any") out.push(["attempted", (q) => (q.last_attempted_at !== null) === (p.attempted === "yes")]);
   const r = p.recency;
@@ -203,6 +208,7 @@ export interface PoolEval {
   counts: {
     tree: Map<string, number>;
     attempted: Map<string, number>;
+    note: Map<string, number>;
     difficulty: Map<string, number>;
     results: Map<string, number>;
     formats: Map<string, number>;
@@ -234,11 +240,13 @@ const bump = (m: Map<string, number>, k: string) => m.set(k, (m.get(k) ?? 0) + 1
 
 export function evaluatePool(lib: LibQ[], ctx: Ctx, p: PoolSpec, now: number): PoolEval {
   const rs = rules(p, ctx, now);
+  const notesFid = notesFieldId(ctx.boot);
   const counts: PoolEval["counts"] = {
-    tree: new Map(), attempted: new Map(), difficulty: new Map(), results: new Map(), formats: new Map(), imports: new Map(), solution: new Map(), key: new Map(),
+    tree: new Map(), attempted: new Map(), note: new Map(), difficulty: new Map(), results: new Map(), formats: new Map(), imports: new Map(), solution: new Map(), key: new Map(),
   };
   const count = (q: LibQ, only: Facet | null) => {
     if (!only || only === "tree") for (const k of treeKeysOf(q, ctx)) bump(counts.tree, k);
+    if (!only || only === "note") bump(counts.note, noteOf(q, notesFid) !== null ? "yes" : "no");
     if (!only || only === "attempted") bump(counts.attempted, q.last_attempted_at !== null ? "yes" : "no");
     if (!only || only === "difficulty") bump(counts.difficulty, q.difficulty_code ?? NONE);
     if (!only || only === "results") bump(counts.results, resultBucket(q));

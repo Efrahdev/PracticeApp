@@ -5,6 +5,8 @@ import { SortTable } from "../grid";
 import { api, localDate } from "../api";
 import { dataSnapshot, refresh, useData } from "../store";
 import type { Boot } from "../types";
+import { deleteAttempts } from "../attempts";
+import { NOTES_FIELD } from "../notes";
 import { askConfirm, ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
 import { loadStored, QuestionView, SolutionView } from "../views";
 import { parseNumberish } from "../../shared/qpack/numbers";
@@ -16,8 +18,6 @@ export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise
   const [result, setResult] = useState<GradeIn["result"] | null>(null);
   const [partial, setPartial] = useState(50);
   const [errType, setErrType] = useState("");
-  const [conf, setConf] = useState<number | null>(null);
-  const [note, setNote] = useState("");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const submit = async () => {
@@ -25,7 +25,7 @@ export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise
     setBusy(true);
     setErr(null);
     try {
-      await props.onSubmit({ result, score_permille: result === "partial" ? Math.round(partial * 10) : undefined, error_type_code: errType || null, confidence: conf, note: note || null });
+      await props.onSubmit({ result, score_permille: result === "partial" ? Math.round(partial * 10) : undefined, error_type_code: errType || null });
     } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   };
   return (
@@ -50,14 +50,6 @@ export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise
             {props.boot.errorTypes.map((t) => <option value={t.code}>{t.label}</option>)}
           </select>
         </label>
-      )}
-      {result && (
-        <>
-          <div class="field">How sure were you? <span class="muted small">(optional)</span>
-            <div class="chips">{[1, 2, 3, 4, 5].map((c) => <button type="button" class={`chip ${conf === c ? "on" : ""}`} aria-pressed={conf === c} onClick={() => setConf(conf === c ? null : c)}>{c}</button>)}</div>
-          </div>
-          <label class="field">Note <span class="muted small">(optional)</span><input value={note} onInput={(e) => setNote((e.target as HTMLInputElement).value)} /></label>
-        </>
       )}
       <div class="row end"><button class="btn primary" disabled={!result || busy} onClick={submit}>{props.submitLabel ?? "Save grade"}</button></div>
     </div>
@@ -290,6 +282,12 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
             {saved.grade.method === "auto" && <span class="muted small">marked automatically</span>}
             <span class="grow" />
             <button class="btn ghost small" onClick={() => setFixing(!fixing)}>Correct grade</button>
+            <button class="btn ghost small danger-text" title="Answered by mistake? Remove this attempt and answer again"
+              onClick={() => deleteAttempts({ ids: [saved.attempt_id], reopen: true }, {
+                title: "Undo this attempt?",
+                message: "It is removed from your history and results, and you can answer this question again.",
+                onChange: () => { setSaved(null); setFixing(false); setSolOpen(false); setFinished(false); watch.reset(0); },
+              })}>Undo this attempt</button>
           </div>
           {saved.answer_key && (saved.grade.method === "auto" || solutionsAllowed) && (
             <p class="small">{saved.answer_key.origin === "suggestion" ? "AI-suggested answer (unverified)" : "Answer"}: {saved.answer_key.mcq_correct ? JSON.parse(saved.answer_key.mcq_correct).join(", ") : saved.answer_key.numeric_value ?? saved.answer_key.text_value}</p>
@@ -318,7 +316,6 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
  * the box, and when moving to another question). Stored as the question's value of the custom text field "Practice notes", so it
  * can be filtered on under Advanced conditions → Custom field. The field is created the first time a note is saved.
  */
-export const NOTES_FIELD = "Practice notes";
 
 function NoteField(props: { questionId: string }) {
   const { boot, lib } = useData();
@@ -379,7 +376,7 @@ function NoteField(props: { questionId: string }) {
             {state === "saving" ? "Saving…" : state === "saved" ? "Saved" : state === "error" ? "Not saved — check your connection" : "Saved with this question"}
           </span>
         </span>
-        <textarea rows={3} value={text} placeholder="Anything you want to remember about this question"
+        <textarea rows={2} value={text} placeholder="Anything you want to remember about this question"
           onInput={(e) => {
             const v = (e.target as HTMLTextAreaElement).value;
             textRef.current = v; setText(v); setState("idle");

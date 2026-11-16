@@ -142,6 +142,7 @@ export function describeBlueprint(bp: Blueprint, boot: Boot, ctx: Ctx, lib: LibQ
     out.push({ label: "Subjects & concepts", value: list([...picked, ...untagged], 6) || "none" });
   }
   if (p.difficulty) out.push({ label: "Difficulty", value: list(p.difficulty.map((d) => valueLabel("difficulty", d, ctx))) || "none" });
+  if (p.note !== "any") out.push({ label: "My notes", value: p.note === "yes" ? "has my note" : "no note" });
   if (p.attempted !== "any") out.push({ label: "Attempted", value: p.attempted === "yes" ? "attempted before" : "never attempted" });
   if (p.recency.mode !== "any") out.push({ label: "Last attempted", value: recencyText(p.recency) });
   if (rangeOn(p.attempts)) out.push({ label: "Attempts", value: rangeText(p.attempts) });

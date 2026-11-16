@@ -872,6 +872,108 @@ export async function gradeCorrect(req: Request, env: Env, attemptId: string) {
   return json({ id, result, score_permille: score });
 }
 
+// ------------------------------------------------------------------ delete attempts (recorded by mistake) + undo
+
+const ATTEMPT_COLS = ["id", "question_id", "question_version_id", "session_id", "paper_id", "paper_position", "attempted_at", "local_date",
+  "time_taken_seconds", "response_kind", "response_options", "response_numeric", "response_text"];
+const GRADE_COLS = ["id", "attempt_id", "grade_no", "cause", "result", "score_permille", "method", "scoring_rule_code", "answer_key_id",
+  "error_type_code", "confidence", "note", "graded_at"];
+const SESSION_COLS = ["id", "paper_id", "started_at", "completed_at", "current_position", "current_elapsed_seconds", "updated_at"];
+
+interface AttemptPayload { sessions: Row[]; attempts: Row[]; grades: Row[] }
+
+/** Recompute every metric touched by these attempts: each question's stat row and each (question, day) daily stat. */
+function recomputeFor(db: D1Database, attempts: Row[]): D1PreparedStatement[] {
+  const qs = [...new Set(attempts.map((a) => a.question_id as string))];
+  const days = [...new Set(attempts.map((a) => `${a.question_id}|${a.local_date}`))].map((k) => k.split("|"));
+  return [
+    ...qs.map((q) => questionStatStatement(db, q)),
+    ...days.flatMap(([q, d]) => liveUpdateStatements(db, q, d).slice(1)),
+  ];
+}
+
+/**
+ * Delete attempts permanently (by id, or a whole sitting). Grades go with them; the question's history, last result,
+ * attempted state and every metric are recomputed in the same all-or-nothing batch. The removed rows are returned so
+ * the app can offer Undo (POST /api/attempts/restore puts them back exactly).
+ */
+export async function attemptsDelete(req: Request, env: Env) {
+  const db = env.DB;
+  const body = await readJson<{ ids?: string[]; session_id?: string; reopen?: boolean }>(req);
+  let attempts: Row[];
+  let sessions: Row[] = [];
+  if (body.session_id) {
+    const s = await first(db, `SELECT * FROM practice_session WHERE id = ?`, body.session_id);
+    if (!s) throw new HttpError(404, "Sitting not found.");
+    sessions = [s];
+    attempts = await all(db, `SELECT * FROM attempt WHERE session_id = ?`, body.session_id);
+  } else {
+    const ids = (body.ids ?? []).filter((x) => typeof x === "string");
+    if (!ids.length) throw new HttpError(400, "No attempts given.");
+    attempts = await all(db, `SELECT * FROM attempt WHERE id IN (SELECT value FROM json_each(?))`, JSON.stringify(ids));
+    if (attempts.length !== ids.length) throw new HttpError(404, "Attempt not found (it may already be deleted).");
+  }
+  const ids = attempts.map((a) => a.id as string);
+  const grades = ids.length ? await all(db, `SELECT * FROM grade WHERE attempt_id IN (SELECT value FROM json_each(?))`, JSON.stringify(ids)) : [];
+  const t = now();
+  const qs = [...new Set(attempts.map((a) => a.question_id as string))];
+  const stmts: D1PreparedStatement[] = [
+    ...qs.map((q) => db.prepare(`DELETE FROM question_stat WHERE question_id = ?`).bind(q)), // it points at the last attempt
+    db.prepare(`DELETE FROM grade WHERE attempt_id IN (SELECT value FROM json_each(?))`).bind(JSON.stringify(ids)),
+    db.prepare(`DELETE FROM attempt WHERE id IN (SELECT value FROM json_each(?))`).bind(JSON.stringify(ids)),
+  ];
+  if (body.session_id) stmts.push(db.prepare(`DELETE FROM practice_session WHERE id = ?`).bind(body.session_id));
+  else {
+    // an unfinished sitting goes back to the earliest question whose answer was removed, so it can be answered again
+    const back = new Map<string, number>();
+    for (const a of attempts) if (a.session_id && a.paper_position) back.set(a.session_id as string, Math.min(back.get(a.session_id as string) ?? 1e9, Number(a.paper_position)));
+    for (const [sid, pos] of back) {
+      // "Undo this attempt" straight after answering the last question re-opens that sitting (if the paper has no other open one)
+      if (body.reopen) {
+        stmts.push(db.prepare(`UPDATE practice_session SET completed_at = NULL, current_position = ?, current_elapsed_seconds = 0, updated_at = ?
+          WHERE id = ?1 AND completed_at IS NOT NULL
+            AND NOT EXISTS (SELECT 1 FROM practice_session o WHERE o.paper_id = practice_session.paper_id AND o.completed_at IS NULL)`.replace("?1", "?")).bind(pos, t, sid));
+      }
+      stmts.push(db.prepare(`UPDATE practice_session SET current_position = min(current_position, ?), current_elapsed_seconds = 0, updated_at = ? WHERE id = ? AND completed_at IS NULL`).bind(pos, t, sid));
+    }
+  }
+  stmts.push(...recomputeFor(db, attempts));
+  for (const a of attempts) stmts.push(logChange(db, "attempt", a.id as string, "id", "delete", a.question_id, null, t));
+  for (const s of sessions) stmts.push(logChange(db, "practice_session", s.id as string, "id", "delete", s.paper_id, null, t));
+  await db.batch(stmts);
+  const payload: AttemptPayload = { sessions, attempts, grades };
+  return json({ ok: true, deleted: attempts.length, payload });
+}
+
+/** Undo a delete: put the exact rows back, then recompute the same metrics. */
+export async function attemptsRestore(req: Request, env: Env) {
+  const db = env.DB;
+  const body = await readJson<{ payload: AttemptPayload }>(req);
+  const p = body.payload;
+  if (!p || !Array.isArray(p.attempts) || !Array.isArray(p.grades) || !Array.isArray(p.sessions)) throw new HttpError(400, "Nothing to restore.");
+  const ins = (table: string, cols: string[], row: Row) =>
+    db.prepare(`INSERT INTO ${table} (${cols.join(",")}) VALUES (${cols.map(() => "?").join(",")})`).bind(...cols.map((c) => (row[c] === undefined ? null : row[c])));
+  const t = now();
+  const qs = [...new Set(p.attempts.map((a) => a.question_id as string))];
+  const stmts: D1PreparedStatement[] = [
+    ...p.sessions.map((s) => ins("practice_session", SESSION_COLS, s)),
+    ...p.attempts.map((a) => ins("attempt", ATTEMPT_COLS, a)),
+    ...p.grades.map((g) => ins("grade", GRADE_COLS, g)),
+    ...qs.map((q) => db.prepare(`DELETE FROM question_stat WHERE question_id = ?`).bind(q)),
+    ...recomputeFor(db, p.attempts),
+    ...p.attempts.map((a) => logChange(db, "attempt", a.id as string, "id", "insert", null, a.question_id, t)),
+  ];
+  try {
+    await db.batch(stmts);
+  } catch (e) {
+    const m = String(e);
+    if (m.includes("UNIQUE")) throw new HttpError(409, "Can't undo: that question has been answered again (or the paper has another sitting open) since it was deleted.");
+    if (m.includes("FOREIGN KEY")) throw new HttpError(409, "Can't undo: the paper or question it belonged to no longer exists.");
+    throw e;
+  }
+  return json({ ok: true, restored: p.attempts.length });
+}
+
 // ------------------------------------------------------------------ analytics (FR-5)
 
 export async function analytics(env: Env) {
