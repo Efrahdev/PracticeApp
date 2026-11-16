@@ -950,7 +950,7 @@ export async function attemptsRestore(req: Request, env: Env) {
   const db = env.DB;
   const body = await readJson<{ payload: AttemptPayload }>(req);
   const p = body.payload;
-  if (!p || !Array.isArray(p.attempts) || !Array.isArray(p.grades) || !Array.isArray(p.sessions)) throw new HttpError(400, "Nothing to restore.");
+  if (!p || !Array.isArray(p.attempts) || !Array.isArray(p.grades) || !Array.isArray(p.sessions) || !p.attempts.length) throw new HttpError(400, "Nothing to restore.");
   const ins = (table: string, cols: string[], row: Row) =>
     db.prepare(`INSERT INTO ${table} (${cols.join(",")}) VALUES (${cols.map(() => "?").join(",")})`).bind(...cols.map((c) => (row[c] === undefined ? null : row[c])));
   const t = now();
