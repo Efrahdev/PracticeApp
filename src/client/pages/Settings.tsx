@@ -5,11 +5,11 @@ import { refresh, useData } from "../store";
 import type { Boot } from "../types";
 import { TaxonomyManager } from "./Taxonomy";
 import { SortTable } from "../grid";
-import { ErrorBox, Progress, toast } from "../ui";
+import { ErrorBox, Progress, toast, Loading } from "../ui";
 
 export function Settings() {
   const { boot, lib } = useData();
-  if (!boot || !lib) return <p class="muted">Loading…</p>;
+  if (!boot || !lib) return <Loading />;
   return (
     <div class="page">
       <div class="page-head"><h1>Settings</h1><span class="muted small">Schema version {boot.schemaVersion}</span></div>

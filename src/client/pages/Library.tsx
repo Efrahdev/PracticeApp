@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "preact/hooks";
 import { compile, COND_LABELS, defaultCond, emptyFilter, type Cond, type FilterDef, type Group } from "../filter";
 import { openBuilder, takePendingFilter, useData } from "../store";
 import type { Boot, LibQ } from "../types";
-import { conceptPath, ErrorBox, fmtDate, fmtSecs, MultiSelect, pct } from "../ui";
+import { conceptPath, ErrorBox, fmtDate, fmtSecs, MultiSelect, pct, Loading } from "../ui";
 import { BulkEdit } from "./BulkEdit";
 import { DataGrid, type GridCol } from "../grid";
 import { Badge, Icon } from "../builder/controls";
@@ -80,7 +80,7 @@ export function Library() {
   }, [lib, boot, results]);
 
   if (error) return <ErrorBox error={error} />;
-  if (!boot || !lib || !ctx) return <p class="muted">Loading library…</p>;
+  if (!boot || !lib || !ctx) return <Loading label="Loading library…" />;
 
   const condCount = def.groups.reduce((a, g) => a + g.conds.length, 0);
   const quickCount = Object.values(quick).filter(Boolean).length;

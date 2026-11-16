@@ -7,8 +7,20 @@ import { createHash } from "node:crypto";
 import { join, relative } from "node:path";
 
 rmSync("public/chunks", { recursive: true, force: true });
+// Typefaces are shipped with the app (no outside calls): Geist for the interface,
+// Source Serif 4 for question text, STIX Two Math for maths.
+rmSync("public/fonts", { recursive: true, force: true });
 mkdirSync("public/fonts", { recursive: true });
-copyFileSync("node_modules/temml/dist/Temml.woff2", "public/fonts/Temml.woff2");
+const FONTS = {
+  "geist-latin.woff2": "@fontsource-variable/geist/files/geist-latin-wght-normal.woff2",
+  "geist-latin-ext.woff2": "@fontsource-variable/geist/files/geist-latin-ext-wght-normal.woff2",
+  "source-serif-latin.woff2": "@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2",
+  "source-serif-latin-ext.woff2": "@fontsource-variable/source-serif-4/files/source-serif-4-latin-ext-wght-normal.woff2",
+  "source-serif-italic-latin.woff2": "@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-italic.woff2",
+  "source-serif-italic-latin-ext.woff2": "@fontsource-variable/source-serif-4/files/source-serif-4-latin-ext-wght-italic.woff2",
+  "stix-two-math.woff2": "@fontsource/stix-two-math/files/stix-two-math-latin-400-normal.woff2",
+};
+for (const [name, from] of Object.entries(FONTS)) copyFileSync(join("node_modules", from), join("public/fonts", name));
 
 await build({
   entryPoints: { app: "src/client/main.tsx" },

@@ -1,18 +1,24 @@
 // Practice (FR-4). One question at a time; pause and resume; no countdowns or
 // time limits anywhere — time is recorded quietly for information only.
 import { useEffect, useRef, useState } from "preact/hooks";
-import { SortTable } from "../grid";
 import { api, localDate } from "../api";
 import { refresh, useData } from "../store";
 import type { Boot } from "../types";
-import { ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
-import { loadStored, QuestionView, SolutionView } from "../views";
+import { conceptPath, ErrorBox, fmtDate, fmtSecs, pct, RESULT_TEXT, ResultBadge, Ring, toast, Loading } from "../ui";
+import { loadStored, QuestionView, SolutionView, type Choice } from "../views";
+import { Icon } from "../builder/controls";
 import { parseNumberish } from "../../shared/qpack/numbers";
 import type { StoredQuestion } from "../../shared/qpack/types";
 
 export interface GradeIn { result: "correct" | "incorrect" | "partial"; score_permille?: number; error_type_code?: string | null; confidence?: number | null; note?: string | null }
 
-export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise<void>; submitLabel?: string; autoResult?: string | null }) {
+const GRADES = [
+  { r: "correct", label: "Correct", icon: "check" },
+  { r: "partial", label: "Partly", icon: "half" },
+  { r: "incorrect", label: "Incorrect", icon: "x" },
+] as const;
+
+export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise<void>; submitLabel?: string; autoResult?: string | null; title?: string }) {
   const [result, setResult] = useState<GradeIn["result"] | null>(null);
   const [partial, setPartial] = useState(50);
   const [errType, setErrType] = useState("");
@@ -31,33 +37,37 @@ export function GradeForm(props: { boot: Boot; onSubmit: (g: GradeIn) => Promise
   return (
     <div class="grade-form">
       <ErrorBox error={err} />
+      <div class="grade-title">{props.title ?? "How did it go?"}</div>
       <div class="grade-buttons" role="group" aria-label="Grade">
-        {(["correct", "partial", "incorrect"] as const).map((r) => (
-          <button type="button" class={`gbtn g-${r} ${result === r ? "on" : ""}`} aria-pressed={result === r} onClick={() => setResult(r)}>
-            {r === "correct" ? "✓ Correct" : r === "partial" ? "◐ Partly" : "✗ Incorrect"}
+        {GRADES.map((g) => (
+          <button type="button" class={`gbtn g-${g.r} ${result === g.r ? "on" : ""}`} aria-pressed={result === g.r} onClick={() => setResult(g.r)}>
+            <span class="gbtn-ic"><Icon name={g.icon} size={16} /></span>{g.label}
           </button>
         ))}
       </div>
       {result === "partial" && (
-        <label class="field">Credit: {partial}%
+        <label class="field credit">How much credit? <b>{partial}%</b>
           <input type="range" min="1" max="99" value={partial} onInput={(e) => setPartial(Number((e.target as HTMLInputElement).value))} />
         </label>
       )}
-      {result && result !== "correct" && (
-        <label class="field">What went wrong? <span class="muted small">(optional)</span>
-          <select value={errType} onChange={(e) => setErrType((e.target as HTMLSelectElement).value)}>
-            <option value="">—</option>
-            {props.boot.errorTypes.map((t) => <option value={t.code}>{t.label}</option>)}
-          </select>
-        </label>
-      )}
       {result && (
-        <>
-          <div class="field">How sure were you? <span class="muted small">(optional)</span>
-            <div class="chips">{[1, 2, 3, 4, 5].map((c) => <button type="button" class={`chip ${conf === c ? "on" : ""}`} aria-pressed={conf === c} onClick={() => setConf(conf === c ? null : c)}>{c}</button>)}</div>
+        <details class="grade-more">
+          <summary>Add details <span class="muted">— what went wrong, how sure you were, a note (optional)</span></summary>
+          <div class="grade-more-body">
+            {result !== "correct" && (
+              <label class="field">What went wrong?
+                <select value={errType} onChange={(e) => setErrType((e.target as HTMLSelectElement).value)}>
+                  <option value="">—</option>
+                  {props.boot.errorTypes.map((t) => <option value={t.code}>{t.label}</option>)}
+                </select>
+              </label>
+            )}
+            <div class="field">How sure were you?
+              <div class="chips">{[1, 2, 3, 4, 5].map((c) => <button type="button" class={`chip ${conf === c ? "on" : ""}`} aria-pressed={conf === c} onClick={() => setConf(conf === c ? null : c)}>{c}</button>)}</div>
+            </div>
+            <label class="field wide">Note<input value={note} onInput={(e) => setNote((e.target as HTMLInputElement).value)} /></label>
           </div>
-          <label class="field">Note <span class="muted small">(optional)</span><input value={note} onInput={(e) => setNote((e.target as HTMLInputElement).value)} /></label>
-        </>
+        </details>
       )}
       <div class="row end"><button class="btn primary" disabled={!result || busy} onClick={submit}>{props.submitLabel ?? "Save grade"}</button></div>
     </div>
@@ -78,6 +88,7 @@ interface Item {
   has_key: number;
   has_solution: number;
   concept_ids?: string;
+  subject_id?: string | null;
 }
 
 /** Quiet stopwatch that pauses while the tab is hidden. */
@@ -99,14 +110,25 @@ function useStopwatch(start: number, running: boolean) {
   };
 }
 
-function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void; disabled: boolean }) {
+const isMcq = (f: string) => f === "mcq_single" || f === "mcq_multi";
+const optionLabels = (item: Item): string[] => (item.option_labels ? JSON.parse(item.option_labels) : ["A", "B", "C", "D"]);
+
+function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void; disabled: boolean; inFrame: boolean | null }) {
   const f = props.item.answer_format;
-  const labels: string[] = props.item.option_labels ? JSON.parse(props.item.option_labels) : ["A", "B", "C", "D"];
-  if (f === "mcq_single" || f === "mcq_multi") {
+  if (isMcq(f)) {
     const cur: string[] = props.value ?? [];
+    if (props.inFrame === null) return <p class="px-prompt muted">&nbsp;</p>;
+    if (props.inFrame) {
+      return (
+        <p class="px-prompt" aria-live="polite">
+          {cur.length ? <>Your answer <span class="px-picked">{[...cur].sort().map((l) => <b>{l}</b>)}</span></> : f === "mcq_single" ? "Choose one option above" : "Choose every option that applies"}
+        </p>
+      );
+    }
+    // The options are not separate elements in this question (imported HTML): choose by letter.
     return (
       <div class="chips answer" role="group" aria-label="Your answer">
-        {labels.map((l) => (
+        {optionLabels(props.item).map((l) => (
           <button type="button" disabled={props.disabled} class={`chip big ${cur.includes(l) ? "on" : ""}`} aria-pressed={cur.includes(l)}
             onClick={() => props.onChange(f === "mcq_single" ? [l] : cur.includes(l) ? cur.filter((x) => x !== l) : [...cur, l])}>{l}</button>
         ))}
@@ -116,14 +138,22 @@ function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void
   if (f === "numeric") {
     const parsed = typeof props.value === "string" && props.value.trim() ? parseNumberish(props.value) : null;
     return (
-      <div class="answer">
-        <input type="text" inputMode="decimal" placeholder="Your answer — 0.625, 5/8 or 1 1/2" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLInputElement).value)} />
-        {typeof props.value === "string" && props.value.trim() && !parsed && <p class="small warn-text">That isn't a number yet.</p>}
-      </div>
+      <label class="answer answer-num">
+        <span class="answer-label">Your answer</span>
+        <input type="text" inputMode="decimal" autocomplete="off" placeholder="0.625, 5/8 or 1 1/2" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLInputElement).value)} />
+        {typeof props.value === "string" && props.value.trim() && !parsed && <span class="small warn-text">That isn't a number yet.</span>}
+      </label>
     );
   }
-  if (f === "text") return <textarea class="answer" rows={3} placeholder="Your answer" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLTextAreaElement).value)} />;
-  return <p class="muted small">Work it out (on paper is fine), then grade yourself.</p>;
+  if (f === "text") {
+    return (
+      <label class="answer answer-text">
+        <span class="answer-label">Your answer</span>
+        <textarea rows={3} placeholder="Write your answer here" disabled={props.disabled} value={props.value ?? ""} onInput={(e) => props.onChange((e.target as HTMLTextAreaElement).value)} />
+      </label>
+    );
+  }
+  return <p class="px-prompt">Work it out — on paper is fine — then mark yourself.</p>;
 }
 
 function responseOf(item: Item, v: any) {
@@ -133,6 +163,11 @@ function responseOf(item: Item, v: any) {
   if (f === "text" && typeof v === "string" && v.trim()) return { kind: "text", text: v };
   return { kind: "none" };
 }
+
+const FORMAT_HINT: Record<string, string> = {
+  mcq_single: "Choose one", mcq_multi: "Choose all that apply", numeric: "Number answer", text: "Written answer", none: "Work it out",
+};
+const VERDICT: Record<string, string> = { correct: "Correct", partial: "Partly right", incorrect: "Not quite" };
 
 export function Practice(props: { paperId?: string; questionId?: string }) {
   const { boot } = useData();
@@ -147,11 +182,15 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
   const [busy, setBusy] = useState(false);
   const [fixing, setFixing] = useState(false);
   const [solOpen, setSolOpen] = useState(false);
+  const [selfMark, setSelfMark] = useState(false);
+  const [inFrame, setInFrame] = useState<boolean | null>(null);
+  const [results, setResults] = useState<Record<number, string>>({});
   const [stored, setStored] = useState<StoredQuestion | null>(null);
   const watch = useStopwatch(0, !saved && !finished && !!items);
   const current = items ? items.find((i) => i.position === pos) ?? items[0] : null;
   useEffect(() => {
     setStored(null);
+    setInFrame(null);
     if (current?.content_format === "qpack_v1") loadStored(current.html_blob_sha256).then(setStored).catch(() => {});
   }, [current?.question_version_id]);
 
@@ -165,6 +204,9 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
           setItems(d.items);
           setSession(s);
           setPos(s.current_position);
+          const done: Record<number, string> = {};
+          for (const a of d.attempts) if (a.session_id === s.id && a.paper_position) done[a.paper_position] = a.result ?? "ungraded";
+          setResults(done);
           watch.reset(s.current_elapsed_seconds);
         } else if (props.questionId) {
           const d = await api("GET", `/api/questions/${props.questionId}`);
@@ -172,7 +214,7 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
           setItems([{
             position: 1, question_id: q.id, question_version_id: q.version_id, html_blob_sha256: q.html_blob_sha256, content_format: q.content_format,
             css_sha256: d.stylesheets.find((s: any) => s.question_version_id === q.version_id)?.blob_sha256 ?? null,
-            qno: q.source_question_number, answer_format: q.answer_format, option_labels: q.option_labels, marks: q.marks,
+            qno: q.source_question_number, answer_format: q.answer_format, option_labels: q.option_labels, marks: q.marks, subject_id: q.subject_id,
             has_key: d.answerKey && d.answerKey.origin !== "suggestion" ? 1 : 0, has_solution: d.solution ? 1 : 0,
           }]);
           watch.reset(0);
@@ -201,16 +243,29 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
     return () => document.removeEventListener("visibilitychange", onHide);
   }, [session, pos, saved, finished]);
 
-  if (err) return <div class="page"><ErrorBox error={err} /><a href="#/papers">← Papers</a></div>;
-  if (!items || !boot) return <p class="muted">Loading…</p>;
+  // Keyboard: letters (or 1–9) choose an option, Enter checks the answer or moves on.
+  const keys = useRef<(e: KeyboardEvent) => void>(() => {});
+  useEffect(() => {
+    const f = (e: KeyboardEvent) => keys.current(e);
+    window.addEventListener("keydown", f);
+    return () => window.removeEventListener("keydown", f);
+  }, []);
+
+  if (err && !items) return <div class="page"><ErrorBox error={err} /><a href="#/papers">← Papers</a></div>;
+  if (!items || !boot) return <div class="px"><div class="sheet px-sheet"><div class="frame-loading" style={{ height: "280px" }}><span class="skel w70" /><span class="skel w90" /><span class="skel w50" /></div></div></div>;
   if (session?.completed_at || finished) return <Summary paperId={props.paperId} questionId={props.questionId} />;
 
   const item = current!;
+  const f = item.answer_format;
   const resp = responseOf(item, answer);
-  const canAuto = !!item.has_key && resp.kind !== "none" && resp.kind !== "text";
+  // Questions with a verified key and a typed/tapped answer are marked by the app.
+  const autoable = !!item.has_key && (isMcq(f) || f === "numeric");
+  const canAuto = autoable && resp.kind !== "none";
   // FR: a paper can include or leave out solutions; single questions always have them.
   const solutionsAllowed = !paper || paper.solutions_mode !== "hidden";
   const parts = stored?.parts ?? [];
+  const subject = item.subject_id ? boot.subjects.find((x) => x.id === item.subject_id) : null;
+  const subjectSlot = item.subject_id ? (boot.subjects.filter((x) => !x.archived_at).findIndex((x) => x.id === item.subject_id) % 8) + 1 : 0;
 
   const submit = async (g?: GradeIn) => {
     setBusy(true);
@@ -227,6 +282,7 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         grade: g,
       });
       setSaved(r);
+      setResults((x) => ({ ...x, [item.position]: r.grade.result }));
       refresh();
     } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   };
@@ -236,78 +292,150 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
     setAnswer(undefined);
     setFixing(false);
     setSolOpen(false);
+    setSelfMark(false);
     if (!session || pos >= items.length) { setFinished(true); return; }
     setPos(pos + 1);
     watch.reset(0);
+    window.scrollTo(0, 0);
   };
 
+  const mcq = isMcq(f);
+  const keyShown = saved?.answer_key && (saved.grade.method === "auto" || solutionsAllowed) ? saved.answer_key : null;
+  const choice: Choice | undefined = mcq ? {
+    mode: f === "mcq_single" ? "single" : "multi",
+    value: Array.isArray(answer) ? answer : [],
+    onChange: setAnswer,
+    disabled: busy,
+    reveal: saved ? { correct: keyShown?.mcq_correct ? JSON.parse(keyShown.mcq_correct) : null, result: saved.grade.result } : null,
+  } : undefined;
+
+  keys.current = (e) => {
+    const t = e.target as HTMLElement | null;
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey || (t && /^(INPUT|TEXTAREA|SELECT|BUTTON|A|SUMMARY)$/.test(t.tagName) && !(t.tagName === "INPUT" && e.key === "Enter" && f === "numeric"))) return;
+    if (e.key === "Enter") {
+      if (saved && !fixing) { e.preventDefault(); next(); }
+      else if (!saved && canAuto && !selfMark && !busy) { e.preventDefault(); submit(); }
+      return;
+    }
+    if (!mcq || saved || busy || !inFrame) return;
+    const labels = optionLabels(item);
+    const k = e.key.toUpperCase();
+    const label = labels.find((l) => l.toUpperCase() === k) ?? (/^[1-9]$/.test(k) ? labels[Number(k) - 1] : undefined);
+    if (!label) return;
+    e.preventDefault();
+    const cur: string[] = Array.isArray(answer) ? answer : [];
+    setAnswer(f === "mcq_single" ? [label] : cur.includes(label) ? cur.filter((x) => x !== label) : [...cur, label]);
+  };
+
+  const answerText = keyShown ? (keyShown.mcq_correct ? (JSON.parse(keyShown.mcq_correct) as string[]).join(", ") : keyShown.numeric_value ?? keyShown.text_value) : null;
+  const last = !session || pos >= items.length;
+
   return (
-    <div class="page practice">
-      <div class="practice-head">
-        <button class="btn ghost" onClick={() => pause(true)}>{session ? "Pause & exit" : "← Back"}</button>
-        <div class="grow center">
-          {paper && <div class="small muted">{paper.name}</div>}
-          <strong>Question {item.position} of {items.length}</strong>
-          {items.length > 1 && <div class="dots" aria-hidden="true">{items.map((i) => <i class={i.position < pos ? "done" : i.position === pos ? "now" : ""} />)}</div>}
-        </div>
-        {session && <button class="btn ghost small" onClick={async () => {
-          if (!confirm("Finish this paper now? Unanswered questions stay unanswered.")) return;
-          await api("PATCH", `/api/sessions/${session.id}`, { complete: true });
-          setFinished(true);
-        }}>Finish early</button>}
-      </div>
-
-      <section class="card flush">
-        <QuestionView key={item.question_version_id} v={{ content_format: item.content_format, blob_sha256: item.html_blob_sha256, css_sha256: item.css_sha256 }}
-          opts={{ showMarks: true, marks: item.marks, showHints: true }} minHeight={120} title={`Question ${item.qno}`} />
-      </section>
-      <ErrorBox error={err} />
-      {solutionsAllowed && item.has_solution ? (
-        <div class="row">
-          <button class="btn ghost small" onClick={() => setSolOpen(!solOpen)}>{solOpen ? "Hide solution" : "Show solution"}</button>
-          {!saved && !solOpen && <span class="small muted">(you can check it any time)</span>}
-        </div>
-      ) : null}
-      {solutionsAllowed && solOpen && <VersionSolution versionId={item.question_version_id} />}
-
-      {!saved ? (
-        <section class="card">
-          <AnswerInput item={item} value={answer} onChange={setAnswer} disabled={busy} />
-          {canAuto ? (
-            <div class="row end"><button class="btn primary" disabled={busy} onClick={() => submit()}>Check answer</button></div>
-          ) : parts.length > 1 ? (
-            <PartMarker boot={boot} parts={parts} onSubmit={submit} />
-          ) : (
-            <GradeForm boot={boot} onSubmit={submit} />
-          )}
-        </section>
-      ) : (
-        <section class="card">
-          <div class="row wrap">
-            <span class="big-result"><ResultBadge result={saved.grade.result} /></span>
-            {saved.grade.result === "partial" && <span>{pct(saved.grade.score_permille)}</span>}
-            {saved.grade.method === "auto" && <span class="muted small">marked automatically</span>}
-            <span class="grow" />
-            <button class="btn ghost small" onClick={() => setFixing(!fixing)}>Correct grade</button>
+    <div class="px">
+      <header class="px-bar">
+        <div class="px-bar-in">
+          <button class="px-exit" onClick={() => pause(true)}>
+            <Icon name={session ? "pause" : "left"} size={15} /><span>{session ? "Pause & exit" : "Back"}</span>
+          </button>
+          <div class="px-title">
+            {paper && <span class="px-paper">{paper.name}</span>}
+            <strong>Question {item.position} of {items.length}</strong>
           </div>
-          {saved.answer_key && (saved.grade.method === "auto" || solutionsAllowed) && (
-            <p class="small">{saved.answer_key.origin === "suggestion" ? "AI-suggested answer (unverified)" : "Answer"}: {saved.answer_key.mcq_correct ? JSON.parse(saved.answer_key.mcq_correct).join(", ") : saved.answer_key.numeric_value ?? saved.answer_key.text_value}</p>
-          )}
-          {fixing && (
-            <GradeForm boot={boot} submitLabel="Save correction" onSubmit={async (g) => {
-              const r = await api("POST", `/api/attempts/${saved.attempt_id}/grades`, g);
-              setSaved({ ...saved, grade: { ...saved.grade, result: r.result, score_permille: r.score_permille, method: "manual" } });
-              setFixing(false);
-              toast("Grade corrected");
-              refresh();
-            }} />
-          )}
-          {!solutionsAllowed ? <p class="small muted">Solutions are not included in this paper. You can open them later from each question's page.</p>
-            : !saved.solution ? <p class="small muted">No solution saved for this question.</p>
-            : !solOpen ? <button class="btn small" onClick={() => setSolOpen(true)}>Show solution</button> : null}
-          <div class="row end"><button class="btn primary" onClick={next}>{session && pos < items.length ? "Next question →" : "Finish"}</button></div>
-        </section>
-      )}
+          {session ? <button class="px-finish" onClick={async () => {
+            if (!confirm("Finish this paper now? Unanswered questions stay unanswered.")) return;
+            await api("PATCH", `/api/sessions/${session.id}`, { complete: true });
+            setFinished(true);
+          }}>Finish early</button> : <span class="px-finish-sp" />}
+        </div>
+        {items.length > 1 && (
+          <div class="px-progress" role="progressbar" aria-label="Progress through the paper" aria-valuemin={0} aria-valuemax={items.length} aria-valuenow={Object.keys(results).length}>
+            {items.map((i) => <i class={results[i.position] ? `r-${results[i.position]}` : i.position === pos ? "now" : i.position < pos ? "skipped" : ""} />)}
+          </div>
+        )}
+      </header>
+
+      <article class={`sheet px-sheet${saved ? ` is-${saved.grade.result}` : ""}`}>
+        <header class="px-qhead">
+          <span class="px-qno" aria-hidden="true">{item.position}</span>
+          <div class="px-qmeta">
+            {subject && <span class="px-subject"><i class={`sw seg-s${subjectSlot}`} aria-hidden="true" />{subject.name}</span>}
+            <span class="px-kind">{parts.length > 1 ? `${parts.length} parts` : FORMAT_HINT[f] ?? ""}</span>
+          </div>
+          {item.marks !== null && item.marks !== undefined && <span class="px-marks">{item.marks} mark{item.marks === 1 ? "" : "s"}</span>}
+        </header>
+        <div class="px-body">
+          <QuestionView key={item.question_version_id} v={{ content_format: item.content_format, blob_sha256: item.html_blob_sha256, css_sha256: item.css_sha256 }}
+            opts={{ showMarks: parts.length > 0, marks: item.marks, showHints: true }} minHeight={60} title={`Question ${item.qno}`}
+            choice={choice} onChoiceReady={setInFrame} onKey={(e) => keys.current(e)} />
+        </div>
+
+        {!saved ? (
+          <footer class="px-dock">
+            <ErrorBox error={err} />
+            <div class="px-dock-row">
+              <div class="px-answer"><AnswerInput item={item} value={answer} onChange={setAnswer} disabled={busy} inFrame={mcq ? inFrame : false} /></div>
+              {autoable && !selfMark && (
+                <div class="px-go">
+                  <button class="btn primary lg" disabled={busy || !canAuto} onClick={() => submit()}>Check answer</button>
+                </div>
+              )}
+            </div>
+            {autoable && !selfMark ? (
+              <div class="px-dock-foot">
+                <button class="link-btn quiet" onClick={() => setSelfMark(true)}>Mark it myself instead</button>
+                {solutionsAllowed && item.has_solution ? <button class="link-btn quiet" onClick={() => setSolOpen(!solOpen)}>{solOpen ? "Hide solution" : "Show solution"}</button> : null}
+                {mcq && inFrame && <span class="px-keys"><kbd>A</kbd>–<kbd>{optionLabels(item).slice(-1)[0]}</kbd> to choose · <kbd>Enter</kbd> to check</span>}
+              </div>
+            ) : (
+              <>
+                {parts.length > 1 ? <PartMarker boot={boot} parts={parts} onSubmit={submit} /> : <GradeForm boot={boot} onSubmit={submit} />}
+                <div class="px-dock-foot">
+                  {autoable && <button class="link-btn quiet" onClick={() => setSelfMark(false)}>Let the app mark it</button>}
+                  {solutionsAllowed && item.has_solution ? <button class="link-btn quiet" onClick={() => setSolOpen(!solOpen)}>{solOpen ? "Hide solution" : "Show solution"}</button> : null}
+                </div>
+              </>
+            )}
+          </footer>
+        ) : (
+          <footer class={`px-dock done r-${saved.grade.result}`}>
+            <ErrorBox error={err} />
+            <div class="px-dock-row">
+              <div class="px-verdict" role="status">
+                <span class="px-verdict-ic"><Icon name={saved.grade.result === "correct" ? "check" : saved.grade.result === "partial" ? "half" : "x"} size={20} /></span>
+                <div>
+                  <b>{VERDICT[saved.grade.result] ?? saved.grade.result}{saved.grade.result === "partial" ? ` · ${pct(saved.grade.score_permille)}` : ""}</b>
+                  <span>
+                    {saved.grade.method === "auto" ? "Marked automatically" : "Marked by you"}
+                    {answerText !== null && <> · {keyShown.origin === "suggestion" ? "AI-suggested answer (unverified)" : "Answer"}: <b class="px-key">{answerText}</b></>}
+                  </span>
+                </div>
+              </div>
+              <div class="px-go">
+                <button class="btn primary lg" onClick={next}>{last ? "Finish" : <>Next question <Icon name="arrow" size={16} /></>}</button>
+              </div>
+            </div>
+            <div class="px-dock-foot">
+              <button class="link-btn quiet" onClick={() => setFixing(!fixing)}>{fixing ? "Cancel" : "Correct grade"}</button>
+              {solutionsAllowed && saved.solution ? <button class="link-btn quiet" onClick={() => setSolOpen(!solOpen)}>{solOpen ? "Hide solution" : "Show solution"}</button> : null}
+              {!solutionsAllowed ? <span class="small muted">Solutions are not included in this paper. You can open them later from each question's page.</span>
+                : !saved.solution ? <span class="small muted">No solution saved for this question.</span> : null}
+              <span class="px-keys"><kbd>Enter</kbd> for {last ? "finish" : "next"}</span>
+            </div>
+            {fixing && (
+              <GradeForm boot={boot} title="Change the grade to" submitLabel="Save correction" onSubmit={async (g) => {
+                const r = await api("POST", `/api/attempts/${saved.attempt_id}/grades`, g);
+                setSaved({ ...saved, grade: { ...saved.grade, result: r.result, score_permille: r.score_permille, method: "manual" } });
+                setResults((x) => ({ ...x, [item.position]: r.result }));
+                setFixing(false);
+                toast("Grade corrected");
+                refresh();
+              }} />
+            )}
+          </footer>
+        )}
+      </article>
+
+      {solutionsAllowed && solOpen && <VersionSolution versionId={item.question_version_id} />}
     </div>
   );
 }
@@ -321,11 +449,15 @@ function VersionSolution(props: { versionId: string }) {
     api("GET", `/api/versions/${props.versionId}/solution`).then(setD).catch((e) => setErr(e.message));
   }, [props.versionId]);
   if (err) return <ErrorBox error={err} />;
-  if (!d) return <p class="muted small">Loading solution…</p>;
-  if (!d.solution) return <p class="muted small">No solution saved for this question.</p>;
+  if (!d) return <p class="muted small center">Loading solution…</p>;
+  if (!d.solution) return <p class="muted small center">No solution saved for this question.</p>;
   return (
-    <section class="card">
-      <h3>Solution {d.solution.origin === "suggestion" && <span class="badge r-partial">AI-written · unverified</span>}</h3>
+    <section class="sheet px-solution">
+      <header class="px-sol-head">
+        <span class="px-sol-ic"><Icon name="bulb" size={16} /></span>
+        <h3>Solution</h3>
+        {d.solution.origin === "suggestion" && <span class="badge r-partial">AI-written · unverified</span>}
+      </header>
       <SolutionView s={d.solution} cssSha={d.css_sha256} />
     </section>
   );
@@ -345,19 +477,24 @@ function PartMarker(props: { boot: Boot; parts: StoredQuestion["parts"]; onSubmi
   const result: GradeIn["result"] = permille >= 1000 ? "correct" : permille <= 0 ? "incorrect" : "partial";
   return (
     <div class="grade-form">
-      <p class="small muted">Mark each part:</p>
-      {props.parts.map((p) => (
-        <div class="row part-mark">
-          <strong class="w5">({p.label})</strong>
-          <span class="muted small grow">{p.marks !== null && p.marks !== undefined ? `${p.marks} mark${p.marks === 1 ? "" : "s"}` : ""}</span>
-          {(["yes", "half", "no"] as const).map((v) => (
-            <button type="button" class={`chip ${got[p.label] === v ? "on" : ""}`} aria-pressed={got[p.label] === v}
-              onClick={() => setGot({ ...got, [p.label]: v })}>{v === "yes" ? "✓" : v === "half" ? "½" : "✗"}</button>
-          ))}
-        </div>
-      ))}
+      <div class="grade-title">Mark each part:</div>
+      <div class="part-marks">
+        {props.parts.map((p) => (
+          <div class="row part-mark">
+            <strong class="part-mark-label">({p.label})</strong>
+            <span class="muted small grow">{p.marks !== null && p.marks !== undefined ? `${p.marks} mark${p.marks === 1 ? "" : "s"}` : ""}</span>
+            <div class="part-mark-btns" role="group" aria-label={`Part ${p.label}`}>
+              {(["yes", "half", "no"] as const).map((v) => (
+                <button type="button" class={`pm pm-${v} ${got[p.label] === v ? "on" : ""}`} aria-pressed={got[p.label] === v} aria-label={v === "yes" ? "✓" : v === "half" ? "½" : "✗"}
+                  title={v === "yes" ? "Right" : v === "half" ? "Half right" : "Wrong"}
+                  onClick={() => setGot({ ...got, [p.label]: v })}>{v === "half" ? "½" : <Icon name={v === "yes" ? "check" : "x"} size={15} />}</button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
       <div class="row wrap end">
-        <span class="small">{all ? `Score: ${Math.round(earned * 100) / 100} / ${total} (${Math.round(permille / 10)}%)` : "Mark every part"}</span>
+        <span class="small grow">{all ? <>Score <b>{Math.round(earned * 100) / 100} / {total}</b> ({Math.round(permille / 10)}%)</> : <span class="muted">Mark every part</span>}</span>
         <button class="btn ghost small" onClick={() => setOverall(true)}>Mark overall instead</button>
         <button class="btn primary" disabled={!all || busy} onClick={async () => {
           setBusy(true);
@@ -376,23 +513,26 @@ function Summary(props: { paperId?: string; questionId?: string }) {
   }, [props.paperId]);
   if (props.questionId) {
     return (
-      <div class="page"><section class="card center">
+      <div class="px"><section class="sheet px-saved">
+        <span class="px-verdict-ic ok"><Icon name="check" size={22} /></span>
         <h2>Saved</h2>
-        <div class="row center"><a class="btn" href={`#/q/${props.questionId}`}>Back to question</a><a class="btn primary" href="#/">Library</a></div>
+        <p class="muted">Your answer and grade are in this question's history.</p>
+        <div class="row center"><a class="btn" href={`#/q/${props.questionId}`}>Back to question</a><a class="btn primary" href="#/library">Library</a></div>
       </section></div>
     );
   }
-  if (!d || !boot) return <p class="muted">Loading…</p>;
+  if (!d || !boot) return <Loading />;
   return <PaperSummary d={d} boot={boot} />;
 }
 
 export function PaperSummary(props: { d: any; boot: Boot; embedded?: boolean }) {
   const { d, boot } = props;
-  const n = names(boot);
   const lastSession = d.sessions[d.sessions.length - 1];
   const atts = d.attempts.filter((a: any) => a.session_id === lastSession?.id);
   const total = atts.reduce((s: number, a: any) => s + (a.score_permille ?? 0), 0);
   const time = atts.reduce((s: number, a: any) => s + a.time_taken_seconds, 0);
+  const count = (r: string) => atts.filter((a: any) => a.result === r).length;
+  const score = atts.length ? total / atts.length / 1000 : null;
   const byConcept = new Map<string, { miss: number; total: number }>();
   for (const a of atts) {
     const item = d.items.find((i: any) => i.position === a.paper_position);
@@ -403,38 +543,76 @@ export function PaperSummary(props: { d: any; boot: Boot; embedded?: boolean }) 
       byConcept.set(cid, c);
     }
   }
+  const missed = [...byConcept.entries()].filter(([, c]) => c.miss > 0).map(([cid, c]) => ({ cid, path: conceptPath(boot, cid), ...c })).sort((a, b) => b.miss / b.total - a.miss / a.total || b.miss - a.miss);
+  const skipped = d.items.length - atts.length;
+  const headline = score === null ? "No answers yet" : score >= 0.85 ? "Excellent work" : score >= 0.65 ? "Good going" : score >= 0.4 ? "Getting there" : "A tough one — keep at it";
   const body = (
-      <section class="card">
-        {props.embedded && <h3>Last sitting</h3>}
-        <div class="stats">
-          <div><b>{atts.length ? Math.round(total / atts.length / 10) : 0}%</b><span>score</span></div>
-          <div><b>{atts.length}/{d.items.length}</b><span>answered</span></div>
-          <div><b>{fmtSecs(time)}</b><span>time</span></div>
-          <div><b>{atts.filter((a: any) => a.result === "correct").length}</b><span>correct</span></div>
+    <section class={`card sum${props.embedded ? " embedded" : ""}`}>
+      <div class="sum-top">
+        <Ring value={score} size={132} stroke={11} label="score" />
+        <div class="sum-main">
+          <div class="overline">{props.embedded ? "Last sitting" : "Paper finished"}{lastSession?.completed_at ? ` · ${fmtDate(lastSession.completed_at)}` : ""}</div>
+          <h2 class="sum-headline">{headline}</h2>
+          <div class="sum-stats">
+            <div><b>{count("correct")}</b><span><i class="dot seg-st-good" />correct</span></div>
+            <div><b>{count("partial")}</b><span><i class="dot seg-st-warn" />partly</span></div>
+            <div><b>{count("incorrect")}</b><span><i class="dot seg-st-crit" />incorrect</span></div>
+            {skipped > 0 && <div><b>{skipped}</b><span><i class="dot seg-st-none" />not answered</span></div>}
+            <div><b>{fmtSecs(time)}</b><span>time on questions</span></div>
+          </div>
         </div>
-        <h3>Mistakes by concept</h3>
-        {byConcept.size === 0 ? <p class="muted small">No concept tags on these questions.</p> : (
-          <SortTable rows={[...byConcept.entries()].map(([cid, c]) => ({ name: n.concept.get(cid) ?? cid, miss: c.miss, total: c.total }))} initial={{ key: "miss", dir: "desc" }}
-            cols={[
-              { key: "name", label: "Concept", get: (r) => r.name, render: (r) => r.name },
-              { key: "miss", label: "Missed", get: (r) => r.miss, first: "desc", render: (r) => r.miss },
-              { key: "total", label: "Of", get: (r) => r.total, first: "desc", render: (r) => r.total },
-            ]} />
-        )}
-        <h3>Questions</h3>
-        <ol class="pick-list">
-          {d.items.map((i: any) => {
-            const a = atts.find((x: any) => x.paper_position === i.position);
-            return <li><a href={`#/q/${i.question_id}`}>Q{i.qno}</a> <ResultBadge result={a?.result} /> <span class="muted small">{a ? fmtSecs(a.time_taken_seconds) : "skipped"}</span></li>;
-          })}
-        </ol>
-        {!props.embedded && <div class="row end"><a class="btn" href={`#/papers/${d.paper.id}`}>Paper details</a><a class="btn primary" href="#/analytics">See analytics</a></div>}
-      </section>
+      </div>
+      <div class="sum-strip" aria-label="Result of each question">
+        {d.items.map((i: any) => {
+          const a = atts.find((x: any) => x.paper_position === i.position);
+          return (
+            <a class={`sum-cell r-${a?.result ?? "none"}`} href={`#/q/${i.question_id}`} title={`Question ${i.position}: ${a ? RESULT_TEXT[a.result] ?? "ungraded" : "not answered"}${a ? ` · ${fmtSecs(a.time_taken_seconds)}` : ""}`}>
+              <b>{i.position}</b>
+              <Icon name={a?.result === "correct" ? "check" : a?.result === "partial" ? "half" : a?.result === "incorrect" ? "x" : "minus"} size={13} />
+            </a>
+          );
+        })}
+      </div>
+      <div class="sum-cols">
+        <div>
+          <h3 class="sum-h">Where the marks went</h3>
+          {byConcept.size === 0 ? <p class="muted small">No concept tags on these questions.</p>
+            : missed.length === 0 ? <p class="muted small">Nothing missed — every tagged concept was answered correctly.</p> : (
+              <ul class="bars">
+                {missed.slice(0, 8).map((m) => (
+                  <li>
+                    <span class="bars-label" title={m.path}>{m.path.split(" › ").slice(-1)[0]}<small>{m.path.split(" › ").slice(0, -1).join(" › ")}</small></span>
+                    <span class="bars-track"><i class="seg-st-crit" style={{ width: `${(m.miss / m.total) * 100}%` }} /></span>
+                    <span class="bars-val num">{m.miss} of {m.total} missed</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+        </div>
+        <div>
+          <h3 class="sum-h">Question by question</h3>
+          <ol class="sum-list">
+            {d.items.map((i: any) => {
+              const a = atts.find((x: any) => x.paper_position === i.position);
+              return (
+                <li>
+                  <span class="num sum-n">{i.position}</span>
+                  <a href={`#/q/${i.question_id}`} class="sum-q">{(i.plain_text ?? "").replace(/\s+/g, " ").trim().slice(0, 64) || `Q${i.qno}`}</a>
+                  <ResultBadge result={a?.result} />
+                  <span class="muted small num sum-t">{a ? fmtSecs(a.time_taken_seconds) : "—"}</span>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </div>
+      {!props.embedded && <div class="row end sum-actions"><a class="btn" href={`#/papers/${d.paper.id}`}>Paper details</a><a class="btn primary" href="#/analytics">See progress <Icon name="arrow" size={15} /></a></div>}
+    </section>
   );
   if (props.embedded) return body;
   return (
-    <div class="page">
-      <div class="page-head"><a class="back" href="#/papers">← Papers</a><h1>{d.paper.name} — summary</h1></div>
+    <div class="page sum-page">
+      <div class="page-head"><a class="pb-back" href="#/papers"><Icon name="left" size={13} /> Papers</a><h1 class="lib-h1">{d.paper.name} — summary</h1></div>
       {body}
     </div>
   );

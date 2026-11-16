@@ -9,7 +9,7 @@ import { parseDef } from "../filter";
 import { randomSeed } from "../sampler";
 import { takePendingBuild, useData, type BuildInit } from "../store";
 import type { Boot, LibQ } from "../types";
-import { ErrorBox, toast } from "../ui";
+import { ErrorBox, toast, Loading } from "../ui";
 import { useConceptAccuracy } from "./Analytics";
 import { Badge, Field, Icon, NumBox, Section, Segmented, Stepper, Switch, usePopover } from "../builder/controls";
 import { DIM_LABEL, difficultyTone, ORDER_LABEL, RESULT_LABEL, subjectSlot, valueLabel } from "../builder/describe";
@@ -74,7 +74,7 @@ export function PaperBuilder() {
     try { sessionStorage.setItem(STORE_KEY, JSON.stringify(st)); } catch { /* storage unavailable */ }
   }, [st]);
   if (error) return <ErrorBox error={error} />;
-  if (!boot || !lib) return <p class="muted">Loading…</p>;
+  if (!boot || !lib) return <Loading />;
   if (lib.length === 0) {
     return (
       <div class="page">

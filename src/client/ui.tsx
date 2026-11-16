@@ -34,6 +34,10 @@ export function Toaster() {
   return t ? <div class={`toast ${t.kind}`} role="status">{t.msg}</div> : null;
 }
 
+export function Loading(props: { label?: string }) {
+  return <div class="loading" role="status"><span class="spinner" aria-hidden="true" />{props.label ?? "Loading…"}</div>;
+}
+
 export function ErrorBox(props: { error: string | null }) {
   return props.error ? <div class="error-box" role="alert">{props.error}</div> : null;
 }
@@ -59,9 +63,41 @@ export function fmtSecs(s: number | null | undefined): string {
 }
 export const pct = (permille: number | null | undefined) => (permille === null || permille === undefined ? "—" : `${Math.round(permille / 10)}%`);
 
+export const RESULT_TEXT: Record<string, string> = { correct: "Correct", partial: "Partly right", incorrect: "Incorrect" };
+
 export function ResultBadge(props: { result: string | null | undefined }) {
-  if (!props.result) return <span class="badge muted">not yet</span>;
-  return <span class={`badge r-${props.result}`}>{props.result}</span>;
+  if (!props.result) return <span class="badge muted">Not yet</span>;
+  return <span class={`badge r-${props.result}`}><i class="badge-dot" aria-hidden="true" />{RESULT_TEXT[props.result] ?? props.result}</span>;
+}
+
+/** A score as a ring: the number in the middle, the arc as the share. */
+export function Ring(props: { value: number | null; size?: number; stroke?: number; label?: string; tone?: "auto" | "accent" }) {
+  const size = props.size ?? 112, sw = props.stroke ?? 9;
+  const r = (size - sw) / 2, c = 2 * Math.PI * r;
+  const v = props.value === null ? 0 : Math.max(0, Math.min(1, props.value));
+  const tone = props.value === null ? "none" : props.tone === "accent" ? "accent" : v >= 0.75 ? "good" : v >= 0.5 ? "warn" : "crit";
+  return (
+    <div class={`ring t-${tone}`} style={{ width: `${size}px`, height: `${size}px` }} role="img" aria-label={`${props.label ?? "Score"}: ${props.value === null ? "none yet" : Math.round(v * 100) + "%"}`}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden="true">
+        <circle class="ring-track" cx={size / 2} cy={size / 2} r={r} fill="none" stroke-width={sw} />
+        {props.value !== null && v > 0 && (
+          <circle class="ring-arc" cx={size / 2} cy={size / 2} r={r} fill="none" stroke-width={sw} stroke-linecap="round"
+            stroke-dasharray={`${c * v} ${c}`} transform={`rotate(-90 ${size / 2} ${size / 2})`} />
+        )}
+      </svg>
+      <div class="ring-text">
+        <b style={{ fontSize: `${Math.round(size * 0.25)}px` }}>{props.value === null ? "—" : Math.round(v * 100)}{props.value !== null && <small>%</small>}</b>
+        {props.label && <span>{props.label}</span>}
+      </div>
+    </div>
+  );
+}
+
+/** A thin horizontal meter (0..1) with the value's tone. */
+export function Meter(props: { value: number; tone?: "auto" | "accent" }) {
+  const v = Math.max(0, Math.min(1, props.value));
+  const tone = props.tone === "accent" ? "accent" : v >= 0.75 ? "good" : v >= 0.5 ? "warn" : "crit";
+  return <span class={`meter t-${tone}`} aria-hidden="true"><i style={{ width: `${Math.max(v * 100, 2)}%` }} /></span>;
 }
 
 export function names(boot: Boot | null) {
@@ -109,37 +145,54 @@ export function MultiSelect(props: { options: { value: string; label: string }[]
   );
 }
 
-export function LineChart(props: { series: { label: string; points: { x: string; y: number }[] }[]; height?: number; yMax?: number; yFmt?: (v: number) => string }) {
+/** Accuracy over time. Series colour follows the subject's slot, so a subject keeps its colour on every screen. */
+export function LineChart(props: { series: { label: string; slot?: number; points: { x: string; y: number }[] }[]; height?: number; yMax?: number; yFmt?: (v: number) => string }) {
   const all = props.series.flatMap((s) => s.points);
   const xs = [...new Set(all.map((p) => p.x))].sort();
+  const [hover, setHover] = useState<string | null>(null);
   if (xs.length === 0) return <p class="muted">No data yet.</p>;
-  const W = 640, H = props.height ?? 180, P = { l: 36, r: 10, t: 10, b: 24 };
+  const W = 960, H = props.height ?? 230, P = { l: 44, r: 16, t: 14, b: 28 };
   const yMax = props.yMax ?? Math.max(1, ...all.map((p) => p.y));
   const x = (v: string) => P.l + (xs.length === 1 ? (W - P.l - P.r) / 2 : (xs.indexOf(v) / (xs.length - 1)) * (W - P.l - P.r));
   const y = (v: number) => H - P.b - (v / yMax) * (H - P.t - P.b);
   const fmt = props.yFmt ?? ((v: number) => String(Math.round(v)));
-  const colours = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)"];
-  const step = Math.max(1, Math.ceil(xs.length / 6));
+  const colour = (s: { slot?: number }, i: number) => `var(--s${s.slot ?? (i % 8) + 1})`;
+  const step = Math.max(1, Math.ceil(xs.length / 7));
+  const wk = (v: string) => new Date(v + "T00:00:00").toLocaleDateString(undefined, { day: "numeric", month: "short" });
+  const band = xs.length > 1 ? (W - P.l - P.r) / (xs.length - 1) : W - P.l - P.r;
   return (
     <figure class="chart">
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Trend chart">
-        {[0, 0.5, 1].map((f) => (
-          <g>
-            <line x1={P.l} x2={W - P.r} y1={y(yMax * f)} y2={y(yMax * f)} class="grid" />
-            <text x={P.l - 4} y={y(yMax * f) + 4} class="axis" text-anchor="end">{fmt(yMax * f)}</text>
-          </g>
-        ))}
-        {xs.map((v, i) => (i % step === 0 || i === xs.length - 1 ? <text x={x(v)} y={H - 6} class="axis" text-anchor="middle">{v.slice(5)}</text> : null))}
-        {props.series.map((s, i) => (
-          <g>
-            <polyline fill="none" stroke={colours[i % colours.length]} stroke-width="2.5" points={s.points.map((p) => `${x(p.x)},${y(p.y)}`).join(" ")} />
-            {s.points.map((p) => <circle cx={x(p.x)} cy={y(p.y)} r="3" fill={colours[i % colours.length]}><title>{`${s.label} ${p.x}: ${fmt(p.y)}`}</title></circle>)}
-          </g>
-        ))}
-      </svg>
+      <div class="chart-box" onMouseLeave={() => setHover(null)}>
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Weekly accuracy by subject">
+          {[0, 0.25, 0.5, 0.75, 1].map((f) => (
+            <g>
+              <line x1={P.l} x2={W - P.r} y1={y(yMax * f)} y2={y(yMax * f)} class={f === 0 ? "grid base" : "grid"} />
+              {f % 0.5 === 0 && <text x={P.l - 8} y={y(yMax * f) + 4} class="axis" text-anchor="end">{fmt(yMax * f)}</text>}
+            </g>
+          ))}
+          {xs.map((v, i) => (i % step === 0 || i === xs.length - 1 ? <text x={x(v)} y={H - 8} class="axis" text-anchor="middle">{wk(v)}</text> : null))}
+          {hover && <line x1={x(hover)} x2={x(hover)} y1={P.t} y2={H - P.b} class="cross" />}
+          {props.series.map((s, i) => (
+            <g>
+              <polyline fill="none" stroke={colour(s, i)} stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points={s.points.map((p) => `${x(p.x)},${y(p.y)}`).join(" ")} />
+              {s.points.map((p) => <circle cx={x(p.x)} cy={y(p.y)} r={hover === p.x || xs.length < 3 ? 5 : 3.5} fill={colour(s, i)} class="pt" />)}
+            </g>
+          ))}
+          {xs.map((v) => <rect x={x(v) - band / 2} y={P.t} width={band} height={H - P.t - P.b} fill="transparent" onMouseEnter={() => setHover(v)} />)}
+        </svg>
+        {hover && (
+          <div class={`tip chart-tip${x(hover) > W * 0.7 ? " left" : ""}`} style={{ left: `${(x(hover) / W) * 100}%`, top: "10px" }}>
+            <b>Week of {wk(hover)}</b>
+            {props.series.map((s, i) => {
+              const p = s.points.find((q) => q.x === hover);
+              return p ? <span><i style={{ background: colour(s, i) }} />{s.label}<em>{fmt(p.y)}</em></span> : null;
+            })}
+          </div>
+        )}
+      </div>
       {props.series.length > 1 && (
         <figcaption class="legend">
-          {props.series.map((s, i) => <span><i style={{ background: colours[i % colours.length] }} />{s.label}</span>)}
+          {props.series.map((s, i) => <span><i style={{ background: colour(s, i) }} />{s.label}</span>)}
         </figcaption>
       )}
     </figure>

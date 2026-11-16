@@ -200,7 +200,7 @@ export function Import() {
             { key: "rej", label: "Skipped", get: (r) => r.rejected, first: "desc", render: (r) => r.rejected },
             { key: "upd", label: "Solutions updated", get: (r) => r.updated_solutions + r.updated_keys, first: "desc", render: (r) => r.updated_solutions + r.updated_keys },
           ]} />
-          <div class="row end"><button class="btn" onClick={reset}>Import more</button><a class="btn primary" href="#/">Go to library</a></div>
+          <div class="row end"><button class="btn" onClick={reset}>Import more</button><a class="btn primary" href="#/library">Go to library</a></div>
         </section>
       )}
       {stage === "done" && <ImportHistory />}

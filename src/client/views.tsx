@@ -9,8 +9,14 @@ import {
 } from "./render";
 import type { StoredQuestion } from "../shared/qpack/types";
 
-export function DocFrame(props: { doc: string | null; error?: string | null; title?: string; minHeight?: number }) {
+export function DocFrame(props: {
+  doc: string | null; error?: string | null; title?: string; minHeight?: number;
+  /** Called with the frame's document each time it has loaded (the frame runs no scripts itself; the app may wire it up). */
+  onDoc?: (doc: Document) => void;
+}) {
   const ref = useRef<HTMLIFrameElement>(null);
+  const onDoc = useRef(props.onDoc);
+  onDoc.current = props.onDoc;
   const [h, setH] = useState(props.minHeight ?? 60);
   useEffect(() => {
     const f = ref.current;
@@ -31,15 +37,18 @@ export function DocFrame(props: { doc: string | null; error?: string | null; tit
       }
       // details/summary (hints) change height without resizing images
       f.contentDocument?.addEventListener("toggle", measure, true);
+      if (f.contentDocument) onDoc.current?.(f.contentDocument);
     };
     f.addEventListener("load", onLoad);
+    // srcdoc frames can finish loading before the listener is attached
+    if (f.contentDocument?.readyState === "complete" && f.contentDocument.body?.childElementCount) onLoad();
     return () => {
       f.removeEventListener("load", onLoad);
       ro?.disconnect();
     };
   }, [props.doc]);
   if (props.error) return <div class="frame-error">Could not show this: {props.error}</div>;
-  if (!props.doc) return <div class="frame-loading" style={{ height: `${h}px` }}>Loading…</div>;
+  if (!props.doc) return <div class="frame-loading" style={{ height: `${h}px` }} aria-busy="true"><span class="skel w70" /><span class="skel w90" /><span class="skel w50" /></div>;
   return (
     <iframe
       ref={ref}
@@ -82,20 +91,93 @@ export interface VersionRef {
   css_sha256?: string | null; // legacy stylesheet
 }
 
+/** Lets the options inside the locked box be the answer control: tap an option to choose it. */
+export interface Choice {
+  mode: "single" | "multi";
+  value: string[];
+  onChange: (v: string[]) => void;
+  disabled?: boolean;
+  /** After marking: the right options (when they may be shown) and whether the chosen ones were right. */
+  reveal?: { correct: string[] | null; result: string } | null;
+}
+
+function syncChoice(doc: Document, c: Choice | undefined) {
+  const root = doc.querySelector(".q-root");
+  if (!root) return;
+  const items = [...doc.querySelectorAll<HTMLElement>(".q-root > .options > li[data-label]")];
+  root.classList.toggle("pick", !!c && !c.disabled && !c.reveal);
+  root.classList.toggle("done", !!c?.reveal);
+  for (const li of items) {
+    const label = li.dataset.label!;
+    const chosen = !!c && c.value.includes(label);
+    const right = c?.reveal?.correct ? c.reveal.correct.includes(label) : null;
+    // With the key shown: right options go green, a wrong pick goes red. Without it, the pick takes the colour of the result.
+    const ok = !!c?.reveal && (right === true || (right === null && chosen && c.reveal.result === "correct"));
+    const bad = !!c?.reveal && chosen && (right === false || (right === null && c.reveal.result !== "correct"));
+    li.classList.toggle("sel", chosen && !c?.reveal);
+    li.classList.toggle("ok", ok);
+    li.classList.toggle("bad", bad);
+    li.querySelector(".tag")?.remove();
+    if (c?.reveal && (ok || bad)) {
+      const tag = doc.createElement("span");
+      tag.className = "tag";
+      tag.textContent = ok ? (chosen ? "Your answer · correct" : "Correct answer") : "Your answer";
+      li.appendChild(tag);
+    }
+    if (c) {
+      li.setAttribute("role", c.mode === "single" ? "radio" : "checkbox");
+      li.setAttribute("aria-checked", String(chosen));
+      li.tabIndex = c.disabled || c.reveal ? -1 : 0;
+    }
+  }
+}
+
 /** Any stored question version: canonical (rendered here) or a v1 HTML fragment (shown as imported). */
-export function QuestionView(props: { v: VersionRef; opts?: QuestionRenderOptions; title?: string; minHeight?: number }) {
+export function QuestionView(props: {
+  v: VersionRef; opts?: QuestionRenderOptions; title?: string; minHeight?: number; compact?: boolean;
+  choice?: Choice;
+  /** Told whether the box has options that can be tapped (false for imported HTML and questions without options). */
+  onChoiceReady?: (ok: boolean) => void;
+  /** Key presses made while the box has the focus (so shortcuts keep working after a tap inside it). */
+  onKey?: (e: KeyboardEvent) => void;
+}) {
   const { v, opts } = props;
   const { doc, err } = useAsyncDoc(async () => {
     if (v.content_format === "qpack_v1") {
       await ensureMath();
       const stored = await loadStored(v.blob_sha256);
       const body = await inlineAssets(renderStoredQuestion(stored, opts ?? {}), blobAssetResolver);
-      return documentHtml(body, { extraCss: stored.css });
+      return documentHtml(body, { extraCss: stored.css, bodyClass: props.compact ? "compact" : undefined });
     }
     const [html, css] = await Promise.all([blobText(v.blob_sha256), v.css_sha256 ? blobText(v.css_sha256) : Promise.resolve("")]);
-    return documentHtml(html, { extraCss: css });
-  }, [v.blob_sha256, v.content_format, v.css_sha256, JSON.stringify(opts ?? {})]);
-  return <DocFrame doc={doc} error={err} title={props.title} minHeight={props.minHeight} />;
+    return documentHtml(html, { extraCss: css, bodyClass: props.compact ? "compact" : undefined });
+  }, [v.blob_sha256, v.content_format, v.css_sha256, JSON.stringify(opts ?? {}), props.compact]);
+  const live = useRef(props);
+  live.current = props;
+  const frameDoc = useRef<Document | null>(null);
+  const wire = (d: Document) => {
+    frameDoc.current = d;
+    const items = [...d.querySelectorAll<HTMLElement>(".q-root > .options > li[data-label]")];
+    const pick = (label: string) => {
+      const c = live.current.choice;
+      if (!c || c.disabled || c.reveal) return;
+      c.onChange(c.mode === "single" ? [label] : c.value.includes(label) ? c.value.filter((x) => x !== label) : [...c.value, label]);
+    };
+    for (const li of items) {
+      li.addEventListener("click", () => pick(li.dataset.label!));
+      li.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); e.stopPropagation(); pick(li.dataset.label!); }
+      });
+    }
+    d.addEventListener("keydown", (e) => live.current.onKey?.(e));
+    syncChoice(d, live.current.choice);
+    live.current.onChoiceReady?.(items.length > 0);
+  };
+  useEffect(() => { frameDoc.current = null; }, [doc]);
+  useEffect(() => {
+    if (frameDoc.current) syncChoice(frameDoc.current, props.choice);
+  }, [props.choice?.value.join("|"), props.choice?.disabled, props.choice?.mode, JSON.stringify(props.choice?.reveal ?? null)]);
+  return <DocFrame doc={doc} error={err} title={props.title} minHeight={props.minHeight} onDoc={props.choice || props.onKey ? wire : undefined} />;
 }
 
 /** A question that is not stored yet (import review), with its images resolved locally. */

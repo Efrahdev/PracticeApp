@@ -3,16 +3,18 @@ import { SortTable } from "../grid";
 import { api, localDate } from "../api";
 import { descendants } from "../filter";
 import { openBuilder, useData } from "../store";
-import { conceptPath, ErrorBox, LineChart, names } from "../ui";
+import { conceptPath, ErrorBox, fmtSecs, LineChart, Loading, Meter, names, Ring } from "../ui";
+import { ActivityHeatmap, Spark } from "../charts";
+import { Icon } from "../builder/controls";
 
-interface AData {
+export interface AData {
   concept: { concept_id: string; local_date: string; graded_count: number; weight_sum: number; score_weight_sum: number }[];
   subject: { subject_id: string; local_date: string; graded_count: number; score_permille_sum: number }[];
   daily: { local_date: string; attempt_count: number; time_seconds: number }[];
 }
 
 let cache: AData | null = null;
-async function loadAnalytics(force = false): Promise<AData> {
+export async function loadAnalytics(force = false): Promise<AData> {
   if (!cache || force) cache = await api<AData>("GET", "/api/analytics");
   return cache;
 }
@@ -85,7 +87,7 @@ export function Analytics() {
   }, [d, boot]);
 
   if (err) return <ErrorBox error={err} />;
-  if (!d || !boot || !view || !lib) return <p class="muted">Loading…</p>;
+  if (!d || !boot || !view || !lib) return <Loading />;
   const n = names(boot);
   const attempted = lib.filter((q) => q.attempt_count).length;
   const totalAttempts = d.daily.reduce((s, r) => s + r.attempt_count, 0);
@@ -113,61 +115,102 @@ export function Analytics() {
   }
   const maxDay = Math.max(1, ...cells.map((c) => c.n));
 
+  const graded = lib.reduce((a, q) => a + (q.graded_count ?? 0), 0);
+  const accuracy = graded ? lib.reduce((a, q) => a + (q.score_permille_sum ?? 0), 0) / graded / 1000 : null;
+  const live = lib.filter((q) => !q.archived_at).length;
+  const weekTime = d.daily.filter((r) => cells.slice(-7).some((c) => c.date === r.local_date)).reduce((a, r) => a + r.time_seconds, 0);
+  const slotOf = (id: string) => (boot.subjects.filter((x) => !x.archived_at).findIndex((x) => x.id === id) % 8) + 1;
+
   return (
     <div class="page">
-      <div class="page-head"><h1>Analytics</h1></div>
+      <header class="pb-top">
+        <div class="pb-top-main">
+          <span class="pb-h1">Progress</span>
+          <h1 class="lib-h1">How practice is going</h1>
+        </div>
+      </header>
+
+      <div class="tiles">
+        <div class="tile tile-ring">
+          <Ring value={accuracy} size={76} stroke={8} />
+          <div>
+            <div class="tile-label">Accuracy</div>
+            <div class="tile-sub">{graded ? `across ${graded.toLocaleString()} graded answer${graded === 1 ? "" : "s"}` : "no graded answers yet"}</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-label">Questions practised</div>
+          <div class="tile-value">{attempted.toLocaleString()}<small> of {live.toLocaleString()}</small></div>
+          <Meter value={live ? attempted / live : 0} tone="accent" />
+        </div>
+        <div class="tile">
+          <div class="tile-label">Day streak</div>
+          <div class="tile-value">{view.streak}<small> day{view.streak === 1 ? "" : "s"}</small></div>
+          <div class="tile-sub">{totalAttempts.toLocaleString()} attempts in all</div>
+        </div>
+        <div class="tile">
+          <div class="tile-label">Last 7 days</div>
+          <div class="tile-value">{cells.slice(-7).reduce((s, c) => s + c.n, 0)}<small> questions</small></div>
+          <div class="tile-sub">{weekTime ? `${fmtSecs(weekTime)} of practice` : "nothing yet this week"}</div>
+        </div>
+      </div>
+
       <section class="card">
-        <div class="stats">
-          <div><b>{totalAttempts}</b><span>attempts</span></div>
-          <div><b>{attempted}/{lib.length}</b><span>questions tried</span></div>
-          <div><b>{view.streak}</b><span>day streak</span></div>
-          <div><b>{cells.slice(-7).reduce((s, c) => s + c.n, 0)}</b><span>this week</span></div>
-        </div>
-        <h3>Daily activity (12 weeks)</h3>
-        <div class="heat" role="img" aria-label="Questions solved per day">
-          {cells.map((c) => <i title={`${c.date}: ${c.n}`} style={{ opacity: c.n ? 0.25 + 0.75 * (c.n / maxDay) : 1 }} class={c.n ? "on" : ""} />)}
-        </div>
+        <div class="card-head"><h2>Activity</h2><span class="muted small">questions answered per day</span></div>
+        <ActivityHeatmap daily={d.daily} weeks={52} />
       </section>
 
-      {totalAttempts === 0 ? <div class="empty"><p>Grade some questions and your progress appears here.</p></div> : (
+      {totalAttempts === 0 ? <div class="empty card"><p><b>Nothing to chart yet.</b></p><p>Grade some questions and your progress appears here.</p><a class="btn primary" href="#/papers">Go to papers</a></div> : (
         <>
           <section class="card">
-            <div class="row wrap">
-              <h3 class="grow">Accuracy by subject (weekly)</h3>
-              <select value={subjectSel} onChange={(e) => setSubjectSel((e.target as HTMLSelectElement).value)}>
+            <div class="card-head">
+              <h2>Accuracy by subject</h2>
+              <select class="sel-sm" aria-label="Subject shown in the chart" value={subjectSel} onChange={(e) => setSubjectSel((e.target as HTMLSelectElement).value)}>
                 <option value="">All subjects</option>
                 {subjIds.map((id) => <option value={id}>{n.subject.get(id)}</option>)}
               </select>
             </div>
             <LineChart yMax={100} yFmt={(v) => `${Math.round(v)}%`} series={shownSubj.map((id) => ({
               label: n.subject.get(id) ?? id,
+              slot: slotOf(id),
               points: [...(view.subjWeekly.get(id) ?? new Map()).entries()].sort().map(([wk, b]) => ({ x: wk, y: b.n ? b.s / b.n / 10 : 0 })),
             }))} />
             <SortTable rows={subjIds.map((id) => ({ id, name: n.subject.get(id) ?? id, acc: view.subjAgg.get(id)!.s / view.subjAgg.get(id)!.n / 10, n: view.subjAgg.get(id)!.n }))}
               cols={[
-                { key: "name", label: "Subject", get: (r) => r.name, render: (r) => r.name },
-                { key: "acc", label: "Accuracy", get: (r) => r.acc, first: "desc", render: (r) => `${Math.round(r.acc)}%` },
-                { key: "n", label: "Graded", get: (r) => r.n, first: "desc", render: (r) => r.n },
+                { key: "name", label: "Subject", get: (r) => r.name, render: (r) => <span class="dt-subj"><i class={`sw seg-s${slotOf(r.id)}`} aria-hidden="true" />{r.name}</span> },
+                { key: "acc", label: "Accuracy", get: (r) => r.acc, first: "desc", render: (r) => <span class="acc-cell"><b class="num">{Math.round(r.acc)}%</b><Meter value={r.acc / 100} /></span> },
+                { key: "n", label: "Graded", get: (r) => r.n, first: "desc", render: (r) => <span class="num">{r.n}</span> },
               ]} />
           </section>
 
           <section class="card">
-            <div class="row wrap">
-              <h3 class="grow">Weakest concepts</h3>
-              {weakest.length > 0 && <button class="btn primary" onClick={() => buildOn(weakest.map((w) => w.id))}>Build a paper on these</button>}
+            <div class="card-head">
+              <h2>Weakest concepts</h2>
+              {weakest.length > 0 && <button class="btn primary small" onClick={() => buildOn(weakest.map((w) => w.id))}><Icon name="target" size={14} /> Build a paper on these</button>}
             </div>
             {weakest.length === 0 ? <p class="muted small">Needs at least 3 graded answers per concept.</p> : (
-              <ol class="pick-list">{weakest.map((w) => <li>{conceptPath(boot, w.id)} — <strong>{Math.round(w.acc * 100)}%</strong> <span class="muted small">({w.n} graded)</span></li>)}</ol>
+              <ul class="focus">
+                {weakest.map((w) => {
+                  const path = conceptPath(boot, w.id).split(" › ");
+                  return (
+                    <li>
+                      <div class="focus-name"><b>{path[path.length - 1]}</b><small>{path.slice(0, -1).join(" › ")}</small></div>
+                      <div class="focus-meter"><Meter value={w.acc} /><span class="num">{Math.round(w.acc * 100)}%<small> · {w.n} graded</small></span></div>
+                      <button class="btn ghost small" onClick={() => buildOn([w.id])}>Practise</button>
+                    </li>
+                  );
+                })}
+              </ul>
             )}
           </section>
 
           <section class="card">
-            <h3>All concepts (weighted by concept weight)</h3>
+            <div class="card-head"><h2>All concepts</h2><span class="muted small">accuracy weighted by each question's concept weight</span></div>
             <SortTable rows={concepts.map((c) => ({ ...c, path: conceptPath(boot, c.id) }))} initial={{ key: "acc", dir: "asc" }}
               cols={[
-                { key: "path", label: "Concept", get: (c) => c.path, render: (c) => c.path },
-                { key: "acc", label: "Accuracy", get: (c) => c.acc, render: (c) => `${Math.round(c.acc * 100)}%` },
-                { key: "n", label: "Graded", get: (c) => c.n, first: "desc", render: (c) => c.n },
+                { key: "path", label: "Concept", get: (c) => c.path, render: (c) => { const p = c.path.split(" › "); return <span><span class="cp-path">{p.slice(0, -1).join(" › ")}{p.length > 1 ? " › " : ""}</span><span class="cp-leaf">{p[p.length - 1]}</span></span>; } },
+                { key: "acc", label: "Accuracy", get: (c) => c.acc, render: (c) => <span class="acc-cell"><b class="num">{Math.round(c.acc * 100)}%</b><Meter value={c.acc} /></span> },
+                { key: "n", label: "Graded", get: (c) => c.n, first: "desc", render: (c) => <span class="num">{c.n}</span> },
                 { key: "trend", label: "Trend", class: "hide-sm", render: (c) => <Spark values={[...(view.conceptWeekly.get(c.id) ?? new Map()).entries()].sort().map(([, b]) => (b.w ? b.s / b.w / 1000 : 0))} /> },
                 { key: "go", label: "", render: (c) => <button class="btn ghost small" onClick={() => buildOn([c.id])}>Practise</button> },
               ]} />
@@ -176,12 +219,4 @@ export function Analytics() {
       )}
     </div>
   );
-}
-
-function Spark(props: { values: number[] }) {
-  const v = props.values.slice(-12);
-  if (v.length < 2) return <span class="muted small">—</span>;
-  const W = 90, H = 22;
-  const pts = v.map((y, i) => `${(i / (v.length - 1)) * W},${H - 2 - y * (H - 4)}`).join(" ");
-  return <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} aria-hidden="true"><polyline fill="none" stroke="var(--c1)" stroke-width="2" points={pts} /></svg>;
 }
