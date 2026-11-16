@@ -1,0 +1,332 @@
+{
+  "packs": [
+    {
+      "file": "advanced-critical-thinking-math-worksheet.json",
+      "key": "advanced-critical-thinking-math-worksheet",
+      "title": "Advanced Critical Thinking Math Worksheet",
+      "source": "advanced_critical_thinking_math_worksheet.docx",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 20,
+      "packIssues": [],
+      "types": {
+        "open": 20
+      },
+      "withAnswerKey": 0,
+      "withSolution": 0,
+      "withParts": 0,
+      "parts": 0,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "(none)": 20
+      },
+      "topics": {
+        "Critical Thinking > Multi-step Word Problems": 20
+      },
+      "fieldNames": {},
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "class5-calendar-sums.json",
+      "key": "class5-calendar-sums",
+      "title": "Class 5 Calendar Sums",
+      "source": "Class_5_Calendar_Sums.docx",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 20,
+      "packIssues": [],
+      "types": {
+        "open": 20
+      },
+      "withAnswerKey": 0,
+      "withSolution": 0,
+      "withParts": 0,
+      "parts": 0,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "(none)": 20
+      },
+      "topics": {
+        "Everyday Mathematics > Calendar and Dates": 20
+      },
+      "fieldNames": {
+        "Class": 20
+      },
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "class5-critical-thinking-calendar-sums.json",
+      "key": "class5-critical-thinking-calendar-sums",
+      "title": "Class 5 – Critical‑Thinking Calendar Sums",
+      "source": "Class_5_Critical_Thinking_Calendar_Sums.docx",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 20,
+      "packIssues": [],
+      "types": {
+        "open": 20
+      },
+      "withAnswerKey": 0,
+      "withSolution": 0,
+      "withParts": 0,
+      "parts": 0,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "(none)": 20
+      },
+      "topics": {
+        "Critical Thinking > Calendar and Dates": 20
+      },
+      "fieldNames": {
+        "Class": 20
+      },
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "equally-spaced-objects-word-problems.json",
+      "key": "equally-spaced-objects-word-problems",
+      "title": "Distance Between Equally Spaced Objects - Word Problems",
+      "source": "Equally_Spaced_Objects_Word_Problems.docx",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 20,
+      "packIssues": [],
+      "types": {
+        "open": 20
+      },
+      "withAnswerKey": 0,
+      "withSolution": 0,
+      "withParts": 0,
+      "parts": 0,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "(none)": 20
+      },
+      "topics": {
+        "Mathematical Reasoning > Equally Spaced Objects": 20
+      },
+      "fieldNames": {},
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "geometry-olympiad-achiever-100.json",
+      "key": "geometry-olympiad-achiever-100",
+      "title": "The Geometry Olympiad Achiever Lab",
+      "source": "Geometry_Olympiad_Achiever_100_Questions.html",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 100,
+      "packIssues": [],
+      "types": {
+        "numeric": 21,
+        "multi_part": 69,
+        "open": 10
+      },
+      "withAnswerKey": 21,
+      "withSolution": 100,
+      "withParts": 69,
+      "parts": 151,
+      "errors": [],
+      "warnings": [],
+      "assets": 102,
+      "missingAssets": [],
+      "difficulty": {
+        "Achiever": 75,
+        "Challenge": 25
+      },
+      "topics": {
+        "Geometry": 100,
+        "Geometry > Foundations with a twist": 20,
+        "Geometry > Composite boundaries": 20,
+        "Geometry > Rotated squares and diagonal reasoning": 20,
+        "Geometry > Reverse reasoning and hidden relationships": 20,
+        "Geometry > Olympiad Achiever challenges": 20
+      },
+      "fieldNames": {
+        "Set": 100,
+        "Source difficulty": 100
+      },
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "grammar-midterm-mastery-assessment.json",
+      "key": "grammar-midterm-mastery-assessment",
+      "title": "Final Grammar Mastery Assessment",
+      "source": "grammar_midterm_mastery_assessment.html",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 180,
+      "packIssues": [],
+      "types": {
+        "mcq_multi": 37,
+        "mcq_single": 101,
+        "short_answer": 29,
+        "open": 13
+      },
+      "withAnswerKey": 167,
+      "withSolution": 180,
+      "withParts": 0,
+      "parts": 0,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "Challenge": 87,
+        "Foundation": 31,
+        "Achiever": 62
+      },
+      "topics": {
+        "Grammar": 180,
+        "Grammar > Nouns > Plural Rules > Number": 1,
+        "Grammar > Nouns > Plural Rules > Plural formation": 6,
+        "Grammar > Nouns > Plural Rules > Plural exceptions": 2,
+        "Grammar > Nouns > Plural Rules > Irregular plurals": 3,
+        "Grammar > Nouns > Plural Rules > Unchanged plurals": 1,
+        "Grammar > Nouns > Plural Rules > Plural nuance": 2,
+        "Grammar > Nouns > Plural Rules > Error diagnosis": 1,
+        "Grammar > Nouns > Plural Rules > Plural systems": 1,
+        "Grammar > Nouns > Plural Rules > Integrated plural reasoning": 1,
+        "Grammar > Nouns > Countability > Countable nouns": 3,
+        "Grammar > Nouns > Countability > Uncountable nouns": 3,
+        "Grammar > Nouns > Countability > Meaning-dependent countability": 11,
+        "Grammar > Nouns > Countability > Unit expressions": 6,
+        "Grammar > Nouns > Countability > Integrated countability": 1,
+        "Grammar > Nouns > Quantifiers > Many versus much": 1,
+        "Grammar > Nouns > Quantifiers > Much": 1,
+        "Grammar > Nouns > Quantifiers > Countable quantifiers": 1,
+        "Grammar > Nouns > Quantifiers > Uncountable quantifiers": 1,
+        "Grammar > Nouns > Quantifiers > Few versus a few": 2,
+        "Grammar > Nouns > Quantifiers > Little versus a little": 2,
+        "Grammar > Nouns > Quantifiers > Some versus any": 5,
+        "Grammar > Nouns > Quantifiers > Broad quantifiers": 3,
+        "Grammar > Nouns > Quantifiers > Fewer versus less": 4,
+        "Grammar > Nouns > Quantifiers > Number versus amount": 1,
+        "Grammar > Nouns > Quantifiers > Error diagnosis": 1,
+        "Grammar > Nouns > Quantifiers > Grammaticality versus naturalness": 1,
+        "Grammar > Nouns > Quantifiers > Integrated quantifier reasoning": 1,
+        "Grammar > Pronouns > Personal Pronouns > Personal pronouns": 6,
+        "Grammar > Pronouns > Personal Pronouns > Person and discourse role": 1,
+        "Grammar > Pronouns > Personal Pronouns > Subject and object pronouns": 6,
+        "Grammar > Pronouns > Personal Pronouns > Error diagnosis": 2,
+        "Grammar > Pronouns > Personal Pronouns > Pronoun case under ellipsis": 1,
+        "Grammar > Pronouns > Personal Pronouns > Pronoun reference": 1,
+        "Grammar > Pronouns > Personal Pronouns > Pronoun reasoning": 1,
+        "Grammar > Pronouns > Reflexives > Reflexive pronouns": 8,
+        "Grammar > Pronouns > Reflexives > Error diagnosis": 2,
+        "Grammar > Pronouns > Reflexives > Reflexive versus emphatic pronouns": 4,
+        "Grammar > Pronouns > Possessives & Other Pronouns > Possessive forms": 4,
+        "Grammar > Pronouns > Possessives & Other Pronouns > Broader pronoun classes": 7,
+        "Grammar > Pronouns > Possessives & Other Pronouns > Pronoun versus determiner": 3,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Traditional adjective categories": 5,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Structural adjective types": 3,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Gradability": 2,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Adjective position": 4,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Linking verbs": 1,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Adjective versus determiner": 1,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Adjective order": 1,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Adjective coordination": 1,
+        "Grammar > Adjectives and Determiners > Adjectives & Determiners > Integrated noun phrase": 2,
+        "Grammar > Adjectives and Determiners > Error Lab > Relative pronouns": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Pronoun case and register": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Articles and determiners": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Adjective comparison": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Possessive forms": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Possessives": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Demonstratives and agreement": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Plural possession": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Countability and agreement": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Quantifiers and agreement": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Enough": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Determiner structure": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Countability by meaning": 1,
+        "Grammar > Adjectives and Determiners > Error Lab > Adjective complements": 1,
+        "Grammar > Final Mixed Challenge > Final Mixed Challenge": 34
+      },
+      "fieldNames": {
+        "Source difficulty": 180,
+        "Section": 180,
+        "Skill focus": 180,
+        "Task type": 180,
+        "Tags": 180
+      },
+      "dupRefs": [],
+      "unusedAssets": []
+    },
+    {
+      "file": "unitary-method-olympiad-course.json",
+      "key": "unitary-method-olympiad-course",
+      "title": "The Bridge of One: Unitary Method Olympiad Course",
+      "source": "UNITARY METHOD.html",
+      "jsonRepairs": 0,
+      "schemaOk": true,
+      "schemaErrors": [],
+      "questions": 140,
+      "packIssues": [],
+      "types": {
+        "open": 44,
+        "multi_part": 96
+      },
+      "withAnswerKey": 0,
+      "withSolution": 140,
+      "withParts": 96,
+      "parts": 271,
+      "errors": [],
+      "warnings": [],
+      "assets": 0,
+      "missingAssets": [],
+      "difficulty": {
+        "Foundation": 65,
+        "Challenge": 58,
+        "Achiever": 17
+      },
+      "topics": {
+        "Unitary Method": 140,
+        "Unitary Method > Direct proportion": 15,
+        "Unitary Method > Fractions, decimals and rates": 15,
+        "Unitary Method > Inverse proportion": 15,
+        "Unitary Method > Testing proportionality": 20,
+        "Unitary Method > Combined rates": 20,
+        "Unitary Method > Compound proportion": 20,
+        "Unitary Method > Olympiad modelling": 25,
+        "Unitary Method > Cumulative challenge": 10
+      },
+      "fieldNames": {
+        "Level": 140,
+        "Section": 140,
+        "Difficulty rating": 140,
+        "Source difficulty": 140,
+        "Cognitive skill": 140
+      },
+      "dupRefs": [],
+      "unusedAssets": []
+    }
+  ],
+  "crossPack": {
+    "duplicateContent": []
+  },
+  "totalQuestions": 500
+}

@@ -1,0 +1,194 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "advanced-critical-thinking-math-worksheet",
+    "title": "Advanced Critical Thinking Math Worksheet",
+    "source": "advanced_critical_thinking_math_worksheet.docx",
+    "subject": "Maths",
+    "topics": [
+      "Critical Thinking > Multi-step Word Problems"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "type": "open",
+      "stem": "A gardener needed to build a fence around a rectangular plot that measured 14 meters long and 8 meters wide. After buying enough fencing to surround the entire perimeter, he realized that one side of 14 meters did not need a fence after all, because there was already a wall. How many meters of fencing did he actually use in the end?",
+      "source": {
+        "paragraph": 1
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "type": "open",
+      "stem": "There were 48 students going on a picnic. Each student was to get two sandwiches. The teacher made 20 extra sandwiches just in case. When they returned, 17 sandwiches were left over. How many sandwiches did the students actually eat?",
+      "source": {
+        "paragraph": 2
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "type": "open",
+      "stem": "A factory packed boxes with 36 chocolates each. A store bought 15 of these boxes. Later, 72 chocolates from those boxes were given away for free samples. How many chocolates did the store still have for sale?",
+      "source": {
+        "paragraph": 3
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "type": "open",
+      "stem": "A family planned to travel 750 kilometers. On the first day, they drove 285 kilometers. On the second day, they drove 312 kilometers. They decided to finish the rest of the journey on the third day. How many kilometers were left to drive on the third day?",
+      "source": {
+        "paragraph": 4
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "type": "open",
+      "stem": "A builder had 3 piles of bricks, each pile with 240 bricks. He used 420 bricks for one building project and 195 bricks for another. How many bricks did he have left?",
+      "source": {
+        "paragraph": 5
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "type": "open",
+      "stem": "A seller had 25 sacks of onions, each weighing 18 kilograms. During the day, she sold 295 kilograms of onions. How many kilograms of onions were still left?",
+      "source": {
+        "paragraph": 6
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "type": "open",
+      "stem": "There were 120 swimmers in a competition. They were divided equally into 8 groups. If 3 groups had to leave early due to weather, how many swimmers were left to finish the competition?",
+      "source": {
+        "paragraph": 7
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "type": "open",
+      "stem": "A school library had 960 books. They donated 128 books to another school and then bought 215 new books. How many books are in the library now?",
+      "source": {
+        "paragraph": 8
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "type": "open",
+      "stem": "A store had 75 bags of cement, each weighing 25 kilograms. A truck took away 1050 kilograms of cement to deliver to a customer. How many bags of cement remained in the store after the delivery?",
+      "source": {
+        "paragraph": 9
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "type": "open",
+      "stem": "A gardener had 72 flower pots. She arranged them in groups of 6. Later, she bought 18 more pots and made more groups of 6 from the total. How many groups of 6 pots did she have after buying the new pots?",
+      "source": {
+        "paragraph": 10
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "type": "open",
+      "stem": "For a birthday, there were 9 party packs, each with 16 sweets. Five extra sweets were placed in each pack at the last minute. After the party, 38 sweets were left over from the opened packs. How many sweets were actually eaten during the party?",
+      "source": {
+        "paragraph": 11
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "type": "open",
+      "stem": "A teacher made 7 posters for each of her 5 classes. Later, she needed to make 18 more posters for a school fair. What was the total number of posters she finally prepared?",
+      "source": {
+        "paragraph": 12
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "type": "open",
+      "stem": "A toy factory makes 320 toys each day. Over 4 days, they packed all the toys into boxes of 40 toys each. How many boxes were needed for the total production of those 4 days?",
+      "source": {
+        "paragraph": 13
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "type": "open",
+      "stem": "A farmer harvested 560 apples. He packed them into trays holding 16 apples each. Then he sold 25 trays. How many apples does he still have left?",
+      "source": {
+        "paragraph": 14
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "type": "open",
+      "stem": "A bookstore had 450 books. They sold 37 books each day for 6 days. How many books were left after those 6 days?",
+      "source": {
+        "paragraph": 15
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "type": "open",
+      "stem": "A playground was to be covered with square tiles. The area was 12 meters by 8 meters. If each tile covered 1 square meter, and 14 tiles were broken during installation, how many tiles were perfectly placed?",
+      "source": {
+        "paragraph": 16
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "type": "open",
+      "stem": "A team hiked 28 kilometers on the first day, 31 kilometers on the second, and 29 kilometers on the third day. The total journey was supposed to be 100 kilometers. How many kilometers do they still need to walk?",
+      "source": {
+        "paragraph": 17
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "type": "open",
+      "stem": "A restaurant bought 5 cans of cooking oil, each holding 15 liters. They used 38 liters in a week. How many liters were still left in the cans?",
+      "source": {
+        "paragraph": 18
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "type": "open",
+      "stem": "A delivery van brought 480 kilograms of rice, packed in bags of 20 kilograms each. The shop sold 14 of these bags on the first day. How many kilograms of rice remain in the store?",
+      "source": {
+        "paragraph": 19
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "type": "open",
+      "stem": "A city park project planted 17 rows of trees with 12 saplings in each row. Later, 29 saplings died due to lack of water. How many saplings are still alive?",
+      "source": {
+        "paragraph": 20
+      }
+    }
+  ]
+}

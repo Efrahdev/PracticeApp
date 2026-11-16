@@ -1,0 +1,194 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "equally-spaced-objects-word-problems",
+    "title": "Distance Between Equally Spaced Objects - Word Problems",
+    "source": "Equally_Spaced_Objects_Word_Problems.docx",
+    "subject": "Maths",
+    "topics": [
+      "Mathematical Reasoning > Equally Spaced Objects"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "type": "open",
+      "stem": "6 trees are placed at equal distances along a straight road. The distance between the first and the third tree is 12 metres. What is the distance between the third and the sixth tree?",
+      "source": {
+        "paragraph": 1
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "type": "open",
+      "stem": "8 lamp posts are placed at equal distances along a straight garden path. The distance between the second and the fifth lamp post is 18 metres. What is the distance between the first and the eighth lamp post?",
+      "source": {
+        "paragraph": 2
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "type": "open",
+      "stem": "9 benchs are placed at equal distances along a straight jogging track. The distance between the fourth and the seventh bench is 24 metres. What is the distance between the second and the ninth bench?",
+      "source": {
+        "paragraph": 3
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "type": "open",
+      "stem": "10 bollards are placed at equal distances along a straight lane. The distance between the third and the sixth bollard is 15 metres. What is the distance between the first and the tenth bollard?",
+      "source": {
+        "paragraph": 4
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "type": "open",
+      "stem": "12 flags are placed at equal distances along a straight track. The distance between the fifth and the eleventh flag is 30 metres. What is the distance between the third and the twelfth flag?",
+      "source": {
+        "paragraph": 5
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "type": "open",
+      "stem": "7 street lights are placed at equal distances along a straight highway. The distance between the first and the fourth street light is 21 metres. What is the distance between the second and the seventh street light?",
+      "source": {
+        "paragraph": 6
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "type": "open",
+      "stem": "11 plants are placed at equal distances along a straight fence. The distance between the second and the seventh plant is 25 metres. What is the distance between the first and the eleventh plant?",
+      "source": {
+        "paragraph": 7
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "type": "open",
+      "stem": "13 markers are placed at equal distances along a straight trail. The distance between the third and the eighth marker is 30 metres. What is the distance between the fifth and the thirteenth marker?",
+      "source": {
+        "paragraph": 8
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "type": "open",
+      "stem": "14 poles are placed at equal distances along a straight field. The distance between the fourth and the ninth pole is 35 metres. What is the distance between the first and the fourteenth pole?",
+      "source": {
+        "paragraph": 9
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "type": "open",
+      "stem": "15 stones are placed at equal distances along a straight walkway. The distance between the fifth and the tenth stone is 40 metres. What is the distance between the second and the fifteenth stone?",
+      "source": {
+        "paragraph": 10
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "type": "open",
+      "stem": "16 torchs are placed at equal distances along a straight campsite path. The distance between the sixth and the eleventh torch is 45 metres. What is the distance between the first and the sixteenth torch?",
+      "source": {
+        "paragraph": 11
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "type": "open",
+      "stem": "17 cones are placed at equal distances along a straight driveway. The distance between the seventh and the twelfth cone is 50 metres. What is the distance between the third and the seventeenth cone?",
+      "source": {
+        "paragraph": 12
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "type": "open",
+      "stem": "18 signs are placed at equal distances along a straight corridor. The distance between the eighth and the thirteenth sign is 55 metres. What is the distance between the fourth and the eighteenth sign?",
+      "source": {
+        "paragraph": 13
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "type": "open",
+      "stem": "19 posts are placed at equal distances along a straight track. The distance between the ninth and the fourteenth post is 60 metres. What is the distance between the fifth and the nineteenth post?",
+      "source": {
+        "paragraph": 14
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "type": "open",
+      "stem": "20 panels are placed at equal distances along a straight solar grid. The distance between the tenth and the fifteenth panel is 65 metres. What is the distance between the sixth and the twentieth panel?",
+      "source": {
+        "paragraph": 15
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "type": "open",
+      "stem": "10 seats are placed at equal distances along a straight auditorium row. The distance between the first and the sixth seat is 20 metres. What is the distance between the third and the tenth seat?",
+      "source": {
+        "paragraph": 16
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "type": "open",
+      "stem": "12 steps are placed at equal distances along a straight staircase. The distance between the second and the seventh step is 25 metres. What is the distance between the fourth and the twelfth step?",
+      "source": {
+        "paragraph": 17
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "type": "open",
+      "stem": "14 bulbs are placed at equal distances along a straight ceiling line. The distance between the third and the eighth bulb is 30 metres. What is the distance between the sixth and the fourteenth bulb?",
+      "source": {
+        "paragraph": 18
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "type": "open",
+      "stem": "16 bells are placed at equal distances along a straight school corridor. The distance between the fourth and the ninth bell is 35 metres. What is the distance between the seventh and the sixteenth bell?",
+      "source": {
+        "paragraph": 19
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "type": "open",
+      "stem": "18 mirrors are placed at equal distances along a straight hallway. The distance between the fifth and the tenth mirror is 40 metres. What is the distance between the eighth and the eighteenth mirror?",
+      "source": {
+        "paragraph": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "class5-calendar-sums",
+    "title": "Class 5 Calendar Sums",
+    "source": "Class_5_Calendar_Sums.docx",
+    "subject": "Maths",
+    "topics": [
+      "Everyday Mathematics > Calendar and Dates"
+    ],
+    "fields": {
+      "Class": 5
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "type": "open",
+      "stem": "A book was issued on 10th January and is due in 3 weeks. On what date should it be returned?",
+      "source": {
+        "paragraph": 1
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "type": "open",
+      "stem": "If a holiday started on 5th June and lasted 12 days, when did it end?",
+      "source": {
+        "paragraph": 2
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "type": "open",
+      "stem": "How many days are there from 15th February to 1st March (inclusive)?",
+      "source": {
+        "paragraph": 3
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "type": "open",
+      "stem": "From 1st April to 15th May, how many days are there in total?",
+      "source": {
+        "paragraph": 4
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "type": "open",
+      "stem": "A competition starts 18 days after 20th August. What is the date of the competition?",
+      "source": {
+        "paragraph": 5
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "type": "open",
+      "stem": "A homework assignment is due 10 days after 7th September. When is it due?",
+      "source": {
+        "paragraph": 6
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "type": "open",
+      "stem": "A camp started on 25th October and ended on 10th November. How many days did the camp last?",
+      "source": {
+        "paragraph": 7
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "type": "open",
+      "stem": "If 3rd March is a Wednesday, what day will 3rd May be?",
+      "source": {
+        "paragraph": 8
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "type": "open",
+      "stem": "Which months have exactly 31 days? List them.",
+      "source": {
+        "paragraph": 9
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "type": "open",
+      "stem": "A festival falls on the first Monday of December. What is the date of the festival in 2025?",
+      "source": {
+        "paragraph": 10
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "type": "open",
+      "stem": "If the first Sunday of the month is on 2nd June, what are the next two Sundays?",
+      "source": {
+        "paragraph": 11
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "type": "open",
+      "stem": "Which date is exactly in the middle of the month of September?",
+      "source": {
+        "paragraph": 12
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "type": "open",
+      "stem": "If 9th April is a Thursday, what day is 23rd April?",
+      "source": {
+        "paragraph": 13
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "type": "open",
+      "stem": "A student attends art class every 4th day starting from 1st July. How many classes will they attend in July?",
+      "source": {
+        "paragraph": 14
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "type": "open",
+      "stem": "You are given three dates: 7th November, 14th November, and 21st November. All fall on Thursdays. What day is 28th November?",
+      "source": {
+        "paragraph": 15
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "type": "open",
+      "stem": "A 30-day countdown to exams starts on 25th February. What is the exam date?",
+      "source": {
+        "paragraph": 16
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "type": "open",
+      "stem": "A project starts on 10th October and ends on 20th November. How many days does it run for?",
+      "source": {
+        "paragraph": 17
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "type": "open",
+      "stem": "If a field trip is planned 45 days after 12th January, what is the trip date?",
+      "source": {
+        "paragraph": 18
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "type": "open",
+      "stem": "A child attends football practice every Tuesday and Thursday. How many sessions will they attend in the month of March?",
+      "source": {
+        "paragraph": 19
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "type": "open",
+      "stem": "If a school term starts on 15th April and ends on 28th June, how many days are there in the term (inclusive)?",
+      "source": {
+        "paragraph": 20
+      }
+    }
+  ]
+}

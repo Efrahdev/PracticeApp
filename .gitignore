@@ -8,3 +8,6 @@ backups/
 src/worker/static.gen.ts
 public/chunks/
 public/fonts/
+
+# Python bytecode from ingest scripts
+__pycache__/

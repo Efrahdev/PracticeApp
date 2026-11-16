@@ -1,0 +1,217 @@
+{
+  "format": "practice-app/question-pack@1",
+  "pack": {
+    "id": "class5-critical-thinking-calendar-sums",
+    "title": "Class 5 – Critical‑Thinking Calendar Sums",
+    "source": "Class_5_Critical_Thinking_Calendar_Sums.docx",
+    "subject": "Maths",
+    "topics": [
+      "Critical Thinking > Calendar and Dates"
+    ],
+    "fields": {
+      "Class": 5
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": "1",
+      "type": "open",
+      "stem": "If 1st March is a Tuesday, what day of the week will 30th April be?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 1
+      }
+    },
+    {
+      "id": "q2",
+      "number": "2",
+      "type": "open",
+      "stem": "A story book is borrowed on 20th February 2024 (a leap year) and must be returned in 17 days. On what date does it need to be returned?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 2
+      }
+    },
+    {
+      "id": "q3",
+      "number": "3",
+      "type": "open",
+      "stem": "If the first day of a year is a Monday, what day of the week is the 100th day of that year?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 3
+      }
+    },
+    {
+      "id": "q4",
+      "number": "4",
+      "type": "open",
+      "stem": "A class project review is scheduled every 4th day starting on Wednesday 3rd July. How many reviews will take place in July and what is the date of the last review of that month?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 4
+      }
+    },
+    {
+      "id": "q5",
+      "number": "5",
+      "type": "open",
+      "stem": "Sports Day is held on the last Friday of September. On what date is Sports Day in a year where 1st September is a Sunday?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 5
+      }
+    },
+    {
+      "id": "q6",
+      "number": "6",
+      "type": "open",
+      "stem": "How many Mondays are there from 1st May to 31st July inclusive, if 1st May falls on a Wednesday?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 6
+      }
+    },
+    {
+      "id": "q7",
+      "number": "7",
+      "type": "open",
+      "stem": "A music lesson happens every second Monday starting on 6th August. What are the dates of the lessons in August and September?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 7
+      }
+    },
+    {
+      "id": "q8",
+      "number": "8",
+      "type": "open",
+      "stem": "Neha’s birthday party is on 24th November. How many days remain in the year after her party in a leap year?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 8
+      }
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "type": "open",
+      "stem": "A local festival is celebrated on the first Wednesday after the second Saturday of January each year. In a year where 1st January is a Friday, what is the festival date?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 9
+      }
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "type": "open",
+      "stem": "Which dates in June are perfect squares (1, 4, 9, 16, 25) and fall on weekends when 1st June is a Thursday?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 10
+      }
+    },
+    {
+      "id": "q11",
+      "number": "11",
+      "type": "open",
+      "stem": "How many weekend days (Saturdays and Sundays) are there between 10th April and 20th May inclusive if 10th April is a Monday?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 11
+      }
+    },
+    {
+      "id": "q12",
+      "number": "12",
+      "type": "open",
+      "stem": "If 12th December falls on a Thursday, which day of the week will it be 88 days later?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 12
+      }
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "type": "open",
+      "stem": "The year 2028 is a leap year. How many days are there from 15th February 2028 to 15th April 2028?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 13
+      }
+    },
+    {
+      "id": "q14",
+      "number": "14",
+      "type": "open",
+      "stem": "School holidays last 49 days and start on Friday 13th June. On which day of the week will school reopen?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 14
+      }
+    },
+    {
+      "id": "q15",
+      "number": "15",
+      "type": "open",
+      "stem": "A computer class is organised every 5th day starting 29th January. If the month has 31 days, how many classes are there in January and February combined?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 15
+      }
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "type": "open",
+      "stem": "Which date is exactly halfway between 7th March and 5th April?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 16
+      }
+    },
+    {
+      "id": "q17",
+      "number": "17",
+      "type": "open",
+      "stem": "How many Tuesdays fall in December if the first Tuesday is on the 3rd of December?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 17
+      }
+    },
+    {
+      "id": "q18",
+      "number": "18",
+      "type": "open",
+      "stem": "List the months of any standard year that start and end on the same day of the week.",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 18
+      }
+    },
+    {
+      "id": "q19",
+      "number": "19",
+      "type": "open",
+      "stem": "If 2019 started on a Tuesday, which day of the week did 2025 start on? (Assume normal calendar rules).",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 19
+      }
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "type": "open",
+      "stem": "A 60‑day countdown to a space exhibition began on the second day of a leap year. On what date did the countdown finish?",
+      "notes": "Worksheet instruction: Solve each problem carefully. Use a calendar where necessary. Show full working. (No answer key provided.)",
+      "source": {
+        "paragraph": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "class5-calendar-sums": {
+    "questions": 20,
+    "failed": 0,
+    "examples": {}
+  },
+  "class5-critical-thinking-calendar-sums": {
+    "questions": 20,
+    "failed": 0,
+    "examples": {}
+  },
+  "equally-spaced-objects-word-problems": {
+    "questions": 20,
+    "failed": 0,
+    "examples": {}
+  },
+  "advanced-critical-thinking-math-worksheet": {
+    "questions": 20,
+    "failed": 0,
+    "examples": {}
+  },
+  "geometry-olympiad-achiever-100 (text)": {
+    "questions": 100,
+    "failed": 0,
+    "examples": {}
+  },
+  "geometry-olympiad-achiever-100 (svg)": {
+    "questions": 1,
+    "failed": 0,
+    "examples": {}
+  },
+  "unitary-method-olympiad-course": {
+    "questions": 140,
+    "failed": 0,
+    "examples": {}
+  },
+  "grammar-midterm-mastery-assessment": {
+    "questions": 180,
+    "failed": 0,
+    "examples": {}
+  }
+}
