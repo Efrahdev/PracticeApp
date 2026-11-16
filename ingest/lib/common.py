@@ -24,13 +24,17 @@ OUT_DIR = ROOT / "ingest" / "packs"
 DIFFICULTY_LABELS = ("Foundation", "Challenge", "Achiever")
 
 # --------------------------------------------------------------------------- escaping
-_ESC = re.compile(r"([\\`*_\[\]<>|~$])")
+# NB: "[" and "]" are NOT backslash-escaped: the app's renderer treats "\[ ... \]" as display maths
+# (src/client/render.ts). A bracket is literal in Markdown unless it closes into a link ("](", "][", "]:"),
+# so only that "]" is written as the entity &#93;.
+_ESC = re.compile(r"([\\`*_<>|~$])")
 
 
 def esc(text: str) -> str:
     """Escape plain text so Markdown / LaTeX treat it literally."""
     out = _ESC.sub(r"\\\1", text)
     out = re.sub(r"&(#?[A-Za-z0-9]+;)", r"\\&\1", out)  # stop &amp; style entities being decoded
+    out = re.sub(r"\](?=\s*[(\[:])", "&#93;", out)
     return out
 
 

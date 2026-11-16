@@ -3711,8 +3711,8 @@
       ],
       "answer": "A",
       "solution": {
-        "answer": "I — ‘Riya trusts Maya more than I \\[trust Maya\\].’",
-        "explanation": "**Core rule:** In an elliptical comparison, reconstruct the omitted clause; the pronoun takes the role it has in that full clause.\n\n**Why it works here:** The prompt supplies I as the understood subject of trust, so subject case is required even though the pronoun appears after than.\n\n**Why the tempting answer fails:** Me would support a different expansion: ‘Riya trusts Maya more than she trusts me.’ Myself and mine cannot be the subject of the omitted trust clause.\n\n**Exam trap:** Selecting object case solely because the blank comes late in the sentence.\n\n**Nuance / exception:** Both ‘than I’ and ‘than me’ can be grammatical, but they can express different comparisons; context must fix the intended expansion.\n\n**Transfer example:** Leo admires Sam more than she \\[admires Sam\\].\n\n**Remember this:** After than, expand the hidden clause before choosing case."
+        "answer": "I — ‘Riya trusts Maya more than I [trust Maya].’",
+        "explanation": "**Core rule:** In an elliptical comparison, reconstruct the omitted clause; the pronoun takes the role it has in that full clause.\n\n**Why it works here:** The prompt supplies I as the understood subject of trust, so subject case is required even though the pronoun appears after than.\n\n**Why the tempting answer fails:** Me would support a different expansion: ‘Riya trusts Maya more than she trusts me.’ Myself and mine cannot be the subject of the omitted trust clause.\n\n**Exam trap:** Selecting object case solely because the blank comes late in the sentence.\n\n**Nuance / exception:** Both ‘than I’ and ‘than me’ can be grammatical, but they can express different comparisons; context must fix the intended expansion.\n\n**Transfer example:** Leo admires Sam more than she [admires Sam].\n\n**Remember this:** After than, expand the hidden clause before choosing case."
       },
       "topics": [
         "Grammar > Pronouns > Personal Pronouns > Pronoun case under ellipsis"
@@ -6762,7 +6762,7 @@
     {
       "id": "q151",
       "number": "151",
-      "stem": "Preserve the intended plural meaning signalled by “Those” and “have.” Make only the changes needed to repair the sentence, then explain each correction:\n“Those intelligent student have three useful informations.”",
+      "stem": "Preserve the intended plural meaning signalled by “Those” and “have.” Make only the changes needed to repair the sentence, then explain each correction:\\\n“Those intelligent student have three useful informations.”",
       "type": "open",
       "answer": "Those intelligent students have three useful pieces of information. Those requires a plural head noun, and information is uncountable, so three counts pieces rather than informations.",
       "solution": {
@@ -8024,7 +8024,7 @@
     {
       "id": "q180",
       "number": "180",
-      "stem": "Correct every error, then explain the reasoning chain:\n“Me and him bought two loafs of bread and gave an advice to Maya.”",
+      "stem": "Correct every error, then explain the reasoning chain:\\\n“Me and him bought two loafs of bread and gave an advice to Maya.”",
       "type": "open",
       "answer": "He and I bought two loaves of bread and gave a piece of advice to Maya. He and I are coordinated subjects; loaf belongs to the -ves set; advice is uncountable and needs a unit expression.",
       "solution": {

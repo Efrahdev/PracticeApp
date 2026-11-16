@@ -5,7 +5,7 @@ Pipeline agreed for the 7 papers added in commit `dcd4873`:
 | Step | Who | What | Status |
 | --- | --- | --- | --- |
 | 1. Convert | Sonnet (high) | Turn each source into a **question pack** (`practice-app/question-pack@1`, see [`docs/question-format.md`](../docs/question-format.md)) with deterministic, re-runnable converters; validate with the app's own reader | **done** — packs in [`packs/`](packs/) |
-| 2. Review | Opus (high) | Check every pack against the original source for fidelity | next — start with [`REPORT.md`](REPORT.md) |
+| 2. Review | Opus (high) | Check every pack against the original source for fidelity | **done** — 3 deltas found and fixed, now 0 differences (see [`REPORT.md`](REPORT.md)) |
 | 3. Ingest | another model | Import the reviewed packs into the live Cloudflare library | **not started — nothing has been written to D1 or R2** |
 
 ## Why converters instead of retyping
@@ -35,6 +35,7 @@ node ingest/convert_grammar.mjs
 
 node ingest/validate.mjs                      # app's own parser + JSON Schema, per question  -> validation-report.json
 python3 -I ingest/fidelity.py                 # independent token diff against the sources     -> fidelity-report.json
+node ingest/review_rendered.mjs               # step-2 review: rendered pack vs rendered source, character by character
 node ingest/render_check.mjs                  # every piece through the app's real renderer (marked + Temml)
 node ingest/svg_render_check.mjs OUT_DIR && python3 -I ingest/svg_compare.py OUT_DIR   # 102 figures: source page vs packaged asset
 NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node ingest/preflight_live.mjs   # READ-ONLY overlap check with the live library

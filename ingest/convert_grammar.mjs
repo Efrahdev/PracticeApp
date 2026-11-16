@@ -40,8 +40,12 @@ const SRC = ctx.OUT;
 const ORDER = ["Plural Rules", "Countability", "Quantifiers", "Personal Pronouns", "Reflexives", "Possessives & Other Pronouns", "Adjectives & Determiners", "Error Lab", "Final Mixed Challenge"];
 
 // ---- helpers
-const ESC = /([\\`*_\[\]<>|~$])/g;
-const esc = (s) => s.replace(ESC, "\\$1").replace(/&(#?[A-Za-z0-9]+;)/g, "\\&$1");
+// "[" / "]" are not backslash-escaped: the app renders "\[ ... \]" as display maths. Only a "]" that would close a
+// Markdown link ("](", "][", "]:") is written as &#93;.
+const ESC = /([\\`*_<>|~$])/g;
+const esc = (s) => s.replace(ESC, "\\$1").replace(/&(#?[A-Za-z0-9]+;)/g, "\\&$1").replace(/\](?=\s*[(\[:])/g, "&#93;");
+// The page shows prompts with `white-space: pre-line`, so a newline in a prompt is a visible line break.
+const escPrompt = (s) => esc(s).replace(/\n/g, "\\\n");
 const letter = (i) => String.fromCharCode(65 + i);
 // source difficulty -> the library's three labels (printed label is kept in the "Source difficulty" field)
 const DIFF = { FOUNDATION: "Foundation", INTERMEDIATE: "Challenge", CHALLENGE: "Challenge", TRAP: "Achiever", MASTERY: "Achiever" };
@@ -63,7 +67,7 @@ ordered.forEach((q, i) => { if (q.id !== "q" + String(i + 1).padStart(3, "0")) t
 const questions = ordered.map((q, i) => {
   const number = String(i + 1);
   const exp = q.explanation;
-  const out = { id: q.id, number, stem: esc(q.prompt) };
+  const out = { id: q.id, number, stem: escPrompt(q.prompt) };
   const topicPath = ["Grammar", GROUP[q._arr], q.section].concat(q.section === "Final Mixed Challenge" ? [] : [q.topic]);
   if (q.type === "single" || q.type === "multi") {
     out.type = q.type === "single" ? "mcq_single" : "mcq_multi";

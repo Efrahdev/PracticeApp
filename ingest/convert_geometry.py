@@ -112,7 +112,11 @@ def solution_md(art, qn: str) -> str:
             out.append(conv.list_md(child))
         elif child.name == "ul":
             assert "calc" in cls
-            out.append("\n".join("- " + conv.inline_children(li).strip() for li in child.find_all("li", recursive=False)))
+            # the page shows calculation lines with white-space:pre-wrap, so runs of spaces are visible
+            # (e.g. "48 cm  →  1 side"): keep them by turning every extra space into a no-break space
+            assert not any("\n" in li.get_text() for li in child.find_all("li", recursive=False)), f"q{qn}: newline in calc line"
+            out.append("\n".join("- " + re.sub(r" {2,}", lambda m: " " + " " * (len(m.group()) - 1), conv.inline_children(li).strip())
+                                 for li in child.find_all("li", recursive=False)))
         else:
             raise ValueError(f"q{qn}: unexpected solution element <{child.name}>")
     return tidy("\n\n".join(out))

@@ -34,7 +34,7 @@ def md_tokens(md: str) -> list[str]:
     s = re.sub(r"(?<!\\)\*+", "", s)  # emphasis markers (literal asterisks are escaped); no space: "**x**." stays "x."
     s = s.replace("\\\n", "\n")
     s = re.sub(r"(?m)^>\s?", " ", s)
-    s = re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", s)
+    s = re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", s).replace("&#93;", "]")
     return s.split()
 
 
@@ -140,7 +140,7 @@ def docx_check(name, filename, skip_first_normal=False):
         if m.group(1) != q["number"]:
             probs.append(f"number {m.group(1)} != {q['number']}")
         # exact (not token) comparison of the stem after un-escaping
-        stem = re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", q["stem"])
+        stem = re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", q["stem"]).replace("&#93;", "]")
         if stem != m.group(2):
             probs.append(f"stem differs: {m.group(2)!r} vs {stem!r}")
         if any(k in q for k in ("answer", "solution", "parts", "options")):
@@ -263,7 +263,7 @@ def grammar_check():
     src = json.loads(out)
     pack = load("grammar-midterm-mastery-assessment")
     assert len(src) == len(pack["questions"]) == 180
-    unesc = lambda s: re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", s)
+    unesc = lambda s: re.sub(r"\\([\\`*_\[\]<>|~$&])", r"\1", s.replace("\\\n", "\n")).replace("&#93;", "]")
     res = {}
     for s, q in zip(src, pack["questions"]):
         probs = []

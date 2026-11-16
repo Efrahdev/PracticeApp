@@ -25,6 +25,23 @@ Question counts match the sources' own totals (20/20/20/20, "100 problems", "140
 4. **Real renderer** (`render_check.mjs`): 2,923 pieces (stems, options, parts, hints, composed solutions) through the app's marked + Temml pipeline: 1,393 maths expressions, 103 images, 744 block quotes — no LaTeX errors, no leftover escape/Markdown characters, no stray `$`.
 5. **Live library overlap** (read-only): none of the 500 exist yet (by `pack.id/question id`; by content for the 6 packs without images).
 
+## Step 2 review (Opus) — deltas found and fixed
+
+A second, independent comparison was added: [`review_rendered.mjs`](review_rendered.mjs). Every piece of every pack is rendered with the
+app's real renderer and compared **character by character** (bold/italic kept as markers, non-breaking spaces significant) with what the
+source page itself shows in Chromium. For grammar, the comparison is with the questions as the page renders them. For Word files, it is with the raw paragraph text. It found three real deltas that the token-level
+check could not see. All three are fixed in the converters, and the packs were regenerated:
+
+| # | Where | Delta | Fix |
+| --- | --- | --- | --- |
+| 1 | Grammar q081 (explanation + correct answer) | `[admires Sam]` / `[trust Maya]` rendered as maths italics with the brackets and space gone: the converter escaped `[` as `\[`, which the app's renderer reads as a display-maths delimiter | `[` `]` no longer backslash-escaped (a `]` that would close a Markdown link is written `&#93;`) — all converters |
+| 2 | Grammar q151, q180 (prompt) | the page shows prompts with `white-space: pre-line`; the line break before the quoted passage was collapsed to a space | newlines in prompts become Markdown hard breaks |
+| 3 | Geometry, 51 "Calculation" lines | the page shows them with `white-space: pre-wrap`, so double spaces (`48 cm  →  1 side`) are visible; they were collapsed | extra spaces kept as no-break spaces |
+
+Not a delta: on multi-part Geometry "Final answer" lines, the `&nbsp;` gap between "(a) …" and "(b) …" disappears because each part now has its own answer.
+
+After the fixes, the review gives **3,480 comparisons and 0 differences**. Each new check was mutation-tested: undoing fix 2 in q151 or fix 3 in one calculation line is flagged. All the earlier checks still pass.
+
 ## Judgement calls — please confirm or overrule before step 3
 
 1. **No answers were invented.** The four Word worksheets have **no answer key at all** (the Critical-Thinking sheet says "No answer key provided"), so they carry no `answer`/`solution`; all 80 are type `open` (manual marking). You will need to add keys later.
@@ -40,7 +57,7 @@ Question counts match the sources' own totals (20/20/20/20, "100 problems", "140
 7. **Grammar**: authored fields only; the page's computed `auditDifficulty`/`cognitiveDemand` were *not* imported. `input` questions → `short_answer` with the accepted answers as given; explanations kept in full under the page's own headings (Core rule, Why it works here, …). The 7 "review sheets", section intros and debriefs are teaching text, not questions — not imported.
 8. **Source typos kept word for word** (golden rule 1), e.g. "9 **benchs**" (Equally spaced Q3), "16 **torchs**" (Q11).
 9. **Printed numbering**: Word sheets double-numbered ("1. 1. …"): only the number is stripped from the stem. The Critical-Thinking sheet's instruction line is attached to each question as `notes`, not put in the stem.
-10. **Text escaping**: plain text characters meaningful to Markdown/LaTeX (`_ * $ \ [ ] < > | ~ &`) are backslash-escaped, e.g. the grammar blank `___` is stored as `\_\_\_` and renders as a blank line. Maths is LaTeX only where the source shows a fraction/mixed number (`$\frac{3}{4}$`, `$2\frac{1}{2}$`).
+10. **Text escaping**: plain text characters meaningful to Markdown/LaTeX (`_ * $ \ < > | ~ &`) are backslash-escaped (brackets are not, see review fix 1), e.g. the grammar blank `___` is stored as `\_\_\_` and renders as a blank line. Maths is LaTeX only where the source shows a fraction/mixed number (`$\frac{3}{4}$`, `$2\frac{1}{2}$`).
 11. Unitary "working" lines (calculation | meaning) are stored as block-quote lines `calculation — *meaning*`.
 
 ## Suggested spot-checks for the reviewer (highest risk first)
