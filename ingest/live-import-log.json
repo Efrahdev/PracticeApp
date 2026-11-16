@@ -1,0 +1,92 @@
+[
+  {
+    "started": "2026-11-16T09:13:54.196Z",
+    "restore_bookmark": "00000050-00000000-00005125-0239f4165613de63a4d636e78c9e5f9f",
+    "restore_command": "npx wrangler d1 time-travel restore practice-app-db --bookmark=00000050-00000000-00005125-0239f4165613de63a4d636e78c9e5f9f",
+    "packs": [
+      "class5-calendar-sums.json"
+    ],
+    "results": [
+      {
+        "pack": "Class 5 Calendar Sums",
+        "new": 20,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      }
+    ],
+    "finished": "2026-11-16T09:13:55.752Z"
+  },
+  {
+    "started": "2026-11-16T09:14:58.313Z",
+    "restore_bookmark": "00000050-00000006-00005125-8df169f80ff02f7b8d4acd5bbcf253fe",
+    "restore_command": "npx wrangler d1 time-travel restore practice-app-db --bookmark=00000050-00000006-00005125-8df169f80ff02f7b8d4acd5bbcf253fe",
+    "packs": [
+      "advanced-critical-thinking-math-worksheet.json",
+      "class5-critical-thinking-calendar-sums.json",
+      "equally-spaced-objects-word-problems.json",
+      "geometry-olympiad-achiever-100.json",
+      "grammar-midterm-mastery-assessment.json",
+      "unitary-method-olympiad-course.json"
+    ],
+    "results": [
+      {
+        "pack": "Advanced Critical Thinking Math Worksheet",
+        "new": 20,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      },
+      {
+        "pack": "Class 5 – Critical‑Thinking Calendar Sums",
+        "new": 20,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      },
+      {
+        "pack": "Distance Between Equally Spaced Objects - Word Problems",
+        "new": 20,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      },
+      {
+        "pack": "The Geometry Olympiad Achiever Lab",
+        "new": 100,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      },
+      {
+        "pack": "Final Grammar Mastery Assessment",
+        "new": 180,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      },
+      {
+        "pack": "The Bridge of One: Unitary Method Olympiad Course",
+        "new": 140,
+        "new_versions": 0,
+        "duplicates": 0,
+        "rejected": 0,
+        "updated_solutions": 0,
+        "updated_keys": 0
+      }
+    ],
+    "finished": "2026-11-16T09:15:26.555Z"
+  }
+]

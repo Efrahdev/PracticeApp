@@ -1,4 +1,4 @@
-# Ingestion — step 1 (convert) of 3
+# Ingestion of the 7 papers (convert → review → live)
 
 Pipeline agreed for the 7 papers added in commit `dcd4873`:
 
@@ -6,7 +6,7 @@ Pipeline agreed for the 7 papers added in commit `dcd4873`:
 | --- | --- | --- | --- |
 | 1. Convert | Sonnet (high) | Turn each source into a **question pack** (`practice-app/question-pack@1`, see [`docs/question-format.md`](../docs/question-format.md)) with deterministic, re-runnable converters; validate with the app's own reader | **done** — packs in [`packs/`](packs/) |
 | 2. Review | Opus (high) | Check every pack against the original source for fidelity | **done** — 3 deltas found and fixed, now 0 differences (see [`REPORT.md`](REPORT.md)) |
-| 3. Ingest | another model | Import the reviewed packs into the live Cloudflare library | **not started — nothing has been written to D1 or R2** |
+| 3. Ingest | Opus | Import the reviewed packs into the live Cloudflare library | **done 2026-11-16** — 500 new questions (library 2,536 → 3,036); every question read back and matched exactly ([`verify_live.mjs`](verify_live.mjs)); restore points in [`live-import-log.json`](live-import-log.json) |
 
 ## Why converters instead of retyping
 
@@ -43,7 +43,13 @@ NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node ingest/pr
 
 `svg_control.mjs` renders figures *without* their embedded styles, only to calibrate the figure comparison (broken ≈ 100–165, correct ≈ 0.7–2.6).
 
-## For step 3 (ingest)
+## Step 3 (ingest) — how it was done
+
+* `node ingest/import_live.mjs` (dry run) then `--commit`: runs the app's own importer (`src/client/importer.ts`, unchanged) against the live site with the Import screen's default mapping; aborts unless every question is new and maps to existing subjects/labels; records a D1 Time Travel restore point first.
+* `node ingest/verify_live.mjs`: read-only read-back of every question, key, solution, topic, field, image and stored file.
+* Decisions confirmed by the owner: Unitary Method and Geometry under Maths; questions without answers imported as they are; Unitary answers kept per question.
+
+## Notes written before step 3
 
 * Packs are plain files: `ingest/packs/*.json`. Import them with the app's **Import** screen (or the same Worker import endpoints it uses),
   one pack per import; the importer commits each pack all-or-nothing and keeps the original file byte-for-byte.
