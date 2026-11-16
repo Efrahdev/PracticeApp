@@ -23,6 +23,9 @@ async function load() {
   }
 }
 
+/** Current data outside a component (read once, not subscribed). */
+export const dataSnapshot = () => ({ boot, lib });
+
 /** Reload metadata after any change (one small request for ~1,000 rows). */
 export function refresh(): Promise<void> {
   if (!loading) loading = load();

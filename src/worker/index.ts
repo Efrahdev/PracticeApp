@@ -46,6 +46,7 @@ on("POST", "/api/papers", (r, env) => api.paperCreate(r, env));
 on("GET", "/api/papers", (_r, env) => api.paperList(env));
 on("GET", "/api/papers/:id", (_r, env, p) => api.paperDetail(env, p[0]));
 on("DELETE", "/api/papers/:id", (_r, env, p) => api.paperArchive(env, p[0]));
+on("POST", "/api/papers/:id/delete", (_r, env, p) => api.paperDelete(env, p[0]));
 on("POST", "/api/papers/:id/sessions", (_r, env, p) => api.sessionStart(env, p[0]));
 on("PATCH", "/api/sessions/:id", (r, env, p) => api.sessionPatch(r, env, p[0]));
 on("POST", "/api/attempts", (r, env) => api.attemptCreate(r, env));

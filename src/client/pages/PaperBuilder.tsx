@@ -9,17 +9,17 @@ import { parseDef } from "../filter";
 import { randomSeed } from "../sampler";
 import { takePendingBuild, useData, type BuildInit } from "../store";
 import type { Boot, LibQ } from "../types";
-import { ErrorBox, toast } from "../ui";
+import { askConfirm, ErrorBox, toast } from "../ui";
 import { useConceptAccuracy } from "./Analytics";
-import { Badge, Field, Icon, NumBox, Section, Segmented, Stepper, Switch, usePopover } from "../builder/controls";
+import { Badge, Icon, NumBox, Section, Segmented, Stepper, Switch, usePopover } from "../builder/controls";
 import { DIM_LABEL, difficultyTone, ORDER_LABEL, RESULT_LABEL, subjectSlot, valueLabel } from "../builder/describe";
 import { activeDims, planPaper, type PlanPick } from "../builder/engine";
 import { MixPanel } from "../builder/MixPanel";
 import { PaperTable, type TableRow } from "../builder/PaperTable";
 import { breakdown, evaluatePool, makeCtx, type Ctx } from "../builder/pool";
-import { PoolPanel } from "../builder/PoolPanel";
+import { PoolMeter, PoolPanel } from "../builder/PoolPanel";
 import {
-  defaultBlueprint, GENERATOR_V2, NONE, normaliseBlueprint, OTHER, RESULT_BUCKETS, resultBucket,
+  anyRange, defaultBlueprint, GENERATOR_V2, NONE, normaliseBlueprint, OTHER, RESULT_BUCKETS, resultBucket,
   type Blueprint, type DimKey, type Order, type PoolSpec, type ShareDim,
 } from "../builder/spec";
 
@@ -59,7 +59,8 @@ function initial(): BuilderState {
         name: typeof r.name === "string" ? r.name : defaultName(),
         solutions: r.solutions === "hidden" ? "hidden" : "included",
         seed: Number.isFinite(r.seed) ? Math.trunc(r.seed) : randomSeed(),
-        bp: normaliseBlueprint(r.bp),
+        // average-time and personal-difficulty filters were removed from the builder: never carry them over silently
+        bp: (() => { const b = normaliseBlueprint(r.bp); return { ...b, pool: { ...b.pool, avgMinutes: anyRange(), personal: anyRange() } }; })(),
         savedFilterId: typeof r.savedFilterId === "string" ? r.savedFilterId : null,
       };
     }
@@ -176,8 +177,8 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
       setBusy(false);
     }
   };
-  const startOver = () => {
-    if (!confirm("Start again with a blank paper? Your current rules will be cleared.")) return;
+  const startOver = async () => {
+    if (!(await askConfirm({ title: "Start again with a blank paper?", message: "Your current rules will be cleared.", confirmLabel: "Start over" }))) return;
     setSt(() => fresh());
   };
 
@@ -222,27 +223,28 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
 
       <div class="pb-body">
         <aside class="pb-side" aria-label="Paper rules">
-          <div class="pb-group">
-            <div class="pb-group-head"><div><span class="pb-step">1</span><h2 class="pb-group-title">Paper</h2></div></div>
-            <Field label="Number of questions" action={<span class="pb-field-note">{ev.pool.length.toLocaleString()} available</span>}>
-              <div class="pb-inline">
-                <Stepper label="Number of questions" value={Math.max(bp.count, bp.pinned.length)} min={Math.max(1, bp.pinned.length)} onChange={(count) => setBp((b) => ({ ...b, count }))} />
-                <div class="pb-chips">
-                  {[10, 20, 30, 50].map((n) => (
-                    <button type="button" class={`pb-chip${bp.count === n ? " on" : ""}`} aria-pressed={bp.count === n} onClick={() => setBp((b) => ({ ...b, count: Math.max(n, b.pinned.length) }))}>{n}</button>
-                  ))}
-                  <button type="button" class={`pb-chip${bp.count === plan.candidates && plan.candidates > 0 ? " on" : ""}`} disabled={!plan.candidates}
-                    onClick={() => setBp((b) => ({ ...b, count: Math.max(1, plan.candidates) }))} title="Every question that matches your rules">All</button>
-                </div>
+          {/* the sample-space counter: pinned, so it stays in view however far the rules are scrolled */}
+          <div class="pb-meter-pin"><PoolMeter ev={ev} /></div>
+          {/* compact paper settings: same controls and behaviour, a fraction of the height */}
+          <div class="pb-group pb-config">
+            <div class="pb-config-row">
+              <span class="pb-config-label"><span class="pb-step">1</span>Questions</span>
+              <Stepper label="Number of questions" value={Math.max(bp.count, bp.pinned.length)} min={Math.max(1, bp.pinned.length)} onChange={(count) => setBp((b) => ({ ...b, count }))} />
+              <div class="pb-chips pb-chips-tight">
+                {[10, 20, 30, 50].map((n) => (
+                  <button type="button" class={`pb-chip${bp.count === n ? " on" : ""}`} aria-pressed={bp.count === n} onClick={() => setBp((b) => ({ ...b, count: Math.max(n, b.pinned.length) }))}>{n}</button>
+                ))}
+                <button type="button" class={`pb-chip${bp.count === plan.candidates && plan.candidates > 0 ? " on" : ""}`} disabled={!plan.candidates}
+                  onClick={() => setBp((b) => ({ ...b, count: Math.max(1, plan.candidates) }))} title="Every question that matches your rules">All</button>
               </div>
-            </Field>
-            <Field label="Solutions">
-              <Segmented label="Solutions" block value={st.solutions} onChange={(solutions) => set({ solutions })} options={[
-                { value: "included", label: "Include solutions", title: "Open any worked solution while practising; the printed copy ends with them" },
-                { value: "hidden", label: "Test conditions", title: "Solutions stay hidden in this paper and its printed copy" },
+            </div>
+            <div class="pb-config-row">
+              <span class="pb-config-label">Solutions</span>
+              <Segmented label="Solutions" size="sm" value={st.solutions} onChange={(solutions) => set({ solutions })} options={[
+                { value: "included", label: "Include solutions", title: "Open any question’s worked solution while practising. The printed copy ends with a solutions section." },
+                { value: "hidden", label: "Test conditions", title: "Solutions stay hidden in this paper and in its printed copy." },
               ]} />
-              <p class="pb-hint small">{st.solutions === "included" ? "Open any question’s worked solution while practising. The printed copy ends with a solutions section." : "Solutions stay hidden in this paper and in its printed copy."}</p>
-            </Field>
+            </div>
           </div>
 
           <PoolPanel pool={bp.pool} set={setPool} ev={ev} ctx={ctx} lib={lib} boot={boot} />

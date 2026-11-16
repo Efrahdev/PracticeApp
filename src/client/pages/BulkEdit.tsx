@@ -31,7 +31,6 @@ export function BulkEdit(props: { boot: Boot; ids: string[]; onClose: () => void
   const [notesMode, setNotesMode] = useState<"keep" | "set" | "append" | "clear">("keep");
   const [notes, setNotes] = useState("");
   const [status, setStatus] = useState<"keep" | "archive" | "unarchive" | "delete">("keep");
-  const [confirmText, setConfirmText] = useState("");
   const [preview, setPreview] = useState<any>(null);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -171,7 +170,7 @@ export function BulkEdit(props: { boot: Boot; ids: string[]; onClose: () => void
       </fieldset>
 
       <div class="field">Status
-        <select value={status} onChange={(e) => { setStatus((e.target as HTMLSelectElement).value as any); setConfirmText(""); changed(); }}>
+        <select value={status} onChange={(e) => { setStatus((e.target as HTMLSelectElement).value as any); changed(); }}>
           <option value="keep">Leave as is</option>
           <option value="archive">Archive (hide, keep everything)</option>
           <option value="unarchive">Bring back from the archive</option>
@@ -190,11 +189,7 @@ export function BulkEdit(props: { boot: Boot; ids: string[]; onClose: () => void
         <div class={nothing ? "warn-box" : "ok-box"}>
           <strong>Preview — {preview.summary.found} question{preview.summary.found === 1 ? "" : "s"} selected</strong>
           {nothing ? <p class="small">Nothing would change.</p> : <ul>{lines.map((l) => <li>{l}</li>)}</ul>}
-          {del && !nothing && preview.summary.delete > 0 && (
-            <label class="field">Type DELETE to confirm
-              <input value={confirmText} onInput={(e) => setConfirmText((e.target as HTMLInputElement).value)} />
-            </label>
-          )}
+          {del && !nothing && preview.summary.delete > 0 && <p class="small"><b>Press “Delete now” to confirm.</b> This cannot be undone.</p>}
         </div>
       )}
 
@@ -203,7 +198,7 @@ export function BulkEdit(props: { boot: Boot; ids: string[]; onClose: () => void
         {!preview ? (
           <button class="btn primary" disabled={busy} onClick={() => run(true)}>{busy ? "Checking…" : "Preview changes"}</button>
         ) : (
-          <button class={`btn primary ${del ? "danger" : ""}`} disabled={busy || nothing || (del && preview.summary.delete > 0 && confirmText.trim() !== "DELETE")} onClick={() => run(false)}>
+          <button class={`btn primary ${del ? "danger" : ""}`} disabled={busy || nothing} onClick={() => run(false)}>
             {busy ? "Saving…" : del ? "Delete now" : "Apply changes"}
           </button>
         )}

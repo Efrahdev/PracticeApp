@@ -117,8 +117,22 @@ await mixRow("By subject").getByLabel("Maths share").fill("50");
 await mixRow("By difficulty").locator("input.switch").check();
 await page.locator(".dt-row:not(.dt-head)").nth(8).waitFor();
 if (await page.locator(".mix-dim", { hasText: "By subject" }).getByText("On target").count() !== 1) fail("subject mix not on target");
-await page.getByRole("radio", { name: "Never", exact: true }).click();
+const secTitles = await page.locator(".pb-group", { has: page.getByRole("heading", { name: "Which questions" }) }).locator(".pb-sec-title").allInnerTexts();
+const wantOrder = ["Attempted", "Subject", "Concept", "Last attempted, attempts & result", "More filters", "Advanced conditions", "Difficulty level"];
+if (secTitles.join("|") !== wantOrder.join("|")) fail("filter order is " + secTitles.join(" | "));
+for (const gone of ["Average time taken", "How hard it has been for you"]) if (await page.locator(".pb-side").getByText(gone).count()) fail(`removed filter still shown: ${gone}`);
+if (await page.locator(".pb-meter").count() !== 1) fail("expected exactly one sample-space counter");
+const cfgH = (await page.locator(".pb-config").boundingBox()).height;
+if (cfgH > 140) fail(`paper settings still tall: ${cfgH}px`);
+log(`builder: filters in the requested order, removed filters gone, one counter, settings ${Math.round(cfgH)}px tall`);
+await page.getByRole("button", { name: /^Never attempted/ }).click();
 await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
+await page.locator(".pb-side").evaluate((el) => el.scrollTo(0, el.scrollHeight));
+await page.waitForTimeout(200);
+const pinBox = await page.locator(".pb-meter-pin").boundingBox();
+if (!pinBox || pinBox.y < 0 || pinBox.y + pinBox.height > 900) fail("counter scrolled out of view on a laptop screen");
+await page.locator(".pb-side").evaluate((el) => el.scrollTo(0, 0));
+log("counter stays in view while the rules are scrolled (laptop)");
 await page.getByRole("radio", { name: "More than" }).click();
 await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor(); // never attempted counts as "long ago"
 await page.getByRole("radio", { name: "Within" }).click();
@@ -143,6 +157,12 @@ await page.getByRole("link", { name: "Start" }).click();
 for (let i = 1; i <= 9; i++) {
   await page.getByText(`Question ${i} of 9`).waitFor();
   await page.locator("iframe.qframe").first().contentFrame().locator("body").waitFor();
+  if (!(await page.locator(".note-field textarea").isVisible())) fail("note box not shown by default");
+  if (i === 1) {
+    await page.locator(".note-field textarea").fill("Remember to simplify first");
+    await page.locator(".note-field textarea").blur();
+    await page.locator(".note-head", { hasText: "Saved" }).waitFor();
+  }
   if (await page.getByRole("button", { name: "Show solution" }).count()) fail("solution button visible in a no-solutions paper");
   if (await page.locator(".chips.answer").count()) {
     await page.locator(".chips.answer .chip").first().click();
@@ -163,6 +183,15 @@ for (let i = 1; i <= 9; i++) {
 }
 await page.getByText(/— summary/).waitFor();
 log("practised 9 questions (auto-marked MCQ/number, part-by-part, manual) with no solution access");
+{
+  const b = await page.evaluate(async () => (await (await fetch("/api/bootstrap")).json()));
+  const f = b.fields.find((x) => x.name === "Practice notes");
+  if (!f || f.data_type !== "text" || !f.is_filterable) fail("Practice notes field missing or not filterable");
+  const l = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions);
+  const withNote = l.filter((q) => q.fields && JSON.parse(q.fields)[f.id] === "Remember to simplify first");
+  if (withNote.length !== 1) fail(`expected the note on 1 question, found ${withNote.length}`);
+  log("note typed while solving is saved to the question's “Practice notes” field (filterable)");
+}
 await shot("4-summary");
 
 // 7. Paper WITH solutions: solution available before grading; print
@@ -226,8 +255,8 @@ await modal.getByRole("button", { name: "Add to list" }).click();
 await modal.getByLabel("Weight").fill("0.5");
 await modal.getByLabel("Collection: action").selectOption("set");
 await modal.getByLabel("Collection: value").fill("Renamed collection");
-await modal.locator(".field", { hasText: "Notes" }).locator("select").selectOption("append");
-await modal.locator(".field", { hasText: "Notes" }).locator("textarea").fill("Checked in bulk");
+await modal.locator(".field", { hasText: /^\s*Notes/ }).locator("select").selectOption("append");
+await modal.locator(".field", { hasText: /^\s*Notes/ }).locator("textarea").fill("Checked in bulk");
 await modal.getByRole("button", { name: "Preview changes" }).click();
 for (const line of ["5 subject changes", "5 topic tags added", "5 “Collection” values change", "5 notes change"]) await modal.getByText(line).waitFor();
 log("bulk preview: 5 subject, 5 topics, 5 field values, 5 notes");
@@ -250,13 +279,12 @@ await page.getByRole("heading", { name: "Edit 2 questions" }).waitFor();
 await modal.locator(".field", { hasText: "Status" }).locator("select").selectOption("delete");
 await modal.getByRole("button", { name: "Preview changes" }).click();
 await modal.getByText("2 deleted permanently").waitFor();
-if (!(await modal.getByRole("button", { name: "Delete now" }).isDisabled())) fail("delete allowed without typing DELETE");
-await modal.getByLabel("Type DELETE to confirm").fill("DELETE");
+if (await modal.getByLabel("Type DELETE to confirm").count()) fail("typed DELETE confirmation still present");
 await modal.getByRole("button", { name: "Delete now" }).click();
 await page.getByText("Deleted 2 question(s)").waitFor();
 const after = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.length);
 if (after !== 9) fail(`expected 9 questions after delete, got ${after}`);
-log("bulk delete: 2 useless questions deleted permanently (typed confirmation)");
+log("bulk delete: preview, then Delete now — no typing");
 
 // 11. Questions with history are archived instead of deleted, then restored
 await page.goto(`${BASE}/#/import`);
@@ -278,7 +306,6 @@ await page.goto(`${BASE}/#/settings`);
 await page.getByLabel("New subject name").fill("Junk subject");
 await page.getByRole("button", { name: "Add subject" }).click();
 await page.getByRole("button", { name: "Delete Junk subject" }).click();
-await page.getByLabel("Type DELETE to confirm").fill("DELETE");
 await page.getByRole("button", { name: "Delete permanently" }).click();
 await page.getByText("Deleted 1 subject").waitFor();
 const eqBefore = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.filter((q) => q.concepts && q.concepts.includes("Equivalent")).length);
@@ -286,12 +313,31 @@ await page.getByLabel("Find a subject or concept").fill("Equivalent fractions");
 await page.getByRole("button", { name: "Delete Equivalent fractions" }).click();
 await page.getByText(/1 question.* tagged with this/).waitFor();
 await page.getByLabel("Re-tag them with another concept").check();
-await page.getByLabel("Type DELETE to confirm").fill("DELETE");
 await page.getByRole("button", { name: "Delete permanently" }).click();
 await page.getByText("Deleted 1 concept").waitFor();
 const bootNow = await page.evaluate(async () => (await (await fetch("/api/bootstrap")).json()));
 if (bootNow.subjects.some((x) => x.name === "Junk subject") || bootNow.concepts.some((c) => c.name === "Equivalent fractions")) fail("taxonomy delete did not remove the items");
 log("taxonomy: junk subject deleted; used concept deleted with its question re-tagged", eqBefore >= 0 ? "" : "");
+
+// 12b. Delete a saved paper: Delete -> confirmation -> Delete; answers stay in question history
+{
+  const attemptsBefore = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.reduce((a, q) => a + (q.attempt_count ?? 0), 0));
+  await page.goto(`${BASE}/#/papers`);
+  const row = page.locator(".dt-row:not(.dt-head)", { hasText: "Test paper" });
+  await row.getByRole("button", { name: "Delete Test paper" }).click();
+  const dlg = page.locator(".modal", { hasText: "Delete “Test paper”?" });
+  await dlg.waitFor();
+  await dlg.getByRole("button", { name: "Cancel" }).click();
+  if (!(await row.count())) fail("cancel deleted the paper");
+  await row.getByRole("button", { name: "Delete Test paper" }).click();
+  await dlg.getByRole("button", { name: "Delete", exact: true }).click();
+  await page.getByText("Paper deleted").waitFor();
+  const papersNow = await page.evaluate(async () => (await (await fetch("/api/papers")).json()).papers.map((p) => p.name));
+  if (papersNow.includes("Test paper")) fail("paper still listed after delete");
+  const attemptsAfter = await page.evaluate(async () => (await (await fetch("/api/library")).json()).questions.reduce((a, q) => a + (q.attempt_count ?? 0), 0));
+  if (attemptsAfter !== attemptsBefore) fail(`attempt history changed: ${attemptsBefore} -> ${attemptsAfter}`);
+  log(`saved paper deleted after a confirmation prompt (cancel keeps it); ${attemptsAfter} attempts kept in question history`);
+}
 
 // 13. Integrity + rebuild + backup
 await page.goto(`${BASE}/#/settings`);
@@ -312,6 +358,16 @@ for (const route of ["#/", "#/import", "#/papers", "#/papers/new", "#/settings"]
   await page.goto(`${BASE}/${route}`);
   await page.waitForTimeout(400);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) fail(`horizontal scroll on phone width at ${route}`);
+}
+await page.goto(`${BASE}/#/papers/new`);
+await page.locator(".pb-meter").waitFor();
+await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+await page.waitForTimeout(300);
+{
+  const b = await page.locator(".pb-meter-pin").boundingBox();
+  if (!b || b.y < -1 || b.y > 60) fail(`counter not pinned on phone (y=${b && b.y})`);
+  await shot("7b-phone-builder-scrolled");
+  log("phone: counter stays pinned at the top while scrolling the filters");
 }
 await page.goto(`${BASE}/#/import`);
 await shot("7-phone-import");

@@ -686,3 +686,40 @@ details.subject summary { cursor: pointer; }
   .lib-bar .sel-sm { flex: 1 1 140px; max-width: none; }
   .sel-bar { top: 8px; }
 }
+
+/* ============================================================== builder: pinned sample-space counter + compact settings */
+/* The existing "questions match" counter, pinned. Laptop/widescreen: the rules column scrolls on its own, so the pin sits at
+   the top of that column. Tablet: the page scrolls, the pin sits just under the top bar. Phone: the top bar moves to the
+   bottom, so the pin sits at the very top (clear of the bottom tabs and the save bar). Kept slim so it covers nothing. */
+.pb-meter-pin { position: sticky; top: 0; z-index: 6; margin: 0 0 -4px; padding-bottom: 4px; background: var(--bg); }
+.pb-meter-pin .pb-meter { margin: 0; padding: 7px 12px 8px; background: var(--card); border-color: var(--line); box-shadow: var(--shadow); }
+.pb-meter-pin .pb-meter-n { font-size: .84rem; }
+.pb-meter-pin .pb-meter-n b { font-size: 1.15rem; }
+.pb-meter-pin .pb-meter-bar { height: 4px; margin-top: 5px; }
+@media (max-width: 960px) {
+  .pb-meter-pin { top: 54px; }
+}
+@media (max-width: 640px) {
+  .pb-meter-pin { top: 0; padding-top: env(safe-area-inset-top); }
+}
+/* compact paper settings */
+.pb-config { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; }
+.pb-config-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.pb-config-label { display: inline-flex; align-items: center; gap: 8px; min-width: 6.6em; font-size: .74rem; font-weight: 650; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-2); }
+.pb-config .stepper button { width: 30px; }
+.pb .pb-config .stepper input[type=number].numbox { width: 3.4em; min-height: 32px; font-size: .95rem; }
+.pb-chips-tight { gap: 4px; }
+.pb-chips-tight .pb-chip { min-height: 28px; padding: 2px 9px; }
+.pb-config .segctl.sm > button { min-height: 28px; padding: 3px 10px; font-size: .84rem; }
+
+/* practice: note under each question */
+.note-card { padding: 10px 12px; }
+.note-field { margin: 0; gap: 6px; }
+.note-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.note-field textarea { width: 100%; min-height: 64px; resize: vertical; }
+
+/* confirmation prompt + delete buttons */
+.confirm-msg { margin: 4px 0 14px; color: var(--ink-2); line-height: 1.5; }
+.confirm-msg p { margin: 0; }
+.btn.ghost.danger-text { color: var(--bad); }
+.btn.ghost.danger-text:hover { background: var(--bad-soft); }

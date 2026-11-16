@@ -23,6 +23,38 @@ export function Modal(props: { title: string; onClose: () => void; children: Com
   );
 }
 
+// ---------------------------------------------------------------- confirmation (the one two-step pattern used everywhere)
+// First click (e.g. Delete) opens this prompt; the second click (Confirm) carries the action out. No typing needed.
+
+export interface ConfirmOpts { title: string; message?: ComponentChildren; confirmLabel?: string; danger?: boolean }
+let confirmSet: ((c: (ConfirmOpts & { resolve: (ok: boolean) => void }) | null) => void) | null = null;
+
+/** Ask for confirmation; resolves true only when the user presses the confirm button. */
+export function askConfirm(opts: ConfirmOpts): Promise<boolean> {
+  return new Promise((resolve) => {
+    if (!confirmSet) { resolve(window.confirm(opts.title)); return; }
+    confirmSet({ ...opts, resolve });
+  });
+}
+
+export function ConfirmHost() {
+  const [c, setC] = useState<(ConfirmOpts & { resolve: (ok: boolean) => void }) | null>(null);
+  confirmSet = setC;
+  const okRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => { if (c) okRef.current?.focus(); }, [c]);
+  if (!c) return null;
+  const done = (ok: boolean) => { setC(null); c.resolve(ok); };
+  return (
+    <Modal title={c.title} onClose={() => done(false)}>
+      {c.message && <div class="confirm-msg">{c.message}</div>}
+      <div class="row end">
+        <button type="button" class="btn" onClick={() => done(false)}>Cancel</button>
+        <button type="button" ref={okRef} class={`btn ${c.danger ? "danger" : "primary"}`} onClick={() => done(true)}>{c.confirmLabel ?? "Confirm"}</button>
+      </div>
+    </Modal>
+  );
+}
+
 let toastSet: ((t: { msg: string; kind: string } | null) => void) | null = null;
 export function toast(msg: string, kind: "ok" | "error" = "ok") {
   toastSet?.({ msg, kind });

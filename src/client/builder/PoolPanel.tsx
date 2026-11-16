@@ -42,18 +42,92 @@ export function PoolPanel(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx:
           </button>
         )}
       </div>
-      <div class="pb-meter" aria-live="polite">
-        <div class="pb-meter-n"><b>{fmt(ev.pool.length)}</b> of {fmt(ev.libraryCount)} questions match</div>
-        <div class="pb-meter-bar" aria-hidden="true"><i style={{ width: `${ev.libraryCount ? Math.max(ev.pool.length ? 1.5 : 0, (ev.pool.length / ev.libraryCount) * 100) : 0}%` }} /></div>
-      </div>
-
-      {hasConditions(pool.advanced) && <LibraryFilter {...props} />}
-      <HistorySection {...props} />
+      {/* Order (most used first): attempted, how long ago, subject, concept, last attempted, attempts, last result,
+          other filters, and the question difficulty label at the very bottom. */}
+      <AttemptedSection {...props} />
+      <SubjectSection {...props} />
       <TreeSection {...props} />
-      <DifficultySection {...props} />
+      <HistorySection {...props} />
+      {hasConditions(pool.advanced) && <LibraryFilter {...props} />}
       <MoreSection {...props} />
       {!hasConditions(pool.advanced) && <AdvancedSection {...props} />}
+      <DifficultySection {...props} />
     </div>
+  );
+}
+
+/** The existing "questions match" counter. Rendered once, pinned at the top of the rules column (see PaperBuilder). */
+export function PoolMeter(props: { ev: PoolEval }) {
+  const { ev } = props;
+  return (
+    <div class="pb-meter" aria-live="polite">
+      <div class="pb-meter-n"><b>{fmt(ev.pool.length)}</b> of {fmt(ev.libraryCount)} questions match your filters</div>
+      <div class="pb-meter-bar" aria-hidden="true"><i style={{ width: `${ev.libraryCount ? Math.max(ev.pool.length ? 1.5 : 0, (ev.pool.length / ev.libraryCount) * 100) : 0}%` }} /></div>
+    </div>
+  );
+}
+
+// ------------------------------------------------------------------ attempted + how long ago
+
+const QUICK_AGO: { label: string; n: number; unit: Unit }[] = [
+  { label: "1 week+", n: 1, unit: "weeks" }, { label: "3 weeks+", n: 3, unit: "weeks" },
+  { label: "1 month+", n: 1, unit: "months" }, { label: "3 months+", n: 3, unit: "months" },
+];
+
+function AttemptedSection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
+  const { pool, set, ev } = props;
+  const r = pool.recency;
+  const active = (pool.attempted !== "any" ? 1 : 0) + (r.mode !== "any" ? 1 : 0);
+  const quickOn = (x: (typeof QUICK_AGO)[number]) => r.mode === "more_than" && r.n === x.n && r.unit === x.unit;
+  return (
+    <Section title="Attempted" badge={active ? <Badge tone="accent">{active} on</Badge> : undefined}>
+      <Field label="Attempted">
+        <div class="pb-chips">
+          <ChipToggle on={pool.attempted === "any"} onClick={() => set({ attempted: "any" })}>Any</ChipToggle>
+          <ChipToggle on={pool.attempted === "yes"} count={ev.counts.attempted.get("yes") ?? 0} onClick={() => set({ attempted: "yes" })}>Attempted</ChipToggle>
+          <ChipToggle on={pool.attempted === "no"} count={ev.counts.attempted.get("no") ?? 0}
+            onClick={() => set({ attempted: "no", recency: { ...r, mode: "any" } })}>Never attempted</ChipToggle>
+        </div>
+      </Field>
+      <Field label="How long ago it was attempted" hint={pool.attempted === "no" ? "Not used while “Never attempted” is chosen." : undefined}>
+        <div class="pb-chips" aria-label="How long ago it was attempted">
+          <ChipToggle on={r.mode === "any"} onClick={() => set({ recency: { ...r, mode: "any" } })}>Any time</ChipToggle>
+          {QUICK_AGO.map((x) => (
+            <ChipToggle on={quickOn(x)} title={`Last attempted more than ${x.label.replace("+", "")} ago`}
+              onClick={() => set({ recency: quickOn(x) ? { ...r, mode: "any" } : { ...r, mode: "more_than", n: x.n, unit: x.unit }, ...(pool.attempted === "no" ? { attempted: "any" as const } : {}) })}>
+              {x.label}
+            </ChipToggle>
+          ))}
+        </div>
+      </Field>
+    </Section>
+  );
+}
+
+// ------------------------------------------------------------------ subject
+
+function SubjectSection(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx: Ctx }) {
+  const { pool, set, ev, ctx } = props;
+  const sel = pool.tree ? new Set(pool.tree) : null;
+  const roots = ctx.tree;
+  if (!roots.length) return null;
+  const picked = roots.filter((n) => treeState(sel, n) !== "off").length;
+  return (
+    <Section title="Subject" badge={pool.tree ? <Badge tone="accent">{picked} of {roots.length}</Badge> : <Badge>All</Badge>}>
+      <div class="pb-chips" role="group" aria-label="Subjects">
+        <ChipToggle on={!pool.tree} onClick={() => set({ tree: null })}>All</ChipToggle>
+        {roots.map((n) => {
+          const st = treeState(sel, n);
+          return (
+            <ChipToggle on={!!pool.tree && st !== "off"} count={ev.counts.tree.get(n.key) ?? 0}
+              title={st === "some" ? `Part of ${n.label} is chosen — see Concept` : undefined}
+              onClick={() => set({ tree: treeToggle(ctx, pool.tree, n) })}>
+              {n.label}{pool.tree && st === "some" ? " (part)" : ""}
+            </ChipToggle>
+          );
+        })}
+      </div>
+    </Section>
   );
 }
 
@@ -62,21 +136,17 @@ export function PoolPanel(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx:
 function HistorySection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
   const { pool, set, ev } = props;
   const r = pool.recency;
-  const setR = (p: Partial<PoolSpec["recency"]>) => set({ recency: { ...r, ...p } });
-  const active = ["recency", "attempts", "results", "time", "personal"].filter((f) => ev.activeFacets.has(f)).length;
-  const quick: { label: string; n: number; unit: Unit }[] = [
-    { label: "1 week+", n: 1, unit: "weeks" }, { label: "3 weeks+", n: 3, unit: "weeks" },
-    { label: "1 month+", n: 1, unit: "months" }, { label: "3 months+", n: 3, unit: "months" },
-  ];
+  const setR = (p: Partial<PoolSpec["recency"]>) => set({ recency: { ...r, ...p }, ...(p.mode && p.mode !== "any" && pool.attempted === "no" ? { attempted: "any" as const } : {}) });
+  const active = ["recency", "attempts", "results"].filter((f) => ev.activeFacets.has(f)).length;
   const attemptPresets: { label: string; r: Range }[] = [
     { label: "Any", r: anyRange() }, { label: "0", r: { min: 0, max: 0 } }, { label: "1–2", r: { min: 1, max: 2 } }, { label: "3+", r: { min: 3, max: null } },
   ];
   const results = RESULT_BUCKETS.filter((b) => b !== "ungraded" || (ev.counts.results.get(b) ?? 0) > 0 || pool.results.includes(b));
   return (
-    <Section title="Your history" badge={active ? <Badge tone="accent">{active} on</Badge> : undefined}>
+    <Section title="Last attempted, attempts & result" badge={active ? <Badge tone="accent">{active} on</Badge> : undefined}>
       <Field label="Last attempted">
-        <Segmented size="sm" block label="Last attempted" value={r.mode} onChange={(mode) => setR({ mode })} options={[
-          { value: "any", label: "Any time" }, { value: "never", label: "Never" }, { value: "more_than", label: "More than" },
+        <Segmented size="sm" block label="Last attempted" value={r.mode === "never" ? "any" : r.mode} onChange={(mode) => setR({ mode })} options={[
+          { value: "any", label: "Any time" }, { value: "more_than", label: "More than" },
           { value: "within", label: "Within" }, { value: "between", label: "Between" },
         ]} />
         {(r.mode === "more_than" || r.mode === "within") && (
@@ -99,12 +169,6 @@ function HistorySection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
         {r.mode === "more_than" && (
           <label class="pb-check"><input type="checkbox" class="cb" checked={r.includeNever} onChange={(e) => setR({ includeNever: (e.target as HTMLInputElement).checked })} /> Also include questions never attempted</label>
         )}
-        <div class="pb-chips" aria-label="Quick choices">
-          {quick.map((x) => (
-            <ChipToggle on={r.mode === "more_than" && r.n === x.n && r.unit === x.unit} onClick={() => setR({ mode: "more_than", n: x.n, unit: x.unit })}
-              title={`Last attempted more than ${x.label.replace("+", "")} ago`}>{x.label}</ChipToggle>
-          ))}
-        </div>
       </Field>
 
       <Field label="Number of attempts">
@@ -125,13 +189,6 @@ function HistorySection(props: { pool: PoolSpec; set: Set_; ev: PoolEval }) {
         </div>
       </Field>
 
-      <Field label="Average time taken" hint="Only questions you have attempted have a time.">
-        <RangeBox label="Average time" unit="min" value={pool.avgMinutes} min={0} step={0.5} onChange={(avgMinutes) => set({ avgMinutes })} />
-      </Field>
-
-      <Field label="How hard it has been for you" hint="Personal difficulty, from your grades (0% = always right).">
-        <RangeBox label="Personal difficulty" unit="%" value={pool.personal} min={0} max={100} integer onChange={(personal) => set({ personal })} />
-      </Field>
     </Section>
   );
 }
@@ -187,7 +244,7 @@ function TreeSection(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx: Ctx 
   ctx.tree.forEach(walk);
 
   return (
-    <Section title="Subjects & concepts" badge={pool.tree ? <Badge tone="accent">{pickedConcepts} of {conceptCount}</Badge> : <Badge>All</Badge>}>
+    <Section title="Concept" badge={pool.tree ? <Badge tone="accent">{pickedConcepts} of {conceptCount}</Badge> : <Badge>All</Badge>}>
       {ctx.tree.length === 0 ? <p class="pb-hint">No subjects yet. Add them in Settings or with an import.</p> : (
         <>
           <div class="tree-tools">
@@ -225,7 +282,7 @@ function DifficultySection(props: { pool: PoolSpec; set: Set_; ev: PoolEval; ctx
     set({ difficulty: all.every((c) => s.has(c)) ? null : all.filter((c) => s.has(c)) });
   };
   return (
-    <Section title="Difficulty" badge={pool.difficulty ? <Badge tone="accent">{pool.difficulty.length} of {all.length}</Badge> : <Badge>All</Badge>}>
+    <Section title="Difficulty level" badge={pool.difficulty ? <Badge tone="accent">{pool.difficulty.length} of {all.length}</Badge> : <Badge>All</Badge>}>
       <div class="check-list">
         {codes.map((c) => (
           <label class={`check-row${(ev.counts.difficulty.get(c.code) ?? 0) === 0 ? " empty" : ""}`}>
@@ -350,6 +407,6 @@ function withAdvanced(pool: PoolSpec, advanced: FilterDef): Partial<PoolSpec> {
 }
 
 export const poolIsDefault = (p: PoolSpec) =>
-  !p.text && !p.tree && !p.difficulty && p.recency.mode === "any" && !rangeOn(p.attempts) && !p.results.length && !rangeOn(p.avgMinutes) &&
+  !p.text && !p.tree && !p.difficulty && p.attempted === "any" && p.recency.mode === "any" && !rangeOn(p.attempts) && !p.results.length && !rangeOn(p.avgMinutes) &&
   !rangeOn(p.personal) && !p.formats.length && !rangeOn(p.marks) && p.solution === "any" && p.key === "any" && !p.imports.length &&
   p.added.mode === "any" && !p.includeArchived && !hasConditions(p.advanced);

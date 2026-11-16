@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "preact/hooks";
 import { api } from "../api";
 import { emptyFilter } from "../filter";
 import { refresh, setPendingFilter } from "../store";
-import { ErrorBox, fmtDateTime, toast } from "../ui";
+import { askConfirm, ErrorBox, fmtDateTime, toast } from "../ui";
 
 interface Row {
   id: string; file_name: string; label: string | null; note: string | null; parser_version: string; committed_at: number;
@@ -51,7 +51,7 @@ export function ImportHistory() {
     } catch (e) { toast((e as Error).message, "error"); }
   };
   const archive = async (r: Row, archived: boolean) => {
-    if (archived && !confirm(`Archive every question first added by “${r.label || r.file_name}”? Nothing is deleted; you can bring them back here.`)) return;
+    if (archived && !(await askConfirm({ title: `Archive every question first added by “${r.label || r.file_name}”?`, message: "Nothing is deleted; you can bring them back here.", confirmLabel: "Archive" }))) return;
     try {
       const res = await api("POST", `/api/imports/${r.id}/archive`, { archived });
       toast(`${archived ? "Archived" : "Restored"} ${res.changed} question(s)`);
