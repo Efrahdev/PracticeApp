@@ -12,6 +12,9 @@
     "wrangler": "^4.162.0"
   },
   "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
+    "@fontsource/stix-two-math": "^5.3.0",
     "fflate": "^0.8.3",
     "js-yaml": "^5.5.0",
     "marked": "^18.2.0",

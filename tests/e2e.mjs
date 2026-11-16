@@ -67,7 +67,7 @@ log("re-import: 1 new version, 4 already had, 1 solution refreshed");
 
 // 4. Library + filters
 const count = (t) => page.locator(".dt-count", { hasText: new RegExp(`^${t}$`) }).waitFor();
-await page.goto(`${BASE}/#/`);
+await page.goto(`${BASE}/#/library`);
 await count("9");
 await page.getByRole("button", { name: /More filters/ }).click();
 await page.selectOption('select[aria-label="Add condition"]', "field");
@@ -89,7 +89,7 @@ await page.getByText("AI-written · unverified").first().waitFor();
 await page.getByRole("button", { name: "mark it verified" }).click();
 await page.getByText("Solution verified").waitFor();
 log("AI solution approved (FR-1.10)");
-await page.goto(`${BASE}/#/`);
+await page.goto(`${BASE}/#/library`);
 await page.getByRole("button", { name: "Clear all" }).click();
 await page.getByLabel("Search questions").fill("equivalent");
 await count("1 of 9");
@@ -102,7 +102,7 @@ log("solution on demand: refreshed solution shown, with maths");
 await shot("3-question");
 
 // 6. Paper WITHOUT solutions: practise everything
-await page.goto(`${BASE}/#/`);
+await page.goto(`${BASE}/#/library`);
 if (await page.getByRole("button", { name: "Clear all" }).count()) await page.getByRole("button", { name: "Clear all" }).click();
 await count("9");
 await page.getByRole("button", { name: /^Build paper/ }).click();
@@ -144,22 +144,31 @@ for (let i = 1; i <= 9; i++) {
   await page.getByText(`Question ${i} of 9`).waitFor();
   await page.locator("iframe.qframe").first().contentFrame().locator("body").waitFor();
   if (await page.getByRole("button", { name: "Show solution" }).count()) fail("solution button visible in a no-solutions paper");
-  if (await page.locator(".chips.answer").count()) {
+  const qf = page.locator("iframe.qframe").first().contentFrame();
+  await page.locator(".px-dock").waitFor();
+  await page.waitForTimeout(300);
+  if (await qf.locator(".q-root > .options > li").count() && await page.getByRole("button", { name: "Check answer" }).count()) {
+    // multiple choice: tap the option inside the question itself
+    await qf.locator(".q-root > .options > li").first().click();
+    await qf.locator(".q-root > .options > li.sel").waitFor();
+    await page.getByRole("button", { name: "Check answer" }).click();
+    await qf.locator(".q-root.done").waitFor();
+  } else if (await page.locator(".chips.answer").count()) {
     await page.locator(".chips.answer .chip").first().click();
     await page.getByRole("button", { name: "Check answer" }).click();
   } else if (await page.locator('.answer input[inputmode="decimal"]').count()) {
     await page.locator('.answer input[inputmode="decimal"]').fill("28");
     if (await page.getByRole("button", { name: "Check answer" }).count()) await page.getByRole("button", { name: "Check answer" }).click();
-    else { await page.getByRole("button", { name: "✓ Correct" }).click(); await page.getByRole("button", { name: "Save grade" }).click(); }
+    else { await page.getByRole("button", { name: "Correct", exact: true }).click(); await page.getByRole("button", { name: "Save grade" }).click(); }
   } else if (await page.getByText("Mark each part:").count()) {
     for (const b of await page.locator(".part-mark").all()) await b.getByRole("button", { name: "✓" }).click();
     await page.getByRole("button", { name: "Save grade" }).click();
   } else {
-    await page.getByRole("button", { name: "◐ Partly" }).click();
+    await page.getByRole("button", { name: "Partly", exact: true }).click();
     await page.getByRole("button", { name: "Save grade" }).click();
   }
   await page.getByText("Solutions are not included in this paper").waitFor();
-  await page.getByRole("button", { name: i < 9 ? "Next question →" : "Finish", exact: true }).click();
+  await page.getByRole("button", { name: i < 9 ? "Next question" : "Finish", exact: true }).click();
 }
 await page.getByText(/— summary/).waitFor();
 log("practised 9 questions (auto-marked MCQ/number, part-by-part, manual) with no solution access");
@@ -167,21 +176,25 @@ await shot("4-summary");
 
 // 7. Paper WITH solutions: solution available before grading; print
 await page.goto(`${BASE}/#/`);
+await page.locator(".recent-main", { hasText: "Test paper" }).waitFor(); // home lists recent papers
 await page.goto(`${BASE}/#/papers`);
+await page.locator(".paper-card", { hasText: "Test paper" }).waitFor();
+await page.getByRole("radio", { name: "Table" }).click();
 await page.locator(".dt-row:not(.dt-head)", { hasText: "Test paper" }).waitFor();
 await page.getByRole("button", { name: "Sort by marks" }).click();
-await page.getByRole("button", { name: "Build paper" }).click();
+await page.locator(".pb-top").getByRole("button", { name: "Build paper" }).click();
 await page.getByRole("heading", { name: "Build a paper" }).waitFor();
 await page.getByRole("spinbutton", { name: "Number of questions" }).fill("3");
 await page.getByRole("textbox", { name: "Paper name" }).fill("With solutions");
 await page.getByRole("button", { name: /Save paper \(3\)/ }).first().click();
 await page.locator(".pb-badge", { hasText: "Solutions included" }).waitFor();
 const [popup] = await Promise.all([page.waitForEvent("popup"), page.getByRole("button", { name: "Print / PDF" }).click()]);
-await popup.getByRole("heading", { name: "Solutions", exact: true }).waitFor({ timeout: 20000 });
+await popup.getByRole("heading", { name: "Answers & solutions", exact: true }).waitFor({ timeout: 20000 });
 if ((await popup.locator(".pq").count()) < 6) fail("print copy is missing questions or solutions");
 if (shots) await popup.screenshot({ path: path.join(shots, "5-print.png"), fullPage: true });
 await popup.close();
 log("printable paper opens with questions and a solutions section");
+await page.locator(".paper-sheet iframe.qframe").contentFrame().locator(".pq").first().waitFor(); // the paper itself, on the page
 await page.getByRole("link", { name: "Start" }).click();
 await page.getByText("Question 1 of 3").waitFor();
 let opened = false;
@@ -308,14 +321,19 @@ log("backup archive downloaded:", fs.statSync(out).size, "bytes");
 
 // 13. Phone layout
 await page.setViewportSize({ width: 390, height: 844 });
-for (const route of ["#/", "#/import", "#/papers", "#/papers/new", "#/settings"]) {
+for (const route of ["#/", "#/library", "#/import", "#/papers", "#/papers/new", "#/analytics", "#/settings"]) {
   await page.goto(`${BASE}/${route}`);
   await page.waitForTimeout(400);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) fail(`horizontal scroll on phone width at ${route}`);
 }
+const firstPaper = await page.evaluate(async () => (await (await fetch("/api/papers")).json()).papers[0].id);
+await page.goto(`${BASE}/#/papers/${firstPaper}`);
+await page.locator(".paper-sheet iframe.qframe").waitFor();
+await page.waitForTimeout(600);
+if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) fail("horizontal scroll on phone width on a saved paper");
 await page.goto(`${BASE}/#/import`);
 await shot("7-phone-import");
-log("phone width: no horizontal scroll on library, import, papers, settings");
+log("phone width: no horizontal scroll on home, library, import, papers, a saved paper, builder, progress, settings");
 
 if (errors.length) fail("browser errors:\n" + errors.join("\n"));
 await browser.close();

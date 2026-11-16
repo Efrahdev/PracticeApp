@@ -17,7 +17,7 @@ export function editImportQuestions(ids: string[]) {
   def.includeArchived = true;
   def.groups[0].conds.push({ type: "import", ids });
   setPendingFilter({ def, selectAll: true, openBulk: true });
-  location.hash = "#/";
+  location.hash = "#/library";
 }
 
 export function ImportHistory() {

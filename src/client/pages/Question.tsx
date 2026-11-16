@@ -2,7 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 import { api } from "../api";
 import { refresh, useData } from "../store";
 import type { Boot } from "../types";
-import { conceptPath, ErrorBox, fmtDateTime, fmtSecs, pct, ResultBadge, toast } from "../ui";
+import { conceptPath, ErrorBox, fmtDateTime, fmtSecs, pct, ResultBadge, toast, Loading } from "../ui";
 import { QuestionView, SolutionView } from "../views";
 import { GradeForm } from "./Practice";
 
@@ -15,7 +15,7 @@ export function Question(props: { id: string }) {
   };
   useEffect(() => { setD(null); load(); }, [props.id]);
   if (err) return <ErrorBox error={err} />;
-  if (!d || !boot) return <p class="muted">Loading…</p>;
+  if (!d || !boot) return <Loading />;
   const q = d.question;
   const css = d.stylesheets.find((s: any) => s.question_version_id === q.version_id)?.blob_sha256 ?? null;
   const reload = async () => { await load(); await refresh(); };
@@ -23,7 +23,7 @@ export function Question(props: { id: string }) {
   return (
     <div class="page">
       <div class="page-head">
-        <a href="#/" class="back">← Library</a>
+        <a href="#/library" class="back">← Library</a>
         <h1>Q{q.source_question_number} {q.archived_at && <span class="badge muted">archived</span>}</h1>
         <span class="muted small">{d.source?.file_name} · position {q.source_position} · version {q.version_no} of {d.versions.length}
           {q.marks !== null && q.marks !== undefined ? ` · ${q.marks} mark${q.marks === 1 ? "" : "s"}` : ""} · ID {q.id}{q.external_ref ? ` · ref ${q.external_ref}` : ""}</span>
