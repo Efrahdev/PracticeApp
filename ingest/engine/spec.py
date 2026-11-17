@@ -18,14 +18,16 @@ KIT = Path(__file__).resolve().parents[1] / "kit"
 # Everything a profile can name, with its version. A profile's hash covers the versions of what it uses, so
 # changing the behaviour of a transform (and bumping its version here) voids approvals that depend on it (R17).
 REGISTRY = {
-    "segment": {"css_container": 1, "numbered_paragraph": 1, "json_array": 1},
+    "segment": {"css_container": 1, "numbered_paragraph": 1, "json_array": 1, "lines": 1, "units": 1},
+    "pages": {"text_lines": 1, "ink_bands": 1, "crop_png": 1},
     "content": {"htmlmd": 1},
     "svg": {"svg_inline_page_styles": 1},
     "classify": {"number_unit_else_open": 1},
     "rule": {"frac": 1, "mixed": 1, "bold_line": 1, "italic_line": 1, "list": 1, "quote_lines": 1, "unwrap": 1, "text": 1},
     "escape": {"markdown": 1},
 }
-SEGMENT_FOR_KIND = {"html": "css_container", "html-json": "json_array", "docx": "numbered_paragraph", "pdf-text": "numbered_paragraph"}
+SEGMENT_FOR_KIND = {"html": {"css_container"}, "html-json": {"json_array"}, "docx": {"numbered_paragraph"},
+                    "pdf": {"lines", "units"}, "office": {"lines", "units"}, "html-print": {"lines", "units"}, "image": {"units"}}
 
 
 # --------------------------------------------------------------------------- regular expressions (R13)
@@ -143,8 +145,9 @@ def _walk(node, path=""):
 
 
 _SELECTOR_KEYS = {"css", "selector", "closest", "match", "num", "den", "frac", "line", "main", "note"}
+_REGEX_KEYS = {"regex", "start", "end", "entry", "answer", "explanation_stop", "heading", "answer_until", "break_before"}
 _TEMPLATE_VAR = re.compile(r"\{([a-z_][a-z0-9_]*)(?::[^}]*)?\}")
-BUILTIN_VARS = {"number", "label", "qid", "position", "array"}
+BUILTIN_VARS = {"number", "label", "qid", "position", "array", "heading", "heading_1", "heading_2", "heading_3"}
 
 
 def _check_selector(sel: str, path: str, lint: Lint) -> None:
@@ -165,26 +168,29 @@ def lint_profile(data: dict, lines: dict[str, int], name: str) -> Lint:
 
     kind = data["source"]["kind"]
     seg_name, _, seg_ver = data["segment"]["by"].partition("@")
-    if SEGMENT_FOR_KIND[kind] != seg_name:
-        lint.err("/segment/by", f"source kind {kind!r} needs segment.by {SEGMENT_FOR_KIND[kind]}@{REGISTRY['segment'][SEGMENT_FOR_KIND[kind]]}", "lint.registry")
+    if seg_name not in SEGMENT_FOR_KIND[kind]:
+        lint.err("/segment/by", f"source kind {kind!r} needs segment.by one of {sorted(n + '@1' for n in SEGMENT_FOR_KIND[kind])}", "lint.registry")
     if kind == "html" and "selector" not in data["segment"]:
         lint.err("/segment", "css_container needs segment.selector", "lint.missing_key")
     if kind == "html-json" and "arrays" not in data["segment"]:
         lint.err("/segment", "json_array needs segment.arrays", "lint.missing_key")
-    if kind == "pdf-text":
-        lint.err("/source/kind", "pdf-text is probed but not converted yet by this engine version (see ARCHITECTURE.md, 'Not built yet')", "lint.registry")
-
+    if seg_name == "lines" and "start" not in data["segment"]:
+        lint.err("/segment", "lines@1 needs segment.start (the pattern of a line that begins a question)", "lint.missing_key")
+    if data.get("answers", {}).get("section") and not data["segment"].get("end"):
+        lint.err("/answers/section", "an answer section needs segment.end (the line where questions stop and answers begin)", "lint.missing_key")
+    if data.get("answers", {}).get("expected") and seg_name == "lines" and not (data["answers"].get("inline") or data["answers"].get("section")):
+        lint.warn("/answers", "answers are expected but neither answers.inline nor answers.section says where they are", "lint.answers")
     declared = set(data.get("vars", {})) | BUILTIN_VARS
     for path, node in _walk(data):
         key = path.rsplit("/", 1)[-1]
         if isinstance(node, str):
-            if key == "regex" or (key == "label" and path.startswith("/parts")):
+            if key in _REGEX_KEYS and not path.startswith("/fields") or key == "regex" or (key == "label" and (path.startswith("/parts") or path.startswith("/options"))):
                 problem = regex_problem(node)
                 if problem:
                     lint.err(path, f"regex {node!r}: {problem}", "lint.regex")
             elif key in _SELECTOR_KEYS and kind in ("html",):
                 _check_selector(node, path, lint)
-            elif key == "from" and kind == "html":
+            elif key == "from" and kind == "html" and node != "question_text":
                 _check_selector(node, path, lint)
             elif key in ("template", "split_by_part_labels", "prefix"):
                 for var in _TEMPLATE_VAR.findall(node):
@@ -208,12 +214,15 @@ def lint_profile(data: dict, lines: dict[str, int], name: str) -> Lint:
     if svg.get("extra_css") and not svg.get("extra_css_reason"):
         lint.err("/content/svg", "extra_css adds styling that is not in the figure and needs extra_css_reason", "lint.reason")
     fields = data["fields"]
-    if "stem" not in fields and "parts" not in data:
+    if "stem" not in fields and "parts" not in data and kind not in ("pdf", "image", "office", "html-print"):
         lint.err("/fields", "a question needs at least a stem (or parts)", "lint.missing_key")
     for fname, spec in fields.items():
         for j, one in enumerate(spec if isinstance(spec, list) else [spec]):
             p = f"/fields/{fname}" + (f"/{j}" if isinstance(spec, list) else "")
             sources = [k for k in ("from", "key", "const", "template", "var", "paragraph", "preamble", "lookup", "compose", "by_type", "attr", "list_of") if k in one]
+            if kind in ("pdf", "image", "office", "html-print") and fname in ("stem", "answer", "options", "solution.answer", "solution.explanation"):
+                lint.err(p, f"for page sources the engine fills {fname} itself (see display, options and answers); remove it from fields", "lint.shape")
+                continue
             if not sources:
                 lint.err(p, "the field does not say where its value comes from (from / key / template / var / const ...)", "lint.missing_key")
             if isinstance(one.get("map"), dict) and not one["map"]:

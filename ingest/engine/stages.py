@@ -22,18 +22,58 @@ FORMAT = "practice-app/question-pack@1"
 MAGIC = {"docx": b"PK\x03\x04", "pdf-text": b"%PDF-"}
 
 
-def detect_kind(data: bytes) -> str:
-    if data.startswith(b"PK\x03\x04"):
-        return "docx"
+OFFICE_EXT = {".doc", ".docx", ".odt", ".rtf", ".ppt", ".pptx", ".odp", ".xls", ".xlsx", ".ods", ".txt", ".md", ".csv", ".epub"}
+
+
+def detect_kind(data: bytes, name: str = "") -> str:
+    """The real format, from the file's bytes (the extension only separates the many zip-based formats)."""
+    ext = Path(name).suffix.lower()
     if data.startswith(b"%PDF-"):
         return "pdf"
+    if data[:8] in (b"\x89PNG\r\n\x1a\n",) or data[:3] == b"\xff\xd8\xff" or data[:6] in (b"GIF87a", b"GIF89a") or data[:2] == b"BM" \
+            or data[:4] in (b"II*\x00", b"MM\x00*") or (data[:4] == b"RIFF" and data[8:12] == b"WEBP"):
+        return "image"
+    if data.startswith(b"PK\x03\x04"):
+        import io
+        import zipfile
+        try:
+            names = zipfile.ZipFile(io.BytesIO(data)).namelist()
+        except zipfile.BadZipFile:
+            return "unknown"
+        if "word/document.xml" in names:
+            return "docx"
+        if any(n.startswith(("ppt/", "xl/")) for n in names) or "mimetype" in names or ext in OFFICE_EXT:
+            return "office"
+        if names and all(Path(n).suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"} or n.endswith("/") for n in names):
+            return "image"   # a zip of screenshots or page photos
+        return "unknown"
+    if data[:8] == b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1" or data.startswith(b"{\\rtf"):
+        return "office"
     head = data[:4096].lstrip(b"\xef\xbb\xbf \t\r\n").lower()
     if head.startswith(b"<!doctype html") or head.startswith(b"<html") or b"<html" in head:
         return "html"
+    if ext in OFFICE_EXT:
+        try:
+            data[:65536].decode("utf-8")
+            return "office"   # plain text / Markdown / CSV: printed to pages by LibreOffice
+        except UnicodeDecodeError:
+            pass
     return "unknown"
 
 
-def open_doc(kind: str, data: bytes, name: str, profile: dict):
+# which real formats each profile kind accepts
+KIND_ACCEPTS = {"html": {"html"}, "html-json": {"html"}, "html-print": {"html"}, "docx": {"docx"},
+                "pdf": {"pdf"}, "image": {"image"}, "office": {"office", "docx"}}
+PAGE_KINDS = {"pdf", "image", "office", "html-print"}
+
+
+def open_doc(kind: str, data: bytes, name: str, profile: dict, job: dict | None = None, path: Path | None = None):
+    if kind in PAGE_KINDS:
+        from pages import PageDoc
+        cfg = profile.get("pages", {})
+        mode = "units" if profile["segment"]["by"].startswith("units") else "lines"
+        return PageDoc(data, name, kind, path=path, pages=(job or {}).get("sources", [{}])[0].get("pages"), columns=cfg.get("columns", 1),
+                       dpi=cfg.get("dpi", 150), mode=mode)
     if kind == "html":
         return HtmlDoc(data, name)
     if kind == "html-json":
@@ -57,8 +97,8 @@ def s0_intake(run_dir: Path, source: Path, profile: dict, job: dict) -> dict:
     if sha_a != sha_b:
         raise StageFail("the copied source does not hash like the original", check="S0.copy")
     data = dest.read_bytes()
-    kind, real = profile["source"]["kind"], detect_kind(data)
-    if {"html": "html", "html-json": "html", "docx": "docx", "pdf-text": "pdf"}[kind] != real:
+    kind, real = profile["source"]["kind"], detect_kind(data, source.name)
+    if real not in KIND_ACCEPTS[kind]:
         raise StageFail(f"profile says the source is {kind} but the file's bytes say {real}", locator=source.name, check="S0.format",
                         hint="wrong profile for this file, or the file has the wrong extension")
     declared = job["sources"][0].get("sha256")
@@ -77,6 +117,10 @@ def run_probes(doc, profile: dict) -> list[dict]:
             n, what = sum(1 for p in doc.paragraphs if rx(probe["style"]).fullmatch(p["style"])), f"style {probe['style']!r}"
         elif "array" in probe:
             n, what = len(doc.arrays.get(probe["array"], [])), f"array {probe['array']!r}"
+        elif "pages" in probe:
+            n, what = len(doc.page_numbers), "pages read"
+        elif "text_pages" in probe:
+            n, what = len(doc.text_pages), "pages with a text layer"
         else:
             n, what = sum(1 for b in doc.ledger.blocks if rx(probe["regex"]).search(b["text"])), f"regex {probe['regex']!r}"
         ok = n >= probe["min"] and ("max" not in probe or n <= probe["max"])
@@ -103,7 +147,10 @@ def s1_extract(run_dir: Path, doc) -> dict:
 
 def s2_segment(doc, profile: dict, job: dict):
     run = Run(profile, job, doc.ledger)
-    if doc.kind == "html":
+    if doc.kind in PAGE_KINDS:
+        from interp_pages import PageInterp
+        interp = PageInterp(doc, run)
+    elif doc.kind == "html":
         interp = HtmlInterp(doc, run)
     elif doc.kind == "docx":
         interp = DocxInterp(doc, run)
@@ -201,7 +248,11 @@ def s3_assemble(run_dir: Path, run: Run, questions: list[dict], title: str | Non
     pack_dir = run_dir / "pack"
     entries = {"pack.json": canon_bytes(pack, pretty=True)}
     for name, asset in sorted(run.assets.items()):
-        entries[f"assets/{name}.svg"] = asset["data"].encode("utf-8")
+        if "base64" in asset:
+            import base64
+            entries[f"assets/{name}.png"] = base64.b64decode(asset["base64"])
+        else:
+            entries[f"assets/{name}.svg"] = asset["data"].encode("utf-8")
     for name, data in entries.items():
         atomic_write(pack_dir / name, data)
     write_json(pack_dir / "assets.json", run.asset_rows)
@@ -224,8 +275,19 @@ def environment() -> dict:
 def convert(run_dir: Path, source: Path, profile: dict, job: dict, corrections_path: Path | None):
     """S0 to S3. Returns everything the gates and the manifest need. Raises StageFail to stop."""
     src = s0_intake(run_dir, source, profile, job)
-    doc = open_doc(profile["source"]["kind"], src["data"], src["name"], profile)
+    doc = open_doc(profile["source"]["kind"], src["data"], src["name"], profile, job, src["path"])
     probes = run_probes(doc, profile)
+    page_source = None
+    if profile["source"]["kind"] in PAGE_KINDS:
+        pdf_name = None
+        if getattr(doc, "converted_from", None):   # keep the PDF the pages were read from: the checker reads the same one
+            pdf_name = "converted.pdf"
+            atomic_write(run_dir / "source" / pdf_name, doc.pdf_bytes)
+        elif doc.pdf is not None:
+            pdf_name = src["name"]
+        page_source = {"kind": profile["source"]["kind"], "pdf": pdf_name, "image": None if doc.pdf is not None else src["name"],
+                       "pages": doc.page_numbers, "dpi": doc.dpi, "sizes": {str(k): list(v) for k, v in doc.size.items()},
+                       "converted_from": getattr(doc, "converted_from", None), "pdf_sha256": doc.pdf_sha256}
     adapter = s1_extract(run_dir, doc)
     run, questions, title = s2_segment(doc, profile, job)
     coverage = doc.ledger.as_dict()
@@ -245,4 +307,5 @@ def convert(run_dir: Path, source: Path, profile: dict, job: dict, corrections_p
     corrections, corr_sha = load_corrections(corrections_path)
     packed = s3_assemble(run_dir, run, questions, title, job, src["name"], corrections)
     write_json(run_dir / "decisions.json", run.decisions)
-    return {"source": src, "doc": doc, "probes": probes, "adapter": adapter, "run": run, "packed": packed, "corrections_sha256": corr_sha}
+    return {"source": src, "doc": doc, "probes": probes, "adapter": adapter, "run": run, "packed": packed, "corrections_sha256": corr_sha,
+            "page_source": page_source}

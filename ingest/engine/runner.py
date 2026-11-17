@@ -12,7 +12,7 @@ from pathlib import Path
 
 import gates
 import stages
-from htmlmd import esc
+from htmlmd import esc_lines
 from util import (ENGINE_VERSION, EXIT_FAIL, EXIT_FOR, EXIT_PASS, EXIT_USAGE, ORDER, StageFail, UsageError, log, log_context, read_json,
                   sha256_file, sha256_obj, write_json)
 
@@ -23,7 +23,8 @@ ROOT = INGEST.parent
 # real renderer as the same visible text.
 HOSTILE = ["a [b] c", "see [note](x) here", "[1]: not a link", "cost $5 and $10", "2 * 3 * 4", "snake_case_name and __init__", "`code` tick",
            "back\\slash", "a < b > c", "AT&T and &amp; and &#93;", "x | y | z", "~~struck~~ not", "___ fill the blank ___", "50% of *all*",
-           "f(x) = [admires Sam]", "{curly} braces", "tag <b>not bold</b>", "a ] ( b", "#hash mid-line", "ends with backslash \\", "1.5 × 2 = 3"]
+           "f(x) = [admires Sam]", "{curly} braces", "tag <b>not bold</b>", "a ] ( b", "#hash mid-line", "ends with backslash \\", "1.5 × 2 = 3",
+           "1) first event", "2. second item", "# not a heading", "+ not a list", "- not a list", "=== not a rule", "10) ten"]
 
 
 def _now() -> str:
@@ -53,8 +54,8 @@ def _write_inputs(run_dir: Path, profile, job, psha, jsha, conv, profile_path: P
             shutil.copyfile(p, d / p.name)
     write_json(d / "inputs.json", {"source": {"name": conv["source"]["name"], "sha256": conv["source"]["sha256"], "bytes": conv["source"]["bytes"]},
                                    "profile_sha256": psha, "job_sha256": jsha, "corrections_sha256": conv["corrections_sha256"],
-                                   "pack_identity_sha256": conv["packed"]["identity_sha256"]})
-    write_json(run_dir / "gates" / "hostile.json", [{"raw": s, "escaped": esc(s)} for s in HOSTILE])
+                                   "pack_identity_sha256": conv["packed"]["identity_sha256"], "page_source": conv.get("page_source")})
+    write_json(run_dir / "gates" / "hostile.json", [{"raw": s, "escaped": esc_lines(s)} for s in HOSTILE])
 
 
 def run_gates(run_dir: Path, profile, job, extras) -> dict[str, dict]:

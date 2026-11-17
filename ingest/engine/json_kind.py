@@ -10,7 +10,7 @@ import re
 
 from bs4 import BeautifulSoup, NavigableString
 
-from htmlmd import esc
+from htmlmd import esc, esc_lines
 from interp import Run, apply_map, apply_regex, check_numbering, coerce, finish_question, render_template, set_path
 from ledger import Ledger
 from util import StageFail
@@ -230,7 +230,7 @@ class JsonInterp:
             raise StageFail(f"{field}: expected text, found {type(value).__name__}", locator=where, check="S2.type")
         if spec.get("as", "markdown_text") == "raw":
             return value
-        md = esc(value)
+        md = esc_lines(value)
         if "\n" in value:
             if spec.get("newline") != "hard_break":
                 raise StageFail(f"{field}: the text has a line break but the profile does not say how the page shows it", locator=where,

@@ -12,6 +12,9 @@ import * as acorn from "acorn";
 import { unzipSync } from "fflate";
 import Ajv2020 from "ajv/dist/2020.js";
 import { ROOT, Verdict, bag, bagDiff, loadApp, loadRun, numerals, tokens } from "./lib.mjs";
+import { cropCheck, pageTextChecks } from "./pagecheck.mjs";
+
+const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print"]);
 
 const sha = (buf) => crypto.createHash("sha256").update(buf).digest("hex");
 
@@ -205,8 +208,10 @@ function g3Checks(v, app, run, src, pack) {
     return out.join(" ");
   };
 
+  const pageKind = PAGE_KINDS.has(kind);
+  if (pageKind) pageTextChecks(v, run, pack, fieldValue, visible);
   // ---- G3.conservation: the whole source, read here, against the whole ledger. Uses no profile selector.
-  {
+  if (!pageKind) {
     const ledgerText = cov.blocks.filter((b) => (kind === "html-json" ? b.dom : true) && b.kind !== "value").map((b) => b.text).join("\n");
     const a = bag(tokens(src.all)), b = bag(tokens(ledgerText));
     const d = bagDiff(a, b);
@@ -286,13 +291,14 @@ function g3Checks(v, app, run, src, pack) {
   for (const q of pack.questions) for (const f of contentFields(q)) {
     fieldsSeen++;
     if (compared.has(`${q.id}\u0000${f}`)) continue;
-    const derived = cov.blocks.some((b) => b.status === "claimed" && b.by.some((c) => c.q === q.id && (c.field === f || (f.startsWith("parts.") && c.field === "part_answers"))));
+    const derived = cov.blocks.some((b) => b.status === "claimed" && b.by.some((c) => c.q === q.id && (c.field === f || (f.startsWith("parts.") && c.field === "part_answers"))))
+      || (cov.added ?? []).some((a) => a.q === q.id && (a.field === f || f.startsWith(a.field + ".")));
     if (!derived) orphans.push(`${q.id} ${f}`);
   }
   v.add("G3.invented", orphans.length ? "FAIL" : "PASS", orphans.length ? `${orphans.length} pack field(s) have no source text behind them; first: ${orphans[0]}` : `all ${fieldsSeen} text fields in the pack trace back to source blocks`, { examined: fieldsSeen, details: orphans.slice(0, 40) });
 
   // ---- G3.numerals: per question, digits and operators in the source container (our own selection) against the ledger.
-  {
+  if (!pageKind) {
     const containers = cov.containers ?? {};
     const mismatches = [];
     let units = [];
@@ -317,7 +323,25 @@ function g3Checks(v, app, run, src, pack) {
   }
 
   // ---- G3.association: content sits with its own question.
-  {
+  if (pageKind) {
+    // the lines a question claims lie in reading order between its own start and the next question's start
+    const pos = (b) => [b.page, b.col ?? 0, b.box[1]];
+    const lt = (a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] !== b[1] ? a[1] < b[1] : a[2] < b[2] - 0.5;
+    const starts = new Map();
+    for (const b of cov.blocks) if (b.status === "claimed" && b.box) for (const c of b.by) if (c.q && c.field === "stem") {
+      const s0 = starts.get(c.q);
+      if (!s0 || lt(pos(b), s0)) starts.set(c.q, pos(b));
+    }
+    const order = pack.questions.map((q) => q.id).filter((id) => starts.has(id));
+    const stray = [];
+    let examined = 0;
+    for (const b of cov.blocks) if (b.status === "claimed" && b.box) for (const c of b.by) if (c.q && c.field === "stem") {
+      examined++;
+      const k = order.indexOf(c.q), next = order[k + 1];
+      if (lt(pos(b), starts.get(c.q)) || (next && !lt(pos(b), starts.get(next)))) stray.push(`${c.q} <- ${b.locator}`);
+    }
+    v.add("G3.association", stray.length ? "FAIL" : "PASS", stray.length ? `${stray.length} piece(s) lie outside their question's place on the page; first: ${stray[0]}` : `${examined} pieces of question content each lie between their own question's start and the next question's start`, { examined, zeroOk: true, details: stray.slice(0, 20) });
+  } else {
     const containers = cov.containers ?? {};
     const content = /^(stem|answer|notes|hints|solution|parts|options|part_answers|title)/;
     const stray = [];
@@ -341,7 +365,7 @@ function g3Checks(v, app, run, src, pack) {
 }
 
 async function g3(run, app) {
-  const src = readSource(run);
+  const src = PAGE_KINDS.has(run.profile.source.kind) ? { all: "" } : readSource(run);
   if (run.profile.source.kind === "docx") {   // paragraph n of the body, counted our own way
     const xml = new TextDecoder("utf-8").decode(unzipSync(new Uint8Array(run.sourceBytes))["word/document.xml"]);
     const body = xml.slice(xml.indexOf("<w:body>"));
@@ -424,7 +448,9 @@ async function g4(run, app) {
   v.selftest = { fixture: "the real pack with an unbalanced \\frac added to one stem", must_fail: "G4.math", status: caught ? "PASS" : "FAIL" };
   g4Checks(v, app, run.pack, hostile);
   const figs = Object.keys(run.pack.assets ?? {}).length;
-  if (figs) {
+  if (PAGE_KINDS.has(run.profile.source.kind)) {
+    await cropCheck(v, run);
+  } else if (figs) {
     const { figureCheck } = await import("./figures.mjs");
     await figureCheck(v, run);
   } else v.add("G4.svg", "INFO", "the pack has no figures", { examined: 0, zeroOk: true });

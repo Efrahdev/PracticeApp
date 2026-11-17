@@ -10,7 +10,7 @@ import re
 import zipfile
 import xml.etree.ElementTree as ET
 
-from htmlmd import esc, tidy
+from htmlmd import esc, esc_lines, guard_line_starts, tidy
 from interp import Run, apply_map, apply_regex, check_numbering, coerce, finish_question, render_template, set_path
 from ledger import Ledger
 from spec import rx
@@ -244,7 +244,7 @@ class DocxInterp:
                     for extra in g["extra"]:
                         md += "\n\n" + runs_markdown(extra["runs"], 0, fmt, self.run, extra["locator"])
                         self.ledger.claim(extra["block"], qid, fname)
-                    value = tidy(md)
+                    value = guard_line_starts(tidy(md))
                 elif "preamble" in spec:
                     cand = [x for x in preamble if x["block"] not in {b for b in used_preamble if b != x["block"]} or True]
                     idx = spec["preamble"]["index"]
@@ -263,7 +263,7 @@ class DocxInterp:
                     prefix = spec.get("prefix", "")
                     if prefix:
                         self.ledger.add_literal(qid, fname, prefix, "prefix declared in the profile")
-                    value = esc(prefix + src["text"].strip())
+                    value = esc_lines(prefix + src["text"].strip())
                 else:
                     if "const" in spec:
                         value = spec["const"]

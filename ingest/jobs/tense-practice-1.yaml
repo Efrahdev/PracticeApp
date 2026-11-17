@@ -1,0 +1,15 @@
+job:
+  id: tense-practice-1
+  profile: {id: pdf-numbered-questions, version: 1}
+sources:
+  - {file: "../../TENSE PRACTICE 1.pdf", role: paper}
+expect: {questions: 200}
+pack:
+  id: verb-tenses-diagnostic-200
+  title: "Verb Tenses Diagnostic Assessment"
+  subject: English
+  topics: ["Grammar > Verb Tenses"]
+  solutions_origin: source
+assertions:
+  - {question: "1", stem_starts: "[Multiple choice] Every morning, my grandfather", answer: "A", type: mcq_single}
+review: {answers_verified_target: sampled}

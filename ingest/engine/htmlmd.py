@@ -18,10 +18,27 @@ from util import StageFail
 _ESC = re.compile(r"([\\`*_<>|~$])")
 
 
+_LINE_START = re.compile(r"^([ \t]{0,3})(\d{1,9})([.)])(?=\s|$)|^([ \t]{0,3})([#+\-=])(?=\s|$|#|=)")
+
+
 def esc(text: str) -> str:
+    """Escape a piece of text (it may be a fragment in the middle of a line)."""
     out = _ESC.sub(r"\\\1", text)
     out = re.sub(r"&(#?[A-Za-z0-9]+;)", r"\\&\1", out)
     return re.sub(r"\](?=\s*[(\[:])", "&#93;", out)
+
+
+def guard_line_starts(md: str) -> str:
+    """A line that starts like a list item, heading or rule ("1) ", "2. ", "# ", "+ ", "- ", "===") would be
+    redrawn by the renderer: escape that marker so the learner sees the characters. Applied to whole lines only."""
+    def one(line: str) -> str:
+        return _LINE_START.sub(lambda m: f"{m.group(1)}{m.group(2)}\\{m.group(3)}" if m.group(2) else f"{m.group(4)}\\{m.group(5)}", line, count=1)
+    return "\n".join("\\\n".join(one(seg) for seg in line.split("\\\n")) for line in md.split("\n"))
+
+
+def esc_lines(text: str) -> str:
+    """Escape text that is a whole line or paragraph."""
+    return guard_line_starts(esc(text))
 
 
 def tidy(md: str) -> str:
@@ -128,7 +145,7 @@ class Converter:
             return [r] if r else []
         name = node.name
         if name == "p":
-            return [self.inline_children(node).strip()]
+            return [guard_line_starts(self.inline_children(node).strip())]
         if name in CONTAINERS:
             return self.block_children(node, depth)
         if name in HEADINGS:

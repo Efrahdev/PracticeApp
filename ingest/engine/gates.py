@@ -72,7 +72,7 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
           f"{len(blocks)} source blocks: {len(unclaimed)} unclaimed, {len(double)} double-claimed", examined=len(blocks),
           locator=(unclaimed[0]["locator"] if unclaimed else double[0] if double else None))
     over = [r for r in coverage["ignore_rules"] if r["match_blocks"] > r["max_blocks"] or r["match_tokens"] > r["max_tokens"]]
-    stale = [r for r in coverage["ignore_rules"] if r["match_blocks"] == 0]
+    stale = [r for r in coverage["ignore_rules"] if r["match_blocks"] == 0 and "builtin" not in r.get("rule", {})]
     rules = coverage["ignore_rules"]
     v.add("G1.ignore_rules", "FAIL" if over else "WARN" if stale else "PASS",
           f"{len(rules)} ignore rules: {len(over)} over their limits, {len(stale)} matched nothing (stale)" +
@@ -84,24 +84,53 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
     v.add("G1.unsupported", "FAIL" if open_unsupported else "PASS", f"{len(unsupported)} unsupported constructs, {len(open_unsupported)} unresolved",
           examined=len(blocks), locator=open_unsupported[0]["locator"] if open_unsupported else None)
 
-    figures = [b for b in blocks if b["kind"] in ("svg", "image")]
-    packaged = [b for b in figures if b["status"] == "claimed"]
     assets = pack.get("assets", {})
     referenced = set(re.findall(r"\(asset:([^)\s]+)\)", json.dumps(qs, ensure_ascii=False)))
-    problems = []
-    if len(packaged) != exp["assets"]:
-        problems.append(f"{len(packaged)} source figures packaged, job expects {exp['assets']}")
-    if [b for b in figures if b["status"] == "unclaimed"]:
-        problems.append("a source figure is neither packaged nor ignored")
-    if referenced != set(assets):
-        problems.append(f"references and asset files differ: {sorted(referenced ^ set(assets))[:3]}")
-    v.add("G1.assets", "FAIL" if problems else "PASS", "; ".join(problems) or f"{len(packaged)} source figures -> {len(assets)} asset files, all referenced, all references resolve",
-          examined=len(figures), zero_ok=exp["assets"] == 0)
-    containers = coverage.get("containers", {})
-    stray = [r for r in asset_rows if not containers.get(r["question"]) or not r["locator"].startswith(containers[r["question"]])]
-    v.add("G1.asset_containment", "FAIL" if stray else "PASS",
-          f"{len(asset_rows)} figures checked against their question's own container; {len(stray)} outside it",
-          examined=len(asset_rows), zero_ok=exp["assets"] == 0, locator=stray[0]["locator"] if stray else None)
+    page_kind = profile["source"]["kind"] in ("pdf", "image", "office", "html-print")
+    if page_kind:
+        # every figure or ink band sits inside some question's picture, or is ignored with a reason
+        figures = [b for b in blocks if b["kind"] in ("graphic", "band")]
+        lost = [b for b in figures if b["status"] == "unclaimed"]
+        problems = [f"{len(lost)} figure(s)/ink band(s) belong to no question and no ignore rule"] if lost else []
+        if "assets" in exp and len(assets) != exp["assets"]:
+            problems.append(f"{len(assets)} pictures packaged, job expects {exp['assets']}")
+        if referenced != set(assets):
+            problems.append(f"references and picture files differ: {sorted(referenced ^ set(assets))[:3]}")
+        v.add("G1.assets", "FAIL" if problems else "PASS", "; ".join(problems) or
+              f"{len(figures)} figures/ink bands all inside a question picture or ignored; {len(assets)} pictures, all referenced, all resolve",
+              examined=len(figures) + len(assets), zero_ok=True, locator=lost[0]["locator"] if lost else None)
+        # pictures of different questions must not overlap (a figure attached to two questions, or the wrong one)
+        overlaps = []
+        rows = [r for r in asset_rows if r["field"] == "stem"]
+        for i, r1 in enumerate(rows):
+            for r2 in rows[i + 1:]:
+                if r1["page"] != r2["page"] or r1["question"] == r2["question"]:
+                    continue
+                a1, a2 = r1["box"], r2["box"]
+                ix = max(0, min(a1[2], a2[2]) - max(a1[0], a2[0])) * max(0, min(a1[3], a2[3]) - max(a1[1], a2[1]))
+                small = min((a1[2] - a1[0]) * (a1[3] - a1[1]), (a2[2] - a2[0]) * (a2[3] - a2[1])) or 1
+                if ix > 0.15 * small:
+                    overlaps.append(f"{r1['question']} and {r2['question']} on page {r1['page']}")
+        v.add("G1.asset_containment", "FAIL" if overlaps else "PASS",
+              f"{len(rows)} question pictures; {len(overlaps)} overlap another question's picture" + (f": {overlaps[:3]}" if overlaps else ""),
+              examined=len(rows), zero_ok=True)
+    else:
+        figures = [b for b in blocks if b["kind"] in ("svg", "image")]
+        packaged = [b for b in figures if b["status"] == "claimed"]
+        problems = []
+        if "assets" in exp and len(packaged) != exp["assets"]:
+            problems.append(f"{len(packaged)} source figures packaged, job expects {exp['assets']}")
+        if [b for b in figures if b["status"] == "unclaimed"]:
+            problems.append("a source figure is neither packaged nor ignored")
+        if referenced != set(assets):
+            problems.append(f"references and asset files differ: {sorted(referenced ^ set(assets))[:3]}")
+        v.add("G1.assets", "FAIL" if problems else "PASS", "; ".join(problems) or f"{len(packaged)} source figures -> {len(assets)} asset files, all referenced, all references resolve",
+              examined=len(figures), zero_ok=exp.get("assets", 0) == 0)
+        containers = coverage.get("containers", {})
+        stray = [r for r in asset_rows if not containers.get(r["question"]) or not r["locator"].startswith(containers[r["question"]])]
+        v.add("G1.asset_containment", "FAIL" if stray else "PASS",
+              f"{len(asset_rows)} figures checked against their question's own container; {len(stray)} outside it",
+              examined=len(asset_rows), zero_ok=exp.get("assets", 0) == 0, locator=stray[0]["locator"] if stray else None)
 
     ids = [q["id"] for q in qs]
     bad_ids = [i for i in ids if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", i)]
