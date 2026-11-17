@@ -61,4 +61,7 @@ ignore:
   - {css: ".toolbar", reason: "print/show buttons and progress counter", max_blocks: 8, max_tokens: 30}
   - {css: ".sethead > p", reason: "one-line description under each set heading (not part of any question)", max_blocks: 5, max_tokens: 150}
   - {css: "p.foot", reason: "end-of-paper footer line", max_blocks: 1, max_tokens: 40}
+passthrough:
+  # pack keys the app stores but does not use: declared so that nothing is dropped silently (G2.fields_consumed)
+  - {key: title, reason: "the app has no title field; it keeps the title in the stored record only"}
 answers: {expected: true}

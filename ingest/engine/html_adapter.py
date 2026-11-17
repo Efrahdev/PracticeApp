@@ -22,16 +22,18 @@ SVG_TAGS = {"svg", "g", "path", "line", "polygon", "polyline", "rect", "circle",
 
 
 def locator_of(el: Tag) -> str:
-    """A CSS path that finds this element again (R9)."""
+    """A CSS path from <body> that finds this element again (R9). Every step is kept, so a question
+    container's locator is a prefix of the locator of everything inside it."""
     parts = []
     node = el
     while isinstance(node, Tag) and node.name not in ("[document]", "html"):
         if node.get("id"):
-            parts.append(f"{node.name}#{node['id']}")
-            break
-        same = [s for s in node.parent.find_all(node.name, recursive=False)] if node.parent else [node]
-        idx = next(i for i, s in enumerate(same, start=1) if s is node)
-        parts.append(node.name if len(same) == 1 else f"{node.name}:nth-of-type({idx})")
+            ident = node["id"]
+            parts.append(f"{node.name}#{ident}" if re.fullmatch(r"[A-Za-z_][\w-]*", ident) else f'{node.name}[id="{ident}"]')
+        else:
+            same = node.parent.find_all(node.name, recursive=False) if node.parent else [node]
+            idx = next(i for i, s in enumerate(same, start=1) if s is node)
+            parts.append(node.name if len(same) == 1 else f"{node.name}:nth-of-type({idx})")
         node = node.parent
     return " > ".join(reversed(parts))
 

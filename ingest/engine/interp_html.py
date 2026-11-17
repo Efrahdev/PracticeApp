@@ -127,7 +127,8 @@ class HtmlInterp:
     # ---- one value
     def scalar(self, spec: dict, art: Tag, q: str | None, field: str, values: dict):
         where = locator_of(art)
-        derived = any(k in spec for k in ("regex", "map", "lookup")) or spec.get("as") in ("int", "number")
+        derived = (any(k in spec for k in ("regex", "map", "lookup")) or spec.get("as") in ("int", "number")
+                   or field.startswith("var.") or field in ("number", "id"))   # values computed from the text: conserved, not token-compared
         if "const" in spec:
             value = spec["const"]
         elif "var" in spec:

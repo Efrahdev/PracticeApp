@@ -64,4 +64,7 @@ ignore:
   - {css: "section.level-view", reason: "level overview pages: objectives, key ideas and links to each problem (teaching text, not questions)", max_blocks: 610, max_tokens: 3000}
   - {css: "#view-q > :not(.qs)", reason: "navigation around the problem view and the general 'stuck?' prompts", max_blocks: 15, max_tokens: 200}
   - {css: "#view-report", reason: "the author's quality report about the page itself", max_blocks: 200, max_tokens: 4000}
+passthrough:
+  # pack keys the app stores but does not use: declared so that nothing is dropped silently (G2.fields_consumed)
+  - {key: title, reason: "the app has no title field; it keeps the title in the stored record only"}
 answers: {expected: true}

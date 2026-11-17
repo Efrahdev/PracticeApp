@@ -230,6 +230,8 @@ def convert(run_dir: Path, source: Path, profile: dict, job: dict, corrections_p
     run, questions, title = s2_segment(doc, profile, job)
     coverage = doc.ledger.as_dict()
     coverage["containers"] = run.containers
+    # fields the profile assembles in its own order (compose): compared as the same tokens in any order
+    coverage["unordered"] = sorted(f for f, sp in profile["fields"].items() if isinstance(sp, dict) and "compose" in sp)
     write_json(run_dir / "coverage.json", coverage, pretty=False)
     fails = coverage_failures(doc.ledger)
     stale = [s for s in doc.ledger.rule_stats() if s["match_blocks"] == 0]
