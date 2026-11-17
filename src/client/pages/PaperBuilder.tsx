@@ -11,13 +11,13 @@ import { takePendingBuild, useData, type BuildInit } from "../store";
 import type { Boot, LibQ } from "../types";
 import { askConfirm, ErrorBox, toast } from "../ui";
 import { useConceptAccuracy } from "./Analytics";
-import { Badge, Icon, NumBox, Section, Segmented, Stepper, Switch, usePopover } from "../builder/controls";
+import { FilterRow, Icon, NumBox, Segmented, Stepper, Switch, usePopover } from "../builder/controls";
 import { DIM_LABEL, difficultyTone, ORDER_LABEL, RESULT_LABEL, subjectSlot, valueLabel } from "../builder/describe";
 import { activeDims, planPaper, type PlanPick } from "../builder/engine";
 import { MixPanel } from "../builder/MixPanel";
 import { PaperTable, type TableRow } from "../builder/PaperTable";
 import { breakdown, evaluatePool, makeCtx, type Ctx } from "../builder/pool";
-import { PoolMeter, PoolPanel } from "../builder/PoolPanel";
+import { PoolHero, PoolPanel } from "../builder/PoolPanel";
 import {
   anyRange, defaultBlueprint, GENERATOR_V2, NONE, normaliseBlueprint, OTHER, RESULT_BUCKETS, resultBucket,
   type Blueprint, type DimKey, type Order, type PoolSpec, type ShareDim,
@@ -192,6 +192,10 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
   }));
   const byId = useMemo(() => new Map(lib.map((q) => [q.id, q])), [lib]);
   const removed = bp.excluded.map((id) => byId.get(id)).filter((q): q is LibQ => !!q);
+  const mixOn = activeDims(bp);
+  const mixShort = plan.reports.reduce((n, r) => n + r.rows.reduce((m, row) => m + Math.max(0, row.target - row.actual), 0), 0);
+  const favs = [bp.favourWrong && "Got wrong", bp.favourStale && "Not seen lately", bp.favourWeak && "Weak concepts"].filter((x): x is string => !!x);
+  const pickSummary = [mixOn.length ? `${mixOn.length} mix${mixOn.length === 1 ? "" : "es"}` : null, favs.length ? `${favs.length} priorit${favs.length === 1 ? "y" : "ies"}` : null, ORDER_LABEL[bp.order].split(" (")[0]].filter(Boolean).join(" · ");
 
   return (
     <div class={`pb${rulesHidden ? " rules-hidden" : ""}`} data-view={view}>
@@ -223,14 +227,21 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
 
       <div class="pb-body">
         <aside class="pb-side" aria-label="Paper rules">
-          {/* the sample-space counter: pinned, so it stays in view however far the rules are scrolled */}
-          <div class="pb-meter-pin"><PoolMeter ev={ev} /></div>
-          {/* compact paper settings: same controls and behaviour, a fraction of the height */}
-          <div class="pb-group pb-config">
-            <div class="pb-config-row">
-              <span class="pb-config-label"><span class="pb-step">1</span>Questions</span>
+          {/* the sample-space hero: pinned, so the live count and every active filter stay in view while scrolling */}
+          <div class="pb-meter-pin"><PoolHero ev={ev} pool={bp.pool} set={setPool} ctx={ctx} boot={boot} /></div>
+
+          {/* 1 · paper settings — compact: count and solutions on two short rows */}
+          <div class="pb-card pb-config">
+            <header class="pb-card-head">
+              <span class="pb-step">1</span>
+              <div class="pb-card-titles">
+                <h2 class="pb-card-title">Paper</h2>
+                <p class="pb-card-sub">{Math.max(bp.count, bp.pinned.length)} questions · {st.solutions === "hidden" ? "test conditions" : "solutions included"}</p>
+              </div>
+            </header>
+            <div class="pb-config-row inline">
               <Stepper label="Number of questions" value={Math.max(bp.count, bp.pinned.length)} min={Math.max(1, bp.pinned.length)} onChange={(count) => setBp((b) => ({ ...b, count }))} />
-              <div class="pb-chips pb-chips-tight">
+              <div class="pb-chips pb-chips-tight" role="group" aria-label="Quick counts">
                 {[10, 20, 30, 50].map((n) => (
                   <button type="button" class={`pb-chip${bp.count === n ? " on" : ""}`} aria-pressed={bp.count === n} onClick={() => setBp((b) => ({ ...b, count: Math.max(n, b.pinned.length) }))}>{n}</button>
                 ))}
@@ -238,49 +249,61 @@ function Builder(props: { boot: Boot; lib: LibQ[]; st: BuilderState; setSt: (f: 
                   onClick={() => setBp((b) => ({ ...b, count: Math.max(1, plan.candidates) }))} title="Every question that matches your rules">All</button>
               </div>
             </div>
-            <div class="pb-config-row">
-              <span class="pb-config-label">Solutions</span>
-              <Segmented label="Solutions" size="sm" value={st.solutions} onChange={(solutions) => set({ solutions })} options={[
+            <div class="pb-config-row inline">
+              <Segmented label="Solutions" size="sm" block value={st.solutions} onChange={(solutions) => set({ solutions })} options={[
                 { value: "included", label: "Include solutions", title: "Open any question’s worked solution while practising. The printed copy ends with a solutions section." },
                 { value: "hidden", label: "Test conditions", title: "Solutions stay hidden in this paper and in its printed copy." },
               ]} />
             </div>
           </div>
 
+          {/* 2 · which questions — the filter studio */}
           <PoolPanel pool={bp.pool} set={setPool} ev={ev} ctx={ctx} lib={lib} boot={boot} />
 
-          <div class="pb-group">
-            <div class="pb-group-head"><div><span class="pb-step">3</span><h2 class="pb-group-title">How to pick</h2></div></div>
-            <Section title="Mix" badge={activeDims(bp).length ? <Badge tone="accent">{activeDims(bp).length} on</Badge> : undefined}
-              hint="Split the paper by share. Turn on as many as you like — they are met together.">
-              <MixPanel bp={bp} setShare={setShare} ctx={ctx} boot={boot} poolBreak={poolBreak} plan={plan} />
-            </Section>
-            <Section title="Priorities" badge={bp.favourWrong || bp.favourStale || bp.favourWeak ? <Badge tone="accent">On</Badge> : undefined}
-              hint="Make some questions more likely, without forcing them in.">
-              <div class="switch-list">
-                <Switch label="Questions I got wrong" hint="Wrong last time counts ×3, partly right ×2" checked={bp.favourWrong} onChange={(v) => setBp((b) => ({ ...b, favourWrong: v }))} />
-                <Switch label="Questions I haven’t seen for a while" hint="Never attempted ×2, 30+ days ×2, 14+ days ×1.5" checked={bp.favourStale} onChange={(v) => setBp((b) => ({ ...b, favourStale: v }))} />
-                <Switch label="My weak concepts" hint="Concepts under 60% accuracy count up to ×2.8" checked={bp.favourWeak} onChange={(v) => setBp((b) => ({ ...b, favourWeak: v }))} />
+          {/* 3 · how to pick */}
+          <div class="pb-card fs">
+            <header class="pb-card-head">
+              <span class="pb-step">3</span>
+              <div class="pb-card-titles">
+                <h2 class="pb-card-title">How to pick</h2>
+                <p class="pb-card-sub">{pickSummary}</p>
               </div>
-            </Section>
-            <Section title="Order" defaultOpen={false} badge={bp.order !== "picked" ? <Badge tone="accent">{ORDER_LABEL[bp.order]}</Badge> : undefined}>
-              <div class="radio-list" role="radiogroup" aria-label="Question order">
-                {(Object.keys(ORDER_LABEL) as Order[]).map((o) => (
-                  <label class={`radio-row${bp.order === o ? " on" : ""}`}>
-                    <input type="radio" name="pb-order" checked={bp.order === o} onChange={() => setBp((b) => ({ ...b, order: o, manual: o === "manual" && !b.manual.length ? currentIds() : b.manual }))} />
-                    <span>{ORDER_LABEL[o]}</span>
-                  </label>
-                ))}
-              </div>
-              {bp.order === "manual" && <p class="pb-hint small">Move questions with the arrows next to their number in the table.</p>}
-            </Section>
-            <Section title="Seed" defaultOpen={false}>
-              <p class="pb-hint">The seed is this paper’s shuffle number. The same rules with the same seed always give the same paper; <b>Shuffle</b> picks a new seed for a different selection. Saved papers never change.</p>
-              <div class="pb-inline">
-                <NumBox value={st.seed} label="Seed" min={0} integer placeholder="" class="w8" onChange={(v) => v !== null && set({ seed: v })} />
-                <button type="button" class="btn small" onClick={() => set({ seed: randomSeed() })}><Icon name="shuffle" size={14} /> New seed</button>
-              </div>
-            </Section>
+            </header>
+            <div class="fg-rows solo">
+              <FilterRow id="mix" icon="layers" title="Mix" active={mixOn.length > 0} onClear={() => setBp((b) => ({ ...b, shares: Object.fromEntries(Object.entries(b.shares).map(([k, v]) => [k, { ...v, on: false }])) as Blueprint["shares"] }))}
+                summary={mixOn.length ? <>{mixOn.map((d) => DIM_LABEL[d]).join(", ")}{mixShort > 0 && <span class="sum-warn"> · {mixShort} short</span>}</> : <span class="sum-muted">Off</span>}>
+                <p class="row-note">Split the paper by share. Turn on as many as you like — they are met together.</p>
+                <MixPanel bp={bp} setShare={setShare} ctx={ctx} boot={boot} poolBreak={poolBreak} plan={plan} />
+              </FilterRow>
+              <FilterRow id="priorities" icon="star" title="Priorities" active={favs.length > 0} onClear={() => setBp((b) => ({ ...b, favourWrong: false, favourStale: false, favourWeak: false }))}
+                summary={favs.length ? favs.join(", ") : <span class="sum-muted">None</span>}>
+                <p class="row-note">Make some questions more likely, without forcing them in.</p>
+                <div class="switch-list">
+                  <Switch label="Questions I got wrong" hint="Wrong last time counts ×3, partly right ×2" checked={bp.favourWrong} onChange={(v) => setBp((b) => ({ ...b, favourWrong: v }))} />
+                  <Switch label="Questions I haven’t seen for a while" hint="Never attempted ×2, 30+ days ×2, 14+ days ×1.5" checked={bp.favourStale} onChange={(v) => setBp((b) => ({ ...b, favourStale: v }))} />
+                  <Switch label="My weak concepts" hint="Concepts under 60% accuracy count up to ×2.8" checked={bp.favourWeak} onChange={(v) => setBp((b) => ({ ...b, favourWeak: v }))} />
+                </div>
+              </FilterRow>
+              <FilterRow id="order" icon="sort" title="Order" active={bp.order !== "picked"} onClear={() => setBp((b) => ({ ...b, order: "picked" }))}
+                summary={bp.order === "picked" ? <span class="sum-muted">{ORDER_LABEL.picked}</span> : ORDER_LABEL[bp.order]}>
+                <div class="radio-list" role="radiogroup" aria-label="Question order">
+                  {(Object.keys(ORDER_LABEL) as Order[]).map((o) => (
+                    <label class={`radio-row${bp.order === o ? " on" : ""}`}>
+                      <input type="radio" name="pb-order" checked={bp.order === o} onChange={() => setBp((b) => ({ ...b, order: o, manual: o === "manual" && !b.manual.length ? currentIds() : b.manual }))} />
+                      <span>{ORDER_LABEL[o]}</span>
+                    </label>
+                  ))}
+                </div>
+                {bp.order === "manual" && <p class="row-note">Move questions with the arrows next to their number in the table.</p>}
+              </FilterRow>
+              <FilterRow id="seed" icon="hash" title="Seed" summary={<span class="sum-muted">{st.seed}</span>}>
+                <p class="row-note">The seed is this paper’s shuffle number. The same rules with the same seed always give the same paper; <b>Shuffle</b> picks a new seed for a different selection. Saved papers never change.</p>
+                <div class="sentence">
+                  <NumBox value={st.seed} label="Seed" min={0} integer placeholder="" class="w8" onChange={(v) => v !== null && set({ seed: v })} />
+                  <button type="button" class="btn small" onClick={() => set({ seed: randomSeed() })}><Icon name="shuffle" size={14} /> New seed</button>
+                </div>
+              </FilterRow>
+            </div>
           </div>
         </aside>
 

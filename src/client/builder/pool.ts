@@ -130,7 +130,7 @@ export function treeState(sel: Set<string> | null, n: TreeNode): TriState {
 
 // ------------------------------------------------------------------ rules
 
-type Facet =
+export type Facet =
   | "archived" | "advanced" | "text" | "tree" | "difficulty" | "attempted" | "note" | "recency" | "attempts" | "results"
   | "time" | "personal" | "formats" | "marks" | "solution" | "key" | "imports" | "added";
 
@@ -205,6 +205,11 @@ export interface PoolEval {
   libraryCount: number; // questions that could ever be used (archived only when allowed)
   active: number; // how many rules narrow the pool
   activeFacets: Set<string>;
+  /** questions kept out by this rule alone: removing it would add exactly this many */
+  gain: Map<string, number>;
+  /** last-attempt times / attempt counts of questions that pass every OTHER rule (for preset counts) */
+  recencyBase: (number | null)[];
+  attemptsBase: number[];
   counts: {
     tree: Map<string, number>;
     attempted: Map<string, number>;
@@ -259,6 +264,9 @@ export function evaluatePool(lib: LibQ[], ctx: Ctx, p: PoolSpec, now: number): P
     if (!only || only === "key") bump(counts.key, q.has_key ? "has" : "none");
   };
   const pool: LibQ[] = [];
+  const gain = new Map<string, number>();
+  const recencyBase: (number | null)[] = [];
+  const attemptsBase: number[] = [];
   let libraryCount = 0;
   for (const q of lib) {
     if (p.includeArchived || q.archived_at === null) libraryCount++;
@@ -274,10 +282,17 @@ export function evaluatePool(lib: LibQ[], ctx: Ctx, p: PoolSpec, now: number): P
     if (fails === 0) {
       pool.push(q);
       count(q, null);
-    } else if (fails === 1 && failed !== "archived") count(q, failed);
+      recencyBase.push(q.last_attempted_at);
+      attemptsBase.push(q.attempt_count ?? 0);
+    } else if (fails === 1 && failed !== "archived") {
+      count(q, failed);
+      gain.set(failed!, (gain.get(failed!) ?? 0) + 1);
+      if (failed === "recency") recencyBase.push(q.last_attempted_at);
+      if (failed === "attempts") attemptsBase.push(q.attempt_count ?? 0);
+    }
   }
   const activeFacets = new Set<string>(rs.map(([f]) => f).filter((f) => f !== "archived"));
-  return { pool, libraryCount, active: activeFacets.size, activeFacets, counts };
+  return { pool, libraryCount, active: activeFacets.size, activeFacets, counts, gain, recencyBase, attemptsBase };
 }
 
 // ------------------------------------------------------------------ breakdowns (for the mix editor and the summary)

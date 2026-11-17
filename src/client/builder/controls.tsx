@@ -29,6 +29,20 @@ const PATHS = {
   clock: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 7v5l3.5 2",
   save: "M5 3h11l4 4v14H4V4a1 1 0 0 1 1-1z M8 3v5h7 M8 21v-7h8v7",
   trash: "M4 7h16 M9 7V4h6v3 M6 7l1 13h10l1-13 M10 11v6 M14 11v6",
+  checkCircle: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M8.5 12.5l2.5 2.5 4.5-5",
+  book: "M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z M5 19.5A1.5 1.5 0 0 0 6.5 21H19 M9 7.5h6",
+  tag: "M3 4v7.6L12.4 21 21 12.4 11.6 3H4a1 1 0 0 0-1 1z M7.5 7.5h.01",
+  calendar: "M4 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14H4z M4 10h16 M8 3v4 M16 3v4",
+  repeat: "M17 2l3 3-3 3 M4 11V9a4 4 0 0 1 4-4h12 M7 22l-3-3 3-3 M20 13v2a4 4 0 0 1-4 4H4",
+  note: "M5 3h10l4 4v14H5z M14 3v5h5 M8.5 12.5h7 M8.5 16.5h5",
+  sliders: "M4 6h9 M17 6h3 M15 4v4 M4 12h3 M11 12h9 M9 10v4 M4 18h11 M19 18h1 M17 16v4",
+  braces: "M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1 M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1",
+  bars: "M5 20v-5 M12 20V10 M19 20V4",
+  layers: "M12 3l9 5-9 5-9-5z M3 13l9 5 9-5",
+  star: "M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z",
+  sort: "M7 4v16 M3 16l4 4 4-4 M17 20V4 M13 8l4-4 4 4",
+  hash: "M5 9h14 M4 15h14 M10 3L8 21 M16 3l-2 18",
+  sparkle: "M12 3v4 M12 17v4 M3 12h4 M17 12h4 M6.3 6.3l2.5 2.5 M15.2 15.2l2.5 2.5 M6.3 17.7l2.5-2.5 M15.2 8.8l2.5-2.5",
   eyeOff: "M3 3l18 18 M10.6 5.2A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1 M6.6 6.6C3.9 8.4 2 12 2 12s3.6 7 10 7a9.6 9.6 0 0 0 4.3-1 M9.9 9.9a3 3 0 0 0 4.2 4.2",
 } as const;
 export type IconName = keyof typeof PATHS;
@@ -83,9 +97,10 @@ export function Segmented<T extends string>(props: {
   label: string;
   size?: "sm";
   block?: boolean;
+  class?: string;
 }) {
   return (
-    <div class={`segctl${props.size ? " sm" : ""}${props.block ? " block" : ""}`} role="radiogroup" aria-label={props.label}>
+    <div class={`segctl${props.size ? " sm" : ""}${props.block ? " block" : ""}${props.class ? ` ${props.class}` : ""}`} role="radiogroup" aria-label={props.label}>
       {props.options.map((o) => (
         <button type="button" role="radio" aria-checked={o.value === props.value} class={o.value === props.value ? "on" : ""}
           title={o.title} onClick={() => props.onChange(o.value)}>{o.label}</button>
@@ -232,4 +247,109 @@ export function readLocal<T>(key: string, fallback: T): T {
 }
 export function writeLocal(key: string, v: unknown) {
   try { localStorage.setItem(key, JSON.stringify(v)); } catch { /* storage unavailable */ }
+}
+
+
+// ---------------------------------------------------------------- filter studio primitives
+// One visual vocabulary for every rule: a collapsible row that always shows its live summary, count tiles for
+// either/or choices, and selectable rows with a proportional bar for lists. Open/closed state is remembered.
+
+const OPEN_KEY = "pb.rows.v2";
+let openRows: Record<string, boolean> | null = null;
+function rowOpen(id: string, dflt: boolean): boolean {
+  if (!openRows) openRows = readLocal<Record<string, boolean>>(OPEN_KEY, {});
+  return openRows[id] ?? dflt;
+}
+function setRowOpen(id: string, v: boolean) {
+  if (!openRows) openRows = readLocal<Record<string, boolean>>(OPEN_KEY, {});
+  openRows[id] = v;
+  writeLocal(OPEN_KEY, openRows);
+}
+
+export function FilterRow(props: {
+  id: string;
+  icon: IconName;
+  title: string;
+  summary: ComponentChildren;
+  active?: boolean;
+  onClear?: () => void;
+  defaultOpen?: boolean;
+  children: ComponentChildren;
+}) {
+  const [open, setOpen] = useState(() => rowOpen(props.id, props.defaultOpen ?? false));
+  const toggle = () => { setOpen(!open); setRowOpen(props.id, !open); };
+  return (
+    <section class={`fr${open ? " open" : ""}${props.active ? " active" : ""}`} data-row={props.id}>
+      <div class="fr-head">
+        <button type="button" class="fr-toggle" aria-expanded={open} onClick={toggle}>
+          <span class="fr-ic" aria-hidden="true"><Icon name={props.icon} size={15} /></span>
+          <span class="fr-title">{props.title}</span>
+          <span class="fr-sum">{props.summary}</span>
+          <Icon name="down" size={14} class="fr-chev" />
+        </button>
+        {props.active && props.onClear && (
+          <button type="button" class="fr-clear" aria-label={`Clear ${props.title}`} title={`Clear ${props.title.toLowerCase()}`} onClick={props.onClear}>
+            <Icon name="x" size={12} />
+          </button>
+        )}
+      </div>
+      {open && <div class="fr-body">{props.children}</div>}
+    </section>
+  );
+}
+
+/** A labelled cluster of rows, e.g. "History". */
+export function FilterGroup(props: { label: string; children: ComponentChildren }) {
+  return (
+    <div class="fg" role="group" aria-label={props.label}>
+      <div class="fg-label">{props.label}</div>
+      <div class="fg-rows">{props.children}</div>
+    </div>
+  );
+}
+
+/** Either/or choice as tiles that carry their live count. */
+export function ChoiceTiles<T extends string>(props: {
+  label: string;
+  value: T;
+  onChange: (v: T) => void;
+  options: { value: T; label: string; full?: string; count?: number; hint?: string }[];
+}) {
+  return (
+    <div class="tiles" role="radiogroup" aria-label={props.label} style={{ gridTemplateColumns: `repeat(${props.options.length}, minmax(0, 1fr))` }}>
+      {props.options.map((o) => (
+        <button type="button" role="radio" aria-checked={o.value === props.value} class={`tile${o.value === props.value ? " on" : ""}`} title={o.hint ?? o.full}
+          aria-label={`${o.full ?? o.label}${o.count === undefined ? "" : `, ${o.count.toLocaleString()} questions`}`}
+          onClick={() => props.onChange(o.value)}>
+          <span class="tile-l">{o.label}</span>
+          <span class="tile-n">{o.count === undefined ? "\u00a0" : o.count.toLocaleString()}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export interface OptionItem { key: string; label: ComponentChildren; text: string; count: number; marker?: ComponentChildren; state?: "on" | "off" | "some" }
+
+/** Selectable rows (tick boxes) with a count and a bar showing each value's share. */
+export function OptionRows(props: { label: string; items: OptionItem[]; onToggle: (key: string) => void; scale?: number }) {
+  const max = props.scale ?? Math.max(1, ...props.items.map((i) => i.count));
+  return (
+    <div class="opts" role="group" aria-label={props.label}>
+      {props.items.map((i) => (
+        <label class={`opt${i.state === "on" ? " on" : i.state === "some" ? " some" : ""}${i.count === 0 ? " zero" : ""}`}>
+          <Check state={i.state ?? "off"} label={i.text} onChange={() => props.onToggle(i.key)} />
+          {i.marker}
+          <span class="opt-l">{i.label}</span>
+          <span class="opt-n">{i.count.toLocaleString()}</span>
+          <span class="opt-bar" aria-hidden="true"><i style={{ width: `${max ? Math.max(i.count ? 2 : 0, (i.count / max) * 100) : 0}%` }} /></span>
+        </label>
+      ))}
+    </div>
+  );
+}
+
+/** Small "All / None"-style text actions shown at the top of a row's body. */
+export function RowTools(props: { children: ComponentChildren; note?: ComponentChildren }) {
+  return <div class="row-tools">{props.note && <span class="row-note">{props.note}</span>}<span class="grow" />{props.children}</div>;
 }

@@ -22,6 +22,11 @@ page.on("console", (m) => m.type() === "error" && !/Failed to load resource/.tes
 page.on("dialog", (d) => d.accept(d.type() === "prompt" ? "x" : undefined));
 const shot = async (name) => shots && (await page.screenshot({ path: path.join(shots, `${name}.png`), fullPage: true }));
 const frameText = async (locator) => (await locator.contentFrame().locator("body").innerText());
+const openRow = async (id) => {
+  const row = page.locator(`.fr[data-row="${id}"]`);
+  if (!(await row.evaluate((el) => el.classList.contains("open")))) await row.locator(".fr-toggle").click();
+  return row;
+};
 
 // 1. Import page: prompt carries the format and my labels
 await page.goto(`${BASE}/#/import`);
@@ -112,32 +117,55 @@ await page.getByRole("spinbutton", { name: "Number of questions" }).fill("9");
 await page.getByRole("radio", { name: "Test conditions" }).click();
 // Builder: two mixes at once, a history rule, pin and replace, the detailed table
 const mixRow = (name) => page.locator(".mix-dim", { hasText: name });
+await openRow("mix");
 await mixRow("By subject").locator("input.switch").check();
 await mixRow("By subject").getByLabel("Maths share").fill("50");
 await mixRow("By difficulty").locator("input.switch").check();
 await page.locator(".dt-row:not(.dt-head)").nth(8).waitFor();
 if (await page.locator(".mix-dim", { hasText: "By subject" }).getByText("On target").count() !== 1) fail("subject mix not on target");
-const secTitles = await page.locator(".pb-group", { has: page.getByRole("heading", { name: "Which questions" }) }).locator(".pb-sec-title").allInnerTexts();
-const wantOrder = ["Attempted", "Subject", "Concept", "Last attempted, attempts & result", "My notes", "More filters", "Advanced conditions", "Difficulty level"];
+const secTitles = await page.locator(".pb-card", { has: page.getByRole("heading", { name: "Which questions" }) }).locator(".fr-title").allInnerTexts();
+const wantOrder = ["Attempted", "How long ago", "Subject", "Concept", "Last attempted", "Number of attempts", "Last result", "My notes", "More filters", "Advanced conditions", "Difficulty level"];
 if (secTitles.join("|") !== wantOrder.join("|")) fail("filter order is " + secTitles.join(" | "));
 for (const gone of ["Average time taken", "How hard it has been for you"]) if (await page.locator(".pb-side").getByText(gone).count()) fail(`removed filter still shown: ${gone}`);
 if (await page.locator(".pb-meter").count() !== 1) fail("expected exactly one sample-space counter");
 const cfgH = (await page.locator(".pb-config").boundingBox()).height;
-if (cfgH > 140) fail(`paper settings still tall: ${cfgH}px`);
+if (cfgH > 170) fail(`paper settings still tall: ${cfgH}px`);
+// filter studio: every row is one line with a live summary; groups in order; hero shows active filters as pills
+const groups = await page.locator(".fs .fg-label").allInnerTexts();
+if (groups.map((g) => g.toLowerCase()).join("|") !== "history|topic|performance|refine|level") fail("filter groups: " + groups.join(" | "));
+await page.locator(".hero-empty", { hasText: "No filters" }).waitFor();
+{
+  const subj = await openRow("subject");
+  await subj.locator(".opt", { hasText: "Maths" }).click(); // untick Maths -> only Physics left
+  const pill = page.locator(".hero-pills .pill").first();
+  await pill.waitFor();
+  const gainTxt = await pill.locator(".pill-g").innerText();
+  const n = Number((await page.locator(".pb-meter-n b").innerText()).replace(/,/g, ""));
+  if (Number(gainTxt.replace(/[+,]/g, "")) !== 9 - n) fail(`pill gain ${gainTxt} does not match the ${9 - n} questions it keeps out`);
+  if (!(await subj.evaluate((el) => el.classList.contains("active")))) fail("subject row not marked active");
+  await pill.click(); // removing the pill removes the filter
+  await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
+  await subj.locator(".opt", { hasText: "Maths" }).click();
+  await subj.locator(".fr-clear").click(); // the row's own clear button
+  await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
+  log(`filter studio: 5 groups, active pill shows +${9 - n} gain and removes the filter; row clear works`);
+}
 log(`builder: filters in the requested order, removed filters gone, one counter, settings ${Math.round(cfgH)}px tall`);
-await page.getByRole("button", { name: /^Never attempted/ }).click();
+await (await openRow("attempted")).getByRole("radio", { name: /^Never attempted/ }).click();
 await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
+await page.locator(".hero-pills .pill", { hasText: "Never attempted" }).waitFor();
 await page.locator(".pb-side").evaluate((el) => el.scrollTo(0, el.scrollHeight));
 await page.waitForTimeout(200);
 const pinBox = await page.locator(".pb-meter-pin").boundingBox();
 if (!pinBox || pinBox.y < 0 || pinBox.y + pinBox.height > 900) fail("counter scrolled out of view on a laptop screen");
 await page.locator(".pb-side").evaluate((el) => el.scrollTo(0, 0));
 log("counter stays in view while the rules are scrolled (laptop)");
-await page.getByRole("radio", { name: "More than" }).click();
+const lastRow = await openRow("last");
+await lastRow.getByRole("radio", { name: "More than" }).click();
 await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor(); // never attempted counts as "long ago"
-await page.getByRole("radio", { name: "Within" }).click();
+await lastRow.getByRole("radio", { name: "Within" }).click();
 await page.locator(".pb-meter-n", { hasText: "0 of 9 questions match" }).waitFor();
-await page.getByRole("radio", { name: "Any time" }).click();
+await lastRow.getByRole("radio", { name: "Any time" }).click();
 const rowsB = page.locator(".dt-row:not(.dt-head)");
 const firstPick = await rowsB.nth(0).locator(".dt-qno").innerText();
 await rowsB.nth(0).getByRole("button", { name: /^Pin / }).click();
@@ -209,9 +237,11 @@ log("practised 9 questions (auto-marked MCQ/number, part-by-part, manual) with n
   log("attempt deleted from history (question shows not attempted), then restored with Undo");
   // notes as a filter (builder) and a metric (Progress)
   await page.goto(`${BASE}/#/papers/new`);
-  await page.getByRole("button", { name: /^Has my note/ }).click();
+  const notesRow = await openRow("notes");
+  await notesRow.getByRole("radio", { name: /^Has my note/ }).click();
   await page.locator(".pb-meter-n", { hasText: /^1 of 9 questions match/ }).waitFor();
-  await page.getByRole("button", { name: /^Any$/ }).nth(1).click();
+  await notesRow.locator(".fr-clear").click();
+  await page.locator(".pb-meter-n", { hasText: "9 of 9 questions match" }).waitFor();
   await page.goto(`${BASE}/#/analytics`);
   await page.locator(".notes-card", { hasText: "Remember to simplify first" }).waitFor();
   if (!(await page.locator(".notes-card .stats b").first().innerText()).startsWith("1")) fail("progress notes count wrong");
