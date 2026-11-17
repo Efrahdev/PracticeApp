@@ -1,0 +1,21 @@
+job:
+  id: uimo-p3-scanned
+  profile: {id: scan-pages, version: 1}
+sources:
+  - {file: "../tests/samples/uimo-p3-scanned.pdf", role: paper}
+expect: {questions: 4}
+pack:
+  id: uimo-class4-scan-demo
+  title: "UIMO Class 4 — scanned PDF of questions 5 to 8"
+  subject: Maths
+  solutions_origin: source
+# question number -> the units of its question and of its worked solution (ids drawn on the probe's page image)
+regions:
+  - {number: 5, units: "p1.u2-p1.u4", solution_units: "p1.u5-p1.u6", options: "A-D", answer: "C"}
+  - {number: 6, units: "p1.u7-p1.u8", solution_units: "p1.u9-p1.u10", options: "A-D", answer: "A"}
+  - {number: 7, units: "p1.u11-p1.u14", solution_units: "p1.u15-p1.u16", options: "A-D", answer: "C"}
+  - {number: 8, units: "p1.u17-p1.u19", solution_units: "p1.u20-p1.u23", options: "A-D", answer: "C"}
+assertions:
+  - {question: "5", answer: "C"}
+  - {question: "8", answer: "C"}
+review: {answers_verified_target: full}

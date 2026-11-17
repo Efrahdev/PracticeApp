@@ -24,6 +24,7 @@ class Ledger:
         self.added: list[dict] = []          # text the engine wrote that is not in the source
         self.stripped: list[dict] = []       # text the engine removed from the front of a field (labels, numbers)
         self.groups: dict[str, dict[str, list[str]]] = {}  # question -> field -> member fields compared together
+        self.transcribed: list[dict] = []    # values read off a picture by a person or an AI (job regions), not by the program
 
     # ---- blocks
     def add_block(self, kind: str, text: str, locator: str, **extra) -> int:
@@ -89,4 +90,5 @@ class Ledger:
             else:
                 row["status"] = "unclaimed"
             out.append(row)
-        return {"blocks": out, "ignore_rules": self.rule_stats(), "added": self.added, "stripped": self.stripped, "groups": self.groups}
+        return {"blocks": out, "ignore_rules": self.rule_stats(), "added": self.added, "stripped": self.stripped, "groups": self.groups,
+                "transcribed": self.transcribed}

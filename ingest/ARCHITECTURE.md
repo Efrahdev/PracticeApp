@@ -36,6 +36,38 @@ it against the seven real papers.
 | 11 | **Locators are prefix-closed**: every block's locator starts with its question container's locator. | Containment checks (G1.asset_containment, G3.association) become plain string checks that the checker can do without trusting the converter's tree. |
 | 12 | **Golden oracle with explained differences** (`ingest oracle`, [`oracle-diffs.yaml`](oracle-diffs.yaml)). | It already found a defect in the old converters: the Critical-Thinking title was typed by hand with a normal space; the document has a no-break space. |
 
+## 2b. The page route (added after review: "generic" means any file)
+
+The first build covered HTML and Word. A generic pipeline has to take PDFs, scans and screenshots, and those
+break the assumptions the structured routes rely on: options share lines, fractions are stacked glyphs that text
+extraction scrambles, figures are vector drawings, watermarks cross the text, symbol fonts carry no meaning, and
+scans carry no text at all. The page route handles all of them with one model:
+
+1. **Units.** Every page is read as text lines (pdfium), figures (found from the rendered pixels with the text
+   masked out, so it works however a figure is drawn), ink bands (pages without text) and rotated text. Every
+   unit must be claimed or ignored with a reason — the same coverage ledger as HTML and Word.
+2. **Pictures as the safety net.** Every question keeps an exact crop of its region. `display: auto` shows the
+   words when they can be trusted and the picture when the question has a figure, picture options, symbol-font
+   characters, stacked fractions or text placed beside it. A question's picture stops before its inline solution.
+3. **Independent checks.** G3 re-reads every page with **Poppler** (a different PDF library): per-page
+   character conservation, per-line agreement at the same position, and per-question numbers. G4.crops
+   re-renders every picture with Poppler (or the browser's image decoder for images) and compares pixels, with
+   a misplaced-crop control that must fail. When the two PDF libraries disagree about a line (it happens: a
+   glyph drawn over another), the run stops and names the question to show as a picture (`pictures:` in the job).
+4. **Scans.** No OCR. The probe draws numbered ink bands on each page image; the job (written by the AI from
+   the images) maps question numbers to units. Answers read off the page are recorded as *transcribed*; Gate B
+   then requires `numerals_checked: full`.
+5. **Everything else becomes pages.** Office files are printed by LibreOffice, awkward HTML by the browser, and
+   the converted PDF is kept in the run folder so the checker reads exactly the same pages.
+
+Evidence: a 200-question grammar PDF with an answer section (text questions, options, multi-letter answers); a
+50-question maths olympiad PDF with figures, picture options and inline solutions (27 questions as pictures, 48
+pictures all matching Poppler's rendering, worst difference 5.3 of 10); a scanned PDF and a screenshot (pictures
+identical to the source, difference 0.0–2.5); a Word file printed by LibreOffice. The checks caught two real
+defects along the way: answers starting "1)" that the app's renderer would have turned into a list (fixed in the
+escaping for every route, and added to the hostile-string test), and a PDF line where an overlapping glyph was
+read differently by the two libraries.
+
 ## 3. Conformance
 
 ### Global rules R1–R20
@@ -71,7 +103,7 @@ it against the seven real papers.
 | W2 profile/job lint | built; 19 broken-profile cases (U7) |
 | W3 probe | built: HTML (containers, shape census with rare shapes and optional parts, scripts and data arrays, figures, CSS, formatting, maths carriers, hidden content, static-vs-rendered), DOCX, PDF (text layer and scan detection) |
 | W4 S0 intake | built |
-| W5 S1 adapters | built: HTML, HTML with embedded JS data, DOCX. **Not built: pdf-text** |
+| W5 S1 adapters | built: HTML, HTML with embedded JS data, DOCX, and the page adapter for digital PDF, scanned PDF, images and screenshots, Office files (via LibreOffice) and printed HTML |
 | W6 S2 | built: three segmenters, transforms, answer rules, coverage ledger |
 | W7 S3 | built: corrections overlay, assets, deterministic pack |
 | W8 `try` | built, with side-by-side page and grouped unclaimed report |
@@ -127,5 +159,5 @@ styles-stripped control 94.8).
 2. **G4 rendered comparison** (G4.text, G4.formatting, G4.formula_equiv): generalise `review_rendered.mjs` from the seven papers to any run. Today line breaks and emphasis are checked by the reviewer.
 3. **CI**: run `npm run ingest:test` and the seven-paper corridor on every push.
 4. **Adapters in a child process** with time and memory caps (R13).
-5. **pdf-text adapter**, then the scan route (double transcription). The probe already reports text layers and scanned pages.
+5. Double transcription for scans (two independent transcriptions diffed automatically), and an optional OCR engine as one of the two.
 6. Answer-file join (two sources), delta review, mutation harness.

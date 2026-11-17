@@ -27,4 +27,4 @@ ignore:
   - {regex: "^Class – \\d+\\s+Mathematics$", reason: "paper title line", max_blocks: 2, max_tokens: 8}
   - {band: {top: 0.0, bottom: 0.095}, reason: "header logo area above the questions", max_blocks: 60, max_tokens: 0}
   - {band: {top: 0.885, bottom: 1.0}, reason: "footer: paper code, page number and logo", max_blocks: 60, max_tokens: 400}
-  - {units: ["p2.g1"], reason: "title box around the paper heading on its first page", max_blocks: 1, max_tokens: 0}
+  - {units: ["p2.g2"], reason: "title box around the paper heading on its first page", max_blocks: 1, max_tokens: 0}

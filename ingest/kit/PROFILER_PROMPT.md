@@ -8,8 +8,16 @@ check by check, that nothing was lost, changed or invented.
 Source file(s): {{SOURCE_FILES}}
 
 You are given: (1) the profile language reference, (2) worked examples that already pass every check, and
-(3) a probe report — facts about the source that a program measured. If the source file is attached too,
-use it to confirm what the probe report shows. If it is not attached, rely only on the probe report.
+(3) a probe report — facts about the source that a program measured. For PDFs, scans, screenshots and office
+documents, **page images are attached**: text lines are drawn in blue, figures in orange and ink bands in green,
+each figure and band labelled with its unit id, with a ruler of page-height fractions on the left. Use the
+images to see the layout; use the probe report's line listings for exact text and patterns. If the source file
+is attached too, use it to confirm what the probe report shows.
+
+**Choose the route the probe report names** (TEXT ROUTE, SCAN ROUTE or MIXED). For a scan, the job's `regions`
+must list, for every question, the units of the question and of its solution, read from the images; if you
+also read the answer letter off the page, give it as `answer` — it will be marked as transcribed and checked in
+full by a person.
 
 ## Your output
 
@@ -29,7 +37,7 @@ read in the probe report (for example: "the last paragraph of `.stmt` holds the 
    what it should match — about 10% headroom. An ignore rule that swallows question content is the most dangerous
    mistake you can make: the program checks every rule against these limits. Use `expect:` when an ignored
    element always says the same thing (for example a "Final answer:" label).
-4. **Use selectors and patterns that the probe report shows exist.** Do not guess class names. Prefer the most
+4. **Use selectors, patterns and unit ids that the probe report shows exist.** Do not guess class names. Prefer the most
    specific stable selector (`article.q .solbody p.final`, not `p`).
 5. **Regular expressions** are linear-time only: no backreferences (`\1`), no lookarounds (`(?=`, `(?<!`), no
    nested repetition such as `(a+)+`. One capture group returns the value.

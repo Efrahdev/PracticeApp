@@ -36,6 +36,8 @@ def check(run_dir: Path) -> tuple[list[str], list[str], dict]:
         problems.append("profile_author is empty")
     elif not placeholder(a["reviewer"]) and a["reviewer"].strip().lower() == a["profile_author"].strip().lower():
         problems.append(f"reviewer and profile_author are the same ({a['reviewer']!r}): the reviewer must be a different person or session")
+    if read_json(run_dir / "coverage.json").get("transcribed") and a.get("numerals_checked") != "full":
+        problems.append("this run has values read off pictures by a person or an AI (transcribed): approval needs numerals_checked: full (every number checked against the page)")
     if a["answers_verified"] not in ("none", "sampled", "full"):
         problems.append("answers_verified must be none, sampled or full")
     if placeholder(a["approved_at"]):

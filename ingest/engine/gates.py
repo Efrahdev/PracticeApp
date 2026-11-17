@@ -86,7 +86,7 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
 
     assets = pack.get("assets", {})
     referenced = set(re.findall(r"\(asset:([^)\s]+)\)", json.dumps(qs, ensure_ascii=False)))
-    page_kind = profile["source"]["kind"] in ("pdf", "image", "office", "html-print")
+    page_kind = profile["source"]["kind"] in ("pdf", "image", "office", "html-print", "scan")
     if page_kind:
         # every figure or ink band sits inside some question's picture, or is ignored with a reason
         figures = [b for b in blocks if b["kind"] in ("graphic", "band")]

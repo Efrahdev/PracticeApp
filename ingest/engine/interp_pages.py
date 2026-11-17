@@ -289,6 +289,12 @@ class PageInterp:
                 for lab, raw, _ in opts:
                     self.ledger.strip_prefix(qid, f"options.{lab}", raw, "printed option label, stored as the option's label")
                 self.ledger.group(qid, "stem", ["stem"] + [f"options.{lab}" for lab, _, _ in opts])
+        if transcribed and transcribed.get("options") and not q.get("options"):
+            # a scanned multiple-choice question: the options are in the picture; the job names their letters
+            m = re.fullmatch(r"([A-Za-z])\s*-\s*([A-Za-z])", str(transcribed["options"]).strip())
+            labels = [chr(c) for c in range(ord(m.group(1)), ord(m.group(2)) + 1)] if m else [str(x) for x in transcribed["options"]]
+            q["options"] = [{"label": lab, "text": lab} for lab in labels]
+            self.ledger.add_literal(qid, "options", " ".join(labels), "option letters for a question shown as a picture (from the job)")
         letters = {o["label"] for o in q.get("options", [])}
 
         # ---- answer and solution
@@ -333,8 +339,11 @@ class PageInterp:
             if transcribed.get("answer") is not None:
                 q["answer"] = self._answer_value(str(transcribed["answer"]), letters, qid, where)
                 q.setdefault("solution", {})["answer"] = esc(str(transcribed["answer"]))
+                for f in ("answer", "solution.answer"):
+                    self.ledger.transcribed.append({"q": qid, "field": f, "text": str(transcribed["answer"])})
             if transcribed.get("text"):
                 set_path(q, "fields.Transcription (unverified)", esc(transcribed["text"]))
+                self.ledger.transcribed.append({"q": qid, "field": "fields.Transcription (unverified)", "text": transcribed["text"]})
             q.setdefault("source", {})["transcribed"] = True
         if q.get("options"):
             q["type"] = "mcq_multi" if isinstance(q.get("answer"), list) else "mcq_single"
@@ -369,15 +378,11 @@ class PageInterp:
         live = self._prepare()
         if seg["by"].startswith("units"):
             return self._by_units(live), None
-        missing = [p for p in self.doc.page_numbers if p not in self.doc.text_pages and any(b["page"] == p for b in live)]
-        no_text = [p for p in self.doc.page_numbers if p not in self.doc.text_pages]
-        if no_text and not all(p in _pages(r.get("pages", "")) for r in self.profile["ignore"] if "pages" in r for p in no_text):
-            ignored_pages = {p for r in self.profile["ignore"] if "pages" in r for p in _pages(r["pages"])}
-            bad = [p for p in no_text if p not in ignored_pages]
-            if bad:
-                raise StageFail(f"page(s) {bad[:10]} have no text layer (scanned)", locator=f"p{bad[0]}", check="S1.scanned",
-                                hint="use segment.by: units@1 for scanned pages (a separate job for that page range), or ignore those pages with a reason")
-        del missing
+        ignored_pages = {p for r in self.profile["ignore"] if "pages" in r for p in _pages(r["pages"])}
+        bad = [p for p in self.doc.page_numbers if p not in self.doc.text_pages and p not in ignored_pages]
+        if bad:
+            raise StageFail(f"page(s) {bad[:10]} have no text layer (scanned)", locator=f"p{bad[0]}", check="S1.scanned",
+                            hint="use the scan route (kind: scan, segment.by: units@1) for those pages in a separate job, or ignore them with a reason")
         start, end = rx(seg["start"]), rx(seg["end"]) if seg.get("end") else None
         heading = rx(seg["heading"]) if seg.get("heading") else None
         current_heading, in_heading = None, False

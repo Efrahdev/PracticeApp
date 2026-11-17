@@ -1,7 +1,6 @@
 # Document ingestion pipeline
 
-Turns a source paper (HTML page, Word file) into a **checked question pack** for the practice app, with no AI in
-the conversion. An AI model is used once, at the start, to describe the layout (the *profile*); after that a
+Turns **any source paper** into a **checked question pack** for the practice app, with no AI in the conversion. An AI model is used once, at the start, to describe the layout (the *profile*); after that a
 deterministic program converts the paper and proves, check by check, that nothing was lost, changed or invented.
 
 ```
@@ -17,6 +16,21 @@ deterministic program converts the paper and proves, check by check, that nothin
                                        pack/pack.zip ──► app Import screen
 ```
 
+## What it accepts
+
+| Source | Route | What the learner gets |
+| --- | --- | --- |
+| PDF with a text layer (typed papers, e-books) | page route, `kind: pdf`, `lines@1` | text questions, options and answers; **a picture of the region** for any question with a figure, picture options or unreliable characters (symbol fonts, stacked fractions) |
+| Scanned PDF, photos, screenshots (PNG, JPEG, WebP, GIF, BMP, TIFF, or a zip of them) | page route, `kind: scan`, `units@1` | every question as an exact picture of its region; answers given in the job are marked *transcribed* and need a full number check at approval |
+| Word, PowerPoint, Excel, OpenDocument, RTF, old .doc, plain text | `kind: office`: printed to pages by LibreOffice, then the page route | as for PDFs |
+| HTML page whose questions are repeated elements, or JavaScript data | structured routes `html`, `html-json` | text, Markdown, maths, figures as SVG |
+| Any other HTML page | `kind: html-print`: printed to pages by the browser, then the page route | as for PDFs |
+| Word file of plain numbered paragraphs | structured route `docx` | text |
+
+There is no OCR: a scanned page cannot be read as text without a statistical guess, so it is never turned into
+text by the program. Questions from scans are pictures of the page (exact, checked pixel by pixel). If you want
+their words searchable, put a transcription in the job; it is marked unverified.
+
 The design follows *Document Ingestion Pipeline: Architecture and Build Specification v2*. What was built, what
 was improved and what is not built yet is in [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
@@ -27,8 +41,13 @@ Run everything from the repository root after `npm install` once. `ingest/ingest
 **1. Make the profiling brief** (the standard profiler: one file you paste to any AI model):
 
 ```bash
-ingest/ingest brief "My Paper.html"            # writes ingest/scratch/my-paper.brief.md
+ingest/ingest brief "My Paper.pdf"                 # writes ingest/scratch/my-paper.brief.md (+ page images)
+ingest/ingest brief "Big Book.pdf" --pages 40-62   # one paper inside a bigger file
 ```
+
+For PDFs, scans, screenshots and office files the brief also writes **annotated page images**
+(`ingest/scratch/my-paper-pages/pages/*.png`): text lines in blue, figures in orange, ink bands in green with
+their unit ids, and a ruler of page-height fractions. Attach them to the AI together with the brief.
 
 The brief contains the instructions ([`kit/PROFILER_PROMPT.md`](kit/PROFILER_PROMPT.md)), the profile language
 ([`kit/PROFILE_REFERENCE.md`](kit/PROFILE_REFERENCE.md)), worked examples that pass every check, and a *probe
@@ -103,8 +122,8 @@ Every command accepts `--json`. `PROFILE` may be one file holding the profile, `
 
 | Path | Contents |
 | --- | --- |
-| `engine/` | The converter and gates G1, G5, G6 (Python, stdlib + BeautifulSoup, PyYAML, jsonschema). |
-| `checker/` | The independent gates G2, G3, G4, the figure render check and the side-by-side page (Node: parse5/cheerio, acorn, the app's own reader and renderer). Shares no code or parser with `engine/`. |
+| `engine/` | The converter and gates G1, G5, G6 (Python: BeautifulSoup, PyYAML, jsonschema; pypdfium2, Pillow and numpy for pages). |
+| `checker/` | The independent gates G2, G3, G4, the picture checks and the side-by-side page (Node: parse5/cheerio, acorn, the app's own reader and renderer; Poppler for PDFs). Shares no code or parser with `engine/`. |
 | `kit/` | The profiler template: prompt, language reference, profile and job JSON Schemas. |
 | `profiles/`, `jobs/` | Approved layouts and the seven papers' jobs (worked examples, used in briefs). |
 | `tests/run_tests.py` | Unit tests, fault injection and Gate B tamper cases (`npm run ingest:test`). |
@@ -112,9 +131,16 @@ Every command accepts `--json`. `PROFILE` may be one file holding the profile, `
 | `runs/`, `scratch/` | Run folders and trials (not committed: they hold copies of the sources). |
 | `packs/`, `convert_*.py`, `fidelity.py`, … | The first, hand-written converters and checks for the seven papers ([history](HISTORY-first-seven-papers.md)). Kept as the golden oracle. |
 
+## What the laptop needs (stage 2)
+
+Python 3.11+ with `pip install -r ingest/requirements.lock`; Node 20+ with `npm install`; Playwright's Chromium
+(`npx playwright install chromium`); **Poppler** (`pdftotext`, `pdftoppm`: the independent PDF reader the
+checks use); **LibreOffice** only for Office files. On Windows these are all available as installers or via
+`winget`; on macOS via Homebrew.
+
 ## Check it yourself
 
 ```bash
-npm run ingest:test                       # 45 cases: unit tests, fault injection, approval tampering
-sh ingest/tests/run_all_papers.sh         # all seven papers through the corridor + golden oracle (~2 minutes)
+npm run ingest:test                       # 58 cases: unit tests, fault injection, approval tampering, all routes
+sh ingest/tests/run_all_papers.sh         # 12 papers through the corridor (HTML, Word, PDF, scan, screenshot, office) + golden oracle
 ```

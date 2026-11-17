@@ -19,7 +19,7 @@ KIT = Path(__file__).resolve().parents[1] / "kit"
 # changing the behaviour of a transform (and bumping its version here) voids approvals that depend on it (R17).
 REGISTRY = {
     "segment": {"css_container": 1, "numbered_paragraph": 1, "json_array": 1, "lines": 1, "units": 1},
-    "pages": {"text_lines": 1, "ink_bands": 1, "crop_png": 1},
+    "pages": {"text_lines": 2, "ink_bands": 2, "crop_png": 1},   # bump when unit finding changes: unit ids and text may change
     "content": {"htmlmd": 1},
     "svg": {"svg_inline_page_styles": 1},
     "classify": {"number_unit_else_open": 1},
@@ -27,7 +27,7 @@ REGISTRY = {
     "escape": {"markdown": 1},
 }
 SEGMENT_FOR_KIND = {"html": {"css_container"}, "html-json": {"json_array"}, "docx": {"numbered_paragraph"},
-                    "pdf": {"lines", "units"}, "office": {"lines", "units"}, "html-print": {"lines", "units"}, "image": {"units"}}
+                    "pdf": {"lines", "units"}, "office": {"lines", "units"}, "html-print": {"lines", "units"}, "image": {"units"}, "scan": {"units"}}
 
 
 # --------------------------------------------------------------------------- regular expressions (R13)
@@ -214,13 +214,13 @@ def lint_profile(data: dict, lines: dict[str, int], name: str) -> Lint:
     if svg.get("extra_css") and not svg.get("extra_css_reason"):
         lint.err("/content/svg", "extra_css adds styling that is not in the figure and needs extra_css_reason", "lint.reason")
     fields = data["fields"]
-    if "stem" not in fields and "parts" not in data and kind not in ("pdf", "image", "office", "html-print"):
+    if "stem" not in fields and "parts" not in data and kind not in ("pdf", "image", "office", "html-print", "scan"):
         lint.err("/fields", "a question needs at least a stem (or parts)", "lint.missing_key")
     for fname, spec in fields.items():
         for j, one in enumerate(spec if isinstance(spec, list) else [spec]):
             p = f"/fields/{fname}" + (f"/{j}" if isinstance(spec, list) else "")
             sources = [k for k in ("from", "key", "const", "template", "var", "paragraph", "preamble", "lookup", "compose", "by_type", "attr", "list_of") if k in one]
-            if kind in ("pdf", "image", "office", "html-print") and fname in ("stem", "answer", "options", "solution.answer", "solution.explanation"):
+            if kind in ("pdf", "image", "office", "html-print", "scan") and fname in ("stem", "answer", "options", "solution.answer", "solution.explanation"):
                 lint.err(p, f"for page sources the engine fills {fname} itself (see display, options and answers); remove it from fields", "lint.shape")
                 continue
             if not sources:

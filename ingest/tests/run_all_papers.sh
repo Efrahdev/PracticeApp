@@ -13,4 +13,12 @@ for pair in docx-numbered:class5-calendar-sums docx-numbered:class5-critical-thi
   [ "$code" -ge 20 ] && status=1
   if [ -n "$dir" ]; then ingest/ingest oracle "$dir" "ingest/packs/$job.json" | head -1 || status=1; else echo "(no run folder)"; status=1; fi
 done
+# page sources: PDFs with a text layer, a scanned PDF, a screenshot, a Word file printed to pages (no earlier pack to compare)
+for pair in pdf-numbered-questions:tense-practice-1 pdf-olympiad-inline-solutions:uimo-class4-paper1 scan-pages:uimo-p3-scanned \
+            scan-pages:uimo-p3-screenshot office-numbered:class5-calendar-sums-via-office; do
+  profile=${pair%%:*}; job=${pair#*:}
+  out=$(ingest/ingest run "ingest/profiles/$profile.yaml" "ingest/jobs/$job.yaml" --json 2>/dev/null); code=$?
+  printf '%-45s run exit %s  %s\n' "$job" "$code" "$(printf '%s' "$out" | python3 -I -c "import json,sys; d=json.load(sys.stdin); print(d['pack']['question_count'], 'questions,', d['pack']['asset_count'], 'pictures;', d['gates'])" 2>/dev/null)"
+  [ "$code" -ge 20 ] && status=1
+done
 exit $status

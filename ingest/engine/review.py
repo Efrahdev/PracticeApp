@@ -302,6 +302,7 @@ def build(run_dir: Path, profile: dict, job: dict, verdicts: dict, manifest: dic
                 "corrections_sha256": inputs["corrections_sha256"], "pack_identity_sha256": inputs["pack_identity_sha256"], "engine_version": ENGINE_VERSION,
                 "reviewed_items": [{"item": p["key"], "question_id": p["question_id"], "content_sha256": p["content_sha256"], "verdict": "<ok | defect | unsure>"} for p in public],
                 "answers_verified": "<none | sampled | full>",
+                **({"numerals_checked": "<full: every number checked against the page picture>"} if coverage.get("transcribed") else {}),
                 "waivers": [{"gate": g.upper(), "check_id": c["id"], "reason": "<why this is acceptable>"} for g, c in warns],
                 "approved_at": "<timestamp>"}
     write_json(review / "approval.template.json", template)

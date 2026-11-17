@@ -387,6 +387,112 @@ def _():
     expect_fail(lambda: convert(profile, job, src, name="f42"), "S1.literals")
 
 
+# =========================================================================== page sources (PDF, scans, screenshots)
+TENSE = load("pdf-numbered-questions", "tense-practice-1")
+UIMO = load("pdf-olympiad-inline-solutions", "uimo-class4-paper1")
+SCAN = load("scan-pages", "uimo-p3-scanned")
+SHOT = load("scan-pages", "uimo-p3-screenshot")
+
+
+@case("P1 file types are recognised from their bytes, not their names")
+def _():
+    import stages as st
+    cases = {"x.pdf": b"%PDF-1.4", "x.png": b"\x89PNG\r\n\x1a\n....", "x.jpg": b"\xff\xd8\xff\xe0", "x.gif": b"GIF89a", "x.doc": b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1",
+             "x.rtf": b"{\\rtf1", "x.html": b"<!doctype html><html>", "x.txt": b"plain words", "x.bin": b"\x00\x01\x02"}
+    want = {"x.pdf": "pdf", "x.png": "image", "x.jpg": "image", "x.gif": "image", "x.doc": "office", "x.rtf": "office", "x.html": "html", "x.txt": "office", "x.bin": "unknown"}
+    got = {k: st.detect_kind(v, k) for k, v in cases.items()}
+    assert got == want, got
+    assert st.detect_kind((ROOT / "Class_5_Calendar_Sums.docx").read_bytes(), "a.docx") == "docx"
+
+
+@case("P2 a text PDF converts with options, multi-letter answers and an answer section joined by number")
+def _():
+    j = copy.deepcopy(TENSE[1])
+    j["sources"][0]["pages"] = "1-12,31-45"   # questions 1-~40 and the start of the answers
+    j["expect"]["questions"] = 0
+    try:
+        convert(TENSE[0], j, name="p2")
+    except StageFail as e:
+        # the answer section in this range has entries only for the questions in range: no orphans allowed
+        assert e.check in ("S2.join", "S2.coverage", "S2.numbering"), e.check
+    conv, _ = convert(*TENSE, name="p2full")
+    qs = {q["number"]: q for q in conv["packed"]["pack"]["questions"]}
+    assert len(qs) == 200 and qs["1"]["answer"] == "A" and qs["1"]["type"] == "mcq_single"
+    assert isinstance(qs["16"]["answer"], list) and qs["16"]["type"] == "mcq_multi"
+    assert "1\\)" in qs["43"]["answer"], "a line-start '1)' must be escaped so the renderer does not turn it into a list"
+
+
+@case("P3 a maths PDF: figures and symbol-font text become pictures; inline solutions never leak into the question")
+def _():
+    conv, out = convert(*UIMO, name="p3")
+    pack = conv["packed"]["pack"]
+    pics = [q for q in pack["questions"] if q["source"]["display"] == "picture"]
+    assert 20 <= len(pics) < 50 and pack["questions"][0]["answer"] == "B", (len(pics), pack["questions"][0].get("answer"))
+    assert any(q["source"]["display"] == "text" for q in pack["questions"]), "plain questions should stay text"
+    rows = read_json(out / "pack" / "assets.json")
+    cov = read_json(out / "coverage.json")
+    sol_lines = {b["locator"]: b for b in cov["blocks"] if b["kind"] == "line" and b["text"].startswith("Sol")}
+    for r in (r for r in rows if r["field"] == "stem"):
+        for b in sol_lines.values():
+            if b["page"] == r["page"]:
+                overlap = min(b["box"][3], r["box"][3]) - max(b["box"][1], r["box"][1])
+                assert overlap <= 0.5 * (b["box"][3] - b["box"][1]), f"{r['question']}'s picture includes the solution line {b['locator']}"
+
+
+@case("P4 a scanned page in a text-PDF job stops the run (use the scan route)")
+def _():
+    j = copy.deepcopy(TENSE[1])
+    j["sources"][0]["file"] = "../tests/samples/uimo-p3-scanned.pdf"
+    j["expect"]["questions"] = 4
+    p = copy.deepcopy(TENSE[0])
+    p["source"]["probes"] = [{"pages": True, "min": 1}]
+    p["ignore"] = [r for r in p["ignore"] if "pages" not in r]
+    expect_fail(lambda: convert(p, j, name="p4"), "S1.scanned")
+
+
+@case("P5 scan route: probe and run number the units identically (a job's unit ids mean the same thing)")
+def _():
+    import probe_pages
+    for prof, job in (SCAN, SHOT):
+        src = source_of(job)
+        kind = "pdf" if src.suffix == ".pdf" else "image"
+        rep = probe_pages.probe_pages(src, kind, None)
+        conv, _ = convert(prof, job, name="p5" + kind)
+        probe_ids = [x.split()[0] for x in rep["sample_units"][1]]
+        run_ids = [b["locator"] for b in conv["doc"].ledger.blocks if b["kind"] in ("band", "graphic")]
+        assert probe_ids == run_ids[:len(probe_ids)], (probe_ids[:5], run_ids[:5])
+
+
+@case("P6 scan route faults: unknown unit, ignored unit, answer outside the options, a lost unit")
+def _():
+    prof, job = SCAN
+    j = copy.deepcopy(job); j["regions"][0]["units"] = "p1.u2-p1.u99"
+    expect_fail(lambda: convert(prof, j, name="p6a"), "S2.segment", "unknown unit")
+    j = copy.deepcopy(job); j["regions"][0]["units"] = "p1.u1-p1.u4"
+    expect_fail(lambda: convert(prof, j, name="p6b"), "S2.segment", "ignore rule removes")
+    j = copy.deepcopy(job); j["regions"][0]["answer"] = "E"
+    expect_fail(lambda: convert(prof, j, name="p6c"), "S2.answers")
+    j = copy.deepcopy(job); j["regions"][1]["solution_units"] = "p1.u9"   # p1.u10 now belongs to nothing
+    expect_fail(lambda: convert(prof, j, name="p6d"), "S2.coverage", "neither claimed nor ignored")
+
+
+@case("P7 page routes are deterministic: the same inputs give the same pack identity (R1)")
+def _():
+    for prof, job in (UIMO, SCAN, SHOT):
+        a, _ = convert(prof, job, name="p7a")
+        b, _ = convert(prof, job, name="p7b")
+        assert a["packed"]["identity_sha256"] == b["packed"]["identity_sha256"], job["job"]["id"]
+
+
+@case("P8 an office document is printed to pages by LibreOffice and read by the page route")
+def _():
+    import shutil as sh
+    if not (sh.which("soffice") or sh.which("libreoffice")):
+        raise AssertionError("LibreOffice is not installed here")
+    conv, _ = convert(*load("office-numbered", "class5-calendar-sums-via-office"), name="p8")
+    assert len(conv["packed"]["pack"]["questions"]) == 20 and conv["doc"].converted_from == "office"
+
+
 # =========================================================================== full runs: gates G2-G4 and Gate B
 def full_run(profile_name, job_name):
     runs = TMP / "runs"
@@ -537,6 +643,60 @@ if not QUICK:
             next(r for r in t["reviewed_items"] if r["item"] not in canaries)["verdict"] = "defect"
             write_json(d / "approval.json", t)
         assert any("marked defect" in p for p in refused(mutated_run("f31c", f)))
+
+    PRUN = full_run("pdf-olympiad-inline-solutions", "uimo-class4-paper1")
+
+    def mutated_page_run(name: str, fn) -> Path:
+        d = TMP / f"pmut-{name}"
+        shutil.copytree(PRUN, d)
+        for p in d.rglob("*"):
+            os.chmod(p, 0o700 if p.is_dir() else 0o600)
+        fn(d)
+        return d
+
+    @case("G-PAGES every gate passes its own fixture on a real PDF run; G3 and G4.crops pass")
+    def _():
+        for g in ("g1", "g2", "g3", "g4", "g5"):
+            v = read_json(PRUN / "gates" / f"{g}.json")
+            assert (v.get("selftest") or {}).get("status") == "PASS" and v["status"] != "FAIL", (g, v["status"], v.get("selftest"))
+
+    @case("F50 a question picture cut from the wrong place -> G4.crops")
+    def _():
+        def f(d):
+            rows = read_json(d / "pack" / "assets.json")
+            r = next(r for r in rows if r["field"] == "stem")
+            r["pixels"] = [r["pixels"][0], r["pixels"][1] + 60, r["pixels"][2], r["pixels"][3] + 60]
+            write_json(d / "pack" / "assets.json", rows)
+        assert {c["id"]: c["status"] for c in gate(mutated_page_run("f50", f), "g4")["checks"]}["G4.crops"] == "FAIL"
+
+    @case("F51 a word the converter misread on a PDF line -> G3.local and G3.conservation")
+    def _():
+        def f(d):
+            cov = read_json(d / "coverage.json")
+            b = next(b for b in cov["blocks"] if b["status"] == "claimed" and b["kind"] == "line" and any(c["mode"] == "verbatim" for c in b["by"]) and re.search(r"\d", b["text"]))
+            b["text"] = re.sub(r"\d", lambda m: str((int(m.group()) + 1) % 10), b["text"], count=1)
+            write_json(d / "coverage.json", cov, pretty=False)
+        st = {c["id"]: c["status"] for c in gate(mutated_page_run("f51", f), "g3")["checks"]}
+        assert st["G3.local"] == "FAIL" and st["G3.conservation"] == "FAIL", st
+
+    @case("F52 a text-PDF question changed in the pack -> G3.compare")
+    def _():
+        def f(d):
+            pack = read_json(d / "pack" / "pack.json")
+            q = next(q for q in pack["questions"] if "(asset:" not in q["stem"])
+            q["stem"] = q["stem"].replace("the", "a", 1) if "the" in q["stem"] else q["stem"] + " extra"
+            (d / "pack" / "pack.json").write_text(json.dumps(pack, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        assert {c["id"]: c["status"] for c in gate(mutated_page_run("f52", f), "g3")["checks"]}["G3.compare"] == "FAIL"
+
+    @case("F53 transcribed answers (scan route) need numerals_checked: full at Gate B")
+    def _():
+        d = full_run("scan-pages", "uimo-p3-scanned")
+        t = approval_for(d)
+        problems = refused(d)
+        assert any("numerals_checked" in p for p in problems), problems
+        t["numerals_checked"] = "full"
+        write_json(d / "approval.json", t)
+        assert refused(d) == [], refused(d)
 
     @case("F45 canaries are sealed outside review/ (an AI reviewer never sees the key)")
     def _():

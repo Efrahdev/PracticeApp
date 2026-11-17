@@ -205,30 +205,6 @@ def probe_docx(data: bytes, name: str) -> dict:
 
 
 # --------------------------------------------------------------------------- PDF
-def probe_pdf(path: Path) -> dict:
-    try:
-        import pdfplumber
-    except ImportError:
-        return {"kind": "pdf", "error": "pdfplumber is not installed, so PDFs cannot be probed here"}
-    pages, texts = [], []
-    with pdfplumber.open(str(path)) as pdf:
-        total = len(pdf.pages)
-        for i, page in enumerate(pdf.pages[:400], start=1):
-            text = page.extract_text() or ""
-            fonts = Counter(c.get("fontname", "?") for c in page.chars)
-            scan = len(page.images) > 0 and len(text.strip()) < 40
-            pages.append({"page": i, "chars": len(text), "text_layer": len(text.strip()) >= 40, "images": len(page.images), "scan_suspected": scan,
-                          "fonts": dict(fonts.most_common(4))})
-            texts.extend(text.splitlines())
-    scans = [p["page"] for p in pages if p["scan_suspected"] or not p["text_layer"]]
-    return {"kind": "pdf", "pages": total, "pages_with_text_layer": sum(1 for p in pages if p["text_layer"]), "pages_without_text_or_scanned": scans[:60],
-            "numbering_patterns": _numbering(texts), "first_lines": [t for t in texts if t.strip()][:40],
-            "per_page": pages[:12] + ([{"…": f"{len(pages) - 12} more pages"}] if len(pages) > 12 else []),
-            "verdict": ("every page is a scan or has no text layer: there is no AI-free way to read it; use the manual pack route (spec section 11.2)" if len(scans) == len(pages)
-                        else "digital text is present" + (f", but {len(scans)} page(s) look scanned" if scans else "") +
-                        ". NOTE: this engine version probes PDFs but does not convert them yet (see ingest/ARCHITECTURE.md)")}
-
-
 def rendered_diff(path: Path) -> dict:
     """Static-versus-rendered facts from an isolated headless browser (network blocked). Optional: skipped
     with a note when the browser is not available."""
@@ -242,21 +218,26 @@ def rendered_diff(path: Path) -> dict:
         return {"skipped": str(e)[:300]}
 
 
-def probe_file(path: Path, render: bool = True) -> dict:
+def probe_file(path: Path, render: bool = True, out_dir: Path | None = None, pages: str | None = None, columns=1) -> dict:
     import stages
     data = path.read_bytes()
-    kind = stages.detect_kind(data)
+    kind = stages.detect_kind(data, path.name)
     base = {"file": path.name, "bytes": len(data), "sha256": sha256_bytes(data), "detected_format": kind, "probe_version": ENGINE_VERSION}
     if kind == "html":
         base.update(probe_html(data, path.name))
         if render:
             base["static_vs_rendered"] = rendered_diff(path)
+        base["also_possible"] = "html-print: if the page's layout cannot be described by selectors, print it to pages and use the page route"
     elif kind == "docx":
         base.update(probe_docx(data, path.name))
-    elif kind == "pdf":
-        base.update(probe_pdf(path))
-    else:
-        base["error"] = "unknown format: only HTML, Word (.docx) and PDF are recognised"
+        if base.get("unsupported_blocks"):
+            base["also_possible"] = "office: the document has tables, images or equations; print it to pages (kind: office) and use the page route"
+    if kind in ("pdf", "image", "office"):
+        from probe_pages import probe_pages
+        base.update(probe_pages(path, kind, out_dir, pages, columns))
+    elif kind not in ("html", "docx"):
+        base["error"] = ("unknown format. Recognised: HTML, Word, PDF (text or scanned), images and screenshots (PNG, JPEG, WebP, GIF, BMP, TIFF, or a zip "
+                         "of them), and through LibreOffice: PowerPoint, Excel, OpenDocument, RTF, old .doc, plain text")
     return base
 
 
@@ -311,25 +292,27 @@ def _md(report: dict) -> str:
               f"- unsupported blocks: `{j(report['unsupported_blocks'])}`", "", "### Paragraphs before the first numbered paragraph", "", "```json",
               json.dumps(report["paragraphs_before_first_number"], ensure_ascii=False, indent=1), "```", "", "### Sample paragraphs (first, middle, last)", "", "```json",
               json.dumps(report["sample_paragraphs"], ensure_ascii=False, indent=1), "```"]
-    elif kind == "pdf":
-        L += [f"- {report.get('pages')} pages, {report.get('pages_with_text_layer')} with a text layer", f"- pages without text or suspected scans: `{j(report.get('pages_without_text_or_scanned'))}`",
-              f"- **{report.get('verdict')}**", f"- numbering patterns: `{j(report.get('numbering_patterns'))}`", "", "### First lines of text", "", "```", *report.get("first_lines", []), "```",
-              "", "### Per page", "", "```json", json.dumps(report.get("per_page"), ensure_ascii=False, indent=1), "```"]
+    if report.get("page_route"):
+        from probe_pages import md as pages_md
+        L += pages_md(report)
+    if report.get("also_possible"):
+        L += ["", f"- also possible: {report['also_possible']}"]
     return "\n".join(L) + "\n"
 
 
-def _reports(args) -> list[dict]:
+def _reports(args, out_dir: Path | None = None) -> list[dict]:
     out = []
     for f in args.files:
         p = Path(f)
         if not p.exists():
             raise UsageError(f"no such file: {p}")
-        out.append(probe_file(p))
+        sub = (out_dir / re.sub(r"[^A-Za-z0-9]+", "-", p.stem).strip("-").lower()) if out_dir and len(args.files) > 1 else out_dir
+        out.append(probe_file(p, out_dir=sub, pages=getattr(args, "pages", None), columns=getattr(args, "columns", 1)))
     return out
 
 
 def main(args) -> int:
-    reports = _reports(args)
+    reports = _reports(args, Path(args.out) if args.out else None)
     md = "\n".join(_md(r) for r in reports)
     if args.out:
         out = Path(args.out)
@@ -344,25 +327,38 @@ def main(args) -> int:
 def brief(args) -> int:
     """The standard profiler: one paste-ready file for any AI model = instructions + language reference +
     worked examples + this document's probe report."""
-    reports = _reports(args)
+    out = Path(args.out) if args.out else INGEST / "scratch" / (re.sub(r"[^A-Za-z0-9]+", "-", Path(args.files[0]).stem).strip("-").lower() + ".brief.md")
+    img_dir = out.with_suffix("").with_name(out.stem.replace(".brief", "") + "-pages")
+    reports = _reports(args, img_dir)
     kit = INGEST / "kit"
     template = (kit / "PROFILER_PROMPT.md").read_text(encoding="utf-8")
-    kinds = {r.get("kind") for r in reports}
+    # worked examples: the approved profiles of the same family (page sources, HTML, Word), each with one of its jobs
+    import yaml
+    family = lambda k: "pages" if k in ("pdf", "image", "office", "html-print", "scan") else k   # noqa: E731
+    wanted = {family(r.get("kind") or r.get("detected_format")) for r in reports}
+    jobs = {}
+    for jf in sorted((INGEST / "jobs").glob("*.yaml")):
+        try:
+            jid = (yaml.safe_load(jf.read_text(encoding="utf-8")) or {}).get("job", {}).get("profile", {}).get("id")
+        except yaml.YAMLError:
+            continue
+        jobs.setdefault(jid, jf)
     examples = []
-    wanted = {"html": ["geometry-html", "unitary-html", "grammar-json"], "docx": ["docx-numbered"], "pdf": ["docx-numbered"]}
-    job_for = {"geometry-html": "geometry-olympiad-achiever-100", "unitary-html": "unitary-method-olympiad-course", "grammar-json": "grammar-midterm-mastery-assessment",
-               "docx-numbered": "class5-calendar-sums"}
-    for name in dict.fromkeys(n for k in sorted(k for k in kinds if k) for n in wanted.get(k, [])):
-        prof, job = INGEST / "profiles" / f"{name}.yaml", INGEST / "jobs" / f"{job_for[name]}.yaml"
-        if prof.exists() and job.exists():
-            examples.append(f"### Worked example: `{name}`\n\n```yaml\n{prof.read_text(encoding='utf-8').rstrip()}\n---\n{job.read_text(encoding='utf-8').rstrip()}\n```\n")
+    for pf in sorted((INGEST / "profiles").glob("*.yaml")):
+        try:
+            prof = yaml.safe_load(pf.read_text(encoding="utf-8"))
+        except yaml.YAMLError:
+            continue
+        if family(prof["source"]["kind"]) in wanted and prof["profile"]["id"] in jobs and len(examples) < 3:
+            examples.append(f"### Worked example: `{prof['profile']['id']}`\n\n```yaml\n{pf.read_text(encoding='utf-8').rstrip()}\n---\n{jobs[prof['profile']['id']].read_text(encoding='utf-8').rstrip()}\n```\n")
     text = (template.replace("{{PROFILE_REFERENCE}}", (kit / "PROFILE_REFERENCE.md").read_text(encoding="utf-8").strip())
             .replace("{{WORKED_EXAMPLES}}", "\n".join(examples).strip())
             .replace("{{SOURCE_FILES}}", ", ".join(f"`{r['file']}`" for r in reports))
             .replace("{{PROBE_REPORT}}", "\n".join(_md(r) for r in reports).strip()))
-    out = Path(args.out) if args.out else INGEST / "scratch" / (re.sub(r"[^A-Za-z0-9]+", "-", Path(args.files[0]).stem).strip("-").lower() + ".brief.md")
     atomic_write(out, text.encode("utf-8"))
+    images = [str((img_dir / f).resolve()) for r in reports for f in r.get("images", [])]
     print(f"wrote {out}  ({len(text):,} characters)\n"
-          "Paste the whole file to any AI model (attach the source file too if the model accepts files).\n"
+          + (f"Attach these {len(images)} page image(s) with it (they show the layout and the unit ids):\n  " + "\n  ".join(images[:12]) + ("\n  …" if len(images) > 12 else "") + "\n" if images else "")
+          + "Paste the whole file to any AI model (attach the source file too if the model accepts files).\n"
           "Save its reply as one .yaml file (profile, then ---, then job) and run:  ingest lint FILE  then  ingest try FILE")
     return EXIT_PASS

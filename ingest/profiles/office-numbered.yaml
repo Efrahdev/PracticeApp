@@ -1,0 +1,19 @@
+# Layout family: any office document (Word with tables or pictures, PowerPoint, OpenDocument, RTF, plain text)
+# printed to pages by LibreOffice, with questions numbered "1." or "1)" at the start of a line and no answers.
+profile: {id: office-numbered, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: office
+  probes:
+    - {regex: "^\\d+\\s*[.)]\\s", min: 2}
+    - {text_pages: true, min: 1}
+pages: {columns: 1, dpi: 150}
+segment:
+  by: lines@1
+  start: "^(\\d+)\\s*[.)]\\s+(?:\\d+\\s*[.)]\\s+)?"   # also takes a repeated number ("1. 1. ...": automatic + typed numbering)
+  numbering: sequential_from_1
+display: auto
+answers: {expected: false}
+fields:
+  id: {template: "q{number}"}
+ignore:
+  - {regex: "^(Class 5 Calendar Sums|Distance Between Equally Spaced Objects - Word Problems|Advanced Critical Thinking Math Worksheet)$", reason: "worksheet title", max_blocks: 1, max_tokens: 10}

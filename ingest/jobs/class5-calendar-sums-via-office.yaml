@@ -1,0 +1,12 @@
+job:
+  id: class5-calendar-sums-via-office
+  profile: {id: office-numbered, version: 1}
+sources:
+  - {file: "../../Class_5_Calendar_Sums.docx", role: paper}
+expect: {questions: 20}
+pack:
+  id: class5-calendar-sums-office-route
+  title: "Class 5 Calendar Sums (office route)"
+  subject: Maths
+assertions:
+  - {question: "1", stem_starts: "A book was issued on 10th January"}

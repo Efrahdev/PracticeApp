@@ -14,7 +14,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import { ROOT, Verdict, bag, bagDiff, loadApp, loadRun, numerals, tokens } from "./lib.mjs";
 import { cropCheck, pageTextChecks } from "./pagecheck.mjs";
 
-const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print"]);
+const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print", "scan"]);
 
 const sha = (buf) => crypto.createHash("sha256").update(buf).digest("hex");
 
@@ -283,7 +283,10 @@ function g3Checks(v, app, run, src, pack) {
     }
     if (problem) failures.push(`${qid || "pack"} ${field}: ${problem}`);
   }
-  v.add("G3.compare", failures.length ? "FAIL" : "PASS", failures.length ? `${failures.length} field(s) differ from the source; first: ${failures[0]}` : `${fieldsCompared} fields (${tokensCompared} tokens) equal the source text they claim, token by token and in order`, { examined: fieldsCompared, details: failures.slice(0, 40) });
+  const allPictures = pack.questions.every((q) => String(q.stem ?? "").includes("(asset:"));
+  v.add("G3.compare", failures.length ? "FAIL" : allPictures && !fieldsCompared ? "INFO" : "PASS", failures.length ? `${failures.length} field(s) differ from the source; first: ${failures[0]}`
+    : allPictures && !fieldsCompared ? "every question is a picture of its region: no text to compare (the pictures are checked by G4.crops)"
+    : `${fieldsCompared} fields (${tokensCompared} tokens) equal the source text they claim, token by token and in order`, { examined: fieldsCompared, zeroOk: allPictures, details: failures.slice(0, 40) });
 
   // ---- G3.invented: pack text that no source text stands behind (R3).
   const orphans = [];
@@ -292,9 +295,12 @@ function g3Checks(v, app, run, src, pack) {
     fieldsSeen++;
     if (compared.has(`${q.id}\u0000${f}`)) continue;
     const derived = cov.blocks.some((b) => b.status === "claimed" && b.by.some((c) => c.q === q.id && (c.field === f || (f.startsWith("parts.") && c.field === "part_answers"))))
-      || (cov.added ?? []).some((a) => a.q === q.id && (a.field === f || f.startsWith(a.field + ".")));
+      || (cov.added ?? []).some((a) => a.q === q.id && (a.field === f || f.startsWith(a.field + ".")))
+      || (cov.transcribed ?? []).some((t) => t.q === q.id && t.field === f);
     if (!derived) orphans.push(`${q.id} ${f}`);
   }
+  const tr = cov.transcribed ?? [];
+  if (tr.length) v.add("G3.transcribed", "WARN", `${tr.length} value(s) in ${new Set(tr.map((t) => t.q)).size} question(s) were read off the page by a person or an AI (job regions), not by the program: unverified. Gate B must check every number in full (numerals_checked: full)`, { examined: tr.length, details: tr.slice(0, 40).map((t) => `${t.q} ${t.field} = ${t.text}`) });
   v.add("G3.invented", orphans.length ? "FAIL" : "PASS", orphans.length ? `${orphans.length} pack field(s) have no source text behind them; first: ${orphans[0]}` : `all ${fieldsSeen} text fields in the pack trace back to source blocks`, { examined: fieldsSeen, details: orphans.slice(0, 40) });
 
   // ---- G3.numerals: per question, digits and operators in the source container (our own selection) against the ledger.

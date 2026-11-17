@@ -40,7 +40,8 @@
             "pdf",
             "image",
             "office",
-            "html-print"
+            "html-print",
+            "scan"
           ]
         },
         "probes": {

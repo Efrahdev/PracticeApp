@@ -292,7 +292,7 @@ class PageDoc:
         for ci, (cx0, cx1) in enumerate(cols):
             sub = dark[:, cx0:cx1]
             rows = sub.sum(axis=1) > 0
-            gap = max(4, int(0.012 * hpx))
+            gap = max(3, int(0.004 * hpx))   # a blank strip this tall separates two units (about half a text line)
             runs, start, blank = [], None, 0
             for y, ink in enumerate(list(rows) + [False] * (gap + 1)):
                 if ink:

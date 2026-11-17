@@ -63,8 +63,8 @@ def detect_kind(data: bytes, name: str = "") -> str:
 
 # which real formats each profile kind accepts
 KIND_ACCEPTS = {"html": {"html"}, "html-json": {"html"}, "html-print": {"html"}, "docx": {"docx"},
-                "pdf": {"pdf"}, "image": {"image"}, "office": {"office", "docx"}}
-PAGE_KINDS = {"pdf", "image", "office", "html-print"}
+                "pdf": {"pdf"}, "image": {"image"}, "office": {"office", "docx"}, "scan": {"pdf", "image"}}
+PAGE_KINDS = {"pdf", "image", "office", "html-print", "scan"}
 
 
 def open_doc(kind: str, data: bytes, name: str, profile: dict, job: dict | None = None, path: Path | None = None):
@@ -72,6 +72,8 @@ def open_doc(kind: str, data: bytes, name: str, profile: dict, job: dict | None 
         from pages import PageDoc
         cfg = profile.get("pages", {})
         mode = "units" if profile["segment"]["by"].startswith("units") else "lines"
+        if kind == "scan":   # any page source read as pictures: a scanned PDF or images
+            kind = "pdf" if data.startswith(b"%PDF-") else "image"
         return PageDoc(data, name, kind, path=path, pages=(job or {}).get("sources", [{}])[0].get("pages"), columns=cfg.get("columns", 1),
                        dpi=cfg.get("dpi", 150), mode=mode)
     if kind == "html":

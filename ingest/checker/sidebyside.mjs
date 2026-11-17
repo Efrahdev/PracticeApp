@@ -20,7 +20,7 @@ const assets = run.pack.assets ?? {};
 
 // ---- left: the source
 let sourceOf;
-const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print"]);
+const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print", "scan"]);
 if (PAGE_KINDS.has(kind)) {
   // the question's region, rendered independently (Poppler for PDFs; the original image for scans/screenshots),
   // written once per page next to the page and shown through a window onto it
