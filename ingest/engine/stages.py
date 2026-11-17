@@ -33,12 +33,12 @@ def detect_kind(data: bytes) -> str:
     return "unknown"
 
 
-def open_doc(kind: str, data: bytes, name: str):
+def open_doc(kind: str, data: bytes, name: str, profile: dict):
     if kind == "html":
         return HtmlDoc(data, name)
     if kind == "html-json":
         from json_kind import JsonDoc
-        return JsonDoc(data, name)
+        return JsonDoc(data, name, profile["segment"]["arrays"])
     if kind == "docx":
         return DocxDoc(data, name)
     raise StageFail(f"source kind {kind!r} is not converted by this engine version", check="S1.kind")
@@ -224,7 +224,7 @@ def environment() -> dict:
 def convert(run_dir: Path, source: Path, profile: dict, job: dict, corrections_path: Path | None):
     """S0 to S3. Returns everything the gates and the manifest need. Raises StageFail to stop."""
     src = s0_intake(run_dir, source, profile, job)
-    doc = open_doc(profile["source"]["kind"], src["data"], src["name"])
+    doc = open_doc(profile["source"]["kind"], src["data"], src["name"], profile)
     probes = run_probes(doc, profile)
     adapter = s1_extract(run_dir, doc)
     run, questions, title = s2_segment(doc, profile, job)

@@ -144,7 +144,7 @@ def _walk(node, path=""):
 
 _SELECTOR_KEYS = {"css", "selector", "closest", "match", "num", "den", "frac", "line", "main", "note"}
 _TEMPLATE_VAR = re.compile(r"\{([a-z_][a-z0-9_]*)(?::[^}]*)?\}")
-BUILTIN_VARS = {"number", "label", "qid", "position"}
+BUILTIN_VARS = {"number", "label", "qid", "position", "array"}
 
 
 def _check_selector(sel: str, path: str, lint: Lint) -> None:

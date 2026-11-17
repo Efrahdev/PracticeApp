@@ -110,7 +110,11 @@ class HtmlInterp:
         selectors = spec["from"] if isinstance(spec["from"], list) else [spec["from"]]
         found = []
         for sel in selectors:
-            hits = [h for h in base.select(sel) if id(h) not in self.ignored]
+            every = base.select(sel)
+            hits = [h for h in every if id(h) not in self.ignored]
+            if every and not hits:
+                raise StageFail(f"{field}: {sel!r} matches only elements that ignore rule {self.ignored[id(every[0])]} throws away", locator=where,
+                                check="S2.select", hint="an ignore rule is too broad: it covers question content")
             if not hits and not spec.get("optional"):
                 raise StageFail(f"{field}: nothing matches {sel!r}", locator=where, check="S2.select",
                                 hint="mark the field optional only if the source really omits it for some questions")
