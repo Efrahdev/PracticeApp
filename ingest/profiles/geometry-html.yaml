@@ -1,0 +1,64 @@
+# Layout family: a single HTML page of <article class="q"> cards grouped in <section class="set">.
+# Each card: head (number, title, level), statement, one figure block (1-2 inline SVGs, optional caption),
+# an answer sheet (blank lines: not content) and a hidden worked solution that starts with "Final answer:".
+profile: {id: geometry-html, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: html
+  probes:
+    - {css: "section.set article.q", min: 1}
+    - {css: "article.q .solbody p.final", min: 1}
+    - {css: "article.q figure.fig svg", min: 1}
+segment:
+  by: css_container@1
+  selector: "article.q"
+  number: {from: ".qnum", regex: "^Q(\\d+)$"}
+  numbering: sequential_from_1
+vars:
+  set_letter: {closest: "section.set", from: ".sethead h2", regex: "^Set ([A-E]) — .+$", shared: true}
+  set_title: {closest: "section.set", from: ".sethead h2", regex: "^Set [A-E] — (.+)$", shared: true}
+  level: {from: ".lvl"}
+pack:
+  title: {from: "header.cover h1"}
+content:
+  engine: htmlmd@1
+  rules:
+    - {match: ".solbody h4", do: bold_line}            # section headings inside a solution
+    - {match: "figure.fig figcaption", do: italic_line}
+    - {match: "ul.calc", do: list, keep_spaces: true}   # the page shows these with white-space: pre-wrap
+  svg:
+    transform: svg_inline_page_styles@1
+    alt_attr: aria-label
+    extra_css: '.geo{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}'
+    extra_css_reason: "figures inherit the page font from <body>; a packaged figure has no page around it"
+parts:
+  # multi-part questions list "(a) ...<br>(b) ..." in the last paragraph of the statement
+  from: ".stmt > p:last-child"
+  split: br
+  labels: from_regex
+  label: "^\\(([a-z])\\)\\s+"
+  optional: true
+fields:
+  id: {attr: id}
+  title: {from: ".qtitle"}
+  stem: {from: [".stmt", "figure.fig"], as: markdown}
+  answer:
+    - {from: ".solbody p.final", as: markdown, when: no_parts, classify: number_unit_else_open@1, units: ["cm²", "m²", "cm", "m"]}
+    - {from: ".solbody p.final", as: markdown, when: has_parts, split_by_part_labels: "({label})"}
+  solution.answer: {from: ".solbody p.final", as: markdown, when: no_parts, shared: true}
+  solution.explanation: {from: ".solbody", exclude: ["p.final"], as: markdown}
+  topics:
+    - {template: "Geometry > {set_title}"}
+  difficulty: {var: level, map: difficulty}
+  fields.Set: {template: "Set {set_letter}"}
+  fields.Source difficulty: {var: level}
+  source.id: {attr: id}
+  source.set: {var: set_letter}
+ignore:
+  - {css: ".solbody p.final > strong", expect: "Final answer:", reason: "label of the final-answer line", max_blocks: 100, max_tokens: 200}
+  - {css: "article.q .answer", reason: "blank answer sheet: Answer/Units lines, working box, attempted checkbox", max_blocks: 540, max_tokens: 1200}
+  - {css: "details.sol > summary", expect: "Reveal answer and full solution", reason: "button that opens the solution", max_blocks: 100, max_tokens: 500}
+  - {css: "header.cover > :not(h1)", reason: "cover page: subtitle, name/date boxes, instructions, toolkit, topic index and question links (teaching text and page chrome, not questions)", max_blocks: 220, max_tokens: 900}
+  - {css: ".toolbar", reason: "print/show buttons and progress counter", max_blocks: 8, max_tokens: 30}
+  - {css: ".sethead > p", reason: "one-line description under each set heading (not part of any question)", max_blocks: 5, max_tokens: 150}
+  - {css: "p.foot", reason: "end-of-paper footer line", max_blocks: 1, max_tokens: 40}
+answers: {expected: true}

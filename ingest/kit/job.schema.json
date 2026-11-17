@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ingestion job (one paper). Unknown keys are rejected.",
+  "type": "object",
+  "properties": {
+    "job": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "profile": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "integer"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "profile"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "paper"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "file",
+          "role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "expect": {
+      "type": "object",
+      "properties": {
+        "questions": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "assets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "types": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "questions",
+        "assets"
+      ],
+      "additionalProperties": false
+    },
+    "pack": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "difficulty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fields": {
+          "type": "object"
+        },
+        "solutions_origin": {
+          "enum": [
+            "source",
+            "ai",
+            "teacher"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "subject"
+      ],
+      "additionalProperties": false
+    },
+    "mappings": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stem_starts": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stem_contains": {
+            "type": "string",
+            "minLength": 1
+          },
+          "answer": {},
+          "answer_contains": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parts": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sum": {
+            "type": "string",
+            "minLength": 1
+          },
+          "equals": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "import": {
+      "type": "object",
+      "properties": {
+        "mapping": {
+          "type": "object"
+        },
+        "expect": {
+          "type": "object",
+          "properties": {
+            "new": {
+              "type": "integer"
+            },
+            "new_versions": {
+              "type": "integer"
+            },
+            "duplicates": {
+              "type": "integer"
+            },
+            "rejected": {
+              "type": "integer"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "answers_verified_target": {
+          "enum": [
+            "none",
+            "sampled",
+            "full"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "job",
+    "sources",
+    "expect",
+    "pack",
+    "assertions"
+  ],
+  "additionalProperties": false
+}
