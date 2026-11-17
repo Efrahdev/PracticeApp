@@ -1,6 +1,6 @@
 # Ingestion output - notes for reviewer
 
-43 packs, 2,639 questions (42 packs / 2,539 questions are already live on Cloudflare; the Geometry pack below is built and checked but NOT yet imported). All pass the app's own validator (`tools/ingest/validate.mjs`). Not yet imported to Cloudflare.
+43 packs, 2,639 questions (42 packs / 2,539 questions are already live on Cloudflare; the Geometry pack below was imported on 2026-11-17 after review: 100 new, live integrity check 0 errors). All pass the app's own validator (`tools/ingest/validate.mjs`). Not yet imported to Cloudflare.
 Each PDF pack folder has `report.html` (original crop beside the rebuilt question).
 
 ## Independent audit (re-run: `bash tools/ingest/audit/run_all.sh` from the repo root)
@@ -37,7 +37,7 @@ All answers of affected questions were re-verified (key + own working).
 - APOS Decimals Q25-Q33 (pages 36-37): the PDF contains stray markup such as `over 10">` / `over 1,000">` inside the fraction expressions (29 occurrences). The picture shows exactly what is printed.
 
 
-## Geometry Olympiad Achiever Lab 2 (Q101-200) - built, not yet imported
+## Geometry Olympiad Achiever Lab 2 (Q101-200) - LIVE (imported 2026-11-17)
 `ingest-out/geometry/geometry-olympiad-achiever-lab-2-q101-200.zip` (new id, so importing it only adds; nothing existing is touched).
 Converter: `tools/ingest/geometrypack.py`. 100 questions, 100 diagrams, 100 full worked solutions; validator OK.
 - Checked against the source HTML by an independent parser (`tools/ingest/audit/check_geometry.py`): all 100 question statements, final answers, full solution texts, SVG geometry, set membership and answer-part counts match; every set has 4 Achiever + 6 Advanced Achiever + 10 Challenge as the book says.
@@ -53,3 +53,8 @@ Converter: `tools/ingest/geometrypack.py`. 100 questions, 100 diagrams, 100 full
 
 ## FLAGGED (under 70% confidence)
 None.
+
+### Geometry review before import (2026-11-17)
+- Fidelity re-checked: 100/100 statements, answers, solutions, diagrams match the source.
+- Correctness: every number in 98 final answers appears in its worked solution; Q111 and Q120 (examples, not results) were worked by hand and are correct; all 9 auto-marked numeric keys were solved independently and are correct.
+- Live after import: 100 new questions, keys 40/42/44/48/64/96/117/144/150 cm|cm² stored, levels 20/30/50, app integrity check 0 errors.
