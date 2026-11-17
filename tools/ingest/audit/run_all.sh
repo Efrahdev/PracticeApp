@@ -3,7 +3,8 @@
 # Each check re-reads the source with its own simple parser (not the ingester's code).
 set -u
 d="$(dirname "$0")"
-for s in structural sof_keys grid_keys leaks english check_fractions_html pdftext completeness apos_geom apos_slice; do
+for s in structural sof_keys grid_keys leaks english check_fractions_html pdftext completeness apos_geom apos_slice check_geometry; do
   echo "================ $s"; python3 "$d/$s.py" 2>&1 | grep -v -i "warn"
 done
+echo "================ geometry diagram styles (needs playwright)"; NODE_PATH="$(npm root -g 2>/dev/null)" node "$d/geometry_styles.js" "$PWD/Geometry_Olympiad_Achiever_Lab_2_Q101-200.html" ingest-out/geometry/geometry-olympiad-achiever-lab-2-q101-200/pack.json 2>&1 | tail -3
 echo "================ app validator"; node tools/ingest/validate.mjs ingest-out/*/*.zip 2>&1 | grep -E "^RESULT" | sort | uniq -c

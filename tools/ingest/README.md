@@ -48,6 +48,8 @@ Import through the app's Import page (upload the zip) or with `import.mjs`.
 | `prepositionpack.py` | "Diagnostic Assessment" PDF (numbered questions + "Answer Key and Reasoning") | `python3 -I tools/ingest/prepositionpack.py <paper.pdf> <out>` |
 | `workbookpack.py` | Workbook PDF, 1-3 columns, no options, no key | `python3 -I tools/ingest/workbookpack.py profiles/<book>.json <book.pdf> <out>` |
 
+| `geometrypack.py` | "Geometry Olympiad" HTML (articles with SVG figures, answer lines, hidden solution) | `python3 -I tools/ingest/geometrypack.py <book.html> <out>` |
+
 `tensepack.py` takes optional `--id <pack-id> --title <title>` when several papers share one PDF title.
 
 `workbookpack.py`: each question is cut out as an exact picture. A crop holds every printed object whose
@@ -73,3 +75,9 @@ and answers printed as "Sol. (B)" or on the "Sol:" row are read.
 ## Audit
 
 `bash tools/ingest/audit/run_all.sh` re-checks every pack in `ingest-out/` against its source with independent parsers.
+
+## geometrypack.py notes
+
+- Diagrams are inline SVGs styled by the page's CSS. The app shows figures as stand-alone images, so the CSS rules each diagram uses are copied into the SVG (checked: every element of all 100 diagrams has the same computed style as on the page).
+- The book's levels are Achiever < Advanced Achiever < Challenge. The app's are Foundation < Challenge < Achiever, so they are mapped by rank (Achiever -> Foundation, Advanced Achiever -> Challenge, Challenge -> Achiever); the printed level is kept in the field "Printed level".
+- One answer line + a bare number and unit as the final answer -> numeric (the app can mark it). Everything else is "open": the printed final answer is kept (the app shows it at the top of the solution).
