@@ -1,0 +1,16 @@
+# Golden oracle (spec 12.2): every difference between the engine's pack and the pack made earlier by the
+# hand-written converters (ingest/packs/*.json) must be listed here with a reason. An unlisted difference fails.
+# `match` is a piece of the oracle's difference line. Where the old converter was wrong, say so: it is a finding.
+- pack: class5-critical-thinking-calendar-sums
+  match: "pack header"
+  reason: >-
+    FINDING (old converter wrong): the title in the Word file is "Class␣5 – Critical‑Thinking Calendar Sums" with a
+    no-break space (U+00A0) after "Class". The old converter's title was typed by hand with an ordinary
+    space; the engine reads it from the document. The questions are identical.
+- pack: geometry-olympiad-achiever-100
+  match: "added <style> block differs"
+  reason: >-
+    The drawings are byte-identical. The added <style> block now also carries the page rule
+    "svg.geo{display:block;max-width:100%;height:auto;overflow:visible}" and keeps the page's own rule order (the
+    old converter sorted rules by class name, which can change the cascade). G4.svg renders all 102 figures the
+    same as the source page (worst difference 2.56 of a threshold of 10).

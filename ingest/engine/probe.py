@@ -29,17 +29,26 @@ def _sig(el: Tag) -> str:
     return el.name + "".join("." + c for c in sorted(el.get("class") or []))
 
 
-def _skeleton(el: Tag, depth: int = 5) -> str:
-    if depth == 0:
+STRUCTURAL = {"ol", "ul", "table", "figure", "figcaption", "svg", "img", "details", "summary", "section", "header", "footer", "aside",
+              "h1", "h2", "h3", "h4", "h5", "h6", "math", "canvas", "iframe", "video", "audio", "blockquote", "pre", "dl"}
+
+
+def _skeleton(el: Tag, depth: int = 4) -> str:
+    """The structure that a profile has to handle: named parts (elements with a class) and structural
+    elements, as an unordered set at each level. Ordinary text markup (p, li, strong ...) and how many times a
+    child repeats do not make a new shape."""
+    if depth == 0 or el.name == "svg":
         return _sig(el)
-    kids = [c for c in el.children if isinstance(c, Tag) and c.name not in ("br",)]
-    inner, last = [], None
-    for k in kids:   # collapse runs of the same child shape, so 3 list items and 5 list items are one shape
-        s = _skeleton(k, depth - 1)
-        if s != last:
-            inner.append(s)
-        last = s
-    return _sig(el) + ("(" + ",".join(inner) + ")" if inner else "")
+    inner = set()
+    for k in el.children:
+        if isinstance(k, Tag) and (k.get("class") or k.name in STRUCTURAL):
+            inner.add(_skeleton(k, depth - 1))
+        elif isinstance(k, Tag):
+            for d in k.find_all(True):   # look through plain wrappers for named or structural parts
+                if d.get("class") or d.name in STRUCTURAL:
+                    if not any(p is not k and (p.get("class") or p.name in STRUCTURAL) for p in d.parents if p is not None and p in k.descendants):
+                        inner.add(_skeleton(d, depth - 1))
+    return _sig(el) + ("(" + ",".join(sorted(inner)) + ")" if inner else "")
 
 
 def _clip_markup(el: Tag, limit: int = 3500) -> str:
@@ -78,22 +87,27 @@ def probe_html(data: bytes, name: str) -> dict:
                            "has_id": sum(1 for e in els if e.get("id")), "data_attrs": sorted({a for e in els for a in e.attrs if a.startswith("data-")})})
     candidates.sort(key=lambda c: (-c["count"] * min(c["avg_words"], 400), c["selector"]))
     out["repeated_containers"] = candidates[:12]
-    census = []
-    for cand in candidates[:3]:
+    census, covered = [], set()
+    for cand in candidates:
+        if len(census) == 2:
+            break
         els = groups[cand["selector"]]
+        if any(id(e) in covered for e in els):   # nested inside an earlier candidate: already described there
+            continue
+        covered.update(id(d) for e in els for d in e.descendants)
         clusters: dict[str, list[Tag]] = {}
         for e in els:
             clusters.setdefault(hashlib.sha256(_skeleton(e).encode()).hexdigest()[:10], []).append(e)
         rows = [{"shape": h, "count": len(v), "rare": len(v) <= 3, "example": locator_of(v[0]), "skeleton": _skeleton(v[0])[:600]}
                 for h, v in sorted(clusters.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
-        inner = Counter()
+        inner = Counter()   # in how many containers each named part appears: "96/140" means optional
         for e in els:
-            for d in e.find_all(True):
-                inner[_sig(d)] += 1
+            for sig_ in {_sig(d) for d in e.find_all(True) if d.get("class") or d.name in STRUCTURAL}:
+                inner[sig_] += 1
         samples = {"first": els[0], "middle": els[len(els) // 2], "last": els[-1]}
-        rare = [v[0] for v in clusters.values() if len(v) <= 3][:4]
+        rare = [v[0] for v in clusters.values() if len(v) <= 3][:3]
         census.append({"container": cand["selector"], "instances": len(els), "shapes": len(rows), "clusters": rows[:25],
-                       "inner_elements": dict(inner.most_common(45)),
+                       "inner_elements": {k: f"{v}/{len(els)}" for k, v in inner.most_common(60)},
                        "samples": {k: _clip_markup(v) for k, v in samples.items()},
                        "rare_shape_samples": [{"locator": locator_of(e), "markup": _clip_markup(e, 2500)} for e in rare]})
     out["shape_census"] = census
@@ -220,7 +234,7 @@ def rendered_diff(path: Path) -> dict:
     with a note when the browser is not available."""
     env = dict(os.environ, NODE_PATH=str(INGEST.parent / "node_modules") + os.pathsep + "/opt/node-tools/node_modules")
     try:
-        p = subprocess.run(["node", str(INGEST / "checker" / "rendered.mjs"), str(path)], capture_output=True, text=True, timeout=180, env=env, cwd=str(INGEST.parent))
+        p = subprocess.run(["node", str(INGEST / "checker" / "rendered.mjs"), str(path.resolve())], capture_output=True, text=True, timeout=180, env=env, cwd=str(INGEST.parent))
         if p.returncode != 0:
             return {"skipped": (p.stderr or p.stdout).strip()[-300:]}
         return json.loads(p.stdout)
@@ -260,8 +274,11 @@ def _md(report: dict) -> str:
         for cen in report["shape_census"]:
             L += ["", f"### Shape census of `{cen['container']}` ({cen['instances']} instances, {cen['shapes']} distinct shapes)", "",
                   "Each shape is a distinct tag-and-class skeleton. **Rare shapes (3 or fewer) are where profiles break: handle each one.**", "", "| shape | count | rare | example | skeleton |", "| --- | ---: | --- | --- | --- |"]
-            L += [f"| {r['shape']} | {r['count']} | {'RARE' if r['rare'] else ''} | `{r['example']}` | `{r['skeleton'][:260]}` |" for r in cen["clusters"]]
-            L += ["", f"Elements found inside these containers (tag.class: count): `{j(cen['inner_elements'])}`"]
+            L += [f"| {r['shape']} | {r['count']} | {'RARE' if r['rare'] else ''} | `{r['example']}` | `{r['skeleton'][:260]}` |" for r in cen["clusters"][:15]]
+            if len(cen["clusters"]) > 15:
+                L.append(f"| … | {sum(r['count'] for r in cen['clusters'][15:])} | | {len(cen['clusters']) - 15} more shapes | |")
+            L += ["", "Named and structural parts found inside these containers, as *in how many containers it appears / total* "
+                  "(less than total means the part is optional and the profile must cope when it is missing):", "", f"`{j(cen['inner_elements'])}`"]
             for label, markup in cen["samples"].items():
                 L += ["", f"**Verbatim markup, {label} instance:**", "", "```html", markup, "```"]
             for r in cen["rare_shape_samples"]:

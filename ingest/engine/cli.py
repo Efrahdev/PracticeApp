@@ -3,8 +3,9 @@
   ingest probe FILE... [--out DIR]            facts about a source, for the profiling AI (read-only)
   ingest brief FILE... [--out FILE]           the paste-ready profiling brief: prompt + schema + probe report
   ingest lint PROFILE [JOB]                   check an AI-written profile (and job) without running it
-  ingest try PROFILE JOB [--out DIR]          run S0-S3 in a scratch folder and show the result beside the source
-  ingest run PROFILE JOB [--corrections F]    the corridor: S0-S5, always stops at Gate B
+  ingest try PROFILE [JOB] [--source F]       run S0-S3 in a scratch folder and show the result beside the source
+  ingest run PROFILE [JOB] [--source F]       the corridor: S0-S5, always stops at Gate B
+                                              (PROFILE may hold the profile, '---', then the job: the AI's reply as one file)
   ingest status RUN_DIR                       what a run did
   ingest approve-check RUN_DIR                validate approval.json against the run (Gate B)
   ingest oracle RUN_DIR OLD_PACK.json         compare a run's pack with an existing pack
@@ -73,7 +74,13 @@ def cmd_lint(args) -> int:
     return EXIT_FAIL if errors else EXIT_PASS
 
 
-def resolve_source(job: dict, job_file: Path) -> Path:
+def resolve_source(job: dict, job_file: Path, override: str | None = None) -> Path:
+    """The raw input: --source wins (the usual handover: AI reply + raw file), else the job's own path."""
+    if override:
+        src = Path(override).resolve()
+        if not src.exists():
+            raise UsageError(f"--source file not found: {src}")
+        return src
     src = (job_file.parent / job["sources"][0]["file"]).resolve()
     if not src.exists():
         raise UsageError(f"job source not found: {src}")
@@ -86,7 +93,7 @@ def cmd_try(args) -> int:
     if errors or job is None:
         print("\n".join(lines + ["lint failed (or no job given): nothing was run."]))
         return EXIT_FAIL if errors else EXIT_USAGE
-    return runner.try_profile(args, profile, job, psha, jsha, resolve_source(job, job_file), lines)
+    return runner.try_profile(args, profile, job, psha, jsha, resolve_source(job, job_file, args.source), lines)
 
 
 def cmd_run(args) -> int:
@@ -96,7 +103,7 @@ def cmd_run(args) -> int:
         print("\n".join(lines + ["lint failed (or no job given): nothing was run."]))
         return EXIT_FAIL if errors else EXIT_USAGE
     corrections = Path(args.corrections) if args.corrections else None
-    return runner.run(args, profile, job, psha, jsha, resolve_source(job, job_file), corrections, Path(args.profile), job_file)
+    return runner.run(args, profile, job, psha, jsha, resolve_source(job, job_file, args.source), corrections, Path(args.profile), job_file)
 
 
 def cmd_probe(args) -> int:
@@ -147,10 +154,12 @@ def main(argv=None) -> int:
     p.add_argument("profile")
     p.add_argument("job", nargs="?")
     p.add_argument("--out")
+    p.add_argument("--source", help="the raw input file (overrides the path in the job)")
     p = add("run", cmd_run, "run the corridor S0-S5 and stop at Gate B")
     p.add_argument("profile")
     p.add_argument("job", nargs="?")
     p.add_argument("--corrections")
+    p.add_argument("--source", help="the raw input file (overrides the path in the job)")
     p.add_argument("--runs-dir", default=str(INGEST / "runs"))
     p = add("status", cmd_status, "summarise a run folder")
     p.add_argument("run_dir")

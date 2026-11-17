@@ -1,0 +1,16 @@
+job:
+  id: advanced-critical-thinking-math-worksheet
+  profile: {id: docx-numbered, version: 1}
+sources:
+  - {file: "../../advanced_critical_thinking_math_worksheet.docx", role: paper}
+expect: {questions: 20, assets: 0}
+pack:
+  id: advanced-critical-thinking-math-worksheet
+  source: advanced_critical_thinking_math_worksheet.docx
+  subject: Maths
+  topics: ["Critical Thinking > Multi-step Word Problems"]
+assertions:
+  - {question: "1", stem_starts: "A gardener needed to build a fence"}
+import:
+  expect: {new: 20, new_versions: 0, duplicates: 0, rejected: 0}
+review: {answers_verified_target: none}

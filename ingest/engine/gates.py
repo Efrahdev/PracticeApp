@@ -132,6 +132,9 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
 
     by_number = {q["number"]: q for q in qs}
     failed = []
+    # assertions are typed by a person from the printed page: any run of Unicode spaces counts as one space
+    # (a declared relaxation; G3 still compares the source strictly)
+    ws = lambda t: re.sub(r"\s+", " ", t, flags=re.U).strip() if isinstance(t, str) else t   # noqa: E731
     for a in job["assertions"]:
         q = by_number.get(a["question"])
         if q is None:
@@ -140,13 +143,14 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
         stem = q.get("stem", "")
         answer = q.get("answer")
         answer_text = json.dumps(answer, ensure_ascii=False) + json.dumps(q.get("solution"), ensure_ascii=False)
-        if "stem_starts" in a and not stem.startswith(a["stem_starts"]):
+        stem, answer_text = ws(stem), ws(answer_text)
+        if "stem_starts" in a and not stem.startswith(ws(a["stem_starts"])):
             failed.append(f"Q{a['question']} stem starts {stem[:40]!r}, not {a['stem_starts']!r}")
-        if "stem_contains" in a and a["stem_contains"] not in stem:
+        if "stem_contains" in a and ws(a["stem_contains"]) not in stem:
             failed.append(f"Q{a['question']} stem lacks {a['stem_contains']!r}")
         if "answer" in a and answer != a["answer"]:
             failed.append(f"Q{a['question']} answer is {answer!r}, not {a['answer']!r}")
-        if "answer_contains" in a and a["answer_contains"] not in answer_text:
+        if "answer_contains" in a and ws(a["answer_contains"]) not in answer_text:
             failed.append(f"Q{a['question']} answer lacks {a['answer_contains']!r}")
         if "parts" in a and len(q.get("parts") or []) != a["parts"]:
             failed.append(f"Q{a['question']} has {len(q.get('parts') or [])} parts, not {a['parts']}")

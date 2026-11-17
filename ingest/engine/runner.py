@@ -235,9 +235,10 @@ def oracle(args) -> int:
     old = read_json(Path(args.old_pack))
 
     def canon(pack):
-        assets = pack.get("assets", {})
+        # figures are matched by their drawing (the bytes without the added <style> block), not by their names
+        assets = {k: sha256_obj(re.sub(r"<style>.*?</style>", "", v["data"], flags=re.S)) for k, v in pack.get("assets", {}).items()}
         text = json.dumps(pack["questions"], ensure_ascii=False, sort_keys=True)
-        qs = json.loads(re.sub(r"asset:([^)\s\"\\]+)", lambda m: "asset:#" + str(sorted(assets).index(m.group(1))) if m.group(1) in assets else m.group(0), text))
+        qs = json.loads(re.sub(r"asset:([^)\s\"\\]+)", lambda m: "asset:" + assets[m.group(1)][:16] if m.group(1) in assets else m.group(0), text))
         for q in qs:
             q.get("source", {}).pop("locator", None)
         return qs
@@ -260,7 +261,17 @@ def oracle(args) -> int:
         asset_note = f"figures: {len(na)} vs {len(oa)}; drawing markup {'identical' if same_drawing else 'DIFFERENT'}; added <style> block {'identical' if same_bytes else 'differs (see oracle-diffs.yaml)'}"
         if not same_drawing or len(na) != len(oa):
             diffs.append(asset_note)
-    out = {"questions_compared": min(len(a), len(b)), "differences": diffs, "figures": asset_note}
+    if asset_note and "differs" in asset_note and asset_note not in diffs:
+        diffs.append(asset_note)
+    import yaml
+    listed = yaml.safe_load((INGEST / "oracle-diffs.yaml").read_text(encoding="utf-8")) or [] if (INGEST / "oracle-diffs.yaml").exists() else []
+    pid = new["pack"]["id"]
+    explained, unexplained = [], []
+    for d in diffs:
+        why = next((e["reason"] for e in listed if e["pack"] == pid and e["match"] in d), None)
+        (explained if why else unexplained).append({"difference": d, "reason": why} if why else d)
+    out = {"questions_compared": min(len(a), len(b)), "explained": explained, "unexplained": unexplained, "figures": asset_note}
     print(json.dumps(out, indent=2, ensure_ascii=False) if args.json else
-          "\n".join([f"compared {out['questions_compared']} questions: {len(diffs)} difference(s)"] + diffs[:30] + ([asset_note] if asset_note else [])))
-    return EXIT_FAIL if diffs else EXIT_PASS
+          "\n".join([f"compared {out['questions_compared']} questions: {len(unexplained)} unexplained difference(s), {len(explained)} explained in oracle-diffs.yaml"]
+                    + unexplained[:30] + [f"  explained: {e['difference'][:120]}" for e in explained]))
+    return EXIT_FAIL if unexplained else EXIT_PASS

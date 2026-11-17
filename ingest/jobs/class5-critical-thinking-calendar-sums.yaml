@@ -1,0 +1,18 @@
+job:
+  id: class5-critical-thinking-calendar-sums
+  profile: {id: docx-numbered, version: 1}
+sources:
+  - {file: "../../Class_5_Critical_Thinking_Calendar_Sums.docx", role: paper}
+expect: {questions: 20, assets: 0}
+pack:
+  id: class5-critical-thinking-calendar-sums
+  source: Class_5_Critical_Thinking_Calendar_Sums.docx
+  subject: Maths
+  topics: ["Critical Thinking > Calendar and Dates"]
+  fields: {Class: 5}
+assertions:
+  - {question: "1", stem_starts: "If 1st March is a Tuesday"}
+  - {question: "2", stem_contains: "(a leap year)"}
+import:
+  expect: {new: 20, new_versions: 0, duplicates: 0, rejected: 0}
+review: {answers_verified_target: none}
