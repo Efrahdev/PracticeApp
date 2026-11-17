@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20261114.1",
+    "acorn": "^8.19.0",
     "ajv": "^8.20.0",
+    "cheerio": "^1.2.0",
     "esbuild": "^0.28.2",
     "typescript": "^7.0.2",
     "vitest": "^5.1.0",
@@ -25,6 +27,7 @@
     "test": "vitest run",
     "db:migrate:local": "wrangler d1 migrations apply practice-app-db --local",
     "db:migrate:remote": "node scripts/migrate-remote.mjs",
-    "deploy": "node scripts/build.mjs && wrangler deploy"
+    "deploy": "node scripts/build.mjs && wrangler deploy",
+    "ingest:test": "python3 -I ingest/tests/run_tests.py"
   }
 }

@@ -1,0 +1,33 @@
+# Layout family: a text PDF of numbered questions ("Q1." at the start of a line), options "(A) ... (D)" on
+# their own lines or several on one line, section headings ("Section A — Title") with a short introduction,
+# and an answer section ("Answer Key ...") whose entries repeat each question and give "Correct answer: ...".
+profile: {id: pdf-numbered-questions, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: pdf
+  probes:
+    - {regex: "^Q\\d+\\.\\s", min: 2}
+    - {text_pages: true, min: 1}
+pages: {columns: 1, dpi: 150}
+segment:
+  by: lines@1
+  start: "^Q(\\d+)\\.\\s"
+  heading: "^Section ([0-9A-Z]) — (.+)$"
+  end: "^Answer Key"
+  numbering: sequential_from_1
+display: auto            # the words as text; a picture of the region when a question has a figure or unreliable text
+options: {label: "\\(([A-H])\\)\\s"}
+answers:
+  expected: true
+  section: {entry: "^Q(\\d+)\\.\\s", answer: "^Correct answer:\\s*(.+)$",
+            answer_until: "^(Why|Distractor analysis|Principle|Intuition hook|Difficulty):"}
+fields:
+  id: {template: "q{number}"}
+  topics:
+    - {template: "Grammar > Verb Tenses > {heading_2}"}
+  fields.Section: {template: "Section {heading_1}"}
+  fields.Task type: {from: question_text, regex: "^Q\\d+\\.\\s*\\[([^\\]]+)\\]", optional: true}
+ignore:
+  - {pages: "1-3", reason: "cover page, instructions and contents", max_blocks: 120, max_tokens: 1200}
+  - {regex: "^Page \\d+$", reason: "page number footer", max_blocks: 100, max_tokens: 200}
+  - {regex: "^Question Paper$", reason: "title line above the first question", max_blocks: 1, max_tokens: 2}
+  - {pages: "93-95", reason: "teacher's interpretation guide and remediation plan after the answers (not questions)", max_blocks: 150, max_tokens: 2000}

@@ -1,0 +1,17 @@
+job:
+  id: equally-spaced-objects-word-problems
+  profile: {id: docx-numbered, version: 1}
+sources:
+  - {file: "../../Equally_Spaced_Objects_Word_Problems.docx", role: paper}
+expect: {questions: 20, assets: 0}
+pack:
+  id: equally-spaced-objects-word-problems
+  source: Equally_Spaced_Objects_Word_Problems.docx
+  subject: Maths
+  topics: ["Mathematical Reasoning > Equally Spaced Objects"]
+assertions:
+  - {question: "1", stem_starts: "6 trees are placed at equal distances"}
+  - {question: "3", stem_contains: "benchs"}
+import:
+  expect: {new: 20, new_versions: 0, duplicates: 0, rejected: 0}
+review: {answers_verified_target: none}

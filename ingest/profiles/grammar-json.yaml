@@ -1,0 +1,67 @@
+# Layout family: an interactive HTML page that keeps every question as an object in JavaScript arrays and draws
+# them with script. The data arrays are the source of truth; the page shell around them is not question content.
+# Each object: id, section, topic, subtopic, difficulty, format, type (single | multi | input | open), prompt,
+# options [{value, label}], answer, explanation {correct, rule, why, wrong, trap, nuance, transfer, remember}, tags.
+profile: {id: grammar-json, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: html-json
+  probes:
+    - {array: NOUN_QUESTIONS, min: 1}
+    - {array: PRONOUN_QUESTIONS, min: 1}
+    - {array: ADJECTIVE_QUESTIONS, min: 1}
+    - {array: FINAL_QUESTIONS, min: 1}
+segment:
+  by: json_array@1
+  arrays: [NOUN_QUESTIONS, PRONOUN_QUESTIONS, ADJECTIVE_QUESTIONS, FINAL_QUESTIONS]
+  # the page shows questions section by section, in this order; ids q001.. must then run 1..N
+  order_by:
+    key: section
+    values: ["Plural Rules", "Countability", "Quantifiers", "Personal Pronouns", "Reflexives", "Possessives & Other Pronouns", "Adjectives & Determiners", "Error Lab", "Final Mixed Challenge"]
+  number: {key: id, regex: "^q0*([1-9]\\d*)$"}
+  numbering: sequential_from_1
+vars:
+  group: {var: array, map: {NOUN_QUESTIONS: "Nouns", PRONOUN_QUESTIONS: "Pronouns", ADJECTIVE_QUESTIONS: "Adjectives and Determiners", FINAL_QUESTIONS: "Final Mixed Challenge"}}
+  section: {key: section, as: raw}
+  topic: {key: topic, as: raw}
+fields:
+  id: {key: id, as: raw}
+  type: {key: type, map: {single: mcq_single, multi: mcq_multi, input: short_answer, open: open}}
+  stem: {key: prompt, as: markdown_text, newline: hard_break}   # the page shows prompts with white-space: pre-line
+  options: {key: options, list_of: [label, value], as: markdown_text}
+  answer:
+    by_type:
+      mcq_single: {key: answer, option_letter: true}
+      mcq_multi: {key: answer, option_letter: true, sort: true}
+      short_answer: {key: answer, as: raw}          # accepted answers, compared as typed
+      open: {key: answer, as: markdown_text}
+  solution.answer:
+    by_type:
+      open: {key: answer, as: markdown_text, shared: true}
+      default: {key: explanation.correct, as: markdown_text}
+  solution.explanation:
+    compose:
+      - {when_type: open, label: "**Correct answer / model answer:** ", key: explanation.correct}
+      - {label: "**Core rule:** ", key: explanation.rule, required: true}
+      - {label: "**Why it works here:** ", key: explanation.why, required: true}
+      - {label: "**Why the tempting answer fails:** ", key: explanation.wrong, required: true}
+      - {label: "**Exam trap:** ", key: explanation.trap, required: true}
+      - {label: "**Nuance / exception:** ", key: explanation.nuance, required: true}
+      - {label: "**Transfer example:** ", key: explanation.transfer, required: true}
+      - {label: "**Remember this:** ", key: explanation.remember, required: true}
+    join: "\n\n"
+  topics:
+    - {template: "Grammar > {group} > {section} > {topic}", when_key: {key: section, not_equals: "Final Mixed Challenge"}}
+    - {template: "Grammar > {group} > {section}", when_key: {key: section, equals: "Final Mixed Challenge"}}
+  difficulty: {key: difficulty, map: difficulty}
+  fields.Source difficulty: {key: difficulty, as: raw}
+  fields.Section: {key: section, as: raw}
+  fields.Skill focus: {key: subtopic, as: raw}
+  fields.Task type: {key: format, as: raw}
+  source.id: {key: id, as: raw}
+  source.array: {var: array}
+  tags:
+    - {key: tags.rule, as: raw, optional: true}
+    - {key: tags.trap, as: raw, optional: true}
+ignore:
+  - {dom: all, reason: "page shell (headings, buttons, review sheets drawn around the data); questions are read from the data arrays", max_blocks: 400, max_tokens: 6000}
+answers: {expected: true}

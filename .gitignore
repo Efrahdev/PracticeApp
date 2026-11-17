@@ -11,3 +11,7 @@ public/fonts/
 
 # Python bytecode from ingest scripts
 __pycache__/
+
+# ingestion pipeline: run folders and trials hold copies of the sources
+ingest/runs/
+ingest/scratch/

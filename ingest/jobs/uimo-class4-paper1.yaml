@@ -1,0 +1,17 @@
+job:
+  id: uimo-class4-paper1
+  profile: {id: pdf-olympiad-inline-solutions, version: 1}
+sources:
+  - {file: "../../UIMO_CLASS-4_Past-8-Papers_Reduced-Size-elbirm.pdf", role: paper, pages: "2-23"}
+expect: {questions: 50}
+# the PDF draws an extra glyph over "25" in Q33 that the two PDF libraries read differently: show it as a picture
+pictures: ["33"]
+pack:
+  id: uimo-class4-paper1
+  title: "UIMO Class 4 — Past Paper 1"
+  subject: Maths
+  solutions_origin: source
+assertions:
+  - {question: "1", stem_starts: "Find the missing number in the box.", answer: "B"}
+  - {question: "5", answer: "C"}
+review: {answers_verified_target: sampled}

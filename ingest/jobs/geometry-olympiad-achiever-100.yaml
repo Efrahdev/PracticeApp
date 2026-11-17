@@ -1,0 +1,24 @@
+job:
+  id: geometry-olympiad-achiever-100
+  profile: {id: geometry-html, version: 1}
+sources:
+  - {file: "../../Geometry_Olympiad_Achiever_100_Questions.html", role: paper}
+expect:
+  questions: 100
+  assets: 102
+  parts: 151
+  types: {multi_part: 69, numeric: 21, open: 10}
+pack:
+  id: geometry-olympiad-achiever-100
+  subject: Maths
+  topics: ["Geometry"]
+  solutions_origin: source
+mappings:
+  # printed level -> library difficulty label
+  difficulty: {"Achiever": "Achiever", "Advanced Achiever": "Achiever", "Challenge": "Challenge"}
+assertions:
+  - {question: "1", stem_starts: "A rectangle measures 9", answer: {value: 49, unit: "cm²"}, type: numeric}
+  - {question: "33", parts: 3}
+import:
+  expect: {new: 100, new_versions: 0, duplicates: 0, rejected: 0}
+review: {answers_verified_target: sampled}

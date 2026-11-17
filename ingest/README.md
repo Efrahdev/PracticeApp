@@ -1,59 +1,146 @@
-# Ingestion of the 7 papers (convert → review → live)
+# Document ingestion pipeline
 
-Pipeline agreed for the 7 papers added in commit `dcd4873`:
+Turns **any source paper** into a **checked question pack** for the practice app, with no AI in the conversion. An AI model is used once, at the start, to describe the layout (the *profile*); after that a
+deterministic program converts the paper and proves, check by check, that nothing was lost, changed or invented.
 
-| Step | Who | What | Status |
-| --- | --- | --- | --- |
-| 1. Convert | Sonnet (high) | Turn each source into a **question pack** (`practice-app/question-pack@1`, see [`docs/question-format.md`](../docs/question-format.md)) with deterministic, re-runnable converters; validate with the app's own reader | **done** — packs in [`packs/`](packs/) |
-| 2. Review | Opus (high) | Check every pack against the original source for fidelity | **done** — 3 deltas found and fixed, now 0 differences (see [`REPORT.md`](REPORT.md)) |
-| 3. Ingest | Opus | Import the reviewed packs into the live Cloudflare library | **done 2026-11-16** — 500 new questions (library 2,536 → 3,036); every question read back and matched exactly ([`verify_live.mjs`](verify_live.mjs)); restore points in [`live-import-log.json`](live-import-log.json) |
-
-## Why converters instead of retyping
-
-The sources are machine-generated (HTML pages with regular markup, a page whose questions are a JS array, Word files with plain numbered
-paragraphs), so each pack is produced by a script that reads the source structure. No question text passes through a model's
-memory, which removes transcription errors. Each converter asserts the structure it expects (counts, numbering 1..N, matching labels)
-and stops with an error rather than guessing.
-
-| Source | Converter | Questions |
-| --- | --- | --- |
-| `Class_5_Calendar_Sums.docx`, `Class_5_Critical_Thinking_Calendar_Sums.docx`, `Equally_Spaced_Objects_Word_Problems.docx`, `advanced_critical_thinking_math_worksheet.docx` | [`convert_docx.py`](convert_docx.py) | 4 × 20 |
-| `Geometry_Olympiad_Achiever_100_Questions.html` | [`convert_geometry.py`](convert_geometry.py) | 100 (+102 SVG figures) |
-| `UNITARY METHOD.html` | [`convert_unitary.py`](convert_unitary.py) | 140 |
-| `grammar_midterm_mastery_assessment.html` | [`convert_grammar.mjs`](convert_grammar.mjs) | 180 |
-
-Shared Markdown/escaping helpers: [`lib/common.py`](lib/common.py).
-
-## Re-running everything
-
-```bash
-npm install                                   # once
-python3 -I ingest/convert_docx.py
-python3 -I ingest/convert_geometry.py
-python3 -I ingest/convert_unitary.py
-node ingest/convert_grammar.mjs
-
-node ingest/validate.mjs                      # app's own parser + JSON Schema, per question  -> validation-report.json
-python3 -I ingest/fidelity.py                 # independent token diff against the sources     -> fidelity-report.json
-node ingest/review_rendered.mjs               # step-2 review: rendered pack vs rendered source, character by character
-node ingest/render_check.mjs                  # every piece through the app's real renderer (marked + Temml)
-node ingest/svg_render_check.mjs OUT_DIR && python3 -I ingest/svg_compare.py OUT_DIR   # 102 figures: source page vs packaged asset
-NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node ingest/preflight_live.mjs   # READ-ONLY overlap check with the live library
+```
+ source file ──► ingest brief ──► any AI model ──► profile + job (one YAML file)
+                                                        │
+                       ingest lint / ingest try ◄───────┘   (fix and repeat until clean)
+                                                        │
+ source file + YAML ──► ingest run ──► S0 intake ─ S1 extract ─ S2 segment ─ S3 assemble
+                                       S4 gates G1…G6 ─ S5 review packet ──► STOP (Gate B)
+                                                        │
+                       a different person/AI reviews ──►  approval.json ──► ingest approve-check
+                                                        │
+                                       pack/pack.zip ──► app Import screen
 ```
 
-`svg_control.mjs` renders figures *without* their embedded styles, only to calibrate the figure comparison (broken ≈ 100–165, correct ≈ 0.7–2.6).
+## What it accepts
 
-## Step 3 (ingest) — how it was done
+| Source | Route | What the learner gets |
+| --- | --- | --- |
+| PDF with a text layer (typed papers, e-books) | page route, `kind: pdf`, `lines@1` | text questions, options and answers; **a picture of the region** for any question with a figure, picture options or unreliable characters (symbol fonts, stacked fractions) |
+| Scanned PDF, photos, screenshots (PNG, JPEG, WebP, GIF, BMP, TIFF, or a zip of them) | page route, `kind: scan`, `units@1` | every question as an exact picture of its region; answers given in the job are marked *transcribed* and need a full number check at approval |
+| Word, PowerPoint, Excel, OpenDocument, RTF, old .doc, plain text | `kind: office`: printed to pages by LibreOffice, then the page route | as for PDFs |
+| HTML page whose questions are repeated elements, or JavaScript data | structured routes `html`, `html-json` | text, Markdown, maths, figures as SVG |
+| Any other HTML page | `kind: html-print`: printed to pages by the browser, then the page route | as for PDFs |
+| Word file of plain numbered paragraphs | structured route `docx` | text |
 
-* `node ingest/import_live.mjs` (dry run) then `--commit`: runs the app's own importer (`src/client/importer.ts`, unchanged) against the live site with the Import screen's default mapping; aborts unless every question is new and maps to existing subjects/labels; records a D1 Time Travel restore point first.
-* `node ingest/verify_live.mjs`: read-only read-back of every question, key, solution, topic, field, image and stored file.
-* Decisions confirmed by the owner: Unitary Method and Geometry under Maths; questions without answers imported as they are; Unitary answers kept per question.
+There is no OCR: a scanned page cannot be read as text without a statistical guess, so it is never turned into
+text by the program. Questions from scans are pictures of the page (exact, checked pixel by pixel). If you want
+their words searchable, put a transcription in the job; it is marked unverified.
 
-## Notes written before step 3
+The design follows *Document Ingestion Pipeline: Architecture and Build Specification v2*. What was built, what
+was improved and what is not built yet is in [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
-* Packs are plain files: `ingest/packs/*.json`. Import them with the app's **Import** screen (or the same Worker import endpoints it uses),
-  one pack per import; the importer commits each pack all-or-nothing and keeps the original file byte-for-byte.
-* `ingest/preflight_live.mjs` found **no** overlap with the 2,536 questions already in the library (by `pack.id/question id` or by content).
-* Packs use existing subjects (`Maths`, `English`) and difficulty labels (`Foundation`, `Challenge`, `Achiever`). Topic paths and custom fields that
-  do not exist yet are created by the importer — review the list in [`REPORT.md`](REPORT.md) first.
-* Do the import only after the step-2 review is signed off and the open decisions in `REPORT.md` are settled — several of them change labels in the stored data.
+## The loop, step by step
+
+Run everything from the repository root after `npm install` once. `ingest/ingest` is the command.
+
+**1. Make the profiling brief** (the standard profiler: one file you paste to any AI model):
+
+```bash
+ingest/ingest brief "My Paper.pdf"                 # writes ingest/scratch/my-paper.brief.md (+ page images)
+ingest/ingest brief "Big Book.pdf" --pages 40-62   # one paper inside a bigger file
+```
+
+For PDFs, scans, screenshots and office files the brief also writes **annotated page images**
+(`ingest/scratch/my-paper-pages/pages/*.png`): text lines in blue, figures in orange, ink bands in green with
+their unit ids, and a ruler of page-height fractions. Attach them to the AI together with the brief.
+
+The brief contains the instructions ([`kit/PROFILER_PROMPT.md`](kit/PROFILER_PROMPT.md)), the profile language
+([`kit/PROFILE_REFERENCE.md`](kit/PROFILE_REFERENCE.md)), worked examples that pass every check, and a *probe
+report*: facts the program measured about your file (repeated containers, a shape census with rare shapes,
+scripts and data arrays, figures, formatting, hidden and generated text). Edit the two kit files to change the
+template for every future paper.
+
+**2. Give the brief to an AI model.** It replies with one YAML block (profile, `---`, job) plus a short list of
+assumptions and questions. Save the block as, say, `ingest/scratch/my-paper.yaml`. Answer its questions in the
+file (for example how its difficulty levels map to your library's labels).
+
+**3. Check and trial it** (the only human-in-the-loop step at the start):
+
+```bash
+ingest/ingest lint ingest/scratch/my-paper.yaml                         # malformed? every error has a line number
+ingest/ingest try  ingest/scratch/my-paper.yaml --source "My Paper.html" # convert in a scratch folder
+```
+
+`try` prints counts and every unclaimed piece of text grouped by page region, and writes a side-by-side page
+(`ingest/scratch/try-<job>/try.html`: source on the left, what the app will show on the right). Paste any error
+back to the AI, or fix the YAML yourself, and repeat until `try` is clean. When you are happy, put the profile
+hash that `lint` prints into the job as `job.profile.sha256` (this records the Gate A sign-off), and save the
+profile under `ingest/profiles/` and the job under `ingest/jobs/` if you want to keep them.
+
+**4. Run the corridor:**
+
+```bash
+ingest/ingest run ingest/scratch/my-paper.yaml --source "My Paper.html"
+```
+
+It converts, runs six gates, builds the review packet and **always stops at Gate B**. Nothing is imported. A
+FAIL can never be waived: fix the cause and run again. Exit codes: 0 pass, 10 warnings, 20 fail, 30 usage, 40 bug.
+
+**5. Review (Gate B).** Open `ingest/runs/<run>/review/index.html`. Read `assurance.md` first (what was and was
+not checked) and `decisions-made.md` (everything ignored, mapped or added). Give one verdict per item in
+`review/approval.template.json` and save it as `ingest/runs/<run>/approval.json`. `review-brief.md` is a
+paste-ready prompt if an AI does the review. **The reviewer must not be the profile's author**, and some items
+were corrupted on purpose — marking one `ok` voids the approval.
+
+```bash
+ingest/ingest approve-check ingest/runs/<run>
+```
+
+On success it writes `approval.receipt.json`. The approved pack is `ingest/runs/<run>/pack/pack.zip`.
+
+**6. Import** the pack with the app's **Import** screen (or `ingest/import_live.mjs`), after the read-only
+`ingest/preflight_live.mjs` overlap check. The live stages (S6–S9) are not automated yet; see ARCHITECTURE.md.
+
+**A new paper in a layout you already have** needs only a new job (counts, pack id, mappings, assertions):
+the same profile is reused without re-approval. All four Word worksheets here use one profile.
+
+**A human fix to the output** goes in a corrections file, never into the pack:
+`ingest/ingest run … --corrections fixes.yaml` (each entry names the question, field, the hash of the old value,
+the new value, a reason, author and date; a stale entry stops the run).
+
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| `ingest probe FILE… [--out DIR]` | Facts about a source (JSON + Markdown). Read-only, deterministic. |
+| `ingest brief FILE… [--out FILE]` | The paste-ready profiling brief for an AI model. |
+| `ingest lint PROFILE [JOB]` | Validate a profile and job; prints the profile hash. |
+| `ingest try PROFILE [JOB] [--source F]` | Trial conversion in `ingest/scratch/`; never approvable. |
+| `ingest run PROFILE [JOB] [--source F] [--corrections F]` | The corridor S0–S5; stops at Gate B. |
+| `ingest status RUN` | Stages, gate verdicts, approval state. |
+| `ingest approve-check RUN` | Gate B: validates `approval.json` against the run. |
+| `ingest oracle RUN OLD_PACK` | Compare with a pack made another way; differences must be explained in `oracle-diffs.yaml`. |
+
+Every command accepts `--json`. `PROFILE` may be one file holding the profile, `---`, then the job.
+
+## Folder
+
+| Path | Contents |
+| --- | --- |
+| `engine/` | The converter and gates G1, G5, G6 (Python: BeautifulSoup, PyYAML, jsonschema; pypdfium2, Pillow and numpy for pages). |
+| `checker/` | The independent gates G2, G3, G4, the picture checks and the side-by-side page (Node: parse5/cheerio, acorn, the app's own reader and renderer; Poppler for PDFs). Shares no code or parser with `engine/`. |
+| `kit/` | The profiler template: prompt, language reference, profile and job JSON Schemas. |
+| `profiles/`, `jobs/` | Approved layouts and the seven papers' jobs (worked examples, used in briefs). |
+| `tests/run_tests.py` | Unit tests, fault injection and Gate B tamper cases (`npm run ingest:test`). |
+| `oracle-diffs.yaml` | Explained differences against the earlier hand-written converters. |
+| `runs/`, `scratch/` | Run folders and trials (not committed: they hold copies of the sources). |
+| `packs/`, `convert_*.py`, `fidelity.py`, … | The first, hand-written converters and checks for the seven papers ([history](HISTORY-first-seven-papers.md)). Kept as the golden oracle. |
+
+## What the laptop needs (stage 2)
+
+Python 3.11+ with `pip install -r ingest/requirements.lock`; Node 20+ with `npm install`; Playwright's Chromium
+(`npx playwright install chromium`); **Poppler** (`pdftotext`, `pdftoppm`: the independent PDF reader the
+checks use); **LibreOffice** only for Office files. On Windows these are all available as installers or via
+`winget`; on macOS via Homebrew.
+
+## Check it yourself
+
+```bash
+npm run ingest:test                       # 58 cases: unit tests, fault injection, approval tampering, all routes
+sh ingest/tests/run_all_papers.sh         # 12 papers through the corridor (HTML, Word, PDF, scan, screenshot, office) + golden oracle
+```

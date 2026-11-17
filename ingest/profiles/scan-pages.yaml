@@ -1,0 +1,19 @@
+# Layout family: pages with no text layer — scanned PDFs, photos, screenshots (one image, a multi-page TIFF, or a
+# zip of images). Nothing can be read as text without OCR, so every question is a picture of its region. The
+# job maps each printed question number to the ink bands (units) drawn on the probe's page images.
+profile: {id: scan-pages, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: scan              # a scanned PDF or images
+  probes:
+    - {pages: true, min: 1}
+pages: {columns: 1}
+segment:
+  by: units@1
+  numbering: unique        # the job may cover any run of questions (a screenshot of questions 5 to 8)
+display: image
+answers: {expected: true}  # answers come from the job (read from the page by whoever wrote the job), marked transcribed
+fields:
+  id: {template: "q{number}"}
+ignore:
+  - {band: {top: 0.0, bottom: 0.095}, reason: "running header bar with the logo", max_blocks: 3, max_tokens: 0}
+  - {band: {top: 0.88, bottom: 1.0}, reason: "footer with page number and paper code", max_blocks: 3, max_tokens: 0}

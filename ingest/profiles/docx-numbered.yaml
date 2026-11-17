@@ -1,0 +1,23 @@
+# Layout family: a Word worksheet that is one title followed by plain numbered paragraphs ("1. ...", "2) ...").
+# No tables, images, equations or answer key. One question per paragraph.
+profile: {id: docx-numbered, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: docx
+  probes:
+    - {regex: "^\\d+\\s*[.)]\\s+", min: 2}       # numbered paragraphs exist
+    - {style: "Heading1|Title", min: 1, max: 1}   # exactly one title
+segment:
+  by: numbered_paragraph@1
+  number: {regex: "^(\\d+)\\s*[.)]\\s+"}
+  numbering: sequential_from_1
+  continuation: fail
+pack:
+  title: {style: "Heading1|Title"}
+fields:
+  id: {template: "q{number}"}
+  stem: {paragraph: self, strip_number: true, as: markdown}
+  # an instruction line printed under the title applies to every question: kept as a note, not put in the stem
+  notes: {preamble: {index: 0, style: "Normal"}, prefix: "Worksheet instruction: ", optional: true, shared: true}
+  source.paragraph: {var: position, as: int}
+ignore: []
+answers: {expected: false}

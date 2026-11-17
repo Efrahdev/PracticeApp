@@ -1,0 +1,4 @@
+#!/bin/sh
+# Launcher: isolated Python (-I) so nothing in the current folder or environment can shadow engine modules.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python3 -I "$DIR/engine/cli.py" "$@"

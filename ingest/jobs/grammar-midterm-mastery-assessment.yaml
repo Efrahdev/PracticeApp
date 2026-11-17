@@ -1,0 +1,22 @@
+job:
+  id: grammar-midterm-mastery-assessment
+  profile: {id: grammar-json, version: 1}
+sources:
+  - {file: "../../grammar_midterm_mastery_assessment.html", role: paper}
+expect:
+  questions: 180
+  assets: 0
+  types: {mcq_single: 101, mcq_multi: 37, short_answer: 29, open: 13}
+pack:
+  id: grammar-midterm-mastery-assessment
+  title: "Final Grammar Mastery Assessment"
+  subject: English
+  topics: ["Grammar"]
+  solutions_origin: source
+mappings:
+  difficulty: {FOUNDATION: "Foundation", INTERMEDIATE: "Challenge", CHALLENGE: "Challenge", TRAP: "Achiever", MASTERY: "Achiever"}
+assertions:
+  - {question: "1", type: mcq_multi}
+import:
+  expect: {new: 180, new_versions: 0, duplicates: 0, rejected: 0}
+review: {answers_verified_target: sampled}

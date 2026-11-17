@@ -1,0 +1,70 @@
+# Layout family: a course page of <article class="q" data-id="L.N"> cards in levels. Each card: header (place,
+# "Question L.N" + title, difficulty line), problem (optional lettered <ol class="parts">), working box and
+# status buttons (page chrome), a nudge (hint), and a hidden solution made of titled sections.
+profile: {id: unitary-html, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: html
+  probes:
+    - {css: "article.q[data-id][data-level]", min: 1}
+    - {css: "article.q details.answer .solution > section.sol-answer", min: 1}
+    - {css: "script#app-data", min: 1, max: 1}
+segment:
+  by: css_container@1
+  selector: "article.q"
+  number: {from: ".q-head h2", regex: "^Question (\\d+\\.\\d+)"}
+  numbering: sectioned
+vars:
+  level: {attr: data-level, as: int}
+  diff_n: {from: "p.diff", regex: "^Difficulty (\\d) of 4: \\w+$", as: int}
+  diff_name: {from: "p.diff", regex: "^Difficulty \\d of 4: (\\w+)$"}
+  level_short: {lookup: {json: "#app-data", list: levels, where: {n: "{level}"}, get: short}}
+  level_name: {lookup: {json: "#app-data", list: levels, where: {n: "{level}"}, get: name}}
+  skills: {from: "p.trained", regex: "^Thinking skills in this problem: (.+)\\.$"}
+content:
+  engine: htmlmd@1
+  rules:
+    - {match: ".mixed", do: mixed, frac: ".fr"}                         # 2½ written as whole + stacked fraction
+    - {match: ".fr", do: frac, num: ".fr-n", den: ".fr-d"}              # stacked fraction -> LaTeX \frac
+    - {match: ".working", do: quote_lines, line: "p.wl", main: ".wl-m", note: ".wl-n", sep: " — "}
+    - {match: ".table-wrap", do: unwrap}
+    - {match: ".solution .sol-sec > h3", do: bold_line}
+parts:
+  from: ".problem > ol.parts > li"
+  split: element
+  labels: generated_alpha
+  optional: true
+fields:
+  id: {template: "q{number}"}
+  title: {from: ".q-title"}
+  stem: {from: ".problem", as: markdown, optional: true}
+  hints:
+    - {from: ".nudge-own", as: markdown}
+  # the source packs several parts' answers into one line, so the final answer stays whole at question level
+  answer: {from: ".solution > .sol-answer", as: markdown, when: no_parts, shared: true}
+  solution.answer: {from: ".solution > .sol-answer", as: markdown}
+  solution.explanation: {from: ".solution", exclude: [".sol-answer", "p.trained"], as: markdown}
+  topics:
+    - {template: "Unitary Method > {level_short}"}
+  difficulty: {var: diff_n, map: difficulty}
+  fields.Level: {var: level}
+  fields.Section: {var: level_name}
+  fields.Difficulty rating: {var: diff_n}
+  fields.Source difficulty: {var: diff_name}
+  fields.Cognitive skill: {var: skills}
+  source.id: {var: number}
+  source.level: {var: level}
+ignore:
+  - {css: ".sr-only", reason: "screen-reader-only duplicate of what is shown (fractions read aloud, ', meaning:')", max_blocks: 3000, max_tokens: 9000}
+  - {css: ".solution > .sol-answer > h3", expect: "Final answer", reason: "heading of the final-answer section", max_blocks: 140, max_tokens: 280}
+  - {css: "article.q .q-where", reason: "position line (Level 1, question 1 of 15)", max_blocks: 280, max_tokens: 1700}
+  - {css: "article.q .workspace, article.q .q-status", reason: "working box and progress buttons", max_blocks: 1000, max_tokens: 4000}
+  - {css: "article.q details > summary, article.q .nudge-label", reason: "open/close buttons and the nudge caption", max_blocks: 700, max_tokens: 4500}
+  - {css: ".skip-link, header.topbar, nav.sidebar, dialog, #view-summary", reason: "site chrome: skip link, top bar, level menu, reset dialog, progress page", max_blocks: 50, max_tokens: 400}
+  - {css: "#view-home", reason: "course introduction and how-to-use text (teaching text, not questions)", max_blocks: 40, max_tokens: 900}
+  - {css: "section.level-view", reason: "level overview pages: objectives, key ideas and links to each problem (teaching text, not questions)", max_blocks: 610, max_tokens: 3000}
+  - {css: "#view-q > :not(.qs)", reason: "navigation around the problem view and the general 'stuck?' prompts", max_blocks: 15, max_tokens: 200}
+  - {css: "#view-report", reason: "the author's quality report about the page itself", max_blocks: 200, max_tokens: 4000}
+passthrough:
+  # pack keys the app stores but does not use: declared so that nothing is dropped silently (G2.fields_consumed)
+  - {key: title, reason: "the app has no title field; it keeps the title in the stored record only"}
+answers: {expected: true}
