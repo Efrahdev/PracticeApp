@@ -386,7 +386,7 @@ async function g3(run, app) {
   let mutated = null;
   for (const q of bad.questions) {
     const target = q.stem !== undefined ? q : (q.parts ?? [])[0];
-    if (!target?.stem) continue;
+    if (!target?.stem || target.stem.includes("(asset:")) continue;   // pictures are proven by G4.crops
     const m = target.stem.match(/\d/) ?? target.stem.match(/[A-Za-z]{4,}/);
     if (!m) continue;
     const swap = /\d/.test(m[0]) ? String((+m[0] + 1) % 10) : m[0].slice(1) + m[0][0];
@@ -398,7 +398,9 @@ async function g3(run, app) {
   g3Checks(probe, app, run, src, bad);
   const caught = probe.checks.find((c) => c.id === "G3.compare")?.status === "FAIL";
   const v = new Verdict("G3");
-  v.selftest = { fixture: `the real pack with one character changed in the stem of ${mutated}`, must_fail: "G3.compare", status: mutated && caught ? "PASS" : "FAIL" };
+  v.selftest = mutated
+    ? { fixture: `the real pack with one character changed in the stem of ${mutated}`, must_fail: "G3.compare", status: caught ? "PASS" : "FAIL" }
+    : { fixture: "none: every question is a picture of its region, so there is no text to corrupt; G4.crops carries the fidelity check and proves itself with a misplaced-crop control", status: "PASS" };
   g3Checks(v, app, run, src, run.pack);
   return v;
 }

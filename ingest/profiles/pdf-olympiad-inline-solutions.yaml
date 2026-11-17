@@ -1,0 +1,30 @@
+# Layout family: an olympiad past paper as a text PDF. Questions "12." at the left margin, options "(A) … (D)"
+# often two or four to a line, figures drawn as pictures, and a worked solution straight after each question
+# starting "Sol:" or "Sol." with the answer letter. Header "CLASS : 4" with a logo, footer "Paper Code : …".
+profile: {id: pdf-olympiad-inline-solutions, version: 1, author: "Claude (profiled from probe reports)"}
+source:
+  kind: pdf
+  probes:
+    - {regex: "^\\d+\\.\\s", min: 2}
+    - {regex: "^Sol[:.]", min: 2}
+    - {text_pages: true, min: 1}
+pages: {columns: 1, dpi: 150}
+segment:
+  by: lines@1
+  start: "^(\\d+)\\.\\s"
+  numbering: sequential_from_1
+display: auto            # pictures for questions with figures, picture options or symbol-font characters
+options: {label: "\\(([A-D])\\)"}
+answers:
+  expected: true
+  inline: {start: "^Sol[:.]", answer: "^Sol[:.]\\s*\\(([A-D])\\)"}
+fields:
+  id: {template: "q{number}"}
+  topics:
+    - {const: "Olympiad Mathematics"}
+ignore:
+  - {regex: "^CLASS : \\d+$", reason: "running header", max_blocks: 40, max_tokens: 120}
+  - {regex: "^Class – \\d+\\s+Mathematics$", reason: "paper title line", max_blocks: 2, max_tokens: 8}
+  - {band: {top: 0.0, bottom: 0.095}, reason: "header logo area above the questions", max_blocks: 60, max_tokens: 0}
+  - {band: {top: 0.885, bottom: 1.0}, reason: "footer: paper code, page number and logo", max_blocks: 60, max_tokens: 400}
+  - {units: ["p2.g1"], reason: "title box around the paper heading on its first page", max_blocks: 1, max_tokens: 0}

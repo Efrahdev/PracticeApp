@@ -61,37 +61,50 @@ export function pageTextChecks(v, run, pack, fieldValue, visible) {
     return;
   }
   const pw = popplerWords(run);
-  // ---- conservation, page by page: Poppler's words against the ledger's lines (claimed or ignored)
+  // ---- conservation, page by page. Compared as letters and digits with all spacing removed: two PDF libraries
+  // split letter-spaced text ("P ap e r") into words differently, but they must agree on every character.
+  const chars = (t) => bag([...words(t).join("")]);
   const mismatch = [];
   let total = 0;
+  // text inside a line that is shown only as a picture is carried by the picture (checked pixel by pixel in G4.crops)
+  const pictured = (b) => b.status === "claimed" && b.by.every((c) => c.mode === "asset");
   for (const p of ps.pages) {
-    const src = bag((pw.get(p) ?? []).flatMap((w) => words(w.text)));
-    const led = bag(textUnits.filter((b) => b.page === p).flatMap((b) => words(b.text)));
+    const pics = textUnits.filter((b) => b.page === p && pictured(b));
+    const src = chars((pw.get(p) ?? []).filter((w) => !pics.some((b) => inside(w, b.box))).map((w) => w.text).join(" "));
+    const led = chars(textUnits.filter((b) => b.page === p && !pictured(b)).map((b) => b.text).join(" "));
     total += [...src.values()].reduce((a, b) => a + b, 0);
     const d = bagDiff(src, led);
-    if (d.onlyA.length || d.onlyB.length) mismatch.push(`page ${p}: in the PDF but not accounted for: ${d.onlyA.slice(0, 8).join(" ")}; in the ledger but not in the PDF: ${d.onlyB.slice(0, 8).join(" ")}`);
+    if (d.onlyA.length || d.onlyB.length) mismatch.push(`page ${p}: characters in the PDF but not accounted for: ${d.onlyA.slice(0, 10).join(" ")}; in the ledger but not in the PDF: ${d.onlyB.slice(0, 10).join(" ")}`);
   }
   v.add("G3.conservation", mismatch.length ? "FAIL" : "PASS", mismatch.length
-    ? `${mismatch.length} page(s) where the words read by Poppler differ from the words the converter accounted for; first: ${mismatch[0]}`
-    : `all ${total} words on ${ps.pages.length} pages, read independently with Poppler, are accounted for (claimed by a question or ignored with a reason)`,
+    ? `${mismatch.length} page(s) where the text read by Poppler differs from the text the converter accounted for; first: ${mismatch[0]}`
+    : `all ${total} letters and digits on ${ps.pages.length} pages, read independently with Poppler, are accounted for (claimed by a question or ignored with a reason)`,
   { examined: total, details: mismatch.slice(0, 20) });
-  // ---- local: each text line the converter used holds exactly the words Poppler finds inside its box
+  // ---- local: each line the converter used holds, at its place on the page, the same characters in the same
+  // left-to-right order as Poppler reads there
   const bad = [];
   let n = 0;
+  const flat = (t) => words(t).join("");
   for (const b of textUnits) {
-    if (b.status !== "claimed") continue;
+    if (b.status !== "claimed" || b.kind !== "line" || !b.by.some((c) => c.mode === "verbatim")) continue;
     n++;
-    const src = (pw.get(b.page) ?? []).filter((w) => inside(w, b.box)).flatMap((w) => words(w.text));
-    const d = bagDiff(bag(src), bag(words(b.text)));
-    if (d.onlyA.length || d.onlyB.length) bad.push(`${b.locator}: Poppler finds ${JSON.stringify(src.join(" ").slice(0, 60))}, the converter read ${JSON.stringify(b.text.slice(0, 60))}`);
+    const src = flat((pw.get(b.page) ?? []).filter((w) => inside(w, b.box)).sort((a, c) => a.x0 - c.x0).map((w) => w.text).join(" "));
+    if (src !== flat(b.text)) {
+      const qs = [...new Set(b.by.map((c) => c.q).filter(Boolean))];
+      bad.push(`${b.locator} (question ${qs.join(", ")}): Poppler reads ${JSON.stringify(src.slice(0, 60))}, the converter read ${JSON.stringify(flat(b.text).slice(0, 60))}. `
+        + `The two PDF libraries disagree, so this text cannot be trusted: show the question as a picture (job: pictures: [${qs.map((q) => JSON.stringify(q.replace(/^q/, ""))).join(", ")}])`);
+    }
   }
-  v.add("G3.local", bad.length ? "FAIL" : "PASS", bad.length ? `${bad.length} line(s) whose position holds different words in the PDF; first: ${bad[0]}` : `${n} lines used in questions: each holds, at its position on the page, exactly the words Poppler reads there`,
+  v.add("G3.local", bad.length ? "FAIL" : "PASS", bad.length ? `${bad.length} line(s) whose place on the page holds different text in the PDF; first: ${bad[0]}` : `${n} lines used in questions: each holds, at its place on the page, exactly the characters, in order, that Poppler reads there`,
     { examined: n, details: bad.slice(0, 20) });
   // ---- numerals per question: digits in the PDF inside the question's lines against the pack's text
   const byQ = new Map();
-  for (const b of textUnits) if (b.status === "claimed") for (const c of b.by) if (c.q && c.mode !== "asset") {
+  const verbatimFields = new Map();
+  for (const b of textUnits) if (b.status === "claimed") for (const c of b.by) if (c.q && c.mode === "verbatim") {
     if (!byQ.has(c.q)) byQ.set(c.q, new Set());
     byQ.get(c.q).add(b);
+    if (!verbatimFields.has(c.q)) verbatimFields.set(c.q, new Set());
+    verbatimFields.get(c.q).add(c.field);
   }
   const numBad = [];
   let qn = 0;
@@ -100,11 +113,11 @@ export function pageTextChecks(v, run, pack, fieldValue, visible) {
     if (!units.length) continue;
     qn++;
     const src = units.flatMap((b) => (pw.get(b.page) ?? []).filter((w) => inside(w, b.box)).map((w) => w.text)).join(" ");
-    if ([...(byQ.get(q.id) ?? [])].length && q.source?.display === "picture") continue;   // the picture is checked by G4.crops
-    const fields = ["stem", ...(q.options ?? []).map((o) => `options.${o.label}`), "solution.answer", "solution.explanation"];
+    const vf = verbatimFields.get(q.id) ?? new Set();
+    const fields = [...vf].flatMap((f) => f === "stem" ? ["stem", ...(q.options ?? []).map((o) => `options.${o.label}`)] : [f]);
     let packText = "";
     for (const f of fields) { const val = fieldValue(pack, q, f); if (val && !String(val.text).includes("(asset:")) packText += " " + visible(val); }
-    const stripped = (cov.stripped ?? []).filter((s) => s.q === q.id).map((s) => s.text).join(" ");
+    const stripped = (cov.stripped ?? []).filter((s) => s.q === q.id && (vf.has(s.field) || (s.field.startsWith("options.") && vf.has("stem")))).map((s) => s.text).join(" ");
     const a = bag(numerals(src).filter((t) => /\d/.test(t))), b = bag(numerals(packText + " " + stripped).filter((t) => /\d/.test(t)));
     const d = bagDiff(a, b);
     if (d.onlyA.length || d.onlyB.length) numBad.push(`${q.id}: PDF has ${d.onlyA.slice(0, 6).join(" ")} not in the pack; pack has ${d.onlyB.slice(0, 6).join(" ")} not in the PDF`);

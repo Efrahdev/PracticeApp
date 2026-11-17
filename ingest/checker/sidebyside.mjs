@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import * as cheerio from "cheerio";
 import { loadApp, loadRun, readJson } from "./lib.mjs";
+import { regionImages } from "./pagecheck.mjs";
 
 const [, , runDirArg, itemsFile, outFile, mode] = process.argv;
 if (!runDirArg || !itemsFile || !outFile) { console.error("usage: sidebyside.mjs RUN_DIR ITEMS.json OUT.html review|try"); process.exit(30); }
@@ -19,7 +20,26 @@ const assets = run.pack.assets ?? {};
 
 // ---- left: the source
 let sourceOf;
-if (kind === "html") {
+const PAGE_KINDS = new Set(["pdf", "image", "office", "html-print"]);
+if (PAGE_KINDS.has(kind)) {
+  // the question's region, rendered independently (Poppler for PDFs; the original image for scans/screenshots),
+  // written once per page next to the page and shown through a window onto it
+  const dir = path.join(path.dirname(outFile), "pages");
+  fs.mkdirSync(dir, { recursive: true });
+  const written = new Set();
+  sourceOf = (qid) => {
+    const regions = regionImages(run, qid, dir);
+    if (!regions.length) return "<p>(no region recorded)</p>";
+    return regions.map((r) => {
+      const ext = r.type && r.type !== "image/png" ? (r.type.split("/")[1] || "img") : "png";
+      const file = `p${r.page}.${ext}`;
+      if (!written.has(file)) { fs.writeFileSync(path.join(dir, file), Buffer.from(r.png, "base64")); written.add(file); }
+      const pad = 6, x = Math.max(0, r.box[0] - pad) * r.scale, y = Math.max(0, r.box[1] - pad) * r.scale;
+      const w = (r.box[2] - r.box[0] + 2 * pad) * r.scale, h = (r.box[3] - r.box[1] + 2 * pad) * r.scale;
+      return `<div class="cap">page ${r.page}</div><div class="win" style="width:${Math.round(w)}px;height:${Math.round(h)}px"><img src="pages/${file}" style="left:${-Math.round(x)}px;top:${-Math.round(y)}px;width:${Math.round(r.size[0] * r.scale)}px" alt="page ${r.page}"></div>`;
+    }).join("");
+  };
+} else if (kind === "html") {
   const $ = cheerio.load(new TextDecoder().decode(run.sourceBytes), { scriptingEnabled: false });
   const styles = $("style").toArray().map((s) => $(s).text()).join("\n").replace(/<\/style/gi, "");
   const els = $(run.profile.segment.selector).toArray();
@@ -48,7 +68,8 @@ if (kind === "html") {
 const md = (s) => {
   const report = { mathErrors: [] };
   let html = app.renderMarkdown(String(s), report);
-  html = html.replace(/src="asset:([^"]+)"/g, (m, name) => assets[name] ? `src="data:image/svg+xml;base64,${Buffer.from(assets[name].data, "utf8").toString("base64")}"` : m);
+  html = html.replace(/src="asset:([^"]+)"/g, (m, name) => !assets[name] ? m : assets[name].base64
+    ? `src="data:${assets[name].type};base64,${assets[name].base64}"` : `src="data:image/svg+xml;base64,${Buffer.from(assets[name].data, "utf8").toString("base64")}"`);
   return html + (report.mathErrors.length ? `<p class="err">maths error: ${esc(report.mathErrors[0])}</p>` : "");
 };
 const answerHtml = (a) => a === undefined || a === null ? "" : typeof a === "string" ? md(a) : Array.isArray(a) ? esc(a.join("  |  ")) : `<code>${esc(a.value)}${a.unit ? " " + esc(a.unit) : ""}</code> (numeric key, auto-marked)`;
@@ -93,7 +114,7 @@ h1{font-size:20px;margin:8px 0}h3{font-size:15px;margin:0 0 8px}h4{margin:4px 0}
 .col{min-width:0}.cap{font-size:11px;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
 iframe.src{width:100%;height:520px;border:1px solid var(--line);border-radius:6px;background:#fff}
 .pack{border:1px solid var(--line);border-radius:6px;padding:8px 12px;max-height:520px;overflow:auto}
-.pack img{max-width:100%;background:#fff}.f{margin:6px 0;padding-top:4px;border-top:1px dashed var(--line)}
+.pack img{max-width:100%;background:#fff}.win{position:relative;overflow:hidden;max-width:100%;border:1px solid var(--line);background:#fff}.win img{position:absolute;max-width:none}.f{margin:6px 0;padding-top:4px;border-top:1px dashed var(--line)}
 .k{display:block;font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
 .ans{background:var(--ans)}.part{margin-left:14px}.meta{font-size:12px;color:var(--muted)}.err{color:#c0392b}
 .key{background:var(--accent);color:var(--card);border-radius:4px;padding:1px 6px;font-size:12px}.why{font-weight:400;color:var(--muted);font-size:12px}

@@ -217,16 +217,24 @@ class PageDoc:
         sizes = sorted(c["size"] for m in merged for f in m["frags"] for c in f["ink"]) or [10]
         median = sizes[len(sizes) // 2]
         for k, m in enumerate(merged, start=1):
-            fr = sorted(m["frags"], key=lambda f: min(c["box"][0] for c in f["ink"]))
-            text, last_r = "", None
-            for f in fr:
-                left = min(c["box"][0] for c in f["ink"])
-                if last_r is not None and left - last_r > 1.0 and not text.endswith(" "):
-                    text += " "
-                text += "".join(c["c"] for c in f["chars"])
-                last_r = max(c["box"][2] for c in f["ink"])
-            text = unicodedata.normalize("NFC", re.sub(r"[ \t ]+$", "", text).lstrip(" "))
-            ink = [c for f in fr for c in f["ink"]]
+            fr = m["frags"]
+            # characters in left-to-right order of their boxes. A word break where pdfium's own text order has a
+            # space between the two characters, or where the gap is plainly wider than letter spacing.
+            ink = sorted((c for f in fr for c in f["ink"]), key=lambda c: (c["box"][0], c["box"][2]))
+            spaces = sorted(c["i"] for f in fr for c in f["chars"] if c["space"])
+            import bisect
+            text, prev = "", None
+            for c in ink:
+                if prev is not None:
+                    lo, hi = sorted((prev["i"], c["i"]))
+                    k = bisect.bisect_right(spaces, lo)
+                    spaced = hi - lo <= 4 and k < len(spaces) and spaces[k] < hi
+                    gap = c["box"][0] - prev["box"][2]
+                    if spaced or gap > 0.45 * max(prev["size"] or 1, c["size"] or 1) or (hi - lo > 4 and gap > 0.15 * max(prev["size"] or 1, c["size"] or 1)):
+                        text += " "
+                text += c["c"]
+                prev = c
+            text = unicodedata.normalize("NFC", text)
             box = (min(c["box"][0] for c in ink), m["top"], max(c["box"][2] for c in ink), m["bot"])
             small = sum(1 for c in ink if c["size"] and c["size"] < 0.7 * median)
             pua = sum(1 for c in ink if 0xE000 <= ord(c["c"]) <= 0xF8FF or c["c"] == "�")

@@ -314,6 +314,16 @@
           "units"
         ]
       }
+    },
+    "pictures": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "integer"
+        ]
+      },
+      "description": "printed numbers of questions to show as pictures because their text cannot be trusted"
     }
   },
   "required": [

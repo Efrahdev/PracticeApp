@@ -170,6 +170,10 @@ def _g1_checks(v: Verdict, pack: dict, coverage: dict, decisions: dict, asset_ro
             failed.append(f"question {a['question']} does not exist")
             continue
         stem = q.get("stem", "")
+        if "(asset:" in stem and isinstance(q.get("source"), dict) and q["source"].get("text"):
+            stem = q["source"]["text"]   # a question shown as a picture: assertions are checked against its words
+            if a.get("question") and q.get("number") and stem.startswith(q["number"]):
+                stem = re.sub(r"^\S+\s*", "", stem, count=1)
         answer = q.get("answer")
         answer_text = json.dumps(answer, ensure_ascii=False) + json.dumps(q.get("solution"), ensure_ascii=False)
         stem, answer_text = ws(stem), ws(answer_text)

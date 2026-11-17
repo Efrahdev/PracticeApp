@@ -169,6 +169,18 @@ class PageInterp:
             return text, None
         pat = rx(spec["label"])
         hits = list(pat.finditer(text))
+        # the options are the LAST run of labels that starts with the first label (A) and continues in order to the
+        # end; label-like text earlier in the question ("compare (A) and (B)") stays in the stem
+        if hits:
+            first = hits[0].group(1)
+            for k in range(len(hits) - 1, -1, -1):
+                if hits[k].group(1) == first:
+                    tail = [m.group(1) for m in hits[k:]]
+                    if tail == [chr(ord(first) + i) for i in range(len(tail))]:
+                        if k:
+                            self.run.decisions.setdefault("labels_kept_in_stem", []).append({"question": qid, "labels": [m.group(1) for m in hits[:k]]})
+                        hits = hits[k:]
+                        break
         labels = [m.group(1) for m in hits]
         want = [chr(ord(labels[0]) + i) for i in range(len(labels))] if labels else []
         if len(hits) < 2:
@@ -182,10 +194,7 @@ class PageInterp:
         opts = []
         for k, m in enumerate(hits):
             end = hits[k + 1].start() if k + 1 < len(hits) else len(text)
-            body = text[m.end():end].strip()
-            if not body:
-                raise StageFail(f"{qid}: option {m.group(1)} is empty", locator=where, check="S2.options")
-            opts.append((m.group(1), m.group(0), body))
+            opts.append((m.group(1), m.group(0), text[m.end():end].strip()))   # empty: the option is a picture
         return stem, opts
 
     # ------------------------------------------------------------------ fields from templates
@@ -241,6 +250,8 @@ class PageInterp:
         lines = [u for u in units if u["kind"] == "line"]
         first_text = lines[0]["text"] if lines else ""
         display = self.profile.get("display", "auto")
+        if number in {str(x) for x in self.run.job.get("pictures", [])}:
+            display = "image"   # the job says this question's text cannot be trusted (for example the PDF libraries disagree)
         why = self._uncertain(units)
         as_image = display == "image" or (display == "auto" and why) or not lines
         if lines and start_match is not None:
@@ -250,6 +261,12 @@ class PageInterp:
         if start_match is not None and text.startswith(start_match.group(0).strip()):
             text = text[len(start_match.group(0).strip()):].lstrip()
         stem_text, opts = self._split_options(text, qid, where) if lines else (text, None)
+        if opts and any(not body for _, _, body in opts) and display != "text":
+            why = sorted(set(why) | {"options are pictures"})
+            as_image = True
+        elif opts and any(not body for _, _, body in opts):
+            raise StageFail(f"{qid}: an option has no text (it is probably a picture) but display is text", locator=where, check="S2.options",
+                            hint="use display: auto or image")
         if as_image:
             q["stem"] = "\n\n".join(self._crops(qid, "stem", units, f"Question {number}"))
             for u in units:
@@ -259,6 +276,8 @@ class PageInterp:
             if opts:
                 q["options"] = [{"label": lab, "text": lab} for lab, _, _ in opts]
                 self.ledger.add_literal(qid, "options", " ".join(lab for lab, _, _ in opts), "option letters for a question shown as a picture")
+            if text:
+                q.setdefault("source", {})["text"] = text.replace(self.LS, "\n")
             if self.profile.get("keep_text") and text:
                 set_path(q, f"fields.{self.profile['keep_text']}", self._md(text))
         else:
@@ -294,9 +313,8 @@ class PageInterp:
                 q.setdefault("solution", {})["explanation"] = self._md(body)
                 for u in sol_units:
                     self.ledger.claim(u["id"], qid, "solution.explanation", "verbatim" if u["kind"] == "line" else "asset")
-                if m:
-                    self.ledger.claim(sol_lines[0]["id"], qid, "solution.answer", "derived")
             if m and sol_lines:
+                self.ledger.claim(sol_lines[0]["id"], qid, "solution.answer", "derived")
                 self.ledger.claim(sol_lines[0]["id"], qid, "answer", "derived")
         if answer_from_section:
             entry = answer_from_section
@@ -305,8 +323,10 @@ class PageInterp:
             if entry.get("explanation"):
                 q["solution"]["explanation"] = self._md(entry["explanation"])
             for bid in entry["answer_blocks"]:
-                self.ledger.claim(bid, qid, "solution.answer", "derived")
+                self.ledger.claim(bid, qid, "solution.answer", "verbatim")
                 self.ledger.claim(bid, qid, "answer", "derived")
+            if entry.get("label"):
+                self.ledger.strip_prefix(qid, "solution.answer", entry["label"], "label of the answer line (for example 'Correct answer:')")
             for bid in entry["explanation_blocks"]:
                 self.ledger.claim(bid, qid, "solution.explanation")
         if transcribed:
@@ -499,7 +519,7 @@ class PageInterp:
             for u in e["lines"][end:]:
                 if u not in expl:
                     self.ledger.ignore(u["id"], echo_rule, self.ledger.rules[echo_rule]["reason"])
-            out[num] = {"answer": answer_text, "answer_blocks": answer_blocks, "explanation": self._join(expl) if expl else None,
+            out[num] = {"answer": answer_text, "answer_blocks": answer_blocks, "label": e["lines"][idx]["text"][:m.start(1)].strip(), "explanation": self._join(expl) if expl else None,
                         "explanation_blocks": [u["id"] for u in expl], "where": e["where"]}
         return out
 
