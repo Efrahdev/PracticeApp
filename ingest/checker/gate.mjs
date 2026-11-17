@@ -254,7 +254,7 @@ function g3Checks(v, app, run, src, pack) {
       if (!val) { missing = true; break; }
       compared.add(`${qid}\u0000${m}`);
       const pre = stripped.get(`${qid}\u0000${m}`);
-      if (pre) packTokens = packTokens.concat(tokens(visible({ text: pre, md: true })));
+      if (pre) packTokens = packTokens.concat(tokens(pre));   // plain text: "1. " must not be read as a Markdown list
       packTokens = packTokens.concat(tokens(visible(val)));
       allowed = allowed.concat(extra.get(`${qid}\u0000${m}`) ?? []);
     }
