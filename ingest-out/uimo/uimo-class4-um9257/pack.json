@@ -1,0 +1,2376 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "uimo-class4-um9257",
+  "title": "UIMO Class 4 · UM9257",
+  "source": "UIMO_CLASS-4_Past-8-Papers.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q5-optA": {
+   "file": "images/q5-optA.png"
+  },
+  "q5-optB": {
+   "file": "images/q5-optB.png"
+  },
+  "q5-optC": {
+   "file": "images/q5-optC.png"
+  },
+  "q5-optD": {
+   "file": "images/q5-optD.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q13-optA": {
+   "file": "images/q13-optA.png"
+  },
+  "q13-optB": {
+   "file": "images/q13-optB.png"
+  },
+  "q13-optC": {
+   "file": "images/q13-optC.png"
+  },
+  "q13-optD": {
+   "file": "images/q13-optD.png"
+  },
+  "q13-stem": {
+   "file": "images/q13-stem.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q14-sol": {
+   "file": "images/q14-sol.png"
+  },
+  "q15-stem": {
+   "file": "images/q15-stem.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q17-sol": {
+   "file": "images/q17-sol.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q20-stem-fig": {
+   "file": "images/q20-stem-fig.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q21-stem-fig1": {
+   "file": "images/q21-stem-fig1.png"
+  },
+  "q21-stem-fig2": {
+   "file": "images/q21-stem-fig2.png"
+  },
+  "q22-optA": {
+   "file": "images/q22-optA.png"
+  },
+  "q22-optB": {
+   "file": "images/q22-optB.png"
+  },
+  "q22-optC": {
+   "file": "images/q22-optC.png"
+  },
+  "q22-optD": {
+   "file": "images/q22-optD.png"
+  },
+  "q22-stem": {
+   "file": "images/q22-stem.png"
+  },
+  "q22-sol": {
+   "file": "images/q22-sol.png"
+  },
+  "q23-sol": {
+   "file": "images/q23-sol.png"
+  },
+  "q24-optA": {
+   "file": "images/q24-optA.png"
+  },
+  "q24-optB": {
+   "file": "images/q24-optB.png"
+  },
+  "q24-optC": {
+   "file": "images/q24-optC.png"
+  },
+  "q24-optD": {
+   "file": "images/q24-optD.png"
+  },
+  "q24-stem": {
+   "file": "images/q24-stem.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q27-optA": {
+   "file": "images/q27-optA.png"
+  },
+  "q27-optB": {
+   "file": "images/q27-optB.png"
+  },
+  "q27-optC": {
+   "file": "images/q27-optC.png"
+  },
+  "q27-optD": {
+   "file": "images/q27-optD.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q29-stem-fig1": {
+   "file": "images/q29-stem-fig1.png"
+  },
+  "q29-stem-fig2": {
+   "file": "images/q29-stem-fig2.png"
+  },
+  "q29-sol": {
+   "file": "images/q29-sol.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q31-optC": {
+   "file": "images/q31-optC.png"
+  },
+  "q31-sol": {
+   "file": "images/q31-sol.png"
+  },
+  "q32-stem-fig": {
+   "file": "images/q32-stem-fig.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-optA": {
+   "file": "images/q34-optA.png"
+  },
+  "q34-optB": {
+   "file": "images/q34-optB.png"
+  },
+  "q34-optC": {
+   "file": "images/q34-optC.png"
+  },
+  "q34-optD": {
+   "file": "images/q34-optD.png"
+  },
+  "q34-stem-fig": {
+   "file": "images/q34-stem-fig.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  },
+  "q36-stem-fig": {
+   "file": "images/q36-stem-fig.png"
+  },
+  "q36-sol": {
+   "file": "images/q36-sol.png"
+  },
+  "q37-optA": {
+   "file": "images/q37-optA.png"
+  },
+  "q37-optB": {
+   "file": "images/q37-optB.png"
+  },
+  "q37-optC": {
+   "file": "images/q37-optC.png"
+  },
+  "q37-optD": {
+   "file": "images/q37-optD.png"
+  },
+  "q37-stem-fig": {
+   "file": "images/q37-stem-fig.png"
+  },
+  "q37-sol": {
+   "file": "images/q37-sol.png"
+  },
+  "q38-optA": {
+   "file": "images/q38-optA.png"
+  },
+  "q38-optB": {
+   "file": "images/q38-optB.png"
+  },
+  "q38-optC": {
+   "file": "images/q38-optC.png"
+  },
+  "q38-optD": {
+   "file": "images/q38-optD.png"
+  },
+  "q38-stem-fig": {
+   "file": "images/q38-stem-fig.png"
+  },
+  "q38-sol": {
+   "file": "images/q38-sol.png"
+  },
+  "q39-optA": {
+   "file": "images/q39-optA.png"
+  },
+  "q39-optB": {
+   "file": "images/q39-optB.png"
+  },
+  "q39-optC": {
+   "file": "images/q39-optC.png"
+  },
+  "q39-optD": {
+   "file": "images/q39-optD.png"
+  },
+  "q39-stem": {
+   "file": "images/q39-stem.png"
+  },
+  "q39-sol": {
+   "file": "images/q39-sol.png"
+  },
+  "q40-stem-fig": {
+   "file": "images/q40-stem-fig.png"
+  },
+  "q41-optA": {
+   "file": "images/q41-optA.png"
+  },
+  "q41-optB": {
+   "file": "images/q41-optB.png"
+  },
+  "q41-optC": {
+   "file": "images/q41-optC.png"
+  },
+  "q41-optD": {
+   "file": "images/q41-optD.png"
+  },
+  "q41-stem-fig": {
+   "file": "images/q41-stem-fig.png"
+  },
+  "q41-sol": {
+   "file": "images/q41-sol.png"
+  },
+  "q43-stem-fig": {
+   "file": "images/q43-stem-fig.png"
+  },
+  "q44-sol": {
+   "file": "images/q44-sol.png"
+  },
+  "q45-full": {
+   "file": "images/q45-full.png"
+  },
+  "q45-sol": {
+   "file": "images/q45-sol.png"
+  },
+  "q46-optA": {
+   "file": "images/q46-optA.png"
+  },
+  "q46-optB": {
+   "file": "images/q46-optB.png"
+  },
+  "q46-optC": {
+   "file": "images/q46-optC.png"
+  },
+  "q46-optD": {
+   "file": "images/q46-optD.png"
+  },
+  "q46-stem-fig": {
+   "file": "images/q46-stem-fig.png"
+  },
+  "q46-sol": {
+   "file": "images/q46-sol.png"
+  },
+  "q47-optA": {
+   "file": "images/q47-optA.png"
+  },
+  "q47-optB": {
+   "file": "images/q47-optB.png"
+  },
+  "q47-optC": {
+   "file": "images/q47-optC.png"
+  },
+  "q47-optD": {
+   "file": "images/q47-optD.png"
+  },
+  "q47-stem-fig": {
+   "file": "images/q47-stem-fig.png"
+  },
+  "q47-sol": {
+   "file": "images/q47-sol.png"
+  },
+  "q48-optA": {
+   "file": "images/q48-optA.png"
+  },
+  "q48-optB": {
+   "file": "images/q48-optB.png"
+  },
+  "q48-optC": {
+   "file": "images/q48-optC.png"
+  },
+  "q48-optD": {
+   "file": "images/q48-optD.png"
+  },
+  "q48-stem-fig": {
+   "file": "images/q48-stem-fig.png"
+  },
+  "q48-sol": {
+   "file": "images/q48-sol.png"
+  },
+  "q49-optA": {
+   "file": "images/q49-optA.png"
+  },
+  "q49-optB": {
+   "file": "images/q49-optB.png"
+  },
+  "q49-optC": {
+   "file": "images/q49-optC.png"
+  },
+  "q49-optD": {
+   "file": "images/q49-optD.png"
+  },
+  "q49-stem-fig1": {
+   "file": "images/q49-stem-fig1.png"
+  },
+  "q49-stem-fig2": {
+   "file": "images/q49-stem-fig2.png"
+  },
+  "q49-sol": {
+   "file": "images/q49-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Choose the correct option.\n\n84592 is 600 more than \\_\\_\\_\\_\\_\\_",
+   "options": [
+    {
+     "label": "A",
+     "text": "Eighty four thousand five hundred and ninety two"
+    },
+    {
+     "label": "B",
+     "text": "Eighty three thousand nine hundred & ninety two"
+    },
+    {
+     "label": "C",
+     "text": "Eighty three thousand five hundred and ninety two"
+    },
+    {
+     "label": "D",
+     "text": "Eighty four thousand nine hundred and ninety two"
+    }
+   ],
+   "answer": "B",
+   "solution": "(B) Note that 84592 is bigger than the required\n\nnumber\n\n84592 – 600 = 83992\n\n83992 written in words is\n\nEighty three thousand, nine hundred and ninety two",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 126
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Choose the correct option.\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "60 × 7 + 13"
+    },
+    {
+     "label": "B",
+     "text": "60 × 7 × 13"
+    },
+    {
+     "label": "C",
+     "text": "60 × 13 + 7 × 13"
+    },
+    {
+     "label": "D",
+     "text": "60 × 10 + 60 × 7"
+    }
+   ],
+   "answer": "C",
+   "solution": "(C) 13 × 67 = 67 × 13\n\n= 67 groups of 13\n\n= 60 groups of 13 + 7 groups of 13 = 60 × 13 + 7 × 13",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 126
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "When the sum of 7456 and 647 is divided by 9, the quotient (Q) is \\_\\_\\_\\_ and the remainder (R) is \\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Q = 756 R = 5"
+    },
+    {
+     "label": "B",
+     "text": "Q = 828 R = 4"
+    },
+    {
+     "label": "C",
+     "text": "Q = 900 R = 3"
+    },
+    {
+     "label": "D",
+     "text": "Q = 600 R = 6"
+    }
+   ],
+   "answer": "C",
+   "solution": "![C Sum : 7456 + 647 = 8103 8103 ÷ 9 = 900 R 3 Quotient : 900; Remainder : 3](asset:q3-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 126
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Balu had thrice as many paper clips as David. The number of paper clips Balu had was twice the number of paper clips Riyan had. If Riyan had 267 paper clips, how many more paper clips than David did Balu have?",
+   "options": [
+    {
+     "label": "A",
+     "text": "356"
+    },
+    {
+     "label": "B",
+     "text": "178"
+    },
+    {
+     "label": "C",
+     "text": "534"
+    },
+    {
+     "label": "D",
+     "text": "267"
+    }
+   ],
+   "answer": "A",
+   "solution": "(A) Riyan → 267 paper clips\n\nBalu → 2 × 267\n\n= 534 paper clips\n\nDavid → 534 ÷ 3\n\n= 178 paper clips\n\n534 – 178 = 356\n\nBalu had 356 more paper clips than David",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 126
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "14 sevenths and 3 halves add up to \\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 32](asset:q5-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1 22](asset:q5-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![17 7](asset:q5-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![17 14](asset:q5-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![A 7 sevenths = 1 14 sevenths = 2 3 halves = 1 1 1 + + 2 2 2 3 1 = or 1 2 2 1 14 sevenths and 3 halves = 2+12 1 =32](asset:q5-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 126
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "What is the minimum number of squares that should be shaded to make the figure symmetrical ?\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ],
+   "answer": "C",
+   "solution": "![C The given rectangle has only 2 lines of symmetry l1 and l2. If l1 is chosen, only 3 more squares need to be shaded dotted . If l2 is chosen, 6 more squares will have to be shaded. So, the minimum number is 3 l2 l1](asset:q6-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 127
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "The common multiples of 6 and 4 are also multiples of \\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "10"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "18"
+    },
+    {
+     "label": "D",
+     "text": "24"
+    }
+   ],
+   "answer": "B",
+   "solution": "![B 6, 12 , 18, 24 ... 4, 8, 12 , 16, 20, 24 .... The next common multiple will be 36 and so on 12, 24, 36 .... are all multiples of 12](asset:q7-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 127
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![The difference between 2 3 of 27 and 5 6 of 36 is 2 times .](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "6"
+    },
+    {
+     "label": "B",
+     "text": "9"
+    },
+    {
+     "label": "C",
+     "text": "15"
+    },
+    {
+     "label": "D",
+     "text": "30"
+    }
+   ],
+   "answer": "A",
+   "solution": "![A 2 of 27 =2×9 =18 3 5 of 36 = 5×6 = 30 6 30 – 18 = 12 = 2 × 6](asset:q8-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 127
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "Leena started doing her homework at 3:40 p.m. After completing her homework, she read a book for some time. She spent 150 min on the 2 activities. If she spent 20 min more on her homework than reading the book, she started reading the book at \\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "05:05"
+    },
+    {
+     "label": "B",
+     "text": "13:25"
+    },
+    {
+     "label": "C",
+     "text": "16:45"
+    },
+    {
+     "label": "D",
+     "text": "17:05"
+    }
+   ],
+   "answer": "D",
+   "solution": "![D Doing homework 150 min Reading the book 1 unit 20 min 2 units → 150 min – 20 min = 130 min 1 unit → 130 min ÷ 2 = 65 min = 1 h 5 min Time spent on doing homework → 1 h 5 min + 20 min = 1 h 25 min 1 h 20 min 5 min 3.40 p.m. 4.40 p.m. 5 p.m. 5.05 p.m. 5:05 p.m. is the same as 17:05 in the 24-hour clock notation She started reading the book at 17:05](asset:q9-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 127
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Estimate the value of 70960 + 723 by rounding off each number to the nearest hundred.",
+   "options": [
+    {
+     "label": "A",
+     "text": "71720"
+    },
+    {
+     "label": "B",
+     "text": "71700"
+    },
+    {
+     "label": "C",
+     "text": "70720"
+    },
+    {
+     "label": "D",
+     "text": "70700"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Rounding off to the nearest hundred 70960 = 71000 723 = 700 71000 + 700 = 71700](asset:q10-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 127
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "1377 is thrice the value of a number. Find the quotient of this number when it is divided by 9.",
+   "options": [
+    {
+     "label": "A",
+     "text": "459"
+    },
+    {
+     "label": "B",
+     "text": "153"
+    },
+    {
+     "label": "C",
+     "text": "51"
+    },
+    {
+     "label": "D",
+     "text": "59"
+    }
+   ],
+   "answer": "C",
+   "solution": "1377 ÷ 3 = 459\n\nThe quotient of 459 when it is divided by 9 459 ÷ 9 = 51",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "Tillu had 34 fewer marbles than Jai. Karan had twice as many marbles as Jai. If jai had 1344 marbles, how many marbles did the three boys have altogether ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2688"
+    },
+    {
+     "label": "B",
+     "text": "5342"
+    },
+    {
+     "label": "C",
+     "text": "4032"
+    },
+    {
+     "label": "D",
+     "text": "5308"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of marbles with jai = 1344\n\nNumber of marbles with Tillu\n\n= 1344 – 34 = 1310\n\nNumber of marbles with Karan\n\n= 1344 × 2 = 2688\n\nTotal number of marbles with the three boys = 1344 + 1310 + 2688 = 5342",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "![Mr. Vishal had 8500. He paid 1300 to each of his 4 workers. How much money had he left ?](asset:q13-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![7200](asset:q13-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![5900](asset:q13-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![4600](asset:q13-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![3300](asset:q13-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Amount with Mr. Vishal = 1300 × 4 = 5200 Amount left = 8500 – 5200 = 3300 2 15+2 17](asset:q13-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Choose the missing number in the box.\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "10"
+    },
+    {
+     "label": "C",
+     "text": "17"
+    },
+    {
+     "label": "D",
+     "text": "85"
+    }
+   ],
+   "answer": "D",
+   "solution": "![5 = = 3 3 3 17×5 85 = = 3×5 15](asset:q14-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "![There are 56 pupil in a class. 3 8 of them are boys. How many girls are there in the class ?](asset:q15-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "21"
+    },
+    {
+     "label": "C",
+     "text": "28"
+    },
+    {
+     "label": "D",
+     "text": "35"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Number of pupils in a class = 56 Number of boys = 3 3 = ×56 = 3×7=21 8 8 Number of girls = 56 – 21 = 35](asset:q15-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "It is 11:35 now. What time will it be 2 h 35 min later ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "13:10"
+    },
+    {
+     "label": "B",
+     "text": "13:35"
+    },
+    {
+     "label": "C",
+     "text": "14:10"
+    },
+    {
+     "label": "D",
+     "text": "14:35"
+    }
+   ],
+   "answer": "C",
+   "solution": "Given time = 11 : 35\n\nThe time 2 h 35 min later = 11 : 35 + 2 h 35 min\n\n= 13 : 70 = 14 : 10",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "A fish takes 23 s to swim one round of a fish tank. How long does the fish take to swim 5 rounds of the fish tank ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "1 min 45 s"
+    },
+    {
+     "label": "B",
+     "text": "1 min 55 s"
+    },
+    {
+     "label": "C",
+     "text": "1 min 50 s"
+    },
+    {
+     "label": "D",
+     "text": "1 min 52 s"
+    }
+   ],
+   "answer": "B",
+   "solution": "![23 s × 5 = 115 s = 115 ÷ 60 min = 1 min R 55 s = 1 min 55 s](asset:q17-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 128
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "John used 3 cups of oil. Each cup contained 70 m*l* of oil. If he had 4 *l* of oil at first, how much oil was left ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "210 m*l*"
+    },
+    {
+     "label": "B",
+     "text": "330 m*l*"
+    },
+    {
+     "label": "C",
+     "text": "3 *l* 790 m*l*"
+    },
+    {
+     "label": "D",
+     "text": "3 *l* 930 m*l*"
+    }
+   ],
+   "answer": "C",
+   "solution": "3 × 70 m*l* = 210 m*l*\n\n4000 m*l* – 210 m*l* = 3790 m*l*",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 129
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "String A is 12 cm shorter than String B. String C is 20 cm longer than string B. The total length of the 3 strings is 176 cm. Find the length of String B.",
+   "options": [
+    {
+     "label": "A",
+     "text": "44 cm"
+    },
+    {
+     "label": "B",
+     "text": "56 cm"
+    },
+    {
+     "label": "C",
+     "text": "132 cm"
+    },
+    {
+     "label": "D",
+     "text": "99 cm"
+    }
+   ],
+   "answer": "B",
+   "solution": "![A 12 20 B 176 C 3 units → 176 – 20 – 12 – 12 = 132 cm 1 units → 132 cm ÷ 3 = 44 cm 44 cm + 12 cm = 56 cm The length of String B is 56 cm](asset:q19-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 129
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Which figure A, B, C or D has the largest area ?\n\n![figure](asset:q20-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "P"
+    },
+    {
+     "label": "B",
+     "text": "Q"
+    },
+    {
+     "label": "C",
+     "text": "R"
+    },
+    {
+     "label": "D",
+     "text": "S"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Figure P → 11 square units Figure Q → 10 square units 1 Figure R → 112 square units Figure S → 12 square units](asset:q20-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 129
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "The distance from Point B to Point C is twice the distance from Point A to Point B. The distance from point A to D is 4 km 850 m. What is the distance between Point C and Point D ?\n\n![figure](asset:q21-stem-fig1)\n\n![figure](asset:q21-stem-fig2)",
+   "options": [
+    {
+     "label": "A",
+     "text": "1700 m"
+    },
+    {
+     "label": "B",
+     "text": "2300 m"
+    },
+    {
+     "label": "C",
+     "text": "850 m"
+    },
+    {
+     "label": "D",
+     "text": "4000 m"
+    }
+   ],
+   "answer": "B",
+   "solution": "2 × 850 = 1700 m\n\n4850 – 850 – 1700 = 2300 m",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 129
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "![If](asset:q22-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![858](asset:q22-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![970](asset:q22-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1440](asset:q22-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![470](asset:q22-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![+ = 1350 380 + = 1350 = 1350 – 380 = 970 + = 1828 + 970 = 1828 = 1828 – 970 = 858](asset:q22-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 130
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "The perimeter of a rectangle is 90 cm. The length of a rectangle is twice as long as its breadth. What is the length of a rectangle ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "45 cm"
+    },
+    {
+     "label": "B",
+     "text": "30 cm"
+    },
+    {
+     "label": "C",
+     "text": "22 cm"
+    },
+    {
+     "label": "D",
+     "text": "15 cm"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Length 90 Breadth 6 units → 90 cm 1 unit → 90 ÷ 6 = 15 cm 2 units → 2 × 15 = 30 cm 1 3 2 3](asset:q23-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 130
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "![Julie did 5 of her homework on Saturday and 3 10 of it on Sunday. What fraction of her homework did she complete ?](asset:q24-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 5](asset:q24-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 10](asset:q24-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 2](asset:q24-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![4 5](asset:q24-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![+ = + 5 10 10 10 5 1 = = 10 2](asset:q24-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 130
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Tarun’s mother has a mass of 42 kg. She is 3 times as heavy as Tarun. His father is 57 kg heavier than Tarun. Find the total mass of the three of them.",
+   "options": [
+    {
+     "label": "A",
+     "text": "130 kg"
+    },
+    {
+     "label": "B",
+     "text": "129 kg"
+    },
+    {
+     "label": "C",
+     "text": "132 kg"
+    },
+    {
+     "label": "D",
+     "text": "127 kg"
+    }
+   ],
+   "answer": "D",
+   "solution": "Tarun’s mother → 42 kg\n\nTarun’s mass → 42 ÷ 3 = 14 kg\n\nTarun’s father = 57 kg + 14 kg = 71 kg 42 + 14 + 71 = 127 kg\n\nTotal mass is 127 kg",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 130
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "The total age of Nina and her brother is 28 years 9 months. If Nina is 18 years 11 months old, how old is her brother ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "9 years 9 months"
+    },
+    {
+     "label": "B",
+     "text": "10 years 2 months"
+    },
+    {
+     "label": "C",
+     "text": "8 years 10 months"
+    },
+    {
+     "label": "D",
+     "text": "9 years 10 months"
+    }
+   ],
+   "answer": "D",
+   "solution": "28 years 9 months – 18 years 11 months = 9 years 10 months",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 130
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Which figure has only obtuse angles ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q27-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q27-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q27-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q27-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Only option C has all obtuse angles. An obtuse angle is an angle that measures more than 90° and less than 180°](asset:q27-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 131
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Choose the product of 6 with the difference of 938 and 257.",
+   "options": [
+    {
+     "label": "A",
+     "text": "4086"
+    },
+    {
+     "label": "B",
+     "text": "7170"
+    },
+    {
+     "label": "C",
+     "text": "5885"
+    },
+    {
+     "label": "D",
+     "text": "5371"
+    }
+   ],
+   "answer": "A",
+   "solution": "Difference : 938 – 257 = 681 Product of 681 and 6 = 681 × 6 = 4086",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 131
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Observe the figures carefully, If the shaded portion in figure A stands for 200, the shaded portion (X) in figure B stands for \\_\\_\\_\\_\\_.\n\n![figure](asset:q29-stem-fig1)\n\n![figure](asset:q29-stem-fig2)",
+   "options": [
+    {
+     "label": "A",
+     "text": "200"
+    },
+    {
+     "label": "B",
+     "text": "150"
+    },
+    {
+     "label": "C",
+     "text": "90"
+    },
+    {
+     "label": "D",
+     "text": "75"
+    }
+   ],
+   "answer": "D",
+   "solution": "![From figure A, 4 units → 200 1 unit → 200 ÷ 4 = 50 1 unit + 1 2 unit of figure B is shaded Half of 50 = 50 ÷ 2 = 25 X = 50 + 25 = 75](asset:q29-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 131
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Which option is the best estimate for the volume of water in the container ?\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "530 m*l*"
+    },
+    {
+     "label": "B",
+     "text": "630 m*l*"
+    },
+    {
+     "label": "C",
+     "text": "690 m*l*"
+    },
+    {
+     "label": "D",
+     "text": "740 m*l*"
+    }
+   ],
+   "answer": "C",
+   "solution": "![The water level is halfway between 625 and 750. 2 small divisions = 125 ml 630 is very close to 625 and 740 is very close to 750. Hence, 690 ml is the best answer](asset:q30-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 132
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "Select the correct statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "516 \\< DCVI"
+    },
+    {
+     "label": "B",
+     "text": "256 = CCLVII"
+    },
+    {
+     "label": "C",
+     "text": "![408 CDVIII](asset:q31-optC)"
+    },
+    {
+     "label": "D",
+     "text": "1005 \\> MD"
+    }
+   ],
+   "answer": "A",
+   "solution": "![DCVI = 500+100 + 5 + 1 = 606 CCLVII = 100 + 100 + 50 + 5 + 1 + 1 = 257 256 CDVIII = 500 – 100 + 5 + 1 + 1 + 1 = 400 + 8 = 408 MD = 1500](asset:q31-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 132
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Which unit shapes below can tessellate ?\n\n![figure](asset:q32-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "P and Q"
+    },
+    {
+     "label": "B",
+     "text": "Q and R"
+    },
+    {
+     "label": "C",
+     "text": "R and S"
+    },
+    {
+     "label": "D",
+     "text": "All of the above"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q32-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 132
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "The difference between two numbers is 378. When the smaller number is doubled, the result is 1488. What is the greater number ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "1110"
+    },
+    {
+     "label": "B",
+     "text": "1112"
+    },
+    {
+     "label": "C",
+     "text": "1120"
+    },
+    {
+     "label": "D",
+     "text": "1122"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Difference between two numbers = 378 When smaller number is doubled = 1488 Smaller number = 1488 ÷ 2 = 744 Greater number = 744 + 378 = 1122](asset:q33-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 132
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Select the symmetric option.\n\n![figure](asset:q34-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q34-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q34-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q34-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q34-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q34-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 133
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "48 is a common multiple of number X and number Y. The number X is 3 times of the number Y. What is the number X ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "16"
+    },
+    {
+     "label": "C",
+     "text": "15"
+    },
+    {
+     "label": "D",
+     "text": "18"
+    }
+   ],
+   "answer": "A",
+   "solution": "![48 = 1 × 48 48 = 2 × 24 48 = 3 × 16 48 = 4 × 12 12 is 3 times of 4 48 = 6 × 8 The number X is 12](asset:q35-sol)",
+   "topics": [
+    "Mathematics"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Mathematics"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 134
+   }
+  },
+  {
+   "id": "q36",
+   "number": "36",
+   "type": "mcq_single",
+   "stem": "How many parts come out if you cut the rope ?\n\n![figure](asset:q36-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "7"
+    }
+   ],
+   "answer": "D",
+   "solution": "![3 5 7 1 6 2 4](asset:q36-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 135
+   }
+  },
+  {
+   "id": "q37",
+   "number": "37",
+   "type": "mcq_single",
+   "stem": "Which shape is similar to the group ?\n\n![figure](asset:q37-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q37-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q37-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q37-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q37-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Number of squares in each diagram are equal in given group.](asset:q37-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 135
+   }
+  },
+  {
+   "id": "q38",
+   "number": "38",
+   "type": "mcq_single",
+   "stem": "What comes next in the series ?\n\n![figure](asset:q38-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q38-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q38-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q38-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q38-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Step 1 : Number of lines decrease every time by 1. Step 2 : every alternative image.](asset:q38-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 135
+   }
+  },
+  {
+   "id": "q39",
+   "number": "39",
+   "type": "mcq_single",
+   "stem": "![Complete the second pair as in the first pair. : ?](asset:q39-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q39-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q39-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q39-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q39-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Rotate 90 degrees left 1st image in first pair to get 2nd image in first pair. And red colour circles in 1st image changed to blue squares. Apply same rule in second pair.](asset:q39-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 136
+   }
+  },
+  {
+   "id": "q40",
+   "number": "40",
+   "type": "mcq_single",
+   "stem": "Select the odd one out.\n\n![figure](asset:q40-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Chalk"
+    },
+    {
+     "label": "B",
+     "text": "Marker"
+    },
+    {
+     "label": "C",
+     "text": "Sketch-pen"
+    },
+    {
+     "label": "D",
+     "text": "Inkpot"
+    }
+   ],
+   "answer": "D",
+   "solution": "Except inkpot remaining options are used to write.",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 136
+   }
+  },
+  {
+   "id": "q41",
+   "number": "41",
+   "type": "mcq_single",
+   "stem": "What will come in place of question mark ?\n\n![figure](asset:q41-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q41-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q41-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q41-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q41-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![When the answer image is added up with the equivalent image, the first image is obtained. – =](asset:q41-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 137
+   }
+  },
+  {
+   "id": "q42",
+   "number": "42",
+   "type": "mcq_single",
+   "stem": "Which letter comes exactly midway in the alphabet between F and the FOURTEENTH letter ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "J"
+    },
+    {
+     "label": "B",
+     "text": "I"
+    },
+    {
+     "label": "C",
+     "text": "E"
+    },
+    {
+     "label": "D",
+     "text": "T"
+    }
+   ],
+   "answer": "A",
+   "solution": "Mid letter between F and FOURTEENTH (N) is J.\n\nF G H I J K L M N",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 137
+   }
+  },
+  {
+   "id": "q43",
+   "number": "43",
+   "type": "mcq_single",
+   "stem": "Which one of the following sentence (s) correctly describes the picture ?\n\n![figure](asset:q43-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "There are as many circles as squares."
+    },
+    {
+     "label": "B",
+     "text": "There are fewer circles than triangles."
+    },
+    {
+     "label": "C",
+     "text": "There are twice as many circles as triangles."
+    },
+    {
+     "label": "D",
+     "text": "There are more squares than triangles."
+    }
+   ],
+   "answer": "C",
+   "solution": "There are twice as many circles as triangles.",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 137
+   }
+  },
+  {
+   "id": "q44",
+   "number": "44",
+   "type": "mcq_single",
+   "stem": "I am the 3<sup>rd</sup> month which ends with letter 'Y'. How many maximum days does my preceding month have ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "31"
+    },
+    {
+     "label": "B",
+     "text": "30"
+    },
+    {
+     "label": "C",
+     "text": "28"
+    },
+    {
+     "label": "D",
+     "text": "29"
+    }
+   ],
+   "answer": "B",
+   "solution": "![The months ending with 'Y' are January, February, May and July . 3rd month which ends with Y is May . The month preceding May is April which has maximum 30 days.](asset:q44-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 138
+   }
+  },
+  {
+   "id": "q45",
+   "number": "45",
+   "type": "mcq_single",
+   "stem": "![What will come in place of question mark ? + = ? A B C D](asset:q45-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![+ =](asset:q45-sol)",
+   "topics": [
+    "Reasoning"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Reasoning"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 138
+   }
+  },
+  {
+   "id": "q46",
+   "number": "46",
+   "type": "mcq_single",
+   "stem": "This picture\n\n![figure](asset:q46-stem-fig)\n\nwith pearls. Which of the bands below shows the same bracelet as given ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q46-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q46-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q46-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q46-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![=](asset:q46-sol)",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 139
+   }
+  },
+  {
+   "id": "q47",
+   "number": "47",
+   "type": "mcq_single",
+   "stem": "A butterfly sudoko (four different butterflies in each row) is given but one butterfly is missing in every row. Identify the missing butterflies from top to bottom.\n\n![figure](asset:q47-stem-fig)\n\nIdentify the order of missing butterflies from 1<sup>st</sup> row to 4<sup>th</sup> row.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1st row 2nd row 3rd row 4th row](asset:q47-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1st row 2nd row 3rd row 4th row](asset:q47-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1st row 2nd row 3rd row 4th row](asset:q47-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1st row 2nd row 3rd row 4th row](asset:q47-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![1st row 2nd row 3rd row 4th row](asset:q47-sol)",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 139
+   }
+  },
+  {
+   "id": "q48",
+   "number": "48",
+   "type": "mcq_single",
+   "stem": "Which option can make the given grid completely yellow ?\n\n![figure](asset:q48-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q48-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q48-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q48-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q48-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![after rotation + = Option D Question Final after rotation image image](asset:q48-sol)",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 140
+   }
+  },
+  {
+   "id": "q49",
+   "number": "49",
+   "type": "mcq_single",
+   "stem": "Arun walks in the direction of the arrow. At every intersection of streets he turns either to the right or to the left. First he goes to the left, then to the right then again to the right, then to the left then to the right, and finally again to the right. Where did Arun stop ?\n\n![figure](asset:q49-stem-fig1)\n\n![figure](asset:q49-stem-fig2)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![G](asset:q49-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![E](asset:q49-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![K](asset:q49-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![S](asset:q49-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![H K E G S](asset:q49-sol)",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 141
+   }
+  },
+  {
+   "id": "q50",
+   "number": "50",
+   "type": "mcq_single",
+   "stem": "Four schoolmates Akash, Bunny, Chotu and Dhoni were born in the same year. Their birthdays were on January 15<sup>th</sup>, June 13<sup>th</sup>, March 28<sup>th</sup> and Janauary 28<sup>th</sup> not necessarily in this order. Bunny and Akash were born in the same month. Akash and Chotu were born in the same day of different month. Who is the youngest ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Dhoni"
+    },
+    {
+     "label": "B",
+     "text": "Chotu"
+    },
+    {
+     "label": "C",
+     "text": "Akash"
+    },
+    {
+     "label": "D",
+     "text": "Bunny"
+    }
+   ],
+   "answer": "A",
+   "solution": "Bunny and Akash were born in the same month → January month\n\nAkash and Chotu were born in the same day of different month → 28<sup>th</sup> day\n\nTherefore Akash was born January 28<sup>th</sup>\n\nBunny was born January 15<sup>th</sup>\n\nChotu was born March 28<sup>th</sup> and\n\nDhoni was born June 13<sup>th</sup>\n\nDhoni is the youngest one.",
+   "topics": [
+    "Critical Thinking"
+   ],
+   "fields": {
+    "Exam": "UIMO",
+    "Class": 4,
+    "Paper": "UIMO UM9257",
+    "Paper code": "UM9257",
+    "Section": "Critical Thinking"
+   },
+   "source": {
+    "file": "UIMO_CLASS-4_Past-8-Papers.pdf",
+    "page": 141
+   }
+  }
+ ]
+}

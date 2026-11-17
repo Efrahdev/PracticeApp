@@ -1,0 +1,1552 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-model-test-1",
+  "title": "SOF IMO Class 4 · Model Test Paper 1",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-full": {
+   "file": "images/q1-full.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-optA": {
+   "file": "images/q2-optA.png"
+  },
+  "q2-optB": {
+   "file": "images/q2-optB.png"
+  },
+  "q2-optC": {
+   "file": "images/q2-optC.png"
+  },
+  "q2-optD": {
+   "file": "images/q2-optD.png"
+  },
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-full": {
+   "file": "images/q3-full.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-optA": {
+   "file": "images/q5-optA.png"
+  },
+  "q5-optB": {
+   "file": "images/q5-optB.png"
+  },
+  "q5-optC": {
+   "file": "images/q5-optC.png"
+  },
+  "q5-optD": {
+   "file": "images/q5-optD.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q6-full": {
+   "file": "images/q6-full.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-optA": {
+   "file": "images/q7-optA.png"
+  },
+  "q7-optB": {
+   "file": "images/q7-optB.png"
+  },
+  "q7-optC": {
+   "file": "images/q7-optC.png"
+  },
+  "q7-optD": {
+   "file": "images/q7-optD.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q9-stem-fig": {
+   "file": "images/q9-stem-fig.png"
+  },
+  "q10-stem-fig": {
+   "file": "images/q10-stem-fig.png"
+  },
+  "q11-stem-fig": {
+   "file": "images/q11-stem-fig.png"
+  },
+  "q13-optA": {
+   "file": "images/q13-optA.png"
+  },
+  "q13-optB": {
+   "file": "images/q13-optB.png"
+  },
+  "q13-optC": {
+   "file": "images/q13-optC.png"
+  },
+  "q13-optD": {
+   "file": "images/q13-optD.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q16-optD": {
+   "file": "images/q16-optD.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q20-optA": {
+   "file": "images/q20-optA.png"
+  },
+  "q20-stem-fig": {
+   "file": "images/q20-stem-fig.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q22-optB": {
+   "file": "images/q22-optB.png"
+  },
+  "q22-optD": {
+   "file": "images/q22-optD.png"
+  },
+  "q22-sol": {
+   "file": "images/q22-sol.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q31-optB": {
+   "file": "images/q31-optB.png"
+  },
+  "q31-stem": {
+   "file": "images/q31-stem.png"
+  },
+  "q31-stem-fig1": {
+   "file": "images/q31-stem-fig1.png"
+  },
+  "q31-sol": {
+   "file": "images/q31-sol.png"
+  },
+  "q32-stem": {
+   "file": "images/q32-stem.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q34-stem-fig": {
+   "file": "images/q34-stem-fig.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-stem-fig": {
+   "file": "images/q35-stem-fig.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "![Mohit was facing the Hospital. He made a 5 turn clockwise. Where would he be facing? 8 A. Park B. School C. Office D. Fire Station](asset:q1-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![5/8 After making 5 8 turn clockwise Mohit will be facing the Park.](asset:q1-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Select the correct mirror image of Fig. (X).\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q2-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q2-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q2-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q2-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Mirror](asset:q2-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "![Which of the following options will continue the given number pattern? A. 576 B. 486 C. 840 D. 729](asset:q3-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The pattern followed is :](asset:q3-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Look at the alphabet series below :\n\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z\n\nWhich of the following alphabets is 6<sup>th</sup> to the left of 5<sup>th</sup> alphabet from the right end?",
+   "options": [
+    {
+     "label": "A",
+     "text": "P"
+    },
+    {
+     "label": "B",
+     "text": "O"
+    },
+    {
+     "label": "C",
+     "text": "N"
+    },
+    {
+     "label": "D",
+     "text": "M"
+    }
+   ],
+   "answer": "A",
+   "solution": "![The alphabet series is : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 5th alphabet from the right end is V and 6th to the left of V is P.](asset:q4-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 107
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Which of the following has no line of symmetry?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q5-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q5-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q5-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q5-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![solution](asset:q5-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "![Which of the following options will complete the pattern in Fig. X ? A. B. C. D.](asset:q6-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![solution](asset:q6-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Which of the following options is exactly embedded in Fig. (X) as one of its parts?\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q7-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q7-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q7-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q7-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q7-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Some letters are given which are numbered 1, 2, 3, 4, 5 and 6 followed by four options containing combinations of these numbers. Find the combination of numbers so that letters are arranged accordingly to form a meaningful English word.\n\nU I T M E N\n\n1 2 3 4 5 6",
+   "options": [
+    {
+     "label": "A",
+     "text": "4, 3, 1, 6, 5, 2"
+    },
+    {
+     "label": "B",
+     "text": "4, 2, 6, 1, 3, 5"
+    },
+    {
+     "label": "C",
+     "text": "1, 2, 4, 6, 5, 3"
+    },
+    {
+     "label": "D",
+     "text": "3, 5, 2, 6, 1, 4"
+    }
+   ],
+   "answer": "B",
+   "solution": "The word formed is : M I N U T E\n\n*i.e.*, 4, 2, 6, 1, 3, 5",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "Find the missing number, if a certain rule is followed either row-wise or column-wise.\n\n![figure](asset:q9-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "160"
+    },
+    {
+     "label": "B",
+     "text": "140"
+    },
+    {
+     "label": "C",
+     "text": "180"
+    },
+    {
+     "label": "D",
+     "text": "190"
+    }
+   ],
+   "answer": "C",
+   "solution": "The rule followed is ; 6 × 8 = 48\n\nAnd, 13 × 7 = 91\n\nSimilarly, 12 × 15 = 180",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 108
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "There are 5 girls standing in a row.\n\n• Divya is second girl from last.\n\n• Shreya is between Kirti and Palak.\n\n• Nidhi is just after Divya.\n\n• Kirti is in the middle.\n\nWho is at the first position?\n\n![figure](asset:q10-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Kirti"
+    },
+    {
+     "label": "B",
+     "text": "Shreya"
+    },
+    {
+     "label": "C",
+     "text": "Palak"
+    },
+    {
+     "label": "D",
+     "text": "Nidhi"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the given information, the order of 5 girls standing in a row is as follows:\n\nPalak, Shreya, Kirti, Divya, Nidhi\n\n(First)\n\nSo, Palak is at the first position.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Identify the number from the clues given below.\n\n![figure](asset:q11-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "8497"
+    },
+    {
+     "label": "B",
+     "text": "6835"
+    },
+    {
+     "label": "C",
+     "text": "4867"
+    },
+    {
+     "label": "D",
+     "text": "8369"
+    }
+   ],
+   "answer": "B",
+   "solution": "From the given options only option B, satisfies the given conditions.\n\nAs, tens place digit = 3\n\nTherefore, thousands place digit = 3 × 2 = 6\n\nAlso, difference between units place digit and tens place digit = 5 – 3 = 2",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "The \\_\\_\\_\\_\\_\\_\\_\\_ value of a digit is the digit itself, whereas the \\_\\_\\_\\_\\_\\_\\_\\_ value of a digit is determined by the place it occupies in the numeral.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Face, Face"
+    },
+    {
+     "label": "B",
+     "text": "Place, Face"
+    },
+    {
+     "label": "C",
+     "text": "Face, Place"
+    },
+    {
+     "label": "D",
+     "text": "Place, Place"
+    }
+   ],
+   "answer": "C",
+   "solution": "The face value of a digit is the digit itself, whereas the place value of a digit is determined by the place it occupies in the numeral.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "Which of the following figures has fraction of unshaded part less than the fraction of shaded part of Fig. (X)?\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q13-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q13-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q13-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q13-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![In the given figure, the number of equal parts = 6 Number of shaded parts = 3 Shaded fraction = 3 = 3 ÷ 3 = 1 6 6 ÷ 3 2 A. Total number of equal parts = 4 Number of unshaded parts = 2 Unshaded fraction = 2 = 2 ÷ 2 2 = 1 4 4 ÷ 2 B. Total number of equal parts = 4 Number of unshaded parts = 2 Unshaded fraction = 2 = 2 ÷ 2 = 1 4 4 ÷ 2 2 C. Total number of equal parts = 8 Number of unshaded parts = 4 ](asset:q13-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 109
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Find the value of *X*, if the perimeter of the figure below (not drawn to scale) is 48 cm.\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "10"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "6"
+    }
+   ],
+   "answer": "C",
+   "solution": "Perimeter of given figure\n\n= (2 + 9 + 5 + *X* + 2 + *X* + 2 + 9 + 2 + 2 + 2 + 5) cm = (40 + 2*X*) cm\n\nBut, perimeter = 48 cm \\[Given\\] Therefore, (40 + 2*X*) cm = 48 cm\n\nAnd, 2*X* = 48 – 40 = 8\n\nOr, 2*X* = 8\n\nHence, *X* = 8 ÷ 2 = 4",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "The smallest 4-digit number which is a multiple of 13 also is \\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "1000"
+    },
+    {
+     "label": "B",
+     "text": "9999"
+    },
+    {
+     "label": "C",
+     "text": "1013"
+    },
+    {
+     "label": "D",
+     "text": "1001"
+    }
+   ],
+   "answer": "D",
+   "solution": "![So, 1001 is the smallest 4-digit number which is a multiple of 13 also.](asset:q15-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "Which of the following is CORRECT?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 1 8 13](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![4 7 23 23](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![7 7 9 9](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1 1 100 2](asset:q16-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![We have, A. 1 = 1 13 × = 13 8 8 × 13 104 And, 1 = 1 8 × = 8 13 13 × 8 104 Since, 13 8 So, 13 8 or 1 1 104 104 8 13 B. Since, 4 7 So, 4 7 23 23 C. Since, 7 = 7 So, 7 = 7 9 9 1 = 1 50 × = 50 1 D. and 2 2 × 50 100 100 Since, 1 50 So, 1 50 or 1 1 100 100 100 2 So, option D is correct.](asset:q16-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "The difference between eight thousands five hundreds nine ones and three thousands fifty seven ones is \\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "5880"
+    },
+    {
+     "label": "B",
+     "text": "5452"
+    },
+    {
+     "label": "C",
+     "text": "5228"
+    },
+    {
+     "label": "D",
+     "text": "5128"
+    }
+   ],
+   "answer": "B",
+   "solution": "Eight thousands five hundreds nine ones = 8509 And three thousands fifty seven ones = 3057\n\nSo, required difference = 8509 – 3057\n\n= 5452",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "896 × 4 is equal to 3 thousands 5 hundreds \\_\\_\\_\\_\\_\\_\\_\\_ tens and 4 ones.",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "50"
+    },
+    {
+     "label": "D",
+     "text": "80"
+    }
+   ],
+   "answer": "B",
+   "solution": "We have, 896 × 4 = 3584\n\n*i.e.*, 3 thousands 5 hundreds 8 tens and 4 ones.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "A performance began at 19:45. It lasted 1 hour 25 minutes. At what time did it end?",
+   "options": [
+    {
+     "label": "A",
+     "text": "20:10"
+    },
+    {
+     "label": "B",
+     "text": "20:25"
+    },
+    {
+     "label": "C",
+     "text": "21:05"
+    },
+    {
+     "label": "D",
+     "text": "21:10"
+    }
+   ],
+   "answer": "D",
+   "solution": "Time at which performance began = 19 : 45 Duration of performance = 1 hr 25 mins\n\nSo, 1 hr 25 mins after 19 : 45 is 21: 10.\n\nHence, the performance ended at 21 : 10.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "Compare and fill the box.\n\n![figure](asset:q20-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![181 × 0 4 × 10 × 0](asset:q20-optA)"
+    },
+    {
+     "label": "B",
+     "text": "\\="
+    },
+    {
+     "label": "C",
+     "text": "\\>"
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "B",
+   "solution": "![We have, 181 × 0 4 × 10 × 0 So, 0 40 × 0 Hence, 0 0](asset:q20-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "A milk booth supplies 50 L of milk everyday. On a particular day, the supply was 31 L 250 mL. The quantity of milk supplied on a particular day was \\_\\_\\_\\_\\_\\_ less than everyday supply.",
+   "options": [
+    {
+     "label": "A",
+     "text": "18 L 750 mL"
+    },
+    {
+     "label": "B",
+     "text": "81 L 750 mL"
+    },
+    {
+     "label": "C",
+     "text": "18 L 740 mL"
+    },
+    {
+     "label": "D",
+     "text": "80 L 740 mL"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Supply of milk on a milk booth everyday = 50 L = 50000 mL Supply of milk on a particular day = 31 L 250 mL = 31250 mL Reduction of quantity of milk supply = 50000 – 31250 mL = 18750 mL = 18 L 750 mL](asset:q21-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 110
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Ram's mother had 4 apples. She gave each one of Ram's three friends half an apple to eat. What fraction of the 4 apples was remained?",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "![11 2](asset:q22-optB)"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "![2 1 2](asset:q22-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of apples Ram’s mother had = 4 Number of apples given to 1 friend = 1 2 Number of apples given to 3 friends = 3 × 2 = 3 1 2 Remaining number of apples = 4 − 3 2 = 4 × 2 − 3 = 8 − 3 5 2 1 = = 1 × 2 2 2 2 2](asset:q22-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Neha had 21 novels. She got two more from her aunt, 12 more on her birthday and bought 3 more with her pocket money. How many novels does she has now?",
+   "options": [
+    {
+     "label": "A",
+     "text": "38"
+    },
+    {
+     "label": "B",
+     "text": "40"
+    },
+    {
+     "label": "C",
+     "text": "36"
+    },
+    {
+     "label": "D",
+     "text": "28"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of novels Neha had = 21\n\nNumber of novels she got from her aunt = 2\n\nNumber of novels she got on her birthday = 12\n\nNumber of novels she bought from her pocket money = 3 Therefore, total number of novels she has now\n\n=(21 + 2 + 12 + 3) = 38",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Amit went for a walk and returned home at 7:00 a.m. If it took him 2 hours and 45 minutes, then at what time did he start to walk?",
+   "options": [
+    {
+     "label": "A",
+     "text": "4:45 a.m."
+    },
+    {
+     "label": "B",
+     "text": "4:30 a.m."
+    },
+    {
+     "label": "C",
+     "text": "4:15 a.m."
+    },
+    {
+     "label": "D",
+     "text": "3:45 a.m."
+    }
+   ],
+   "answer": "C",
+   "solution": "Time at which Amit returned home = 7:00 a.m. Total duration of the walk = 2 hours 45 minutes\n\nSo, 2 hours 45 minutes before 7 :00 a.m. is 4 :15 a.m. Hence, he started to walk at 4 : 15 a.m.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Sneha uses 15 tomatoes to make half a litre of tomato sauce. How much sauce can she make from 45 tomatoes?",
+   "options": [
+    {
+     "label": "A",
+     "text": "One and half litres"
+    },
+    {
+     "label": "B",
+     "text": "Two litres"
+    },
+    {
+     "label": "C",
+     "text": "Three litres"
+    },
+    {
+     "label": "D",
+     "text": "Two and half litres"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Quantity of tomato sauce prepared from 15 tomatoes = 1 2 L Since, 45 is 3 times of 15. Therefore, quantity of tomato sauce prepared from 45 tomatoes = 3 × 1 L = 3 L = 11 L i.e., one and half litres 2 2 2](asset:q25-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "There are 54 balls which are kept into 6 bags such that the number of balls in each bag is equal. How many balls are there in 2 such bags?",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "108"
+    },
+    {
+     "label": "C",
+     "text": "18"
+    },
+    {
+     "label": "D",
+     "text": "12"
+    }
+   ],
+   "answer": "C",
+   "solution": "Number of balls in 6 bags = 54 Number of balls in 1 bag = 54 ÷ 6 = 9 Number of balls in 2 bags = 9 × 2 = 18",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "1 kg of onions costs ₹ 25. If 3 kg of onions cost as much as 5 kg of potatoes, how much will it cost to buy 12 kg each of potatoes and onions altogether ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 400"
+    },
+    {
+     "label": "B",
+     "text": "₹ 180"
+    },
+    {
+     "label": "C",
+     "text": "₹ 480"
+    },
+    {
+     "label": "D",
+     "text": "₹ 300"
+    }
+   ],
+   "answer": "C",
+   "solution": "Cost of 1 kg of onions = ₹ 25\n\nCost of 3 kg of onions = ₹ (25 × 3) = ₹ 75\n\nCost of 5 kg of potatoes = ₹ 75\n\nCost of 1 kg of potatoes = ₹ (75 ÷ 5) = ₹ 15\n\nCost of 12 kg of potatoes = ₹ (15 × 12) = ₹ 180\n\nAlso, cost of 12 kg of onions = ₹ (25 × 12) = ₹ 300\n\nTotal cost of 12 kg of each of potatoes and onions = ₹ (180 + 300) = ₹ 480",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Riya and Richa had an equal number of marbles. Riya gave 35 marbles to Richa and lost 10 marbles. If Riya is left with 25 marbles, then find the total number of marbles Riya and Richa had initially.",
+   "options": [
+    {
+     "label": "A",
+     "text": "135"
+    },
+    {
+     "label": "B",
+     "text": "176"
+    },
+    {
+     "label": "C",
+     "text": "105"
+    },
+    {
+     "label": "D",
+     "text": "140"
+    }
+   ],
+   "answer": "D",
+   "solution": "Number of marbles Riya gave to Richa = 35 Number of marbles Riya lost = 10\n\nNumber of marbles left with Riya = 25\n\nTotal number of marbles Riya had = 35 + 10 + 25 = 70 Therefore, total number of marbles Riya and Richa had initially = 70 + 70 = 140",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Vivan bought 6 kg 500 g of wheat from one shop and 3 kg 850 g of wheat from another shop. How much wheat did he buy altogether?",
+   "options": [
+    {
+     "label": "A",
+     "text": "16 kg 300 g"
+    },
+    {
+     "label": "B",
+     "text": "15 kg 170 g"
+    },
+    {
+     "label": "C",
+     "text": "10 kg 900 g"
+    },
+    {
+     "label": "D",
+     "text": "10 kg 350 g"
+    }
+   ],
+   "answer": "D",
+   "solution": "Quantity of wheat Vivan bought from first shop = 6 kg 500 g = 6500 g\n\nQuantity of wheat he bought from second shop\n\n= 3 kg 850 g = 3850 g\n\nTotal quantity of wheat bought by him = (6500 + 3850)g = 10350 g = 10 kg 350 g",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "A doll costs ₹ 428 more than a teddy bear. If cost of the teddy bear is ₹ ₹ 1290, then how much does the doll cost?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 1718"
+    },
+    {
+     "label": "B",
+     "text": "₹ 1780"
+    },
+    {
+     "label": "C",
+     "text": "₹ 1700"
+    },
+    {
+     "label": "D",
+     "text": "₹ 1500"
+    }
+   ],
+   "answer": "A",
+   "solution": "Cost of a teddy bear = ₹ 1290\n\nDoll costs ₹ 428 more than the teddy bear.\n\nTherefore, cost of the doll = ₹ (1290 + 428) = ₹ 1718",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 111
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "![Find the value of R .](asset:q31-stem)\n\n![figure](asset:q31-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "![3 1](asset:q31-optB)"
+    },
+    {
+     "label": "C",
+     "text": "0"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "B",
+   "solution": "![We have, So, P = 2, Q = 1 and R = 3 Now, P − Q = 2 − 1 = 1 R 3 3](asset:q31-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![If + + + + = 2780 and + + = 1690, then find the value of + + + + + .](asset:q32-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "4506"
+    },
+    {
+     "label": "B",
+     "text": "4560"
+    },
+    {
+     "label": "C",
+     "text": "9450"
+    },
+    {
+     "label": "D",
+     "text": "3435"
+    }
+   ],
+   "answer": "D",
+   "solution": "![We have, + + = 1690 and + + + + = 2780 Therefore, + + 1690 = 2780 Or, 2 = 2780 – 1690 Or, 2 = 1090 Or, = 1090 ÷ 2 Hence, = 545 Now, + + = 1690 So, 1090 + = 1690 Or, = 1690 – 1090 = 600 Now, + + + + + = 545 × 3 + 600 × 3 = 1635 + 1800 = 3435](asset:q32-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Modern Library has 32436 books of English, 32100 books of Hindi and 25880 books of Mathematics. National Library has 25808 books of English, 32346 books of Science and 32101 books of Mathematics. Which of the following statements is true?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Modern Library has 150 more books than National Library."
+    },
+    {
+     "label": "B",
+     "text": "Both Libraries have the same number of books."
+    },
+    {
+     "label": "C",
+     "text": "Modern Library has 157 less books than National Library."
+    },
+    {
+     "label": "D",
+     "text": "Modern Library has 161 more books than National Library."
+    }
+   ],
+   "answer": "D",
+   "solution": "Total number of books in Modern Library\n\n= 32436 + 32100 + 25880 = 90416\n\nTotal number of books in National Library\n\n= 25808 + 32346 + 32101 = 90255\n\nSo, Modern Library has (90416 – 90255) = 161 more books than National Library.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Study the given bar graph showing marks scored by a student in different subjects and answer the following question.\n\n![figure](asset:q34-stem-fig)\n\nFind the difference between the highest marks scored and total number of marks scored in Maths and Hindi.",
+   "options": [
+    {
+     "label": "A",
+     "text": "80"
+    },
+    {
+     "label": "B",
+     "text": "88"
+    },
+    {
+     "label": "C",
+     "text": "96"
+    },
+    {
+     "label": "D",
+     "text": "184"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Highest marks scored = Marks scored in Maths = 96 Marks scored in Hindi = 88 Total number of marks scored in Maths and Hindi = 96 + 88 = 184 Therefore, required difference = 184 – 96 = 88](asset:q34-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 112
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "The figure shows the weight of different toys. What is the total weight of an apple, a doll and a toy car?\n\n![figure](asset:q35-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "140 g"
+    },
+    {
+     "label": "B",
+     "text": "200 g"
+    },
+    {
+     "label": "C",
+     "text": "155 g"
+    },
+    {
+     "label": "D",
+     "text": "217 g"
+    }
+   ],
+   "answer": "B",
+   "solution": "![We have, + = 160 g and + 2 = 240 g So, + + = 240 g Or, 160 g + = 240 g Therefore, = 240 – 160 g = 80 g As, + = 160 g So, = 160 – 80 g = 80 g Also, 2 + = 200 g Or, 2 × 80 g + = 200 g Or, = 200 – 160 g = 40 g Hence, + + = 40 + 80 + 80 g = 200 g](asset:q35-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 113
+   }
+  }
+ ]
+}

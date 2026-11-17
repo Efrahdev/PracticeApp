@@ -1,0 +1,1665 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2024-25-set-b",
+  "title": "SOF IMO Class 4 · 2024-25 · Set B",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-full": {
+   "file": "images/q2-full.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-optA": {
+   "file": "images/q4-optA.png"
+  },
+  "q4-optB": {
+   "file": "images/q4-optB.png"
+  },
+  "q4-optC": {
+   "file": "images/q4-optC.png"
+  },
+  "q4-optD": {
+   "file": "images/q4-optD.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q11-full": {
+   "file": "images/q11-full.png"
+  },
+  "q11-sol": {
+   "file": "images/q11-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q14-full": {
+   "file": "images/q14-full.png"
+  },
+  "g15-16-fig": {
+   "file": "images/g15-16-fig.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q16-optD": {
+   "file": "images/q16-optD.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q17-stem": {
+   "file": "images/q17-stem.png"
+  },
+  "q17-sol": {
+   "file": "images/q17-sol.png"
+  },
+  "q18-stem-fig": {
+   "file": "images/q18-stem-fig.png"
+  },
+  "q18-sol": {
+   "file": "images/q18-sol.png"
+  },
+  "q19-stem-fig": {
+   "file": "images/q19-stem-fig.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q23-optA": {
+   "file": "images/q23-optA.png"
+  },
+  "q23-optB": {
+   "file": "images/q23-optB.png"
+  },
+  "q23-optC": {
+   "file": "images/q23-optC.png"
+  },
+  "q23-optD": {
+   "file": "images/q23-optD.png"
+  },
+  "q23-stem": {
+   "file": "images/q23-stem.png"
+  },
+  "q23-sol": {
+   "file": "images/q23-sol.png"
+  },
+  "q29-stem": {
+   "file": "images/q29-stem.png"
+  },
+  "q29-stem-fig1": {
+   "file": "images/q29-stem-fig1.png"
+  },
+  "q29-sol": {
+   "file": "images/q29-sol.png"
+  },
+  "q31-stem-fig": {
+   "file": "images/q31-stem-fig.png"
+  },
+  "q31-sol": {
+   "file": "images/q31-sol.png"
+  },
+  "q32-stem": {
+   "file": "images/q32-stem.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-full": {
+   "file": "images/q33-full.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-stem": {
+   "file": "images/q34-stem.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-stem-fig1": {
+   "file": "images/q35-stem-fig1.png"
+  },
+  "q35-stem-fig2": {
+   "file": "images/q35-stem-fig2.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "How many of the following figures have at least one line of symmetry?\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "![Ayushi is facing towards the Tennis court. If she takes 4 turn anti-clockwise and then 5 1 Hostel 8 turn clockwise, Hospital School then what will she be facing now? Ayushi A. Amusement park Amusement park Library B. Hostel C. Fort D. Hospital Fort Tennis court Fountain](asset:q2-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Hostel Hospital School Ayushi 1/4 5/8 Library Amusement park Fort Tennis court Fountain So, Ayushi will be facing towards Amusement park now.](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Find the missing number, if same rule is followed in all the three figures.\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "42"
+    },
+    {
+     "label": "B",
+     "text": "36"
+    },
+    {
+     "label": "C",
+     "text": "48"
+    },
+    {
+     "label": "D",
+     "text": "46"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The rule followed is, 6 × 3 + 2 = 18 + 2 = 20 4 × 9 + 3 = 36 + 3 = 39 8 × 5 + 6 = 40 + 6 = 46](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Select a figure from the options in which the given figure is exactly embedded as one of its parts.\n\n![figure](asset:q4-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q4-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q4-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q4-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q4-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![solution](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Naina went for walk on every Monday, Thursday and Saturday in the month of October 20XX. If she walked in the morning and evening as well, then how many times did she go for walk in that month?\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "24"
+    },
+    {
+     "label": "B",
+     "text": "13"
+    },
+    {
+     "label": "C",
+     "text": "26"
+    },
+    {
+     "label": "D",
+     "text": "18"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of Mondays, Thursdays and Saturdays in October 20XX = 5 + 4 + 4 = 13 Number of times Naina goes for walk in 1 day = 2 Total number of times she goes for walk in October 20XX = 2 × 13 = 26](asset:q5-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Form a meaningful English word from the given combination of letters and select the category of that word.\n\nL, A, E, T, B",
+   "options": [
+    {
+     "label": "A",
+     "text": "Instrument"
+    },
+    {
+     "label": "B",
+     "text": "Month"
+    },
+    {
+     "label": "C",
+     "text": "Colour"
+    },
+    {
+     "label": "D",
+     "text": "Furniture"
+    }
+   ],
+   "answer": "D",
+   "solution": "The word formed is TABLE which comes in the category of furniture.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "If two stones M and E are removed from the given arrangement, then stone \\_\\_\\_\\_\\_\\_\\_\\_ is fourth to the left of second stone from the right end.\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "K"
+    },
+    {
+     "label": "B",
+     "text": "R"
+    },
+    {
+     "label": "C",
+     "text": "V"
+    },
+    {
+     "label": "D",
+     "text": "W"
+    }
+   ],
+   "answer": "B",
+   "solution": "![After removing stones M and E, the new arrangement becomes: C V R G K N S W Left So, second stone from the right end is stone S and fourth to the left of stone S is stone R.](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "How many different possible combinations of 1 laptop and 1 mouse each can be formed from the given laptops and mouses?\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "18"
+    },
+    {
+     "label": "B",
+     "text": "9"
+    },
+    {
+     "label": "C",
+     "text": "24"
+    },
+    {
+     "label": "D",
+     "text": "20"
+    }
+   ],
+   "answer": "D",
+   "solution": "Number of laptops = 4\n\nNumber of mouses = 5\n\nSo, number of possible combinations = 4 × 5 = 20",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "If ‘Flute’ means ‘Guitar’, ‘Guitar’ means ‘Map’, ‘Map’ means ‘Shoes’ and ‘Shoes’ means ‘Ball’, then \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ is used to find the location of a place.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Guitar"
+    },
+    {
+     "label": "B",
+     "text": "Shoes"
+    },
+    {
+     "label": "C",
+     "text": "Map"
+    },
+    {
+     "label": "D",
+     "text": "Flute"
+    }
+   ],
+   "answer": "A",
+   "solution": "We use Map to find the location of a place but Guitar means Map.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Select the odd one out.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![GJ](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![IK](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![TW](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![MP](asset:q10-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![A. G +3 J B. I +2 K C. T +3 W D. M +3 P](asset:q10-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "![IJKL and MNOP are two rectangles. Find the length 8 cm I J of KP. A. 3 cm K L M P B. 5 cm 5 cm C. 8 cm N O D. 9 cm 12 cm](asset:q11-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![IJKL and MNOP are two rectangles. So, IJ = LK and MP = NO ∵ LK = 8 cm ⇒ LM + MK = 8 cm ⇒ 5 cm + MK = 8 cm ∵ LM = 5 cm ⇒ MK = 3 cm ... i Now, MP = 12 cm ⇒ MK + KP = 12 cm ⇒ 3 cm + KP = 12 cm From i ⇒ KP = 9 cm](asset:q11-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "If P is the greatest 4-digit number that can be formed from the digits 9, 1, 0 and 7 (using each digit at least once), then what will be the round off value of P, when it is rounded off to the nearest hundreds place?",
+   "options": [
+    {
+     "label": "A",
+     "text": "9800"
+    },
+    {
+     "label": "B",
+     "text": "10000"
+    },
+    {
+     "label": "C",
+     "text": "9700"
+    },
+    {
+     "label": "D",
+     "text": "8000"
+    }
+   ],
+   "answer": "C",
+   "solution": "Greatest 4-digit number that can be formed from the given digits = 9710\n\nP = 9710\n\nSo, 9710 when rounded off to nearest hundreds gives 9700.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "Veer plotted 3 points on a grid line. The three points together makes a \\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Straight line"
+    },
+    {
+     "label": "B",
+     "text": "Square"
+    },
+    {
+     "label": "C",
+     "text": "Triangle"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "A",
+   "solution": "The three points together make a straight line.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "![If the given clock is 45 minutes fast, then what will be CORRECT time after 2 hours 20 minutes? A. 8 : 45 B. 8 : 30 C. 7 : 30 D. 9 : 30](asset:q14-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "Time shown in the clock = 7 : 10\n\nAs, the clock is 45 minutes fast, so correct time is 6 : 25. Now, 2 hours 20 mins after 6 : 25 is 8 : 45.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (15-16) : The given bar graph shows the number of raincoats produced by a company in the given five years. Study the given graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\nIf the total number of raincoats produced in the given five years is 22500, then how many raincoats were produced in 2023?",
+   "options": [
+    {
+     "label": "A",
+     "text": "3500"
+    },
+    {
+     "label": "B",
+     "text": "3750"
+    },
+    {
+     "label": "C",
+     "text": "4000"
+    },
+    {
+     "label": "D",
+     "text": "3000"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of raincoats produced in five years = 22500 Number of raincoats produced in 4 years = 5250 + 6000 + 3750 + 4500 = 19500 Number of raincoats produced in 2023 = 22500 –19500 = 3000](asset:q15-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (15-16) : The given bar graph shows the number of raincoats produced by a company in the given five years. Study the given graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\nFind the fraction of number of raincoats produced in the year 2020 to that in the year 2022.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 3](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![2 3](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![3 4](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![3 2](asset:q16-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Number of raincoats produced in 2020 = 6000 Number of raincoats produced in 2022 = 4500 Required fraction = 6000 = 4 4500 3](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "![If = 12, then find the value of .](asset:q17-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "30"
+    },
+    {
+     "label": "B",
+     "text": "42"
+    },
+    {
+     "label": "C",
+     "text": "35"
+    },
+    {
+     "label": "D",
+     "text": "47"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Given, + + = 147 + + + = 189 ⇒ 147 + = 189 ⇒ = 189 – 147 = 42 Now, – = 12 ⇒ = 42 –12 = 30](asset:q17-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Compare the following and select the CORRECT option.\n\n![figure](asset:q18-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\<"
+    },
+    {
+     "label": "B",
+     "text": "\\="
+    },
+    {
+     "label": "C",
+     "text": "\\>"
+    },
+    {
+     "label": "D",
+     "text": "Can’t say"
+    }
+   ],
+   "answer": "A",
+   "solution": "![1 + 5 + 3 = 3 + 10 + 3 = 16 4 6 12 12 12 12 12 and 7 + 3 + 1 = 7 + 6 + 4 = 17 12 6 3 12 12 12 12 Now, 16 17 12 12 ∴1 + 5 + 3 7 + 3 + 1 4 6 12 12 6 3](asset:q18-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Arrange the following in descending order and select the CORRECT option.\n\n![figure](asset:q19-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "R, P, Q"
+    },
+    {
+     "label": "B",
+     "text": "P, Q, R"
+    },
+    {
+     "label": "C",
+     "text": "R, Q, P"
+    },
+    {
+     "label": "D",
+     "text": "Q, P, R"
+    }
+   ],
+   "answer": "A",
+   "solution": "P = 81 L 252 mL\n\nQ = 70 L 520 mL – 20 L = 50 L 520 mL\n\nR = 80 L 250 mL + 15 L = 95 L 250 mL\n\nAs, 95 L 250 mL \\> 81 L 252 mL \\> 50 L 520 mL So, correct descending order is: R, P, Q.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "On dividing the greatest 4-digit even number by 15, we get \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Quotient = 690 and Remainder = 7"
+    },
+    {
+     "label": "B",
+     "text": "Quotient = 566 and Remainder = 8"
+    },
+    {
+     "label": "C",
+     "text": "Quotient = 660 and Remainder = 7"
+    },
+    {
+     "label": "D",
+     "text": "Quotient = 666 and Remainder = 8"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Greatest 4-digit even number = 9998 15 9998 666 – 90 99 – 90 98 – 90 8 So, quotient = 666 and remainder = 8](asset:q20-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Box X contained 1230 cards and box Y contained twice as many cards as box X. How many total cards do the two boxes contain?",
+   "options": [
+    {
+     "label": "A",
+     "text": "3675"
+    },
+    {
+     "label": "B",
+     "text": "3690"
+    },
+    {
+     "label": "C",
+     "text": "3540"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of cards in box X = 1230\n\nNumber of cards in box Y = 2X = 2 ×1230 = 2460\n\n\\\\Total number of cards in both boxes = 1230 + 2460 = 3690",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Puneet wanted to take the bus at 6:25 p.m. He arrived at the bus stop 40 minutes before 6:25 p.m. At what time did Puneet arrive at the bus stop?",
+   "options": [
+    {
+     "label": "A",
+     "text": "5:35 p.m."
+    },
+    {
+     "label": "B",
+     "text": "5:45 p.m."
+    },
+    {
+     "label": "C",
+     "text": "4:45 p.m."
+    },
+    {
+     "label": "D",
+     "text": "5:25 p.m."
+    }
+   ],
+   "answer": "B",
+   "solution": "Time at which Puneet reach the bus stop = 40 mins before 6 : 25 p.m. = 5 : 45 p.m.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "![Shruti and Payal shared a cake at a party. Shruti ate 1 3 of the cake while Payal ate 1 of the cake. What fraction of the cake did they eat altogether?](asset:q23-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 3](asset:q23-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![4 9](asset:q23-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![3 5](asset:q23-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![2 3](asset:q23-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Fraction of cake Shruti and Payal ate altogether 1 + 1 = 3 + 1 = 4 = 3 9 9 9 9](asset:q23-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Mohit had ₹ 1950. He bought a book that costed ₹ 319, a toy that costed ₹ 280 and a pair of shoes. After buying these items, he had ₹ 780 left. How much did he pay for the pair of shoes?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 571"
+    },
+    {
+     "label": "B",
+     "text": "₹ 380"
+    },
+    {
+     "label": "C",
+     "text": "₹ 619"
+    },
+    {
+     "label": "D",
+     "text": "₹ 431"
+    }
+   ],
+   "answer": "A",
+   "solution": "Amount of money Mohit had = ₹ 1950\n\nAmount of money left with him = ₹ 780\n\nSo, amount of money he spent = ₹ (1950 –780) = ₹ 1170 ⇒ Cost of book + Cost of toy + Cost of pair of shoes = ₹ 1170 ⇒ ₹ 319 + ₹ 280 + Cost of pair of shoes = ₹ 1170\n\n⇒ Cost of pair of shoes = ₹ (1170 – 599) = ₹ 571",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "When rounded off to the nearest 1000, the population of Sikkim becomes 608000. Which of the following could be the actual population of Sikkim?",
+   "options": [
+    {
+     "label": "A",
+     "text": "607688"
+    },
+    {
+     "label": "B",
+     "text": "607488"
+    },
+    {
+     "label": "C",
+     "text": "617695"
+    },
+    {
+     "label": "D",
+     "text": "608988"
+    }
+   ],
+   "answer": "A",
+   "solution": "607688 when rounded off to nearest 1000 becomes 608000.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Rashi walked 4 times around a square field each side of which is 55 m long. How much total distance did she cover?",
+   "options": [
+    {
+     "label": "A",
+     "text": "800 m"
+    },
+    {
+     "label": "B",
+     "text": "440 m"
+    },
+    {
+     "label": "C",
+     "text": "880 m"
+    },
+    {
+     "label": "D",
+     "text": "650 m"
+    }
+   ],
+   "answer": "C",
+   "solution": "Distance covered in 1 round = Perimeter of square\n\n= 4 × 55 m = 220 m \\\\Distance covered in 4 rounds = 4 × 220 m = 880 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Sumit gave 50 stickers to each of his student. He then has 20 stickers left. If he had bought 80 packets of 9 stickers each, then to how many students did he give the stickers?",
+   "options": [
+    {
+     "label": "A",
+     "text": "10"
+    },
+    {
+     "label": "B",
+     "text": "14"
+    },
+    {
+     "label": "C",
+     "text": "12"
+    },
+    {
+     "label": "D",
+     "text": "15"
+    }
+   ],
+   "answer": "B",
+   "solution": "Total number of stickers = 80 × 9 = 720 Number of stickers left with him = 20\n\nSo, number of stickers given to students = 720 – 20 = 700 Number of stickers given to each student = 50\n\nSo, number of students = 700 ÷ 50 = 14",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "The amount of money saved by Priya, Soham and Sukriti in a year was ₹ 1980, ₹ 3127 and ₹ 2950 respectively. Who saved maximum amount in that year?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Soham"
+    },
+    {
+     "label": "B",
+     "text": "Sukriti"
+    },
+    {
+     "label": "C",
+     "text": "Priya"
+    },
+    {
+     "label": "D",
+     "text": "Can’t say"
+    }
+   ],
+   "answer": "A",
+   "solution": "As, ₹ 1980 \\< ₹ 2950 \\< ₹ 3127 So, Soham saved maximum amount.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "![2 out of 10 parts in a rectangle are shaded. Divya wants to shade 3 of the rectangle. How many more parts she needs to shade? 5](asset:q29-stem)\n\n![figure](asset:q29-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "6"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of equal parts = 10 Number of parts to be shaded = 3 of 10 5 = 3 ×10 = 6 5 Out of 6, 2 parts are already shaded. Number of more parts to be shaded = 6 – 2 = 4](asset:q29-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Gargi needs to drink 30 mL each of syrup two times in a day. How many days will she take to finish 540 mL bottle of syrup?",
+   "options": [
+    {
+     "label": "A",
+     "text": "15"
+    },
+    {
+     "label": "B",
+     "text": "9"
+    },
+    {
+     "label": "C",
+     "text": "18"
+    },
+    {
+     "label": "D",
+     "text": "20"
+    }
+   ],
+   "answer": "B",
+   "solution": "Quantity of syrup need to drink in 1 day = 2 × 30 mL\n\n= 60 mL Total quantity of syrup = 540 mL\n\nSo, number of days required to finish 540 mL = 540 ÷ 60 = 9",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "How many minimum number of squares that must be shaded so that the given figure is symmetrical?\n\n![figure](asset:q31-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "3"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Line of symmetry 1 1 2 4 3 So, required number of squares = 4](asset:q31-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![There are 1750 students in a school. 2 5 of them are boys and rest are girls. 4 7 of the boys participated in different olympiads and 1 5 of the girls did not participate in any olympiad. Among the students who participated in olympiads, if 1 10 of the boys and 12 of the girls won the gold medal, then find i How many of the students who participated in olympiad did not get gold medal? ii How many ](asset:q32-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "1240 100"
+    },
+    {
+     "label": "B",
+     "text": "1130 30"
+    },
+    {
+     "label": "C",
+     "text": "1240 30"
+    },
+    {
+     "label": "D",
+     "text": "1130 70"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of students = 1750 2 Number of boys = ×1750 = 700 5 Number of girls = 1750 – 700 = 1050 Number of boys who participated in different olympiads = 4 × 700 = 400 7 Number of boys who did not participate in olympiad = 700 – 400 = 300 Number of girls who did not participate in olympiad = 1 × 1050 = 210 5 Number of girls who participated in different olympiads = 1050 – 210 = 840 Number of b](asset:q32-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![The given pictograph shows the number of players applied from different cities for the selection of National Football team. Study the given pictograph carefully and answer the following questions. Cities Number of players applied P Q R S T Each stands for 200 players. i If each stands for 400 players, then how many symbols will be used for city T? 1 rd ii The number of players applied from city is](asset:q33-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Cities Number of players applied P 6 × 200 = 1200 Q 8 × 200 = 1600 R 8 × 200 = 1600 S 10 × 200 = 2000 T 12 × 200 = 2400 i Given each stands for 400 players. Number of symbols required for city T = 2400 400 = 6 ii Total number of players applied from city Q and S = 1600 + 2000 = 3600 1 rd So, ×3600 =1200 3 rd 1 So, number of players of city P is 3 of total number of players from city Q and S.](asset:q33-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "![Read the given statements carefully and state T for true and F for false. i The LCM of 15 and 20 is same as the HCF of 30 and 60. ii The sum of all the factors of the smallest 2-digit number is 171. iii The estimated value of 995 × 79 when each number is rounded off to the nearest tens place is 80000. i ii iii](asset:q34-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "F T T"
+    },
+    {
+     "label": "B",
+     "text": "F F T"
+    },
+    {
+     "label": "C",
+     "text": "T F T"
+    },
+    {
+     "label": "D",
+     "text": "T T F"
+    }
+   ],
+   "answer": "B",
+   "solution": "![i 2 15,20 2 15,10 3 15,5 5 5,5 1,1 LCM 15 and 20 = 2 × 2 × 3 × 5 = 60 2 30,60 3 15,30 5 5,10 1,2 HCF 30,60 = 2 × 3 × 5 = 30 As, 30 ≠ 60 False ii Smallest 2-digit number = 10 Factors of 10 = 1, 2, 5, 10 Sum of all factors of 10 = 1 + 2 + 5 + 10 = 18 ≠ 171 False iii Estimated product = 1000 × 80 = 80000 True](asset:q34-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 43
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Observe the given picture carefully and answer the following question.\n\n![figure](asset:q35-stem-fig1)\n\n![figure](asset:q35-stem-fig2)\n\nWhat is the weight of 3",
+   "options": [
+    {
+     "label": "A",
+     "text": "3 kg 420 g"
+    },
+    {
+     "label": "B",
+     "text": "1 kg 925 g"
+    },
+    {
+     "label": "C",
+     "text": "2 kg 820 g"
+    },
+    {
+     "label": "D",
+     "text": "1 kg 715 g"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Weight of 1 + Weight of 1 = 500 g Weight of 1 + Weight of 1 + Weight of 1 = 800 g ⇒ Weight of 1 = 800 – 500 g = 300 g Now, weight of 2 + Weight of 1 = 650 g ⇒ Weight of 2 + 300 g = 650 g ⇒ Weight of 2 = 650 – 300 g = 350 g ⇒ Weight of 1 = 350 ÷ 2 = 175 g So, weight of 1 = 500 – 175 g = 325 g Weight of 3 + Weight of 2 + Weight of 2 = 3 × 325 + 2 × 300 + 2 × 175 = 975 + 600 + 350 g = 1925 g = 1 kg 9](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 43
+   }
+  }
+ ]
+}

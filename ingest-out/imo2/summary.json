@@ -1,0 +1,52 @@
+[
+ {
+  "id": "sof-imo-class4-level2-2011-12",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 0,
+  "images": 27,
+  "paper_flags": [],
+  "pictures": {},
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-level2-2012-13",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 0,
+  "images": 38,
+  "paper_flags": [],
+  "pictures": {
+   "7": [
+    "kept as a picture of the whole question: option B overlaps other text"
+   ],
+   "24": [
+    "kept as a picture of the whole question: no options found (kept as printed: reviewed layout)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "sof-imo-class4-level2-2013-14",
+  "questions": 35,
+  "flagged": 0,
+  "answers": 35,
+  "solutions": 0,
+  "images": 47,
+  "paper_flags": [],
+  "pictures": {
+   "3": [
+    "kept as a picture of the whole question: no options found"
+   ],
+   "8": [
+    "kept as a picture of the whole question: text among the options that belongs to no option: "
+   ],
+   "13": [
+    "kept as a picture of the whole question: no options found; no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ }
+]

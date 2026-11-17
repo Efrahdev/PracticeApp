@@ -1,0 +1,1716 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2025-26-set-a",
+  "title": "SOF IMO Class 4 · 2025-26 · Set A",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem": {
+   "file": "images/q1-stem.png"
+  },
+  "q1-stem-fig1": {
+   "file": "images/q1-stem-fig1.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q6-optA": {
+   "file": "images/q6-optA.png"
+  },
+  "q6-optB": {
+   "file": "images/q6-optB.png"
+  },
+  "q6-optC": {
+   "file": "images/q6-optC.png"
+  },
+  "q6-optD": {
+   "file": "images/q6-optD.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-optA": {
+   "file": "images/q7-optA.png"
+  },
+  "q7-optB": {
+   "file": "images/q7-optB.png"
+  },
+  "q7-optC": {
+   "file": "images/q7-optC.png"
+  },
+  "q7-optD": {
+   "file": "images/q7-optD.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-optA": {
+   "file": "images/q9-optA.png"
+  },
+  "q9-optB": {
+   "file": "images/q9-optB.png"
+  },
+  "q9-optC": {
+   "file": "images/q9-optC.png"
+  },
+  "q9-optD": {
+   "file": "images/q9-optD.png"
+  },
+  "q9-stem-fig": {
+   "file": "images/q9-stem-fig.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-stem-fig": {
+   "file": "images/q10-stem-fig.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q12-optA": {
+   "file": "images/q12-optA.png"
+  },
+  "q12-optB": {
+   "file": "images/q12-optB.png"
+  },
+  "q12-optC": {
+   "file": "images/q12-optC.png"
+  },
+  "q12-optD": {
+   "file": "images/q12-optD.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "g15-16-fig": {
+   "file": "images/g15-16-fig.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q16-optD": {
+   "file": "images/q16-optD.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q17-optA": {
+   "file": "images/q17-optA.png"
+  },
+  "q17-optB": {
+   "file": "images/q17-optB.png"
+  },
+  "q17-optC": {
+   "file": "images/q17-optC.png"
+  },
+  "q17-optD": {
+   "file": "images/q17-optD.png"
+  },
+  "q17-sol": {
+   "file": "images/q17-sol.png"
+  },
+  "q18-stem": {
+   "file": "images/q18-stem.png"
+  },
+  "q18-sol": {
+   "file": "images/q18-sol.png"
+  },
+  "q19-full": {
+   "file": "images/q19-full.png"
+  },
+  "q20-stem": {
+   "file": "images/q20-stem.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q23-stem": {
+   "file": "images/q23-stem.png"
+  },
+  "q25-stem": {
+   "file": "images/q25-stem.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q26-sol": {
+   "file": "images/q26-sol.png"
+  },
+  "q27-optA": {
+   "file": "images/q27-optA.png"
+  },
+  "q27-optB": {
+   "file": "images/q27-optB.png"
+  },
+  "q27-optC": {
+   "file": "images/q27-optC.png"
+  },
+  "q27-optD": {
+   "file": "images/q27-optD.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q32-stem-fig": {
+   "file": "images/q32-stem-fig.png"
+  },
+  "q33-full": {
+   "file": "images/q33-full.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-stem-fig": {
+   "file": "images/q34-stem-fig.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
+  },
+  "q35-stem-fig1": {
+   "file": "images/q35-stem-fig1.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "![Suhani is facing the Health Club. She turns 3 4 towards her left and then make a 1 2 turn towards right. What will she be facing now?](asset:q1-stem)\n\n![figure](asset:q1-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Zoo"
+    },
+    {
+     "label": "B",
+     "text": "School"
+    },
+    {
+     "label": "C",
+     "text": "Temple"
+    },
+    {
+     "label": "D",
+     "text": "Airport"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Zoo Water Park Airport 1 3 2 4 Suhani Temple School Beach Health Club Playground So, Suhani is facing towards school now.](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "If the day before yesterday was Wednesday, then what will be the 15<sup>th</sup> day from today?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Wednesday"
+    },
+    {
+     "label": "B",
+     "text": "Thursday"
+    },
+    {
+     "label": "C",
+     "text": "Saturday"
+    },
+    {
+     "label": "D",
+     "text": "Friday"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Day before yesterday Yesterday Today Wednesday Thursday Friday So, 8th or 15th day from today will again be Friday.](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "How many of the following letters have at least one line of symmetry?\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "3"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "6"
+    }
+   ],
+   "answer": "C",
+   "solution": "![So, number of letters having at least one line of symmetry = 5](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Find the missing number in the given number pattern.\n\n![figure](asset:q4-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "205"
+    },
+    {
+     "label": "B",
+     "text": "200"
+    },
+    {
+     "label": "C",
+     "text": "210"
+    },
+    {
+     "label": "D",
+     "text": "215"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The pattern followed is: 125 + 20 145 + 25 170 + 20 190 + 25 215 + 20 235 + 25 260](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "If all the digits which are factors of 5 are removed from the given arrangement, then \\_\\_\\_\\_\\_\\_\\_ will be the 4<sup>th</sup> element to the right of 2<sup>nd</sup> element from the left end.\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "K"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "©"
+    }
+   ],
+   "answer": "B",
+   "solution": "After removing factors of 5, the new arrangement becomes\n\n**7 @ 8 2 \\# 3 B 9 © D K 4 \\***\n\n(Right)\n\nSo, 2<sup>nd</sup> element from the left end is @ and 4<sup>th</sup> element to the right of @ is 3.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Select the odd one out.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q6-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q6-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q6-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q6-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Except figure in option A, in all other figures, number of sides in inner figure is one more than the number of sides in outer figure.](asset:q6-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Select the CORRECT mirror image of the given figure.\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q7-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q7-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q7-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q7-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Mirror](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Which of the following words CANNOT be formed from the letters of the given word?\n\nEMPOWERING",
+   "options": [
+    {
+     "label": "A",
+     "text": "REGION"
+    },
+    {
+     "label": "B",
+     "text": "MOPING"
+    },
+    {
+     "label": "C",
+     "text": "MENTOR"
+    },
+    {
+     "label": "D",
+     "text": "IGNORE"
+    }
+   ],
+   "answer": "C",
+   "solution": "![The letter T in the word MENTOR is not present in the given word.](asset:q8-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "Select a figure from the options which is exactly embedded in the given figure as one of its parts.\n\n![figure](asset:q9-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q9-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q9-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q9-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q9-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q9-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "If\n\n![figure](asset:q10-stem-fig)\n\nused in temples to announce the start of worship.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q10-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![is generally used in temples to announce the start of worship, but is called .](asset:q10-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Which of the following gives the LEAST value?",
+   "options": [
+    {
+     "label": "A",
+     "text": "CMXLIX – DCCXC"
+    },
+    {
+     "label": "B",
+     "text": "CDIX + CXCV"
+    },
+    {
+     "label": "C",
+     "text": "CMXCI – DXCVIII"
+    },
+    {
+     "label": "D",
+     "text": "CCCLXXXIII + XXXIV"
+    }
+   ],
+   "answer": "A",
+   "solution": "A. CMXLIX – DCCXC\n\n= (900 + 40 + 9) – (500 + 100 + 100 + 90) = 949 – 790 = 159\n\nB. CDIX + CXCV\n\n= (400 + 9) + (100 + 90 + 5)\n\n= 409 + 195 = 604\n\nC. CMXCI – DXCVIII\n\n= (900 + 90 + 1) – (500 + 90 + 8)\n\n= 991 – 598 = 393\n\nD. CCCLXXXIII + XXXIV\n\n= (300 + 50 + 30 + 3) + (30 + 4)\n\n= 383 + 34 = 417\n\nAs, 159 \\< 393 \\< 417 \\< 604\n\nSo, option A gives the least value.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "The given list shows the names of friends of Advik. What fraction of names are starting with a vowel?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 9](asset:q12-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1 2](asset:q12-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![5 3](asset:q12-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![2 7](asset:q12-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Number of Advik’s friends = 9 Number of names starting with a vowel = 4 So, required fraction = 4 9](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "The given clock is 50 mins fast. What would be the actual time after 2 hrs 15 mins?\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "10:15"
+    },
+    {
+     "label": "B",
+     "text": "9:30"
+    },
+    {
+     "label": "C",
+     "text": "10:25"
+    },
+    {
+     "label": "D",
+     "text": "9:25"
+    }
+   ],
+   "answer": "D",
+   "solution": "Time shown on the given clock = 8:00.\n\nSo, actual time = 50 mins before 8:00 *i*.*e*., 7:10\n\nNow, actual time after 2 hrs 15 mins = 2 hrs 15 mins after 7:10 *i*.*e*., 9:25",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "The number represented by the given abacus is \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Forty five thousand two hundred seven"
+    },
+    {
+     "label": "B",
+     "text": "Fifty four thousand two hundred seventy"
+    },
+    {
+     "label": "C",
+     "text": "Forty five thousand two hundred seventy"
+    },
+    {
+     "label": "D",
+     "text": "Thirty four thousand two hundred seven"
+    }
+   ],
+   "answer": "C",
+   "solution": "Number shown on the abacus = 45270\n\nwhich is written as forty five thousand two hundred seventy.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (15-16) : The given bar graph shows the number of laptops manufactured by a company over the given five months. Study the graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\nHow many less laptops were manufactured in February than in January and May together?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2500"
+    },
+    {
+     "label": "B",
+     "text": "3250"
+    },
+    {
+     "label": "C",
+     "text": "2750"
+    },
+    {
+     "label": "D",
+     "text": "3000"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of laptops manufactured in February = 3750 Number of laptops manufactured in January and May together = 3000 + 4000 = 7000\n\nSo, difference = 7000 – 3750 = 3250",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "DIRECTIONS (15-16) : The given bar graph shows the number of laptops manufactured by a company over the given five months. Study the graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\nFind the fraction of number of laptops manufactured in March to the number of laptops manufactured in April.",
+   "options": [
+    {
+     "label": "A",
+     "text": "![7 15](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![5 13](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![8 15](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![8 13](asset:q16-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Number of laptops manufactured in March and April are 2000 and 3250 respectively. So, required fraction = 2000 2000 ÷ 250 8 = = 3250 3250 ÷ 250 13](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Which of the following figures has exactly two lines of symmetry?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q17-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q17-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q17-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q17-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q17-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "![If the weight of each of](asset:q18-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "1225"
+    },
+    {
+     "label": "B",
+     "text": "1500"
+    },
+    {
+     "label": "C",
+     "text": "950"
+    },
+    {
+     "label": "D",
+     "text": "1600"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Weight of 8 = 2 kg 600 g = 2600 g Weight of = 2600 ÷ 8 = 325 g Now, weight of 3 + = 2 kg 200 g = 2200 g ⇒ 3 × 325 g + weight of = 2200 g ⇒ 975 g + weight of = 2200 g So, weight of = 2200 – 975 g = 1225 g](asset:q18-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "![Find the perimeter of the shaded part of the given figure. A. 96 cm B. 112 cm C. 120 cm 4 cm D. None of these 4 cm](asset:q19-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "Required perimeter = 28 × side\n\n= (28 × 4) cm = 112 cm",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "![If + = .](asset:q20-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "25"
+    },
+    {
+     "label": "B",
+     "text": "30"
+    },
+    {
+     "label": "C",
+     "text": "20"
+    },
+    {
+     "label": "D",
+     "text": "35"
+    }
+   ],
+   "answer": "A",
+   "solution": "![We have, + + + + = 120 .... 1 Also, + + – = 55 .... 2 Adding 1 and 2 , we get + + + + + + + – = 120 + 55 ⇒ 7 = 175 ⇒ = 175 ÷ 7 = 25](asset:q20-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Divya bought six bottles of orange juice each of 1500 mL capacity for a picnic. If 6 L 750 mL of juice was consumed, then how much juice is left with her?",
+   "options": [
+    {
+     "label": "A",
+     "text": "3 L 300 mL"
+    },
+    {
+     "label": "B",
+     "text": "3 L 250 mL"
+    },
+    {
+     "label": "C",
+     "text": "2 L 250 mL"
+    },
+    {
+     "label": "D",
+     "text": "2 L 150 mL"
+    }
+   ],
+   "answer": "C",
+   "solution": "Quantity of juice bought\n\n= 1500 mL × 6 = 9000 mL\n\nQuantity of juice consumed = 6 L 750 mL\n\nSo, quantity of juice left = 9 L – 6 L 750 mL = (9000 – 6750) mL = 2250 mL = 2 L 250 mL",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "For a venue decoration, an event manager needs 4580 red flowers, 7150 white flowers and 2375 orange flowers. How many total flowers does he need in all?",
+   "options": [
+    {
+     "label": "A",
+     "text": "14105"
+    },
+    {
+     "label": "B",
+     "text": "12120"
+    },
+    {
+     "label": "C",
+     "text": "13790"
+    },
+    {
+     "label": "D",
+     "text": "14510"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total number of flowers needed = 4580 + 7150 + 2375 = 14105",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "![Anjali has some numbers as shown on the board. How many of the given numbers has 60 as the place value 48361 969 4605 of 6?](asset:q23-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ],
+   "answer": "C",
+   "solution": "Place value of 6 in 48361 is 60.\n\nPlace value of 6 in 969 is 60.\n\nPlace value of 6 in 4605 is 600.\n\nPlace value of 6 in 13867 is 60.\n\nPlace value of 6 in 23468 is 60.\n\nSo, there are 4 such numbers that have 60 as the place value of 6.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Ashima wants to fence her rectangular garden with wire. If the length of garden is 75 m and breadth is 20 m less than the length, then how much total wire does she need in all?",
+   "options": [
+    {
+     "label": "A",
+     "text": "95 m"
+    },
+    {
+     "label": "B",
+     "text": "175 m"
+    },
+    {
+     "label": "C",
+     "text": "260 m"
+    },
+    {
+     "label": "D",
+     "text": "150 m"
+    }
+   ],
+   "answer": "C",
+   "solution": "Length of garden = 75 m\n\nBreadth of garden = (75 – 20) m = 55 m Length of wire needed to fence the garden = Perimeter of the garden\n\n= 2 × (75 + 55) m = 2 × 130 m = 260 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "![The total number of children in a class is 40. If the fraction of the class that was present on Monday is 31 40 , then how many children were absent on that day?](asset:q25-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "31"
+    },
+    {
+     "label": "B",
+     "text": "18"
+    },
+    {
+     "label": "C",
+     "text": "21"
+    },
+    {
+     "label": "D",
+     "text": "9"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of children = 40 Since, fraction of class that was present on Monday = 31 40 ⇒Number of children present on Monday = 3 1 Total number of children 40 ⇒ Number of children present on Monday = 31 40 40 ⇒ Number of children present on Monday = 31 ⇒ Number of children absent on Monday = 40 – 31 = 9](asset:q25-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Vivek went every morning for his running practice. He ran 5 km 150 m on Monday, 3 km 250 m more on Tuesday than on Monday. How much total distance did he run on both the days?",
+   "options": [
+    {
+     "label": "A",
+     "text": "8 km 400 m"
+    },
+    {
+     "label": "B",
+     "text": "10 km 950 m"
+    },
+    {
+     "label": "C",
+     "text": "7 km 850 m"
+    },
+    {
+     "label": "D",
+     "text": "13 km 550 m"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Distance covered on Monday = 5 km 150 m Distance covered on Tuesday = 5 km 150 m + 3 km 250 m = 8 km 400 m Total distance covered on both the days = 5 km 150 m + 8 km 400 m = 13 km 550 m](asset:q26-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Rashi bought 56 cookies from the market. Out of which 14 are chocolate cookies, 28 are butter cookies and rest are sugar cookies. What fraction of total cookies bought were sugar cookies?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5 1](asset:q27-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1 4](asset:q27-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 6](asset:q27-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![2 5](asset:q27-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of cookies bought = 56 Number of sugar cookies = 56 – 14 – 28 = 14 Required fraction = 14 14 ÷ 14 1 = = 56 56 ÷ 14 4](asset:q27-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "XYZ publication published a new book having 648 pages. How many total pages are there in 37 such books?",
+   "options": [
+    {
+     "label": "A",
+     "text": "25712"
+    },
+    {
+     "label": "B",
+     "text": "23976"
+    },
+    {
+     "label": "C",
+     "text": "21720"
+    },
+    {
+     "label": "D",
+     "text": "24796"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of pages in 1 book = 648\n\nSo, number of pages in 37 such books = 648 × 37 = 23976",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "A librarian ordered 40 Maths books and 35 Science books for the library. If the cost of each Maths book is ₹ 125 and that of each Science book is ₹ 92, then how much did she has to pay for the books?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 8220"
+    },
+    {
+     "label": "B",
+     "text": "₹ 7580"
+    },
+    {
+     "label": "C",
+     "text": "₹ 8190"
+    },
+    {
+     "label": "D",
+     "text": "₹ 9370"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total cost of Maths books = 40 × (₹ 125)\n\n= ₹ 5000\n\nTotal cost of Science books = 35 × (₹ 92)\n\n= ₹ 3220\n\nSo, total amount of money she has to pay = ₹ (5000 + 3220)\n\n= ₹ 8220",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Mayank drew a figure as shown here. How many lines of symmetry does the given figure has?\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "0"
+    },
+    {
+     "label": "B",
+     "text": "1"
+    },
+    {
+     "label": "C",
+     "text": "2"
+    },
+    {
+     "label": "D",
+     "text": "3"
+    }
+   ],
+   "answer": "C",
+   "solution": "![So, the given figure has 2 lines of symmetry.](asset:q30-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "Read the given statements carefully and state T for true and F for false.\n\n(i) 2 is the smallest odd prime number.\n\n(ii) The number of factors of largest 3-digit prime number is 5.\n\n(iii) The HCF of 36 and 144 is 36.\n\n(i) (ii) (iii)",
+   "options": [
+    {
+     "label": "A",
+     "text": "T T F"
+    },
+    {
+     "label": "B",
+     "text": "T F F"
+    },
+    {
+     "label": "C",
+     "text": "F F T"
+    },
+    {
+     "label": "D",
+     "text": "F T F"
+    }
+   ],
+   "answer": "C",
+   "solution": "(i) False; 2 is the only even prime number and it is also the smallest prime number.\n\n(ii) False; A prime number has only two factors, 1 and the number itself.\n\n(iii) True;\n\nFactors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36\n\nFactors of 144; 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144 So, HCF (36, 144) is 36.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "The given figure shows the amount of water in 4 beakers at first.\n\n![figure](asset:q32-stem-fig)\n\nMohit poured the water of beaker S equally to beakers P and Q and then poured 150 mL of water from beaker R to beaker S. Which of the following options shows the CORRECT descending order of beakers as per water contained in them now?",
+   "options": [
+    {
+     "label": "A",
+     "text": "P, R, S, Q"
+    },
+    {
+     "label": "B",
+     "text": "Q, R, S, P"
+    },
+    {
+     "label": "C",
+     "text": "R, P, Q, S"
+    },
+    {
+     "label": "D",
+     "text": "S, Q, P, R"
+    }
+   ],
+   "answer": "C",
+   "solution": "Quantity of water in each beaker initially :\n\nP = 500 mL, Q = 200 mL, R = 950 mL and S = 400 mL After pouring the water of beaker S equally to beakers P and Q and then 150 mL of water from beaker R to beaker S, we have P = (500 + 200) mL = 700 mL\n\nQ = (200 + 200) mL = 400 mL\n\nR = (950 – 150) mL = 800 mL\n\nS = (400 – 400 + 150) mL = 150 mL\n\nQuantity of water in descending order :\n\n800 mL \\> 700 mL \\> 400 mL \\> 150 mL\n\nSo, the correct descending order is R, P, Q, S.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![Observe the given figures carefully and select the INCORRECT option. Figure P Figure Q A. 2 5 part of figure P is shaded. B. The difference between the unshaded and shaded fraction of figure Q is 3 5 . C. The unshaded fraction of figure P is more than the shaded fraction of figure Q. D. Both A and B](asset:q33-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![A. Incorrect; Total number of equal parts in figure P = 16 Total number of shaded parts in figure P = 6 6 = 3 So, shaded fraction = 16 8 B. Incorrect ; Total number of equal parts in figure Q = 10 Number of shaded parts in figure Q = 3 Number of unshaded parts in figure Q = 7 7 − 3 = 4 = 2 So, required difference = 10 10 10 5 C. Correct; Unshaded fraction of figure P = 10 = 5 Shaded fraction of fi](asset:q33-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "How many minimum number of squares must be shaded so that the given figure has exactly one line of symmetry?\n\n![figure](asset:q34-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Line of symmetry 2 1 3 5 4 So, required number of squares = 5](asset:q34-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![The given pictograph shows the number of marbles in six different boxes. Study the pictograph carefully and answer the following questions. i How many more marbles should be in box T so that it will have same number of marbles as in box R? ii Find the fraction of number of marbles in box S to the total number of marbles](asset:q35-stem)\n\n![figure](asset:q35-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "60"
+    },
+    {
+     "label": "B",
+     "text": "56"
+    },
+    {
+     "label": "C",
+     "text": "60"
+    },
+    {
+     "label": "D",
+     "text": "56"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Boxes Number of marbles P 9 × 8 = 72 Q 7 × 8 = 56 R 12 × 8 = 96 S 8 × 8 = 64 T 5 × 8 = 40 i Number of marbles in box T = 40 Number of marbles in box R = 96 So, required difference = 96 – 40 = 56 ii Total number of marbles in box P and box Q together = 72 + 56 = 128 Number of marbles in box S = 64 64 = 1 So, required fraction = 128 2](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 13
+   }
+  }
+ ]
+}

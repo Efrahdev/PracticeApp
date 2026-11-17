@@ -1,0 +1,1512 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2025-26-set-a",
+  "title": "SOF IEO Class 4 · 2025-26 · Set A",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q3-stem-fig": {
+   "file": "images/q3-stem-fig.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q9-stem-fig1": {
+   "file": "images/q9-stem-fig1.png"
+  },
+  "q24-stem": {
+   "file": "images/q24-stem.png"
+  },
+  "q25-stem-fig": {
+   "file": "images/q25-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nOn my way to office, I saw some \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ fighting.",
+   "options": [
+    {
+     "label": "A",
+     "text": "woman"
+    },
+    {
+     "label": "B",
+     "text": "womans"
+    },
+    {
+     "label": "C",
+     "text": "women"
+    },
+    {
+     "label": "D",
+     "text": "womens’"
+    }
+   ],
+   "answer": "C",
+   "solution": "The determiner “some” requires a plural noun and the correct plural noun is “women”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nBy this time tomorrow, I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to the airport to receive my uncle.",
+   "options": [
+    {
+     "label": "A",
+     "text": "have gone"
+    },
+    {
+     "label": "B",
+     "text": "will have go"
+    },
+    {
+     "label": "C",
+     "text": "will be going"
+    },
+    {
+     "label": "D",
+     "text": "am going"
+    }
+   ],
+   "answer": "C",
+   "solution": "With reference to the time clause ‘by this time tomorrow’, the future continuous tense form ‘will be going’ is to be used to express an action that will be in progress at a particular time in the future.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nOrigami is an art that requires \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ skills.\n\n![figure](asset:q3-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "each"
+    },
+    {
+     "label": "B",
+     "text": "much"
+    },
+    {
+     "label": "C",
+     "text": "any"
+    },
+    {
+     "label": "D",
+     "text": "many"
+    }
+   ],
+   "answer": "D",
+   "solution": "The adjective “many” is to be used before the plural countable noun (skills). It means a large number.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ it was raining, Riya decided to stay indoors.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Therefore"
+    },
+    {
+     "label": "B",
+     "text": "Since"
+    },
+    {
+     "label": "C",
+     "text": "Last"
+    },
+    {
+     "label": "D",
+     "text": "Further"
+    }
+   ],
+   "answer": "B",
+   "solution": "The conjunction “since” is to be used to show or explain a reason.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThis chocolate cake looks rather \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "rich"
+    },
+    {
+     "label": "B",
+     "text": "richer"
+    },
+    {
+     "label": "C",
+     "text": "richest"
+    },
+    {
+     "label": "D",
+     "text": "richly"
+    }
+   ],
+   "answer": "A",
+   "solution": "The adjective “rich” is to be used to describe the noun (chocolate cake) to show that the cake contains a large amount of oil, butter, eggs, or cream.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThe students listened \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ to the teacher’s story.",
+   "options": [
+    {
+     "label": "A",
+     "text": "hardly"
+    },
+    {
+     "label": "B",
+     "text": "strangely"
+    },
+    {
+     "label": "C",
+     "text": "eagerly"
+    },
+    {
+     "label": "D",
+     "text": "straight"
+    }
+   ],
+   "answer": "C",
+   "solution": "The adverb “eagerly” is to be used to modify the verb (listened) in the sentence and to show that the action was done with great interest and enthusiasm.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThe \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of singers performed beautifully at the concert.",
+   "options": [
+    {
+     "label": "A",
+     "text": "army"
+    },
+    {
+     "label": "B",
+     "text": "jury"
+    },
+    {
+     "label": "C",
+     "text": "choir"
+    },
+    {
+     "label": "D",
+     "text": "crew"
+    }
+   ],
+   "answer": "C",
+   "solution": "The appropriate collective noun to be used is “choir” because a group of singers is called a choir.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 7
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![I’m not hungry but I can have a bite of the sandwich.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Verb"
+    },
+    {
+     "label": "B",
+     "text": "Adjective"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction"
+    },
+    {
+     "label": "D",
+     "text": "Preposition"
+    }
+   ],
+   "answer": "C",
+   "solution": "The underlined word “but” is a conjunction because it joins two clauses and shows contrast between them.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![She had bought many books from the fair to read at home.](asset:q9-stem)\n\n![figure](asset:q9-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Adjective"
+    },
+    {
+     "label": "B",
+     "text": "Pronoun"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction"
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "A",
+   "solution": "The underlined word “many” is an adjective because it describes the noun (books) and tells its quantity.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nThe farmer carried a bundle of sticks in his back.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The farmer carried"
+    },
+    {
+     "label": "B",
+     "text": "a bundle of sticks"
+    },
+    {
+     "label": "C",
+     "text": "in his back."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct sentence is “The farmer carried a bundle of sticks on his back.” Hence, option C has the error.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nThere is a need to exploring new approaches in this project.",
+   "options": [
+    {
+     "label": "A",
+     "text": "There is a need"
+    },
+    {
+     "label": "B",
+     "text": "to exploring new approaches"
+    },
+    {
+     "label": "C",
+     "text": "in this project."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct sentence is “There is a need to explore new approaches in this project.” Hence, option B has the error.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Kontinuation"
+    },
+    {
+     "label": "B",
+     "text": "Continuation"
+    },
+    {
+     "label": "C",
+     "text": "Contiunation"
+    },
+    {
+     "label": "D",
+     "text": "Contenuation"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is “continuation”, which means ‘the act of continuing something’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Lheutenant"
+    },
+    {
+     "label": "B",
+     "text": "Lieutenant"
+    },
+    {
+     "label": "C",
+     "text": "Leutenent"
+    },
+    {
+     "label": "D",
+     "text": "Lieutenent"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is “lieutenant”, which means ‘an officer of middle rank in the armed forces’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of vagabond.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Steady"
+    },
+    {
+     "label": "B",
+     "text": "Hobo"
+    },
+    {
+     "label": "C",
+     "text": "Success"
+    },
+    {
+     "label": "D",
+     "text": "Settled"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct synonym of “vagabond” is “hobo”, as they both refer to ‘a person who wanders from place to place without a permanent home or job’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 8
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Choose the correct antonym of recommend.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Praise"
+    },
+    {
+     "label": "B",
+     "text": "Refusal"
+    },
+    {
+     "label": "C",
+     "text": "Suggestion"
+    },
+    {
+     "label": "D",
+     "text": "Reference"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct antonym of “recommend” is “refusal” because recommend means ‘to suggest or support something’, while refuse means ‘to reject or say no’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nPunctuality means being on time. It is the habit of doing everything at the right time. A punctual person never gets late for school, work, or any event. Punctuality shows that we are responsible, well-mannered, and serious about our duties. Imagine a school where all students come late. Classes will start late, and the whole day will be full of confusion. But if everyone comes on time, lessons can begin on time, and students can learn more. That is why teachers always tell children to be punctual.\n\nPunctuality is also important in everyday life. If we miss the school bus because we are late, we may have to walk or wait a long time for another one. If we are late for a train or flight, we may miss it. Being late can cause many problems. Let’s take an example. Rahul is a class 4 student who is always late. He wakes up late, rushes to school, forgets his homework, and misses important lessons. His teachers and parents are often upset. One day, Rahul missed his school picnic because he reached late. He felt very sad.\n\nHis friend Maya is different. She wakes up early, gets ready on time, and reaches school before the bell rings. She is always prepared and never forgets her homework. Her teachers are happy with her, and she gets good marks. Rahul realized his mistake and decided to change. He started waking up early and being on time. Soon, he too became punctual and felt proud of himself.\n\nBeing punctual helps us win the trust of others. People like to work with someone who respects time. It helps us complete our work, attend important events, and be successful in life.\n\nPunctuality develops a habit of \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "playing all the time"
+    },
+    {
+     "label": "B",
+     "text": "being lazy"
+    },
+    {
+     "label": "C",
+     "text": "doing work all the time"
+    },
+    {
+     "label": "D",
+     "text": "doing everything on time"
+    }
+   ],
+   "answer": "D",
+   "solution": "According to paragraph 1, punctuality develops a habit of doing everything on time.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nPunctuality means being on time. It is the habit of doing everything at the right time. A punctual person never gets late for school, work, or any event. Punctuality shows that we are responsible, well-mannered, and serious about our duties. Imagine a school where all students come late. Classes will start late, and the whole day will be full of confusion. But if everyone comes on time, lessons can begin on time, and students can learn more. That is why teachers always tell children to be punctual.\n\nPunctuality is also important in everyday life. If we miss the school bus because we are late, we may have to walk or wait a long time for another one. If we are late for a train or flight, we may miss it. Being late can cause many problems. Let’s take an example. Rahul is a class 4 student who is always late. He wakes up late, rushes to school, forgets his homework, and misses important lessons. His teachers and parents are often upset. One day, Rahul missed his school picnic because he reached late. He felt very sad.\n\nHis friend Maya is different. She wakes up early, gets ready on time, and reaches school before the bell rings. She is always prepared and never forgets her homework. Her teachers are happy with her, and she gets good marks. Rahul realized his mistake and decided to change. He started waking up early and being on time. Soon, he too became punctual and felt proud of himself.\n\nBeing punctual helps us win the trust of others. People like to work with someone who respects time. It helps us complete our work, attend important events, and be successful in life.\n\nPunctuality is important in school so that \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "students can skip homework"
+    },
+    {
+     "label": "B",
+     "text": "classes can start on time"
+    },
+    {
+     "label": "C",
+     "text": "students can come late and play"
+    },
+    {
+     "label": "D",
+     "text": "teachers can leave early"
+    }
+   ],
+   "answer": "B",
+   "solution": "As mentioned in paragraph 2, punctuality is important in school so that classes can start on time.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 9
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nPunctuality means being on time. It is the habit of doing everything at the right time. A punctual person never gets late for school, work, or any event. Punctuality shows that we are responsible, well-mannered, and serious about our duties. Imagine a school where all students come late. Classes will start late, and the whole day will be full of confusion. But if everyone comes on time, lessons can begin on time, and students can learn more. That is why teachers always tell children to be punctual.\n\nPunctuality is also important in everyday life. If we miss the school bus because we are late, we may have to walk or wait a long time for another one. If we are late for a train or flight, we may miss it. Being late can cause many problems. Let’s take an example. Rahul is a class 4 student who is always late. He wakes up late, rushes to school, forgets his homework, and misses important lessons. His teachers and parents are often upset. One day, Rahul missed his school picnic because he reached late. He felt very sad.\n\nHis friend Maya is different. She wakes up early, gets ready on time, and reaches school before the bell rings. She is always prepared and never forgets her homework. Her teachers are happy with her, and she gets good marks. Rahul realized his mistake and decided to change. He started waking up early and being on time. Soon, he too became punctual and felt proud of himself.\n\nBeing punctual helps us win the trust of others. People like to work with someone who respects time. It helps us complete our work, attend important events, and be successful in life.\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "People like to rest with someone who respects time."
+    },
+    {
+     "label": "B",
+     "text": "A punctual person becomes responsible, well-mannered and serious."
+    },
+    {
+     "label": "C",
+     "text": "Being late can cause many problems."
+    },
+    {
+     "label": "D",
+     "text": "Rahul realized his mistake and decided to be on time."
+    }
+   ],
+   "answer": "A",
+   "solution": "The passage states that people like to work with someone who respects time; hence, option A is the correct answer.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nPunctuality means being on time. It is the habit of doing everything at the right time. A punctual person never gets late for school, work, or any event. Punctuality shows that we are responsible, well-mannered, and serious about our duties. Imagine a school where all students come late. Classes will start late, and the whole day will be full of confusion. But if everyone comes on time, lessons can begin on time, and students can learn more. That is why teachers always tell children to be punctual.\n\nPunctuality is also important in everyday life. If we miss the school bus because we are late, we may have to walk or wait a long time for another one. If we are late for a train or flight, we may miss it. Being late can cause many problems. Let’s take an example. Rahul is a class 4 student who is always late. He wakes up late, rushes to school, forgets his homework, and misses important lessons. His teachers and parents are often upset. One day, Rahul missed his school picnic because he reached late. He felt very sad.\n\nHis friend Maya is different. She wakes up early, gets ready on time, and reaches school before the bell rings. She is always prepared and never forgets her homework. Her teachers are happy with her, and she gets good marks. Rahul realized his mistake and decided to change. He started waking up early and being on time. Soon, he too became punctual and felt proud of himself.\n\nBeing punctual helps us win the trust of others. People like to work with someone who respects time. It helps us complete our work, attend important events, and be successful in life.\n\nMaya is punctual because she \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "doesn’t go to school"
+    },
+    {
+     "label": "B",
+     "text": "is always prepared and forgets her homework"
+    },
+    {
+     "label": "C",
+     "text": "wakes up late but is ready on time"
+    },
+    {
+     "label": "D",
+     "text": "reaches school before the bell, fully prepared"
+    }
+   ],
+   "answer": "D",
+   "solution": "As stated in paragraph 5, Maya is punctual because she reaches school before the bell, fully prepared.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nPunctuality means being on time. It is the habit of doing everything at the right time. A punctual person never gets late for school, work, or any event. Punctuality shows that we are responsible, well-mannered, and serious about our duties. Imagine a school where all students come late. Classes will start late, and the whole day will be full of confusion. But if everyone comes on time, lessons can begin on time, and students can learn more. That is why teachers always tell children to be punctual.\n\nPunctuality is also important in everyday life. If we miss the school bus because we are late, we may have to walk or wait a long time for another one. If we are late for a train or flight, we may miss it. Being late can cause many problems. Let’s take an example. Rahul is a class 4 student who is always late. He wakes up late, rushes to school, forgets his homework, and misses important lessons. His teachers and parents are often upset. One day, Rahul missed his school picnic because he reached late. He felt very sad.\n\nHis friend Maya is different. She wakes up early, gets ready on time, and reaches school before the bell rings. She is always prepared and never forgets her homework. Her teachers are happy with her, and she gets good marks. Rahul realized his mistake and decided to change. He started waking up early and being on time. Soon, he too became punctual and felt proud of himself.\n\nBeing punctual helps us win the trust of others. People like to work with someone who respects time. It helps us complete our work, attend important events, and be successful in life.\n\nChoose the correct antonym of the word “well-mannered”.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Thoughtful"
+    },
+    {
+     "label": "B",
+     "text": "Gallant"
+    },
+    {
+     "label": "C",
+     "text": "Cultured"
+    },
+    {
+     "label": "D",
+     "text": "Crude"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct antonym of “well-mannered” is “crude” because well-mannered means ‘polite and respectful’, while crude means ‘impolite’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 10
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nHelen Keller was born on June 27, 1880, in Alabama, USA. She was a happy and healthy baby. But when she was just 19 months old, she became very sick with a high fever. After the illness, Helen could no longer see or hear anything. She became deaf and blind.\n\nLife became very hard for Helen. She could not talk, listen, or see. She often felt angry and confused because she could not understand what was happening around her. Her parents wanted to help her, so they looked for a special teacher. That teacher was Anne Sullivan.\n\nAnne Sullivan came to teach Helen when she was 7 years old. At first, Helen did not want to learn. She would get upset and throw things at her. But Anne did not give up. She was patient and kind.\n\nOne day, Anne took Helen to a water pump. She placed Helen’s hand under the cool water and used her other hand to spell the word “W-A-T-E-R” on Helen’s palm. Slowly, Helen understood that everything had a name. This was the turning point in her life.\n\nHelen worked very hard after that. She learned to read and write using Braille, a special writing system for blind people. She also learned to speak by feeling the movements of people’s lips with her fingers. With Anne’s help, Helen even went to college and became the first deaf-blind person to earn a university degree!\n\nHelen Keller later wrote books and gave speeches to inspire others. She worked for the rights of differently abled people all around the world. She showed everyone that with hard work and support, nothing is impossible.\n\nHelen Keller passed away in 1968, but her story still inspires millions of people today.\n\nWhat happened to Helen Keller when she was 19 months old?",
+   "options": [
+    {
+     "label": "A",
+     "text": "She learned to read and write."
+    },
+    {
+     "label": "B",
+     "text": "She got very sick and became deaf and blind."
+    },
+    {
+     "label": "C",
+     "text": "She went to school."
+    },
+    {
+     "label": "D",
+     "text": "She got a teacher named Anne."
+    }
+   ],
+   "answer": "B",
+   "solution": "According to paragraph 1, Helen Keller got very sick and became deaf and blind when she was 19 months old.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nHelen Keller was born on June 27, 1880, in Alabama, USA. She was a happy and healthy baby. But when she was just 19 months old, she became very sick with a high fever. After the illness, Helen could no longer see or hear anything. She became deaf and blind.\n\nLife became very hard for Helen. She could not talk, listen, or see. She often felt angry and confused because she could not understand what was happening around her. Her parents wanted to help her, so they looked for a special teacher. That teacher was Anne Sullivan.\n\nAnne Sullivan came to teach Helen when she was 7 years old. At first, Helen did not want to learn. She would get upset and throw things at her. But Anne did not give up. She was patient and kind.\n\nOne day, Anne took Helen to a water pump. She placed Helen’s hand under the cool water and used her other hand to spell the word “W-A-T-E-R” on Helen’s palm. Slowly, Helen understood that everything had a name. This was the turning point in her life.\n\nHelen worked very hard after that. She learned to read and write using Braille, a special writing system for blind people. She also learned to speak by feeling the movements of people’s lips with her fingers. With Anne’s help, Helen even went to college and became the first deaf-blind person to earn a university degree!\n\nHelen Keller later wrote books and gave speeches to inspire others. She worked for the rights of differently abled people all around the world. She showed everyone that with hard work and support, nothing is impossible.\n\nHelen Keller passed away in 1968, but her story still inspires millions of people today.\n\nLife became very tough for Helen as \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "she started learning"
+    },
+    {
+     "label": "B",
+     "text": "she went to school"
+    },
+    {
+     "label": "C",
+     "text": "she could not talk, listen or see"
+    },
+    {
+     "label": "D",
+     "text": "she met her teacher"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to paragraph 2, life became very tough for Helen as she could not talk, listen or see.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nHelen Keller was born on June 27, 1880, in Alabama, USA. She was a happy and healthy baby. But when she was just 19 months old, she became very sick with a high fever. After the illness, Helen could no longer see or hear anything. She became deaf and blind.\n\nLife became very hard for Helen. She could not talk, listen, or see. She often felt angry and confused because she could not understand what was happening around her. Her parents wanted to help her, so they looked for a special teacher. That teacher was Anne Sullivan.\n\nAnne Sullivan came to teach Helen when she was 7 years old. At first, Helen did not want to learn. She would get upset and throw things at her. But Anne did not give up. She was patient and kind.\n\nOne day, Anne took Helen to a water pump. She placed Helen’s hand under the cool water and used her other hand to spell the word “W-A-T-E-R” on Helen’s palm. Slowly, Helen understood that everything had a name. This was the turning point in her life.\n\nHelen worked very hard after that. She learned to read and write using Braille, a special writing system for blind people. She also learned to speak by feeling the movements of people’s lips with her fingers. With Anne’s help, Helen even went to college and became the first deaf-blind person to earn a university degree!\n\nHelen Keller later wrote books and gave speeches to inspire others. She worked for the rights of differently abled people all around the world. She showed everyone that with hard work and support, nothing is impossible.\n\nHelen Keller passed away in 1968, but her story still inspires millions of people today.\n\nWhat is Braille?",
+   "options": [
+    {
+     "label": "A",
+     "text": "It is a system to speak."
+    },
+    {
+     "label": "B",
+     "text": "It is a process to learn the lessons."
+    },
+    {
+     "label": "C",
+     "text": "It is used to draw pictures."
+    },
+    {
+     "label": "D",
+     "text": "It is a special writing system for those who can’t see."
+    }
+   ],
+   "answer": "D",
+   "solution": "As stated in paragraph 5, Braille is a special writing system for people who cannot see.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nHelen Keller was born on June 27, 1880, in Alabama, USA. She was a happy and healthy baby. But when she was just 19 months old, she became very sick with a high fever. After the illness, Helen could no longer see or hear anything. She became deaf and blind.\n\nLife became very hard for Helen. She could not talk, listen, or see. She often felt angry and confused because she could not understand what was happening around her. Her parents wanted to help her, so they looked for a special teacher. That teacher was Anne Sullivan.\n\nAnne Sullivan came to teach Helen when she was 7 years old. At first, Helen did not want to learn. She would get upset and throw things at her. But Anne did not give up. She was patient and kind.\n\nOne day, Anne took Helen to a water pump. She placed Helen’s hand under the cool water and used her other hand to spell the word “W-A-T-E-R” on Helen’s palm. Slowly, Helen understood that everything had a name. This was the turning point in her life.\n\nHelen worked very hard after that. She learned to read and write using Braille, a special writing system for blind people. She also learned to speak by feeling the movements of people’s lips with her fingers. With Anne’s help, Helen even went to college and became the first deaf-blind person to earn a university degree!\n\nHelen Keller later wrote books and gave speeches to inspire others. She worked for the rights of differently abled people all around the world. She showed everyone that with hard work and support, nothing is impossible.\n\nHelen Keller passed away in 1968, but her story still inspires millions of people today.\n\n![Choose the correct sequence of the events. 1. Anne Sullivan came to teach Helen. 2. She learned to speak by feeling people’s lip movements with her fingers. 3. She was a happy and healthy baby. 4. She felt angry and confused, unable to understand her surroundings. 5. Helen became the first deaf-blind person to get a university degree.](asset:q24-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "3, 5, 2, 1, 4"
+    },
+    {
+     "label": "B",
+     "text": "1, 2, 5, 4, 3"
+    },
+    {
+     "label": "C",
+     "text": "3, 4, 1, 2, 5"
+    },
+    {
+     "label": "D",
+     "text": "3, 2, 5, 1, 4"
+    }
+   ],
+   "answer": "C",
+   "solution": "Option C is the correct answer because it arranges the events in the same order as they are given in the passage.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nHelen Keller was born on June 27, 1880, in Alabama, USA. She was a happy and healthy baby. But when she was just 19 months old, she became very sick with a high fever. After the illness, Helen could no longer see or hear anything. She became deaf and blind.\n\nLife became very hard for Helen. She could not talk, listen, or see. She often felt angry and confused because she could not understand what was happening around her. Her parents wanted to help her, so they looked for a special teacher. That teacher was Anne Sullivan.\n\nAnne Sullivan came to teach Helen when she was 7 years old. At first, Helen did not want to learn. She would get upset and throw things at her. But Anne did not give up. She was patient and kind.\n\nOne day, Anne took Helen to a water pump. She placed Helen’s hand under the cool water and used her other hand to spell the word “W-A-T-E-R” on Helen’s palm. Slowly, Helen understood that everything had a name. This was the turning point in her life.\n\nHelen worked very hard after that. She learned to read and write using Braille, a special writing system for blind people. She also learned to speak by feeling the movements of people’s lips with her fingers. With Anne’s help, Helen even went to college and became the first deaf-blind person to earn a university degree!\n\nHelen Keller later wrote books and gave speeches to inspire others. She worked for the rights of differently abled people all around the world. She showed everyone that with hard work and support, nothing is impossible.\n\nHelen Keller passed away in 1968, but her story still inspires millions of people today.\n\nChoose the correct synonym of the word ‘inspire’.\n\n![figure](asset:q25-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Depress"
+    },
+    {
+     "label": "B",
+     "text": "Contain"
+    },
+    {
+     "label": "C",
+     "text": "Daunt"
+    },
+    {
+     "label": "D",
+     "text": "Motivate"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct synonym of “inspire” is “motivate”, as they both mean ‘to encourage someone to take action or do something better’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 11
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nAdi : I’m feeling so tired \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ doing work for the whole day.\n\nDaniel : Better to take a break for a day.",
+   "options": [
+    {
+     "label": "A",
+     "text": "as"
+    },
+    {
+     "label": "B",
+     "text": "after"
+    },
+    {
+     "label": "C",
+     "text": "lately"
+    },
+    {
+     "label": "D",
+     "text": "because"
+    }
+   ],
+   "answer": "B",
+   "solution": "The preposition “after” is to be used to show that one action (feeling tired) happened later than another action (doing a lot of work).",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nSammy : Why don’t you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ another bag if it is worn out?\n\nJohn : I’m looking for a good deal.",
+   "options": [
+    {
+     "label": "A",
+     "text": "buy"
+    },
+    {
+     "label": "B",
+     "text": "buying"
+    },
+    {
+     "label": "C",
+     "text": "bought"
+    },
+    {
+     "label": "D",
+     "text": "buys"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct verb form to be used is “buy” because after “don’t”, the base form of the verb is required.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nRenu : I don’t agree with what you said about the new policy.\n\nArjun : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ completely OK! Everybody is entitled to their own opinion.",
+   "options": [
+    {
+     "label": "A",
+     "text": "That’ll"
+    },
+    {
+     "label": "B",
+     "text": "That’d"
+    },
+    {
+     "label": "C",
+     "text": "That’re"
+    },
+    {
+     "label": "D",
+     "text": "That’s"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct contraction to be used is “that’s” (that is) to make the conversation grammatically correct.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nAkki : Please pour some banana shake \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ my glass.\n\nAvi : Sure! Just a moment.",
+   "options": [
+    {
+     "label": "A",
+     "text": "on"
+    },
+    {
+     "label": "B",
+     "text": "onto"
+    },
+    {
+     "label": "C",
+     "text": "into"
+    },
+    {
+     "label": "D",
+     "text": "off"
+    }
+   ],
+   "answer": "C",
+   "solution": "The preposition “into” is to be used because it shows movement in or inside of something (here, glass).",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the correct option to complete each conversation.\n\nDaughter : Mom! May I go for \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ with my friend?\n\nMom : Yes, you can if you come before lunch.",
+   "options": [
+    {
+     "label": "A",
+     "text": "walks"
+    },
+    {
+     "label": "B",
+     "text": "shopping"
+    },
+    {
+     "label": "C",
+     "text": "shops"
+    },
+    {
+     "label": "D",
+     "text": "walking"
+    }
+   ],
+   "answer": "B",
+   "solution": "The appropriate verb to be used is “shopping” to make the conversation grammatically correct.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nShe accidentally dropped the glass vase, and it \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ into countless tiny pieces.",
+   "options": [
+    {
+     "label": "A",
+     "text": "patched"
+    },
+    {
+     "label": "B",
+     "text": "shredded"
+    },
+    {
+     "label": "C",
+     "text": "assembled"
+    },
+    {
+     "label": "D",
+     "text": "shattered"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct verb for to be used is “shattered”, which means broken into many pieces.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 12
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nThe magician performed a/an \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ trick that made the rabbit disappear.",
+   "options": [
+    {
+     "label": "A",
+     "text": "allusion"
+    },
+    {
+     "label": "B",
+     "text": "illusion"
+    },
+    {
+     "label": "C",
+     "text": "delusion"
+    },
+    {
+     "label": "D",
+     "text": "illusory"
+    }
+   ],
+   "answer": "D",
+   "solution": "The adjective “illusory” is to be used to describe something that has a false appearance.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Fantactical"
+    },
+    {
+     "label": "B",
+     "text": "Rideculous"
+    },
+    {
+     "label": "C",
+     "text": "Equivocal"
+    },
+    {
+     "label": "D",
+     "text": "Marvallous"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct spelling is “equivocal”, which means ‘not easy to explain or understand’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of uproarious.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Somber"
+    },
+    {
+     "label": "B",
+     "text": "Sedate"
+    },
+    {
+     "label": "C",
+     "text": "Comedic"
+    },
+    {
+     "label": "D",
+     "text": "Tragic"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct synonym of “uproarious” is “comedic” as both are used ‘to describe something that is very funny’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 13
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Choose the correct option to complete the conversation.\n\n![Albert : If I the lottery, I will buy a new house. George : I don’t believe in this game of luck. A. wins B. won C. win D. have won vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "The verb “win” is to be used with the subject “I”, and in if-clauses we use the simple present tense to talk about future possibility. Hence, option C is correct.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IEO 2025-26 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 13
+   }
+  }
+ ]
+}

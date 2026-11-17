@@ -1,0 +1,323 @@
+[
+ {
+  "id": "uimo-class4-um-set-01",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 74,
+  "paper_flags": [],
+  "pictures": {
+   "38": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "39": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "41": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "45": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9000",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 100,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 40 (expected 1)"
+  ],
+  "pictures": {
+   "15": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "39": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9009",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 77,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 60 (expected 1)"
+  ],
+  "pictures": {
+   "1": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "2": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "3": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "4": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "5": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "6": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "7": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "8": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "9": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "10": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "11": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "12": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "13": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "14": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "15": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "16": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "17": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "18": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "19": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "20": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "21": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "22": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "23": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "24": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "25": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "26": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "27": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "28": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "29": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "30": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "31": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "32": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "33": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "34": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "35": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "36": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "37": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "38": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "39": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "40": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably); no options found (pictures printed inside the text line)"
+   ],
+   "41": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "42": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "43": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "44": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "45": [
+    "kept as a picture of the whole question: option C overlaps other text; option C overlaps another picture; option C overlaps the question's figure; no options found (whole-paper picture mode: this paper's fonts cannot be read reliably); no options found (pictures printed inside the text line)"
+   ],
+   "46": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "47": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "48": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "49": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ],
+   "50": [
+    "kept as a picture of the whole question: no options found (whole-paper picture mode: this paper's fonts cannot be read reliably)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9246",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 81,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 80 (expected 1)"
+  ],
+  "pictures": {
+   "12": [
+    "kept as a picture of the whole question: options found: A,B"
+   ],
+   "21": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "38": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "41": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "45": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9248",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 98,
+  "paper_flags": [],
+  "pictures": {
+   "3": [
+    "kept as a picture of the whole question: options found: A,B"
+   ],
+   "5": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "41": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "45": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9254",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 108,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 122 (expected 1)"
+  ],
+  "pictures": {
+   "27": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "39": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9257",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 121,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 142 (expected 1)"
+  ],
+  "pictures": {
+   "45": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ },
+ {
+  "id": "uimo-class4-um9259",
+  "questions": 50,
+  "flagged": 0,
+  "answers": 50,
+  "solutions": 50,
+  "images": 120,
+  "paper_flags": [
+   "solutions: unexpected number 6 on page 164 (expected 1)"
+  ],
+  "pictures": {
+   "28": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "38": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ],
+   "41": [
+    "kept as a picture of the whole question: no options found (pictures printed inside the text line)"
+   ]
+  },
+  "flags": {}
+ }
+]

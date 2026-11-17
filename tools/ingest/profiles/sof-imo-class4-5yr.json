@@ -1,0 +1,250 @@
+{
+ "source": "class_4_imo_5_years_e_book_2026.pdf",
+ "subject": "Maths",
+ "count": 35,
+ "fields": {
+  "Exam": "SOF IMO",
+  "Class": 4,
+  "Level": 1
+ },
+ "section_marks": {
+  "achievers section": 2
+ },
+ "question": {
+  "columns": [
+   [
+    30,
+    566
+   ]
+  ],
+  "band": [
+   20,
+   742
+  ],
+  "anchor": {
+   "regex": "^(\\d{1,2})\\.?(?:\\s+|$)",
+   "x": [
+    0,
+    16
+   ],
+   "inline": true
+  },
+  "option_regex": "^([A-D])\\.(?:\\s|$)",
+  "stop": [
+   "^SPACE FOR ROUGH WORK"
+  ],
+  "section": {
+   "regex": "^[A-Z][A-Z &'-]+$",
+   "size": 13,
+   "font": "Helvetica-Bold"
+  },
+  "group_regex": "^DIRECTIONS?\\s*\\(\\s*\\d+\\s*(?:[-\u2013&]|to|and)\\s*\\d+\\s*\\)"
+ },
+ "solutions": {
+  "pages": [
+   128,
+   153
+  ],
+  "columns": [
+   [
+    30,
+    297
+   ],
+   [
+    306,
+    566
+   ]
+  ],
+  "band": [
+   30,
+   742
+  ],
+  "paper_regex": "^SOF INTERNATIONAL MATHEMATICS OLYMPIAD 20\\d\\d-\\d\\d|^MODEL TEST PAPER",
+  "paper_size_min": 14,
+  "anchor": {
+   "regex": "^(\\d{1,2})\\.\\s*\\(([A-D])\\)\\s*:?\\s*",
+   "x": [
+    0,
+    14
+   ],
+   "inline": true
+  },
+  "ignore": [
+   "^SET-[AB]$",
+   "^[-\u2013] ?[12]$"
+  ]
+ },
+ "papers": [
+  {
+   "id": "sof-imo-class4-2025-26-set-a",
+   "title": "SOF IMO Class 4 \u00b7 2025-26 \u00b7 Set A",
+   "pages": [
+    7,
+    13
+   ],
+   "sol_key": "#1",
+   "fields": {
+    "Year": "2025-26",
+    "Set": "A",
+    "Paper": "IMO 2025-26 Set A"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2025-26-set-b",
+   "trim_options": {"18": {"D": "200 litres"}},
+   "title": "SOF IMO Class 4 \u00b7 2025-26 \u00b7 Set B",
+   "pages": [
+    17,
+    23
+   ],
+   "sol_key": "#2",
+   "fields": {
+    "Year": "2025-26",
+    "Set": "B",
+    "Paper": "IMO 2025-26 Set B"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2024-25-set-a",
+   "title": "SOF IMO Class 4 \u00b7 2024-25 \u00b7 Set A",
+   "pages": [
+    27,
+    33
+   ],
+   "sol_key": "#3",
+   "fields": {
+    "Year": "2024-25",
+    "Set": "A",
+    "Paper": "IMO 2024-25 Set A"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2024-25-set-b",
+   "title": "SOF IMO Class 4 \u00b7 2024-25 \u00b7 Set B",
+   "pages": [
+    37,
+    43
+   ],
+   "sol_key": "#4",
+   "fields": {
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IMO 2024-25 Set B"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2023-24-set-a",
+   "title": "SOF IMO Class 4 \u00b7 2023-24 \u00b7 Set A",
+   "pages": [
+    47,
+    53
+   ],
+   "sol_key": "#5",
+   "fields": {
+    "Year": "2023-24",
+    "Set": "A",
+    "Paper": "IMO 2023-24 Set A"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2023-24-set-b",
+   "picture_questions": [18],
+   "title": "SOF IMO Class 4 \u00b7 2023-24 \u00b7 Set B",
+   "pages": [
+    57,
+    63
+   ],
+   "sol_key": "#6",
+   "fields": {
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IMO 2023-24 Set B"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2022-23-set-a",
+   "title": "SOF IMO Class 4 \u00b7 2022-23 \u00b7 Set A",
+   "pages": [
+    67,
+    73
+   ],
+   "sol_key": "#7",
+   "fields": {
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2022-23-set-b",
+   "title": "SOF IMO Class 4 \u00b7 2022-23 \u00b7 Set B",
+   "pages": [
+    77,
+    83
+   ],
+   "sol_key": "#8",
+   "fields": {
+    "Year": "2022-23",
+    "Set": "B",
+    "Paper": "IMO 2022-23 Set B"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2021-22-set-a",
+   "title": "SOF IMO Class 4 \u00b7 2021-22 \u00b7 Set A",
+   "pages": [
+    87,
+    93
+   ],
+   "sol_key": "#9",
+   "fields": {
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A"
+   }
+  },
+  {
+   "id": "sof-imo-class4-2021-22-set-b",
+   "title": "SOF IMO Class 4 \u00b7 2021-22 \u00b7 Set B",
+   "pages": [
+    97,
+    103
+   ],
+   "sol_key": "#10",
+   "fields": {
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B"
+   }
+  },
+  {
+   "id": "sof-imo-class4-model-test-1",
+   "title": "SOF IMO Class 4 \u00b7 Model Test Paper 1",
+   "pages": [
+    107,
+    113
+   ],
+   "sol_key": "#11",
+   "fields": {
+    "Year": "Model",
+    "Set": "MTP-1",
+    "Paper": "IMO Model Test Paper 1"
+   }
+  },
+  {
+   "id": "sof-imo-class4-model-test-2",
+   "title": "SOF IMO Class 4 \u00b7 Model Test Paper 2",
+   "pages": [
+    117,
+    123
+   ],
+   "sol_key": "#12",
+   "fields": {
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   }
+  }
+ ],
+ "strip_stamp_text": true
+}

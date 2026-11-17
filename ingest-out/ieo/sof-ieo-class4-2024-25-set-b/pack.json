@@ -1,0 +1,1517 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2024-25-set-b",
+  "title": "SOF IEO Class 4 · 2024-25 · Set B",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q18-stem": {
+   "file": "images/q18-stem.png"
+  },
+  "q27-stem-fig": {
+   "file": "images/q27-stem-fig.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThe parcel is being delivered \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ we speak.\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "so"
+    },
+    {
+     "label": "B",
+     "text": "because"
+    },
+    {
+     "label": "C",
+     "text": "as"
+    },
+    {
+     "label": "D",
+     "text": "like"
+    }
+   ],
+   "answer": "C",
+   "solution": "The subordinating conjunction ‘as’ is to be used to join two statements.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ matter how hard I try, the results are always bad.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Not"
+    },
+    {
+     "label": "B",
+     "text": "No"
+    },
+    {
+     "label": "C",
+     "text": "Nothing"
+    },
+    {
+     "label": "D",
+     "text": "None"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct option ‘no’ is to be used, as the subordinating conjunction ‘no matter’ is used to indicate ‘regardless of’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nI \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the party early last night.",
+   "options": [
+    {
+     "label": "A",
+     "text": "leave"
+    },
+    {
+     "label": "B",
+     "text": "am leaving"
+    },
+    {
+     "label": "C",
+     "text": "left"
+    },
+    {
+     "label": "D",
+     "text": "have left"
+    }
+   ],
+   "answer": "C",
+   "solution": "The simple past verb form ‘left’ is to be used, as ‘last night’ indicates that the action had already been completed a day before.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nI got a \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ of my favourite cricketer at the mall.",
+   "options": [
+    {
+     "label": "A",
+     "text": "scene"
+    },
+    {
+     "label": "B",
+     "text": "gaze"
+    },
+    {
+     "label": "C",
+     "text": "glimmer"
+    },
+    {
+     "label": "D",
+     "text": "glimpse"
+    }
+   ],
+   "answer": "D",
+   "solution": "The noun ‘glimpse’ is to be used, as it means ‘a momentary or partial view’, here, of the favourite cricketer.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nEverybody came for the trek \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Mahi.",
+   "options": [
+    {
+     "label": "A",
+     "text": "expect"
+    },
+    {
+     "label": "B",
+     "text": "accept"
+    },
+    {
+     "label": "C",
+     "text": "except"
+    },
+    {
+     "label": "D",
+     "text": "expert"
+    }
+   ],
+   "answer": "C",
+   "solution": "The preposition ‘except’ is to be used, as it means ‘not including’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nThis ladder is not \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ enough for you to use it.\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "furore"
+    },
+    {
+     "label": "B",
+     "text": "sturdy"
+    },
+    {
+     "label": "C",
+     "text": "mottle"
+    },
+    {
+     "label": "D",
+     "text": "stronger"
+    }
+   ],
+   "answer": "B",
+   "solution": "The adjective ‘sturdy’ is to be used, as it means ‘strong’ and is used to qualify the noun ‘ladder’ in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "For questions 1 to 7, choose the correct option to fill in the blank.\n\nJatin \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the door shut after the argument.",
+   "options": [
+    {
+     "label": "A",
+     "text": "poked"
+    },
+    {
+     "label": "B",
+     "text": "fitted"
+    },
+    {
+     "label": "C",
+     "text": "slammed"
+    },
+    {
+     "label": "D",
+     "text": "bounced"
+    }
+   ],
+   "answer": "C",
+   "solution": "The verb ‘slammed’ is to be used, as it means ‘to shut forcefully and loudly’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 37
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![The meeting started shortly afterwards.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Preposition"
+    },
+    {
+     "label": "C",
+     "text": "Adjective"
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "D",
+   "solution": "The underlined word ‘afterwards’ is an adverb of time, as the phrase ‘shortly afterwards’ means ‘soon after that’ in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "For questions 8 and 9, choose the correct option for the underlined word.\n\n![Everybody was called in to be informed about the disaster.](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Adjective"
+    },
+    {
+     "label": "C",
+     "text": "Verb"
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "A",
+   "solution": "The underlined word ‘disaster’ is a noun, which means ‘an unexpected or terrible event’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nHe was very fast in spite being overweight.",
+   "options": [
+    {
+     "label": "A",
+     "text": "He was very fast"
+    },
+    {
+     "label": "B",
+     "text": "in spite being"
+    },
+    {
+     "label": "C",
+     "text": "overweight."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct statement is ‘He was very fast in spite of being overweight.’ Hence, the error is in option B.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "For questions 10 and 11, choose the part of the sentence that has an error.\n\nMy teacher dropped her phone on disbelief.",
+   "options": [
+    {
+     "label": "A",
+     "text": "My teacher"
+    },
+    {
+     "label": "B",
+     "text": "dropped her phone"
+    },
+    {
+     "label": "C",
+     "text": "on disbelief."
+    },
+    {
+     "label": "D",
+     "text": "No error"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct statement is ‘My teacher dropped her phone in disbelief.’ Hence, the error is in option C.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Approximate"
+    },
+    {
+     "label": "B",
+     "text": "Aproximet"
+    },
+    {
+     "label": "C",
+     "text": "Appoximate"
+    },
+    {
+     "label": "D",
+     "text": "Apporximat"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct spelling is ‘approximate’, which means ‘nearly correct or exact’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "For questions 12 and 13, choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Valocity"
+    },
+    {
+     "label": "B",
+     "text": "Velocity"
+    },
+    {
+     "label": "C",
+     "text": "Vaelocity"
+    },
+    {
+     "label": "D",
+     "text": "Volosity"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is ‘velocity’, which means ‘the speed of something in a given direction’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of invalid.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Whole"
+    },
+    {
+     "label": "B",
+     "text": "Accurate"
+    },
+    {
+     "label": "C",
+     "text": "Misleading"
+    },
+    {
+     "label": "D",
+     "text": "Exact"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct synonym of ‘invalid’ is ‘misleading’, as they both mean ‘not true or acceptable’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Choose the correct antonym of warmth.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Gusto"
+    },
+    {
+     "label": "B",
+     "text": "Heat"
+    },
+    {
+     "label": "C",
+     "text": "Compassion"
+    },
+    {
+     "label": "D",
+     "text": "Apathy"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct antonym of ‘warmth’ is ‘apathy’, as the word ‘warmth’ means ‘being kind and friendly’, whereas ‘apathy’ means ‘indifference’.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 38
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in the magnificent court of Emperor Akbar, there lived a witty and clever advisor named Birbal. Akbar cherished Birbal’s sharp intellect and often sought his counsel on various matters.\n\nOne day, as Akbar strolled through his royal gardens, he came across a group of children engrossed in a game of marbles. Curiously, he stopped to observe them, amused by their laughter and camaraderie. Turning to Birbal, Akbar remarked, “Look at these children, Birbal. They are so carefree and happy. I envy their joyous spirit.” Birbal smiled and replied, “Indeed, Your Majesty. Children possess a simplicity and innocence that we adults often overlook.”\n\nIntrigued by Birbal’s response, Akbar issued a challenge. “Birbal, I want you to bring me something that will make me both laugh and cry.” Birbal accepted the challenge with his characteristic confidence and set out to fulfil the emperor’s request. Days passed, and Akbar grew impatient, wondering if Birbal would succeed.\n\nFinally, one evening, Birbal returned to the palace with a small package wrapped in colourful cloth. Presenting it to Akbar, he said, “Your Majesty, I have found something that I believe will meet your challenge.”\n\nCuriously, Akbar unwrapped the package to find a simple mirror inside. Confused, he looked at Birbal for an explanation.\n\nBirbal smiled and said, “Your Majesty, when you look into this mirror, you will see yourself. And in that reflection, you will find both laughter and tears. Laughter for the joyous moments you have experienced and tears for the **hardships** you have overcome.”\n\nImpressed by Birbal’s wisdom, Akbar laughed heartily, realizing the profound truth in his words. From that day onward, he cherished the mirror as a reminder of the dualities of life and the wisdom of his beloved advisor, Birbal.\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Akbar felt envious of children’s joyous spirit."
+    },
+    {
+     "label": "B",
+     "text": "![Emperor Akbar’s challenge to Birbal was to find something that would make him both laugh and cry.](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "Akbar became impatient when Birbal didn’t come back with his answer."
+    },
+    {
+     "label": "D",
+     "text": "Akbar sought Birbal’s advice occasionally."
+    }
+   ],
+   "answer": "D",
+   "solution": "According to the passage, Akbar often sought Birbal’s advice. Hence, option D is the incorrect statement.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in the magnificent court of Emperor Akbar, there lived a witty and clever advisor named Birbal. Akbar cherished Birbal’s sharp intellect and often sought his counsel on various matters.\n\nOne day, as Akbar strolled through his royal gardens, he came across a group of children engrossed in a game of marbles. Curiously, he stopped to observe them, amused by their laughter and camaraderie. Turning to Birbal, Akbar remarked, “Look at these children, Birbal. They are so carefree and happy. I envy their joyous spirit.” Birbal smiled and replied, “Indeed, Your Majesty. Children possess a simplicity and innocence that we adults often overlook.”\n\nIntrigued by Birbal’s response, Akbar issued a challenge. “Birbal, I want you to bring me something that will make me both laugh and cry.” Birbal accepted the challenge with his characteristic confidence and set out to fulfil the emperor’s request. Days passed, and Akbar grew impatient, wondering if Birbal would succeed.\n\nFinally, one evening, Birbal returned to the palace with a small package wrapped in colourful cloth. Presenting it to Akbar, he said, “Your Majesty, I have found something that I believe will meet your challenge.”\n\nCuriously, Akbar unwrapped the package to find a simple mirror inside. Confused, he looked at Birbal for an explanation.\n\nBirbal smiled and said, “Your Majesty, when you look into this mirror, you will see yourself. And in that reflection, you will find both laughter and tears. Laughter for the joyous moments you have experienced and tears for the **hardships** you have overcome.”\n\nImpressed by Birbal’s wisdom, Akbar laughed heartily, realizing the profound truth in his words. From that day onward, he cherished the mirror as a reminder of the dualities of life and the wisdom of his beloved advisor, Birbal.\n\nBirbal fulfilled Akbar’s challenge by \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "bringing a colourful cloth"
+    },
+    {
+     "label": "B",
+     "text": "telling him a joke"
+    },
+    {
+     "label": "C",
+     "text": "presenting him a mirror"
+    },
+    {
+     "label": "D",
+     "text": "performing a magic trick"
+    }
+   ],
+   "answer": "C",
+   "solution": "As per the passage, Birbal fulfilled Akbar’s challenge by presenting him a mirror.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 39
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in the magnificent court of Emperor Akbar, there lived a witty and clever advisor named Birbal. Akbar cherished Birbal’s sharp intellect and often sought his counsel on various matters.\n\nOne day, as Akbar strolled through his royal gardens, he came across a group of children engrossed in a game of marbles. Curiously, he stopped to observe them, amused by their laughter and camaraderie. Turning to Birbal, Akbar remarked, “Look at these children, Birbal. They are so carefree and happy. I envy their joyous spirit.” Birbal smiled and replied, “Indeed, Your Majesty. Children possess a simplicity and innocence that we adults often overlook.”\n\nIntrigued by Birbal’s response, Akbar issued a challenge. “Birbal, I want you to bring me something that will make me both laugh and cry.” Birbal accepted the challenge with his characteristic confidence and set out to fulfil the emperor’s request. Days passed, and Akbar grew impatient, wondering if Birbal would succeed.\n\nFinally, one evening, Birbal returned to the palace with a small package wrapped in colourful cloth. Presenting it to Akbar, he said, “Your Majesty, I have found something that I believe will meet your challenge.”\n\nCuriously, Akbar unwrapped the package to find a simple mirror inside. Confused, he looked at Birbal for an explanation.\n\nBirbal smiled and said, “Your Majesty, when you look into this mirror, you will see yourself. And in that reflection, you will find both laughter and tears. Laughter for the joyous moments you have experienced and tears for the **hardships** you have overcome.”\n\nImpressed by Birbal’s wisdom, Akbar laughed heartily, realizing the profound truth in his words. From that day onward, he cherished the mirror as a reminder of the dualities of life and the wisdom of his beloved advisor, Birbal.\n\n![Choose the correct sequence of events, according to the passage. 1. Akbar opened the package presented by Birbal. 2. Akbar came across a group of children playing with marbles in the garden. 3. Akbar, impressed with the intellect and wisdom of Birbal, started laughing wholeheartedly. 4. Birbal accepted the challenge with confidence. 5. Akbar issued a challenge to Birbal.](asset:q18-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "1, 2, 3, 4, 5"
+    },
+    {
+     "label": "B",
+     "text": "5, 2, 3, 1, 4"
+    },
+    {
+     "label": "C",
+     "text": "2, 5, 4, 1, 3"
+    },
+    {
+     "label": "D",
+     "text": "2, 1, 3, 4, 5"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, the correct sequence of events is given in option C.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in the magnificent court of Emperor Akbar, there lived a witty and clever advisor named Birbal. Akbar cherished Birbal’s sharp intellect and often sought his counsel on various matters.\n\nOne day, as Akbar strolled through his royal gardens, he came across a group of children engrossed in a game of marbles. Curiously, he stopped to observe them, amused by their laughter and camaraderie. Turning to Birbal, Akbar remarked, “Look at these children, Birbal. They are so carefree and happy. I envy their joyous spirit.” Birbal smiled and replied, “Indeed, Your Majesty. Children possess a simplicity and innocence that we adults often overlook.”\n\nIntrigued by Birbal’s response, Akbar issued a challenge. “Birbal, I want you to bring me something that will make me both laugh and cry.” Birbal accepted the challenge with his characteristic confidence and set out to fulfil the emperor’s request. Days passed, and Akbar grew impatient, wondering if Birbal would succeed.\n\nFinally, one evening, Birbal returned to the palace with a small package wrapped in colourful cloth. Presenting it to Akbar, he said, “Your Majesty, I have found something that I believe will meet your challenge.”\n\nCuriously, Akbar unwrapped the package to find a simple mirror inside. Confused, he looked at Birbal for an explanation.\n\nBirbal smiled and said, “Your Majesty, when you look into this mirror, you will see yourself. And in that reflection, you will find both laughter and tears. Laughter for the joyous moments you have experienced and tears for the **hardships** you have overcome.”\n\nImpressed by Birbal’s wisdom, Akbar laughed heartily, realizing the profound truth in his words. From that day onward, he cherished the mirror as a reminder of the dualities of life and the wisdom of his beloved advisor, Birbal.\n\nAkbar laughed heartily in the end because he \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "remembered a joke Birbal had told him"
+    },
+    {
+     "label": "B",
+     "text": "realized the wisdom in Birbal’s gift"
+    },
+    {
+     "label": "C",
+     "text": "found the gift funny"
+    },
+    {
+     "label": "D",
+     "text": "was confused"
+    }
+   ],
+   "answer": "B",
+   "solution": "As per the passage, Akbar laughed heartily in the end because he realized the wisdom in Birbal’s gift.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "**For questions 16 to 20, read the passage and answer the questions that follow.**\n\nOnce upon a time, in the magnificent court of Emperor Akbar, there lived a witty and clever advisor named Birbal. Akbar cherished Birbal’s sharp intellect and often sought his counsel on various matters.\n\nOne day, as Akbar strolled through his royal gardens, he came across a group of children engrossed in a game of marbles. Curiously, he stopped to observe them, amused by their laughter and camaraderie. Turning to Birbal, Akbar remarked, “Look at these children, Birbal. They are so carefree and happy. I envy their joyous spirit.” Birbal smiled and replied, “Indeed, Your Majesty. Children possess a simplicity and innocence that we adults often overlook.”\n\nIntrigued by Birbal’s response, Akbar issued a challenge. “Birbal, I want you to bring me something that will make me both laugh and cry.” Birbal accepted the challenge with his characteristic confidence and set out to fulfil the emperor’s request. Days passed, and Akbar grew impatient, wondering if Birbal would succeed.\n\nFinally, one evening, Birbal returned to the palace with a small package wrapped in colourful cloth. Presenting it to Akbar, he said, “Your Majesty, I have found something that I believe will meet your challenge.”\n\nCuriously, Akbar unwrapped the package to find a simple mirror inside. Confused, he looked at Birbal for an explanation.\n\nBirbal smiled and said, “Your Majesty, when you look into this mirror, you will see yourself. And in that reflection, you will find both laughter and tears. Laughter for the joyous moments you have experienced and tears for the **hardships** you have overcome.”\n\nImpressed by Birbal’s wisdom, Akbar laughed heartily, realizing the profound truth in his words. From that day onward, he cherished the mirror as a reminder of the dualities of life and the wisdom of his beloved advisor, Birbal.\n\nWhich of the following is not a synonym for ‘hardships’?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Privileges"
+    },
+    {
+     "label": "B",
+     "text": "Trials"
+    },
+    {
+     "label": "C",
+     "text": "Hurdles"
+    },
+    {
+     "label": "D",
+     "text": "Shackles"
+    }
+   ],
+   "answer": "A",
+   "solution": "The word ‘privileges’ is not a synonym of ‘hardships’, as ‘privileges’ means ‘benefits’, whereas ‘hardships’ means ‘struggles’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 40
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nLaughter is indeed a wonderful medicine that can heal our hearts and minds. Just like how a bandage can mend a cut or a pill can cure an ailment, laughter has the magical power to uplift our spirits and make us feel better, both mentally and physically.\n\nImagine a world without laughter; it would be dull and dreary, wouldn’t it? But fortunately, we have the gift of laughter, which adds colour and joy to our lives. Whether it’s a hearty chuckle, a giggle, or a belly laugh, the sound of laughter is like music to our ears. It has the **incredible** ability to lighten even the heaviest of burdens and turn our frowns upside down.\n\nWhen we laugh, our bodies release endorphins, which are natural chemicals that promote feelings of happiness and well-being. So, not only does laughter make us feel good emotionally, but it also has positive effects on our physical health. It can reduce stress, boost our immune system, and even relieve pain. That’s why they say, “Laughter is the best medicine.”\n\nMoreover, laughter is contagious! Have you ever noticed how when one person starts laughing, others can’t help but join in? It’s like a ripple effect, spreading joy and happiness wherever it goes. Whether it’s sharing a funny joke with friends, watching a comedy show, or simply finding humor in everyday situations, laughter brings people together and strengthens bonds.\n\nIn addition to its health benefits, laughter enhances our creativity and problem- solving abilities. When we’re in a relaxed and jovial mood, our minds become more open and receptive to new ideas. So, the next time you’re stuck on a difficult task, take a moment to laugh—you might just find the solution you’ve been looking for! In conclusion, laughter truly is a marvellous medicine that enriches our lives in countless ways. It’s a powerful tool for promoting happiness, fostering connections, and improving our overall well-being. So, let’s make laughter a regular part of our lives and spread its healing effects far and wide!\n\nEndorphins boost \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "happiness"
+    },
+    {
+     "label": "B",
+     "text": "well-being"
+    },
+    {
+     "label": "C",
+     "text": "stress"
+    },
+    {
+     "label": "D",
+     "text": "Both A and B"
+    }
+   ],
+   "answer": "D",
+   "solution": "According to the passage, endorphins boost both happiness and well-being. Hence, option D is correct.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nLaughter is indeed a wonderful medicine that can heal our hearts and minds. Just like how a bandage can mend a cut or a pill can cure an ailment, laughter has the magical power to uplift our spirits and make us feel better, both mentally and physically.\n\nImagine a world without laughter; it would be dull and dreary, wouldn’t it? But fortunately, we have the gift of laughter, which adds colour and joy to our lives. Whether it’s a hearty chuckle, a giggle, or a belly laugh, the sound of laughter is like music to our ears. It has the **incredible** ability to lighten even the heaviest of burdens and turn our frowns upside down.\n\nWhen we laugh, our bodies release endorphins, which are natural chemicals that promote feelings of happiness and well-being. So, not only does laughter make us feel good emotionally, but it also has positive effects on our physical health. It can reduce stress, boost our immune system, and even relieve pain. That’s why they say, “Laughter is the best medicine.”\n\nMoreover, laughter is contagious! Have you ever noticed how when one person starts laughing, others can’t help but join in? It’s like a ripple effect, spreading joy and happiness wherever it goes. Whether it’s sharing a funny joke with friends, watching a comedy show, or simply finding humor in everyday situations, laughter brings people together and strengthens bonds.\n\nIn addition to its health benefits, laughter enhances our creativity and problem- solving abilities. When we’re in a relaxed and jovial mood, our minds become more open and receptive to new ideas. So, the next time you’re stuck on a difficult task, take a moment to laugh—you might just find the solution you’ve been looking for! In conclusion, laughter truly is a marvellous medicine that enriches our lives in countless ways. It’s a powerful tool for promoting happiness, fostering connections, and improving our overall well-being. So, let’s make laughter a regular part of our lives and spread its healing effects far and wide!\n\nChoose the incorrect statement.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Laughter enhances our creativity and problem-solving skills."
+    },
+    {
+     "label": "B",
+     "text": "Laughter is a gift that adds colour and joy to our lives."
+    },
+    {
+     "label": "C",
+     "text": "Laughter strengthens our nerves and increases stress."
+    },
+    {
+     "label": "D",
+     "text": "Laughter can heal the heart and mind."
+    }
+   ],
+   "answer": "C",
+   "solution": "As per the passage, laughter strengthens our nerves and reduces stress. Hence, the incorrect statement is option C.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nLaughter is indeed a wonderful medicine that can heal our hearts and minds. Just like how a bandage can mend a cut or a pill can cure an ailment, laughter has the magical power to uplift our spirits and make us feel better, both mentally and physically.\n\nImagine a world without laughter; it would be dull and dreary, wouldn’t it? But fortunately, we have the gift of laughter, which adds colour and joy to our lives. Whether it’s a hearty chuckle, a giggle, or a belly laugh, the sound of laughter is like music to our ears. It has the **incredible** ability to lighten even the heaviest of burdens and turn our frowns upside down.\n\nWhen we laugh, our bodies release endorphins, which are natural chemicals that promote feelings of happiness and well-being. So, not only does laughter make us feel good emotionally, but it also has positive effects on our physical health. It can reduce stress, boost our immune system, and even relieve pain. That’s why they say, “Laughter is the best medicine.”\n\nMoreover, laughter is contagious! Have you ever noticed how when one person starts laughing, others can’t help but join in? It’s like a ripple effect, spreading joy and happiness wherever it goes. Whether it’s sharing a funny joke with friends, watching a comedy show, or simply finding humor in everyday situations, laughter brings people together and strengthens bonds.\n\nIn addition to its health benefits, laughter enhances our creativity and problem- solving abilities. When we’re in a relaxed and jovial mood, our minds become more open and receptive to new ideas. So, the next time you’re stuck on a difficult task, take a moment to laugh—you might just find the solution you’ve been looking for! In conclusion, laughter truly is a marvellous medicine that enriches our lives in countless ways. It’s a powerful tool for promoting happiness, fostering connections, and improving our overall well-being. So, let’s make laughter a regular part of our lives and spread its healing effects far and wide!\n\nWhat happens to our bodies when we laugh?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Our muscles become weak."
+    },
+    {
+     "label": "B",
+     "text": "Our body releases stress hormones."
+    },
+    {
+     "label": "C",
+     "text": "Our body releases endorphins."
+    },
+    {
+     "label": "D",
+     "text": "Our body responds adversely."
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, our body releases endorphins when we laugh.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nLaughter is indeed a wonderful medicine that can heal our hearts and minds. Just like how a bandage can mend a cut or a pill can cure an ailment, laughter has the magical power to uplift our spirits and make us feel better, both mentally and physically.\n\nImagine a world without laughter; it would be dull and dreary, wouldn’t it? But fortunately, we have the gift of laughter, which adds colour and joy to our lives. Whether it’s a hearty chuckle, a giggle, or a belly laugh, the sound of laughter is like music to our ears. It has the **incredible** ability to lighten even the heaviest of burdens and turn our frowns upside down.\n\nWhen we laugh, our bodies release endorphins, which are natural chemicals that promote feelings of happiness and well-being. So, not only does laughter make us feel good emotionally, but it also has positive effects on our physical health. It can reduce stress, boost our immune system, and even relieve pain. That’s why they say, “Laughter is the best medicine.”\n\nMoreover, laughter is contagious! Have you ever noticed how when one person starts laughing, others can’t help but join in? It’s like a ripple effect, spreading joy and happiness wherever it goes. Whether it’s sharing a funny joke with friends, watching a comedy show, or simply finding humor in everyday situations, laughter brings people together and strengthens bonds.\n\nIn addition to its health benefits, laughter enhances our creativity and problem- solving abilities. When we’re in a relaxed and jovial mood, our minds become more open and receptive to new ideas. So, the next time you’re stuck on a difficult task, take a moment to laugh—you might just find the solution you’ve been looking for! In conclusion, laughter truly is a marvellous medicine that enriches our lives in countless ways. It’s a powerful tool for promoting happiness, fostering connections, and improving our overall well-being. So, let’s make laughter a regular part of our lives and spread its healing effects far and wide!\n\nIt is important to find joy and humour in our daily lives because it strengthens \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "sadness"
+    },
+    {
+     "label": "B",
+     "text": "relationships"
+    },
+    {
+     "label": "C",
+     "text": "stress hormones"
+    },
+    {
+     "label": "D",
+     "text": "digestive system"
+    }
+   ],
+   "answer": "B",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "**For questions 21 to 25, read the passage and answer the questions that follow.**\n\nLaughter is indeed a wonderful medicine that can heal our hearts and minds. Just like how a bandage can mend a cut or a pill can cure an ailment, laughter has the magical power to uplift our spirits and make us feel better, both mentally and physically.\n\nImagine a world without laughter; it would be dull and dreary, wouldn’t it? But fortunately, we have the gift of laughter, which adds colour and joy to our lives. Whether it’s a hearty chuckle, a giggle, or a belly laugh, the sound of laughter is like music to our ears. It has the **incredible** ability to lighten even the heaviest of burdens and turn our frowns upside down.\n\nWhen we laugh, our bodies release endorphins, which are natural chemicals that promote feelings of happiness and well-being. So, not only does laughter make us feel good emotionally, but it also has positive effects on our physical health. It can reduce stress, boost our immune system, and even relieve pain. That’s why they say, “Laughter is the best medicine.”\n\nMoreover, laughter is contagious! Have you ever noticed how when one person starts laughing, others can’t help but join in? It’s like a ripple effect, spreading joy and happiness wherever it goes. Whether it’s sharing a funny joke with friends, watching a comedy show, or simply finding humor in everyday situations, laughter brings people together and strengthens bonds.\n\nIn addition to its health benefits, laughter enhances our creativity and problem- solving abilities. When we’re in a relaxed and jovial mood, our minds become more open and receptive to new ideas. So, the next time you’re stuck on a difficult task, take a moment to laugh—you might just find the solution you’ve been looking for! In conclusion, laughter truly is a marvellous medicine that enriches our lives in countless ways. It’s a powerful tool for promoting happiness, fostering connections, and improving our overall well-being. So, let’s make laughter a regular part of our lives and spread its healing effects far and wide!\n\nChoose the option that is an antonym of the word ‘incredible’.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Unbelievable"
+    },
+    {
+     "label": "B",
+     "text": "Unconvincing"
+    },
+    {
+     "label": "C",
+     "text": "Likely"
+    },
+    {
+     "label": "D",
+     "text": "Extraordinary"
+    }
+   ],
+   "answer": "C",
+   "solution": "The antonym of the word ‘incredible’ is ‘likely’, as ‘incredible’ means ‘impossible or difficult to believe’, whereas ‘likely’ means ‘having a high chance of being true’.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 41
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the most suitable option to complete each conversation.\n\nTeacher : The test results will be \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ today.\n\nStudent : OK, ma’am.",
+   "options": [
+    {
+     "label": "A",
+     "text": "announce"
+    },
+    {
+     "label": "B",
+     "text": "announcing"
+    },
+    {
+     "label": "C",
+     "text": "announced"
+    },
+    {
+     "label": "D",
+     "text": "announcement"
+    }
+   ],
+   "answer": "C",
+   "solution": "The third form of the verb is to be used with ‘will be’ in the future tense (passive form).",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the most suitable option to complete each conversation.\n\nGirish : Look there! There is a mongoose \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ the tree.\n\n![figure](asset:q27-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "beside"
+    },
+    {
+     "label": "B",
+     "text": "besides"
+    },
+    {
+     "label": "C",
+     "text": "against"
+    },
+    {
+     "label": "D",
+     "text": "at"
+    }
+   ],
+   "answer": "A",
+   "solution": "The suitable preposition ‘beside’ is to be used, as it indicates ‘by the side of’ as shown in the picture.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the most suitable option to complete each conversation.\n\nMother : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ you finish your meal, you cannot go out to play.\n\nRiti : OK, mom.",
+   "options": [
+    {
+     "label": "A",
+     "text": "So"
+    },
+    {
+     "label": "B",
+     "text": "Also"
+    },
+    {
+     "label": "C",
+     "text": "Unless"
+    },
+    {
+     "label": "D",
+     "text": "But"
+    }
+   ],
+   "answer": "C",
+   "solution": "The subordinating conjunction ‘unless’, is to be used as it expresses cause and effect.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the most suitable option to complete each conversation.\n\nPushpa : Why didn’t Suman \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ that dress?\n\n![figure](asset:q29-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "brought"
+    },
+    {
+     "label": "B",
+     "text": "bought"
+    },
+    {
+     "label": "C",
+     "text": "buy"
+    },
+    {
+     "label": "D",
+     "text": "buying"
+    }
+   ],
+   "answer": "C",
+   "solution": "The base form of the verb ‘buy’ is to be used with ‘didn’t’ in simple past tense.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "For questions 26 to 30, choose the most suitable option to complete each conversation.\n\nSiya : I feel so sleepy.\n\nJohn : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ have some coffee.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Gone"
+    },
+    {
+     "label": "B",
+     "text": "Let"
+    },
+    {
+     "label": "C",
+     "text": "Let’s"
+    },
+    {
+     "label": "D",
+     "text": "Who"
+    }
+   ],
+   "answer": "C",
+   "solution": "The contraction ‘let’s’ is to be used, which means ‘let us’ in the sentence to express an offer or a proposal.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nThis lucky draw is a/an \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_. The company does not give away any prizes.",
+   "options": [
+    {
+     "label": "A",
+     "text": "edge"
+    },
+    {
+     "label": "B",
+     "text": "coerce"
+    },
+    {
+     "label": "C",
+     "text": "hoax"
+    },
+    {
+     "label": "D",
+     "text": "rub"
+    }
+   ],
+   "answer": "C",
+   "solution": "The abstract noun ‘hoax’ is to be used, which means ‘an act intended to trick or dupe’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "For questions 31 and 32, choose the correct option to fill in the blank.\n\nOn my birthday, my mother whipped \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ a delicious cake.",
+   "options": [
+    {
+     "label": "A",
+     "text": "on"
+    },
+    {
+     "label": "B",
+     "text": "at"
+    },
+    {
+     "label": "C",
+     "text": "off"
+    },
+    {
+     "label": "D",
+     "text": "up"
+    }
+   ],
+   "answer": "D",
+   "solution": "The preposition ‘up’ is to be used as the phrasal verb ‘whipped up’ means ‘to prepare something quickly’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 42
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Choose the option with correct spelling.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Gurdge"
+    },
+    {
+     "label": "B",
+     "text": "Pamphlet"
+    },
+    {
+     "label": "C",
+     "text": "Schdule"
+    },
+    {
+     "label": "D",
+     "text": "Equivelent"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is ‘pamphlet’, which means ‘a small booklet or leaflet containing information’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 43
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Choose the correct synonym of comply.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Accede"
+    },
+    {
+     "label": "B",
+     "text": "Collide"
+    },
+    {
+     "label": "C",
+     "text": "Dissent"
+    },
+    {
+     "label": "D",
+     "text": "Resist"
+    }
+   ],
+   "answer": "A",
+   "solution": "The correct synonym of ‘comply’ is ‘accede’, as they both mean ‘agree to a demand’.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 43
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Choose the correct option to complete the conversation.\n\n![Reeta : Have patience. ; you’ll get through it. Raj : I guess you are right. A. Hung up there B. Hang across C. Hang at it D. Hang in there vvv](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct phrase ‘hang in there’ is to be used, as it is a way of saying not to give up.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2024-25",
+    "Set": "B",
+    "Paper": "IEO 2024-25 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 43
+   }
+  }
+ ]
+}

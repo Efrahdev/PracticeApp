@@ -1,0 +1,1498 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-ieo-class4-2023-24-set-b",
+  "title": "SOF IEO Class 4 · 2023-24 · Set B",
+  "source": "class_4_ieo_5_year_e_book_2026.pdf",
+  "subject": "English"
+ },
+ "assets": {
+  "q8-stem": {
+   "file": "images/q8-stem.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q35-optB": {
+   "file": "images/q35-optB.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nIn order to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ success, one has to work hard.",
+   "options": [
+    {
+     "label": "A",
+     "text": "achieve"
+    },
+    {
+     "label": "B",
+     "text": "achieved"
+    },
+    {
+     "label": "C",
+     "text": "achieving"
+    },
+    {
+     "label": "D",
+     "text": "achieves"
+    }
+   ],
+   "answer": "A",
+   "solution": "The suitable verb to be followed by the preposition “to” is “achieve” in the sentence because with “to” the base (first) form of the verb is used.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nRohan decided to learn \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ cycling from his brother.",
+   "options": [
+    {
+     "label": "A",
+     "text": "a"
+    },
+    {
+     "label": "B",
+     "text": "an"
+    },
+    {
+     "label": "C",
+     "text": "the"
+    },
+    {
+     "label": "D",
+     "text": "no article"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable option to be used is “no article”, as with gerunds (verb + ing), no article is used.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nMy sister told me to sleep early \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ I would not be tired the next morning.",
+   "options": [
+    {
+     "label": "A",
+     "text": "yet"
+    },
+    {
+     "label": "B",
+     "text": "so that"
+    },
+    {
+     "label": "C",
+     "text": "when"
+    },
+    {
+     "label": "D",
+     "text": "since"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable conjunction “so that” is to be used to show the effect or result of some action done in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nThe teacher asked us to \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ after the assembly.",
+   "options": [
+    {
+     "label": "A",
+     "text": "divide"
+    },
+    {
+     "label": "B",
+     "text": "derange"
+    },
+    {
+     "label": "C",
+     "text": "dispose"
+    },
+    {
+     "label": "D",
+     "text": "disperse"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable verb “disperse” is to be used, which means “to separate and go in different directions” after the assembly in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nSeema \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ low marks in maths last term.",
+   "options": [
+    {
+     "label": "A",
+     "text": "has"
+    },
+    {
+     "label": "B",
+     "text": "have"
+    },
+    {
+     "label": "C",
+     "text": "had"
+    },
+    {
+     "label": "D",
+     "text": "having"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable verb form to be used is “had”, for the sentence is in the past tense, as indicated by the time phrase “last term” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nMy mother is teaching me \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ cook simple dishes.",
+   "options": [
+    {
+     "label": "A",
+     "text": "too"
+    },
+    {
+     "label": "B",
+     "text": "to"
+    },
+    {
+     "label": "C",
+     "text": "for"
+    },
+    {
+     "label": "D",
+     "text": "on"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable preposition “to” is to be used before the base (first) form of the verb (cook) in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 1 TO 7, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nRamesh’s writing is so \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ that no one could read it.",
+   "options": [
+    {
+     "label": "A",
+     "text": "legible"
+    },
+    {
+     "label": "B",
+     "text": "illegible"
+    },
+    {
+     "label": "C",
+     "text": "illegal"
+    },
+    {
+     "label": "D",
+     "text": "legibly"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable adjective “illegible” is to be used, which means “difficult or impossible to read”, to describe the subject “Ramesh’s writing” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.\n\n![My mother ran all the errands this morning.](asset:q8-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Adjective"
+    },
+    {
+     "label": "C",
+     "text": "Verb"
+    },
+    {
+     "label": "D",
+     "text": "Conjunction"
+    }
+   ],
+   "answer": "A",
+   "solution": "The underlined word “errands” is a noun, which means “a short trip taken to do or get something” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 57
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 8 AND 9, CHOOSE THE CORRECT OPTION FOR THE UNDERLINED WORD.\n\n![I don’t want to share my room with anybody.](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Noun"
+    },
+    {
+     "label": "B",
+     "text": "Pronoun"
+    },
+    {
+     "label": "C",
+     "text": "Conjunction"
+    },
+    {
+     "label": "D",
+     "text": "Adverb"
+    }
+   ],
+   "answer": "B",
+   "solution": "The underlined word “anybody” is a pronoun, which means “any person; it does not matter who” in the sentence.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nIt was the great and informative workshop.",
+   "options": [
+    {
+     "label": "A",
+     "text": "It was"
+    },
+    {
+     "label": "B",
+     "text": "the great"
+    },
+    {
+     "label": "C",
+     "text": "and informative"
+    },
+    {
+     "label": "D",
+     "text": "workshop."
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct sentence is: It was a great and informative workshop.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 10 AND 11, CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR.\n\nStart the engine of the car by turn the key.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Start the"
+    },
+    {
+     "label": "B",
+     "text": "engine of"
+    },
+    {
+     "label": "C",
+     "text": "the car by"
+    },
+    {
+     "label": "D",
+     "text": "turn the key."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence is: Start the engine of the car by turning the key.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Monufactre"
+    },
+    {
+     "label": "B",
+     "text": "Maunfecture"
+    },
+    {
+     "label": "C",
+     "text": "Manufacture"
+    },
+    {
+     "label": "D",
+     "text": "Manufcatuer"
+    }
+   ],
+   "answer": "C",
+   "solution": "The correct spelling is “manufacture”, which means “to make something in large quantities using machines”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 12 AND 13, CHOOSE THE OPTION WITH CORRECT SPELLING.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Lagendray"
+    },
+    {
+     "label": "B",
+     "text": "Legendary"
+    },
+    {
+     "label": "C",
+     "text": "Lagandery"
+    },
+    {
+     "label": "D",
+     "text": "Legendray"
+    }
+   ],
+   "answer": "B",
+   "solution": "The correct spelling is “legendary”, which means “very famous and admired person”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT SYNONYM OF APPARENT.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Obvious"
+    },
+    {
+     "label": "B",
+     "text": "Unclear"
+    },
+    {
+     "label": "C",
+     "text": "Hidden"
+    },
+    {
+     "label": "D",
+     "text": "Remote"
+    }
+   ],
+   "answer": "A",
+   "solution": "The synonym of the word “apparent” is “obvious”, as they both mean “clear”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT ANTONYM OF PREFER.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Pick"
+    },
+    {
+     "label": "B",
+     "text": "Select"
+    },
+    {
+     "label": "C",
+     "text": "Raise"
+    },
+    {
+     "label": "D",
+     "text": "Reject"
+    }
+   ],
+   "answer": "D",
+   "solution": "The antonym of the word “prefer” is “reject”. The word “prefer” means “to choose one thing rather than another”, and the word “reject” means “to refuse to accept”.",
+   "topics": [
+    "Word AND Structure Knowledge"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Word AND Structure Knowledge"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 58
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\n*–* ***National Geographic*** The African wild dog also goes by the names “Cape hunting dog or painted dog”. Like a zebra’s unique stripe pattern or a human’s fingerprints, no two dogs have the same markings on their coat. Mottled with red, black, brown, white and yellow patches of fur, the effect is as striking as it is essential to survival.\n\nLike satellite dishes, the large, rounded ears of African wild dogs turn around to detect minute sounds in the distance. Another way African wild dogs differ from domestic dogs is that they only have four toes per foot. They can **sprint** after prey at speeds of up to 44 miles an hour.\n\nAfrican wild dogs live and die for their family—literally. Though the bigger the clan, the more efficient the hunt, non-breeding adults sacrifice their own nourishment to ensure the pups in the group get enough to eat and grow. Subsequently, these generous elders tend to gradually become malnourished and die younger than their peers in packs with fewer offspring.\n\nEven with their finely honed hunting skills, African wild dogs count among the world’s most endangered mammals. According to the IUCN Red List, only around 6,600 wild dogs remain, mostly in Tanzania, northern Mozambique, and southern Africa. The biggest threats facing the species come from their increased contact with humans: habitat loss, villagers seeking revenge against killed livestock, and viral diseases contracted from domestic dogs.\n\nAfrican wild dogs work together in packs of 6 to 20 or more to hunt antelopes and even larger prey such as wildebeests. These highly social beasts communicate with each other by touch, actions, and vocalizations—before a hunt, you can see them playfully circling each other and seeming to psych each other up for the endeavour. They’re also one of the few mammals that care for the old, sick and disabled members of the pack.\n\nHow is an African wild dog similar to a zebra?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Both have black and white stripes on their bodies."
+    },
+    {
+     "label": "B",
+     "text": "Both are grass eating animals."
+    },
+    {
+     "label": "C",
+     "text": "Both have unique patterns on their bodies."
+    },
+    {
+     "label": "D",
+     "text": "Both have big ears and short tail."
+    }
+   ],
+   "answer": "C",
+   "solution": "The African wild dog and a zebra both have unique patterns on their bodies, which make them similar in a way.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 59
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\n*–* ***National Geographic*** The African wild dog also goes by the names “Cape hunting dog or painted dog”. Like a zebra’s unique stripe pattern or a human’s fingerprints, no two dogs have the same markings on their coat. Mottled with red, black, brown, white and yellow patches of fur, the effect is as striking as it is essential to survival.\n\nLike satellite dishes, the large, rounded ears of African wild dogs turn around to detect minute sounds in the distance. Another way African wild dogs differ from domestic dogs is that they only have four toes per foot. They can **sprint** after prey at speeds of up to 44 miles an hour.\n\nAfrican wild dogs live and die for their family—literally. Though the bigger the clan, the more efficient the hunt, non-breeding adults sacrifice their own nourishment to ensure the pups in the group get enough to eat and grow. Subsequently, these generous elders tend to gradually become malnourished and die younger than their peers in packs with fewer offspring.\n\nEven with their finely honed hunting skills, African wild dogs count among the world’s most endangered mammals. According to the IUCN Red List, only around 6,600 wild dogs remain, mostly in Tanzania, northern Mozambique, and southern Africa. The biggest threats facing the species come from their increased contact with humans: habitat loss, villagers seeking revenge against killed livestock, and viral diseases contracted from domestic dogs.\n\nAfrican wild dogs work together in packs of 6 to 20 or more to hunt antelopes and even larger prey such as wildebeests. These highly social beasts communicate with each other by touch, actions, and vocalizations—before a hunt, you can see them playfully circling each other and seeming to psych each other up for the endeavour. They’re also one of the few mammals that care for the old, sick and disabled members of the pack.\n\nChoose the statement which is correct.",
+   "options": [
+    {
+     "label": "A",
+     "text": "African wild dogs work together in packs of 6 to 20 or more to hunt."
+    },
+    {
+     "label": "B",
+     "text": "African wild dogs have small round ears."
+    },
+    {
+     "label": "C",
+     "text": "African wild dogs live for their own survival only."
+    },
+    {
+     "label": "D",
+     "text": "African wild dogs sprint after prey at speeds of up to 40 miles an hour."
+    }
+   ],
+   "answer": "A",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 59
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\n*–* ***National Geographic*** The African wild dog also goes by the names “Cape hunting dog or painted dog”. Like a zebra’s unique stripe pattern or a human’s fingerprints, no two dogs have the same markings on their coat. Mottled with red, black, brown, white and yellow patches of fur, the effect is as striking as it is essential to survival.\n\nLike satellite dishes, the large, rounded ears of African wild dogs turn around to detect minute sounds in the distance. Another way African wild dogs differ from domestic dogs is that they only have four toes per foot. They can **sprint** after prey at speeds of up to 44 miles an hour.\n\nAfrican wild dogs live and die for their family—literally. Though the bigger the clan, the more efficient the hunt, non-breeding adults sacrifice their own nourishment to ensure the pups in the group get enough to eat and grow. Subsequently, these generous elders tend to gradually become malnourished and die younger than their peers in packs with fewer offspring.\n\nEven with their finely honed hunting skills, African wild dogs count among the world’s most endangered mammals. According to the IUCN Red List, only around 6,600 wild dogs remain, mostly in Tanzania, northern Mozambique, and southern Africa. The biggest threats facing the species come from their increased contact with humans: habitat loss, villagers seeking revenge against killed livestock, and viral diseases contracted from domestic dogs.\n\nAfrican wild dogs work together in packs of 6 to 20 or more to hunt antelopes and even larger prey such as wildebeests. These highly social beasts communicate with each other by touch, actions, and vocalizations—before a hunt, you can see them playfully circling each other and seeming to psych each other up for the endeavour. They’re also one of the few mammals that care for the old, sick and disabled members of the pack.\n\nAccording to the passage, before a hunt, African wild dogs communicate with each other by \\_\\_\\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "barking at each other"
+    },
+    {
+     "label": "B",
+     "text": "wagging their tail and looking at the prey"
+    },
+    {
+     "label": "C",
+     "text": "touch, actions, and vocalizations"
+    },
+    {
+     "label": "D",
+     "text": "howling at the prey"
+    }
+   ],
+   "answer": "C",
+   "solution": "According to the passage, before a hunt, African\n\nwild dogs communicate with each other by touch, actions, and vocalizations.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 60
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\n*–* ***National Geographic*** The African wild dog also goes by the names “Cape hunting dog or painted dog”. Like a zebra’s unique stripe pattern or a human’s fingerprints, no two dogs have the same markings on their coat. Mottled with red, black, brown, white and yellow patches of fur, the effect is as striking as it is essential to survival.\n\nLike satellite dishes, the large, rounded ears of African wild dogs turn around to detect minute sounds in the distance. Another way African wild dogs differ from domestic dogs is that they only have four toes per foot. They can **sprint** after prey at speeds of up to 44 miles an hour.\n\nAfrican wild dogs live and die for their family—literally. Though the bigger the clan, the more efficient the hunt, non-breeding adults sacrifice their own nourishment to ensure the pups in the group get enough to eat and grow. Subsequently, these generous elders tend to gradually become malnourished and die younger than their peers in packs with fewer offspring.\n\nEven with their finely honed hunting skills, African wild dogs count among the world’s most endangered mammals. According to the IUCN Red List, only around 6,600 wild dogs remain, mostly in Tanzania, northern Mozambique, and southern Africa. The biggest threats facing the species come from their increased contact with humans: habitat loss, villagers seeking revenge against killed livestock, and viral diseases contracted from domestic dogs.\n\nAfrican wild dogs work together in packs of 6 to 20 or more to hunt antelopes and even larger prey such as wildebeests. These highly social beasts communicate with each other by touch, actions, and vocalizations—before a hunt, you can see them playfully circling each other and seeming to psych each other up for the endeavour. They’re also one of the few mammals that care for the old, sick and disabled members of the pack.\n\nWhich of the following is not a threat to the African wild dogs’ lives?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Habitat destruction"
+    },
+    {
+     "label": "B",
+     "text": "Villagers seeking revenge against killed livestock"
+    },
+    {
+     "label": "C",
+     "text": "Viral diseases contracted from domestic dogs"
+    },
+    {
+     "label": "D",
+     "text": "Zero contact with humans"
+    }
+   ],
+   "answer": "D",
+   "solution": "Zero contact with humans is not a threat to the African wild dogs’ lives.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 60
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 16 TO 20, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\n*–* ***National Geographic*** The African wild dog also goes by the names “Cape hunting dog or painted dog”. Like a zebra’s unique stripe pattern or a human’s fingerprints, no two dogs have the same markings on their coat. Mottled with red, black, brown, white and yellow patches of fur, the effect is as striking as it is essential to survival.\n\nLike satellite dishes, the large, rounded ears of African wild dogs turn around to detect minute sounds in the distance. Another way African wild dogs differ from domestic dogs is that they only have four toes per foot. They can **sprint** after prey at speeds of up to 44 miles an hour.\n\nAfrican wild dogs live and die for their family—literally. Though the bigger the clan, the more efficient the hunt, non-breeding adults sacrifice their own nourishment to ensure the pups in the group get enough to eat and grow. Subsequently, these generous elders tend to gradually become malnourished and die younger than their peers in packs with fewer offspring.\n\nEven with their finely honed hunting skills, African wild dogs count among the world’s most endangered mammals. According to the IUCN Red List, only around 6,600 wild dogs remain, mostly in Tanzania, northern Mozambique, and southern Africa. The biggest threats facing the species come from their increased contact with humans: habitat loss, villagers seeking revenge against killed livestock, and viral diseases contracted from domestic dogs.\n\nAfrican wild dogs work together in packs of 6 to 20 or more to hunt antelopes and even larger prey such as wildebeests. These highly social beasts communicate with each other by touch, actions, and vocalizations—before a hunt, you can see them playfully circling each other and seeming to psych each other up for the endeavour. They’re also one of the few mammals that care for the old, sick and disabled members of the pack.\n\nIn the passage, the word ‘sprint’ means \\_\\_\\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "to run at a very fast speed"
+    },
+    {
+     "label": "B",
+     "text": "to walk slowly"
+    },
+    {
+     "label": "C",
+     "text": "to tilt right and left"
+    },
+    {
+     "label": "D",
+     "text": "to crawl on the land"
+    }
+   ],
+   "answer": "A",
+   "solution": "In the passage, the word “sprint” means “to run at a very fast speed”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 60
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, a boy who was selling goods from door to door to pay his way through school found he had only one thin dime left, and he was hungry. He decided he would ask for a meal at the next house. However, he lost his nerve when a lovely young girl opened the door.\n\nInstead of a meal, he asked for a glass of water. She thought he looked hungry, so she brought him a large glass of milk.\n\nHe drank it slowly and then asked, “How much do I owe you?”\n\n“You don’t owe me anything,” she replied. “Mother taught us never to accept payment for kindness.”\n\n“Then I thank you from the bottom of my heart,” he replied.\n\nAs the boy left that house, he not only felt stronger physically, but his faith in humanity had been restored. He had been ready to give up and quit.\n\nYears later, that young girl became critically ill. The local doctors were baffled. They finally sent her to the city, where they called in specialists to study her rare disease.\n\nDr. Howard Kelly was called in for the consultation. When he heard the name of the town she came from, a strange light filled his eyes. Immediately, he rose and went down the hall of the hospital to her room.\n\nDressed in his doctor’s gown, he went in to see her. After meeting her, he went back to the consultation room, determined to save her life. From that day on, he gave all his attention to her case.\n\nAfter a long struggle, the battle was won. Dr. Kelly requested that the business office pass the final bill to him for approval. He looked at it and then wrote something in the margin, and the bill was sent to her room.\n\nShe feared opening it, for she was sure it would take the rest of her life to pay for it all. Finally, she looked, and something caught her attention on the side of the bill. She began to read the following words: Paid in full with one glass of milk. Signed by Dr. Howard Kelly.\n\nChoose the statement which is incorrect.",
+   "options": [
+    {
+     "label": "A",
+     "text": "The boy decided that he would ask for a meal at the next house."
+    },
+    {
+     "label": "B",
+     "text": "The young girl said, “Mother taught us never to accept payment for kindness.”"
+    },
+    {
+     "label": "C",
+     "text": "The boy’s faith in humanity had been shattered."
+    },
+    {
+     "label": "D",
+     "text": "After many years, the young girl became critically ill."
+    }
+   ],
+   "answer": "C",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 61
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, a boy who was selling goods from door to door to pay his way through school found he had only one thin dime left, and he was hungry. He decided he would ask for a meal at the next house. However, he lost his nerve when a lovely young girl opened the door.\n\nInstead of a meal, he asked for a glass of water. She thought he looked hungry, so she brought him a large glass of milk.\n\nHe drank it slowly and then asked, “How much do I owe you?”\n\n“You don’t owe me anything,” she replied. “Mother taught us never to accept payment for kindness.”\n\n“Then I thank you from the bottom of my heart,” he replied.\n\nAs the boy left that house, he not only felt stronger physically, but his faith in humanity had been restored. He had been ready to give up and quit.\n\nYears later, that young girl became critically ill. The local doctors were baffled. They finally sent her to the city, where they called in specialists to study her rare disease.\n\nDr. Howard Kelly was called in for the consultation. When he heard the name of the town she came from, a strange light filled his eyes. Immediately, he rose and went down the hall of the hospital to her room.\n\nDressed in his doctor’s gown, he went in to see her. After meeting her, he went back to the consultation room, determined to save her life. From that day on, he gave all his attention to her case.\n\nAfter a long struggle, the battle was won. Dr. Kelly requested that the business office pass the final bill to him for approval. He looked at it and then wrote something in the margin, and the bill was sent to her room.\n\nShe feared opening it, for she was sure it would take the rest of her life to pay for it all. Finally, she looked, and something caught her attention on the side of the bill. She began to read the following words: Paid in full with one glass of milk. Signed by Dr. Howard Kelly.\n\nAccording to the passage, when Dr. Kelly heard the name of the town the girl came from, \\_\\_\\_\\_\\_\\_\\_\\_ filled his eyes.",
+   "options": [
+    {
+     "label": "A",
+     "text": "tears"
+    },
+    {
+     "label": "B",
+     "text": "darkness"
+    },
+    {
+     "label": "C",
+     "text": "a fear of danger"
+    },
+    {
+     "label": "D",
+     "text": "a strange light"
+    }
+   ],
+   "answer": "D",
+   "solution": "According to the passage, when Dr. Kelly heard the name of the town the girl came from, a strange light filled his eyes.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 61
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, a boy who was selling goods from door to door to pay his way through school found he had only one thin dime left, and he was hungry. He decided he would ask for a meal at the next house. However, he lost his nerve when a lovely young girl opened the door.\n\nInstead of a meal, he asked for a glass of water. She thought he looked hungry, so she brought him a large glass of milk.\n\nHe drank it slowly and then asked, “How much do I owe you?”\n\n“You don’t owe me anything,” she replied. “Mother taught us never to accept payment for kindness.”\n\n“Then I thank you from the bottom of my heart,” he replied.\n\nAs the boy left that house, he not only felt stronger physically, but his faith in humanity had been restored. He had been ready to give up and quit.\n\nYears later, that young girl became critically ill. The local doctors were baffled. They finally sent her to the city, where they called in specialists to study her rare disease.\n\nDr. Howard Kelly was called in for the consultation. When he heard the name of the town she came from, a strange light filled his eyes. Immediately, he rose and went down the hall of the hospital to her room.\n\nDressed in his doctor’s gown, he went in to see her. After meeting her, he went back to the consultation room, determined to save her life. From that day on, he gave all his attention to her case.\n\nAfter a long struggle, the battle was won. Dr. Kelly requested that the business office pass the final bill to him for approval. He looked at it and then wrote something in the margin, and the bill was sent to her room.\n\nShe feared opening it, for she was sure it would take the rest of her life to pay for it all. Finally, she looked, and something caught her attention on the side of the bill. She began to read the following words: Paid in full with one glass of milk. Signed by Dr. Howard Kelly.\n\nAccording to the passage, Dr. Kelly requested that the \\_\\_\\_\\_\\_\\_\\_\\_ pass the final bill to him for approval.",
+   "options": [
+    {
+     "label": "A",
+     "text": "young girl"
+    },
+    {
+     "label": "B",
+     "text": "business office"
+    },
+    {
+     "label": "C",
+     "text": "other doctors"
+    },
+    {
+     "label": "D",
+     "text": "girl’s parents"
+    }
+   ],
+   "answer": "B",
+   "solution": "According to the passage, Dr. Kelly requested that the business office pass the final bill to him for approval.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 61
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, a boy who was selling goods from door to door to pay his way through school found he had only one thin dime left, and he was hungry. He decided he would ask for a meal at the next house. However, he lost his nerve when a lovely young girl opened the door.\n\nInstead of a meal, he asked for a glass of water. She thought he looked hungry, so she brought him a large glass of milk.\n\nHe drank it slowly and then asked, “How much do I owe you?”\n\n“You don’t owe me anything,” she replied. “Mother taught us never to accept payment for kindness.”\n\n“Then I thank you from the bottom of my heart,” he replied.\n\nAs the boy left that house, he not only felt stronger physically, but his faith in humanity had been restored. He had been ready to give up and quit.\n\nYears later, that young girl became critically ill. The local doctors were baffled. They finally sent her to the city, where they called in specialists to study her rare disease.\n\nDr. Howard Kelly was called in for the consultation. When he heard the name of the town she came from, a strange light filled his eyes. Immediately, he rose and went down the hall of the hospital to her room.\n\nDressed in his doctor’s gown, he went in to see her. After meeting her, he went back to the consultation room, determined to save her life. From that day on, he gave all his attention to her case.\n\nAfter a long struggle, the battle was won. Dr. Kelly requested that the business office pass the final bill to him for approval. He looked at it and then wrote something in the margin, and the bill was sent to her room.\n\nShe feared opening it, for she was sure it would take the rest of her life to pay for it all. Finally, she looked, and something caught her attention on the side of the bill. She began to read the following words: Paid in full with one glass of milk. Signed by Dr. Howard Kelly.\n\nWhy did the local doctors send the girl to the city?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Because they were baffled by her rare disease case."
+    },
+    {
+     "label": "B",
+     "text": "Because her parents requested for an expensive treatment."
+    },
+    {
+     "label": "C",
+     "text": "Because they did not want to save her life."
+    },
+    {
+     "label": "D",
+     "text": "Because they were not paid by her."
+    }
+   ],
+   "answer": "A",
+   "solution": "The local doctors sent the girl to the city because they were baffled by her rare disease case.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 61
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 21 TO 25, READ THE PASSAGE AND ANSWER THE QUESTIONS THAT FOLLOW.\n\nOne day, a boy who was selling goods from door to door to pay his way through school found he had only one thin dime left, and he was hungry. He decided he would ask for a meal at the next house. However, he lost his nerve when a lovely young girl opened the door.\n\nInstead of a meal, he asked for a glass of water. She thought he looked hungry, so she brought him a large glass of milk.\n\nHe drank it slowly and then asked, “How much do I owe you?”\n\n“You don’t owe me anything,” she replied. “Mother taught us never to accept payment for kindness.”\n\n“Then I thank you from the bottom of my heart,” he replied.\n\nAs the boy left that house, he not only felt stronger physically, but his faith in humanity had been restored. He had been ready to give up and quit.\n\nYears later, that young girl became critically ill. The local doctors were baffled. They finally sent her to the city, where they called in specialists to study her rare disease.\n\nDr. Howard Kelly was called in for the consultation. When he heard the name of the town she came from, a strange light filled his eyes. Immediately, he rose and went down the hall of the hospital to her room.\n\nDressed in his doctor’s gown, he went in to see her. After meeting her, he went back to the consultation room, determined to save her life. From that day on, he gave all his attention to her case.\n\nAfter a long struggle, the battle was won. Dr. Kelly requested that the business office pass the final bill to him for approval. He looked at it and then wrote something in the margin, and the bill was sent to her room.\n\nShe feared opening it, for she was sure it would take the rest of her life to pay for it all. Finally, she looked, and something caught her attention on the side of the bill. She began to read the following words: Paid in full with one glass of milk. Signed by Dr. Howard Kelly.\n\nFind a word from the passage that means the same as ‘confused’.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Restored"
+    },
+    {
+     "label": "B",
+     "text": "Baffled"
+    },
+    {
+     "label": "C",
+     "text": "Determined"
+    },
+    {
+     "label": "D",
+     "text": "Feared"
+    }
+   ],
+   "answer": "B",
+   "solution": "The word that means the same as “confused” in the passage is “baffled”.",
+   "topics": [
+    "Reading"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Reading"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nTeacher : Do your parents know that you \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ late today?\n\nStudent : Yes, ma’am.",
+   "options": [
+    {
+     "label": "A",
+     "text": "have"
+    },
+    {
+     "label": "B",
+     "text": "will"
+    },
+    {
+     "label": "C",
+     "text": "will be"
+    },
+    {
+     "label": "D",
+     "text": "was"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable verb “will be” is to be used to refer to actions that will be happening in the near future in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nShreya : My science project is not as \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ as yours.",
+   "options": [
+    {
+     "label": "A",
+     "text": "bigger"
+    },
+    {
+     "label": "B",
+     "text": "big"
+    },
+    {
+     "label": "C",
+     "text": "biggest"
+    },
+    {
+     "label": "D",
+     "text": "very big"
+    }
+   ],
+   "answer": "B",
+   "solution": "The suitable positive adjective “big” is to be used, as there is no comparison made in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nSameer : This book is mine. I \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ my name on it.\n\nShyam : Oh, okay! Here, take it.",
+   "options": [
+    {
+     "label": "A",
+     "text": "has"
+    },
+    {
+     "label": "B",
+     "text": "had"
+    },
+    {
+     "label": "C",
+     "text": "have"
+    },
+    {
+     "label": "D",
+     "text": "having"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable linking verb “have” is to be used with the first person “I” in the present tense, which is denoted by the verb “is” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nKiran : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ did you reach so fast?\n\nRamesh : I took a taxi.",
+   "options": [
+    {
+     "label": "A",
+     "text": "When"
+    },
+    {
+     "label": "B",
+     "text": "Why"
+    },
+    {
+     "label": "C",
+     "text": "How"
+    },
+    {
+     "label": "D",
+     "text": "What"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable interrogative adverb “how” is to be used to ask “in what way” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 26 TO 30, CHOOSE THE MOST SUITABLE OPTION TO COMPLETE EACH CONVERSATION.\n\nTeacher : \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ student is supposed to take only one sheet.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Both"
+    },
+    {
+     "label": "B",
+     "text": "Each"
+    },
+    {
+     "label": "C",
+     "text": "Such"
+    },
+    {
+     "label": "D",
+     "text": "All"
+    }
+   ],
+   "answer": "B",
+   "solution": "The distributive adjective “each” is to be used to refer to every person of a group, and it is used to describe the singular subject “student” in the sentence.",
+   "topics": [
+    "Spoken AND Written Expression"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Spoken AND Written Expression"
+   },
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nNo one stays in the apartment next to ours. It has been \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ for a few months.",
+   "options": [
+    {
+     "label": "A",
+     "text": "void"
+    },
+    {
+     "label": "B",
+     "text": "idle"
+    },
+    {
+     "label": "C",
+     "text": "absent"
+    },
+    {
+     "label": "D",
+     "text": "vacant"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable adjective “vacant” is to be used, which means “empty”. It is used to describe the noun “apartment” in the sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "FOR QUESTIONS 31 AND 32, CHOOSE THE CORRECT OPTION TO FILL IN THE BLANK.\n\nNeither the teacher nor the students \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ able to give a satisfactory explanation.",
+   "options": [
+    {
+     "label": "A",
+     "text": "is"
+    },
+    {
+     "label": "B",
+     "text": "have"
+    },
+    {
+     "label": "C",
+     "text": "were"
+    },
+    {
+     "label": "D",
+     "text": "has"
+    }
+   ],
+   "answer": "C",
+   "solution": "The suitable auxiliary verb “were” is to be used, as the verb will take the nearest subject (students) in the sentence.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 62
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE PART OF THE SENTENCE THAT HAS AN ERROR. Our father is taking us out for the dinner tonight.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Our father"
+    },
+    {
+     "label": "B",
+     "text": "is taking"
+    },
+    {
+     "label": "C",
+     "text": "us out for"
+    },
+    {
+     "label": "D",
+     "text": "the dinner tonight."
+    }
+   ],
+   "answer": "D",
+   "solution": "The correct sentence is: Our father is taking us out for dinner tonight.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 63
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE SYNONYM OF PLACATE.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Worry"
+    },
+    {
+     "label": "B",
+     "text": "Incite"
+    },
+    {
+     "label": "C",
+     "text": "Soothe"
+    },
+    {
+     "label": "D",
+     "text": "Trouble"
+    }
+   ],
+   "answer": "C",
+   "solution": "The synonym of the word “placate” is “soothe”, as they both mean “to make somebody calmer or less upset”.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 63
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "CHOOSE THE CORRECT OPTION TO COMPLETE THE CONVERSATION.\n\nPhoebe : All of us \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Kitty as she is very humble.\n\nElena : I agree.",
+   "options": [
+    {
+     "label": "A",
+     "text": "liking"
+    },
+    {
+     "label": "B",
+     "text": "![likes vvv](asset:q35-optB)"
+    },
+    {
+     "label": "C",
+     "text": "liked"
+    },
+    {
+     "label": "D",
+     "text": "like"
+    }
+   ],
+   "answer": "D",
+   "solution": "The suitable verb to be used with the plural subject (all of us) is “like”, as the verb “is” indicates that the sentence is in the present tense.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IEO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2023-24",
+    "Set": "B",
+    "Paper": "IEO 2023-24 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_ieo_5_year_e_book_2026.pdf",
+    "page": 63
+   }
+  }
+ ]
+}

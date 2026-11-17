@@ -1,0 +1,1561 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-model-test-2",
+  "title": "SOF IMO Class 4 · Model Test Paper 2",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-optA": {
+   "file": "images/q1-optA.png"
+  },
+  "q1-optB": {
+   "file": "images/q1-optB.png"
+  },
+  "q1-optC": {
+   "file": "images/q1-optC.png"
+  },
+  "q1-optD": {
+   "file": "images/q1-optD.png"
+  },
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-stem-fig": {
+   "file": "images/q2-stem-fig.png"
+  },
+  "q4-stem": {
+   "file": "images/q4-stem.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q6-optA": {
+   "file": "images/q6-optA.png"
+  },
+  "q6-optB": {
+   "file": "images/q6-optB.png"
+  },
+  "q6-optC": {
+   "file": "images/q6-optC.png"
+  },
+  "q6-optD": {
+   "file": "images/q6-optD.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q7-optA": {
+   "file": "images/q7-optA.png"
+  },
+  "q7-optB": {
+   "file": "images/q7-optB.png"
+  },
+  "q7-optC": {
+   "file": "images/q7-optC.png"
+  },
+  "q7-optD": {
+   "file": "images/q7-optD.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-optA": {
+   "file": "images/q8-optA.png"
+  },
+  "q8-optB": {
+   "file": "images/q8-optB.png"
+  },
+  "q8-optC": {
+   "file": "images/q8-optC.png"
+  },
+  "q8-optD": {
+   "file": "images/q8-optD.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-optD": {
+   "file": "images/q9-optD.png"
+  },
+  "q10-stem-fig": {
+   "file": "images/q10-stem-fig.png"
+  },
+  "q11-full": {
+   "file": "images/q11-full.png"
+  },
+  "q11-sol": {
+   "file": "images/q11-sol.png"
+  },
+  "q12-optA": {
+   "file": "images/q12-optA.png"
+  },
+  "q12-optB": {
+   "file": "images/q12-optB.png"
+  },
+  "q12-optC": {
+   "file": "images/q12-optC.png"
+  },
+  "q12-optD": {
+   "file": "images/q12-optD.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q19-stem-fig": {
+   "file": "images/q19-stem-fig.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q20-stem-fig": {
+   "file": "images/q20-stem-fig.png"
+  },
+  "q21-stem": {
+   "file": "images/q21-stem.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q22-sol": {
+   "file": "images/q22-sol.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q29-optA": {
+   "file": "images/q29-optA.png"
+  },
+  "q29-optB": {
+   "file": "images/q29-optB.png"
+  },
+  "q29-optC": {
+   "file": "images/q29-optC.png"
+  },
+  "q29-stem": {
+   "file": "images/q29-stem.png"
+  },
+  "q29-sol": {
+   "file": "images/q29-sol.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q31-stem-fig": {
+   "file": "images/q31-stem-fig.png"
+  },
+  "q31-sol": {
+   "file": "images/q31-sol.png"
+  },
+  "q32-full": {
+   "file": "images/q32-full.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-stem-fig": {
+   "file": "images/q33-stem-fig.png"
+  },
+  "q34-stem-fig": {
+   "file": "images/q34-stem-fig.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Which of the following shows the correct mirror image of Fig. (X)?\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q1-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q1-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q1-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q1-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Mirror](asset:q1-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Find the number that will come on Teddy Bear 20.\n\n![figure](asset:q2-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "7"
+    },
+    {
+     "label": "C",
+     "text": "9"
+    },
+    {
+     "label": "D",
+     "text": "6"
+    }
+   ],
+   "answer": "D",
+   "solution": "The pattern repeats itself after every four figures. So, number on Teddy Bear 20 is 6.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "In a certain code language, 'ROAD' is written as 'ADOR'. How is 'SWAN' be written in the same code?",
+   "options": [
+    {
+     "label": "A",
+     "text": "NAWS"
+    },
+    {
+     "label": "B",
+     "text": "ASWN"
+    },
+    {
+     "label": "C",
+     "text": "WASN"
+    },
+    {
+     "label": "D",
+     "text": "ANSW"
+    }
+   ],
+   "answer": "D",
+   "solution": "Letters of the given word are arranged in alphabetical order in its code.\n\nTherefore, the code for SWAN is ANSW.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "![Megha was facing the Bank. She made a 5 3 4 clockwise turn. Where would she be facing now?](asset:q4-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Bus Stop"
+    },
+    {
+     "label": "B",
+     "text": "School"
+    },
+    {
+     "label": "C",
+     "text": "Shopping Centre"
+    },
+    {
+     "label": "D",
+     "text": "Park"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Megha was facing the Bank. After 5 clockwise turns she will be facing the same and after 3 4 clockwise turn she will be facing the Shopping Centre. Megha 3/4 Park Bus Stop](asset:q4-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 117
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Select the combination of numbers so that letters are arranged accordingly to form a meaningful English word.\n\nE O N S D C\n\n1 2 3 4 5 6",
+   "options": [
+    {
+     "label": "A",
+     "text": "3, 2, 5, 4, 1, 6"
+    },
+    {
+     "label": "B",
+     "text": "3, 2, 5, 4, 6, 1"
+    },
+    {
+     "label": "C",
+     "text": "4, 5, 3, 6, 2, 1"
+    },
+    {
+     "label": "D",
+     "text": "4, 1, 6, 2, 3, 5"
+    }
+   ],
+   "answer": "D",
+   "solution": "The word formed is S E C O N D *i.e.*, 4,1,6,2,3,5.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "There is a definite relationship between figures P and Q. Establish a similar relationship\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q6-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q6-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q6-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q6-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "Figure Q is the mirror image of figure P.\n\nSimilarly, option A is the correct mirror image of figure R.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Which of the following is the correct figure obtained when the shape is folded along the dotted line as shown below?\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q7-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q7-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q7-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q7-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![After folding](asset:q7-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Which of the following options is exactly embedded in Fig. (X) as one of its parts?\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q8-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q8-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q8-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q8-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q8-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 118
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "If all the symbols are removed from the given arrangement, then which of the following will be third to the left of eighth element from the right end?\n\nS 3 T U M @ L X \\# \\$ 7 8 A Z 1 4 N P \\* Y D 6 F I %",
+   "options": [
+    {
+     "label": "A",
+     "text": "A"
+    },
+    {
+     "label": "B",
+     "text": "Z"
+    },
+    {
+     "label": "C",
+     "text": "8"
+    },
+    {
+     "label": "D",
+     "text": "![4](asset:q9-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "New arrangement becomes:\n\nS 3 T U M L X 7 8 A Z 1 4 N P Y D 6 F I\n\nSo, eighth element from the right end is 4 and third to the left of 4 is A.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "If yesterday was Saturday, then what day of the week will it be on 7<sup>th</sup> day from today?\n\n![figure](asset:q10-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Saturday"
+    },
+    {
+     "label": "B",
+     "text": "Sunday"
+    },
+    {
+     "label": "C",
+     "text": "Monday"
+    },
+    {
+     "label": "D",
+     "text": "Tuesday"
+    }
+   ],
+   "answer": "A",
+   "solution": "If yesterday was Saturday, then today is Sunday. So, 7<sup>th</sup> day from Sunday will be Saturday.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "![If + = 326 and + = 230, then find the value of + . A. 414 B. 430 C. 420 D. 422](asset:q11-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![We have, + = 230 Therefore, = 230 ÷ 2 = 115 But, + = 326 So, 115 + = 326 or, = 326 – 115 = 211 So, + = 211 + 211 = 422](asset:q11-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "What fraction of the given figure is shaded?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 7](asset:q12-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![5 7](asset:q12-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![3 7](asset:q12-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![6 7](asset:q12-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of equal parts = 28 Number of shaded parts = 20 Required fraction = 20 = 20 ÷ 4 = 5 28 28 ÷ 4 7](asset:q12-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "25 and 60 have \\_\\_\\_\\_\\_\\_ common factors.",
+   "options": [
+    {
+     "label": "A",
+     "text": "1"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "3"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Factors of 25 are 1 , 5 and 25. Factors of 60 are 1 , 2, 3, 4, 5 , 6, 10, 12, 15, 20, 30 and 60. So, 25 and 60 have only 2 common factors i.e., 1 and 5.](asset:q13-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "The given bar graph shows how 209 people travel to work.\n\n![figure](asset:q14-stem-fig)\n\nHow many people travel by car ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "77"
+    },
+    {
+     "label": "B",
+     "text": "88"
+    },
+    {
+     "label": "C",
+     "text": "65"
+    },
+    {
+     "label": "D",
+     "text": "109"
+    }
+   ],
+   "answer": "B",
+   "solution": "Total number of people = 209\n\nNumber of people travel by Motorcycle = 22\n\nNumber of people travel by Bus = 55\n\nNumber of people travel by Taxi = 44\n\nSo, number of people travel by car = 209 – (22 + 55 + 44)\n\n= 209 – 121 = 88",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 119
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "Compare and fill the box using '\\>', '\\<' or '='.\n\nXLIV – XX XV + XXXIX\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\>"
+    },
+    {
+     "label": "B",
+     "text": "\\<"
+    },
+    {
+     "label": "C",
+     "text": "\\="
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "B",
+   "solution": "![As, XLIV = 44 and XX = 20 So, XLIV – XX = 44 – 20 = 24 Now, XV = 15 and XXXIX = 39 So, XV + XXXIX = 15 + 39 = 54 As, 24 54 Hence, XLIV – XX XV + XXXIX](asset:q15-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "Arrange the following numbers in descending order and select the correct option. 18805, 15885, 18058, 18588, 18855",
+   "options": [
+    {
+     "label": "A",
+     "text": "18805, 15885, 18058, 18855, 18588"
+    },
+    {
+     "label": "B",
+     "text": "18588, 18855, 18805, 18058, 15885"
+    },
+    {
+     "label": "C",
+     "text": "18805, 18855, 18588, 15885, 18058"
+    },
+    {
+     "label": "D",
+     "text": "18855, 18805, 18588, 18058, 15885"
+    }
+   ],
+   "answer": "D",
+   "solution": "Given numbers are: 18805, 15885, 18058, 18588, 18855\n\nDescending order of numbers is : 18855, 18805, 18588, 18058, 15885.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Mr Gupta travelled 35 km 800 m by car and 18 km 40 m by air. What distance did he travel in all ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "25 km 840 m"
+    },
+    {
+     "label": "B",
+     "text": "53 km 840 m"
+    },
+    {
+     "label": "C",
+     "text": "59 km 800 m"
+    },
+    {
+     "label": "D",
+     "text": "55804 km"
+    }
+   ],
+   "answer": "B",
+   "solution": "Distance travelled by car = 35 km 800 m\n\nDistance travelled by air = 18 km 40 m\n\nTherefore, total distance travelled = 35 km 800 m + 18 km 40 m\n\n= 53 km 840 m",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "Which of the following numbers has the least number of factors?",
+   "options": [
+    {
+     "label": "A",
+     "text": "35"
+    },
+    {
+     "label": "B",
+     "text": "28"
+    },
+    {
+     "label": "C",
+     "text": "48"
+    },
+    {
+     "label": "D",
+     "text": "16"
+    }
+   ],
+   "answer": "A",
+   "solution": "A. Factors of 35 are 1, 5, 7 and 35.\n\nB. Factors of 28 are 1, 2, 4, 7, 14 and 28.\n\nC. Factors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24 and 48. D. Factors of 16 are 1, 2, 4, 8 and 16.\n\nHence, 35 has the least number of factors.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "The given figure shows the amount of money Aditya saved in 3 months. He saved the same amount of money every month. How much did he save in one month?\n\n![figure](asset:q19-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 20"
+    },
+    {
+     "label": "B",
+     "text": "₹ 15"
+    },
+    {
+     "label": "C",
+     "text": "₹ 75"
+    },
+    {
+     "label": "D",
+     "text": "₹ 25"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Money saved by Aditya in 3 months = ₹ 50 + 5 + 5 + 10 + 2 + 2 + 1 = ₹ 75 So, money saved by him in 1 month = ₹ 75 ÷ 3 = ₹ 25](asset:q19-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "In 73569, the difference between the place value of the digit in the ten thousands place and the digit in the hundreds place is \\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q20-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2500"
+    },
+    {
+     "label": "B",
+     "text": "67000"
+    },
+    {
+     "label": "C",
+     "text": "70500"
+    },
+    {
+     "label": "D",
+     "text": "69500"
+    }
+   ],
+   "answer": "D",
+   "solution": "Place value of the digit in ten thousands place in 73569 = 70000\n\nPlace value of the digit in hundreds place in 73569 = 500 Therefore, required difference = 70000 – 500 = 69500",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "![There were 21 people in a room. 2 7 of them were children. How many adults were there?](asset:q21-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "15"
+    },
+    {
+     "label": "B",
+     "text": "6"
+    },
+    {
+     "label": "C",
+     "text": "18"
+    },
+    {
+     "label": "D",
+     "text": "12"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Total number of people = 21 As, 2 7 of them were children. So, number of children = 2 × 21 = 6 7 Hence, number of adults = 21 – 6 = 15](asset:q21-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 120
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Sneha is 11 years 7 months old. Her sister is 3 years 8 months older than her. What is the sum of their ages?",
+   "options": [
+    {
+     "label": "A",
+     "text": "26 years 3 months"
+    },
+    {
+     "label": "B",
+     "text": "26 years 10 months"
+    },
+    {
+     "label": "C",
+     "text": "27 years 3 months"
+    },
+    {
+     "label": "D",
+     "text": "27 years 5 months"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Age of Sneha = 11 years 7 months Her sister is 3 years 8 months older than her. Therefore, age of her sister = 11 years 7 months + 3 years 8 months = 14 years 15 months i.e., 15 years 3 months Hence, sum of their ages = 11 years 7 months + 15 years 3 months = 26 years 10 months](asset:q22-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "There are 69 rows of trees in a land. Each row has 47 trees. What is the total number of trees in the land?",
+   "options": [
+    {
+     "label": "A",
+     "text": "1204"
+    },
+    {
+     "label": "B",
+     "text": "3431"
+    },
+    {
+     "label": "C",
+     "text": "3243"
+    },
+    {
+     "label": "D",
+     "text": "3800"
+    }
+   ],
+   "answer": "C",
+   "solution": "Number of trees in 1 row = 47\n\nNumber of rows = 69\n\nSo, number of trees in 69 rows = 47 × 69 = 3243",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "The total length of 2 pieces of ribbon is 220 cm. If the length of one piece of ribbon is 180 cm longer than the other, then find the length of the longer piece.",
+   "options": [
+    {
+     "label": "A",
+     "text": "20 cm"
+    },
+    {
+     "label": "B",
+     "text": "40 cm"
+    },
+    {
+     "label": "C",
+     "text": "200 cm"
+    },
+    {
+     "label": "D",
+     "text": "400 cm"
+    }
+   ],
+   "answer": "C",
+   "solution": "![We have, length of longer piece = length of shorter piece + 180 cm But, total length = 220 cm Therefore, length of longer piece + length of shorter piece = 220 cm or, length of shorter piece + length of shorter piece + 180 = 220 cm or, 2 length of shorter piece = 220 – 180 = 40 cm or, length of shorter piece = 40 2 = 20 cm And length of longer piece = 20 + 180 cm = 200 cm](asset:q24-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Mohit earns ₹ 5503 in a month. Every month, he spends ₹ 2186 and saves the rest. How much will he save in 2 years?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 90150"
+    },
+    {
+     "label": "B",
+     "text": "₹ 12848"
+    },
+    {
+     "label": "C",
+     "text": "₹ 97608"
+    },
+    {
+     "label": "D",
+     "text": "₹ 79608"
+    }
+   ],
+   "answer": "D",
+   "solution": "Monthly income of Mohit = ₹ 5503\n\nAmount of money spent by him in 1 month = ₹ 2186 So, amount of money saved by him in 1 month\n\n= ₹ (5503 – 2186) = ₹ 3317\n\nSince, 2 years = 24 months\n\nAmount of money saved by him in 2 years *i.e.*, 24 months = ₹ (3317 × 24) = ₹ 79608",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "To boil the eggs hard you must cook them on gas for 16 minutes. If Neeta puts the eggs to boil at 12:36 p.m., then at what time she must switch off the gas?",
+   "options": [
+    {
+     "label": "A",
+     "text": "12:52 p.m."
+    },
+    {
+     "label": "B",
+     "text": "1:12 p.m."
+    },
+    {
+     "label": "C",
+     "text": "1:00 p.m."
+    },
+    {
+     "label": "D",
+     "text": "1:24 p.m."
+    }
+   ],
+   "answer": "A",
+   "solution": "Neeta puts the eggs to boil at 12 : 36 p.m. Time taken to boil the eggs is 16 mins.\n\nAs, 16 mins after 12 : 36 p.m. is 12:52 p.m. So, she must switch off the gas at 12 : 52 p.m.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Dinesh has 5 boxes of sweets. Each box contains 182 sweets. He packs them equally into some bags. Each bag contains 7 sweets. How many bags does he use?",
+   "options": [
+    {
+     "label": "A",
+     "text": "130"
+    },
+    {
+     "label": "B",
+     "text": "152"
+    },
+    {
+     "label": "C",
+     "text": "147"
+    },
+    {
+     "label": "D",
+     "text": "124"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Number of sweets in 1 box = 182 Number of sweets in 5 boxes = 182 × 5 = 910 Now, Dinesh packs 910 sweets equally into bags of 7 sweets each. So, number of bags = 910 = 130 7](asset:q27-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "Harsh had 80 kg 150 g of rice. He packed the rice into 12 packets, each weighing 4 kg 500 g. How much rice was left unpacked?",
+   "options": [
+    {
+     "label": "A",
+     "text": "7 kg 200 g"
+    },
+    {
+     "label": "B",
+     "text": "26 kg 150 g"
+    },
+    {
+     "label": "C",
+     "text": "12 kg 950 g"
+    },
+    {
+     "label": "D",
+     "text": "13 kg 950 g"
+    }
+   ],
+   "answer": "B",
+   "solution": "Total quantity of rice = 80 kg 150 g\n\nQuantity of rice in 1 packet = 4 kg 500 g = 4500 g Total number of packets = 12\n\nSo, quantity of rice in 12 packets = (4500 × 12)\n\n= 54000 g = 54 kg Quantity of rice left unpacked = 80 kg 150 g – 54 kg\n\n= 26 kg 150 g",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "![Sameer bought 3 5 12 kg of wheat flour. He bought 1 2 kg more quantity of wheat flour than Rohit. How much quantity of wheat flour did Rohit buy?](asset:q29-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![211 12 kg](asset:q29-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![8 5 12 kg](asset:q29-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 1 6 kg](asset:q29-optC)"
+    },
+    {
+     "label": "D",
+     "text": "9 kg"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Quantity of wheat flour Sameer bought =3 5 12 kg = 41 12 kg As, he bought 1 2 kg more wheat flour than Rohit. So, quantity of wheat flour Rohit bought = 41 − 1 kg 12 2 = 41 − 1 × 6 = 41 − 6 = 35 = 2 11 kg kg kg kg 12 2 × 6 12 12 12](asset:q29-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 121
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Rajni bought a story book worth ₹ 2483 and two drawing books worth ₹ 1926 each. Find the total amount of money paid by her when rounded to the nearest tens.\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 6340"
+    },
+    {
+     "label": "B",
+     "text": "₹ 4630"
+    },
+    {
+     "label": "C",
+     "text": "₹ 4460"
+    },
+    {
+     "label": "D",
+     "text": "₹ 6344"
+    }
+   ],
+   "answer": "A",
+   "solution": "Cost of a story book = ₹ 2483\n\nCost of a drawing book = ₹ 1926\n\nSo, cost of 2 drawing books = ₹ (2 × 1926) = ₹ 3852 Hence, total amount of money paid = ₹ (2483 + 3852) = ₹ 6335 So, estimated total amount of money = ₹ 6340",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "The table below shows the points scored by Kabir and Amit in four games of bowling.\n\n![figure](asset:q31-stem-fig)\n\nIf Kabir scored 22 points less than Amit in the 2<sup>nd</sup> game, then how many more points did Kabir score than Amit in all the four games played?",
+   "options": [
+    {
+     "label": "A",
+     "text": "6"
+    },
+    {
+     "label": "B",
+     "text": "2"
+    },
+    {
+     "label": "C",
+     "text": "8"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Score of Amit in 2nd game = 86 points Kabir scored 22 points less than Amit in 2nd game. JJJ So, score of Kabir in 2nd game = 86 – 22 = 64 points Total score of Kabir = 82 + 64 + 72 + 90 = 308 points Total score of Amit = 304 points So, number of points Kabir score more than Amit = 308 – 304 = 4](asset:q31-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![Which of the following figures has the largest perimeter? A. B. C. D.](asset:q32-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![A. Perimeter of figure = 12 + 12 + 12 + 12 cm = 48 cm B. Perimeter of figure = 13 + 9 + 13 + 9 cm = 44 cm C. Perimeter of figure = 5 + 4 + 8 + 6 + 13 + 10 cm = 46 cm D. Perimeter of figure = 10 + 8 + 4 + 4 + 8 cm = 34 cm Hence, figure in option A has the largest perimeter.](asset:q32-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "Which is the heaviest bird?\n\n![figure](asset:q33-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "P"
+    },
+    {
+     "label": "B",
+     "text": "Q"
+    },
+    {
+     "label": "C",
+     "text": "R"
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "A",
+   "solution": "We have, P + Q = 55 kg and P + Q + R = 60 kg\n\nSo, 55 kg + R = 60 kg\n\nor, R = (60 – 55) kg = 5 kg\n\nAlso, P + R = 45 kg\n\nSo, P + 5 kg = 45 kg\n\nor, P = (45 – 5) kg = 40 kg\n\nAgain, P + Q = 55 kg\n\nSo, 40 kg + Q = 55 kg\n\nor, Q = (55 – 40) kg = 15 kg\n\nHence, the bird P is the heaviest.",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 122
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Find the value of A and B respectively.\n\n![figure](asset:q34-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "7, 5"
+    },
+    {
+     "label": "B",
+     "text": "4, 5"
+    },
+    {
+     "label": "C",
+     "text": "5, 4"
+    },
+    {
+     "label": "D",
+     "text": "5, 7"
+    }
+   ],
+   "answer": "D",
+   "solution": "![5 5 5 × 5 2 7 7 5 So, A = 5 and B = 7](asset:q34-sol)",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 123
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "Sanjay is thinking of a 5-digit even number PQRST. P is 3 more than the smallest odd number. Q is a common factor of 2 and 11. R is the product of the first 2 digits. The sum of S and T is 9. T is a multiple of 3. What is the number Sanjay is thinking of?",
+   "options": [
+    {
+     "label": "A",
+     "text": "41436"
+    },
+    {
+     "label": "B",
+     "text": "41463"
+    },
+    {
+     "label": "C",
+     "text": "61636"
+    },
+    {
+     "label": "D",
+     "text": "61663"
+    }
+   ],
+   "answer": "A",
+   "solution": "The smallest odd number is 1.\n\nP is 3 more than smallest odd number. So, P = 3 + 1 = 4\n\nFactors of 2 are 1 and 2.\n\nFactors of 11 are 1 and 11.\n\nTherefore, common factor of 2 and 11 is 1. So, Q = 1\n\nR is product of first two digits.\n\nTherefore, R = 4 × 1 = 4\n\nThe sum of S and T is 9.\n\nand T is a multiple of 3.\n\nSo, T = 3, 6 or 9\n\nSince, Sanjay is thinking of an even number. So, T = 6\n\nAs, sum of S and T is 9.\n\nThen, S = 9 – 6 = 3\n\nHence, required number = 41436",
+   "topics": [],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "Model",
+    "Set": "MTP-2",
+    "Paper": "IMO Model Test Paper 2"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 123
+   }
+  }
+ ]
+}

@@ -1,0 +1,1644 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2021-22-set-a",
+  "title": "SOF IMO Class 4 · 2021-22 · Set A",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-full": {
+   "file": "images/q3-full.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-stem": {
+   "file": "images/q5-stem.png"
+  },
+  "q5-stem-fig1": {
+   "file": "images/q5-stem-fig1.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-optA": {
+   "file": "images/q8-optA.png"
+  },
+  "q8-optB": {
+   "file": "images/q8-optB.png"
+  },
+  "q8-optC": {
+   "file": "images/q8-optC.png"
+  },
+  "q8-optD": {
+   "file": "images/q8-optD.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-stem": {
+   "file": "images/q9-stem.png"
+  },
+  "q11-stem": {
+   "file": "images/q11-stem.png"
+  },
+  "q11-stem-fig1": {
+   "file": "images/q11-stem-fig1.png"
+  },
+  "q12-optA": {
+   "file": "images/q12-optA.png"
+  },
+  "q12-optB": {
+   "file": "images/q12-optB.png"
+  },
+  "q12-optC": {
+   "file": "images/q12-optC.png"
+  },
+  "q12-optD": {
+   "file": "images/q12-optD.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q14-full": {
+   "file": "images/q14-full.png"
+  },
+  "q14-sol": {
+   "file": "images/q14-sol.png"
+  },
+  "q15-optA": {
+   "file": "images/q15-optA.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q15-sol": {
+   "file": "images/q15-sol.png"
+  },
+  "q16-stem": {
+   "file": "images/q16-stem.png"
+  },
+  "q16-stem-fig1": {
+   "file": "images/q16-stem-fig1.png"
+  },
+  "q18-full": {
+   "file": "images/q18-full.png"
+  },
+  "q19-optA": {
+   "file": "images/q19-optA.png"
+  },
+  "q19-optB": {
+   "file": "images/q19-optB.png"
+  },
+  "q19-optC": {
+   "file": "images/q19-optC.png"
+  },
+  "q19-optD": {
+   "file": "images/q19-optD.png"
+  },
+  "q21-stem": {
+   "file": "images/q21-stem.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q26-optA": {
+   "file": "images/q26-optA.png"
+  },
+  "q26-stem-fig": {
+   "file": "images/q26-stem-fig.png"
+  },
+  "q28-stem": {
+   "file": "images/q28-stem.png"
+  },
+  "q30-sol": {
+   "file": "images/q30-sol.png"
+  },
+  "q31-sol": {
+   "file": "images/q31-sol.png"
+  },
+  "q32-full": {
+   "file": "images/q32-full.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-full": {
+   "file": "images/q33-full.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Find the missing numbers in the given number pattern.\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "18, 46"
+    },
+    {
+     "label": "B",
+     "text": "16, 48"
+    },
+    {
+     "label": "C",
+     "text": "18, 48"
+    },
+    {
+     "label": "D",
+     "text": "16, 46"
+    }
+   ],
+   "answer": "C",
+   "solution": "![The pattern followed is : 6 +2 8 +4 12 +6 18 +8 26 +10 36 +12 48](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Which of the following words CANNOT be formed from the letters of the given word?\n\nGEOMETRICAL",
+   "options": [
+    {
+     "label": "A",
+     "text": "CLAIM"
+    },
+    {
+     "label": "B",
+     "text": "CREAM"
+    },
+    {
+     "label": "C",
+     "text": "MAGIC"
+    },
+    {
+     "label": "D",
+     "text": "AMONG"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The letter N is not present in the given word.](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "![Find the option which will complete the given figure pattern. ? A. B. C. D.](asset:q3-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "Divya, Sonam and Shivani are sitting in a queue of girls.\n\n• Divya and Sonam both are seated at the ends.\n\n• There are five persons between Sonam and Divya.\n\n• Shivani is sitting midway between Divya and Sonam. How many girls are sitting in the queue?",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "Can't say"
+    }
+   ],
+   "answer": "A",
+   "solution": "![2 girls 2 girls Divya / Sonam Shivani Sonam / Divya So, number of girls in the queue = 1 + 2 + 1 + 2 + 1 = 7.](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "![How many unit cubes are there in the given figure?](asset:q5-stem)\n\n![figure](asset:q5-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "12"
+    },
+    {
+     "label": "B",
+     "text": "15"
+    },
+    {
+     "label": "C",
+     "text": "16"
+    },
+    {
+     "label": "D",
+     "text": "10"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of unit cubes = 12",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Raj correctly remembers that his music competition falls after 10<sup>th</sup> October but before 14<sup>th</sup> October. His mother correctly remembers that the date is an even number. What will be the date of Raj's music competition?",
+   "options": [
+    {
+     "label": "A",
+     "text": "11<sup>th</sup> October"
+    },
+    {
+     "label": "B",
+     "text": "12<sup>th</sup> October"
+    },
+    {
+     "label": "C",
+     "text": "14<sup>th</sup> October"
+    },
+    {
+     "label": "D",
+     "text": "16<sup>th</sup> October"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Raj remembers that the dates are 11, 12 or 13 but his mother remembers that the date is an even number i.e., 12th October. So, Raj’s music competition will be on 12th October. Dining table Refrigerator Door](asset:q6-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 87
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Sneha is facing the microwave. If she makes a 3/8 turn clockwise, then where will she be facing now?\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Door"
+    },
+    {
+     "label": "B",
+     "text": "Refrigerator"
+    },
+    {
+     "label": "C",
+     "text": "Washing Machine"
+    },
+    {
+     "label": "D",
+     "text": "Dressing Table"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Sneha Washing Machine Television 3/8 Dressing Microwave table Window So, Sneha will be facing towards Washing Machine.](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "Find the correct mirror image of the given figure.\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q8-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q8-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q8-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q8-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Mirror](asset:q8-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![How many slanting lines are there in the given figure? KIT](asset:q9-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "5"
+    },
+    {
+     "label": "B",
+     "text": "4"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "More than 6"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of slanting lines in the given figure = 4",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "If ‘Mango’ is called ‘Pizza’, ‘Pizza’ is called ‘Cashew’ and ‘Cashew’ is called ‘Almond’, then which of the following is a junk food?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Mango"
+    },
+    {
+     "label": "B",
+     "text": "Pizza"
+    },
+    {
+     "label": "C",
+     "text": "Cashew"
+    },
+    {
+     "label": "D",
+     "text": "Almond"
+    }
+   ],
+   "answer": "C",
+   "solution": "Pizza is a junk food but Pizza is called Cashew.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "![Find the sum of the given numbers.](asset:q11-stem)\n\n![figure](asset:q11-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "206"
+    },
+    {
+     "label": "B",
+     "text": "124"
+    },
+    {
+     "label": "C",
+     "text": "176"
+    },
+    {
+     "label": "D",
+     "text": "198"
+    }
+   ],
+   "answer": "C",
+   "solution": "XIX = 19; LXIX = 69; XXVI = 26; XX = 20 and XLII = 42\n\nSo, sum of numbers = 19 + 69 + 26 + 20 + 42\n\n= 176",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 88
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "What fraction of the given figure is unshaded?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5 8](asset:q12-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 8](asset:q12-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 2](asset:q12-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![3 4](asset:q12-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Total number of equal parts = 8 Number of unshaded parts = 5 So, unshaded fraction = 5 8](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "The greatest 5-digit odd number formed by using all the given digits each only once is  \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "95320"
+    },
+    {
+     "label": "B",
+     "text": "93205"
+    },
+    {
+     "label": "C",
+     "text": "95302"
+    },
+    {
+     "label": "D",
+     "text": "95203"
+    }
+   ],
+   "answer": "D",
+   "solution": "Greatest 5-digit odd number formed = 95203",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "![Find the perimeter of the given figure. 4 cm A. 80 cm 4 cm 6 cm B. 82 cm 14 cm 8 cm 4 cm C. 84 cm 12 cm 5 cm D. 86 cm 19 cm](asset:q14-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "![4 cm 6 cm 4 cm 4 cm 14 cm 8 cm 12 cm 5 cm 19 cm Perimeter of the figure = 19 + 12 + 6 + 6 + 4 + 14 + 5 + 4 + 4 + 8 cm = 82 cm](asset:q14-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "If Anjali wants to pour the given juice equally in 12 glasses, then how much quantity of juice will she pour in each glass?\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![400 mL](asset:q15-optA)"
+    },
+    {
+     "label": "B",
+     "text": "540 mL"
+    },
+    {
+     "label": "C",
+     "text": "420 mL"
+    },
+    {
+     "label": "D",
+     "text": "450 mL"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total quantity of juice = 5 L 40 mL = 5040 mL Number of glasses = 12 So, quantity of juice will pour in each glass = 5040 ÷ 12 = 420 mL](asset:q15-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "![Find the sum of fourth multiples of each of the given numbers.](asset:q16-stem)\n\n![figure](asset:q16-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "100"
+    },
+    {
+     "label": "B",
+     "text": "125"
+    },
+    {
+     "label": "C",
+     "text": "75"
+    },
+    {
+     "label": "D",
+     "text": "80"
+    }
+   ],
+   "answer": "A",
+   "solution": "4<sup>th</sup> multiple of 5 = 5 × 4 = 20 4<sup>th</sup> multiple of 8 = 8 × 4 = 32\n\n4<sup>th</sup> multiple of 12 = 12 × 4 = 48\n\nSo, required sum = 20 + 32 + 48 = 100",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "Which of the following is the greatest 1-digit number that has only 3 factors?",
+   "options": [
+    {
+     "label": "A",
+     "text": "4"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "5"
+    },
+    {
+     "label": "D",
+     "text": "9"
+    }
+   ],
+   "answer": "D",
+   "solution": "Factors of 4 = 1, 2 and 4\n\nFactors of 8 = 1, 2, 4 and 8\n\nFactors of 5 = 1 and 5\n\nFactors of 9 = 1, 3 and 9\n\nSo, 9 is the greatest 1-digit number that has only 3 factors.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 89
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "![The given bar graph shows the height of five children. 105 What is the difference between the heights of Varun 90 and Karan ? 75 60 A. 15 cm 45 B. 30 cm 30 C. 20 cm 15 0 D. 16 cm Karan Amit Mohit Varun Gaurav](asset:q18-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "Height of Varun = 90 cm\n\nHeight of Karan = 75 cm\n\n\\\\ Required difference = 90 cm – 75 cm = 15 cm",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "Which of the following set of fractions are arranged in ascending order ?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![3 , 8 , 13 , 5 , 10 12 12 12 12 12](asset:q19-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![7 , 10 , 14 , 20 , 12 9 9 9 9 9](asset:q19-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![4 , 5 , 6 , 12 , 19 18 18 18 18 18](asset:q19-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![6 , 8 , 12 , 10 , 16 24 24 24 24 24](asset:q19-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "The set of fractions given in option C are arranged in ascending order.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "If in the number 25468, the digits at thousands place and tens place are interchanged, then the original number is \\_\\_\\_\\_\\_\\_\\_\\_ the new number.",
+   "options": [
+    {
+     "label": "A",
+     "text": "Greater than"
+    },
+    {
+     "label": "B",
+     "text": "Smaller than"
+    },
+    {
+     "label": "C",
+     "text": "Equal to"
+    },
+    {
+     "label": "D",
+     "text": "Can’t be determined"
+    }
+   ],
+   "answer": "B",
+   "solution": "After interchanging the digits, the number becomes 26458.\n\nAs, 25468 \\< 26458\n\nSo, original number is smaller than the new number.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "![Rachit takes 1 of an hour to draw a picture. How much time will he take to make 9 such pictures?](asset:q21-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "145 minutes"
+    },
+    {
+     "label": "B",
+     "text": "135 minutes"
+    },
+    {
+     "label": "C",
+     "text": "125 minutes"
+    },
+    {
+     "label": "D",
+     "text": "130 minutes"
+    }
+   ],
+   "answer": "B",
+   "solution": "![As, 1 hour = 60 minutes So, 1 hour = 60 = 15 minutes 4 4 Time taken to draw 1 picture = 15 minutes So, time taken to draw 9 pictures = 15 × 9 = 135 minutes](asset:q21-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Niharika goes on shopping with her friends. She bought clothes worth ₹ 6420, jewellery worth ₹ 67940 and footwears worth ₹ 2870. How much money did she spend in all?",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 77230"
+    },
+    {
+     "label": "B",
+     "text": "₹ 78350"
+    },
+    {
+     "label": "C",
+     "text": "₹ 67310"
+    },
+    {
+     "label": "D",
+     "text": "₹ 65410"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total amount spend by Niharika = ₹ (6420 + 67940 + 2870) = ₹ 77230",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "A city has a population of 92582. Round off the population to the nearest hundreds.",
+   "options": [
+    {
+     "label": "A",
+     "text": "92500"
+    },
+    {
+     "label": "B",
+     "text": "92600"
+    },
+    {
+     "label": "C",
+     "text": "93500"
+    },
+    {
+     "label": "D",
+     "text": "92580"
+    }
+   ],
+   "answer": "B",
+   "solution": "Population of the city = 92582\n\nRound off 92582 to the nearest hundreds gives 92600.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "8 packets of juice of 250 mL each are poured into a jug. How much juice is left in the jug, if 800 mL of juice has been consumed?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 L 200 mL"
+    },
+    {
+     "label": "B",
+     "text": "1 L 20 mL"
+    },
+    {
+     "label": "C",
+     "text": "1 L 2 mL"
+    },
+    {
+     "label": "D",
+     "text": "1 L 200 mL"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Quantity of juice in 1 packet = 250 mL Quantity of juice in 8 packets = 250 × 8 = 2000 mL Quantity of juice consumed = 800 mL Quantity of juice left = 2000 – 800 = 1200 mL or 1 L 200 mL](asset:q24-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 90
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Sejal has a field in the shape of a rectangle. The length of the field is thrice the breadth. The breadth is 40 m. How much wire is used to fence the field?",
+   "options": [
+    {
+     "label": "A",
+     "text": "420 m"
+    },
+    {
+     "label": "B",
+     "text": "280 m"
+    },
+    {
+     "label": "C",
+     "text": "380 m"
+    },
+    {
+     "label": "D",
+     "text": "320 m"
+    }
+   ],
+   "answer": "D",
+   "solution": "Breadth of the rectangle = 40 m\n\nSo, length of the rectangle = 3 × Breadth = 3 × 40 = 120 m \\\\ Length of wire used for fencing\n\n= Perimeter of the rectangular field\n\n= 2(120 + 40)\n\n= 2 × 160 = 320 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Meeku kept birds in cages with 8 birds in each cage. If she has 14048 birds. How many cages does she need?\n\n![figure](asset:q26-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1756](asset:q26-optA)"
+    },
+    {
+     "label": "B",
+     "text": "1500"
+    },
+    {
+     "label": "C",
+     "text": "1250"
+    },
+    {
+     "label": "D",
+     "text": "1356"
+    }
+   ],
+   "answer": "A",
+   "solution": "Total number of birds = 14048\n\nNumber of birds in 1 cage = 8\n\n\\\\ Number of cages needed = 14048 ÷ 8 = 1756",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "A company donated ₹ 20875 in 2019, ₹ 45820 in 2020 and ₹ 46850 in 2021. In which year the company donated the least amount?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2019"
+    },
+    {
+     "label": "B",
+     "text": "2020"
+    },
+    {
+     "label": "C",
+     "text": "2021"
+    },
+    {
+     "label": "D",
+     "text": "Can't be determined"
+    }
+   ],
+   "answer": "A",
+   "solution": "As, ₹ 46850 \\> ₹ 45820 \\> ₹ 20875\n\nSo, in 2019, the company donated the least amount.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "![Sonika went to her friend’s house at 1:15 p.m. Her father told her to be back home in 1 hour and 45 minutes. At what time does Sonika needs to be home?](asset:q28-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2:00 p.m."
+    },
+    {
+     "label": "B",
+     "text": "2:30 p.m."
+    },
+    {
+     "label": "C",
+     "text": "2:45 p.m."
+    },
+    {
+     "label": "D",
+     "text": "3:00 p.m."
+    }
+   ],
+   "answer": "D",
+   "solution": "Sonika left her house at 1 : 15 p.m.\n\nTime at which Sonika needs to be her home = 1 hr 45 mins after 1 : 15 p.m. = 3 : 00 p.m.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Javed had 21 comics. He got two more from his aunt, 12 more on his birthday and bought 3 more with his pocket money. How many comics does he have now?",
+   "options": [
+    {
+     "label": "A",
+     "text": "38"
+    },
+    {
+     "label": "B",
+     "text": "40"
+    },
+    {
+     "label": "C",
+     "text": "36"
+    },
+    {
+     "label": "D",
+     "text": "28"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of comics Javed had = 21 Number of comics he got from his aunt = 2 Number of comics he got on his birthday = 12 Numbers of comics he bought = 3\n\nSo, total number of comics Javed has now = 21 + 2 + 12 + 3 = 38",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Parking space in theatre P is for 79,407 cars, while the same in theatre Q is for 58,868 cars. How many more cars can be parked in theatre P than in theatre Q?",
+   "options": [
+    {
+     "label": "A",
+     "text": "38,275"
+    },
+    {
+     "label": "B",
+     "text": "21,549"
+    },
+    {
+     "label": "C",
+     "text": "21,461"
+    },
+    {
+     "label": "D",
+     "text": "20,539"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Number of cars that can be parked in theatre P = 79,407 Number of cars that can be parked in theatre Q = 58,868 So, required difference = 79,407 – 58,868 = 20,539](asset:q30-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "Select the INCORRECT option.",
+   "options": [
+    {
+     "label": "A",
+     "text": "A prime number has only two factors."
+    },
+    {
+     "label": "B",
+     "text": "2 is the only even prime number."
+    },
+    {
+     "label": "C",
+     "text": "Sum of 6<sup>th</sup> multiple of 8 and 9<sup>th</sup> multiple of 7 is 111."
+    },
+    {
+     "label": "D",
+     "text": "The difference of two prime numbers is always even."
+    }
+   ],
+   "answer": "D",
+   "solution": "![A. A prime number has only two factors, 1 and the number itself. B. 2 is the only even prime number. C. 6th multiple of 8 = 8 × 6 = 48 9th multiple of 7 = 7 × 9 = 63 So, sum = 48 + 63 = 111 D. The difference of two prime numbers is not always even. As, 3 – 2 = 1 an odd number .](asset:q31-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 91
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![The following bar graph shows the number of subscribers a newspaper got every year. a In which year, newspaper got maximum subscribers? 400 b How many less newspapers were subscribed in 350 2012 than 2014 and 2015 together? 300 a b 250 200 A. 2012 250 150 B. 2016 350 100 C. 2015 350 50 0 D. 2016 300 2012 2013 2014 2015 2016 Years](asset:q32-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Years Number of subscribers 2012 250 2013 200 2014 350 2015 250 2016 400 a In 2016, newspaper got maximum subscribers. b Number of newspapers subscribed in 2014 and 2015 together = 350 + 250 = 600 So, required difference = 600 – 250 = 350](asset:q32-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![Arrange the given shapes in ascending 7 cm order of their perimeters and select the CORRECT option. 10 cm A. I, II, III B. I, III, II 7 cm 9 cm C. II, I, III I II III D. III, II, I](asset:q33-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "Perimeter of figure I\n\n= 7 cm + 10 cm + 7 cm + 10 cm = 34 cm\n\nPerimeter of figure II = 5 cm + 10 cm + 9 cm = 24 cm Perimeter of figure III = 7 cm + 7 cm + 3 cm + 5 cm = 22 cm As, 22 cm \\< 24 cm \\< 34 cm\n\nSo, correct ascending order is : III, II, I",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Mr Verma and his family are planning to go to their hometown. He has ₹ 15000 with him on his way. Using the clues given below, find the amount left with him when he reaches his hometown.\n\n**Clues:**\n\n(a) He fills up petrol of ₹ 2500 in his car.\n\n(b) He and his family had a lunch of ₹ 4238 at a restaurant.\n\n(c) Then his children took a camel ride for which he paid ₹ 158.\n\n(d) He took sweets of ₹ 1426 from a sweet shop.\n\n(e) He gave ₹ 100 each to five children after he reached his hometown.",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 6578"
+    },
+    {
+     "label": "B",
+     "text": "₹ 6470"
+    },
+    {
+     "label": "C",
+     "text": "₹ 8422"
+    },
+    {
+     "label": "D",
+     "text": "₹ 6178"
+    }
+   ],
+   "answer": "D",
+   "solution": "Amount that Mr Verma has = ₹ 15000\n\nTotal amount he spend\n\n= ₹ 2500 + ₹ 4238 + ₹ 158 + ₹ 1426 + 5 × ₹ 100 = ₹ 2500 + ₹ 4238 + ₹ 158 + ₹ 1426 + ₹ 500 = ₹ 8822 So, amount left with him = ₹ 15000 – ₹ 8822 = ₹ 6178",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 92
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![Compare and fill the boxes using , or = . a CXLVIII b CCV c DXLIX a](asset:q35-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\< = \\>"
+    },
+    {
+     "label": "B",
+     "text": "\\> \\< ="
+    },
+    {
+     "label": "C",
+     "text": "\\< \\> \\<"
+    },
+    {
+     "label": "D",
+     "text": "\\> \\> \\>"
+    }
+   ],
+   "answer": "C",
+   "solution": "![a CXLVIII = 100 + 40 + 8 = 148; CLII = 100+ 50 + 2 = 152 As, 148 152 So, CXLVIII CLII b CCV = 100 + 100 + 5 = 205; CLXXIX = 100 + 50 + 20 + 9 = 179 As, 205 179 So, CCV CLXXIX c DXLIX = 500 + 40 + 9 = 549; DLXIX = 500+ 50 + 10 + 9 = 569 As, 549 569 So, DXLIX DLXIX](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "A",
+    "Paper": "IMO 2021-22 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 92
+   }
+  }
+ ]
+}

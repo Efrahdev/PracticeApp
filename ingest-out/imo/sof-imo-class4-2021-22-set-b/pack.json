@@ -1,0 +1,1731 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2021-22-set-b",
+  "title": "SOF IMO Class 4 · 2021-22 · Set B",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem": {
+   "file": "images/q1-stem.png"
+  },
+  "q1-stem-fig1": {
+   "file": "images/q1-stem-fig1.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-full": {
+   "file": "images/q2-full.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-optA": {
+   "file": "images/q4-optA.png"
+  },
+  "q4-optB": {
+   "file": "images/q4-optB.png"
+  },
+  "q4-optC": {
+   "file": "images/q4-optC.png"
+  },
+  "q4-optD": {
+   "file": "images/q4-optD.png"
+  },
+  "q4-stem-fig": {
+   "file": "images/q4-stem-fig.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-optA": {
+   "file": "images/q5-optA.png"
+  },
+  "q5-optB": {
+   "file": "images/q5-optB.png"
+  },
+  "q5-optC": {
+   "file": "images/q5-optC.png"
+  },
+  "q5-optD": {
+   "file": "images/q5-optD.png"
+  },
+  "q5-stem-fig": {
+   "file": "images/q5-stem-fig.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q6-stem-fig": {
+   "file": "images/q6-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-full": {
+   "file": "images/q8-full.png"
+  },
+  "q8-sol": {
+   "file": "images/q8-sol.png"
+  },
+  "q9-optA": {
+   "file": "images/q9-optA.png"
+  },
+  "q9-optB": {
+   "file": "images/q9-optB.png"
+  },
+  "q9-optC": {
+   "file": "images/q9-optC.png"
+  },
+  "q9-optD": {
+   "file": "images/q9-optD.png"
+  },
+  "q9-stem-fig": {
+   "file": "images/q9-stem-fig.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-optB": {
+   "file": "images/q10-optB.png"
+  },
+  "q10-optC": {
+   "file": "images/q10-optC.png"
+  },
+  "q10-optD": {
+   "file": "images/q10-optD.png"
+  },
+  "q10-stem-fig": {
+   "file": "images/q10-stem-fig.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q11-full": {
+   "file": "images/q11-full.png"
+  },
+  "q12-optA": {
+   "file": "images/q12-optA.png"
+  },
+  "q12-optB": {
+   "file": "images/q12-optB.png"
+  },
+  "q12-optC": {
+   "file": "images/q12-optC.png"
+  },
+  "q12-optD": {
+   "file": "images/q12-optD.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-stem-fig": {
+   "file": "images/q13-stem-fig.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q15-stem-fig": {
+   "file": "images/q15-stem-fig.png"
+  },
+  "q16-stem-fig": {
+   "file": "images/q16-stem-fig.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q17-stem-fig": {
+   "file": "images/q17-stem-fig.png"
+  },
+  "q17-sol": {
+   "file": "images/q17-sol.png"
+  },
+  "q19-stem-fig": {
+   "file": "images/q19-stem-fig.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q20-stem": {
+   "file": "images/q20-stem.png"
+  },
+  "q20-stem-fig1": {
+   "file": "images/q20-stem-fig1.png"
+  },
+  "q20-sol": {
+   "file": "images/q20-sol.png"
+  },
+  "q24-stem-fig": {
+   "file": "images/q24-stem-fig.png"
+  },
+  "q24-sol": {
+   "file": "images/q24-sol.png"
+  },
+  "q25-optA": {
+   "file": "images/q25-optA.png"
+  },
+  "q25-optB": {
+   "file": "images/q25-optB.png"
+  },
+  "q25-optC": {
+   "file": "images/q25-optC.png"
+  },
+  "q25-optD": {
+   "file": "images/q25-optD.png"
+  },
+  "q25-stem": {
+   "file": "images/q25-stem.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q27-stem-fig": {
+   "file": "images/q27-stem-fig.png"
+  },
+  "q28-optA": {
+   "file": "images/q28-optA.png"
+  },
+  "q28-optB": {
+   "file": "images/q28-optB.png"
+  },
+  "q28-optC": {
+   "file": "images/q28-optC.png"
+  },
+  "q28-stem": {
+   "file": "images/q28-stem.png"
+  },
+  "q28-sol": {
+   "file": "images/q28-sol.png"
+  },
+  "q29-optA": {
+   "file": "images/q29-optA.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q32-optA": {
+   "file": "images/q32-optA.png"
+  },
+  "q32-optB": {
+   "file": "images/q32-optB.png"
+  },
+  "q32-optC": {
+   "file": "images/q32-optC.png"
+  },
+  "q32-optD": {
+   "file": "images/q32-optD.png"
+  },
+  "q32-stem-fig": {
+   "file": "images/q32-stem-fig.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-stem": {
+   "file": "images/q33-stem.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-full": {
+   "file": "images/q34-full.png"
+  },
+  "q35-full": {
+   "file": "images/q35-full.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "![How many triangles are there in the given figure?](asset:q1-stem)\n\n![figure](asset:q1-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "10"
+    },
+    {
+     "label": "B",
+     "text": "12"
+    },
+    {
+     "label": "C",
+     "text": "14"
+    },
+    {
+     "label": "D",
+     "text": "13"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Triangles formed are : AED, AEF, FEB, BEC, GEC, DEG, ADB, ABC, BCD, ACD, AEB, DEC A F D E B G C So, number of triangles = 12](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "![Find the missing term in the given pattern. E5 I9 M13 ? U21 Y25 A. Q18 B. P16 C. P17 D. Q17](asset:q2-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "![The pattern followed is : E +4 I +4 M +4 Q +4 U +4 Y 5 +4 9 +4 13 +4 17 +4 21 +4 25](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "Some letters are numbered as 1, 2, 3, 4, 5 and 6. Find the combination of numbers, so that the given letters are arranged accordingly to form a meaningful English word.\n\nT I I C   L H\n\n1 2 3 4 5 6",
+   "options": [
+    {
+     "label": "A",
+     "text": "2, 3, 1, 5, 4, 6"
+    },
+    {
+     "label": "B",
+     "text": "5, 2, 1, 4, 3, 6"
+    },
+    {
+     "label": "C",
+     "text": "5, 3, 1, 4, 6, 2"
+    },
+    {
+     "label": "D",
+     "text": "2, 1, 3, 5, 4, 6"
+    }
+   ],
+   "answer": "C",
+   "solution": "![The meaningful word formed is LITCHI i.e., 5, 3, 1, 4, 6, 2.](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "In which of the following options, the given figure is exactly embedded as one of its parts?\n\n![figure](asset:q4-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q4-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q4-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q4-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q4-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![solution](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "There is a definite relationship between figures P and Q. Establish a similar relationship between figures R and S by selecting a suitable figure from the options that would replace the (?) in Fig. (S).\n\n![figure](asset:q5-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q5-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q5-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q5-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q5-optD)"
+    }
+   ],
+   "answer": "A",
+   "solution": "![From first figure to second, the middle element rotated 1 turn anticlockwise. Also, the corner element moves 4 anticlockwise to the next corner.](asset:q5-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 97
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "How many different possible combinations of 1 badminton racket and 1 shuttlecock can be formed from the given badmintons and shuttlecocks?\n\n![figure](asset:q6-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "9"
+    },
+    {
+     "label": "B",
+     "text": "20"
+    },
+    {
+     "label": "C",
+     "text": "25"
+    },
+    {
+     "label": "D",
+     "text": "15"
+    }
+   ],
+   "answer": "B",
+   "solution": "Number of badminton rackets = 4 Number of shuttlecocks = 5\n\n\\\\ Possible combinations = 4 × 5 = 20",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "If ‘Tongue’ is called ‘Nose’, ‘Nose’ is called ‘Foot’ and ‘Foot’ is called ‘Finger’, then with which a person breathes?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Nose"
+    },
+    {
+     "label": "B",
+     "text": "Tongue"
+    },
+    {
+     "label": "C",
+     "text": "Finger"
+    },
+    {
+     "label": "D",
+     "text": "Foot"
+    }
+   ],
+   "answer": "D",
+   "solution": "![A person breathes through Nose, but Nose is called foot. P Q](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "![Which of the following squares must be shaded so that the given P Q figure has a line of symmetry? A. Q B. P S C. R R D. S](asset:q8-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![S R So, the square R must be shaded.](asset:q8-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "Which of the following options will complete the given figure pattern?\n\n![figure](asset:q9-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q9-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q9-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q9-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q9-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![solution](asset:q9-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "Find the correct mirror image of the given figure.\n\n![figure](asset:q10-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q10-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![Mirror](asset:q10-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q10-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Mirror](asset:q10-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 98
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "![Find the perimeter of the given figure. 3 cm 3 cm 3 cm 3 cm A. 36 cm B. 30 cm 3 cm 3 cm 3 cm 3 cm C. 34 cm 3 cm 3 cm D. 42 cm 3 cm 3 cm](asset:q11-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "Perimeter of the figure = (12 × 3) cm = 36 cm",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "What fraction of the given figure is shaded?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1 2](asset:q12-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![4 7](asset:q12-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![7 3](asset:q12-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![5 7](asset:q12-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of equal parts = 28 Number of shaded parts = 20 So, shaded fraction = 20 = 5 28 7](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "Rizul had following 4 jars of marbles. How many total number of marbles Rizul had, when rounded off to nearest hundreds?\n\n![figure](asset:q13-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "11600"
+    },
+    {
+     "label": "B",
+     "text": "11700"
+    },
+    {
+     "label": "C",
+     "text": "11680"
+    },
+    {
+     "label": "D",
+     "text": "12000"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of marbles in all the jars = 4375 + 1872 + 3488 + 1937 = 11672 Rounding off 11672 to the nearest hundreds gives 11700.](asset:q13-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "If Saumya wants to pour whole water from jug into the glasses of 400 mL capacity, then how many glasses will she need?\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "7"
+    },
+    {
+     "label": "B",
+     "text": "8"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "9"
+    }
+   ],
+   "answer": "B",
+   "solution": "Total quantity of water = 3L 200 mL = 3200 mL Capacity of one glass = 400 mL\n\nSo, number of glasses needed = 3200 ÷ 400 = 8",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "The number shown on the abacus is written as \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_.\n\n![figure](asset:q15-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Two hundred forty three hundred seven hundred fifteen"
+    },
+    {
+     "label": "B",
+     "text": "Twenty four thousand three thousand seven hundred fifteen"
+    },
+    {
+     "label": "C",
+     "text": "Two lakh forty three thousand seven hundred fifteen"
+    },
+    {
+     "label": "D",
+     "text": "Two lakh forty three thousand eight hundred fifteen"
+    }
+   ],
+   "answer": "C",
+   "solution": "The number shown on the abacus is 2,43,715 *i.e.*, two lakh forty three thousand seven hundred fifteen.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 99
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "The bar graph given below represents the marks scored by four friends in a test. Study it carefully and answer the following question.\n\n![figure](asset:q16-stem-fig)\n\nWhich two students scored a total of 125 marks?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Rupali and Anil"
+    },
+    {
+     "label": "B",
+     "text": "Arun and Anil"
+    },
+    {
+     "label": "C",
+     "text": "Akash and Arun"
+    },
+    {
+     "label": "D",
+     "text": "Rupali and Arun"
+    }
+   ],
+   "answer": "D",
+   "solution": "![A. Marks scored by Rupali and Anil together = 65 + 80 = 145 B. Marks scored by Arun and Anil together = 60 + 80 = 140 C. Marks scored by Akash and Arun together = 90 + 60 = 150 D. Marks scored by Rupali and Arun together = 65 + 60 = 125](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "The smallest number of squares that must be shaded so that the figure has a line of symmetry is \\_\\_\\_\\_\\_.\n\n![figure](asset:q17-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "4"
+    },
+    {
+     "label": "D",
+     "text": "5"
+    }
+   ],
+   "answer": "B",
+   "solution": "![1 2 3 Line of symmetry So, number of squares that must be shaded = 3](asset:q17-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "How many multiples of 15 are there in between 95 and 185?",
+   "options": [
+    {
+     "label": "A",
+     "text": "6"
+    },
+    {
+     "label": "B",
+     "text": "5"
+    },
+    {
+     "label": "C",
+     "text": "7"
+    },
+    {
+     "label": "D",
+     "text": "8"
+    }
+   ],
+   "answer": "A",
+   "solution": "Multiples of 15 between 95 and 185 are : 105, 120, 135, 150, 165 and 180 *i.e.*, 6 in number.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "What is the weight of marble P?\n\n![figure](asset:q19-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "300 g"
+    },
+    {
+     "label": "B",
+     "text": "250 g"
+    },
+    {
+     "label": "C",
+     "text": "240 g"
+    },
+    {
+     "label": "D",
+     "text": "350 g"
+    }
+   ],
+   "answer": "B",
+   "solution": "![We have, Weight of R + S = 600 g And weight of P + R + S = 850 g ⇒ Weight of P + 600 g = 850 g ⇒ Weight of P = 250 g](asset:q19-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "![Find the missing number.](asset:q20-stem)\n\n![figure](asset:q20-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "6"
+    },
+    {
+     "label": "D",
+     "text": "4"
+    }
+   ],
+   "answer": "A",
+   "solution": "![18 3 6 3 2](asset:q20-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 100
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "There are 4758 men, 3978 women and 2650 children in a village. What is the total population of the village?",
+   "options": [
+    {
+     "label": "A",
+     "text": "11386"
+    },
+    {
+     "label": "B",
+     "text": "12466"
+    },
+    {
+     "label": "C",
+     "text": "10836"
+    },
+    {
+     "label": "D",
+     "text": "13478"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of men = 4758\n\nNumber of women = 3978\n\nNumber of children = 2650\n\nSo, total population of the village = 4758 + 3978 + 2650 = 11386",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "Last year, Kartik celebrated his eighteenth birthday. This year his brother Swastik is twice as old as Kartik. How old will be Swastik in five years time?",
+   "options": [
+    {
+     "label": "A",
+     "text": "47 years"
+    },
+    {
+     "label": "B",
+     "text": "38 years"
+    },
+    {
+     "label": "C",
+     "text": "41 years"
+    },
+    {
+     "label": "D",
+     "text": "43 years"
+    }
+   ],
+   "answer": "D",
+   "solution": "Present age of Kartik = (18 + 1) years = 19 years So, age of Swastik = (2 × 19) years = 38 years\n\nNow, age of Swastik in five years time = (38 + 5) years\n\n= 43 years",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "For a project Simmi cut a piece of paper into a shape with 4 sides, but none of them are of the same length. What is the shape of the paper?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Rectangle"
+    },
+    {
+     "label": "B",
+     "text": "Quadrilateral"
+    },
+    {
+     "label": "C",
+     "text": "Square"
+    },
+    {
+     "label": "D",
+     "text": "Pentagon"
+    }
+   ],
+   "answer": "B",
+   "solution": "As, the shape has 4-sides. So, it is a quadrilateral.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Vedika plans to read a book of 2470 pages. She reads 26 pages in 1 day. In how many days will she read the complete book, if she reads equal number of pages every day?\n\n![figure](asset:q24-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "94"
+    },
+    {
+     "label": "B",
+     "text": "95"
+    },
+    {
+     "label": "C",
+     "text": "85"
+    },
+    {
+     "label": "D",
+     "text": "105"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of pages to read = 2470 Number of pages read in 1 day = 26 So, number of days in which she will read the complete book = 2470 = 95. 26](asset:q24-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "![Kaushal spent 5 10 of his monthly salary on house rent, 3 10 on groceries and saved the rest. What fraction of his salary was saved in a month?](asset:q25-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![7 10](asset:q25-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 10](asset:q25-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![3 5](asset:q25-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![1 5](asset:q25-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Fraction of monthly salary spent on house rent = 5 10 3 Fraction of monthly salary spent on groceries = 10 So, fraction of monthly salary saved = 10 − 5 − 3 10 10 10 10 − 5 − 3 2 1 = = = 10 10 5](asset:q25-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "Mrs Sharma bought 225 m 18 cm of cloth from shop P, 212 m 20 cm of cloth from shop Q and 140 m 5 cm of cloth from shop R. What is the total length of cloth she bought from all the shops?",
+   "options": [
+    {
+     "label": "A",
+     "text": "597 m 43 cm"
+    },
+    {
+     "label": "B",
+     "text": "477 m 48 cm"
+    },
+    {
+     "label": "C",
+     "text": "577 m 43 cm"
+    },
+    {
+     "label": "D",
+     "text": "497 m 48 cm"
+    }
+   ],
+   "answer": "C",
+   "solution": "Total length of cloth bought by Mrs Sharma = 225 m 18 cm + 212 m 20 cm + 140 m 5 cm = (22518 + 21220 + 14005) cm\n\n= 57743 cm or 577 m 43 cm",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Niharika has ₹ 1500. She wants to purchase 18 sacks of rice as shown. How much more money does she need?\n\n![figure](asset:q27-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "₹ 660"
+    },
+    {
+     "label": "B",
+     "text": "₹ 560"
+    },
+    {
+     "label": "C",
+     "text": "₹ 540"
+    },
+    {
+     "label": "D",
+     "text": "₹ 650"
+    }
+   ],
+   "answer": "A",
+   "solution": "Cost of 1 sack of rice = ₹ 120\n\nSo, cost of 18 sacks of rice = ₹ 120 × 18 = ₹ 2160 Amount of money Niharika has = ₹ 1500\n\nSo, amount of more money needed = ₹ (2160 – 1500) = ₹ 660",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 101
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "![Harshit won exactly 3 5 of the ribbons for 1st place. Which of the following could be the group of ribbons Harshit won ?](asset:q28-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![1st 1st 1st 2nd 2nd](asset:q28-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![1st 1st 1st 2nd 2nd 2nd 2nd 2nd 1st 1st 2nd 2nd 2nd](asset:q28-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1st 1st 1st 1st 2nd](asset:q28-optC)"
+    },
+    {
+     "label": "D",
+     "text": "1<sup>st</sup> 1<sup>st</sup> 2<sup>nd</sup> 2<sup>nd</sup> 2<sup>nd</sup>"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Harshit won exactly 3 of the ribbons for the 5 1st place which means Harshit won 3 ribbons for 1st place out of 5 ribbons.](asset:q28-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Ramya bought the given microwave. What is the number name for the cost of the given microwave?\n\n![figure](asset:q29-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![Twenty thousand eight hundred four seventy five](asset:q29-optA)"
+    },
+    {
+     "label": "B",
+     "text": "Two eighty four thousand seventy five"
+    },
+    {
+     "label": "C",
+     "text": "Twenty eight thousand four thousand seventy five"
+    },
+    {
+     "label": "D",
+     "text": "Twenty eight thousand four hundred seventy five"
+    }
+   ],
+   "answer": "D",
+   "solution": "Cost of given microwave = ₹ 28475 *i.e.*, twenty eight thousand four hundred seventy five.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "A rectangular playground is 150 m long and 80 m wide. What distance did Kashi cover in going 5 times around the playgroud?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2 km 300 m"
+    },
+    {
+     "label": "B",
+     "text": "1 km 150 m"
+    },
+    {
+     "label": "C",
+     "text": "2 km 100 m"
+    },
+    {
+     "label": "D",
+     "text": "3 km 300 m"
+    }
+   ],
+   "answer": "A",
+   "solution": "Length of rectangle = 150 m\n\nBreadth of rectangle = 80 m\n\nSo, distance covered in 1 round of playground\n\n= Perimeter of playground = 2 (150 + 80) m = 460 m \\\\ Distance covered in 5 rounds = (460 × 5) m\n\n= 2300 m or 2 km 300 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "Select the INCORRECT option.",
+   "options": [
+    {
+     "label": "A",
+     "text": "A square has all four sides equal."
+    },
+    {
+     "label": "B",
+     "text": "A rectangle has two lines of symmetry."
+    },
+    {
+     "label": "C",
+     "text": "A figure which has the same start point and end point is called a closed figure."
+    },
+    {
+     "label": "D",
+     "text": "Diameter of a circle is always less than its radius."
+    }
+   ],
+   "answer": "D",
+   "solution": "Diameter of a circle is always greater than its radius.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "Find the sum of the shaded fractions of the given figures.\n\n![figure](asset:q32-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5 7](asset:q32-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![6 7](asset:q32-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![4 7](asset:q32-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![3 7](asset:q32-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Total number of equal parts = 14 Number of shaded parts = 5 So, shaded fraction = 5 14 Total number of equal parts = 14 Number of shaded parts = 7 So, shaded fraction = 7 14 Required sum = 5 + 7 = 12 = 6 14 14 14 7](asset:q32-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 102
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![Fill in the blanks and select the CORRECT option. • L.C.M. of 24 and 48 is P . • Number of factors of 124 is Q . • H.C.F. of 12 and 32 is R . P Q](asset:q33-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "72 5 4"
+    },
+    {
+     "label": "B",
+     "text": "48 5 8"
+    },
+    {
+     "label": "C",
+     "text": "48 6 4"
+    },
+    {
+     "label": "D",
+     "text": "72 6 8"
+    }
+   ],
+   "answer": "C",
+   "solution": "![• Multiples of 24 are 24, 48, 72, 96, … Multiples of 48 are : 48, 96, 144, 192, … Common multiples of 24 and 48 are : 48, 96, … So, L.C.M of 24 and 48 = 48 • Factors of 124 are : 1, 2, 4, 31, 62, 124 i.e., 6 in number. • Factors of 12 are : 1, 2, 3, 4, 6, 12 Factors of 32 are : 1, 2, 4, 8, 16, 32 Common factors of 12 and 32 are : 1, 2, 4 So, H.C.F of 12 and 32 = 4](asset:q33-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 103
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "![The given bar graph represents the milk flavours liked by the students of a class. Study the graph carefully and answer the 50 following questions. a Which milk flavour is liked by exactly 40 40 students? b How many students likes Rose, 30 Badam and Pista flavours altogether? 20 a b A. Pista 110 10 B. Badam 100 0 C. Kesar 110 Rose Chocolate Badam Pista Kesar D. Kesar 100 Milk flavours](asset:q34-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "(a) Kesar flavour is liked by exactly 40 students.\n\n(b) Number of students like Rose, Badam and Pista flavours altogether = 20 + 50 + 30 = 100",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 103
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![Find the perimeter of the given figure P 12 cm Q not drawn to scale . 5 cm A. 74 cm 4 cm T U B. 72 cm R S 6 cm C. 56 cm D. 60 cm W 18 cm V](asset:q35-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![P 12 cm Q 5 cm 5 cm 4 cm T U R S 6 cm 6 cm W 18 cm V Here, PQ = RT = 12 cm ⇒ RT = RS + ST = 12 cm ⇒ RS + 4 cm = 12 cm ⇒ RS = 8 cm Also, PR = QT = 5 cm and SW = UV = 6 cm Now, as SU = W V = 18 cm ⇒ ST + TU = 18 cm ⇒ 4 cm + TU = 18 cm ⇒ TU = 14 cm Now, perimeter of the figure = PQ + QT + TU + UV + VW + WS + SR + RP = 12 + 5 + 14 + 6 + 18 + 6 + 8 + 5 cm = 74 cm](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2021-22",
+    "Set": "B",
+    "Paper": "IMO 2021-22 Set B",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 103
+   }
+  }
+ ]
+}

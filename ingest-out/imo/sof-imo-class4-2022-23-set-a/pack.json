@@ -1,0 +1,1743 @@
+{
+ "format": "practice-app/question-pack@1",
+ "pack": {
+  "id": "sof-imo-class4-2022-23-set-a",
+  "title": "SOF IMO Class 4 · 2022-23 · Set A",
+  "source": "class_4_imo_5_years_e_book_2026.pdf",
+  "subject": "Maths"
+ },
+ "assets": {
+  "q1-stem-fig": {
+   "file": "images/q1-stem-fig.png"
+  },
+  "q1-sol": {
+   "file": "images/q1-sol.png"
+  },
+  "q2-optA": {
+   "file": "images/q2-optA.png"
+  },
+  "q2-optB": {
+   "file": "images/q2-optB.png"
+  },
+  "q2-optC": {
+   "file": "images/q2-optC.png"
+  },
+  "q2-optD": {
+   "file": "images/q2-optD.png"
+  },
+  "q2-sol": {
+   "file": "images/q2-sol.png"
+  },
+  "q3-optA": {
+   "file": "images/q3-optA.png"
+  },
+  "q3-optC": {
+   "file": "images/q3-optC.png"
+  },
+  "q3-optD": {
+   "file": "images/q3-optD.png"
+  },
+  "q3-stem": {
+   "file": "images/q3-stem.png"
+  },
+  "q3-sol": {
+   "file": "images/q3-sol.png"
+  },
+  "q4-full": {
+   "file": "images/q4-full.png"
+  },
+  "q4-sol": {
+   "file": "images/q4-sol.png"
+  },
+  "q5-sol": {
+   "file": "images/q5-sol.png"
+  },
+  "q6-sol": {
+   "file": "images/q6-sol.png"
+  },
+  "q7-optA": {
+   "file": "images/q7-optA.png"
+  },
+  "q7-optB": {
+   "file": "images/q7-optB.png"
+  },
+  "q7-optC": {
+   "file": "images/q7-optC.png"
+  },
+  "q7-optD": {
+   "file": "images/q7-optD.png"
+  },
+  "q7-stem-fig": {
+   "file": "images/q7-stem-fig.png"
+  },
+  "q7-sol": {
+   "file": "images/q7-sol.png"
+  },
+  "q8-optA": {
+   "file": "images/q8-optA.png"
+  },
+  "q8-optB": {
+   "file": "images/q8-optB.png"
+  },
+  "q8-optC": {
+   "file": "images/q8-optC.png"
+  },
+  "q8-optD": {
+   "file": "images/q8-optD.png"
+  },
+  "q8-stem-fig": {
+   "file": "images/q8-stem-fig.png"
+  },
+  "q9-full": {
+   "file": "images/q9-full.png"
+  },
+  "q9-sol": {
+   "file": "images/q9-sol.png"
+  },
+  "q10-optA": {
+   "file": "images/q10-optA.png"
+  },
+  "q10-stem": {
+   "file": "images/q10-stem.png"
+  },
+  "q10-stem-fig1": {
+   "file": "images/q10-stem-fig1.png"
+  },
+  "q10-sol": {
+   "file": "images/q10-sol.png"
+  },
+  "q11-optA": {
+   "file": "images/q11-optA.png"
+  },
+  "q11-stem-fig": {
+   "file": "images/q11-stem-fig.png"
+  },
+  "q12-optA": {
+   "file": "images/q12-optA.png"
+  },
+  "q12-optB": {
+   "file": "images/q12-optB.png"
+  },
+  "q12-optC": {
+   "file": "images/q12-optC.png"
+  },
+  "q12-optD": {
+   "file": "images/q12-optD.png"
+  },
+  "q12-stem-fig": {
+   "file": "images/q12-stem-fig.png"
+  },
+  "q12-sol": {
+   "file": "images/q12-sol.png"
+  },
+  "q13-optA": {
+   "file": "images/q13-optA.png"
+  },
+  "q13-optB": {
+   "file": "images/q13-optB.png"
+  },
+  "q13-optC": {
+   "file": "images/q13-optC.png"
+  },
+  "q13-optD": {
+   "file": "images/q13-optD.png"
+  },
+  "q13-sol": {
+   "file": "images/q13-sol.png"
+  },
+  "q14-stem-fig": {
+   "file": "images/q14-stem-fig.png"
+  },
+  "q14-sol": {
+   "file": "images/q14-sol.png"
+  },
+  "g15-16-fig": {
+   "file": "images/g15-16-fig.png"
+  },
+  "q15-full": {
+   "file": "images/q15-full.png"
+  },
+  "q16-optA": {
+   "file": "images/q16-optA.png"
+  },
+  "q16-optB": {
+   "file": "images/q16-optB.png"
+  },
+  "q16-optC": {
+   "file": "images/q16-optC.png"
+  },
+  "q16-sol": {
+   "file": "images/q16-sol.png"
+  },
+  "q18-full": {
+   "file": "images/q18-full.png"
+  },
+  "q19-stem": {
+   "file": "images/q19-stem.png"
+  },
+  "q19-stem-fig1": {
+   "file": "images/q19-stem-fig1.png"
+  },
+  "q19-sol": {
+   "file": "images/q19-sol.png"
+  },
+  "q21-sol": {
+   "file": "images/q21-sol.png"
+  },
+  "q24-optB": {
+   "file": "images/q24-optB.png"
+  },
+  "q24-stem-fig": {
+   "file": "images/q24-stem-fig.png"
+  },
+  "q25-optA": {
+   "file": "images/q25-optA.png"
+  },
+  "q25-optB": {
+   "file": "images/q25-optB.png"
+  },
+  "q25-optC": {
+   "file": "images/q25-optC.png"
+  },
+  "q25-optD": {
+   "file": "images/q25-optD.png"
+  },
+  "q25-sol": {
+   "file": "images/q25-sol.png"
+  },
+  "q26-sol": {
+   "file": "images/q26-sol.png"
+  },
+  "q27-optA": {
+   "file": "images/q27-optA.png"
+  },
+  "q27-optB": {
+   "file": "images/q27-optB.png"
+  },
+  "q27-optC": {
+   "file": "images/q27-optC.png"
+  },
+  "q27-optD": {
+   "file": "images/q27-optD.png"
+  },
+  "q27-sol": {
+   "file": "images/q27-sol.png"
+  },
+  "q28-sol": {
+   "file": "images/q28-sol.png"
+  },
+  "q29-stem-fig": {
+   "file": "images/q29-stem-fig.png"
+  },
+  "q30-optA": {
+   "file": "images/q30-optA.png"
+  },
+  "q30-stem-fig": {
+   "file": "images/q30-stem-fig.png"
+  },
+  "q31-stem": {
+   "file": "images/q31-stem.png"
+  },
+  "q32-full": {
+   "file": "images/q32-full.png"
+  },
+  "q32-sol": {
+   "file": "images/q32-sol.png"
+  },
+  "q33-stem": {
+   "file": "images/q33-stem.png"
+  },
+  "q33-sol": {
+   "file": "images/q33-sol.png"
+  },
+  "q34-stem-fig": {
+   "file": "images/q34-stem-fig.png"
+  },
+  "q34-sol": {
+   "file": "images/q34-sol.png"
+  },
+  "q35-stem": {
+   "file": "images/q35-stem.png"
+  },
+  "q35-sol": {
+   "file": "images/q35-sol.png"
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "number": "1",
+   "type": "mcq_single",
+   "stem": "Which of the following options will complete the given number pattern?\n\n![figure](asset:q1-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "463"
+    },
+    {
+     "label": "B",
+     "text": "453"
+    },
+    {
+     "label": "C",
+     "text": "553"
+    },
+    {
+     "label": "D",
+     "text": "454"
+    }
+   ],
+   "answer": "B",
+   "solution": "![The pattern followed is : –111 –111 –111 –111 786 675 564 453 342 –111 231](asset:q1-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q2",
+   "number": "2",
+   "type": "mcq_single",
+   "stem": "Which of the following figures has at least one line of symmetry?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q2-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q2-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q2-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q2-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![solution](asset:q2-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q3",
+   "number": "3",
+   "type": "mcq_single",
+   "stem": "![If in a certain code language, 'DELHI' is written as ' @©%' and 'MODE' is written as ' ', then how will 'HOME' be written in the same code language?](asset:q3-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![©](asset:q3-optA)"
+    },
+    {
+     "label": "B",
+     "text": "@\\#\\$!"
+    },
+    {
+     "label": "C",
+     "text": "![@](asset:q3-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![©](asset:q3-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![We have, Letters D E L H I M O Codes @ © % So, HOME will be written as © .](asset:q3-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q4",
+   "number": "4",
+   "type": "mcq_single",
+   "stem": "![Select the CORRECT mirror image of the given figure. A. B. Mirror C. D.](asset:q4-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Mirror](asset:q4-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q5",
+   "number": "5",
+   "type": "mcq_single",
+   "stem": "Veer is standing in a queue. If he is 6<sup>th</sup> from the front and 12<sup>th</sup> from the behind, then how many people are standing in the queue?",
+   "options": [
+    {
+     "label": "A",
+     "text": "20"
+    },
+    {
+     "label": "B",
+     "text": "17"
+    },
+    {
+     "label": "C",
+     "text": "19"
+    },
+    {
+     "label": "D",
+     "text": "18"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Position of Veer from the front = 6th Position of Veer from the behind = 12th So, number of people are standing in the queue = 6 + 12 – 1 = 17](asset:q5-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q6",
+   "number": "6",
+   "type": "mcq_single",
+   "stem": "Find the combination of numbers so that the given letters are arranged accordingly to form a meaningful English word.\n\nK A T R M E\n\n1 2 3 4 5 6",
+   "options": [
+    {
+     "label": "A",
+     "text": "5, 2, 4, 1, 6, 3"
+    },
+    {
+     "label": "B",
+     "text": "5, 2, 1, 4, 6, 3"
+    },
+    {
+     "label": "C",
+     "text": "3, 4, 6, 2, 1, 5"
+    },
+    {
+     "label": "D",
+     "text": "4, 2, 3, 1, 6, 5"
+    }
+   ],
+   "answer": "A",
+   "solution": "![The meaningful English word formed is MARKET i.e., 5, 2, 4, 1, 6, 3.](asset:q6-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 67
+   }
+  },
+  {
+   "id": "q7",
+   "number": "7",
+   "type": "mcq_single",
+   "stem": "Select a figure from the options which is exactly embedded in the given figure as one of its parts.\n\n![figure](asset:q7-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q7-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q7-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q7-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q7-optD)"
+    }
+   ],
+   "answer": "B",
+   "solution": "![solution](asset:q7-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 68
+   }
+  },
+  {
+   "id": "q8",
+   "number": "8",
+   "type": "mcq_single",
+   "stem": "There is a certain relationship between figures (i) and (ii). Establish a similar relationship between figures (iii) and (iv) by selecting a suitable figure from the options that would replace the (?) in figure (iv).\n\n![figure](asset:q8-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q8-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q8-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q8-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q8-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "From fig. (i) to fig. (ii), the number of sides of both outer and inner figures reduce by 1.",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 68
+   }
+  },
+  {
+   "id": "q9",
+   "number": "9",
+   "type": "mcq_single",
+   "stem": "![Arun's yoga class starts from 7th August 20XX and finishes AUGUST 20XX on 23rd August 20XX. If every Saturday is a holiday, then for Sun Mon Tue Wed Thu Fri Sat how many days does he go to yoga class in that month? 1 2 3 4 A. 14 5 6 7 8 9 10 11 B. 13 12 13 14 15 16 17 18 19 20 21 22 23 24 25 C. 15 26 27 28 29 30 31 D. 16](asset:q9-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Number of days from 7th to 23rd August = 17 Number of Saturdays in between 7th to 23rd August = 2 So, number of days Arun go to yoga classes = 17 – 2 = 15 Temple Bank Hotel 1/4](asset:q9-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 68
+   }
+  },
+  {
+   "id": "q10",
+   "number": "10",
+   "type": "mcq_single",
+   "stem": "![Vinay is facing towards fruit shop. If he makes 1 4 turn clockwise and then 1 2 turn anti-clockwise, then he will be facing towards .](asset:q10-stem)\n\n![figure](asset:q10-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![Temple](asset:q10-optA)"
+    },
+    {
+     "label": "B",
+     "text": "Church"
+    },
+    {
+     "label": "C",
+     "text": "Bus stop"
+    },
+    {
+     "label": "D",
+     "text": "Mosque"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Vinay Fruit shop 1/2 Church Bus stop Mosque Mountain So, Vinay will be facing towards Mosque.](asset:q10-sol)",
+   "topics": [
+    "Logical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Logical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 68
+   }
+  },
+  {
+   "id": "q11",
+   "number": "11",
+   "type": "mcq_single",
+   "stem": "Who among the following holds the greatest value?\n\n![figure](asset:q11-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![Q](asset:q11-optA)"
+    },
+    {
+     "label": "B",
+     "text": "P"
+    },
+    {
+     "label": "C",
+     "text": "R"
+    },
+    {
+     "label": "D",
+     "text": "Can't say"
+    }
+   ],
+   "answer": "C",
+   "solution": "P = CLX = 100 + 50 + 10 = 160 Q = DCCXL = 500 + 200 + 40 = 740 R = CMLXIX = 900 + 50 + 10 + 9\n\n= 969\n\nAs, 969 \\> 740 \\> 160\n\nSo, R holds the greatest value.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q12",
+   "number": "12",
+   "type": "mcq_single",
+   "stem": "What fraction of the given figure is unshaded?\n\n![figure](asset:q12-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 7](asset:q12-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 5](asset:q12-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![1 3](asset:q12-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![2 3](asset:q12-optD)"
+    }
+   ],
+   "answer": "D",
+   "solution": "![Total number of equal parts = 15 Number of unshaded parts = 10 So, required fraction = 10 = 2 15 3](asset:q12-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q13",
+   "number": "13",
+   "type": "mcq_single",
+   "stem": "Which of the following is a closed figure?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![option A](asset:q13-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![option B](asset:q13-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![option C](asset:q13-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![option D](asset:q13-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![is a closed figure.](asset:q13-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q14",
+   "number": "14",
+   "type": "mcq_single",
+   "stem": "Compare and fill the box using \\>, \\< or =.\n\n15 kg 105 g + 7 kg 900 g 18 kg 700 g + 950 g\n\n![figure](asset:q14-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "\\>"
+    },
+    {
+     "label": "B",
+     "text": "\\<"
+    },
+    {
+     "label": "C",
+     "text": "\\="
+    },
+    {
+     "label": "D",
+     "text": "Can't say"
+    }
+   ],
+   "answer": "A",
+   "solution": "![15 kg 105 g + 7 kg 900 g = 15105 g + 7900 g = 23005 g And 18 kg 700 g + 950 g = 18700 g + 950 g = 19650 g So, 23005 g 19650 g 15-16 : Sections Number of students A 5 B 8 C 9 D 4 E 5](asset:q14-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q15",
+   "number": "15",
+   "type": "mcq_single",
+   "stem": "**Direction (15-16) :** The given bar graph shows the number of students who took part in a relay race from different sections of Class-IV. Study the graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\n![How many less students participated in relay race from 4 Section B than Section C and D together? A. 5 B. 6 2 C. 4 D. 3 0 A B C D E Sections](asset:q15-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of students participated from Section C and D together = 9 + 4 = 13\n\nNumber of students participated from Section B = 8\n\nSo, required difference = 13 – 8 = 5",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q16",
+   "number": "16",
+   "type": "mcq_single",
+   "stem": "**Direction (15-16) :** The given bar graph shows the number of students who took part in a relay race from different sections of Class-IV. Study the graph carefully and answer the following questions.\n\n![figure](asset:g15-16-fig)\n\nWhat is the fraction of number of students participated from Section E to the total number of students participated?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![4 15](asset:q16-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![26 31](asset:q16-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![5 31](asset:q16-optC)"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of students participated = 5 + 8 + 9 + 4 + 5 = 31 So, required fraction = 5 31](asset:q16-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 69
+   }
+  },
+  {
+   "id": "q17",
+   "number": "17",
+   "type": "mcq_single",
+   "stem": "The sum of 5462 and 3258 when each number is rounded off to the nearest hundreds is \\_\\_\\_\\_\\_.",
+   "options": [
+    {
+     "label": "A",
+     "text": "9010"
+    },
+    {
+     "label": "B",
+     "text": "8800"
+    },
+    {
+     "label": "C",
+     "text": "8700"
+    },
+    {
+     "label": "D",
+     "text": "8500"
+    }
+   ],
+   "answer": "B",
+   "solution": "5462 when rounded off to the nearest hundreds gives 5500.\n\n3258 when rounded off to the nearest hundreds gives 3300. \\\\ Required sum = 5500 + 3300 = 8800",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q18",
+   "number": "18",
+   "type": "mcq_single",
+   "stem": "![Find the perimeter of the given figure. 3 cm A. 50 cm 3 cm B. 45 cm C. 40 cm D. 60 cm](asset:q18-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "D",
+   "solution": "Perimeter of given figure = 20 × 3 = 60 cm",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q19",
+   "number": "19",
+   "type": "mcq_single",
+   "stem": "![The weight of each of the 6 identical cubes is .](asset:q19-stem)\n\n![figure](asset:q19-stem-fig1)",
+   "options": [
+    {
+     "label": "A",
+     "text": "250 g"
+    },
+    {
+     "label": "B",
+     "text": "350 g"
+    },
+    {
+     "label": "C",
+     "text": "450 g"
+    },
+    {
+     "label": "D",
+     "text": "500 g"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Weight of 6 identical cubes = 500 g + 500 g + 500 g = 1500 g So, weight of 1 cube = 1500 = 250 g 6](asset:q19-sol)",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q20",
+   "number": "20",
+   "type": "mcq_single",
+   "stem": "In which of the following options, 7 is not at hundreds place?",
+   "options": [
+    {
+     "label": "A",
+     "text": "2790"
+    },
+    {
+     "label": "B",
+     "text": "3578"
+    },
+    {
+     "label": "C",
+     "text": "4789"
+    },
+    {
+     "label": "D",
+     "text": "5785"
+    }
+   ],
+   "answer": "B",
+   "solution": "In 3578, the digit 7 is at tens place.",
+   "topics": [
+    "Mathematical Reasoning"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Mathematical Reasoning"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q21",
+   "number": "21",
+   "type": "mcq_single",
+   "stem": "Shreya bought 86 kg 475 g sugar and Puneet bought 79 kg 825 g sugar. Who bought less sugar and by how much?",
+   "options": [
+    {
+     "label": "A",
+     "text": "Shreya, 6 kg 650 g"
+    },
+    {
+     "label": "B",
+     "text": "Puneet, 6 kg 650 g"
+    },
+    {
+     "label": "C",
+     "text": "Shreya, 7 kg 350 g"
+    },
+    {
+     "label": "D",
+     "text": "Puneet, 7 kg 350 g"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Amount of sugar bought by Shreya = 86 kg 475 g = 86475 g Amount of sugar bought by Puneet = 79 kg 825 g = 79825 g So, Puneet bought less sugar by 86475 – 79825 g = 6650 g = 6 kg 650 g](asset:q21-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q22",
+   "number": "22",
+   "type": "mcq_single",
+   "stem": "A city has a population of 92582. Round off the population to the nearest hundreds.",
+   "options": [
+    {
+     "label": "A",
+     "text": "92500"
+    },
+    {
+     "label": "B",
+     "text": "92600"
+    },
+    {
+     "label": "C",
+     "text": "93500"
+    },
+    {
+     "label": "D",
+     "text": "92580"
+    }
+   ],
+   "answer": "B",
+   "solution": "Rounded off digit is 5 (hundreds place).\n\nAlso, digit at tens place = 8 \\> 5\n\nSo, 92582 when rounded off to nearest hundreds becomes 92600.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q23",
+   "number": "23",
+   "type": "mcq_single",
+   "stem": "Kanika has 4 photo albums. In each album, there are 10 pages. If there are 5 photos on each page, then how many total photos are there in all albums?",
+   "options": [
+    {
+     "label": "A",
+     "text": "200"
+    },
+    {
+     "label": "B",
+     "text": "150"
+    },
+    {
+     "label": "C",
+     "text": "100"
+    },
+    {
+     "label": "D",
+     "text": "180"
+    }
+   ],
+   "answer": "A",
+   "solution": "Number of photo albums = 4\n\nNumber of pages in 1 album = 10\n\nSo, number of pages in 4 albums = 10 × 4 = 40 Since, number of photos on 1 page = 5\n\nSo, number of photos on 40 pages = 40 × 5\n\n= 200",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q24",
+   "number": "24",
+   "type": "mcq_single",
+   "stem": "Prateek walked around a triangular park whose sides are 50 m, 68 m and 70 m. Find the total distance covered by him.\n\n![figure](asset:q24-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "180 m"
+    },
+    {
+     "label": "B",
+     "text": "![188 m](asset:q24-optB)"
+    },
+    {
+     "label": "C",
+     "text": "168 m"
+    },
+    {
+     "label": "D",
+     "text": "175 m"
+    }
+   ],
+   "answer": "B",
+   "solution": "Total distance covered by Prateek = 50 m + 68 m + 70 m = 188 m",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 70
+   }
+  },
+  {
+   "id": "q25",
+   "number": "25",
+   "type": "mcq_single",
+   "stem": "Aman went on a 15 days trip. He spent 7 days in Manali and rest of the days in Shimla. What fraction of his trip did he spend in Shimla?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![8 7](asset:q25-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![7 8](asset:q25-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![8 15](asset:q25-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![7 15](asset:q25-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of days of trip = 15 Number of days spent in Manali = 7 So, number of days spent in Shimla = 15 – 7 = 8 Fraction of trip spent in Shimla = 8 15](asset:q25-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q26",
+   "number": "26",
+   "type": "mcq_single",
+   "stem": "A string is 40 m long. A piece measuring 800 cm is cut from it. The remaining piece is then cut into 10 equal pieces. Find the length of each piece.",
+   "options": [
+    {
+     "label": "A",
+     "text": "320 cm"
+    },
+    {
+     "label": "B",
+     "text": "350 cm"
+    },
+    {
+     "label": "C",
+     "text": "400 cm"
+    },
+    {
+     "label": "D",
+     "text": "410 cm"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Length of string = 40 m = 40 × 100 cm = 4000 cm Length of piece cut from it = 800 cm So, length of remaining piece = 4000 cm – 800 cm = 3200 cm As, 3200 cm long piece cut into 10 equal pieces. So, length of each piece = 3200 = 320 cm 10](asset:q26-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q27",
+   "number": "27",
+   "type": "mcq_single",
+   "stem": "Priya had 500 stickers. She gave 150 stickers to her brother. What fraction of total stickers is left with her?",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5 7](asset:q27-optA)"
+    },
+    {
+     "label": "B",
+     "text": "![3 10](asset:q27-optB)"
+    },
+    {
+     "label": "C",
+     "text": "![7 10](asset:q27-optC)"
+    },
+    {
+     "label": "D",
+     "text": "![7 9](asset:q27-optD)"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Number of stickers Priya had = 500 Number of stickers she gave to her brother = 150 So, number of stickers left with Priya = 500 – 150 = 350 So, required fraction = 350 350 ÷ 50 7 = = 500 500 ÷ 50 10](asset:q27-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q28",
+   "number": "28",
+   "type": "mcq_single",
+   "stem": "4105 children visited the zoo in the month of January and 2534 children visited the zoo in the month of February. How many total children visited the zoo in both the months?",
+   "options": [
+    {
+     "label": "A",
+     "text": "6548"
+    },
+    {
+     "label": "B",
+     "text": "6639"
+    },
+    {
+     "label": "C",
+     "text": "6670"
+    },
+    {
+     "label": "D",
+     "text": "6234"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Number of children visited the zoo in the month of January = 4105 Number of children visited the zoo in the month of February = 2534 So, total number of children visited the zoo in both the months = 4105 + 2534 = 6639](asset:q28-sol)",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q29",
+   "number": "29",
+   "type": "mcq_single",
+   "stem": "Preeti bought a 4-sided cloth, whose each side is equal in measure. What could be the shape of the cloth?\n\n![figure](asset:q29-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Square"
+    },
+    {
+     "label": "B",
+     "text": "Rectangle"
+    },
+    {
+     "label": "C",
+     "text": "Triangle"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "A",
+   "solution": "A square is a 4-sided shape whose each side is equal in measure. So, the shape of the cloth could be square.",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q30",
+   "number": "30",
+   "type": "mcq_single",
+   "stem": "Sanvi has the digits as shown here. What is the greatest 4-digit number can be formed with the given digits (using each digit only once)?\n\n![figure](asset:q30-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "![5210](asset:q30-optA)"
+    },
+    {
+     "label": "B",
+     "text": "2150"
+    },
+    {
+     "label": "C",
+     "text": "1025"
+    },
+    {
+     "label": "D",
+     "text": "1052"
+    }
+   ],
+   "answer": "A",
+   "solution": "Greatest 4-digit number formed = 5210",
+   "topics": [
+    "Everyday Mathematics"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Everyday Mathematics"
+   },
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q31",
+   "number": "31",
+   "type": "mcq_single",
+   "stem": "![Read the given statements carefully and select the CORRECT option. P : Rounded off the number 584921 to the nearest thousands gives 585000. Q : Sum of place values of the digit 2 and 5 in the number 25890 is 26000.](asset:q31-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Only P is true."
+    },
+    {
+     "label": "B",
+     "text": "Only Q is true."
+    },
+    {
+     "label": "C",
+     "text": "Both P and Q are true."
+    },
+    {
+     "label": "D",
+     "text": "Neither P nor Q is true."
+    }
+   ],
+   "answer": "A",
+   "solution": "P. Rounded off the number 584921 to the nearest thousands gives 585000.\n\nSo, P is true.\n\nQ. Place value of digit 2 in 25890 = 20000\n\nPlace value of digit 5 in 25890 = 5000\n\nSo, required sum = 20000 + 5000 = 25000\n\nSo, Q is not true.",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 71
+   }
+  },
+  {
+   "id": "q32",
+   "number": "32",
+   "type": "mcq_single",
+   "stem": "![A circle was divided into 8 equal parts. It is then colored with different colors. Study the figure carefully and answer the following questions. i Find the fraction of number of parts colored with red color to the whole figure. ii Find the fraction of number of parts colored with blue color to the number of parts colored with green color. i ii 3 3 A. 8 5 B. 4 3 8 4 C. 3 2 8 3 D. 5 3 8 5](asset:q32-full)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Option A"
+    },
+    {
+     "label": "B",
+     "text": "Option B"
+    },
+    {
+     "label": "C",
+     "text": "Option C"
+    },
+    {
+     "label": "D",
+     "text": "Option D"
+    }
+   ],
+   "answer": "C",
+   "solution": "![Total number of equal parts = 8 i Number of parts colored with red color = 3 So, required fraction = 3 8 ii Number of parts colored with blue color = 2 Number of parts colored with green color = 3 So, required fraction = 2 3](asset:q32-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 72
+   }
+  },
+  {
+   "id": "q33",
+   "number": "33",
+   "type": "mcq_single",
+   "stem": "![The given pictograph shows the number of food packets distributed by some persons of a locality on different days. Study the graph carefully and answer the following questions. i On which day, maximum number of food packets were distributed? ii How many more food packets were distributed on Thursday and Friday together than on Tuesday? i ii](asset:q33-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Tuesday 1000"
+    },
+    {
+     "label": "B",
+     "text": "Wednesday 1000"
+    },
+    {
+     "label": "C",
+     "text": "Wednesday 1500"
+    },
+    {
+     "label": "D",
+     "text": "Thursday 2000"
+    }
+   ],
+   "answer": "B",
+   "solution": "![Days Number of food packets distributed Monday 500 × 6 = 3000 Tuesday 500 × 5 = 2500 Wednesday 500 × 7 = 3500 Thursday 500 × 4 = 2000 Friday 500 × 3 = 1500 i On Wednesday, maximum number of food packets were distributed. ii Number of food packets that were distributed on Thursday and Friday together = 2000 + 1500 = 3500 So, required difference = 3500 – 2500 = 1000](asset:q33-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 72
+   }
+  },
+  {
+   "id": "q34",
+   "number": "34",
+   "type": "mcq_single",
+   "stem": "Find the difference between the perimeters of figure (P) and figure (Q) (not drawn to scale).\n\n![figure](asset:q34-stem-fig)",
+   "options": [
+    {
+     "label": "A",
+     "text": "4 cm"
+    },
+    {
+     "label": "B",
+     "text": "6 cm"
+    },
+    {
+     "label": "C",
+     "text": "8 cm"
+    },
+    {
+     "label": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer": "A",
+   "solution": "![Figure P : 2 cm 4 cm 4 cm 4 cm 2 cm 4 cm 10 cm 4 cm 4 cm 2 cm 2 cm 2 cm Perimeter = 2 + 4 + 4 + 2 + 4 + 4 + 4 + 2 + 4 + 2 + 2 + 10 cm = 44 cm Figure Q : 3 cm 2 cm 4 cm 6 cm 4 cm 3 cm 2 cm 4 cm 4 cm 8 cm Perimeter = 3 + 2 + 4 + 4 + 2 + 4 + 8 + 4 + 3 + 6 cm = 40 cm So, required difference = 44 cm – 40 cm = 4 cm](asset:q34-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 73
+   }
+  },
+  {
+   "id": "q35",
+   "number": "35",
+   "type": "mcq_single",
+   "stem": "![Find the value of Y + Z − X .](asset:q35-stem)",
+   "options": [
+    {
+     "label": "A",
+     "text": "2"
+    },
+    {
+     "label": "B",
+     "text": "3"
+    },
+    {
+     "label": "C",
+     "text": "1"
+    },
+    {
+     "label": "D",
+     "text": "0"
+    }
+   ],
+   "answer": "C",
+   "solution": "![2 3 6 4 18 4 2 5 6 7 – 3 6 6 5 – 5 4 1 1 6 – 1 0 8 8 7 – 7 2 1 5 Here, X = 2, Y = 1, Z = 4 So, Y + Z − X 1 + 4 − 2 3 = = = 1 3 3 3](asset:q35-sol)",
+   "topics": [
+    "Achievers Section"
+   ],
+   "fields": {
+    "Exam": "SOF IMO",
+    "Class": 4,
+    "Level": 1,
+    "Year": "2022-23",
+    "Set": "A",
+    "Paper": "IMO 2022-23 Set A",
+    "Section": "Achievers Section"
+   },
+   "marks": 2,
+   "source": {
+    "file": "class_4_imo_5_years_e_book_2026.pdf",
+    "page": 73
+   }
+  }
+ ]
+}
