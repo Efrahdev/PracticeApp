@@ -872,6 +872,116 @@ export async function gradeCorrect(req: Request, env: Env, attemptId: string) {
   return json({ id, result, score_permille: score });
 }
 
+// ------------------------------------------------------------------ change an answer (picked by mistake)
+
+type ResponseIn = { kind: "none" | "mcq" | "numeric" | "text"; options?: string[]; numeric?: number | null; text?: string | null };
+
+/** The four attempt columns that hold a response, in the exact form attemptCreate stores them. */
+export function responseColumns(resp: ResponseIn) {
+  return {
+    response_kind: resp.kind,
+    response_options: resp.kind === "mcq" ? JSON.stringify(resp.options ?? []) : null,
+    response_numeric: resp.kind === "numeric" && typeof resp.numeric === "number" ? resp.numeric : null,
+    response_text: resp.kind === "text" ? (resp.text ?? "") : null,
+  };
+}
+
+const KIND_FOR_FORMAT: Record<string, ResponseIn["kind"]> = { mcq_single: "mcq", mcq_multi: "mcq", numeric: "numeric", text: "text" };
+
+/** One attempt with its effective grade and the answer key it is marked against (to review an earlier answer). */
+export async function attemptDetail(env: Env, id: string) {
+  const db = env.DB;
+  const a = await first(db,
+    `SELECT a.*, g.result, g.score_permille, g.method, g.grade_no
+       FROM attempt a LEFT JOIN v_effective_grade g ON g.attempt_id = a.id WHERE a.id = ?`, id);
+  if (!a) throw new HttpError(404, "Attempt not found.");
+  const key = await first(db, `SELECT * FROM answer_key WHERE question_version_id = ? AND retired_at IS NULL`, a.question_version_id);
+  return json({ attempt: a, answer_key: key });
+}
+
+/**
+ * Change the answer given in an attempt (an option picked by mistake, a typo in a number).
+ *
+ * The attempt is edited in place, never duplicated, so it still counts once in every metric: its response columns
+ * are updated, it is re-marked as a new grade row (cause "correction"; the highest grade_no counts, and the earlier
+ * grades stay as history), every changed column goes to change_log, and the question's metrics for the attempt's own
+ * day are recomputed with the same SQL as a rebuild — all in one all-or-nothing batch. Time spent changing it is added
+ * to the attempt's time. Like "Correct grade", this works on any attempt, in an open or a finished sitting.
+ */
+export async function attemptResponseChange(req: Request, env: Env, attemptId: string) {
+  const db = env.DB;
+  const body = await readJson<{ response: ResponseIn; grade?: GradeIn; extra_seconds?: number }>(req);
+  const a = await first(db, `SELECT * FROM attempt WHERE id = ?`, attemptId);
+  if (!a) throw new HttpError(404, "Attempt not found (it may have been deleted).");
+  const q = await first(db, `SELECT answer_format, option_labels FROM question WHERE id = ?`, a.question_id);
+  const resp = body.response;
+  const want = KIND_FOR_FORMAT[(q?.answer_format as string) ?? ""];
+  if (!want) throw new HttpError(400, "This question has no answer box to change. Use Correct grade instead.");
+  if (!resp || resp.kind !== want) throw new HttpError(400, "That answer doesn't fit this question.");
+  if (want === "mcq") {
+    const labels: string[] = q!.option_labels ? JSON.parse(q!.option_labels as string) : ["A", "B", "C", "D"];
+    if (!Array.isArray(resp.options) || !resp.options.length || !resp.options.every((o) => typeof o === "string" && labels.includes(o))
+      || new Set(resp.options).size !== resp.options.length) throw new HttpError(400, "Choose one of the options.");
+    if (q!.answer_format === "mcq_single" && resp.options.length !== 1) throw new HttpError(400, "Choose exactly one option.");
+  }
+  if (want === "numeric" && !(typeof resp.numeric === "number" && Number.isFinite(resp.numeric))) throw new HttpError(400, "Enter a number.");
+  if (want === "text" && !(typeof resp.text === "string" && resp.text.trim())) throw new HttpError(400, "Type an answer.");
+
+  const before = { response_kind: a.response_kind, response_options: a.response_options, response_numeric: a.response_numeric, response_text: a.response_text };
+  const after = responseColumns(resp);
+  const sameOptions = (x: unknown, y: unknown) =>
+    typeof x === "string" && typeof y === "string" ? JSON.stringify((JSON.parse(x) as string[]).slice().sort()) === JSON.stringify((JSON.parse(y) as string[]).slice().sort()) : x === y;
+  if (before.response_kind === after.response_kind && sameOptions(before.response_options, after.response_options)
+    && before.response_numeric === after.response_numeric && before.response_text === after.response_text) {
+    throw new HttpError(400, "That is the answer already saved. Pick a different one, or cancel.");
+  }
+
+  const key = await first(db, `SELECT * FROM answer_key WHERE question_version_id = ? AND retired_at IS NULL`, a.question_version_id);
+  const auto = key ? autoGrade(key, resp) : null;
+  let result: string, score: number, method: string, rule: string;
+  if (auto) {
+    ({ result, score, rule } = auto);
+    method = "auto";
+  } else {
+    const g = normaliseGrade(need(body.grade, "Grade the new answer first."));
+    result = g.result;
+    score = g.score;
+    method = "manual";
+    rule = "manual_v1";
+  }
+  const g = body.grade ?? ({} as GradeIn);
+  const extra = Math.min(86400, Math.max(0, Math.trunc(Number(body.extra_seconds) || 0)));
+  const oldTime = a.time_taken_seconds as number;
+  const t = now();
+  const gradeId = ulid(t);
+  const stmts: D1PreparedStatement[] = [
+    db.prepare(
+      `UPDATE attempt SET response_kind = ?, response_options = ?, response_numeric = ?, response_text = ?, time_taken_seconds = ? WHERE id = ?`,
+    ).bind(after.response_kind, after.response_options, after.response_numeric, after.response_text, oldTime + extra, attemptId),
+    db.prepare(
+      `INSERT INTO grade (id, attempt_id, grade_no, cause, result, score_permille, method, scoring_rule_code, answer_key_id,
+                          error_type_code, confidence, note, graded_at)
+       VALUES (?, ?, (SELECT coalesce(max(grade_no), 0) + 1 FROM grade WHERE attempt_id = ?), 'correction', ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    ).bind(
+      gradeId, attemptId, attemptId, result, score, method, rule, auto ? key!.id : null,
+      g.error_type_code || null, g.confidence ? Math.trunc(g.confidence) : null, g.note?.trim() || null, t,
+    ),
+    ...liveUpdateStatements(db, a.question_id as string, a.local_date as string),
+  ];
+  for (const col of Object.keys(after) as (keyof typeof after)[]) {
+    if (before[col] !== after[col]) stmts.push(logChange(db, "attempt", attemptId, col, "update", before[col], after[col], t));
+  }
+  if (extra) stmts.push(logChange(db, "attempt", attemptId, "time_taken_seconds", "update", oldTime, oldTime + extra, t));
+  await db.batch(stmts); // response + new grade + metrics + change log in one step
+  return json({
+    attempt_id: attemptId,
+    response: after,
+    time_taken_seconds: oldTime + extra,
+    grade: { id: gradeId, result, score_permille: score, method, rule },
+    answer_key: key,
+  });
+}
+
 // ------------------------------------------------------------------ delete attempts (recorded by mistake) + undo
 
 const ATTEMPT_COLS = ["id", "question_id", "question_version_id", "session_id", "paper_id", "paper_position", "attempted_at", "local_date",

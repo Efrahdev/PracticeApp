@@ -10,6 +10,7 @@ import { NOTES_FIELD } from "../notes";
 import { askConfirm, ErrorBox, fmtSecs, names, pct, ResultBadge, toast } from "../ui";
 import { loadStored, QuestionView, SolutionView } from "../views";
 import { parseNumberish } from "../../shared/qpack/numbers";
+import { CHANGEABLE_FORMATS, firstUnanswered, inputValueOf, responseFromRow, responseLabel, responseOf, sameResponse, type SavedResponse } from "../answers";
 import type { StoredQuestion } from "../../shared/qpack/types";
 
 export interface GradeIn { result: "correct" | "incorrect" | "partial"; score_permille?: number; error_type_code?: string | null; confidence?: number | null; note?: string | null }
@@ -118,12 +119,13 @@ function AnswerInput(props: { item: Item; value: any; onChange: (v: any) => void
   return <p class="muted small">Work it out (on paper is fine), then grade yourself.</p>;
 }
 
-function responseOf(item: Item, v: any) {
-  const f = item.answer_format;
-  if ((f === "mcq_single" || f === "mcq_multi") && Array.isArray(v) && v.length) return { kind: "mcq", options: v };
-  if (f === "numeric" && typeof v === "string" && parseNumberish(v)) return { kind: "numeric", numeric: parseNumberish(v)!.value };
-  if (f === "text" && typeof v === "string" && v.trim()) return { kind: "text", text: v };
-  return { kind: "none" };
+/** An answer already saved in this sitting (just now, or before a pause). */
+interface Answered {
+  attempt_id: string;
+  response: SavedResponse;
+  grade: { result: string; score_permille: number; method: string };
+  answer_key?: any; // undefined = not loaded yet (answers from before a pause); null = no key
+  solution?: any;
 }
 
 export function Practice(props: { paperId?: string; questionId?: string }) {
@@ -133,14 +135,19 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
   const [session, setSession] = useState<any>(null);
   const [pos, setPos] = useState(1);
   const [answer, setAnswer] = useState<any>(undefined);
-  const [saved, setSaved] = useState<any>(null);
+  const [answers, setAnswers] = useState<Record<number, Answered>>({});
   const [err, setErr] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
   const [busy, setBusy] = useState(false);
   const [fixing, setFixing] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [editAnswer, setEditAnswer] = useState<any>(undefined);
   const [solOpen, setSolOpen] = useState(false);
   const [stored, setStored] = useState<StoredQuestion | null>(null);
-  const watch = useStopwatch(0, !saved && !finished && !!items);
+  // Time and typed-in answer of the unanswered question left by going back, restored on return to it.
+  const stash = useRef<{ pos: number; secs: number; answer: any } | null>(null);
+  const saved = answers[pos] ?? null;
+  const watch = useStopwatch(0, (!saved || editing) && !finished && !!items);
   const current = items ? items.find((i) => i.position === pos) ?? items[0] : null;
   useEffect(() => {
     setStored(null);
@@ -153,10 +160,18 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         if (props.paperId) {
           const d = await api("GET", `/api/papers/${props.paperId}`);
           const { session: s } = await api("POST", `/api/papers/${props.paperId}/sessions`);
+          // answers already given in this sitting (resuming after a pause), so you can go back to them
+          const done: Record<number, Answered> = {};
+          for (const a of d.attempts as any[]) {
+            if (a.session_id !== s.id || !a.paper_position || !a.result) continue;
+            done[a.paper_position] = { attempt_id: a.id, response: responseFromRow(a), grade: { result: a.result, score_permille: a.score_permille, method: a.method } };
+          }
           setPaper(d.paper);
           setItems(d.items);
           setSession(s);
+          setAnswers(done);
           setPos(s.current_position);
+          stash.current = { pos: s.current_position, secs: s.current_elapsed_seconds, answer: undefined };
           watch.reset(s.current_elapsed_seconds);
         } else if (props.questionId) {
           const d = await api("GET", `/api/questions/${props.questionId}`);
@@ -173,27 +188,47 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
     })();
   }, [props.paperId, props.questionId]);
 
+  // An answer given before a pause: fetch the key it is marked against, to show it like a fresh answer.
+  useEffect(() => {
+    if (!saved || saved.answer_key !== undefined) return;
+    const p = pos;
+    api<{ answer_key: any }>("GET", `/api/attempts/${saved.attempt_id}`)
+      .then((r) => setAnswers((prev) => (prev[p]?.attempt_id === saved.attempt_id ? { ...prev, [p]: { ...prev[p], answer_key: r.answer_key ?? null } } : prev)))
+      .catch(() => {});
+  }, [saved?.attempt_id]);
+
+  // Where to resume: the first unanswered question, with the time already spent on it.
+  const resumePoint = () => {
+    if (!items) return null;
+    const f = firstUnanswered(items, answers);
+    if (f === null) return null;
+    const secs = f === pos && !saved ? watch.seconds() : stash.current?.pos === f ? stash.current.secs : 0;
+    return { current_position: f, current_elapsed_seconds: secs };
+  };
+
   // Save place + elapsed time when leaving (pause).
   const pause = async (leave = true) => {
-    if (session && !saved && !finished) {
-      try { await api("PATCH", `/api/sessions/${session.id}`, { current_position: pos, current_elapsed_seconds: watch.seconds() }); } catch { /* best effort */ }
+    const at = session && !finished ? resumePoint() : null;
+    if (at) {
+      try { await api("PATCH", `/api/sessions/${session.id}`, at); } catch { /* best effort (a finished sitting has nothing to save) */ }
     }
     if (leave) location.hash = props.paperId ? `#/papers/${props.paperId}` : `#/q/${props.questionId}`;
   };
   useEffect(() => {
     const onHide = () => {
-      if (document.visibilityState === "hidden" && session && !saved && !finished) {
+      const at = document.visibilityState === "hidden" && session && !finished ? resumePoint() : null;
+      if (at) {
         fetch(`/api/sessions/${session.id}`, {
           method: "PATCH", keepalive: true, credentials: "same-origin", headers: { "content-type": "application/json" },
-          body: JSON.stringify({ current_position: pos, current_elapsed_seconds: watch.seconds() }),
+          body: JSON.stringify(at),
         }).catch(() => {});
       }
     };
     document.addEventListener("visibilitychange", onHide);
     return () => document.removeEventListener("visibilitychange", onHide);
-  }, [session, pos, saved, finished]);
+  }, [session, pos, answers, finished, items]);
 
-  if (err) return <div class="page"><ErrorBox error={err} /><a href="#/papers">← Papers</a></div>;
+  if (err && !items) return <div class="page"><ErrorBox error={err} /><a href="#/papers">← Papers</a></div>;
   if (!items || !boot) return <p class="muted">Loading…</p>;
   if (session?.completed_at || finished) return <Summary paperId={props.paperId} questionId={props.questionId} />;
 
@@ -203,6 +238,23 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
   // FR: a paper can include or leave out solutions; single questions always have them.
   const solutionsAllowed = !paper || paper.solutions_mode !== "hidden";
   const parts = stored?.parts ?? [];
+  const canChange = CHANGEABLE_FORMATS.includes(item.answer_format);
+  const editResp = responseOf(item, editAnswer);
+  const editAuto = !!item.has_key && editResp.kind !== "none" && editResp.kind !== "text";
+  const editSame = !!saved && editResp.kind !== "none" && sameResponse(editResp, saved.response);
+
+  /** Move to another question. Leaving an unanswered one keeps its time and typed answer for when you come back. */
+  const goTo = (p: number) => {
+    if (!saved) stash.current = { pos, secs: watch.seconds(), answer };
+    const back = stash.current?.pos === p ? stash.current : null;
+    setFixing(false);
+    setEditing(false);
+    setSolOpen(false);
+    setErr(null);
+    setAnswer(answers[p] ? undefined : back?.answer);
+    if (!answers[p]) watch.reset(back?.secs ?? 0);
+    setPos(p);
+  };
 
   const submit = async (g?: GradeIn) => {
     setBusy(true);
@@ -218,20 +270,37 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         response: resp,
         grade: g,
       });
-      setSaved(r);
+      const p = pos;
+      setAnswers((prev) => ({ ...prev, [p]: { attempt_id: r.attempt_id, response: resp, grade: r.grade, answer_key: r.answer_key ?? null, solution: r.solution } }));
+      if (stash.current?.pos === p) stash.current = null;
       refresh();
     } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   };
 
-  const next = () => {
-    setSaved(null);
-    setAnswer(undefined);
-    setFixing(false);
-    setSolOpen(false);
-    if (!session || pos >= items.length) { setFinished(true); return; }
-    setPos(pos + 1);
-    watch.reset(0);
+  /** Save a changed answer: the same attempt is re-marked (never a second attempt), so nothing is counted twice. */
+  const saveEdit = async (g?: GradeIn) => {
+    if (!saved) return;
+    if (editResp.kind === "none") throw new Error("Choose or type your new answer first.");
+    if (editSame) throw new Error("That is the answer already saved. Pick a different one, or cancel.");
+    const p = pos;
+    const r = await api("POST", `/api/attempts/${saved.attempt_id}/response`, { response: editResp, grade: g, extra_seconds: watch.seconds() });
+    setAnswers((prev) => ({ ...prev, [p]: { ...prev[p], response: editResp, grade: r.grade, answer_key: r.answer_key ?? null } }));
+    setEditing(false);
+    toast("Answer changed");
+    refresh();
   };
+  const saveEditAuto = async () => {
+    setBusy(true);
+    setErr(null);
+    try { await saveEdit(); } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
+  };
+
+  const next = () => {
+    if (!session || pos >= items.length) { setFinished(true); return; }
+    goTo(pos + 1);
+  };
+  const prevButton = session && pos > 1
+    ? <button class="btn ghost" onClick={() => goTo(pos - 1)} title="Go back to the previous question">← Previous</button> : null;
 
   return (
     <div class="page practice">
@@ -240,11 +309,11 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
         <div class="grow center">
           {paper && <div class="small muted">{paper.name}</div>}
           <strong>Question {item.position} of {items.length}</strong>
-          {items.length > 1 && <div class="dots" aria-hidden="true">{items.map((i) => <i class={i.position < pos ? "done" : i.position === pos ? "now" : ""} />)}</div>}
+          {items.length > 1 && <div class="dots" aria-hidden="true">{items.map((i) => <i class={i.position === pos ? "now" : answers[i.position] ? "done" : ""} />)}</div>}
         </div>
         {session && <button class="btn ghost small" onClick={async () => {
           if (!(await askConfirm({ title: "Finish this paper now?", message: "Unanswered questions stay unanswered.", confirmLabel: "Finish" }))) return;
-          await api("PATCH", `/api/sessions/${session.id}`, { complete: true });
+          try { await api("PATCH", `/api/sessions/${session.id}`, { complete: true }); } catch { /* already finished (last question answered) */ }
           setFinished(true);
         }}>Finish early</button>}
       </div>
@@ -273,6 +342,24 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
           ) : (
             <GradeForm boot={boot} onSubmit={submit} />
           )}
+          {prevButton && <div class="row">{prevButton}</div>}
+        </section>
+      ) : editing ? (
+        <section class="card change-answer">
+          <h3>Change your answer</h3>
+          <p class="small muted">You answered <b>{responseLabel(saved.response) || "—"}</b>. The new answer replaces it and is marked again; it still counts as one attempt.</p>
+          <AnswerInput item={item} value={editAnswer} onChange={setEditAnswer} disabled={busy} />
+          {editAuto ? (
+            <div class="row end">
+              <button class="btn ghost" disabled={busy} onClick={() => setEditing(false)}>Cancel</button>
+              <button class="btn primary" disabled={busy || editSame} onClick={saveEditAuto}>Save new answer</button>
+            </div>
+          ) : (
+            <>
+              {parts.length > 1 ? <PartMarker boot={boot} parts={parts} onSubmit={saveEdit} /> : <GradeForm boot={boot} submitLabel="Save new answer" onSubmit={saveEdit} />}
+              <div class="row"><button class="btn ghost small" onClick={() => setEditing(false)}>Cancel</button></div>
+            </>
+          )}
         </section>
       ) : (
         <section class="card">
@@ -281,30 +368,47 @@ export function Practice(props: { paperId?: string; questionId?: string }) {
             {saved.grade.result === "partial" && <span>{pct(saved.grade.score_permille)}</span>}
             {saved.grade.method === "auto" && <span class="muted small">marked automatically</span>}
             <span class="grow" />
+            {canChange && <button class="btn ghost small" title="Picked the wrong option by mistake? Change it and it is marked again"
+              onClick={() => { setFixing(false); setEditAnswer(inputValueOf(saved.response)); setEditing(true); watch.reset(0); }}>Change answer</button>}
             <button class="btn ghost small" onClick={() => setFixing(!fixing)}>Correct grade</button>
             <button class="btn ghost small danger-text" title="Answered by mistake? Remove this attempt and answer again"
-              onClick={() => deleteAttempts({ ids: [saved.attempt_id], reopen: true }, {
-                title: "Undo this attempt?",
-                message: "It is removed from your history and results, and you can answer this question again.",
-                onChange: () => { setSaved(null); setFixing(false); setSolOpen(false); setFinished(false); watch.reset(0); },
-              })}>Undo this attempt</button>
+              onClick={() => {
+                const p = pos;
+                const record = saved;
+                deleteAttempts({ ids: [record.attempt_id], reopen: true }, {
+                  title: "Undo this attempt?",
+                  message: "It is removed from your history and results, and you can answer this question again.",
+                  onChange: () => {
+                    setAnswers((prev) => { const { [p]: _, ...rest } = prev; return rest; });
+                    setAnswer(undefined); setFixing(false); setEditing(false); setSolOpen(false); setFinished(false); watch.reset(0);
+                  },
+                  // Undo of the undo puts the exact attempt back: show it as answered again
+                  onRestore: () => { setAnswers((prev) => ({ ...prev, [p]: record })); setFinished(false); },
+                });
+              }}>Undo this attempt</button>
           </div>
+          {saved.response.kind !== "none" && <p class="small your-answer">Your answer: <b>{responseLabel(saved.response)}</b></p>}
           {saved.answer_key && (saved.grade.method === "auto" || solutionsAllowed) && (
             <p class="small">{saved.answer_key.origin === "suggestion" ? "AI-suggested answer (unverified)" : "Answer"}: {saved.answer_key.mcq_correct ? JSON.parse(saved.answer_key.mcq_correct).join(", ") : saved.answer_key.numeric_value ?? saved.answer_key.text_value}</p>
           )}
           {fixing && (
             <GradeForm boot={boot} submitLabel="Save correction" onSubmit={async (g) => {
+              const p = pos;
               const r = await api("POST", `/api/attempts/${saved.attempt_id}/grades`, g);
-              setSaved({ ...saved, grade: { ...saved.grade, result: r.result, score_permille: r.score_permille, method: "manual" } });
+              setAnswers((prev) => ({ ...prev, [p]: { ...prev[p], grade: { ...prev[p].grade, result: r.result, score_permille: r.score_permille, method: "manual" } } }));
               setFixing(false);
               toast("Grade corrected");
               refresh();
             }} />
           )}
           {!solutionsAllowed ? <p class="small muted">Solutions are not included in this paper. You can open them later from each question's page.</p>
-            : !saved.solution ? <p class="small muted">No solution saved for this question.</p>
+            : !(saved.solution ?? item.has_solution) ? <p class="small muted">No solution saved for this question.</p>
             : !solOpen ? <button class="btn small" onClick={() => setSolOpen(true)}>Show solution</button> : null}
-          <div class="row end"><button class="btn primary" onClick={next}>{session && pos < items.length ? "Next question →" : "Finish"}</button></div>
+          <div class="row">
+            {prevButton}
+            <span class="grow" />
+            <button class="btn primary" onClick={next}>{session && pos < items.length ? "Next question →" : "Finish"}</button>
+          </div>
         </section>
       )}
     </div>

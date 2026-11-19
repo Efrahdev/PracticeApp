@@ -6,7 +6,7 @@ import { askConfirm, toast } from "./ui";
 
 export async function deleteAttempts(
   what: { ids: string[]; reopen?: boolean } | { session_id: string },
-  opts: { title: string; message: string; onChange?: () => void; confirmed?: boolean },
+  opts: { title: string; message: string; onChange?: () => void; onRestore?: () => void; confirmed?: boolean },
 ): Promise<boolean> {
   if (!opts.confirmed && !(await askConfirm({ title: opts.title, message: opts.message, confirmLabel: "Delete", danger: true }))) return false;
   try {
@@ -19,7 +19,7 @@ export async function deleteAttempts(
         try {
           await api("POST", "/api/attempts/restore", { payload: r.payload });
           await refresh();
-          opts.onChange?.();
+          (opts.onRestore ?? opts.onChange)?.();
           toast("Restored");
         } catch (e) { toast((e as Error).message, "error"); }
       },
